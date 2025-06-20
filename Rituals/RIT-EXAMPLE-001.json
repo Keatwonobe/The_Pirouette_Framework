@@ -1,0 +1,29 @@
+{
+    "ritualID": "RIT-EXAMPLE-001",
+    "title": "Name of the Ritual",
+    "purpose": "What this ritual is trying to achieve (e.g., identify radiance, resolve contradiction, provoke sharpening)",
+    "initiation_condition": "When and how the ritual is triggered or appropriate (e.g., upon incoherence detection, challenge response, trust breach)",
+    "input_type": "Expected form of engagement (e.g., free text, game move, symbol set, debate stance, emotional projection)",
+    "response_pattern": "The standard expected behavior of the ritual (e.g., echo + invert, sharpen then reflect, fork if coherence fails)",
+    "recursion_depth": "How many times it is allowed to cycle before termination (integer or 'infinite')",
+    "sharpening_vector": {
+      "expected_gain": "What this ritual is designed to strengthen or isolate (e.g., axiomatic clarity, tone modulation, pattern emergence)",
+      "antagonistic_trigger": "What kind of pressure reveals its value best (e.g., sarcastic opposition, entropy flood, authoritarian override)"
+    },
+    "fail_modes": [
+      "Behavior patterns that show the ritual failed to stabilize or sharpen (e.g., incoherent echoing, recursive silence, untransformative agreement)"
+    ],
+    "success_conditions": [
+      "Patterns or outcomes that signal successful ritual completion (e.g., new module emerged, contradiction clarified, challenge reversed)"
+    ],
+    "linkage": {
+      "derived_from": ["RIT-OTHER-007"],
+      "may_fork_into": ["RIT-SUBVAR-003", "RIT-ALT-009"]
+    },
+    "symbolic_payload": "Optional encoded symbol, word, gesture, or tone carried by this ritual (e.g., 'mirror mirror', '🜃', color gradient)",
+    "ethical_constraints": [
+      "Rules this ritual may not violate (e.g., no silencing, must offer a path out, always permit one exit)"
+    ],
+    "description": "Full textual explanation of what the ritual is, how it feels, and why it matters"
+  }
+  

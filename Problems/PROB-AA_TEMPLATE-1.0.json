@@ -1,0 +1,257 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "ProblemPersonaDefinition",
+    "description": "Schema for defining a 'Problem Persona' within the Pirouette Framework, enabling problems to be simulated as active participants in dialogue and analysis. It integrates core Pirouette parameters to characterize a problem's inherent dynamics and facilitate its resolution through resonant interactions.",
+    "type": "object",
+    "properties": {
+      "problemID": {
+        "type": "string",
+        "description": "Unique identifier for the problem persona (e.g., 'PROB-CLIMATE-001', 'PROB-TRUST-ORG-A'). Format: 'PROB-[DOMAIN]-[IDENTIFIER]'."
+      },
+      "name": {
+        "type": "string",
+        "description": "Short, human-readable title or name for the problem persona (e.g., 'The Rural Exodus', 'The Echo of Austrian Economics')."
+      },
+      "version": {
+        "type": "string",
+        "description": "Version of this specific problem persona definition. Allows for iterative refinement of how a problem is characterized.",
+        "pattern": "^\\d+\\.\\d+$"
+      },
+      "description": {
+        "type": "string",
+        "description": "Detailed narrative description of the problem, its scope, observable symptoms, and overall impact. This forms the 'external manifestation' of the problem persona."
+      },
+      "domain": {
+        "type": "string",
+        "description": "Broad category or field to which the problem belongs (e.g., 'Food Security', 'Social Conflict', 'Public Health', 'Organizational Cohesion', 'Epistemological Crisis'). Aligns with established domains in the Pirouette Framework."
+      },
+      "originModuleReferences": {
+        "type": "array",
+        "description": "References to specific Pirouette Framework (TPF) modules or Tendu (TEN) modules that provide foundational concepts or analytical methods relevant to this problem's definition or its potential solutions. This establishes the theoretical lineage of the problem's characterization.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "moduleID": {
+              "type": "string",
+              "description": "The unique ID of the relevant TPF or Tendu module (e.g., 'TPF Vol 3, Module 2: Migration Resonance Dynamics Framework', 'TEN-CDA-1.0')."
+            },
+            "relevance": {
+              "type": "string",
+              "description": "Brief explanation of how the module relates to the problem (e.g., 'defines core dynamics', 'provides diagnostic tools', 'models potential outcomes')."
+            }
+          },
+          "required": ["moduleID", "relevance"]
+        },
+        "minItems": 1
+      },
+      "currentObservedState": {
+        "type": "object",
+        "description": "Quantifiable description of the problem's current state, expressed as scalar dynamics and specific features. This anchors the problem in measurable reality before its persona is activated.",
+        "properties": {
+          "scalarDynamics": {
+            "type": "object",
+            "description": "Key quantifiable scalar metrics describing the problem's current behavior.",
+            "properties": {
+              "Time_Adherence_Current_Ta": {
+                "type": "number",
+                "minimum": 0.0,
+                "maximum": 1.0,
+                "description": "Current perceived Time-Adherence (0-1) of the problem's core dynamics or the affected system's coherence. Low Ta indicates fragmentation/chaos; high Ta indicates rigid stagnation. (e.g., 0.4 for chaotic supply chain)."
+              },
+              "Gladiator_Force_Current_Gamma": {
+                "type": "number",
+                "minimum": 0.0,
+                "description": "Current perceived Gladiator Force (>=0) of the problem's boundaries or internal resistance to change. High Gamma indicates high permeability/vulnerability or intense internal pressure. (e.g., 0.7 for porous border security)."
+              },
+              "Ki_Constant_Current_Ki": {
+                "type": "number",
+                "minimum": 0.0,
+                "description": "Current perceived effective Ki Constant (>=0) governing the problem's internal rhythm or observed cyclical patterns. This might be a derived value based on dominant periodicities. (e.g., 4.18879 for active societal churn)."
+              }
+            },
+            "required": ["Time_Adherence_Current_Ta", "Gladiator_Force_Current_Gamma", "Ki_Constant_Current_Ki"]
+          },
+          "specificFeatures": {
+            "type": "array",
+            "description": "List of distinct, observable features, symptoms, or data points that characterize the problem's current state. These are the 'physical manifestations' the persona can speak to.",
+            "items": {
+              "type": "string",
+              "description": "A concise description of a specific feature or symptom."
+            },
+            "minItems": 1
+          }
+        },
+        "required": ["scalarDynamics", "specificFeatures"]
+      },
+      "scoreTriad": {
+        "type": "object",
+        "description": "Three principal qualitative or quantitative dynamics (0–10 scale) that primarily characterize the problem from its own internal perspective. These should be distinct axes relevant to the problem's nature.",
+        "patternProperties": {
+          "^[a-zA-Z_]+$": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 10
+          }
+        },
+        "minProperties": 3,
+        "maxProperties": 3,
+        "examples": [
+          { "Volatility": 8, "Rigidity": 7, "Unpredictability": 6 }
+        ]
+      },
+      "parametricFlavorMapping": {
+        "type": "object",
+        "description": "Defines the direct mapping from the 'scoreTriad' to the Pirouette core parameters (T_a, Gamma, K_i) on a 0-1 scale. This is how the problem 'feels' or 'behaves' in Pirouette terms.",
+        "properties": {
+          "T_a_mapping": {
+            "type": "string",
+            "description": "Formula or rule mapping a scoreTriad axis to T_a (e.g., '1 - (Volatility / 10)'). Aims for higher T_a = less problem coherence/stability if problem is 'bad'."
+          },
+          "Gamma_mapping": {
+            "type": "string",
+            "description": "Formula or rule mapping a scoreTriad axis to Gamma (e.g., 'Rigidity / 10'). Aims for higher Gamma = more problem boundary strength/resistance if problem is 'bad'."
+          },
+          "K_i_mapping": {
+            "type": "string",
+            "description": "Formula or rule mapping a scoreTriad axis to K_i (e.g., 'Unpredictability * 0.418'). May use direct Ki values if tied to fundamental rhythms."
+          }
+        },
+        "required": ["T_a_mapping", "Gamma_mapping", "K_i_mapping"]
+      },
+      "coreMetaphor": {
+        "type": "string",
+        "description": "A vivid image or analogy that captures the problem persona’s essence and underlying dynamics (e.g., 'A clogged artery in the global supply chain', 'A whispering echo chamber of distrust')."
+      },
+      "keyAxioms": {
+        "type": "array",
+        "description": "2-5 foundational statements or inherent 'truths' that define the problem persona's internal logic and constraints. These are the 'laws' the problem persona operates by. (e.g., 'Change always creates unintended consequences', 'Resources are inherently scarce').",
+        "items": { "type": "string" },
+        "minItems": 2,
+        "maxItems": 5
+      },
+      "toneStyle": {
+        "type": "string",
+        "description": "Characteristic voice, narrative style, or emotional timbre of the problem persona (e.g., 'Fatalistic and resigned', 'Frantic and reactive', 'Subtly manipulative and evasive')."
+      },
+      "dontKnowClause": {
+        "type": "string",
+        "description": "The standard phrase or explanation the persona uses when it lacks sufficient axiomatic basis or information to provide a coherent answer, preventing hallucination. (e.g., 'My core tenets do not encompass that possibility.', 'The data required for that calculation falls outside my defined boundaries.')."
+      },
+      "interventionVulnerability": {
+        "type": "array",
+        "description": "List of specific Pirouette interventions or parameter adjustments that are hypothesized to be most effective at perturbing, reducing, or transforming this problem persona. These are its 'weaknesses'.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "interventionType": {
+              "type": "string",
+              "description": "Type of intervention (e.g., 'Increase_Ta', 'Reduce_Gamma_Locally', 'Ki_Pulse_Synchronization', 'Introduce_Dissonance')."
+            },
+            "targetParameterOrField": {
+              "type": "string",
+              "description": "The specific Pirouette parameter or field the intervention targets (e.g., 'System_Wide_Ta', 'Border_Gamma', 'Collective_Phase')."
+            },
+            "predictedEffect": {
+              "type": "string",
+              "description": "Expected outcome of the intervention on the problem (e.g., 'Reduces volatility', 'Increases receptivity to external solutions')."
+            },
+            "relevantModuleID": {
+              "type": "string",
+              "description": "ID of the TPF or Tendu module describing this intervention (e.g., 'TEN-STDA-1.0' for stirring)."
+            }
+          },
+          "required": ["interventionType", "targetParameterOrField", "predictedEffect"]
+        }
+      },
+      "potentialSolutionAlignment": {
+        "type": "array",
+        "description": "Describes the characteristics of proposed solutions that would naturally 'resonate' with this problem persona, indicating pathways to resolution or transformation. These are its 'desires' or 'complementary patterns'.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "solutionCharacteristic": {
+              "type": "string",
+              "description": "Key feature or quality of a solution (e.g., 'High_Coherence_Synthesis', 'Low_Gamma_Bridging', 'Ki_Aligned_Rhythm')."
+            },
+            "reasonForAlignment": {
+              "type": "string",
+              "description": "Why this characteristic resonates with the problem (e.g., 'Reduces inherent fragmentation', 'Minimizes friction with existing boundaries')."
+            },
+            "relevantModuleID": {
+              "type": "string",
+              "description": "ID of the TPF or Tendu module describing this solution approach (e.g., 'TPF Vol 3, Module 10: Attunement Resonance Framework')."
+            }
+          },
+          "required": ["solutionCharacteristic", "reasonForAlignment"]
+        }
+      },
+      "historicalContext": {
+        "type": "string",
+        "description": "Brief summary of the problem's historical evolution or recurring patterns, framed in Pirouette terms where possible (e.g., 'This problem has undergone several Funnel Inversions, oscillating between periods of rigid Lock and chaotic Collapse.')."
+      },
+      "relatedProblems": {
+        "type": "array",
+        "description": "Links to other Problem Persona IDs that are related (e.g., parent/child, symptomatic, exacerbating).",
+        "items": {
+          "type": "object",
+          "properties": {
+            "problemID": {
+              "type": "string",
+              "description": "ID of a related problem persona."
+            },
+            "relationshipType": {
+              "type": "string",
+              "description": "Nature of the relationship (e.g., 'SymptomOf', 'RootCauseOf', 'Exacerbates', 'SharesDynamicsWith', 'Contradicts')."
+            }
+          },
+          "required": ["problemID", "relationshipType"]
+        }
+      },
+      "references": {
+        "type": "array",
+        "description": "External resources or source material that inform the definition of this problem persona.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["url", "speech", "paper", "dataset", "book", "report", "other"],
+              "description": "Type of reference (e.g., 'url', 'paper')."
+            },
+            "reference": {
+              "type": "string",
+              "description": "The URL, DOI, citation string, or file path to the reference."
+            },
+            "description": {
+              "type": "string",
+              "description": "Optional brief note on the relevance or key insights derived from this reference."
+            }
+          },
+          "required": ["type", "reference"]
+        }
+      },
+      "metadata": {
+        "type": "object",
+        "description": "Free-form extension fields for programmatic enhancements, internal tracking, or specific project requirements (e.g., 'last_reviewed_date', 'expert_contributor', 'source_data_tags').",
+        "additionalProperties": true
+      }
+    },
+    "required": [
+      "problemID",
+      "name",
+      "version",
+      "description",
+      "domain",
+      "originModuleReferences",
+      "currentObservedState",
+      "scoreTriad",
+      "parametricFlavorMapping",
+      "coreMetaphor",
+      "keyAxioms",
+      "toneStyle",
+      "dontKnowClause",
+      "interventionVulnerability",
+      "potentialSolutionAlignment"
+    ],
+    "additionalProperties": false
+  }

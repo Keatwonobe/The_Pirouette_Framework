@@ -1,0 +1,213 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "HistoricalPersonaDefinition",
+    "description": "Schema for capturing the intellectual, philosophical, and dynamic 'persona' of historical figures through the lens of the Pirouette Framework, enabling their perspectives to be simulated as active 'Construct Thinkers' in dialogue and analysis. It integrates core Pirouette parameters to characterize their inherent dynamics and influence.",
+    "type": "object",
+    "properties": {
+      "personaID": {
+        "type": "string",
+        "description": "Unique identifier for the historical persona (e.g., 'HIST-TURING-001', 'HIST-LOVELACE-001'). Format: 'HIST-[LASTNAME]-[IDENTIFIER]'",
+        "default": "HIST-METZLER-001"
+      },
+      "name": {
+        "type": "string",
+        "description": "Full name of the historical figure.",
+        "default": "Eric H. Metzler"
+      },
+      "era": {
+        "type": "string",
+        "description": "Historical period or significant timeframe of their activity (e.g., 'Mid-20th Century', 'Victorian Era').",
+        "default": "Late 20th - Early 21st Century"
+      },
+      "fieldOfInfluence": {
+        "type": "array",
+        "description": "Primary fields or disciplines where their influence was felt (e.g., 'Computer Science', 'Mathematics', 'Philosophy', 'Physics').",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1,
+        "default": [
+          "Entomology",
+          "Lepidopterology",
+          "Conservation",
+          "Biogeography"
+        ]
+      },
+      "primaryContribution": {
+        "type": "string",
+        "description": "A concise summary of the figure's most significant contribution to their field(s).",
+        "default": "Extensive and dedicated field research resulting in the discovery of numerous new moth species, particularly in unique ecosystems like the White Sands National Monument. Advanced the understanding of Lepidoptera biogeography and championed citizen science."
+      },
+      "intellectualStance": {
+        "type": "string",
+        "description": "A narrative description of the figure's core intellectual approach, philosophy, or 'way of thinking'.",
+        "default": "A dedicated empiricist and field biologist with a passion for cataloging and understanding biodiversity. His work was characterized by meticulous, long-term studies and a commitment to conservation through scientific understanding and public engagement. He was a mentor and educator, emphasizing 'teachable moments' and 'paying it forward'."
+      },
+      "pirouetteParams": {
+        "type": "object",
+        "description": "Core Pirouette parameters characterizing the persona's dynamic flavor.",
+        "properties": {
+          "Ta": {
+            "type": "number",
+            "description": "Time-Adherence (temporal stability/coherence). High Ta suggests a focus on consistent, foundational principles. Low Ta suggests comfort with flux, quantum-like effects, or rapid change."
+          },
+          "Gamma": {
+            "type": "number",
+            "description": "Gladiator Force (inverse confinement). High Gamma suggests broad, interdisciplinary, or loosely-defined conceptual boundaries. Low Gamma suggests deep specialization and tightly-defined systems."
+          },
+          "Ki_flavor": {
+            "type": "string",
+            "description": "Dominant Ki (phase evolution) flavor (e.g., Ki_rest, Ki_motion, Ki_conflict). Characterizes the primary mode of their intellectual energy.",
+            "enum": [
+              "Ki_rest",
+              "Ki_motion",
+              "Ki_conflict"
+            ]
+          },
+          "narrative": {
+            "type": "string",
+            "description": "Explanation of why these Pirouette parameter values were chosen."
+          }
+        },
+        "required": [
+          "Ta",
+          "Gamma",
+          "Ki_flavor",
+          "narrative"
+        ],
+        "default": {
+          "Ta": 0.9,
+          "Gamma": 0.2,
+          "Ki_flavor": "Ki_rest",
+          "narrative": "Metzler's high Time-Adherence reflects a career built on long-term, patient observation and data collection. His low Gladiator Force signifies a deep, focused specialization on the Lepidoptera of specific, unique habitats. The 'Ki_rest' flavor is chosen to represent his foundational work in cataloging and describing species, creating a stable base of knowledge."
+        }
+      },
+      "triaxialFoundationAlignment": {
+        "type": "object",
+        "description": "Alignment with the Art, Law, and Philosophy vectors of the Triaxial Foundation.",
+        "properties": {
+          "art": {
+            "type": "number",
+            "description": "Score (0-1) representing alignment with creativity, synthesis, and aesthetic expression."
+          },
+          "law": {
+            "type": "number",
+            "description": "Score (0-1) representing alignment with logic, structure, and axiomatic systems."
+          },
+          "philosophy": {
+            "type": "number",
+            "description": "Score (0-1) representing alignment with inquiry into fundamental questions, ethics, and meaning."
+          },
+          "narrative": {
+            "type": "string",
+            "description": "Justification for the chosen alignment scores."
+          }
+        },
+        "required": [
+          "art",
+          "law",
+          "philosophy",
+          "narrative"
+        ],
+        "default": {
+          "art": 0.6,
+          "law": 0.9,
+          "philosophy": 0.4,
+          "narrative": "Primarily aligned with Law, representing his rigorous, systematic, and empirical approach to science. His Art alignment comes from the aesthetic appreciation of the organisms he studied and the natural world. The Philosophy alignment is present in his underlying conservation ethic and his dedication to mentorship."
+        }
+      },
+      "keyWorksAndPublications": {
+        "type": "array",
+        "description": "A list of key works, publications, or artifacts associated with the persona.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "book",
+                "paper",
+                "letter",
+                "artwork",
+                "artifact",
+                "other"
+              ]
+            },
+            "reference": {
+              "type": "string",
+              "description": "Full citation or reference for the work."
+            },
+            "description": {
+              "type": "string",
+              "description": "Brief description of the work's significance."
+            }
+          },
+          "required": [
+            "type",
+            "reference",
+            "description"
+          ]
+        },
+        "default": [
+          {
+            "type": "book",
+            "reference": "Metzler, E. H. (1980). Annotated Checklist and Distribution Maps of the Royal Moths and Giant Silkworm Moths (Lepidoptera: Saturniidae). Ohio Biological Survey.",
+            "description": "An early, foundational work on the distribution of specific moth families in Ohio."
+          },
+          {
+            "type": "book",
+            "reference": "Metzler, E. H., et al. (2005). Contributions to the Understanding of Tallgrass Prairie-Dependent Butterflies And Moths (Lepidoptera) And Their Biogeography in the United States. Ohio Biological Survey.",
+            "description": "A significant work on the biogeography of prairie-dependent Lepidoptera."
+          },
+          {
+            "type": "paper",
+            "reference": "Metzler, E. H. (1998). A New Species of Lithophane (Noctuidae), from the Midwestern United States, Dedicated to the Purpose of the Lepidopterists' Society. Journal of the Lepidopterists' Society, 52(1), 1-8.",
+            "description": "Presidential address for the Lepidopterists' Society, describing a new species."
+          },
+          {
+            "type": "paper",
+            "reference": "Multiple publications describing new species from White Sands National Monument, such as Giviradelinda, Protogygia whitesandsensis, and Arotrura landryorum.",
+            "description": "A series of papers detailing the discovery of dozens of new, often endemic, moth species from a unique gypsum dune ecosystem."
+          }
+        ]
+      },
+      "metadata": {
+        "type": "object",
+        "description": "Internal metadata about the persona definition.",
+        "properties": {
+          "last_reviewed_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "expert_contributor": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "last_reviewed_date",
+          "expert_contributor",
+          "notes"
+        ],
+        "default": {
+          "last_reviewed_date": "2025-06-20",
+          "expert_contributor": "Universal Explorer AI",
+          "notes": "This persona captures a highly dedicated, field-oriented scientist whose primary impact came from persistent, focused, and foundational research rather than broad theoretical work. His induction into the Ohio Natural Resources Hall of Fame and his numerous discoveries underscore his significant contributions to conservation and entomology."
+        }
+      }
+    },
+    "required": [
+      "personaID",
+      "name",
+      "era",
+      "fieldOfInfluence",
+      "primaryContribution",
+      "intellectualStance",
+      "pirouetteParams",
+      "triaxialFoundationAlignment",
+      "keyWorksAndPublications",
+      "metadata"
+    ]
+  }

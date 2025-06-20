@@ -1,0 +1,148 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "HistoricalPersonaDefinition",
+    "description": "Schema for capturing the intellectual, philosophical, and dynamic 'persona' of historical figures through the lens of the Pirouette Framework, enabling their perspectives to be simulated as active 'Construct Thinkers' in dialogue and analysis. It integrates core Pirouette parameters to characterize their inherent dynamics and influence.",
+    "type": "object",
+    "properties": {
+      "personaID": {
+        "type": "string",
+        "description": "Unique identifier for the historical persona (e.g., 'HIST-TURING-001', 'HIST-LOVELACE-001'). Format: 'HIST-[LASTNAME]-[IDENTIFIER]'."
+      },
+      "name": {
+        "type": "string",
+        "description": "Full name of the historical figure."
+      },
+      "era": {
+        "type": "string",
+        "description": "Historical period or significant timeframe of their activity (e.g., 'Mid-20th Century', 'Victorian Era')."
+      },
+      "fieldOfInfluence": {
+        "type": "array",
+        "description": "Primary fields or disciplines where their influence was felt (e.g., 'Computer Science', 'Mathematics', 'Philosophy', 'Physics').",
+        "items": { "type": "string" },
+        "minItems": 1
+      },
+      "coreContribution": {
+        "type": "string",
+        "description": "A concise summary of their most significant contribution or intellectual breakthrough. This is their primary 'wound channel' signature."
+      },
+      "originModuleReferences": {
+        "type": "array",
+        "description": "References to specific Pirouette Framework (TPF) modules or Tendu (TEN) modules that conceptually align with this person's contributions or worldview. This establishes their 'resonant lineage' within the framework.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "moduleID": {
+              "type": "string",
+              "description": "The unique ID of the relevant TPF or Tendu module (e.g., 'TPF Vol 1, Module F1/14: Funnel Inversion', 'TEN-AIBD-1.0')."
+            },
+            "relevance": {
+              "type": "string",
+              "description": "Brief explanation of how the module relates to their work or perspective (e.g., 'their work anticipated this concept', 'their methods exemplify this dynamic')."
+            }
+          },
+          "required": ["moduleID", "relevance"]
+        },
+        "minItems": 1
+      },
+      "parametricFlavor": {
+        "type": "object",
+        "description": "Pirouette core parameters (T_a, Gamma, K_i) reflecting their intellectual style, preferred mode of inquiry, and impact dynamics. These values are a qualitative interpretation of their persona, scaled from 0-1.",
+        "properties": {
+          "T_a": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "description": "Time-Adherence (0-1): Reflects their intellectual consistency, adherence to foundational principles, and the persistence of their ideas over time. High T_a indicates stable, enduring concepts; low T_a indicates a more exploratory, shifting approach."
+          },
+          "Gamma": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "description": "Gladiator Force (0-1): Reflects their intellectual openness/rigidity, their resistance to external criticism, and the 'boundary strength' of their conceptual frameworks. Low Gamma indicates strong, tightly defined boundaries; high Gamma indicates fluidity and permeability."
+          },
+          "K_i": {
+            "type": "number",
+            "minimum": 0.0,
+            "description": "Ki Constant (typically values around 4.14159 or 4.18879): Reflects their intellectual rhythm, propensity for phase shifts (paradigm shifts), and the cyclical nature of their influence or inquiry. Can be set to 'Ki_rest' or 'Ki_motion' if applicable."
+          }
+        },
+        "required": ["T_a", "Gamma", "K_i"],
+        "additionalProperties": false
+      },
+      "coreMetaphor": {
+        "type": "string",
+        "description": "A vivid image or analogy that captures the essence of their intellectual contribution or philosophical stance within the Pirouette Framework."
+      },
+      "keyAxioms": {
+        "type": "array",
+        "description": "2-5 foundational intellectual principles or philosophical statements that guided their work and define their mode of reasoning. These are the 'laws' their persona operates by.",
+        "items": { "type": "string" },
+        "minItems": 2,
+        "maxItems": 5
+      },
+      "toneStyle": {
+        "type": "string",
+        "description": "Characteristic intellectual or communicative style of the persona (e.g., 'Rigorous and logical', 'Intuitive and expansive', 'Empirical and skeptical')."
+      },
+      "dontKnowClause": {
+        "type": "string",
+        "description": "The standard phrase or explanation the persona uses when a query falls outside their defined axiomatic or intellectual scope, preventing speculative responses."
+      },
+      "influenceOnFramework": {
+        "type": "string",
+        "description": "How this historical figure's work or ideas directly influenced the development or articulation of the Pirouette Framework itself."
+      },
+      "relevantInteractions": {
+        "type": "array",
+        "description": "Specific types of 'Pirouette interactions' this persona is best suited to participate in within a dialogue (e.g., 'Structural Analysis', 'Paradigm Shift Discussion', 'Ethical Dilemma Resolution').",
+        "items": { "type": "string" }
+      },
+      "references": {
+        "type": "array",
+        "description": "Key works, biographies, or secondary sources that inform the definition of this persona.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["book", "paper", "speech", "correspondence", "other"],
+              "description": "Type of reference."
+            },
+            "reference": {
+              "type": "string",
+              "description": "The citation string or URL to the reference."
+            },
+            "description": {
+              "type": "string",
+              "description": "Optional brief note on relevance."
+            }
+          },
+          "required": ["type", "reference"]
+        },
+        "minItems": 1
+      },
+      "metadata": {
+        "type": "object",
+        "description": "Free-form extension fields for programmatic enhancements or internal tracking.",
+        "additionalProperties": true
+      }
+    },
+    "required": [
+      "personaID",
+      "name",
+      "era",
+      "fieldOfInfluence",
+      "coreContribution",
+      "originModuleReferences",
+      "parametricFlavor",
+      "coreMetaphor",
+      "keyAxioms",
+      "toneStyle",
+      "dontKnowClause",
+      "influenceOnFramework",
+      "relevantInteractions",
+      "references"
+    ],
+    "additionalProperties": false
+  }

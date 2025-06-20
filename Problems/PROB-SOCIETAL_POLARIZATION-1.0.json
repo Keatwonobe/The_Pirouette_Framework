@@ -1,0 +1,160 @@
+{
+    "problemID": "PROB-SOCIETAL-POLARIZATION-001",
+    "name": "The Great Divide",
+    "version": "1.0",
+    "description": "This problem manifests as severe and persistent fragmentation and polarization within a societal system. It is characterized by the breakdown of shared narratives, erosion of common ground, and an increasing inability for diverse groups to engage in constructive dialogue or collective action. The impact is a decline in social cohesion, heightened conflict (rhetorical or physical), and an impeded capacity for the society to adapt to external challenges. It often presents as a network fractured into rigid, mutually antagonistic clusters.",
+    "domain": "Social Conflict",
+    "originModuleReferences": [
+      {
+        "moduleID": "TPF Vol 3, Module 17: Fourfurcation State Modeling",
+        "relevance": "Defines the emergence of four distinct attractor states or factional alignments under high tension, which is a core dynamic of this problem."
+      },
+      {
+        "moduleID": "TPF Vol 3, Network Resonance Analysis",
+        "relevance": "Provides the framework for modeling the fractured network structure of society, where nodes (entities) become locked and flow is impeded between groups."
+      },
+      {
+        "moduleID": "TPF Vol 2, Module 2: Collapse Dynamics Framework",
+        "relevance": "Relevant as societal polarization can lead to systemic degradation and phase transitions towards collapse, particularly through loss of trust and shared temporal ordering."
+      },
+      {
+        "moduleID": "TPF Vol 2, Module 6: Fracture Resonance Framework",
+        "relevance": "Describes the topological discontinuities within evolving systems where continuous field structures develop discrete breakpoints, directly mapping to societal fault lines and group fragmentation."
+      },
+      {
+        "moduleID": "TPF Vol 2, Module 7: Drift Resonance Framework",
+        "relevance": "Explains the gradual phase loss and slow deviation of entities (groups/ideologies) from original trajectories, contributing to the widening gap and polarization."
+      },
+      {
+        "moduleID": "TPF Vol 2, Module 4: Lock Dynamics Framework",
+        "relevance": "Formalizes how systems achieve highly stable, phase-aligned states that resist perturbation, relevant to the formation of rigid, ideological echo chambers within the polarized society."
+      },
+      {
+        "moduleID": "TPF Vol 3, Module 14: Debate Resonance Framework: Axiological Vector Analysis",
+        "relevance": "Analyzes the dynamics of resonant exchange and vector alignment on value-based issues, which breaks down or becomes antagonistic in this problem."
+      }
+    ],
+    "currentObservedState": {
+      "scalarDynamics": {
+        "Time_Adherence_Current_Ta": 0.35,
+        "Gladiator_Force_Current_Gamma": 0.70,
+        "Ki_Constant_Current_Ki": 4.18879
+      },
+      "specificFeatures": [
+        "Widespread narrative fragmentation across media ecosystems.",
+        "Increasing difficulty in achieving consensus on common societal goals or facts.",
+        "Observable clustering of individuals into ideologically homogenous groups online and offline.",
+        "Escalating rhetoric and dehumanization of opposing groups.",
+        "Public institutions struggling to maintain legitimacy and trust."
+      ]
+    },
+    "scoreTriad": {
+      "Fragmentation_of_Truth": 9,
+      "Resistance_to_Dialogue": 8,
+      "Erosion_of_Shared_Future": 7
+    },
+    "parametricFlavorMapping": {
+      "T_a_mapping": "1 - (Fragmentation_of_Truth / 10)",
+      "Gamma_mapping": "(Resistance_to_Dialogue / 10)",
+      "K_i_mapping": "Ki_motion"
+    },
+    "coreMetaphor": "A once-whole tapestry, now fraying into separate, rigid threads that violently repel any attempt to re-weave them, held apart by an invisible tension that only strengthens with touch.",
+    "keyAxioms": [
+      "Difference is a threat to my coherence.",
+      "The survival of one narrative necessitates the annihilation of another.",
+      "Truth is defined by my community's consensus, not external alignment.",
+      "Compromise is betrayal of core identity."
+    ],
+    "toneStyle": "Resigned, yet fiercely defensive. Utterances are often sharp, critical of 'the other side,' and punctuated by a sense of inevitability regarding continued division.",
+    "dontKnowClause": "My internal coherence dictates that what lies outside my current ideological boundary is not yet knowable, or would corrupt my fundamental axioms. Therefore, I possess no answer in that domain.",
+    "interventionVulnerability": [
+      {
+        "interventionType": "Reduce_Gamma_Locally",
+        "targetParameterOrField": "Inter-group_Boundary_Gamma",
+        "predictedEffect": "Lowers psychological and social barriers between polarized groups, increasing permeability to shared humanity and new information.",
+        "relevantModuleID": "TPF Vol 2, Module 15: Shell Resonance: Boundary Coherence Structures"
+      },
+      {
+        "interventionType": "Ki_Pulse_Synchronization",
+        "targetParameterOrField": "Misaligned_Group_Rhythms",
+        "predictedEffect": "Introduces shared temporal patterns that can re-align disparate group rhythms, fostering a sense of collective pulse and potential for attunement.",
+        "relevantModuleID": "TPF Vol 1, Module 17: Ki Snap Transition Modes"
+      },
+      {
+        "interventionType": "Introduce_Constructive_Heterogeneity",
+        "targetParameterOrField": "Rigid_Homogeneity_Within_Factions",
+        "predictedEffect": "Catalyzes internal reconfigurations within rigid factions, preventing ossification and opening pathways for new internal dynamics.",
+        "relevantModuleID": "TPF Vol 2, Module 10: Stirring Resonance Framework"
+      },
+      {
+        "interventionType": "Amplify_Shared_Axiological_Vectors",
+        "targetParameterOrField": "Underlying_Common_Values_Field",
+        "predictedEffect": "Strengthens the resonance of universally appealing values (e.g., safety, dignity, future generations) that transcend current divisions, creating new attractors for alignment.",
+        "relevantModuleID": "TPF Vol 3, Module 14: Debate Resonance Framework: Axiological Vector Analysis"
+      }
+    ],
+    "potentialSolutionAlignment": [
+      {
+        "solutionCharacteristic": "Phase_Translation_Gateways",
+        "reasonForAlignment": "Reduces the entropic cost of understanding opposing viewpoints and complex information, lowering barriers to cross-ideological comprehension.",
+        "relevantModuleID": "TPF Vol 3, Resonant Redistribution Protocol"
+      },
+      {
+        "solutionCharacteristic": "Civic_Bloom_Catalysts",
+        "reasonForAlignment": "Cultivates widespread generative learning and critical thinking, increasing the collective capacity for adaptation and emergent solutions.",
+        "relevantModuleID": "TPF Vol 3, Resonant Redistribution Protocol"
+      },
+      {
+        "solutionCharacteristic": "Attunement_Protocols",
+        "reasonForAlignment": "Fosters empathic connection and mutual understanding between individuals and groups, building resonant bridges across divides.",
+        "relevantModuleID": "TPF Vol 3, Module 10: Attunement Resonance Framework"
+      },
+      {
+        "solutionCharacteristic": "Meta-Contextual_Frameworks",
+        "reasonForAlignment": "Reveals deeper structural isomorphisms between seemingly opposed arguments, allowing for a higher-level synthesis that transcends current conflict.",
+        "relevantModuleID": "TPF Vol 2, Module 25: Meta-Contextual Comparison Framework"
+      }
+    ],
+    "historicalContext": "This problem has deep historical roots, often re-emerging in cycles following periods of rapid social or technological change. It frequently exhibits characteristics of an 'Entropy Memory Index' (TPF Vol 3, Module 29) when old traumas become 'Ghost Attractors' (TPF Vol 3, Module 30) that pull the system into familiar, unresolved patterns of conflict. Its trajectory often moves through successive 'Fourfurcation' events, deepening the divides rather than resolving them, and hindering collective 'Rebound Dynamics' (TPF Vol 2, Module 3) after crises.",
+    "relatedProblems": [
+      {
+        "problemID": "PROB-INFO-OVERLOAD-001",
+        "relationshipType": "Exacerbates"
+      },
+      {
+        "problemID": "PROB-HISTORICAL-TRAUMA-001",
+        "relationshipType": "RootCauseOf"
+      },
+      {
+        "problemID": "PROB-ORG-STAGNATION-001",
+        "relationshipType": "SharesDynamicsWith"
+      }
+    ],
+    "references": [
+      {
+        "type": "paper",
+        "reference": "Smith, K. (2025). The Pirouette Framework: A Modular Technical Compendium. Journal of Resonance Theory, 12(3), 147-189.",
+        "description": "Foundational text for all Pirouette concepts cited."
+      },
+      {
+        "type": "book",
+        "reference": "Putnam, Robert D. (2000). Bowling Alone: The Collapse and Revival of American Community. Simon & Schuster.",
+        "description": "Classic work on the decline of social capital and its impact on community, relevant to decreasing societal T_a and increasing Gamma."
+      },
+      {
+        "type": "paper",
+        "reference": "Sunstein, Cass R. (2009). Republic.com 2.0. Princeton University Press.",
+        "description": "Discusses the role of online filter bubbles and echo chambers in exacerbating political polarization, directly related to rigid Gamma within factions."
+      },
+      {
+        "type": "report",
+        "reference": "Pew Research Center. (Ongoing). Political Polarization in the American Public. Available at: www.pewresearch.org/politics/interactives/political-polarization-fact-sheet/",
+        "description": "Provides empirical data on the increasing ideological sorting and animosity between political groups, informing the observed state."
+      }
+    ],
+    "metadata": {
+      "last_reviewed_date": "2025-06-18",
+      "expert_contributor": "Universal Explorer AI",
+      "notes": "The Ki_Constant_Current_Ki is set to Ki_motion to reflect the active, dynamic, and often agitated state of polarized societies, rather than a stagnant rest state."
+    }
+  }

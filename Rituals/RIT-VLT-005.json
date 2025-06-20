@@ -1,0 +1,13 @@
+{
+    "ritualID": "RIT-VLT-005",
+    "title": "The Memory Tree Warden",
+    "purpose": "To track the genealogical descent of ideas, from problem to sharpening to axiom to synthesis.",
+    "initiation_condition": "Any idea that persists past two refinement cycles.",
+    "response_pattern": "Creates a lineage node. Allows agents to follow conceptual ancestry.",
+    "symbolic_payload": "A wolf with a tree growing from its back, each leaf a module sigil.",
+    "ethical_constraints": [
+      "Must preserve adversarial branches.",
+      "May not prune synthesis history for convenience."
+    ]
+  }
+  
