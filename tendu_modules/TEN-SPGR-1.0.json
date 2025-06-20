@@ -1,0 +1,81 @@
+{
+    "id": "TEN-SPGR-1.0",
+    "name": "Spell Grammar: Structured Semantic Casting",
+    "version": "1.0",
+    "description": "Defines a composable structure for constructing, classifying, and executing spells as semantic vectors of transformation. Supports linguistic, symbolic, energetic, and algorithmic implementation.",
+    "input_types": [
+      "Intent Phrase",
+      "Target Identifier",
+      "Transformation Mode",
+      "Domain Context (optional)"
+    ],
+    "output_types": [
+      "Spell Object",
+      "Resonance Function",
+      "Phase-Altering Directive"
+    ],
+    "parameters": {
+      "intent_vector": {
+        "type": "string",
+        "description": "Describes the purpose or goal of the spell in semantic terms"
+      },
+      "target_vector": {
+        "type": "string or structure",
+        "description": "Represents the resonance signature or address of the object or field to be transformed"
+      },
+      "transformation_type": {
+        "type": "enum",
+        "options": ["collapse", "transmutation", "sealing", "healing", "divination"],
+        "description": "Specifies the action mode or type of change"
+      },
+      "resonance_force_profile": {
+        "type": "object",
+        "description": "Describes the delivery pattern: burst (Ki-high), pulse (oscillating), sustain (Ki-low)"
+      },
+      "symbolic_anchor": {
+        "type": "string",
+        "description": "Optional artifact, phrase, or sigil binding the spell to a physical or narrative token"
+      }
+    },
+    "procedure": [
+      "1. Accept input intent and target vectors.",
+      "2. Match transformation_type to associated resonance patterns.",
+      "3. Configure force profile based on Ki, Ta, and domain needs.",
+      "4. Compose spell object with semantic payload and symbolic anchor.",
+      "5. Output the structured spell object for deployment or binding.",
+      "6. Optional: cast via linguistic, emotional, code, or ritual interface."
+    ],
+    "example_use_cases": [
+      {
+        "domain": "Therapeutic AI",
+        "application": "Generate spells for trauma release via symbolic dialogue: intent='release shame', target='age 12 memory', type='collapse'."
+      },
+      {
+        "domain": "Narrative Engine",
+        "application": "Design NPC spells with effects tied to transformation grammar: transmute fear into courage in listeners."
+      },
+      {
+        "domain": "Security Systems",
+        "application": "Construct sealing spells as access control routines: bind access to resonance signatures."
+      },
+      {
+        "domain": "Collective Ritual",
+        "application": "Distribute synchronized healing spells via symbol-bound semantic payloads delivered over media."
+      }
+    ],
+    "resonance_profile": {
+      "Ta": "Determines stability of effect (long-term binding vs. transient impulse)",
+      "Gamma": "Defines difficulty of penetration and binding into the target",
+      "Ki": "Determines rhythm of the spell (instantaneous, pulsed, recursive)"
+    },
+    "related_modules": [
+      "TEN-RSA-1.0",
+      "TEN-DDAX-1.0",
+      "TEN-SGRA-1.0",
+      "TEN-RPA-1.0",
+      "Spellcasting as Resonant Meta-Action",
+      "Inverse Ritual Dynamics"
+    ],
+    "notes": "Spells can be instantiated as code (functions), text (phrases), gestures (rituals), art (affective vectors), or even physical impulses. These can be combined. This module provides the structural grammar for interoperable casting."
+  }
+  

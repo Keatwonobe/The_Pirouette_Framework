@@ -1,0 +1,116 @@
+{
+    "tenduModuleID": "TEN-IZLFA-1.0",
+    "moduleName": "Inverse Zipf/Power-Law Fitting Analysis",
+    "pirouetteFrameworkOrigin": "TPF Vol 3, Inverse Zipf / Power\u2010Law Fitting",
+    "version": "1.0",
+    "dateLastUpdated": "2025-06-16",
+    "primaryPurposeConciseStatement": "Given observed frequency data or a desired statistical property (like tail coverage), this module determines the exponent \u03b1 and other parameters of the underlying power-law (Zipfian) distribution.",
+    "coreTransformationAchieved": "Transforms empirical rank-frequency data into an estimated power-law exponent ($\u03b1$) and normalization constant (C). Alternatively, it transforms a desired statistical property (e.g., tail coverage) into the specific distribution parameters ($\u03b1, k$) that produce that property.",
+    "conceptualAnchor": {
+        "theoreticalInsight": "Power-law distributions are ubiquitous in complex systems and describe phenomena where a small number of items have high frequency/rank and a 'long tail' of items has low frequency/rank. This module solves the inverse problem: inferring the law from the data. It is the core characterization engine for Pirouette's Reverse Pareto Analysis, which analyzes the stabilizing effects of such distributions. The exponent \u03b1 is a critical measure of concentration and inequality in a system.",
+        "pirouetteParameters": [
+            {
+                "parameter": "Reverse Pareto Analysis",
+                "relevance": "This module provides the core fitting mechanism for Reverse Pareto Analysis (TEN-RPA-1.0). The exponent \u03b1 is the key parameter that RPA interprets in the context of systemic stability."
+            }
+        ]
+    },
+    "inputStreamSpecificationAndPreparation": {
+        "requiredDataCharacteristics": "Empirical data suitable for rank-frequency analysis, or a set of desired statistical properties for the distribution.",
+        "formatAndStructure": "A list of observed frequencies $\\{x_i\\}$, or target values for properties like tail coverage $\\beta$ and cutoff rank $k$.",
+        "minimumViableDataSet": "A dataset with a sufficient number of points to establish a distribution, especially in the tail, for reliable fitting.",
+        "preprocessingSteps": "Rank-ordering of data items by frequency. Optional log-transformation for visualization and preliminary regression fitting."
+    },
+    "operationalParametersAndConfiguration": {
+        "modeSpecificParameters": [
+            {
+                "parameter": "\u03b1",
+                "description": "The power-law exponent, which can be fixed or estimated.",
+                "typicalRange": "real > 1"
+            },
+            {
+                "parameter": "\u03b2",
+                "description": "Desired tail-coverage fraction.",
+                "typicalRange": "real in (0,1)"
+            },
+            {
+                "parameter": "N",
+                "description": "Maximum rank in the support of the distribution.",
+                "typicalRange": "integer"
+            },
+            {
+                "parameter": "k",
+                "description": "Cut-off rank for tail calculation, which can be fixed or solved for.",
+                "typicalRange": "integer"
+            },
+            {
+                "parameter": "x_min",
+                "description": "Lower bound for data included in Maximum Likelihood Estimation.",
+                "typicalRange": "real"
+            }
+        ],
+        "pirouetteParameterConfiguration": "This is a statistical tool; it does not take Pirouette parameters as input but its output ($\u03b1$) can be interpreted as a macro-parameter describing the coherence of resource or influence distribution in a system."
+    },
+    "proceduralImplementationAlgorithmicGuide": [
+        "Exponent Estimation: Given observed data $\\{x_i\\}$, estimate the exponent $\\hat{\\alpha}$ using the Maximum Likelihood Estimation (MLE) formula.",
+        "Tail-Coverage Inversion: Given a target coverage $\\beta$ and a known $\\alpha$, find the smallest rank $k$ such that the cumulative probability from rank $k$ to $N$ is at least $\\beta$.",
+        "Parameter-Coverage Mapping: Given a target coverage $\\beta$ and a cutoff rank $k$, solve the equation $F(\\alpha) = \\sum_{r=k}^{N} r^{-\\alpha} - \\beta\\sum_{i=1}^{N}i^{-\\alpha} = 0$ for $\\alpha$ using numerical root-finding methods."
+    ],
+    "outputStreamSpecificationAndInterpretation": {
+        "outputDataStructure": "The estimated power-law exponent $\\hat{\\alpha}$ and normalization constant C, or the parameters ($k$, $\\alpha$) that satisfy the input constraints.",
+        "expectedInsightsAndDerivations": "A quantitative measure of the 'heavy-tailedness' or concentration within a system. This helps in understanding risk, influence, and resource allocation patterns.",
+        "interpretationGuidelines": "The exponent $\\alpha$ quantifies the steepness of the rank-frequency distribution. A value near 1 implies extreme concentration (a few items dominate), while a larger value indicates a more even distribution."
+    },
+    "integrationHooksAndWorkflowContext": {
+        "upstreamDependencies": "Requires rank-frequency data.",
+        "downstreamApplications": "This module is the core computational engine for `TEN-RPA-1.0` (Reverse Pareto Analysis). Its outputs are used to characterize distributions in economics, linguistics, network science, and other domains of complex systems.",
+        "compatibilityWithCombinedWorkflows": "Integrates directly with TEN-RPA-1.0."
+    },
+    "validationAndVerificationProtocols": {
+        "implementationCorrectness": "Verify the MLE formula and root-finding algorithms. Test against synthetic data generated from a known power-law distribution to ensure accurate parameter recovery.",
+        "insightMeaningfulness": "The goodness-of-fit of the estimated power law to the observed data should be confirmed with appropriate statistical tests (e.g., Kolmogorov-Smirnov test). Log-log regression can provide a visual check but MLE is preferred for estimation."
+    },
+    "applicationDomainsAndUseCaseExamples": [
+        "Modeling and analyzing word frequencies in a text corpus.",
+        "Characterizing the distribution of city populations.",
+        "Analyzing wealth and income distributions in economics.",
+        "Modeling the degree distribution of nodes in scale-free networks.",
+        "Quantifying hidden leverage and risk in long-tail phenomena."
+    ],
+    "caveatsLimitationsAndSensitivityAnalysis": {
+        "conditionsForFailure": "The underlying data does not follow a power-law distribution. Insufficient data in the tail of the distribution leads to unreliable exponent estimates.",
+        "inputDataSensitivity": "The choice of the lower bound for fitting, $x_{min}$, can significantly impact the estimated exponent $\\alpha$.",
+        "parameterSensitivity": "Not applicable in the same way as other modules, as this one primarily estimates parameters.",
+        "computationalComplexity": "MLE and root-finding are generally efficient. The main cost is processing the input data to get rank-frequency counts."
+    },
+    "coreMathematicalOperations": [
+        {
+            "name": "Power-Law (Zipfian) Distribution",
+            "equation": "f(r) = \\frac{C}{r^{\\alpha}}, \\quad C = \\biggl(\\sum_{r=1}^{N}r^{-\\alpha}\\biggr)^{-1}",
+            "description": "The probability mass function for a discrete power-law distribution of rank 'r' with exponent \u03b1."
+        },
+        {
+            "name": "Maximum Likelihood Estimator for \u03b1",
+            "equation": "\\hat\\alpha = 1 + n\\biggl[\\sum_{i=1}^n\\ln\\frac{x_i}{x_{\\min}}\\biggr]^{-1}",
+            "description": "The formula for estimating the power-law exponent from n data points $\\{x_i\\}$ with a lower bound $x_{min}$."
+        },
+        {
+            "name": "Tail-Coverage Condition",
+            "equation": "\\sum_{r=k}^{N} \\frac{r^{-\\alpha}}{\\sum_{i=1}^{N}i^{-\\alpha}} \\;\\ge\\;\\beta",
+            "description": "The condition to find the cutoff rank 'k' for a desired tail coverage fraction $\\beta$."
+        }
+    ],
+    "practiceForPurposeFunctionalRealization": {
+        "functionalEssence": "This Tendu module enables the 'Practice for Purpose' of understanding and quantifying inequality and concentration in complex systems. It transforms raw frequency data into a single, powerful parameter ($\u03b1$) that describes the fundamental distribution of resources, influence, or events, allowing for the design or analysis of systems with specific levels of 'fairness' or 'winner-take-all' dynamics.",
+        "informationTransformation": "It transforms raw observational data into a concise, parametric model of its underlying distribution, revealing deep structural properties related to scale and frequency.",
+        "purposefulUtilization": [
+            "To quantify the level of concentration in a system (e.g., market share, social influence).",
+            "To understand the nature of risk in systems with 'heavy tails', where extreme events are more likely than a normal distribution would suggest.",
+            "To provide the foundational analysis for Reverse Pareto thinking, which explores the stabilizing aspects of these distributions."
+        ]
+    },
+    "customizationAndAdvancedConfigurationOptional": {
+        "tailoringGuidance": "Can be adapted for continuous power-law distributions. Different fitting methods can be employed, though MLE is generally the most robust. Statistical tests for validating the power-law hypothesis are a crucial part of a complete workflow.",
+        "potentialExtensions": "Extension to fit other heavy-tailed distributions (e.g., log-normal, stretched exponential) for comparison. Bivariate power-law analysis."
+    }
+}

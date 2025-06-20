@@ -1,0 +1,131 @@
+{
+    "tenduModuleID": "TEN-PLO-1.0",
+    "moduleName": "Phase-Locking Observation",
+    "pirouetteFrameworkOrigin": "Primarily derived from TPF Vol 2, Module 12: Phase Lock Resonance Framework. Leverages core concepts of Time-Adherence ($T_a$) from TPF Vol 1 (Modules 1, 3, 6) and Ki Constant ($K_i$) for harmonic relationships.",
+    "version": "1.0",
+    "dateLastUpdated": "2025-05-31",
+    "primaryPurposeConciseStatement": "To detect, quantify, and characterize phase-locking and frequency entrainment phenomena between two or more oscillating systems or signals, thereby revealing the nature, strength, and stability of their resonant coupling and synchronous relationships.",
+    "coreTransformationAchieved": "Transforms time-series data from multiple oscillatory sources into quantitative measures of their phase and frequency relationships (e.g., stable phase differences, common or harmonically related frequencies, order parameters). This identifies and characterizes synchronization regimes within the observed systems.",
+    "conceptualAnchor": {
+      "theoreticalInsight": "Phase-locking is a fundamental resonance mechanism where interacting oscillating systems adjust their rhythms to achieve a stable phase relationship, often leading to frequency entrainment. This synchronization arises from mutual (or driven) resonant coupling and is crucial for coordinated behavior and information exchange in complex systems. The stability and characteristics of such locks are influenced by the system's Time-Adherence ($T_a$), the coupling strength (related to $\\Gamma$), and potential $K_i$-harmonic relationships.",
+      "pirouetteParameters": [
+        {
+          "parameter": "Time-Adherence (Ta)",
+          "relevance": "A high ensemble $T_a$ (calculated as the square of the Kuramoto order parameter, $T_a = r^2$) indicates strong phase-locking across multiple oscillators. The $T_a$ of individual oscillators also influences their susceptibility to entrainment."
+        },
+        {
+          "parameter": "Gladiator Force (Γ)",
+          "relevance": "In the context of the Phase Lock Resonance Framework (TPF Vol 2, Module 12), $\\Gamma$ governs coupling strength and flexibility. While not directly measured by this *observational* module, the observed locking characteristics can infer properties of the underlying $\\Gamma$ that facilitates the lock."
+        },
+        {
+          "parameter": "Ki Constant (Ki)",
+          "relevance": "$K_i$ determines the possibility and stability of n:m harmonic locking relationships (e.g., synchronization at integer-ratio frequencies like $2\\pi n / K_i$). Observed phase differences or frequency ratios might align with $K_i$-modulated values."
+        },
+        {
+          "parameter": "Phase (θ_i(t)), Frequency (ω_i(t))",
+          "relevance": "These are the primary observables extracted from input signals for each oscillator 'i', which are then analyzed for locking relationships."
+        }
+      ]
+    },
+    "inputStreamSpecificationAndPreparation": {
+      "requiredDataCharacteristics": "Simultaneously recorded time-series data from at least two, and preferably more, oscillating systems or signals. Signals should exhibit discernible oscillatory behavior.",
+      "formatAndStructure": "Numerical arrays or streams, where each array/stream represents the state of an individual oscillator over a common time axis.",
+      "minimumViableDataSet": "Data should span many cycles of the characteristic oscillations to allow for robust phase/frequency estimation and assessment of locking stability.",
+      "preprocessingSteps": "Signal denoising and detrending. Extraction of instantaneous phase $\\theta_i(t)$ and instantaneous frequency $\\omega_i(t)$ for each oscillator 'i'. Common methods include using the Hilbert transform to obtain the analytic signal, or wavelet analysis. Phase unwrapping is critical to ensure continuous phase representation."
+    },
+    "operationalParametersAndConfiguration": {
+      "modeSpecificParameters": [
+        {
+          "parameter": "PhaseExtractionMethod",
+          "description": "The technique used to extract instantaneous phase from the time series (e.g., 'HilbertTransform', 'WaveletTransform', 'ZeroCrossingInterpolation').",
+          "typicalRange": "As per method choice."
+        },
+        {
+          "parameter": "FrequencyExtractionMethod",
+          "description": "The technique used to extract instantaneous frequency (e.g., 'DerivativeOfPhase', 'WaveletRidge').",
+          "typicalRange": "As per method choice."
+        },
+        {
+          "parameter": "PhaseLockingCriteria",
+          "description": "Quantitative criteria to define a phase-locked state (e.g., maximum allowable standard deviation of relative phase, minimum duration of stable relative phase).",
+          "typicalRange": "E.g., std($\\Delta\\phi_{ij}(t)$) < 0.1 radians for > 5 cycles."
+        },
+        {
+          "parameter": "HarmonicRatios (n:m)",
+          "description": "A list of integer ratios (e.g., [[1,1], [1,2], [2,3]]) to test for n:m harmonic locking if 1:1 locking is not found.",
+          "typicalRange": "Small integers, e.g., n,m from 1 to 5."
+        },
+        {
+          "parameter": "AnalysisWindowSize (for time-varying lock)",
+          "description": "Duration of the sliding window used to assess phase-locking if the relationship is not stationary over the entire dataset.",
+          "typicalRange": "Multiple (e.g., 5-10) characteristic periods of the oscillations."
+        }
+      ],
+      "pirouetteParameterConfiguration": "The interpretation of observed locking behavior (e.g., stability, Arnold Tongue width) can be related back to the system's underlying $T_a, \\Gamma, K_i$ as per TPF Vol 2, Module 12, although this module focuses on observation."
+    },
+    "proceduralImplementationAlgorithmicGuide": [
+      "Data Acquisition and Preprocessing: For each of the N input time series $x_i(t)$, extract the instantaneous phase $\\theta_i(t)$ and instantaneous frequency $\\omega_i(t)$ using the chosen `PhaseExtractionMethod` and `FrequencyExtractionMethod`. Ensure phases are unwrapped.",
+      "Relative Phase Calculation: For all relevant pairs of oscillators $(i, j)$, and for all specified `HarmonicRatios` (n:m), calculate the generalized relative phase series: $\\Delta\\phi_{ij}^{nm}(t) = (n \\cdot \\theta_i(t) - m \\cdot \\theta_j(t)) \\pmod{2\\pi}$. (For 1:1 locking, n=1, m=1).",
+      "Phase-Lock Detection and Quantification:\n    a. Analyze the distribution of $\\Delta\\phi_{ij}^{nm}(t)$ within analysis windows. A sharp peak in the distribution suggests a preferred phase difference.\n    b. Evaluate the stability of $\\Delta\\phi_{ij}^{nm}(t)$ over time. If it remains approximately constant (or bounded within a narrow range specified by `PhaseLockingCriteria`) for a duration significantly longer than the oscillation periods, n:m phase-locking is identified. Quantify the mean phase difference and its stability (e.g., standard deviation, drift rate).",
+      "Frequency Entrainment Detection: During periods identified as phase-locked, compare the instantaneous frequencies. For n:m locking, check if $n \\cdot \\omega_i(t) \\approx m \\cdot \\omega_j(t)$ consistently.",
+      "Ensemble Synchrony Calculation (for N > 2): Calculate an overall measure of global synchrony for the ensemble, such as the Kuramoto order parameter $r(t) = |\\frac{1}{N} \\sum_k e^{i\\theta_k(t)}|$. The ensemble Time-Adherence can be given by $T_a(t) = r(t)^2$.",
+      "Arnold Tongue Mapping (Experimental/Exploratory): If system parameters (like coupling strength or natural frequencies) can be experimentally varied, systematically map the regions in parameter space where phase-locking (satisfying `PhaseLockingCriteria`) is observed. This empirically constructs the Arnold Tongue for the system."
+    ],
+    "outputStreamSpecificationAndInterpretation": {
+      "outputDataStructure": "Time series of relative phases (e.g., $\\Delta\\phi_{ij}^{nm}(t)$). Statistics describing the distribution and stability of these relative phases. Identified periods of phase-locking and frequency entrainment for specific n:m ratios. Time series of the ensemble order parameter $r(t)$ or $T_a(t)$ (if N > 2). Optionally, an empirical Arnold Tongue map if parameter exploration was performed.",
+      "expectedInsightsAndDerivations": "Identification of which oscillators or subsystems are synchronized. Quantification of the strength and stability of their phase-locking. Characterization of the synchronization type (e.g., 1:1, n:m harmonic, in-phase, anti-phase). Detection of transitions between synchronized and desynchronized states. Inference of coupling relationships and strengths within a network of oscillators.",
+      "interpretationGuidelines": "A stable (low variance) time series of $\\Delta\\phi_{ij}^{nm}(t)$ around a constant value indicates n:m phase-locking. Consistent equality $n \\cdot \\omega_i(t) \\approx m \\cdot \\omega_j(t)$ during such periods confirms frequency entrainment. An order parameter $r(t)$ close to 1 (and thus $T_a(t)$ close to 1) indicates strong global synchrony in an ensemble. The width of an Arnold Tongue in parameter space indicates the robustness of locking to variations in oscillator properties or coupling."
+    },
+    "integrationHooksAndWorkflowContext": {
+      "upstreamDependencies": "Requires multiple time-series data. Signal processing steps for phase/frequency extraction are often implicitly part of this module but can also be performed by dedicated upstream modules.",
+      "downstreamApplications": "The identified locking characteristics (e.g., stable phase differences, coupling strengths inferred from Arnold Tongues) can be used to parameterize theoretical models of coupled systems (e.g., the $V_{lock}$ potential or extended Kuramoto models from TPF Vol 2, Module 12). Observed transitions between locked and unlocked states can be further analyzed by Funnel Inversion Detection or Collapse/Rebound Dynamics modules."
+    },
+    "validationAndVerificationProtocols": {
+      "implementationCorrectness": "Verify phase/frequency extraction algorithms against signals with known phase/frequency. Test locking detection on synthetic data from coupled oscillator models (e.g., Kuramoto, coupled Van der Pol oscillators) where locking regimes are known.",
+      "insightMeaningfulness": "Observed phase-locking should be statistically significant compared to what would be expected from chance in uncoupled systems (e.g., by using surrogate data methods like phase randomization of original signals). Identified synchronization should ideally correlate with known functional interactions or pathways in the system under study."
+    },
+    "applicationDomainsAndUseCaseExamples": [
+      "Neuroscience: Detecting phase synchronization between different brain regions from EEG, MEG, or LFP recordings to study neural communication and cognitive processes.",
+      "Biology: Analyzing synchronization of circadian rhythms across cell populations, coordination of cardiac pacemaker cells, synchronized flashing of fireflies, or predator-prey cycle locking.",
+      "Engineering: Characterizing the performance of phase-locked loops (PLLs), ensuring synchronization in power grids, analyzing coupled mechanical vibrational systems, or coordinating robotic swarms.",
+      "Social Sciences & Economics: Observing behavioral synchrony in human interactions (e.g., conversation rhythms, crowd movement), detecting correlated cycles in economic indicators, or analyzing opinion dynamics.",
+      "Physics: Studying synchronization in arrays of lasers, Josephson junctions, or chemical oscillators."
+    ],
+    "caveatsLimitationsAndSensitivityAnalysis": {
+      "conditionsForFailure": "Signals are too noisy or non-stationary for reliable phase/frequency extraction. True coupling is too weak to establish stable phase-locking. Data length is insufficient to distinguish true locking from transient phase alignment.",
+      "inputDataSensitivity": "The accuracy of results heavily depends on the quality of input signals and the robustness of the phase/frequency estimation methods. Phase unwrapping errors can be a significant source of error.",
+      "parameterSensitivity": "The `PhaseLockingCriteria` (thresholds for stability, duration) can influence whether locking is detected. The `AnalysisWindowSize` for non-stationary analysis determines the ability to track dynamic changes in locking.",
+      "computationalComplexity": "Phase/frequency extraction can be computationally intensive for long signals. Pairwise analysis scales as O(N^2) for N oscillators, which can be high for large N. Ensemble measures are O(N)."
+    },
+    "coreMathematicalOperations": [
+      {
+        "name": "Instantaneous Phase Extraction (via Analytic Signal)",
+        "equation": "z_i(t) = x_i(t) + i \\mathcal{H}(x_i(t)); \\quad \\theta_i(t) = \\arg(z_i(t))",
+        "description": "Calculation of the analytic signal $z_i(t)$ for a real signal $x_i(t)$ using the Hilbert transform $\\mathcal{H}$, and then extracting the instantaneous phase $\\theta_i(t)$."
+      },
+      {
+        "name": "Instantaneous Frequency Extraction",
+        "equation": "\\omega_i(t) = \\frac{1}{2\\pi} \\frac{d\\theta_i(t)}{dt}",
+        "description": "Calculation of instantaneous frequency as the scaled time derivative of the (unwrapped) instantaneous phase."
+      },
+      {
+        "name": "Generalized Relative Phase",
+        "equation": "\\Delta\\phi_{ij}^{nm}(t) = (n \\cdot \\theta_i(t) - m \\cdot \\theta_j(t)) \\pmod{2\\pi}",
+        "description": "Calculates the relative phase between oscillator i (multiplied by n) and oscillator j (multiplied by m) for detecting n:m harmonic locking."
+      },
+      {
+        "name": "Kuramoto Order Parameter (Ensemble Synchrony)",
+        "equation": "r(t) = |\\frac{1}{N} \\sum_{k=1}^N e^{i\\theta_k(t)}|; \\quad T_a(t) = r(t)^2",
+        "description": "A measure of global phase coherence in an ensemble of N oscillators. $T_a(t)$ is the Pirouette Time-Adherence for the ensemble."
+      }
+    ],
+    "practiceForPurposeFunctionalRealization": {
+      "functionalEssence": "This Tendu module enables the 'Practice for Purpose' of discerning and quantifying the invisible yet powerful currents of temporal coordination and resonant coupling that bind distinct oscillating entities or processes. It allows an entity to perceive how independent rhythms can merge into collective, synchronized behavior, which often underpins functional relationships, information exchange, or emergent systemic order.",
+      "informationTransformation": "It transforms multiple, potentially complex, time-series datasets (from oscillators) into a clear characterization of their mutual phase and frequency interrelationships. This involves distilling intricate temporal dynamics into quantitative measures of synchrony, such as stable phase differences, frequency entrainment ratios, and collective order parameters. It effectively translates raw temporal data into a map of the 'synchronization architecture' of a system.",
+      "purposefulUtilization": "An entity can utilize this mode to:\n1. Identify functional connections, communication pathways, or mechanisms of influence between components of a complex system by detecting their phase-locking patterns.\n2. Diagnose the health, stability, or operational state of coupled systems by monitoring their degree and type of synchronization (e.g., loss of synchrony might indicate system degradation or decoupling).\n3. Reverse-engineer or infer the coupling strengths and network topology within a system by observing which elements lock and under what conditions (e.g., by mapping Arnold Tongues).\n4. Predict or understand transitions between different modes of collective behavior by tracking changes in phase-locking regimes.\n5. Optimize the performance or resilience of engineered or social systems by designing interventions that promote beneficial synchronization or disrupt detrimental locking patterns."
+    },
+    "customizationAndAdvancedConfigurationOptional": {
+      "tailoringGuidance": "The choice of `PhaseExtractionMethod` and `FrequencyExtractionMethod` should be adapted to the specific characteristics of the signals (e.g., narrowband vs. broadband, stationary vs. non-stationary). Statistical thresholds for `PhaseLockingCriteria` should be chosen based on the desired sensitivity and specificity for the domain.",
+      "potentialExtensions": "Incorporation of advanced statistical methods for assessing the significance of phase-locking (e.g., permutation tests, phase-shuffling surrogate analysis). Extension to multivariate phase-locking analysis to capture complex multi-oscillator interactions beyond pairwise measures. Implementation of causal inference techniques (e.g., Granger causality on phases, phase transfer entropy) to determine the direction of influence in observed locking."
+    }
+  }

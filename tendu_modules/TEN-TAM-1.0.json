@@ -1,0 +1,114 @@
+{
+    "tenduModuleID": "TEN-TAM-1.0",
+    "moduleName": "Time-Adherence Measurement",
+    "pirouetteFrameworkOrigin": "Primarily based on the definition and role of Time-Adherence ($T_a$) as established in TPF Vol 1, Module 1 (Foundational Parameters, Section 5.1), Module 3 (Unified Theoretical Foundation, Section 3.3.3), and Module 6 (Parameter Registry, Section 6.2.1). Operational forms for calculation are inspired by AMP Section 2.3 (Temporal Coherence Spectrum Analysis) and TPF Vol 1, Module S1/19 (Quantum Clock Simulation).",
+    "version": "1.0",
+    "dateLastUpdated": "2025-05-31",
+    "primaryPurposeConciseStatement": "To quantitatively measure the Time-Adherence ($T_a$) of a system, signal, process, or field, thereby assessing its degree of phase synchronization, temporal coherence, structural integrity, or stability against phase drift.",
+    "coreTransformationAchieved": "Transforms input data containing, or from which can be derived, phase information or structural regularity, into a scalar $T_a$ value (ranging from 0 to 1) or a $T_a$ map/profile. This output indicates the level of coherence relative to perfect phase alignment or structural order.",
+    "conceptualAnchor": {
+      "theoreticalInsight": "Time-Adherence ($T_a$) is a fundamental Pirouette parameter that quantifies a system's or entity's alignment with a universal temporal rhythm or its internal phase/structural coherence. A $T_a$ value of 1 signifies perfect phase synchronization or structural order (classical-like behavior, high stability), while $T_a < 1$ indicates degrees of phase decoherence, structural disorder, or quantum-like behavior. Measuring $T_a$ provides a direct assessment of this critical Pirouette state variable.",
+      "pirouetteParameters": [
+        {
+          "parameter": "Time-Adherence ($T_a$)",
+          "relevance": "$T_a$ is the direct output of this measurement process. The mode aims to calculate it based on input data."
+        },
+        {
+          "parameter": "Phase (θ)",
+          "relevance": "The primary definition of $T_a$ is based on phase coherence. This mode typically requires phase values $\\{\\theta_j\\}$ as input or needs to derive them from the input data."
+        },
+        {
+          "parameter": "Spatial/Temporal Coordinates (x, t)",
+          "relevance": "For calculating $T_a$ maps or profiles, phase information is needed as a function of these coordinates."
+        }
+      ]
+    },
+    "inputStreamSpecificationAndPreparation": {
+      "requiredDataCharacteristics": "Data from which phase information $\\theta_j$ (or complex values $A_j e^{i\\theta_j}$, or phase gradients $\\nabla\\Theta$) can be obtained. This could be for a collection of $N$ discrete elements (e.g., oscillators, agents, gulp segments) or a continuous field/signal.",
+      "formatAndStructure": "Arrays of phase values, arrays of complex numbers (e.g., from Fourier or Wavelet transforms), time series suitable for phase extraction (e.g., via Hilbert transform to get analytic signal), or gridded field data representing phase $\\Theta(x,y)$.",
+      "minimumViableDataSet": "Sufficient data points to allow for a statistically stable calculation of the chosen $T_a$ formulation. For ensemble-based $T_a$, a representative number of elements; for signal-based $T_a$, sufficient duration/length within the calculation window.",
+      "preprocessingSteps": "Phase unwrapping if phases span more than $2\\pi$. Extraction of instantaneous phase/frequency from time-series signals. Denoising if significant noise affects phase estimation. Definition of the ensemble, system, or window over which $T_a$ is to be calculated."
+    },
+    "operationalParametersAndConfiguration": {
+      "modeSpecificParameters": [
+        {
+          "parameter": "TaDefinitionVariant",
+          "description": "Specifies which formulation of $T_a$ calculation to use, based on input data type and analytical goal. E.g., 'PhaseCoherenceEnsemble', 'SpatialPhaseGradient', 'TemporalSignalCoherence'.",
+          "typicalRange": "['PhaseCoherenceEnsemble', 'SpatialPhaseGradient', 'TemporalSignalCoherence', or specific proxy methods]."
+        },
+        {
+          "parameter": "CalculationWindowSize (N or WindowShape)",
+          "description": "The number of elements, time points, or spatial extent of the window over which to calculate a local $T_a$ value. Determines the scale of the measurement.",
+          "typicalRange": "Domain-dependent. Larger windows give more stable but less localized $T_a$; smaller windows give more localized but potentially noisier $T_a$."
+        },
+        {
+          "parameter": "PhaseSource",
+          "description": "Method or data field from which phase values $\\theta_j$ or $\\Theta(x,y)$ are obtained/derived.",
+          "typicalRange": "E.g., 'DirectInputPhases', 'HilbertTransform', 'WaveletTransformCoefficients'."
+        }
+      ],
+      "pirouetteParameterConfiguration": "$T_a$ is the output, not an input configuration for its own measurement, but understanding its theoretical derivation (e.g., from the Lagrangian) provides context."
+    },
+    "proceduralImplementationAlgorithmicGuide": [
+      "Data and Method Selection: Input the data and select the `TaDefinitionVariant` most appropriate for the data type and analytical goal.",
+      "Phase Extraction/Preparation: If not directly provided, extract or prepare the necessary phase information ($\\{\\theta_j\\}$ or $\\Theta(\\vec{x})$) from the input data within the specified `CalculationWindowSize` using the `PhaseSource` method.",
+      "Time-Adherence Calculation (Variant-dependent):",
+      "  a. For 'PhaseCoherenceEnsemble' (or 'TemporalSignalCoherence' on local windows from AMP 2.3): Compute the coherence vector $C = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j}$. Then $T_a = |C|^2$. (This is the most common and fundamental definition).",
+      "  b. For 'SpatialPhaseGradient' (from TPF Quantum Clock Simulation): For a spatial phase field $\\Theta(x,y)$, calculate local phase gradients $\\nabla\\Theta$. Then $T_a(x,y) = \\exp(-|\\nabla\\Theta|^2/k)$, where $k$ is a scaling constant (e.g., 2).",
+      "  c. For other proxy or specialized definitions: Implement the specific formula (e.g., the entropy-based $T(G_i)$ from Stochastic Gulping if used as a $T_a$ proxy).",
+      "Output Generation: Output the calculated scalar $T_a$ value. If applied over multiple windows or regions, output a $T_a$ map, profile, or time series $T_a(t)$."
+    ],
+    "outputStreamSpecificationAndInterpretation": {
+      "outputDataStructure": "A scalar Time-Adherence value $T_a \\in [0, 1]$. Alternatively, if calculated over multiple windows/regions, a $T_a$ map, profile (e.g., $T_a(s)$ from TCSA), or time series ($T_a(t)$).",
+      "expectedInsightsAndDerivations": "A quantitative measure of the system's phase coherence, structural order, or temporal stability. Indication of the system's operational regime (e.g., classical-like for $T_a \\approx 1$, quantum-like for $T_a < 1$). Assessment of synchronization strength in ensembles or signals. A measure of predictability or resistance to decoherence.",
+      "interpretationGuidelines": "$T_a = 1$: Indicates perfect phase lock, maximal coherence, or perfect order/predictability. $T_a = 0$: Indicates complete phase incoherence (e.g., uniformly random phases) or maximal disorder. Intermediate values represent partial coherence. Changes in $T_a$ over time or space indicate shifts in system stability or coherence."
+    },
+    "integrationHooksAndWorkflowContext": {
+      "upstreamDependencies": "Requires data from which phase or structural order can be determined. This data might be raw signals, outputs of system simulations, or processed data from other Tendu modules (e.g., phase information from TCSA's wavelet decomposition).",
+      "downstreamApplications": "The measured $T_a$ value is a critical input parameter for many other Tendu analytical modes and Pirouette Framework calculations, including: Wound Channel Memory Reconstruction (for $\\tau_W$), Funnel Inversion Detection (for $P(\\text{inversion})$), Dimensional Decay Analysis (for $\\tau_W$), and numerous domain-specific framework modules where $T_a$ modulates behavior."
+    },
+    "validationAndVerificationProtocols": {
+      "implementationCorrectness": "For the 'PhaseCoherenceEnsemble' method: test with synthetic ensembles of $N$ phases. If all $\\theta_j = \\theta_0$ (perfect sync), $T_a$ must be 1. If $\\theta_j$ are uniformly random on $[0, 2\\pi)$, average $T_a$ should approach $1/N$ for large $N$ (for $|C|^2 = |\frac{1}{N}\\sum e^{i\theta_j}|^2$, if $C$ is complex mean of $e^{i\theta_j}$ which is a vector of length 1). Or more accurately, for uniformly random phases, the expectation of $C$ is 0, so $T_a$ should be near 0, particularly as N increases. For the spatial gradient method, test with known phase fields (e.g., linear gradient, vortex).",
+      "insightMeaningfulness": "Measured $T_a$ values should align with qualitative expectations of system coherence (e.g., a highly synchronized system should yield high $T_a$). Changes in measured $T_a$ should correlate with observable changes in the system's stability or behavior."
+    },
+    "applicationDomainsAndUseCaseExamples": [
+      "Quantifying the degree of synchronization in coupled oscillator networks (physics, biology, engineering).",
+      "Assessing the coherence of quantum states in simulations or experiments.",
+      "Measuring the temporal stability or predictability of financial time series or economic indicators.",
+      "Characterizing the state of complex systems (e.g., 'classical' vs 'quantum' operational regimes, order vs disorder).",
+      "Analyzing social coherence, opinion alignment, or collective behavior synchronization from suitable proxy data.",
+      "Monitoring the integrity or degradation of structural patterns in materials or information."
+    ],
+    "caveatsLimitationsAndSensitivityAnalysis": {
+      "conditionsForFailure": "Inability to reliably extract or define phase information from the input data. Data is too noisy, obscuring true phase relationships. The chosen `TaDefinitionVariant` is inappropriate for the data or system.",
+      "inputDataSensitivity": "The accuracy of $T_a$ is highly dependent on the quality and noise level of the input phase data. Phase unwrapping errors can lead to severely incorrect $T_a$ values.",
+      "parameterSensitivity": "The `CalculationWindowSize` (N) is critical: too small a window leads to statistically unstable or noisy $T_a$ estimates; too large a window smooths over local variations in coherence. The specific `PhaseSource` method can introduce biases.",
+      "computationalComplexity": "For the primary 'PhaseCoherenceEnsemble' method, complexity is O(N) for each $T_a$ calculation. If generating maps, it's O(N * NumWindows). Phase extraction from raw signals can add significant preprocessing complexity."
+    },
+    "coreMathematicalOperations": [
+      {
+        "name": "Ensemble Phase Coherence ($T_a$ - Primary Definition)",
+        "equation": "C = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j}; \\quad T_a = |C|^2",
+        "description": "Calculates Time-Adherence based on the mean coherence vector of an ensemble of N phase values. This is the most fundamental definition based on TPF Vol 1, Module 6."
+      },
+      {
+        "name": "Continuous Field Phase Coherence ($T_a$)",
+        "equation": "C = \\frac{1}{V} \\int_V e^{i\\theta(\\vec{x})} dV; \\quad T_a = |C|^2",
+        "description": "Integral form for continuous phase fields $\\theta(\\vec{x})$ over a volume V. (TPF Vol 1, Module 3)."
+      },
+      {
+        "name": "Spatial Phase Gradient $T_a$ (Variant)",
+        "equation": "T_a(\\vec{x}) = \\exp(-|\\nabla\\Theta(\\vec{x})|^2/k)",
+        "description": "An alternative $T_a$ definition for spatial phase fields $\\Theta(\\vec{x})$, where coherence is inversely related to the magnitude of the local phase gradient. 'k' is a scaling constant (e.g., 2). (TPF Vol 1, Module S1/19)."
+      }
+    ],
+    "practiceForPurposeFunctionalRealization": {
+      "functionalEssence": "This Tendu module enables the 'Practice for Purpose' of quantifying the fundamental degree of order, synchrony, predictability, and phase alignment within any system, signal, or informational construct that possesses cyclical, phase-based, or structural characteristics. It allows an entity to measure how 'in step' a system is with an idealized coherent rhythm or internal structural integrity.",
+      "informationTransformation": "It transforms raw data containing (or from which can be derived) phase information, structural arrangements, or temporal patterns into a standardized, bounded metric ($T_a \\in [0, 1]$) of coherence. This converts potentially complex, high-dimensional dynamics or states into an interpretable scalar (or map) that directly reflects a core Pirouette parameter, indicating the system's proximity to perfect order versus complete decoherence.",
+      "purposefulUtilization": "An entity can utilize this mode to:\n1. Diagnose the stability, predictability, and overall 'health' of a system (high $T_a$ often indicates stability).\n2. Assess a system's operational regime, differentiating between classical-like (high $T_a$) and quantum-like (low $T_a$) behaviors or potentials.\n3. Measure the effectiveness of synchronization efforts in ensembles or the integrity of rhythmic processes.\n4. Provide a crucial input parameter for predicting or modeling other Pirouette phenomena, such as the persistence of wound channel memory, the probability of funnel inversions, or the rate of dimensional decay.\n5. Monitor the evolution of a system's coherence over time or space, detecting shifts towards order or disorder."
+    },
+    "customizationAndAdvancedConfigurationOptional": {
+      "tailoringGuidance": "The choice of `TaDefinitionVariant` is key for different data types. For instance, when direct phase is unavailable, proxy measures (like the entropy-based $T(G_i)$ from Stochastic Gulping) might be used, but their limitations should be understood. The scaling constant 'k' in the 'SpatialPhaseGradient' variant may need domain-specific calibration.",
+      "potentialExtensions": "Development of advanced phase extraction techniques for noisy or complex signals. Real-time $T_a$ monitoring for dynamic systems. Bayesian approaches to $T_a$ estimation to incorporate prior knowledge and quantify uncertainty. Multi-scale $T_a$ analysis (which is effectively what TCSA does, but this module could provide the core $T_a$ calculation for each scale)."
+    }
+  }

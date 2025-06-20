@@ -1,0 +1,127 @@
+{
+    "module_name": "TEN-CIS-1.0",
+    "version": "1.0",
+    "purpose": "To quantify a society's resilience against 'Manipulation Resonance' and 'reality distortion fields' by assessing its 'Collective Integrity Shield' strength, enabling strategies to 'negate dissonant attractors' and 'reclaim coherent societal memory'. This analysis is vital for fostering societal 'cognitive sovereignty' and 'authentic Ki-modulated rhythm'.",
+    "parent_modules": [
+      "Manipulation Resonance Framework",
+      "Interference Law",
+      "Null Space Reclamation",
+      "Entropy Memory Index (EMI)",
+      "Resonant Cosmos Cartography",
+      "Coherence Architect Protocol (CAP)"
+    ],
+    "children_modules": [],
+    "parameters": [
+      {
+        "name": "kappa_cis",
+        "type": "float",
+        "description": "A constant representing the sensitivity of the Collective Integrity Shield (CIS) to 'null space' reclamation. This factor determines how strongly the reclamation of forgotten truths contributes to the overall integrity shield strength (e.g., value between 0.1 and 1.0, where higher values mean greater impact of reclamation)."
+      }
+    ],
+    "inputs": [
+      {
+        "name": "societal_ta_collective",
+        "type": "float",
+        "description": "The current collective Time-Adherence (0-1) of the society, reflecting its overall coherence and stability. A higher value indicates a more coherent society."
+      },
+      {
+        "name": "societal_gamma_collective",
+        "type": "float",
+        "description": "The current collective Gladiator Force (>=0) of the society, reflecting its internal confinement pressure, boundary rigidity, and openness to external influence. Used for recommended tuning."
+      },
+      {
+        "name": "manipulation_vectors_data",
+        "type": "array_of_objects",
+        "description": "A structured array where each object represents one of the 12 Manipulation Vectors currently acting on society. Each object should include a 'strength' (mu_i) and the 'vector_type' (M_i^Manipulation, e.g., 'Inversion Framing' or 'Gaslight Wound Channeling')."
+      },
+      {
+        "name": "emi_scores_null_spaces",
+        "type": "array_of_floats",
+        "description": "An array of Entropy Memory Index (EMI) scores for identified 'null spaces' within the societal memory. These represent areas of forgotten, neglected, or suppressed truths. Lower EMI scores indicate more active or reclaimable latent memory."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "cis_score",
+        "type": "float",
+        "description": "The calculated Collective Integrity Shield (CIS) score. A higher score indicates greater societal resilience against manipulation and stronger collective cognitive sovereignty."
+      },
+      {
+        "name": "total_manipulation_potential",
+        "type": "float",
+        "description": "The aggregated impact of all detected manipulation vectors on the society. This is the denominator in the CIS calculation."
+      },
+      {
+        "name": "reclamation_factor",
+        "type": "float",
+        "description": "The factor representing the contribution of 'null space' reclamation to the CIS score. A higher value indicates greater success in reclaiming coherent societal memory."
+      },
+      {
+        "name": "recommended_gamma_tuning",
+        "type": "float",
+        "description": "The recommended adjustment for the collective Gladiator Force (Gamma) to optimize the societal integrity shield. This might be a target Gamma value or a directional adjustment (e.g., +0.1 to increase rigidity, -0.1 to increase permeability)."
+      },
+      {
+        "name": "top_manipulation_vectors_impact",
+        "type": "array_of_objects",
+        "description": "A ranked list of the manipulation vectors with the highest current impact on the society, ordered by their calculated strength."
+      },
+      {
+        "name": "reclamation_potential_areas",
+        "type": "array_of_objects",
+        "description": "A list of identified 'null spaces' with high potential for 'coherent societal memory' reclamation, based on their EMI scores and strategic relevance."
+      }
+    ],
+    "mathematical_formulation": {
+      "equation": "\\begin{align*} \\text{Total Manipulation Potential (TMP)} &= \\sum_{i=1}^{12} \\mu_i \\cdot M_i^{\\text{Manipulation}} \\\\ \\text{Reclamation Factor} &= 1 - \\exp(-\\kappa_{\\text{cis}} \\cdot \\overline{\\text{EMI}}_{\\text{null}}) \\\\ \\text{Collective Integrity Shield (CIS)} &= \\frac{T_{a,\\text{collective}}}{1 - T_{a,\\text{collective}}} \\cdot \\frac{1}{\\text{TMP}} \\cdot \\text{Reclamation Factor} \\\\ \\text{Recommended } \\Gamma \\text{ Tuning} &= \\Gamma_{\\text{collective}}^{\\text{optimal}} = \\Gamma_{\\text{desired}} \\cdot (1 + \\beta \\cdot (1 - \\text{CIS})) \\end{align*}",
+      "variables": [
+        {
+          "name": "$T_{a,\\text{collective}}$",
+          "description": "Current collective Time-Adherence of the society (from inputs)."
+        },
+        {
+          "name": "$\\mu_i$",
+          "description": "Strength or weighting of the i-th Manipulation Vector (from inputs)."
+        },
+        {
+          "name": "$M_i^{\\text{Manipulation}}$",
+          "description": "Representation of the i-th Manipulation Vector (from inputs, type or calculated impact)."
+        },
+        {
+          "name": "$\\kappa_{\\text{cis}}$",
+          "description": "Sensitivity constant for CIS to null space reclamation (from parameters)."
+        },
+        {
+          "name": "$\\overline{\\text{EMI}}_{\\text{null}}$",
+          "description": "The mean or a representative aggregate of EMI scores from 'null spaces' (from inputs). Lower values indicate less entropy, higher potential for reclamation."
+        },
+        {
+          "name": "$\\Gamma_{\\text{collective}}^{\\text{optimal}}$",
+          "description": "The calculated optimal collective Gladiator Force for the society."
+        },
+        {
+          "name": "$\\Gamma_{\\text{desired}}$",
+          "description": "A baseline or target Gladiator Force for healthy societal integrity (e.g., 0.3-0.5)."
+        },
+        {
+          "name": "$\\beta$",
+          "description": "A tuning coefficient for Gladiator Force adjustment (e.g., 0.1-0.5)."
+        }
+      ]
+    },
+    "connection_to_pirouette": [
+      "Directly applies the 'Manipulation Resonance Framework' by using its vectors to quantify and diagnose coercive influences.",
+      "Leverages 'Interference Law' to inform strategies for 'negating dissonant attractors' through precise 'anti-phase' applications.",
+      "Integrates 'Null Space Reclamation' and 'Entropy Memory Index' by incorporating the recovery of 'coherent societal memory' as a critical component of integrity strength, as inspired by Diogenes's insights.",
+      "Contributes to the 'Coherence Architect Protocol' (CAP) by providing the central metric and strategic guidance for its 'Collective Integrity Shield & Dissonant Attractor Negation' stage.",
+      "Highlights the importance of 'Gladiator Force' tuning for achieving 'cognitive sovereignty' and maintaining 'authentic societal rhythm' in the face of external noise."
+    ],
+    "use_cases": [
+      "Assessing and monitoring the vulnerability of societal groups, organizations, or nations to disinformation campaigns, propaganda, and other forms of psychological or informational manipulation.",
+      "Developing proactive strategies and 'Interference Law' protocols for digital and psychological self-defense for communities and institutions.",
+      "Identifying historical 'null spaces' or suppressed narratives that, if reclaimed, could enhance societal 'Time-Adherence' and resilience against future manipulation.",
+      "Guiding ethical policy development to prevent the creation of 'reality distortion fields' and ensure transparency and truthfulness in public discourse.",
+      "Measuring the impact of interventions aimed at restoring trust and collective cognitive function in polarized or fragmented societies."
+    ],
+    "notes": "The Reclamation Factor increases as the mean EMI of null spaces decreases, indicating that more 'reclaimable' memory contributes to a stronger shield. The recommended Gamma tuning suggests that if the CIS is low, a society might need to adjust its collective Gladiator Force (either increase rigidity or promote targeted permeability) to improve its defense. This module assumes that 'Manipulation Vectors' can be reliably identified and quantified."
+  }

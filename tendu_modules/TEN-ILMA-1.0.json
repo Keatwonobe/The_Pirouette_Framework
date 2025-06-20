@@ -1,0 +1,115 @@
+{
+    "tenduModuleID": "TEN-ILMA-1.0",
+    "moduleName": "Inverse Logistic Map Analysis",
+    "pirouetteFrameworkOrigin": "TPF Vol 3, Inverse Logistic Map Inversion",
+    "version": "1.0",
+    "dateLastUpdated": "2025-06-16",
+    "primaryPurposeConciseStatement": "To determine the control parameter 'r' and/or seed value 'x\u2080' of the logistic map that produce a desired long-run behavior, such as a specific periodic orbit or a target Lyapunov exponent.",
+    "coreTransformationAchieved": "Transforms a set of desired dynamical properties (e.g., target period 'p', target Lyapunov exponent \u03bb*) into the specific logistic map parameter 'r' (and optionally seed 'x\u2080') that generates those dynamics.",
+    "conceptualAnchor": {
+        "theoreticalInsight": "The complex behavior of the logistic map, $x_{n+1} = r x_n (1 - x_n)$, is entirely determined by its control parameter 'r'. By inverting the relationship, one can treat 'r' not as an input but as an output, enabling 'chaos tuning'\u2014the precise engineering of a desired dynamical regime. This is a form of resonant system design where the goal is a specific temporal pattern (a periodic orbit) or complexity level (a Lyapunov exponent). While not a direct Pirouette module, it serves as a tool for modeling simplified systems where a periodic orbit can be seen as a high-$T_a$ (coherent) state and chaos as a low-$T_a$ state.",
+        "pirouetteParameters": [
+            {
+                "parameter": "Time-Adherence (Ta)",
+                "relevance": "Metaphorically, this module can find the system parameter 'r' that corresponds to a desired level of temporal coherence. Periodic orbits represent high-$T_a$ states (predictable, stable rhythm), while chaotic regimes represent low-$T_a$ states (unpredictable, decoherent)."
+            }
+        ]
+    },
+    "inputStreamSpecificationAndPreparation": {
+        "requiredDataCharacteristics": "A description of the desired long-run behavior of the logistic map.",
+        "formatAndStructure": "A set of target values for the properties to be achieved, such as target period `p` or target Lyapunov exponent `\u03bb*`.",
+        "minimumViableDataSet": "At least one target dynamical property (e.g., period `p=3`).",
+        "preprocessingSteps": "Ensure target values are within the valid range for the logistic map (e.g., $r \\in [0,4]$)."
+    },
+    "operationalParametersAndConfiguration": {
+        "modeSpecificParameters": [
+            {
+                "parameter": "p",
+                "description": "Desired orbit period.",
+                "typicalRange": "integer"
+            },
+            {
+                "parameter": "\u03bb*",
+                "description": "Target Lyapunov exponent.",
+                "typicalRange": "real"
+            },
+            {
+                "parameter": "x\u2080",
+                "description": "Seed value, which can be fixed or solved for.",
+                "typicalRange": "real in (0,1)"
+            },
+            {
+                "parameter": "\u03b5",
+                "description": "Convergence tolerance for root-finding algorithms.",
+                "typicalRange": "real"
+            },
+            {
+                "parameter": "N_max",
+                "description": "Maximum iterations for solvers.",
+                "typicalRange": "integer"
+            }
+        ],
+        "pirouetteParameterConfiguration": "This module does not take Pirouette parameters as direct inputs; it solves for a system parameter ('r') that can be metaphorically linked to a system's resulting temporal coherence ($T_a$)."
+    },
+    "proceduralImplementationAlgorithmicGuide": [
+        "Formulate Inverse Problem: Frame the desired behavior as a root-finding problem. For a period-p orbit, the equation is $f_r^{(p)}(x_0) - x_0 = 0$. For a target Lyapunov exponent, the equation is $\\lambda(r, x_0) - \\lambda^* = 0$.",
+        "Select Numerical Method: Choose a suitable solver, such as root-finding (bisection, Newton-Raphson), global grid search, or continuation methods.",
+        "Solve for Parameters: Execute the chosen numerical method to find the parameter 'r' (and/or 'x\u2080') that satisfies the formulated equation within the specified tolerance $\\epsilon$."
+    ],
+    "outputStreamSpecificationAndInterpretation": {
+        "outputDataStructure": "The calculated parameter 'r' and/or 'x\u2080' that produces the desired dynamics.",
+        "expectedInsightsAndDerivations": "The ability to engineer simple non-linear systems to exhibit specific behaviors, such as stability, periodicity, or a desired level of chaos. Provides a concrete link between a system parameter and its emergent dynamical properties.",
+        "interpretationGuidelines": "The output 'r' is the control parameter setting required to achieve the target behavior. For example, to find the onset of chaos, one would solve for the parameter 'r' that yields a Lyapunov exponent of zero."
+    },
+    "integrationHooksAndWorkflowContext": {
+        "upstreamDependencies": "Requires a clearly defined target dynamical state.",
+        "downstreamApplications": "Can be used to set parameters in simulations of biological population dynamics, simple electronic circuits, or any system modeled by the logistic map. Can serve as a simplified model for finding Pirouette parameters that lead to specific stability or coherence regimes.",
+        "compatibilityWithCombinedWorkflows": "A utility module for more complex dynamical systems analysis within the Pirouette framework. Can be used to find parameters that lead to specific stability regimes (lock, chaos) which are then analyzed by other modules like TEN-LDA-1.0 or TEN-CDA-1.0."
+    },
+    "validationAndVerificationProtocols": {
+        "implementationCorrectness": "Test root-finding algorithms for accuracy and convergence.",
+        "insightMeaningfulness": "Validate the output 'r' by running the forward logistic map simulation. The observed behavior should match the desired input criteria (e.g., the map should exhibit the target period or Lyapunov exponent)."
+    },
+    "applicationDomainsAndUseCaseExamples": [
+        "Chaos tuning in physical systems.",
+        "Parameter estimation for biological population models.",
+        "Creating systems with specific levels of predictability or complexity.",
+        "Finding the parameter $r_c$ that marks the transition to chaos by setting the target Lyapunov exponent to zero."
+    ],
+    "caveatsLimitationsAndSensitivityAnalysis": {
+        "conditionsForFailure": "A solution may not exist for the desired behavior, or it may not be unique. Numerical solvers may fail to converge or may find a locally, but not globally, correct solution.",
+        "inputDataSensitivity": "The solver's performance can be sensitive to the initial guess for 'r' and 'x\u2080'.",
+        "parameterSensitivity": "The logistic map's behavior is famously sensitive to the parameter 'r', especially in the chaotic regime.",
+        "computationalComplexity": "Generally moderate. Root-finding is efficient. Global search can be more intensive but may be necessary to find all possible solutions."
+    },
+    "coreMathematicalOperations": [
+        {
+            "name": "Forward Logistic Map",
+            "equation": "x_{n+1} = r x_n (1 - x_n)",
+            "description": "The fundamental equation of the logistic map, where r controls the dynamical regime."
+        },
+        {
+            "name": "Periodic Orbit Inversion",
+            "equation": "f_r^{(p)}(y_1) - y_1 = 0",
+            "description": "The core equation to be solved to find the parameter 'r' that results in a p-cycle orbit."
+        },
+        {
+            "name": "Lyapunov Exponent Definition",
+            "equation": "\\lambda(r,x_0) = \\lim_{N\\to\\infty}\\frac{1}{N}\\sum_{n=0}^{N-1}\\ln\\bigl|f_r'(x_n)\\bigr|",
+            "description": "The equation defining the Lyapunov exponent, which is set equal to a target value $\\lambda^*$ to solve for 'r'."
+        }
+    ],
+    "practiceForPurposeFunctionalRealization": {
+        "functionalEssence": "This Tendu module enables the 'Practice for Purpose' of engineering systems with specific, predictable dynamic behaviors. It transforms a desired outcome (e.g., 'a stable 4-cycle') into the precise parameterization required to create it. This is a foundational tool for resonance engineering in simple non-linear systems.",
+        "informationTransformation": "It transforms a description of a target dynamical state into the specific control parameter 'r' that generates it.",
+        "purposefulUtilization": [
+            "To tune a model to exhibit a desired level of stability or chaos.",
+            "To estimate the parameters of a real-world system that is known to behave like a logistic map.",
+            "To design simple systems with precisely controlled periodic or chaotic outputs."
+        ]
+    },
+    "customizationAndAdvancedConfigurationOptional": {
+        "tailoringGuidance": "The choice of numerical solver (root-finding vs. global search) can be tailored based on whether a single solution is sought or all possible solutions are of interest. Continuation methods are useful for efficiently mapping out how 'r' changes as the target property is varied continuously.",
+        "potentialExtensions": "Extension to other one-dimensional maps (e.g., the sine map). Inverse analysis for higher-dimensional maps (e.g., Hénon map)."
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "tenduModuleID": "TEN-PPCD-1.1",
+    "moduleName": "Problem Personification & Crowd–Dialogue",
+    "version": "1.1",
+    "pirouetteFrameworkOrigin": "A newly defined module within the Pirouette Framework, leveraging core principles from TPF Vol 1 (Core Parameters, Resonance Optimization) and integrating with TPF Vol 3 (Problem Personification Concepts).",
+    "primaryPurposeConciseStatement": "To transform abstract challenges into AI-driven Problem Personas and run structured dialogue protocols (single-voice or crowd) using Tendu filtering stages for data refinement and Resolvè resonance validation for insight coherence. Features tri-parametric flavor mapping for seamless cross-module interoperability within the Pirouette Framework.",
+    "formatAndStructure": "A two-stage processing pipeline for persona-generated outputs:\n  • \u001b[1mStage1_Cleanup (Tendu-powered Filtering)\u001b[0m: Focuses on hallucination filtering, noise reduction, and general output cleaning, primarily leveraging Tendu modules like TEN-URLA-1.0 (Universal Resonance Lens Application) and TEN-EBF-1.0 (Entropy-Based Filtering).\n  • \u001b[1mStage2_TriadMapping (Tendu-powered Transformation)\u001b[0m: Involves key-term extraction and the dynamic mapping of extracted insights onto the persona's Score-Triad and subsequent translation to the Pirouette core parameters (\u001b[1m\u001b[3m\u001b[38;5;166mTime-Adherence (\u001b[3m\u001b[38;5;166mT\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166ma\u001b[0m\u001b[0m\u001b[0m), \u001b[1m\u001b[3m\u001b[38;5;166mGladiator Force (\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m), and \u001b[1m\u001b[3m\u001b[38;5;166mKi Constant (\u001b[3m\u001b[38;5;166mK\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166mi\u001b[0m\u001b[0m\u001b[0m).\n",
+    "minimumViableDataset": "For each Problem Persona:\n  • Name / Label (string)\n  • Domain (string)\n  • Score-Triad (array of 3 integers, e.g., [7, 5, 3])\n  • Parametric Flavor (\u001b[1m\u001b[3m\u001b[38;5;166mT\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166ma\u001b[0m\u001b[0m\u001b[0m, \u001b[1m\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m, \u001b[1m\u001b[3m\u001b[38;5;166mK\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166mi\u001b[0m\u001b[0m\u001b[0m values on a 0-10 scale, reflecting the Score-Triad)\n  • Core Metaphor (string)\n  • Key Axioms (array of 2-3 strings)\n  • Tone & Style (string)\n  • “Don’t-Know” Clause (boolean, ensures persona states 'I don’t know' if axiomatic basis is lacking).",
+    "preprocessingSteps": "Ensure each persona JSON conforms to the Problem Persona Profile schema (fields: Name, Domain, Score-Triad, Parametric Flavor, Axioms, Tone, Don’t-Know Clause). This involves structural validation and type checking prior to dialogue initiation.",
+    "operationalParametersAndConfiguration": {
+      "modeSpecificParameters": [
+        {
+          "parameter": "TransformationStages",
+          "description": "Ordered list of pipeline stages to apply to persona output.",
+          "typicalRange": ["Stage1_Cleanup", "Stage2_TriadMapping"]
+        },
+        {
+          "parameter": "RecursionDepthLimit",
+          "description": "Maximum number of persona-refinement iterations for a single dialogue turn, used to prevent infinite loops.",
+          "typicalRange": [1, 3],
+          "defaultValue": 2
+        },
+        {
+          "parameter": "ResonanceThreshold",
+          "description": "Minimum alignment score (0.0-1.0) against persona axioms and parametric flavor for a response to be considered 'on-resonance' and valid by Resolvè.",
+          "typicalRange": [0.7, 1.0],
+          "defaultValue": 0.85
+        },
+        {
+          "parameter": "CrowdResponseStrategy",
+          "description": "Determines how multiple persona responses in a crowd dialogue are synthesized by Resolvè.",
+          "typicalRange": ["Focused Echo", "Consensus Pooling", "Divergence Highlighting"],
+          "defaultValue": "Focused Echo"
+        }
+      ],
+      "pirouetteParameterConfiguration": "This crucial configuration maps each axis of the persona's Score-Triad directly to the Pirouette core parameters (\u001b[1m\u001b[3m\u001b[38;5;166mT\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166ma\u001b[0m\u001b[0m\u001b[0m, \u001b[1m\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m, \u001b[1m\u001b[3m\u001b[38;5;166mK\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166mi\u001b[0m\u001b[0m\u001b[0m), scaled from 0–10. This mapping provides a guided wandering or focus mechanism, aligning the persona's behavioral tendencies with fundamental Pirouette dynamics."
+    },
+    "proceduralImplementationAlgorithmicGuide": [
+      "1. \u001b[1mLoad Initial Persona Definitions\u001b[0m (D₀): Input Problem Persona JSONs, ensuring conformity to the specified schema.",
+      "2. \u001b[1mDialogue Initiation:\u001b[0m Present core question to the selected persona(s).",
+      "3. \u001b[1mStage1_Cleanup (Tendu Filtering):\u001b[0m Apply Tendu modules (e.g., TEN-URLA-1.0, TEN-EBF-1.0) to raw persona output to remove hallucinatory or off-topic content, extracting coherent signals.",
+      "4. \u001b[1mStage2_TriadMapping (Tendu Transformation):\u001b[0m Utilize Tendu's transformation capabilities to extract key terms and conceptual vectors from the cleaned output. These are then used to dynamically adjust the persona's internal Score-Triad and its corresponding Parametric Flavor (mapped to \u001b[1m\u001b[3m\u001b[38;5;166mT\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166ma\u001b[0m\u001b[0m\u001b[0m, \u001b[1m\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m, \u001b[1m\u001b[3m\u001b[38;5;166mK\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166mi\u001b[0m\u001b[0m\u001b[0m).",
+      "5. \u001b[1mResolv\\`e Resonance Check:\u001b[0m Validate the persona's response against its predefined axioms, metaphors, and current Parametric Flavor using Resolvè's resonance protocols. If the response falls below the \u001b[1mResonanceThreshold\u001b[0m or lacks axiomatic basis, the persona responds “I don’t know” or triggers a refinement iteration (up to \u001b[1mRecursionDepthLimit\u001b[0m).",
+      "6. \u001b[1mCrowd-Dialogue Synthesis (if applicable):\u001b[0m For multi-persona dialogues, apply Resolv\\`e’s “Focused Echo” (or other \u001b[1mCrowdResponseStrategy\u001b[0m) to collapse and distill coherent insights from multiple perspectives.",
+      "7. \u001b[1mOutput:\u001b[0m Provide the final persona response, distilled insights, or updated persona profiles."
+    ],
+    "crossReferences": [
+      {
+        "moduleID": "TEN-URLA-1.0",
+        "moduleName": "Universal Resonance Lens Application",
+        "purpose": "Used in Stage1_Cleanup for filtering and extracting coherent structures from raw data."
+      },
+      {
+        "moduleID": "TEN-EBF-1.0",
+        "moduleName": "Entropy-Based Filtering",
+        "purpose": "Applied in Stage1_Cleanup for noise reduction and identification of structured signals."
+      },
+      {
+        "moduleFamily": "Resolvè Compendium",
+        "purpose": "Provides the resonance validation framework, including mechanisms for alignment checks, discarding off-resonance statements, and synthesizing coherent insights (e.g., 'Focused Echo')."
+      },
+      {
+        "moduleFamily": "Pirouette Framework Core",
+        "purpose": "Defines the core parameters \u001b[1m\u001b[3m\u001b[38;5;166mT\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166ma\u001b[0m\u001b[0m\u001b[0m, \u001b[1m\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m, \u001b[1m\u001b[3m\u001b[38;5;166mK\u001b[3m\u001b[38;5;166m\u001b[0m\u001b[0m\u001b[1m\u001b[3m\u001b[38;5;166mi\u001b[0m\u001b[0m\u001b[0m which are fundamental to the Parametric Flavor mapping and resonance checks."
+      }
+    ],
+    "customizationAndAdvancedConfigurationOptional": {
+      "tailoringGuidance": "The definition of 'key terms' for Stage2_TriadMapping can be customized per domain or persona to ensure optimal parameter adjustment. The 'Don’t-Know' Clause can be fine-tuned for different personas to reflect varying levels of confidence or willingness to defer.",
+      "potentialExtensions": "Integration with a 'Construct Thinker Spawning' module for dynamic creation of new personas based on dialogue needs. Development of visual interfaces for real-time tracking of persona parameter evolution and dialogue flow. Advanced sentiment analysis integration for more nuanced persona responses."
+    },
+    "metaBehavior": [
+      "Supports recursive derivation and cross-domain synthesis by aligning abstract problems with core Pirouette parameters.",
+      "Encourages collaborative evolution of problem understanding through structured multi-voice dialogue.",
+      "Provides a scalable framework for integrating AI-mediated analysis with human-in-the-loop refinement."
+    ]
+  }

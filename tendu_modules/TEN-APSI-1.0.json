@@ -1,0 +1,96 @@
+{
+    "module_name": "TEN-APSI-1.0",
+    "version": "1.0",
+    "purpose": "To diagnose latent, unacknowledged influences (Haunt States) causing algorithmic phase skewing in AI models by quantifying the deviation of observed AI output phase from its intended phase. This module helps discern the 'true Ki-modulated rhythm' of AI output when external influences are present.",
+    "parent_modules": [
+      "Haunt States ",
+      "Entropy Memory Index (EMI) ",
+      "Inverse Constant Analysis ",
+      "Network Resonance Analysis "
+    ],
+    "children_modules": [],
+    "parameters": [
+      {
+        "name": "N",
+        "type": "integer",
+        "description": "Total number of observed output components or samples being analyzed. "
+      },
+      {
+        "name": "theta_EMI",
+        "type": "float",
+        "description": "The Entropy Memory Index (EMI) threshold for considering a latent influence significant enough to contribute to algorithmic phase skewing. Influences with EMI scores below this threshold may be filtered out. "
+      }
+    ],
+    "inputs": [
+      {
+        "name": "observed_output_phases",
+        "type": "array_of_floats",
+        "description": "An array of phase values (e.g., in radians) representing the observed outputs or behaviors of the AI model over time or across different components. "
+      },
+      {
+        "name": "intended_output_phases",
+        "type": "array_of_floats",
+        "description": "An array of phase values (e.g., in radians) representing the ground truth or the originally intended outputs/behaviors for the AI model. Must correspond one-to-one with observed_output_phases. "
+      },
+      {
+        "name": "emi_scores_latent_influences",
+        "type": "array_of_floats",
+        "description": "An array of Entropy Memory Index (EMI) scores corresponding to potential latent influences (Haunt States) detected within the AI model's architecture or training data. The order should align with components in observed/intended phases if applicable, or be a general measure of latent activity. "
+      }
+    ],
+    "outputs": [
+      {
+        "name": "apsi_score",
+        "type": "float",
+        "description": "The calculated Algorithmic Phase Skewing Index (APSI) score. A higher score indicates greater algorithmic phase skewing due to latent influences. "
+      },
+      {
+        "name": "dominant_haunt_vector",
+        "type": "string",
+        "description": "Identification or description of the latent influence (e.g., 'Haunt State ID' or 'Source of Latent Weight') that is contributing most significantly to the calculated APSI score, based on the highest weighted contribution in the summation. "
+      }
+    ],
+    "mathematical_formulation": {
+      "equation": "\\text{APSI}(t) = \\frac{1}{N} \\sum_{i=1}^N \\| \\phi_{\\text{observed},i}(t) - \\phi_{\\text{intended},i}(t) \\| \\cdot \\exp\\left( -\\frac{\\text{EMI}_i(t)}{\\theta_{\\text{EMI}}} \\right)",
+      "variables": [
+        {
+          "name": "\\text{APSI}(t)",
+          "description": "Algorithmic Phase Skewing Index at time $t$. "
+        },
+        {
+          "name": "N",
+          "description": "Total number of observed output components/samples. "
+        },
+        {
+          "name": "\\phi_{\\text{observed},i}(t)",
+          "description": "Observed phase of AI output for component $i$ at time $t$. "
+        },
+        {
+          "name": "\\phi_{\\text{intended},i}(t)",
+          "description": "Intended phase of AI output for component $i$ at time $t$. "
+        },
+        {
+          "name": "\\text{EMI}_i(t)",
+          "description": "Entropy Memory Index (EMI) of latent influence $i$ at time $t$. Lower EMI (less forgotten/more active latent influence) leads to a stronger exponential contribution. "
+        },
+        {
+          "name": "\\theta_{\\text{EMI}}",
+          "description": "EMI threshold for considering a latent influence significant. A scaling factor for the exponential decay, ensuring only sufficiently 'haunting' influences contribute meaningfully. "
+        }
+      ]
+    },
+    "connection_to_pirouette": [
+      "Connects to the 'Haunt States' module by providing a direct metric for diagnosing their impact on active systems. ",
+      "Utilizes the 'Entropy Memory Index' for quantifying the 'dormancy' or 'persistence' of latent influences that might cause skewing. ",
+      "Informs 'Inverse Constant Analysis' by providing a metric of deviation, which can then be used to infer the underlying Pirouette parameters of the latent 'Ghost Attractor'. ",
+      "Directly supports the 'Phase Diagnostics & Haunt State Identification' stage of the 'Coherence Architect Protocol', derived from Alan Turing's insights. ",
+      "Highlights how unacknowledged 'Ghost Attractors' can subtly 'skew phase' and reduce 'Time-Adherence' in AI systems. "
+    ],
+    "use_cases": [
+      "Auditing complex AI models for unintended biases, emergent behaviors, or 'shadow' influences from training data that deviate from intended function. ",
+      "Diagnosing 'algorithmic drift' or 'phase skewing' in deployed AI systems over time. ",
+      "Identifying 'latent weights' or 'historical influences' in generative AI that might affect output integrity or ethical alignment. ",
+      "Providing quantifiable input for 'AI alignment' and 'ethical AI development' processes to ensure AI's output phase aligns with human purpose. "
+    ],
+    "notes": "The exponential term $\\exp(-\text{EMI}_i(t)/\theta_{\text{EMI}})$ ensures that only 'ghosts' with sufficient current 'presence' (i.e., lower EMI scores, meaning less forgotten or more actively echoing) contribute significantly to the perceived skewing. A higher $\theta_{\text{EMI}}$ makes the module more sensitive to even very subtle latent influences. The norm $\\|\\cdot\\|$ represents the angular difference between the observed and intended phase, effectively measuring the 'skew'."
+  }

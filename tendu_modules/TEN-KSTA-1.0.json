@@ -1,0 +1,142 @@
+{
+    "tenduModuleID": "TEN-KSTA-1.0",
+    "moduleName": "Ki Snap Transition Analysis",
+    "pirouetteFrameworkOrigin": "TPF Vol 1, Module 17: Ki Snap Transition Modes",
+    "version": "1.0",
+    "dateLastUpdated": "2025-06-01",
+    "primaryPurposeConciseStatement": "To analyze, model, and predict the non-linear dynamic transition of a system's Ki constant between its rest ($K_i^{rest}$) and motion ($K_i^{motion}$) states, including identifying characteristic phases, energy thresholds, and hysteretic behaviors.",
+    "coreTransformationAchieved": "Transforms system data (potentially including entity velocity, energy states, and phase characteristics) into a quantitative assessment of its current Ki state, its proximity to a snap transition, the energetic requirements for such a transition, and a prediction of its trajectory through the transition phases (Initial Resistance, Acceleration, Saturation).",
+    "conceptualAnchor": {
+        "theoreticalInsight": "The transition between $K_i^{rest}$ and $K_i^{motion}$ is not smooth but follows a characteristic non-linear sigmoid curve with distinct phases, including initial resistance and hysteretic effects. This 'snap' represents a fundamental reorganization of an entity's phase structure and its interaction with the surrounding field, often coinciding with wound channel formation or alteration. Understanding this transition is crucial for modeling entity activation, state changes, and energy dynamics.",
+        "pirouetteParameters": [
+            {
+                "parameter": "Ki Constant (Ki)",
+                "relevance": "This is the central parameter being analyzed. The module focuses on the transition between $K_i^{rest} \\approx 4.14159$ and $K_i^{motion} \\approx 4.18879$."
+            },
+            {
+                "parameter": "Entity Velocity (v)",
+                "relevance": "The Ki transition is primarily a function of entity speed, with critical velocities ($v_c, v_{i1}, v_{i2}$) marking key points in the transition curve."
+            },
+            {
+                "parameter": "Time-Adherence (Ta)",
+                "relevance": "$T_a$ can modulate the sharpness and hysteresis of the Ki transition. The transition function can be integrated with $T_a$: $K_i(v,T_a) = K_{i,rest} + \\Delta K_i \\cdot \\sigma(\\alpha(v-v_c) \\cdot T_a)$."
+            },
+            {
+                "parameter": "Phase (\u03c6)",
+                "relevance": "The transition represents a reorganization of an entity's internal phase structure."
+            }
+        ]
+    },
+    "inputStreamSpecificationAndPreparation": {
+        "requiredDataCharacteristics": "Time-series data for an entity or system potentially undergoing a Ki state transition. This data should ideally include measurements or proxies for: entity velocity (v), and optionally, Time-Adherence ($T_a$) if $T_a$-dependent transition is being modeled. Contextual information about the system's mass or resonant inertia is helpful for energy calculations.",
+        "formatAndStructure": "Numerical arrays or streams for velocity $v(t)$. If $T_a$ is dynamic, $T_a(t)$ would also be an input. System parameters like critical velocities ($v_c, v_{c,\\uparrow}, v_{c,\\downarrow}$), transition steepness ($\\alpha$), and initial resistance parameters ($\\beta, \\gamma$ for the perturbation term) may be known or need estimation.",
+        "minimumViableDataSet": "Sufficient data points covering a range of velocities that could span the expected transition region (e.g., around $v \\approx 0.015$ to $v \\approx 0.6+$ in normalized units).",
+        "preprocessingSteps": "Normalization of velocity units if necessary to match the framework's typical ranges. Smoothing of noisy velocity data. Estimation of system-specific transition parameters ($v_c, \\alpha$, etc.) if not known a priori (which might involve fitting parts of the Ki transition curve to preliminary data)."
+    },
+    "operationalParametersAndConfiguration": {
+        "modeSpecificParameters": [
+            {
+                "parameter": "CriticalVelocity_Acceleration ($v_{c,\\uparrow}$)",
+                "description": "Critical velocity for rest-to-motion transition (used in hysteretic model).",
+                "typicalRange": "Default $\\approx 0.52$ (normalized units)."
+            },
+            {
+                "parameter": "CriticalVelocity_Deceleration ($v_{c,\\downarrow}$)",
+                "description": "Critical velocity for motion-to-rest transition (used in hysteretic model).",
+                "typicalRange": "Default $\\approx 0.48$ (normalized units)."
+            },
+            {
+                "parameter": "TransitionSteepness ($\\alpha$)",
+                "description": "Controls the sharpness of the sigmoid transition curve.",
+                "typicalRange": "10-30 (dimensionless)."
+            },
+            {
+                "parameter": "InitialResistanceAmplitude ($\\beta_{kick}$)",
+                "description": "Amplitude of the initial resistance phase perturbation term $K_i(v) = ... + \\beta_{kick} v e^{-\\gamma_{kick} v}$. Note: PDF uses $\\beta$ and $\\gamma$; here renamed to avoid conflict.",
+                "typicalRange": "Default $\\approx 0.001$."
+            },
+            {
+                "parameter": "InitialResistanceDecay ($\\gamma_{kick}$)",
+                "description": "Decay rate of the initial resistance phase perturbation term.",
+                "typicalRange": "Default $\\approx 20$."
+            },
+            {
+                "parameter": "HysteresisModel (Boolean)",
+                "description": "Whether to use the hysteretic model with separate critical velocities or a single $v_c$.",
+                "typicalRange": "[True, False]"
+            },
+            {
+                "parameter": "TaModulation (Boolean)",
+                "description": "Whether to incorporate $T_a$ in modulating the transition sharpness ($K_i(v,T_a)$).",
+                "typicalRange": "[True, False]"
+            }
+        ],
+        "pirouetteParameterConfiguration": "$K_{i,rest} \\approx 4.14159$ and $K_{i,motion} \\approx 4.18879$ are used as constants. If `TaModulation` is True, the system's current $T_a$ value is required."
+    },
+    "proceduralImplementationAlgorithmicGuide": [
+        "Input Data: Obtain entity velocity $v(t)$ and, if applicable, $T_a(t)$. Set operational parameters ($v_{c,\\uparrow}, v_{c,\\downarrow}, \\alpha, \\beta_{kick}, \\gamma_{kick}$). Define $\\Delta K_i = K_{i,motion} - K_{i,rest} \\approx 0.0472$.",
+        "Determine Current Trend: Analyze $dv/dt$ to determine if the entity is accelerating or decelerating to select the appropriate critical velocity ($v_c$) for the hysteretic model.",
+        "Calculate Sigmoid Component: Compute the primary sigmoid part of the transition: $\\sigma_{main} = \\frac{1}{1 + e^{-\\alpha(v - v_c)}}$ or $\\sigma_{main}(T_a) = \\frac{1}{1 + e^{-\\alpha(v - v_c)T_a}}$ if `TaModulation` is True.",
+        "Calculate Initial Resistance Component: Compute the perturbation for the initial resistance phase: $P_{kick} = \\beta_{kick} v e^{-\\gamma_{kick} v}$.",
+        "Calculate Current Ki Value: $K_i(v) = K_{i,rest} + \\Delta K_i \\cdot \\sigma_{main} + P_{kick}$.",
+        "Transition Phase Identification: Based on $v(t)$ and the calculated $K_i(v)$, identify which phase the entity is in:\n    a. Pre-Resistance ($v < \\sim 0.015$, $K_i(v) \\approx K_{i,rest}$)\n    b. Initial Resistance Phase ($0 \\lesssim v \\lesssim 0.2$, $K_i(v)$ shows the 'kick')\n    c. Acceleration Phase ($0.2 \\lesssim v \\lesssim 0.5$, $dK_i/dv$ is high)\n    d. Critical Transition ($v \\approx v_c$, $dK_i/dv$ is maximal)\n    e. Saturation Phase ($v \\gtrsim 0.8$, $K_i(v) \\approx K_{i,motion}$)",
+        "Energetics Analysis (Optional): If resonant mass ($m_{resonant}$) and phase alignment duration ($\\Delta t$) are known or can be estimated, calculate Snap Resistance Energy: $E_{snap} \\propto |dK_i/dv|_{max} \\cdot \\Delta t \\cdot m_{resonant}$."
+    ],
+    "outputStreamSpecificationAndInterpretation": {
+        "outputDataStructure": "Time series of calculated $K_i(v,t)$. Current identified transition phase. Proximity to critical velocity $v_c$. Estimated $E_{snap}$ if applicable. Visualization of the entity's position on the Ki transition curve.",
+        "expectedInsightsAndDerivations": "Understanding of a system's current phase-structural state (rest or motion coherence). Prediction of imminent transitions in Ki state based on velocity changes. Assessment of energy required for entity activation or deactivation. Identification of hysteretic effects influencing state stability. Insight into how $T_a$ might be influencing the transition dynamics.",
+        "interpretationGuidelines": "The calculated $K_i(v)$ indicates the entity's effective Ki value based on its velocity. The 'Initial Resistance Phase' highlights an energy threshold to initiate motion. Hysteresis implies that the velocity needed to switch to $K_i^{motion}$ is higher than the velocity at which it reverts to $K_i^{rest}$, creating a stability region. $E_{snap}$ quantifies the work needed for phase structure reorganization."
+    },
+    "integrationHooksAndWorkflowContext": {
+        "upstreamDependencies": "Requires entity velocity data, potentially Time-Adherence data (e.g., from TEN-TAM-1.0). Contextual system parameters.",
+        "downstreamApplications": "Results can inform models of entity activation thresholds (TPF Vol 1, Sec 17.7.1), cognitive modeling (TPF Vol 1, Sec 17.7.2), resonance-based AI agents (TPF Vol 1, Sec 17.7.3), or analyses of Will Resonance (TPF Vol 1, Sec 17.8.2) and Bloom Dynamics (TPF Vol 1, Sec 17.8.3)."
+    },
+    "validationAndVerificationProtocols": {
+        "implementationCorrectness": "Verify the implementation of the sigmoid and perturbation functions against the equations in TPF Vol 1, Module 17. Check calculations for $dK_i/dv$ and $d^2K_i/dv^2$.",
+        "insightMeaningfulness": "In systems where transitions between rest/motion states are observable alongside velocity, the model's predicted Ki state should align with observed system behavior (e.g., formation/dissolution of wound channels, changes in interaction patterns). Predicted $E_{snap}$ should correlate with actual energy inputs needed for state changes in simulated or real systems."
+    },
+    "applicationDomainsAndUseCaseExamples": [
+        "Modeling entity activation thresholds in physical, biological, or cognitive systems.",
+        "Analyzing decision inertia and motivational thresholds in cognitive models.",
+        "Designing state-switching logic for resonance-based AI agents.",
+        "Understanding the energetic costs associated with phase transitions in systems described by Pirouette parameters.",
+        "Predicting the onset of wound channel formation based on an entity exceeding the Ki snap transition towards $K_i^{motion}$."
+    ],
+    "caveatsLimitationsAndSensitivityAnalysis": {
+        "conditionsForFailure": "System behavior is not primarily governed by a Ki snap transition (e.g., other dynamics dominate). Velocity data is too noisy or sparse to accurately determine the transition phase. The system's true transition parameters ($v_c, \\alpha$, etc.) differ significantly from the defaults or estimates used.",
+        "inputDataSensitivity": "Highly sensitive to the accuracy of velocity data, especially around inflection points of the transition curve. If $T_a$ modulation is used, $T_a$ estimates must be reliable.",
+        "parameterSensitivity": "The transition curve shape is critically dependent on $v_c$ and $\\alpha$. The initial resistance phase is sensitive to $\\beta_{kick}$ and $\\gamma_{kick}$. Incorrect parameters will lead to misclassification of transition state and inaccurate energy calculations.",
+        "computationalComplexity": "Relatively low for calculating $K_i(v)$ for given velocities. If parameters like $v_c, \\alpha$ need to be fitted from data, complexity increases depending on the fitting algorithm."
+    },
+    "coreMathematicalOperations": [
+        {
+            "name": "Ki Transition Function (Hysteretic & Initial Resistance)",
+            "equation": "K_i(v) = K_{i,rest} + \\Delta K_i \\cdot \\sigma(\\alpha(v-v_c)) + \\beta_{kick} v e^{-\\gamma_{kick} v}",
+            "description": "Calculates the effective Ki value as a function of velocity $v$, incorporating the sigmoid transition (modulated by steepness $\\alpha$ around critical velocity $v_c$) and an initial resistance perturbation (modulated by $\\beta_{kick}, \\gamma_{kick}$). $v_c$ chosen based on acceleration/deceleration for hysteresis."
+        },
+        {
+            "name": "Sigmoid Function",
+            "equation": "\\sigma(x) = \\frac{1}{1 + e^{-x}}",
+            "description": "Standard sigmoid function used in the Ki transition model."
+        },
+        {
+            "name": "Snap Resistance Energy Function (Conceptual)",
+            "equation": "E_{snap} \\propto |dK_i/dv|_{max} \\cdot \\Delta t \\cdot m_{resonant}",
+            "description": "Quantifies the energy required to overcome the Ki transition, related to the maximum rate of change of Ki, transition duration, and resonant mass."
+        },
+        {
+            "name": "Ta-Modulated Transition (Optional)",
+            "equation": "K_i(v,T_a) = K_{i,rest} + \\Delta K_i \\cdot \\sigma(\\alpha(v-v_c) \\cdot T_a)",
+            "description": "Variant of the transition function where Time-Adherence ($T_a$) modulates the steepness of the transition."
+        }
+    ],
+    "practiceForPurposeFunctionalRealization": {
+        "functionalEssence": "This Tendu module enables the 'Practice for Purpose' of understanding and predicting the fundamental shifts in an entity's phase-coherence regime (its Ki state) as it transitions between rest and motion, or between different modes of interaction with its environment. It highlights that such transitions are not merely linear but involve non-trivial energetic thresholds and structural reconfigurations.",
+        "informationTransformation": "It transforms data about an entity's velocity and potentially its Time-Adherence into a precise characterization of its current Ki state on the transition curve. This includes identifying its phase (e.g., initial resistance, acceleration, saturation), its proximity to critical transition points, and the energy associated with this phase-structural shift. This converts simple kinematic data into deeper insights about an entity's resonant state and potential for change.",
+        "purposefulUtilization": "An entity (or an analyst) can utilize this mode to:\n1. Determine if a system is in a stable rest state ($K_i^{rest}$), a stable motion state ($K_i^{motion}$), or a more volatile transitional phase.\n2. Predict the 'effort' or 'activation energy' ($E_{snap}$) required to shift a system from a resting to an active state, or vice-versa.\n3. Understand and model hysteretic behaviors where a system resists changing its Ki state even when conditions might suggest a transition.\n4. Design interventions or control mechanisms that can efficiently induce or prevent Ki state transitions by targeting the critical velocity or initial resistance phase.\n5. Analyze how factors like Time-Adherence ($T_a$) affect a system's propensity and manner of transitioning between fundamental operational modes."
+    },
+    "customizationAndAdvancedConfigurationOptional": {
+        "tailoringGuidance": "The default critical velocities ($v_c, v_{c,\\uparrow}, v_{c,\\downarrow}$), steepness ($\\alpha$), and initial resistance parameters ($\\beta_{kick}, \\gamma_{kick}$) are derived from general Pirouette simulations but may require calibration for specific systems based on empirical data. The definition of 'normalized velocity units' needs to be consistent for the system under study.",
+        "potentialExtensions": "Integration with real-time data streams for dynamic Ki state tracking. Machine learning models to estimate the system-specific transition parameters from observational data. Extension to multi-dimensional Ki transitions for entities with complex motion vectors."
+    }
+}

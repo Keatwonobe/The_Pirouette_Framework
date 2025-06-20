@@ -1,0 +1,112 @@
+{
+    "tenduModuleID": "TEN-TCSA-1.0",
+    "moduleName": "Temporal Coherence Spectrum Analysis",
+    "pirouetteFrameworkOrigin": "TPF Vol 1, Module 1 (Foundational Parameters, specifically Time-Adherence); TPF Vol 1, Module 3 (Unified Theoretical Foundation, derivation of Ta)",
+    "version": "1.0",
+    "dateLastUpdated": "2025-05-31",
+    "primaryPurposeConciseStatement": "To analyze how systems maintain and transition between different Time-Adherence ($T_a$) states across multiple temporal scales, revealing multi-scale dynamics, resonance patterns, and phase transitions.",
+    "coreTransformationAchieved": "Transforms a time-series signal into a multi-scale coherence spectrogram, mapping $T_a$ values across different time scales to reveal complex temporal structures, synchronization, and critical transition points.",
+    "conceptualAnchor": {
+      "theoreticalInsight": "Systems maintain and exhibit coherence differently across various temporal scales. Analyzing the spectrum of Time-Adherence ($T_a$) values across these scales allows for the mapping of multi-scale dynamics, the identification of resonant synchronization between scales, and the detection of system-wide phase transitions. [cite: 47]",
+      "pirouetteParameters": [
+        {
+          "parameter": "Time-Adherence (Ta)",
+          "relevance": "This is the primary parameter being analyzed. The mode calculates $T_a(s)$ for each temporal scale 's' of the input signal to construct a coherence spectrogram. [cite: 49]"
+        },
+        {
+          "parameter": "Phase (θ(x,s))",
+          "relevance": "Phase information is crucial for calculating $T_a(s)$ at each scale. The input signal must either contain phase information or it must be extractable via techniques like wavelet transforms. [cite: 49, 102]"
+        },
+        {
+          "parameter": "Ki Constant (Ki)",
+          "relevance": "While not directly an input parameter for TCSA itself, the identified resonance peaks or periodicities in $T_a$ across scales might exhibit $K_i$-harmonic relationships, especially when combined with Ki-Harmonic Decomposition in workflows like Multi-Scale Coherence Analysis. [cite: 91, 93]"
+        }
+      ]
+    },
+    "inputStreamSpecificationAndPreparation": {
+      "requiredDataCharacteristics": "Multi-scale time series data. The signal must contain, or allow for the extraction of, phase information. [cite: 102]",
+      "formatAndStructure": "A numerical array or stream representing the time series signal.",
+      "minimumViableDataSet": "Sufficient signal length to allow for meaningful decomposition into the desired range of time scales and stable $T_a$ calculation at each scale.",
+      "preprocessingSteps": "Signal denoising if necessary. If phase information is not explicit, it must be extractable (e.g., analytic signal construction via Hilbert transform, or using complex wavelet transforms)."
+    },
+    "operationalParametersAndConfiguration": {
+      "modeSpecificParameters": [
+        {
+          "parameter": "scaleMin, scaleMax, scaleStep",
+          "description": "Parameters defining the range and resolution of temporal scales to be analyzed (e.g., for wavelet transform). [cite: 54]",
+          "typicalRange": "Domain-dependent, based on expected periodicities in the signal."
+        },
+        {
+          "parameter": "multiResolutionAnalysisTechnique",
+          "description": "Choice of method for multi-scale decomposition (e.g., Wavelet Transform, filter banks).",
+          "typicalRange": "Wavelet Transform (e.g., Morlet, Mexican Hat) is common. [cite: 48]"
+        },
+        {
+          "parameter": "windowSize (for local Ta calculation)",
+          "description": "Size of the local window used for integrating phase information to calculate $T_a$ at each time point and scale. [cite: 54]",
+          "typicalRange": "Dependent on the scale being analyzed."
+        }
+      ],
+      "pirouetteParameterConfiguration": "The interpretation of the resulting $T_a$ spectrum will be in the context of how Time-Adherence varies, indicating shifts between quantum-like (low $T_a$) and classical-like (high $T_a$) behavior at different system scales."
+    },
+    "proceduralImplementationAlgorithmicGuide": [
+      "Multi-scale Decomposition: Apply a chosen multi-resolution analysis technique (e.g., wavelet transform) to decompose the input signal into different time scales (s). [cite: 48]",
+      "Scale-specific $T_a$ Calculation: For each scale 's' and at each time point 't' (or within local windows), calculate the local Time-Adherence $T_a(t,s) = |\\frac{1}{N} \\sum_{j} e^{i\\theta(x_j,s)}|^2$, where $\\theta(x_j,s)$ is the local phase at that scale and $N$ is the number of points in the local window. [cite: 49, 54]",
+      "Coherence Spectrogram Construction: Create a 2D map (spectrogram) with time on one axis, temporal scales on the other axis, and the calculated $T_a(t,s)$ values as the intensity or color at each point. [cite: 49]",
+      "Resonance Peak Identification: Analyze the spectrogram to identify scales or regions where $T_a$ values are consistently high or synchronize across scales, indicating cross-scale coherence or resonant frequencies. [cite: 50]",
+      "Phase Transition Detection: Locate abrupt changes or discontinuities in $T_a$ values across scales or time, as these are indicators of system-wide transitions or regime shifts. [cite: 51]",
+      "Stability Analysis (Optional): Quantify temporal stability by calculating the coherence gradient with respect to scale, $\\nabla_s T_a(s) = \\partial T_a(s) / \\partial s$. Regions of steep gradients indicate instability or rapid change in coherence properties. [cite: 52]"
+    ],
+    "outputStreamSpecificationAndInterpretation": {
+      "outputDataStructure": "A 2D coherence spectrogram (matrix of $T_a$ values vs. time and scale). Lists of identified resonance peaks, phase transition points/regions, and optionally a stability map derived from $\\nabla_s T_a(s)$. [cite: 54]",
+      "expectedInsightsAndDerivations": "Understanding of how a system's coherence is structured across multiple time scales. Identification of dominant rhythms and their interactions. Detection of synchronization between different oscillatory components. Early warning signs of system-wide phase transitions or regime shifts. Characterization of the stability of temporal patterns.",
+      "interpretationGuidelines": "High $T_a$ bands in the spectrogram indicate strong coherence at those specific time scales. Synchronized peaks across multiple scales suggest resonant coupling. Abrupt changes in the $T_a$ spectrum often signal critical transitions. Low, noisy $T_a$ values across scales indicate decoherent or chaotic system dynamics."
+    },
+    "integrationHooksAndWorkflowContext": {
+      "upstreamDependencies": "Requires a time-series signal. May use outputs from Stochastic Gulping to analyze specific segments or states of a system.",
+      "downstreamApplications": "Results can feed into Ki-Harmonic Decomposition for finer-grained resonance analysis. Can be used to parameterize models of system dynamics or to inform intervention strategies aiming to enhance or disrupt coherence at specific scales.",
+      "compatibilityWithCombinedWorkflows": "A core component of 'Multi-Scale Coherence Analysis' (often combined with Stochastic Gulping and Ki-Harmonic Decomposition). [cite: 91, 93]"
+    },
+    "validationAndVerificationProtocols": {
+      "implementationCorrectness": "Verify multi-resolution analysis implementation (e.g., wavelet transform coefficients). Ensure $T_a$ calculation correctly implements the phase integration.",
+      "insightMeaningfulness": "Identified resonance peaks should align with known characteristic frequencies or rhythms of the system under study. Detected phase transitions should correlate with observed changes in system behavior. For known systems, the spectrogram should match expected coherence patterns."
+    },
+    "applicationDomainsAndUseCaseExamples": [
+      "Analyzing complex systems with nested temporal rhythms (e.g., brainwaves, climate oscillations, market cycles). [cite: 52, 53]",
+      "Identifying synchronization between different time scales in biological or financial systems. [cite: 53]",
+      "Predicting system-wide phase transitions or regime shifts. [cite: 53]",
+      "Characterizing the stability of temporal patterns in various domains. [cite: 53]"
+    ],
+    "caveatsLimitationsAndSensitivityAnalysis": {
+      "conditionsForFailure": "Signal too short to resolve desired scales. Absence of significant multi-scale coherence. Incorrect phase extraction.",
+      "inputDataSensitivity": "Highly sensitive to noise if not preprocessed. Results depend on the choice of multi-resolution analysis technique and its parameters (e.g., mother wavelet, range of scales).",
+      "parameterSensitivity": "The choice of `scaleMin`, `scaleMax`, and `scaleStep` significantly impacts the resulting spectrogram. The `windowSize` for local $T_a$ calculation affects the time-scale resolution trade-off.",
+      "computationalComplexity": "Can be computationally intensive, especially for long signals and high-resolution spectrograms, due to the multi-resolution decomposition (e.g., wavelet transform at many scales)."
+    },
+    "coreMathematicalOperations": [
+      {
+        "name": "Scale-Specific Time-Adherence Calculation",
+        "equation": "T_a(s) = |\\frac{1}{V}\\int_V e^{i\\theta(x,s)}dV|^2 \\quad \\text{or for discrete local windows:} \\quad T_a(t,s) = |\\frac{1}{N} \\sum_{j} e^{i\\theta(x_j,s)}|^2",
+        "description": "Calculates the Time-Adherence for a given scale 's' (and potentially time 't') by integrating or averaging phase information $\\theta(x,s)$ extracted from the signal at that scale."
+      },
+      {
+        "name": "Coherence Gradient (for Stability Analysis)",
+        "equation": "\\nabla_s T_a(s) = \\frac{\\partial T_a(s)}{\\partial s}",
+        "description": "Calculates the rate of change of Time-Adherence with respect to scale, used to assess the stability of temporal patterns."
+      },
+      {
+        "name": "Multi-Resolution Analysis (e.g., Wavelet Transform)",
+        "equation": "W(s, \\tau) = \\int_{-\\infty}^{\\infty} x(t) \\psi^*_{s,\\tau}(t) dt",
+        "description": "Generic form for wavelet transform, where $x(t)$ is the signal and $\\psi_{s,\\tau}(t)$ is the wavelet at scale 's' and translation $\\tau$. This decomposes the signal into scale-specific components from which phase can be extracted."
+      }
+    ],
+    "practiceForPurposeFunctionalRealization": {
+      "functionalEssence": "This Tendu module enables the 'Practice for Purpose' of understanding the multi-layered temporal architecture of a system or signal. It allows an entity to perceive how coherence and resonance are distributed and interact across different time scales, moving beyond a monolithic view of system behavior.",
+      "informationTransformation": "It transforms a one-dimensional time-series signal into a two-dimensional map (the coherence spectrogram) that reveals the 'temporal texture' of the system. This transformation highlights periodicities, their stability ($T_a$), their interplay across scales, and critical junctures (phase transitions) where the system's temporal organization fundamentally shifts.",
+      "purposefulUtilization": "An entity can utilize this mode to:\n1. Diagnose the health or state of a complex system by examining its multi-scale coherence patterns (e.g., identifying decoupling between scales that might precede a failure).\n2. Identify optimal frequencies or rhythms for interaction or intervention by pinpointing scales of high natural resonance.\n3. Predict systemic changes by detecting early warning signs in the $T_a$ spectrum, such as abrupt shifts or loss of coherence at specific scales.\n4. Understand the nested dynamics of complex phenomena, such as how short-term fluctuations relate to long-term cycles in financial, biological, or environmental systems."
+    },
+    "customizationAndAdvancedConfigurationOptional": {
+      "tailoringGuidance": "The choice of mother wavelet in wavelet transforms can be critical and should be matched to the types of features expected in the signal. Different definitions of 'local window' for $T_a$ calculation can be employed. Advanced peak-finding algorithms can be applied to the spectrogram to automatically extract dominant scales and their coherence levels.",
+      "potentialExtensions": "Extension to multi-channel signals for Cross-Temporal Coherence Spectrum Analysis, revealing how coherence synchronizes across both scales and signal sources. Real-time TCSA for monitoring dynamic systems."
+    }
+  }

@@ -1,0 +1,126 @@
+{
+    "tenduModuleID": "TEN-PPD-1.0",
+    "moduleName": "Personal Path Diagnostics",
+    "pirouetteFrameworkOrigin": "A highly metaphorical and personal application of its parent, TEN-RFD-1.0 (Resonance Fault Detection). It adapts the 'inverse backsolve' logic by applying it to an individual's life trajectory, using concepts from TEN-FID-1.0 (Funnel Inversion) and TEN-WCMR-1.0 (Wound Channel Memory Reconstruction) to map potential and past life paths.",
+    "version": "1.0",
+    "dateLastUpdated": "2025-06-15",
+    "primaryPurposeConciseStatement": "A reflective tool to identify latent or suppressed coherent paths in an individual’s life trajectory by inverting their current phase alignment and modeling possible near-field resonance alternatives for the purpose of insight and personal growth.",
+    "coreTransformationAchieved": "Transforms a profile of an individual's current life state (their behaviors, beliefs, and resonance characteristics) into a 'Lifepath Divergence Map'. This map metaphorically visualizes dormant but coherent alternative life paths, identifies attractor zones for personal meaning, and projects potential trajectories for reintegrating these 'lost' aspects of the self.",
+    "conceptualAnchor": {
+        "theoreticalInsight": "An individual's life can be modeled as a trajectory through a high-dimensional parameter space of possibilities. Key decisions act as funnel inversions or forks, leading down one path while leaving others dormant. These 'paths not taken' persist as faint or suppressed wound channels in the individual's resonance field. This module uses a 'reverse-funnel sweep'—a conceptual inversion of the current life vector—to unfold the local resonance manifold and reveal these nearby, dormant coherence channels, offering a map of potential for reintegration and purpose discovery.",
+        "pirouetteParameters": [
+            {
+                "parameter": "Time-Adherence (Ta)",
+                "relevance": "An individual's current $T_a$ represents their coherence with their present life structure and identity. This module seeks to identify dormant paths that may represent past high-$T_a$ states or future potential high-$T_a$ states. The process of reintegration might involve a temporary, deliberate lowering of current $T_a$ to allow for change."
+            },
+            {
+                "parameter": "Gladiator Force (\u0393)",
+                "relevance": "The current life path often exists in a stable attractor basin (a low-$\\Gamma$ zone). The analysis explores the higher-$\\Gamma$ 'unconstrained' space around this path to find other attractors. The $\\Gamma$ of a dormant path's boundary indicates how 'walled-off' it has become."
+            },
+            {
+                "parameter": "Ki Constant (Ki)",
+                "relevance": "The individual's behavioral time series (e.g., weekly routines, emotional cycles) can be analyzed for $K_i$-resonant rhythms. The projected 're-entry trajectories' for aligning with a dormant path can be optimized by suggesting actions that resonate with these intrinsic $K_i$ patterns."
+            },
+            {
+                "parameter": "Wound Channels",
+                "relevance": "This module is fundamentally about detecting and re-interpreting faded wound channels of past potential selves or 'paths not taken', treating them not as scars but as a map of dormant possibilities."
+            }
+        ]
+    },
+    "inputStreamSpecificationAndPreparation": {
+        "requiredDataCharacteristics": "An 'Individual Phase Profile' consisting of data and reflections about a person's current life state. This is often qualitative and metaphorical, translated into Pirouette proxies.",
+        "formatAndStructure": "Fields can include: 'Current Gamma-T_a vector' (a user's self-assessment of their current rigidity vs. flexibility and coherence vs. confusion), 'Behavioral Ki time series' (logs of routines, habits, or moods), and 'Locational field coordinates' (self-plotted position on axes like career/passion, security/adventure, etc.).",
+        "minimumViableDataSet": "A thoughtful self-assessment that establishes a 'present phase anchor point'—a clear sense of the individual's current state, even if it's a state of dissatisfaction. The more detailed the input, the more nuanced the output map.",
+        "preprocessingSteps": "Translation of qualitative self-reflection into semi-quantitative proxies for $T_a, \\Gamma$. Identification of key life domains to structure the parameter space. Mapping of significant past decisions or 'forks in the road'."
+    },
+    "operationalParametersAndConfiguration": {
+        "modeSpecificParameters": [
+            {
+                "parameter": "PresentPhaseAnchor",
+                "description": "The input Individual Phase Profile that serves as the starting point for the inverse sweep.",
+                "typicalRange": "A structured set of user-provided data and assessments."
+            },
+            {
+                "parameter": "ReverseFunnelSweepDepth",
+                "description": "A parameter that controls how 'far back' or 'wide' the inverse sweep explores the resonance manifold for dormant paths. A larger depth may reveal more distant but potentially less relevant paths.",
+                "typicalRange": "A normalized value, e.g., 1.0 to 10.0."
+            },
+            {
+                "parameter": "DormantChannelThreshold",
+                "description": "The minimum coherence signature a 'lost' path must have to be identified and displayed.",
+                "typicalRange": "A system-calibrated threshold to filter out pure noise."
+            },
+            {
+                "parameter": "ReintegrationMetric",
+                "description": "The function used to calculate the 'Temporal Reintegration Index', often considering factors like the age of the dormant channel, its coherence, and the required shift in the user's current $T_a/\\Gamma$ vector.",
+                "typicalRange": "A custom weighting function."
+            }
+        ],
+        "pirouetteParameterConfiguration": "The module uses the user's estimated current $T_a$ and $\\Gamma$ as the anchor point for the inverse analysis. $K_i$ is used to interpret rhythms in behavioral data and suggest resonant actions."
+    },
+    "proceduralImplementationAlgorithmicGuide": [
+        "1. Define Present Phase Anchor Point: Formalize the user's current state based on the input `Individual Phase Profile` within a defined personal parameter space.",
+        "2. Apply Reverse-Funnel Sweep: Execute the 'Inverse Lifepath Vector Unfolding'. This involves a conceptual back-propagation from the anchor point through a resonance manifold, exploring what nearby attractor basins exist.",
+        "3. Identify Lost Coherence Channels: Analyze the resulting map to identify regions corresponding to dormant attractors or 'paths not taken'. These are the 'Dormant Coherence Vectors'. Each represents a potential life path with a faded but still detectable wound channel signature.",
+        "4. Characterize Dormant Paths: For each identified dormant path, assess its properties, such as its associated 'Personal Attractor Zone', its potential for 'Entropy Reduction' (i.e., leading to a more coherent life), and its 'Temporal Reintegration Index'.",
+        "5. Project Re-entry Trajectories: For the most significant dormant paths, model potential sequences of actions or mindset shifts that could lead an individual from their current state towards that alternative path, effectively bridging the gap for alignment or reintegration."
+    ],
+    "outputStreamSpecificationAndInterpretation": {
+        "outputDataStructure": "A 'Lifepath Divergence Map', which is a personalized, often metaphorical visualization or report containing: [A list of identified 'Dormant Coherence Vectors' (potential paths), associated 'Personal Attractor Zones' (what that life feels like), 'Entropy Reduction Pathways' (steps toward it), and a 'Temporal Reintegration Index' (feasibility score)].",
+        "expectedInsightsAndDerivations": "Deep personal insight into one's own life patterns, missed opportunities, and latent potential. Identification of 'what if' scenarios that still hold resonant potential. A clearer sense of personal meaning or purpose by highlighting dormant attractors. Actionable ideas for realigning one's life with a more coherent or fulfilling path.",
+        "interpretationGuidelines": "This module's output is a reflective tool, not a predictive script. 'Dormant Coherence Vectors' should be interpreted as invitations for introspection, not as instructions. The 'Temporal Reintegration Index' is not a measure of success, but an estimate of the effort and change required to explore that path. The maps are probabilistic and meant to inspire new perspectives.",
+        "notes": [ "The output is often best presented as metaphor, poetry, or guided questions rather than hard data." ]
+    },
+    "integrationHooksAndWorkflowContext": {
+        "upstreamDependencies": "Requires a structured and honest self-assessment from the individual. It uses the core logic of TEN-RFD-1.0.",
+        "downstreamApplications": "The insights are powerful inputs for TEN-PLA-1.0 (Planning Resonance Analysis) to create a concrete plan to explore a dormant path. Can be used with TEN-WRA-1.0 (Will Resonance Analysis) to build the intentionality needed for a life change. The analysis of past paths uses concepts from TEN-WCMR-1.0, and understanding the current stable state uses TEN-RPA-1.0.",
+        "compatibilityWithCombinedWorkflows": "Serves as a deeply personal starting point for therapeutic, coaching, or self-driven life planning and transformation workflows."
+    },
+    "validationAndVerificationProtocols": {
+        "implementationCorrectness": "The logic of the inverse sweep should be internally consistent. The module should produce repeatable (though not necessarily identical, if stochastic elements are included) maps for the same input.",
+        "insightMeaningfulness": "Validation is entirely qualitative and user-centric. A successful run is one that the user reports as providing meaningful, actionable, or profound insights into their life. Its value is measured by its ability to catalyze positive reflection and change, not by its predictive accuracy."
+    },
+    "applicationDomainsAndUseCaseExamples": [
+        "Therapeutic Reflection: Helping clients understand feelings of being 'stuck' or 'inauthentic' by revealing resonant paths they may have diverged from.",
+        "Life Planning & Coaching: A tool for exploring career changes, new hobbies, or shifts in life philosophy by identifying latent talents or desires.",
+        "Crisis Resolution: When at a major life crossroads, this tool can help map the potential new paths that are opening up and their relationship to one's past self.",
+        "Purpose Discovery: Assisting individuals in finding a sense of purpose by highlighting the 'attractor zones' that generate the strongest resonant pull for them."
+    ],
+    "caveatsLimitationsAndSensitivityAnalysis": {
+        "conditionsForFailure": "The user provides a dishonest or superficial self-assessment. The user is unwilling to engage with metaphorical or probabilistic outputs. The individual's state is too chaotic (extremely low $T_a$) for any coherent paths, current or dormant, to be identified.",
+        "inputDataSensitivity": "The output is a direct reflection of the input. The quality and depth of the initial 'Individual Phase Profile' determines the quality and depth of the resulting map.",
+        "parameterSensitivity": "Parameters like `ReverseFunnelSweepDepth` can dramatically change the scope of the output, from near-term adjustments to profound, life-altering possibilities. The interpretation is highly subjective.",
+        "computationalComplexity": "Generally low, as the 'computation' is more about applying a structured conceptual model to a small, qualitative dataset. The main work is interpretive rather than numerical."
+    },
+    "coreMathematicalOperations": [
+        {
+            "name": "Inverse Lifepath Unfolding (Conceptual)",
+            "equation": "\\text{Map}_{potential} = \\mathcal{F}^{-1}_{sweep}(\\Psi_{current})",
+            "description": "Symbolizes the core operation: applying a conceptual 'inverse sweep' operator to the user's current life-state vector to generate a map of potential alternative paths."
+        },
+        {
+            "name": "Dormant Wound Channel Condition (Conceptual)",
+            "equation": "\\rho_{WC}(\\vec{x}, t < t_{divergence}) > \\tau_{threshold}",
+            "description": "Identifies a dormant channel by finding where its historical information density ($\rho_{WC}$) was once above a threshold, even if it is low now."
+        },
+        {
+            "name": "Temporal Reintegration Index (Conceptual)",
+            "equation": "I_{reint} = f(\\frac{1}{t_{now} - t_{divergence}}, \\frac{1}{|\\vec{V}_{current} - \\vec{V}_{dormant}|})",
+            "description": "A conceptual score for the feasibility of reintegration, which is higher for more recent and less different dormant paths."
+        },
+        {
+            "name": "Entropy Reduction Pathway (Conceptual)",
+            "equation": "\\Delta S_{life} = S_{integrated} - S_{current} < 0",
+            "description": "A potential pathway is considered an 'Entropy Reduction Pathway' if moving towards the integrated state (current + dormant) is predicted to lead to a lower state of personal entropy (i.e., more coherence, purpose, and order)."
+        }
+    ],
+    "practiceForPurposeFunctionalRealization": {
+        "functionalEssence": "This Tendu module facilitates the 'Practice for Purpose' of profound self-reflection and the rediscovery of lost or dormant aspects of the self. It provides a structured, resonant language for the deeply personal process of asking 'what if?' and exploring the roads not taken, not as regrets, but as a map of potential for future integration.",
+        "informationTransformation": "It transforms a user's self-perception of their present life into a metaphorical and poetic 'Lifepath Divergence Map'. This map reframes past choices and future possibilities in terms of resonance, coherence, and attraction, converting a linear sense of time into a spatialized landscape of potential selves. It makes the intangible concept of 'latent potential' visible.",
+        "purposefulUtilization": "An entity (an individual in reflection) can utilize this mode to:\n1. Gain a new perspective on why their current life path may feel fulfilling or unfulfilling by seeing it in the context of other dormant possibilities.\n2. Identify specific, latent aspects of their personality, talents, or desires ('Dormant Coherence Vectors') that could be consciously re-activated or explored.\n3. Find concrete ideas for personal growth or change by examining the 'Entropy Reduction Pathways' that lead to states of greater personal coherence.\n4. Make more conscious and aligned life decisions in the present by understanding the landscape of their 'Personal Attractor Zones'.\n5. Use the output as a focus for ritual, journaling, or therapeutic discussion to facilitate a 'Temporal Reintegration' of fragmented parts of the self."
+    },
+    "customizationAndAdvancedConfigurationOptional": {
+        "tailoringGuidance": "This module is almost entirely about customization. The user defines their own parameter space (the life domains that matter to them). The interpretation is deeply personal. The output can be customized to be highly visual, poetic, or framed as a series of Socratic questions.",
+        "potentialExtensions": "Integration into guided meditation or journaling apps. Use as a foundation for AI-driven life coaching that helps users define their `Individual Phase Profile`. Pairing with TEN-RCA-1.0 (Ritual Coherence Analysis) to design personal rituals aimed at activating a specific 'Dormant Coherence Vector' identified by this module."
+    }
+}

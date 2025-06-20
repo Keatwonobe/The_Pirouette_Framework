@@ -1,0 +1,125 @@
+{
+    "tenduModuleID": "TEN-ATV-1.0",
+    "moduleName": "Attunement Targeting Vector",
+    "pirouetteFrameworkOrigin": "Derived from TPF Vol 3, Module 10 (Attunement Resonance Framework) and as an implementation of Condition 3 from the 'Altruistic Inversion of the Price Equation' (modAIPE) module.",
+    "version": "1.0",
+    "dateLastUpdated": "2025-06-16",
+    "primaryPurposeConciseStatement": "To optimize the distribution of altruistic Coherence Flux by identifying and prioritizing phase-aligned recipient entities, thereby maximizing the fitness-weighted transmission term `E(w\u0394z)` of the inverted Price equation and fostering exponential propagation of altruism within a system.",
+    "coreTransformationAchieved": "Transforms a defined Coherence Flux contribution and a map of potential recipient entities into a ranked, vectorized list of optimal targets. This prioritization is based on a calculated score incorporating the recipients' phase alignment with the source and their potential to amplify the altruistic trait upon reception, maximizing the systemic benefit of the contribution.",
+    "conceptualAnchor": {
+        "theoreticalInsight": "This module operationalizes the Pirouette equivalent of kin or group selection. For altruism to become a dominant, self-amplifying strategy, its benefits must preferentially flow to other entities who are either already altruistic or are highly receptive to becoming so. Instead of genetic relatedness, the selection metric is 'resonant compatibility' or phase alignment. By directing Coherence Flux towards 'in-phase' entities, the system creates a powerful positive feedback loop: altruism strengthens those most like the altruist, who in turn are more likely to propagate the trait. This maximizes the `E(w\u0394z)` term in the inverted Price equation by ensuring that the trait change (`\u0394z`) is largest in recipients whose own fitness (`w`) is most positively impacted, leading to exponential growth of the trait within the resonant sub-population.",
+        "pirouetteParameters": [
+            {
+                "parameter": "Phase (\u03c6, \u03b8)",
+                "relevance": "The core of the module's function. The `PhaseAlignmentMap` is a primary input, and the calculation of phase difference, `\u0394\u03c6`, between the source/flux and potential targets is the primary filtering and ranking mechanism."
+            },
+            {
+                "parameter": "Time-Adherence (Ta)",
+                "relevance": "The Time-Adherence of a potential recipient ($T_{a,recipient}$) is a factor in their ability to successfully integrate the incoming Coherence Flux. The goal of the directed flux is to increase the recipient's $T_a$ and, by extension, the average $T_a$ of the system."
+            },
+            {
+                "parameter": "Gladiator Force (\u0393)",
+                "relevance": "A potential recipient's $\\Gamma$ value indicates their boundary permeability. An optimal target might have a medium $\\Gamma$—not so low as to be rigid and unreceptive, and not so high as to be unable to stabilize the new coherence."
+            },
+            {
+                "parameter": "Ki Constant (Ki)",
+                "relevance": "The phase alignment between entities is a $K_i$-modulated phenomenon. The targeting score uses a cosine function of the phase difference, which is fundamentally tied to the $K_i$-resonant cycle of interaction."
+            },
+            {
+                "parameter": "Resonant Persistence (RP)",
+                "relevance": "The analysis explicitly prioritizes targets based on their '$\u0394R_P$ delta potential'—the potential increase in their Resonant Persistence (fitness) upon receiving the Coherence Flux."
+            }
+        ]
+    },
+    "inputStreamSpecificationAndPreparation": {
+        "requiredDataCharacteristics": "1) A 'CoherenceFlux' profile, describing the nature, strength, and phase signature of the altruistic contribution to be distributed. 2) A 'PhaseAlignmentMap' of the target environment, providing phase information for potential recipients. 3) An 'EntityVector', which is a list of potential recipient entities, each characterized by their current Pirouette parameters ($T_a, \\Gamma$) and Resonant Persistence ($\u211b_P$).",
+        "formatAndStructure": "CoherenceFlux as a parameter set. PhaseAlignmentMap as a field map or a dictionary of entityID:phase. EntityVector as a list of structured objects.",
+        "minimumViableDataSet": "A defined CoherenceFlux signature and a list of at least two potential targets with associated phase and fitness-proxy data.",
+        "preprocessingSteps": "Normalize all phase data to a common reference frame. Calculate the current Resonant Persistence ($\u211b_P$) for each entity in the EntityVector if not already provided."
+    },
+    "operationalParametersAndConfiguration": {
+        "modeSpecificParameters": [
+            {
+                "parameter": "PhaseMatchThreshold",
+                "description": "The maximum phase difference ($\u0394\u03c6$) allowed for an entity to be considered 'in-phase' and included in the potential target list.",
+                "typicalRange": "e.g., < \u03c0/4 radians."
+            },
+            {
+                "parameter": "PersistenceGainWeight",
+                "description": "A weighting factor (0-1) that determines the importance of a target's potential fitness gain ($\u0394\u211b_P$) relative to their initial phase alignment when calculating the final Targeting Score.",
+                "typicalRange": "0.3 - 0.7"
+            },
+            {
+                "parameter": "AmplificationFactor (Assumed)",
+                "description": "A modeling parameter used to estimate the downstream 'AltruismPropagation' effect resulting from a successful coherence transfer.",
+                "typicalRange": "e.g., 1.1 - 2.0, representing a 10-100% amplification per cycle."
+            }
+        ],
+        "pirouetteParameterConfiguration": "$K_i$ is used as a constant in phase alignment calculations. The module takes entities' current $T_a$ and $\\Gamma$ as inputs to calculate their potential for fitness gain."
+    },
+    "proceduralImplementationAlgorithmicGuide": [
+        "1. Condition Assessment: The protocol is triggered when a CoherenceFlux is to be distributed and the goal is to maximize systemic benefit, rather than engaging in non-preferential dispersal.",
+        "2. Phase Correlation and Filtering: For each entity 'i' in the `EntityVector`, calculate the phase difference $\\Delta\\phi_i$ between its phase (from `PhaseAlignmentMap`) and the `CoherenceFlux` phase. Discard any entities where $\\Delta\\phi_i$ exceeds the `PhaseMatchThreshold`.",
+        "3. Fitness Gain Estimation: For each remaining (in-phase) entity, model the potential change in its Resonant Persistence ($\u0394\u211b_P$) if it were to receive the CoherenceFlux. This is a function of its current state: $\u0394\u211b_P(i) = f(T_{a,i}, \\Gamma_i, \\text{FluxStrength})$. Entities with moderate coherence and stability may have the highest potential for positive change.",
+        "4. Targeting Score Calculation: For each filtered entity, calculate a final Targeting Score ($S_T$) as a weighted sum of its phase alignment and its fitness gain potential: $S_T(i) = (1 - w_{gain}) \\cdot \\cos(K_i \\Delta\\phi_i) + w_{gain} \\cdot \\text{Normalized}(\u0394\u211b_P(i))$, where $w_{gain}$ is the `PersistenceGainWeight`.",
+        "5. Vector Generation: Rank the entities in descending order based on their Targeting Score ($S_T$). This ranked list forms the 'Attunement Targeting Vector'.",
+        "6. Propagation Modeling: (Optional) Model the expected 'AltruismPropagation' rate based on the scores of the top-ranked targets and the `AmplificationFactor`."
+    ],
+    "outputStreamSpecificationAndInterpretation": {
+        "outputDataStructure": "{ 'TargetingVector': [ { 'EntityID': 'id_1', 'TargetingScore': value_1 }, { 'EntityID': 'id_2', 'TargetingScore': value_2 }, ... ], 'AmplificationPotential': 'High'/'Medium'/'Low', 'PredictedPropagation': 'Exponential'/'Linear'/'Stagnant' }.",
+        "expectedInsightsAndDerivations": "A method to move from indiscriminate aid to strategic, resonant reinforcement. A quantifiable basis for directing resources to maximize systemic growth and coherence. A model for how altruism can become a powerfully successful and self-amplifying strategy within a complex system.",
+        "interpretationGuidelines": "The 'TargetingVector' provides a clear, prioritized list of where to direct the Coherence Flux for maximum systemic benefit. A high 'AmplificationPotential' indicates that the system contains highly receptive targets, making the altruistic act likely to create a positive feedback loop. An 'Exponential' propagation prediction suggests the conditions for satisfying the Altruistic Inversion Principle have been successfully engineered."
+    },
+    "integrationHooksAndWorkflowContext": {
+        "upstreamDependencies": "This is the third step in the 'Altruism Engineering' workflow, following `TEN-SGP-1.0` (which protects the altruist) and `TEN-RFC-1.0` (which refines the altruistic act). It requires a defined `CoherenceFlux` and a map of the recipient environment.",
+        "downstreamApplications": "The output 'TargetingVector' directly informs the action of resource distribution, mentorship matching, team formation, communication targeting, or any other directed altruistic act. The success of the targeting can be measured by tracking the average `Coherence Contribution Capacity` of the system over time."
+    },
+    "validationAndVerificationProtocols": {
+        "implementationCorrectness": "Verify that the phase correlation, filtering, and ranking algorithms are implemented correctly. Check the weighted sum calculation for the Targeting Score.",
+        "insightMeaningfulness": "In simulated multi-agent systems, distributing a resource according to the Targeting Vector's ranking should result in a statistically significant, faster increase in the average 'altruism' trait of the overall population when compared to random distribution or distribution based on need alone. This would validate the core principle of resonant amplification."
+    },
+    "applicationDomainsAndUseCaseExamples": [
+        "Philanthropy & Grant-Making: Identifying which organizations or projects are most 'in-phase' with a foundation's goals and have the highest potential to amplify the impact of funding.",
+        "Venture Capital & Incubation: Selecting startups for investment not just on their idea, but on their resonant alignment with a larger technological or market ecosystem.",
+        "Education & Mentorship: Matching mentors to mentees based on their phase compatibility to maximize knowledge and coherence transfer.",
+        "Team Formation: Assembling project teams by selecting members who are already in resonant alignment, accelerating the path to high performance and collective flow.",
+        "Information Seeding: Introducing a new idea, product, or social norm into a network by targeting the most receptive and influential (phase-aligned) nodes to ensure exponential adoption."
+    ],
+    "caveatsLimitationsAndSensitivityAnalysis": {
+        "conditionsForFailure": "The `PhaseAlignmentMap` is inaccurate or unavailable. There are no entities in the `EntityVector` that meet the `PhaseMatchThreshold`. The model for `\u0394R_P` potential is flawed, leading to mis-prioritization. The Coherence Flux is too weak to induce a significant change regardless of targeting.",
+        "inputDataSensitivity": "The entire module is highly sensitive to the accuracy of the input phase data. Small errors in phase measurement can lead to incorrect targeting.",
+        "parameterSensitivity": "The `PhaseMatchThreshold` is a critical parameter: too strict a threshold may yield no targets, while too loose a threshold defeats the purpose of preferential targeting. The `PersistenceGainWeight` determines the balance between current alignment and future potential.",
+        "computationalComplexity": "The complexity is primarily O(N) where N is the number of potential targets, as it involves iterating through the list to calculate scores. If the PhaseAlignmentMap must be generated from complex data, that upstream step could be intensive."
+    },
+    "coreMathematicalOperations": [
+        {
+            "name": "Phase Alignment Score",
+            "equation": "S_{align}(i) = \\cos(K_i \\cdot (\\phi_{source} - \\phi_i))",
+            "description": "Calculates the resonant phase alignment between the source/flux and a target entity 'i', modulated by $K_i$."
+        },
+        {
+            "name": "Targeting Score Calculation",
+            "equation": "S_T(i) = (1 - w_{gain}) \\cdot S_{align}(i) + w_{gain} \\cdot \\text{Normalized}(\\Delta\\mathcal{R}_P(i))",
+            "description": "Computes a weighted score for each potential target based on its phase alignment and its potential for fitness/persistence gain ($\u0394R_P$)."
+        },
+        {
+            "name": "Systemic Propagation Model (Conceptual)",
+            "equation": "\\frac{d\\bar{z}}{dt} = r \\cdot \\bar{z} \\cdot (1 - \\frac{\\bar{z}}{K_{cap}}) \\text{ where } r \\propto \\bar{S}_{align}",
+            "description": "Models the logistic growth of the average altruistic trait (z-bar) in a system, where the growth rate 'r' is proportional to the average alignment score of the altruistic acts."
+        },
+        {
+            "name": "Fitness Gain Potential (Conceptual)",
+            "equation": "\\Delta\\mathcal{R}_P(i) = f(\\text{FluxStrength}, T_{a,i}, \\Gamma_i)",
+            "description": "A function representing the predicted increase in a target's Resonant Persistence, which would be higher for entities that are stable enough to integrate the flux but not so stable that it has no effect."
+        }
+    ],
+    "practiceForPurposeFunctionalRealization": {
+        "functionalEssence": "This Tendu module facilitates the 'Practice for Purpose' of making altruism not just sustainable, but maximally effective and self-amplifying. It operationalizes the strategic principle that help is most impactful when directed towards those who are most prepared and aligned to receive and build upon it. The core function is to replace indiscriminate dispersal of coherence with precise, resonance-guided targeting.",
+        "informationTransformation": "It transforms a map of potential recipients and a defined altruistic contribution into a prioritized 'Targeting Vector'. This process involves filtering a large set of possibilities down to a small, high-potential subset based on the principle of resonant compatibility. It converts a question of 'who to help?' into a calculated answer of 'who to empower for maximum systemic benefit?'.",
+        "purposefulUtilization": "An entity can utilize this mode to:\n1. Ensure that limited altruistic resources (time, energy, capital, knowledge) are deployed in a way that generates the highest possible return in systemic coherence.\n2. Move beyond simple aid to fostering exponential growth of positive traits within a system by creating targeted feedback loops.\n3. Make ethical decisions about resource allocation based on quantifiable metrics of resonance and amplification potential.\n4. Design highly effective 'seeding' strategies for social change, technological adoption, or cultural evolution by identifying the most fertile ground for new ideas.\n5. Fulfill the third and final condition of the Altruistic Inversion Principle, turning altruism into a dominant, self-reinforcing strategy within any complex system."
+    },
+    "customizationAndAdvancedConfigurationOptional": {
+        "tailoringGuidance": "The function for calculating 'Fitness Gain Potential' ($\u0394R_P$) is highly context-dependent and a key area for customization. In some systems, the neediest (lowest $R_P$) might have the highest delta potential; in others, those already strong (high $R_P$) might be better amplifiers. This choice defines the ethical and strategic core of the targeting.",
+        "potentialExtensions": "Dynamic Targeting: a model where the Targeting Vector is updated in real-time as the PhaseAlignmentMap changes in response to the initial coherence contributions. Network-Aware Targeting: incorporating network topology to weigh targets based not just on their own properties, but also on their position and ability to propagate the trait to others. Multi-Flux Optimization: solving for the optimal distribution of multiple, different types of Coherence Flux across a diverse population."
+    }
+}

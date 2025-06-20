@@ -1,0 +1,107 @@
+{
+    "tenduModuleID": "TEN-FID-1.0",
+    "moduleName": "Funnel Inversion Detection",
+    "pirouetteFrameworkOrigin": "TPF Vol 1, Module F1/14: Funnel Inversion & Topological Dynamics; TPF Vol 1, Module 11.5: Funnel Inversion: Topology and Group Theory",
+    "version": "1.0",
+    "dateLastUpdated": "2025-05-31",
+    "primaryPurposeConciseStatement": "To identify, classify, and predict topological state transformations (Funnel Inversions) in systems, revealing critical transition points, cyclical behaviors, and underlying three-state operational modalities.",
+    "coreTransformationAchieved": "Transforms system state data and parameter space maps into a classification of the system's current operational state within the three-state funnel inversion cycle, an assessment of its proximity to critical attractors, and a probabilistic forecast of potential state inversions.",
+    "conceptualAnchor": {
+      "theoreticalInsight": "Systems often undergo topological transformations analogous to the three-state cycle of Funnel Inversions when they interact with or cross attractors within a constraining 'Reality Funnel' structure in their parameter space[cite: 20, 479]. These inversions, governed by the transformation $|\\psi\\rangle \\xrightarrow{A(\\sigma)} e^{iK_i\\hat{\\phi}}|\\psi\\rangle$[cite: 482], are not random but follow a characteristic three-state cycle (Normal, Inverted-clockwise, Inverted-counterclockwise)[cite: 20, 482], allowing for the prediction of phase transitions and critical points.",
+      "pirouetteParameters": [
+        {
+          "parameter": "Gladiator Force (Γ)",
+          "relevance": "Influences the probability of a Funnel Inversion. Specifically, it appears in the exponent of the inversion probability equation $P(\\text{inversion}) = 1 - e^{-\\Gamma ||\\vec{x}-\\vec{x}_{attractor}||^2}$[cite: 77], suggesting higher $\\Gamma$ (looser confinement or higher system energy/instability) can increase inversion likelihood for a given distance to an attractor."
+        },
+        {
+          "parameter": "Ki Constant ($K_i$)",
+          "relevance": "The phase rotation operator $e^{iK_i\\hat{\\phi}}$ during an inversion is modulated by $K_i$[cite: 482]. This implies $K_i$ governs the nature and symmetry of the state transformation, underpinning the three-state cycle, analogous to its role in phase evolution and symmetry in other Pirouette phenomena."
+        },
+        {
+          "parameter": "Attractors",
+          "relevance": "Funnel inversions are triggered when entities cross attractors within the Reality Funnel structure[cite: 20, 289]. The location and properties of these attractors are crucial for assessing inversion probability."
+        }
+      ]
+    },
+    "inputStreamSpecificationAndPreparation": {
+      "requiredDataCharacteristics": "System state data, ideally as time series or trajectories through a defined parameter space. Data should exhibit potential for cyclical patterns or state transitions. Requires an existing or derivable map of relevant attractors in the system's parameter space[cite: 102].",
+      "formatAndStructure": "Numerical arrays representing system state vectors $(\\vec{x})$ over time or across conditions. Attractor map as a list of coordinates $(\\vec{x}_{attractor})$ with associated properties (e.g., orientation $\\sigma$).",
+      "minimumViableDataSet": "Sufficient data to establish the system's current state and its trajectory relative to known attractors. For predictive analysis, historical data showing past transitions is highly beneficial.",
+      "preprocessingSteps": "Mapping the system into a relevant parameter space where states and attractors can be clearly defined[cite: 75]. Normalization of parameter space if dimensions have different scales."
+    },
+    "operationalParametersAndConfiguration": {
+      "modeSpecificParameters": [
+        {
+          "parameter": "Attractor Map",
+          "description": "A pre-defined map of attractors in the system's parameter space, including their locations and potentially their orientation or type.",
+          "typicalRange": "System-dependent, derived from prior analysis (e.g., Gladiator Force Gradient Mapping) or theoretical modeling."
+        },
+        {
+          "parameter": "Distance Metric for Parameter Space",
+          "description": "Method for calculating $||\\vec{x}-\\vec{x}_{attractor}||^2$.",
+          "typicalRange": "Euclidean distance is common, but other metrics like Mahalanobis distance might be used depending on parameter space characteristics."
+        }
+      ],
+      "pirouetteParameterConfiguration": "The system's current or characteristic $\\Gamma$ value is needed for the inversion probability calculation. $K_i$ is implicitly used in the understanding of the three-state cycle."
+    },
+    "proceduralImplementationAlgorithmicGuide": [
+      "State Space Construction: Define and map the system's current state $(\\vec{x})$ into the relevant parameter space[cite: 75].",
+      "Attractor Proximity Calculation: For the current system state $\\vec{x}$, calculate its distance to all known nearby attractors $(\\vec{x}_{attractor})$ in the parameter space[cite: 76].",
+      "Three-State Classification: Based on the system's current parameters or its recent history of attractor crossings, classify its current operational state into one of the three funnel inversion modalities: Normal, Inverted-clockwise, or Inverted-counterclockwise[cite: 76].",
+      "Inversion Probability Assessment: For each nearby attractor, estimate the likelihood of a state transition (funnel inversion) using the formula $P(\\text{inversion}) = 1 - e^{-\\Gamma ||\\vec{x}-\\vec{x}_{attractor}||^2}$, where $\\Gamma$ is the system's relevant Gladiator Force value[cite: 77].",
+      "Pre-Inversion Signature Detection: Analyze the recent trajectory or fluctuations of the system state for characteristic patterns known to precede funnel inversions (e.g., critical slowing down, increased variance, specific wound channel signatures)[cite: 77].",
+      "Post-Inversion Trajectory Prediction: If an inversion is deemed probable or has occurred, project the system's likely path or new stable state within the three-state cycle, considering the orientation of the crossed attractor[cite: 78]."
+    ],
+    "outputStreamSpecificationAndInterpretation": {
+      "outputDataStructure": "The system's classified current state (Normal, Inverted-clockwise, Inverted-counterclockwise). A list of nearby attractors with associated inversion probabilities. Identification of any detected pre-inversion signatures. Predicted post-inversion trajectory or state.",
+      "expectedInsightsAndDerivations": "Prediction of critical transitions or regime shifts in the system. Early warning signs of impending instability or transformation. Understanding of cyclical behaviors and their underlying drivers. Classification of system states within a fundamental topological framework.",
+      "interpretationGuidelines": "High inversion probability for a nearby attractor suggests an imminent state transition. The three-state classification helps understand the 'direction' or nature of potential or past changes. Pre-inversion signatures provide confidence in short-term predictions. Post-inversion trajectory indicates the system's new likely basin of attraction."
+    },
+    "integrationHooksAndWorkflowContext": {
+      "upstreamDependencies": "Requires a defined parameter space and an attractor map, which may be an output of Gladiator Force Gradient Mapping. System state data, possibly segmented by Stochastic Gulping.",
+      "downstreamApplications": "Predictions can inform intervention strategies to either promote or prevent state transitions. Can be combined with Wound Channel Memory Reconstruction and Reverse Pareto Analysis for 'Information Persistence and Propagation Analysis'[cite: 95].",
+      "compatibilityWithCombinedWorkflows": "A core component of 'Information Persistence and Propagation Analysis'."
+    },
+    "validationAndVerificationProtocols": {
+      "implementationCorrectness": "Verify distance calculations and probability formula implementation. Test state classification logic with synthetic data representing known states.",
+      "insightMeaningfulness": "Predicted inversions should correlate with historically observed major transitions in the system if data is available. The three-state cycle model should provide a consistent framework for interpreting observed cyclical behaviors."
+    },
+    "applicationDomainsAndUseCaseExamples": [
+      "Predicting critical transitions in complex systems (e.g., market crashes, ecological regime shifts, social revolutions)[cite: 79].",
+      "Identifying early warning signs of system instability or impending change[cite: 79].",
+      "Analyzing cyclical behaviors in socio-economic systems (e.g., boom-bust cycles)[cite: 79].",
+      "Understanding phase transitions in physical and biological processes (e.g., protein folding, material state changes)[cite: 79]."
+    ],
+    "caveatsLimitationsAndSensitivityAnalysis": {
+      "conditionsForFailure": "Poorly defined parameter space or inaccurate attractor map. Systems where the three-state funnel inversion model is not the dominant mode of transformation. Insufficient data to reliably determine system state or trajectory.",
+      "inputDataSensitivity": "Sensitive to the accuracy of system state measurement and the quality of the attractor map. The choice of $\\Gamma$ value significantly impacts inversion probabilities.",
+      "parameterSensitivity": "The inversion probability is exponentially sensitive to the distance from an attractor and the Gladiator Force $\\Gamma$. The classification of states depends on consistent interpretation of the three-state model.",
+      "computationalComplexity": "Primarily depends on the dimensionality of the parameter space and the number of attractors. Distance calculations can be costly in high dimensions. Trajectory analysis for pre-inversion signatures can also be intensive."
+    },
+    "coreMathematicalOperations": [
+      {
+        "name": "Funnel Inversion Transformation (Conceptual)",
+        "equation": "|\\psi\\rangle \\xrightarrow{A(\\sigma)} e^{iK_i\\hat{\\phi}}|\\psi\\rangle",
+        "description": "The fundamental state transformation during a funnel inversion, modulated by the Ki constant and involving a phase rotation operator $\\hat{\\phi}$ upon interacting with an attractor $A(\\sigma)$ of orientation $\\sigma$."
+      },
+      {
+        "name": "Inversion Probability Assessment",
+        "equation": "P(\\text{inversion}) = 1 - e^{-\\Gamma ||\\vec{x}-\\vec{x}_{attractor}||^2}",
+        "description": "Estimates the likelihood of a state transition (funnel inversion) based on the system's state $\\vec{x}$, its Gladiator Force $\\Gamma$, and its distance to an attractor $\\vec{x}_{attractor}$."
+      },
+      {
+        "name": "Three-State Classification Logic",
+        "equation": "\\text{State} \\in \\{\\text{Normal, Inverted-Clockwise, Inverted-Counterclockwise}\\}",
+        "description": "Assigns the system to one of three fundamental operational modalities based on its parameters or history of attractor interactions."
+      }
+    ],
+    "practiceForPurposeFunctionalRealization": {
+      "functionalEssence": "This Tendu module enables the 'Practice for Purpose' of understanding and anticipating fundamental, often cyclical, transformations within a system. It provides a framework for recognizing that many systems do not evolve linearly but undergo discrete, qualitative shifts in their operational modality, following a predictable topological pattern (the three-state cycle).",
+      "informationTransformation": "It transforms observations of a system's state and its position within a parameter landscape into a classification of its current 'funnel state' and a probabilistic forecast of potential inversions. This means raw state data is converted into insights about the system's position in a larger, often hidden, cycle of transformation, revealing its susceptibility to profound change.",
+      "purposefulUtilization": "An entity can utilize this mode to:\n1. Predict when a system is approaching a critical transition point, allowing for proactive intervention or adaptation.\n2. Understand the nature of cyclical patterns in a system, moving beyond simple periodicity to recognize underlying topological state changes.\n3. Identify early warning signs of regime shifts by detecting pre-inversion signatures.\n4. Navigate or guide a system through its transformative cycles more effectively by understanding the mechanics of funnel inversions and the characteristics of the three operational states."
+    },
+    "customizationAndAdvancedConfigurationOptional": {
+      "tailoringGuidance": "The definition of the three states (Normal, Inverted-Clockwise, Inverted-Counterclockwise) may need to be calibrated for specific system domains. The pre-inversion signature detection can incorporate domain-specific patterns. The $\\Gamma$ value used in probability calculations might be dynamic or context-dependent.",
+      "potentialExtensions": "Development of automated attractor mapping from system data. Integration with control systems to actively manage or induce funnel inversions. Modeling of nested funnel inversions where transitions at one scale trigger or are part of larger-scale inversions."
+    }
+  }

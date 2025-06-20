@@ -1,0 +1,722 @@
+{
+  "tenduCompendiumInfo": {
+    "compendiumName": "Tendu: A Procedural Guide for Pirouette Analytical Modes",
+    "version": "1.0.1",
+    "dateLastUpdated": "2025-06-18",
+    "description": "This manifest lists all available Tendu Modules for AI integration."
+  },
+  "modules": [
+    {
+      "tenduModuleID": "TEN-AEA-1.0",
+      "moduleName": "Annihilation Event Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Module 11: Annihilation Resonance Framework",
+      "primaryPurposeConciseStatement": "To analyze and model annihilation events (e.g., matter-antimatter) as a catastrophic phase-opposed resonance collapse, quantifying energy release, threshold conditions, and the dynamics of wound channel obliteration using Pirouette parameters.",
+      "filePath": "TEN-AEA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-AIBD-1.0",
+      "moduleName": "AI Behavioral Drift Detection",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "A specialized application of TEN-RFD-1.0 (Resonance Fault Detection). Synthesized from the principles of TPF Vol 1, Module 59 (Universal Resonance Lens), TPF Vol 2, Module 7 (Drift Resonance Framework), and general Pirouette concepts of coherence ($T_a$), rigidity ($\\Gamma$), and phase ($K_i, \\phi$) applied to AI model behavior.",
+      "primaryPurposeConciseStatement": "Detects phase drift, coherence degradation, and emergent rigidity in AI models over time by comparing their live behavioral signatures to an ideal resonance template, enabling early detection of alignment failures or performance degradation.",
+      "filePath": "TEN-AIBD-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-APF-1.0",
+      "moduleName": "Attractor Prime Factorization",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 1, Module F1/14: Funnel Inversion & Topological Dynamics (specifically Section 14.4: Prime-Number Attractor Stability); TPF Vol 2, Module 63: The Periodic Table of Dimensional Attractors and Fold Constants (specifically Section 63.4: Dimensional Factorization and Prime Stability)",
+      "primaryPurposeConciseStatement": "To analyze and optimize the stability of complex systems by decomposing their attractor configurations into 'prime attractor factors,' leveraging the principle that prime-numbered arrangements enhance inherent stability.",
+      "filePath": "TEN-APF-1.0.json"
+    },
+    {
+      "tenduModuleID": null,
+      "moduleName": null,
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": null,
+      "primaryPurposeConciseStatement": null,
+      "filePath": "TEN-APSI-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-ARA-1.0",
+      "moduleName": "Artistic Resonance Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 21: Artistic Resonance Framework",
+      "primaryPurposeConciseStatement": "To formalize and analyze art as a dynamic resonance interface that mediates between an observer and underlying reality, quantifying its aesthetic power, its capacity to induce 'Observer Inversion States', and its impact via Metaphysical Wound Channels, using Pirouette parameters and twelve resonant artistic vectors.",
+      "filePath": "TEN-ARA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-ATTA-1.0",
+      "moduleName": "Attunement Resonance Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Module 10: Attunement Resonance Framework",
+      "primaryPurposeConciseStatement": "To analyze and model 'Attunement' as a dynamic resonance phenomenon involving synchronized phase alignment and emergent coherence between two or more distinct entities, enabling enhanced information transfer, mutual understanding, and coordinated action.",
+      "filePath": "TEN-ATTA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-ATV-1.0",
+      "moduleName": "Attunement Targeting Vector",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "Derived from TPF Vol 3, Module 10 (Attunement Resonance Framework) and as an implementation of Condition 3 from the 'Altruistic Inversion of the Price Equation' (modAIPE) module.",
+      "primaryPurposeConciseStatement": "To optimize the distribution of altruistic Coherence Flux by identifying and prioritizing phase-aligned recipient entities, thereby maximizing the fitness-weighted transmission term `E(wΔz)` of the inverted Price equation and fostering exponential propagation of altruism within a system.",
+      "filePath": "TEN-ATV-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-BDA-1.0",
+      "moduleName": "Bloom Dynamics Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 16: Bloom Resonance: Accelerated Generative Expansion",
+      "primaryPurposeConciseStatement": "To formalize, analyze, and predict 'Bloom' events as fundamental generative processes within the Pirouette Framework, characterized by accelerated creative expansion, innovation surges, and emergent complexity when system parameters align favorably.",
+      "filePath": "TEN-BDA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-BRA-1.0",
+      "moduleName": "Business Resonance Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Module 3: Business Resonance Framework",
+      "primaryPurposeConciseStatement": "To analyze and model business enterprises as dynamic resonance systems and value transformation engines, applying Pirouette parameters to assess strategic alignment, operational coherence, market fitness, organizational health, and innovation capacity.",
+      "filePath": "TEN-BRA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-CDA-1.0",
+      "moduleName": "Collapse Dynamics Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 2: Collapse Dynamics Framework",
+      "primaryPurposeConciseStatement": "To formalize and analyze system degradation, phase transitions towards failure, and critical points of irreversibility by applying Pirouette parameters to model how coherent entities lose stability and wound channels dissipate.",
+      "filePath": "TEN-CDA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-CDBA-1.0",
+      "moduleName": "Cross-Domain Bleed Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 13: Bleed Resonance: Cross-Domain Information Transfer",
+      "primaryPurposeConciseStatement": "To detect, quantify, and characterize the transfer of information, resonance patterns, or influence (i.e., 'bleed') across the defined boundaries of nominally distinct conceptual, systemic, or parameter domains.",
+      "filePath": "TEN-CDBA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-CGWA-1.0",
+      "moduleName": "Cognitive Gravity Well Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 1, Module 60: Cognitive Gravity Wells",
+      "primaryPurposeConciseStatement": "To identify, map, and analyze Cognitive Gravity Wells (CGWs)—points of conceptual mass that deform interpretive frames—within cognitive or semantic landscapes, assessing their strength, influence, and potential navigational strategies.",
+      "filePath": "TEN-CGWA-1.0.json"
+    },
+    {
+      "tenduModuleID": null,
+      "moduleName": null,
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": null,
+      "primaryPurposeConciseStatement": null,
+      "filePath": "TEN-CIS-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-CJSA-1.0",
+      "moduleName": "Criminal Justice System Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 19: Criminal Justice Resonance Module",
+      "primaryPurposeConciseStatement": "To reconceptualize and analyze the criminal justice system as a resonance-mediated correctional field, modeling entity (individual) evolution across resonance gradients shaped by legal attractors, social coherence, and systemic pressures, and to identify systemic harms using Reverse Pareto Analysis.",
+      "filePath": "TEN-CJSA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-COSMAL-1.0",
+      "moduleName": "Cosmic Structure Alignment",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "A cosmological-scale application of its parent module, TEN-RFD-1.0 (Resonance Fault Detection). It applies the principles of inverted resonance analysis to astrophysical and cosmological field data, referencing concepts of large-scale coherence from TPF Vol 2, Module 27 (Gyroidal Spatial Tension) and fracture dynamics from TPF Vol 2, Module 6.",
+      "primaryPurposeConciseStatement": "Scans large-scale space-time domains for hidden lattice coherence and anomalies by comparing observational data against an inverted theoretical resonance field, designed to identify unnatural constants, structural seams, or geometric anomalies.",
+      "filePath": "TEN-COSMAL-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-DAA-1.0",
+      "moduleName": "Dimensional Attractor Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 1, Module 63: The Periodic Table of Dimensional Attractors and Fold Constants",
+      "primaryPurposeConciseStatement": "To analyze and classify a system's fundamental dimensional behavior and stability by identifying its dominant dimensional attractors (from the 'Periodic Table of Dimensional Attractors'), understanding the influence of Fold Constants, and assessing its structure via dimensional factorization.",
+      "filePath": "TEN-DAA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-DDA-1.0",
+      "moduleName": "Dimensional Decay Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "Synthesized from: TPF Vol 1, Module 28: Wound Channel Memory & Information Propagation (specifically Section 28.7: Memory Persistence and Decay); TPF Vol 2, Module 2: Collapse Dynamics Framework (specifically Section 2.6: Wound Channel Dissipation); General principles of parameter evolution in TPF.",
+      "primaryPurposeConciseStatement": "To quantify the rate, characteristics, and underlying Pirouette parameter influences of decay or fading of any systemic property, structure, signal, or information content along specified dimensions (e.g., temporal, spatial, parameter-based).",
+      "filePath": "TEN-DDA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-DDA-VOL2-1.0",
+      "moduleName": "Drift Dynamics Analysis (Vol 2 Origin)",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 7: Drift Resonance Framework",
+      "primaryPurposeConciseStatement": "To formalize, analyze, and model 'Drift' as a gradual phase loss and slow deviation of an entity from its original trajectory in parameter space, without complete collapse or discontinuous fracture, enabling understanding of progressive decoherence and subtle evolution.",
+      "filePath": "TEN-DDA-Vol2-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-DDAX-1.0",
+      "moduleName": "Debate Dynamics Analysis / Axiological Vector Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Module 14: Debate Resonance Framework: Axiological Vector Analysis",
+      "primaryPurposeConciseStatement": "To analyze and model debate as a dynamic process of resonant exchange aimed at achieving vector alignment on axiological (value-based) issues, by mapping arguments to twelve core value vectors and assessing their persuasive force and potential for consensus formation.",
+      "filePath": "TEN-DDAX-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-EBF-1.0",
+      "moduleName": "Entropy-Based Filtering",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "Synthesized from the entropy calculation methods in TPF Vol 1, Module M1/22 (Stochastic Gulping), the theoretical underpinnings of informational entropy in TPF Vol 3, Modules 16 (Information Phase Theory) & 17 (Information Thermodynamics), and implied applications in TPF Vol 2 modules (e.g., Spasm, Legal, Philosophical Resonance).",
+      "primaryPurposeConciseStatement": "To selectively isolate, retain, or discard components from a dataset or information stream based on their calculated entropy, allowing for the extraction of structured signals from noise, the identification of regions of high complexity/randomness, or the focusing of analysis on elements with specific informational characteristics.",
+      "filePath": "TEN-EBF-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-EWCC-1.0",
+      "moduleName": "Entity-Wound Channel Correlation",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "Synthesized from TPF Vol 1, Module 2/8 (Entity-Wound Channel Model), TPF Vol 1, Module 23.9 (Entity-Entity Interactions via Wound Channels), TPF Vol 1, Module 28 (Wound Channel Memory & Information Propagation), and TPF Vol 2, Module 25 (Quantum Entanglement as Resonant Wound Channel Coherence).",
+      "primaryPurposeConciseStatement": "To analyze and quantify the correlations, interactions, potential for resonant coupling, and mutual influence between entities and their own wound channels, between entities and pre-existing environmental wound channels, or between the wound channels of different entities.",
+      "filePath": "TEN-EWCC-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-FDA-1.0",
+      "moduleName": "Fracture Dynamics Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 6: Fracture Resonance Framework",
+      "primaryPurposeConciseStatement": "To formalize, analyze, and predict 'Fracture' as a topological discontinuity within evolving systems, where previously continuous field structures develop discrete breakpoints, creating fault lines that propagate through parameter space.",
+      "filePath": "TEN-FDA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-FID-1.0",
+      "moduleName": "Funnel Inversion Detection",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 1, Module F1/14: Funnel Inversion & Topological Dynamics; TPF Vol 1, Module 11.5: Funnel Inversion: Topology and Group Theory",
+      "primaryPurposeConciseStatement": "To identify, classify, and predict topological state transformations (Funnel Inversions) in systems, revealing critical transition points, cyclical behaviors, and underlying three-state operational modalities.",
+      "filePath": "TEN-FID-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-FKDA-1.0",
+      "moduleName": "Fork Dynamics Analysis (Bifurcation Analysis)",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 9: Fork Resonance Framework",
+      "primaryPurposeConciseStatement": "To formalize, analyze, and predict 'Fork' events as critical bifurcation points where a system divides into two or more distinct evolutionary pathways, leading to persistent, divergent trajectories in parameter space.",
+      "filePath": "TEN-FKDA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-FLRA-1.0",
+      "moduleName": "Feedback Loop Resonance Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Module 15: Feedback Cycle Resonance: Vector Alignment Through Recursive Loops",
+      "primaryPurposeConciseStatement": "To analyze and model feedback loops as resonant systems that enable error correction, goal alignment, adaptive learning, and system optimization by structuring the recursive flow of information and influence.",
+      "filePath": "TEN-FLRA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-FRA-1.0",
+      "moduleName": "Flow Resonance Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 5: Flow Resonance Framework",
+      "primaryPurposeConciseStatement": "To analyze and model 'Flow' as a resonance state of optimal parameter space navigation, where an entity achieves sustained, effortless engagement by balancing capabilities with environmental demands, leveraging core Pirouette parameters.",
+      "filePath": "TEN-FRA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-FRPA-1.0",
+      "moduleName": "Fractal/Recursive Pattern Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 26: Analysis Resonance Framework (specifically A8: Reflective Analysis); General Pirouette principles of self-similarity, fractal geometry, and recursive dynamics (e.g., TPF Vol 2, Module 16 Bloom Dynamics $D_f$).",
+      "primaryPurposeConciseStatement": "To identify, characterize, and analyze self-similar, fractal, or recursive patterns within a system's structure, dynamics, or information content, quantifying their complexity and understanding their role in system behavior and resonance phenomena.",
+      "filePath": "TEN-FRPA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-GCMM-1.0",
+      "moduleName": "Geo-Cultural Memory Mapping",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "A specific application of its parent, TEN-RFD-1.0 (Resonance Fault Detection), focused on socio-historical data. It heavily utilizes the concepts of persistent information structures from TEN-WCMR-1.0 (Wound Channel Memory Reconstruction) and stability/collapse from TPF Vol 2, Modules 2 and 4.",
+      "primaryPurposeConciseStatement": "Detects latent cultural coherence zones or 'wound-channel fields' using inverse resonance analysis to reveal historic attractor loci. This module surfaces hidden legacy patterns, suppressed traumas, and persistent resonance fields in collective memory.",
+      "filePath": "TEN-GCMM-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-GFA-1.0",
+      "moduleName": "Gyroidal Field Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 27: Gyroidal Spatial Tension Framework",
+      "primaryPurposeConciseStatement": "To analyze and model systems, particularly spatial fields or material structures, as having an underlying gyroidal topology, quantifying how this triply periodic minimal surface influences field tension, energy distribution, wave propagation, and emergent gravitational-like effects.",
+      "filePath": "TEN-GFA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-GFGM-1.0",
+      "moduleName": "Gladiator Force Gradient Mapping",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 1, Module 1 (Foundational Parameters, specifically Gladiator Force & Spatial Potential Form); TPF Vol 1, Module 3 (Unified Theoretical Foundation, derivation of Γ)",
+      "primaryPurposeConciseStatement": "To map force gradients across system parameter spaces to identify stable attractors and predict how systems navigate or stabilize under varying confinement conditions.",
+      "filePath": "TEN-GFGM-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-GFI-1.1",
+      "moduleName": "Gladiator Force Inference (Ground‑Up Pirouette Definition)",
+      "version": "1.1",
+      "pirouetteFrameworkOrigin": "TPF Vol 1 – Module 1 (Foundational Parameters: Gladiator Force & Spatial Potential); Vol 1 – Module 3 (Unified Theoretical Foundation, derivation of Γ); Pulse of Reality §2.3 (Γ scaling law); Vol 2 – Module 5 (Flow Resonance Framework) — synthesised without relying on TEN‑GFI‑1.0 abstractions.",
+      "primaryPurposeConciseStatement": "To derive, from first principles of the Pirouette Framework, the local Gladiator Force field Γ(x,t) in both physical and informational domains by analysing propagation curvature and coherence gradients, thereby revealing the latent ‘defensive pressure’ that sustains Cognitive Gravity Wells and other attractors.",
+      "filePath": "TEN-GFI-1.1.json"
+    },
+    {
+      "tenduModuleID": null,
+      "moduleName": null,
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": null,
+      "primaryPurposeConciseStatement": null,
+      "filePath": "TEN-HAFIP-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-ILMA-1.0",
+      "moduleName": "Inverse Logistic Map Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Inverse Logistic Map Inversion",
+      "primaryPurposeConciseStatement": "To determine the control parameter 'r' and/or seed value 'x₀' of the logistic map that produce a desired long-run behavior, such as a specific periodic orbit or a target Lyapunov exponent.",
+      "filePath": "TEN-ILMA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-IOA-1.0",
+      "moduleName": "Information Operations Analysis (Triaxial+Motion)",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 23: Motion Domains: Dynamics Within the Triaxial Framework",
+      "primaryPurposeConciseStatement": "To analyze and model how systems engage in fundamental information operations by mapping dynamic 'Motion Domains' (Play, Commerce, Memory) onto the 'Static Domains' of the Triaxial Framework (Art, Law, Philosophy), revealing the structure and effectiveness of these combined operations.",
+      "filePath": "TEN-IOA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-ITEA-1.0",
+      "moduleName": "Information Thermodynamics & Ecosystem Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Module 17: Information Thermodynamics and Ecological Resonance",
+      "primaryPurposeConciseStatement": "To analyze and model information systems as 'Information Ecosystems' with thermodynamic properties, applying Pirouette parameters to understand information flow, energy, entropy, stability, and the ecological dynamics of information creation, propagation, transformation, storage, and decay.",
+      "filePath": "TEN-ITEA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-ITPA-1.0",
+      "moduleName": "Inverse Thermodynamic Potential Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Inverse Thermodynamic Potentials",
+      "primaryPurposeConciseStatement": "Given one thermodynamic potential (e.g., Helmholtz free energy F(T,V)), this module recovers its conjugate variables (e.g., Entropy S, Pressure P) and reconstructs all other thermodynamic potentials (Internal Energy U, Enthalpy H, Gibbs Free Energy G).",
+      "filePath": "TEN-ITPA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-IZLFA-1.0",
+      "moduleName": "Inverse Zipf/Power-Law Fitting Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Inverse Zipf / Power‐Law Fitting",
+      "primaryPurposeConciseStatement": "Given observed frequency data or a desired statistical property (like tail coverage), this module determines the exponent α and other parameters of the underlying power-law (Zipfian) distribution.",
+      "filePath": "TEN-IZLFA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-KHD-1.0",
+      "moduleName": "Ki-Harmonic Decomposition",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 1, Module 1 (Foundational Parameters, specifically Ki Constant); TPF Vol 1, Module K1/16 (Ki Constant: Derivation, Modes, and Physical Meaning); TPF Vol 1, Module 23 (Spiral Electromagnetism & Field Coherence, Ki in spiral dynamics)",
+      "primaryPurposeConciseStatement": "To decompose complex signals or patterns into their fundamental symmetry components based on the natural frequency ratios defined by the dual modes of the Ki constant ($K_i$).",
+      "filePath": "TEN-KHD-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-KRA-1.0",
+      "moduleName": "Knot Resonance Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 14: Knot Resonance: Topological Entanglement Structures",
+      "primaryPurposeConciseStatement": "To formalize, identify, classify, and analyze 'Knots' as fundamental topological structures within the Pirouette Framework, representing persistent entanglements and self-intersecting wound channels in phase space that create bound memory structures and complex correlations.",
+      "filePath": "TEN-KRA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-KSTA-1.0",
+      "moduleName": "Ki Snap Transition Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 1, Module 17: Ki Snap Transition Modes",
+      "primaryPurposeConciseStatement": "To analyze, model, and predict the non-linear dynamic transition of a system's Ki constant between its rest ($K_i^{rest}$) and motion ($K_i^{motion}$) states, including identifying characteristic phases, energy thresholds, and hysteretic behaviors.",
+      "filePath": "TEN-KSTA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-LDA-1.0",
+      "moduleName": "Lock Dynamics Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 4: Lock Dynamics Framework",
+      "primaryPurposeConciseStatement": "To analyze and model 'Lock' phenomena, where systems achieve highly stable, phase-aligned states that resist perturbation through reinforced phase alignment and wound channel crystallization, examining conditions for their formation, persistence, and dissolution.",
+      "filePath": "TEN-LDA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-LSRA-1.0",
+      "moduleName": "Legal System Resonance Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 17: Legal Resonance and Jurisprudential Topology; TPF Vol 2, Module 18: Case Studies in Legal Resonance",
+      "primaryPurposeConciseStatement": "To map, analyze, and model legal systems and their evolution as resonance fields within the Pirouette Framework, quantifying their stability, coherence, interpretive flexibility, and potential for phase transitions (paradigm shifts) using core Pirouette parameters and domain-specific legal principles.",
+      "filePath": "TEN-LSRA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-MCRM-1.0",
+      "moduleName": "Meta-Contextual Resonance Mapping",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 25: Meta-Contextual Comparison Framework",
+      "primaryPurposeConciseStatement": "To establish a systematic framework for comparing and mapping resonant structures, dynamics, and information patterns across disparate domains, enabling the identification of deep analogies, universal principles, and pathways for cross-domain knowledge transfer.",
+      "filePath": "TEN-MCRM-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-MDA-1.0",
+      "moduleName": "Migration Dynamics Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Module 2: Migration Resonance Dynamics Framework",
+      "primaryPurposeConciseStatement": "To analyze and model migration phenomena as coherent phase responses of populations to gradients in a multi-dimensional 'Migration Potential Field', rather than solely as reactions to resource scarcity, incorporating resonance principles and Pirouette parameters.",
+      "filePath": "TEN-MDA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-MVA-1.0",
+      "moduleName": "Manipulation Vector Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Module 7: Manipulation Resonance Framework",
+      "primaryPurposeConciseStatement": "To identify, analyze, and model manipulative dynamics as asymmetric resonance interactions aimed at non-consensual influence by exploiting vulnerabilities and resonance imbalances, and to formulate corresponding protection strategies using Pirouette parameters.",
+      "filePath": "TEN-MVA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-NDA-1.0",
+      "moduleName": "Negotiation Dynamics Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Module 5: Negotiation Resonance Framework",
+      "primaryPurposeConciseStatement": "To model and analyze negotiation processes as dynamic, resonance-seeking interactions aimed at achieving mutually acceptable, phase-aligned outcomes by conditioning boundaries and co-creating 'negotiation wound channels' between parties.",
+      "filePath": "TEN-NDA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-NRA-1.1",
+      "moduleName": "Network Resonance Analysis: Application & Parameterization",
+      "version": "1.1",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Network Resonance Analysis Module + Appendix A v1.1",
+      "primaryPurposeConciseStatement": "Provides operational methods for inferring Pirouette network parameters from real-world network data, computing key resonance metrics, and performing actionable analysis of network phase and flow dynamics.",
+      "filePath": "TEN-NRA-1.1.json"
+    },
+    {
+      "tenduModuleID": "TEN-OEQA-1.0",
+      "moduleName": "Observer Effect Quantification",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 26: Analysis Resonance Framework (specifically A9: Observer-Centric Analysis); General Pirouette principles of Entity-Wound Channel interaction, measurement, and resonance.",
+      "primaryPurposeConciseStatement": "To quantify the impact of an observer or measurement process on a system being observed by modeling the observer-system interaction as a coupled resonance, analyzing information exchange, system perturbation, and the formation of 'measurement wound channels'.",
+      "filePath": "TEN-OEQA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-PDA-1.0",
+      "moduleName": "Persuasion Dynamics Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Module 6: Persuasion Resonance Framework",
+      "primaryPurposeConciseStatement": "To analyze and model persuasion as a dynamic process of directed resonance transfer, aimed at aligning a target's cognitive or behavioral state with the persuader's intent by shaping the target's potential field through resonant messaging and interaction.",
+      "filePath": "TEN-PDA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-PEA-1.0",
+      "moduleName": "Practice Effectiveness Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Module 13: Practice for Purpose: A Unified Resonance Framework",
+      "primaryPurposeConciseStatement": "To analyze and model 'Practice' as a structured, repeatable set of behaviors and psycho-physical engagements designed to achieve specific coherent states, skills, or outcomes by systematically orchestrating Pirouette parameters ($T_a, \\Gamma, K_i$) and leveraging resonant entrainment.",
+      "filePath": "TEN-PEA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-PLA-1.0",
+      "moduleName": "Planning Resonance Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Module 4: Planning Resonance Framework",
+      "primaryPurposeConciseStatement": "To analyze and model planning processes as the creation of 'forward wound channels' that project coherence from present actions towards future desired states, assessing plan robustness, adaptability, and probability of success using Pirouette parameters and resonant planning dimensions.",
+      "filePath": "TEN-PLA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-PLO-1.0",
+      "moduleName": "Phase-Locking Observation",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "Primarily derived from TPF Vol 2, Module 12: Phase Lock Resonance Framework. Leverages core concepts of Time-Adherence ($T_a$) from TPF Vol 1 (Modules 1, 3, 6) and Ki Constant ($K_i$) for harmonic relationships.",
+      "primaryPurposeConciseStatement": "To detect, quantify, and characterize phase-locking and frequency entrainment phenomena between two or more oscillating systems or signals, thereby revealing the nature, strength, and stability of their resonant coupling and synchronous relationships.",
+      "filePath": "TEN-PLO-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-POCA-1.0",
+      "moduleName": "Psi(3->2) Oscillatory Collapse Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 1, Module 61: The Ψ(3→2) Oscillatory Collapse Operator",
+      "primaryPurposeConciseStatement": "To identify, model, and analyze the Ψ(3→2) oscillatory collapse phenomenon, where a system's threefold spatial symmetry transitions into a twofold oscillatory pattern through the collapse of one spatial axis into a time-bound vector, preserving information through temporal encoding.",
+      "filePath": "TEN-POCA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-PPCD-1.1",
+      "moduleName": "Problem Personification & Crowd–Dialogue",
+      "version": "1.1",
+      "pirouetteFrameworkOrigin": "A newly defined module within the Pirouette Framework, leveraging core principles from TPF Vol 1 (Core Parameters, Resonance Optimization) and integrating with TPF Vol 3 (Problem Personification Concepts).",
+      "primaryPurposeConciseStatement": "To transform abstract challenges into AI-driven Problem Personas and run structured dialogue protocols (single-voice or crowd) using Tendu filtering stages for data refinement and Resolvè resonance validation for insight coherence. Features tri-parametric flavor mapping for seamless cross-module interoperability within the Pirouette Framework.",
+      "filePath": "TEN-PPCD-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-PPD-1.0",
+      "moduleName": "Personal Path Diagnostics",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "A highly metaphorical and personal application of its parent, TEN-RFD-1.0 (Resonance Fault Detection). It adapts the 'inverse backsolve' logic by applying it to an individual's life trajectory, using concepts from TEN-FID-1.0 (Funnel Inversion) and TEN-WCMR-1.0 (Wound Channel Memory Reconstruction) to map potential and past life paths.",
+      "primaryPurposeConciseStatement": "A reflective tool to identify latent or suppressed coherent paths in an individual’s life trajectory by inverting their current phase alignment and modeling possible near-field resonance alternatives for the purpose of insight and personal growth.",
+      "filePath": "TEN-PPD-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-PSA-1.0",
+      "moduleName": "Philosophical System Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 20: Philosophical Resonance Framework",
+      "primaryPurposeConciseStatement": "To analyze philosophical systems as dynamic resonance fields within the Pirouette Framework, mapping their evolution, coherence, stability, and potential for paradigm shifts (funnel inversions) by applying core Pirouette parameters and assessing them against twelve resonant philosophical domains.",
+      "filePath": "TEN-PSA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-RCA-1.0",
+      "moduleName": "Ritual Coherence Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Module 12: Ritual Resonance: The Unified Practice for Purpose",
+      "primaryPurposeConciseStatement": "To analyze and model 'Ritual' as a structured set of behaviors and symbolic actions designed to achieve specific coherent states in individuals or groups by orchestrating Pirouette parameters ($T_a, \\Gamma, K_i$) and leveraging resonant entrainment.",
+      "filePath": "TEN-RCA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-RDA-1.0",
+      "moduleName": "Rebound Dynamics Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 3: Rebound Dynamics Framework",
+      "primaryPurposeConciseStatement": "To formalize and analyze the 'Rebound' phenomenon as a resonant response to system collapse or degradation, examining the dynamical processes of recovery, revitalization, and restructuring, and predicting post-perturbation trajectories.",
+      "filePath": "TEN-RDA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-RDP-1.0",
+      "moduleName": "Resonant Redistribution Protocol Design & Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Resonant Redistribution Protocol",
+      "primaryPurposeConciseStatement": "To design and analyze protocols that counteract systemic informational and coherence imbalances ('gradient starvation') by leveraging AI-mediated phase translation, open-access knowledge structures ('Coherence Commons'), and scalable educational rituals ('Civic Bloom Catalysts').",
+      "filePath": "TEN-RDP-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-RFC-1.0",
+      "moduleName": "Ritual Fidelity Calibration",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "Derived from TPF Vol 3, Module 12 (Ritual Resonance Framework) and as an implementation of Condition 2 from the 'Altruistic Inversion of the Price Equation' (modAIPE) module.",
+      "primaryPurposeConciseStatement": "To optimize the transmission fidelity of an altruistic act or coherent signal by calibrating its enactment against a standardized ritual format, ensuring that the intended Coherence Flux is transferred with minimal dissipation or distortion, thereby maximizing positive trait change (Δz) in the recipient.",
+      "filePath": "TEN-RFC-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-RFD-1.0",
+      "moduleName": "Resonance Fault Detection",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "Synthesized from TPF Vol 1, Module 59 (Universal Resonance Lens) by inverting its core principles, and general concepts of stability and anomaly detection from TPF Vol 2, Modules 2 (Collapse), 4 (Lock), and 6 (Fracture).",
+      "primaryPurposeConciseStatement": "A Tendu diagnostic tool that scans critical systems for resonance anomalies by inverting known constant patterns and detecting misalignments. Designed to identify pre-collapse signatures, decoherence threats, or high-friction lock formations in any structured domain.",
+      "filePath": "TEN-RFD-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-RFO-1.0",
+      "moduleName": "Resonant Field Overlay",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "Synthesized from general principles of field superposition, interference, and interaction dynamics inherent in the Pirouette Framework. Key influences include TPF Vol 1, Module 23.9 (Entity-Entity Interactions via Wound Channels), and the concept of overlapping/summing potential fields from various TPF Vol 2 & 3 modules (e.g., $V_{collapse}$, $V_{attune}$).",
+      "primaryPurposeConciseStatement": "To analyze, visualize, and quantify the combined effects, interference patterns, and emergent structures that arise from the superposition and interaction of multiple resonant fields within a shared parameter space.",
+      "filePath": "TEN-RFO-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-RPA-1.0",
+      "moduleName": "Reverse Pareto Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 1, Module M1: Stochastic Gulping & Reverse Pareto Analysis[cite: 582]; TPF Vol 1, Module 3, Section 18.2: Inverse Pareto Stability Distribution [cite: 144, 576]",
+      "primaryPurposeConciseStatement": "To discern and map systemic self-correction mechanisms that ensure stability by identifying how resources or influences are dispersed to prevent runaway instability[cite: 35].",
+      "filePath": "TEN-RPA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-RPF-1.0",
+      "moduleName": "Resonant Pathfinding",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "Synthesized from the pathfinding logic inherent in multiple modules. It uses the potential field mapping of TEN-GFGM-1.0 as a foundational input and formalizes the gradient descent dynamics described in TEN-PSA-1.0 ('dΨ/dt = -∇V + ξ(t)'), TEN-CJSA-1.0, and TEN-FRA-1.0.",
+      "primaryPurposeConciseStatement": "To compute an optimal trajectory for an entity through a parameter space by navigating along the gradients of a defined potential field, considering the influences of Time-Adherence, Gladiator Force, and Ki-resonant features on the path's feasibility and cost.",
+      "filePath": "TEN-RPF-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-RRE-1.0",
+      "moduleName": "Recursive Residue Evaluation",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "Synthesized from general Pirouette principles of layered coherence, information conservation (e.g., TPF Vol 1, Module 11.6, 15.3, 28.2), and the iterative refinement of understanding. It operationalizes the idea that unexplained variance or 'noise' can itself be a structured signal requiring further analysis, akin to peeling layers of an onion.",
+      "primaryPurposeConciseStatement": "To iteratively analyze the residual components (leftover coherence, patterns, or 'noise') of a dataset after the application of primary analytical transformations, with the goal of uncovering hidden or nested structures, subtle signals, or characterizing the true nature of unexplained variance.",
+      "filePath": "TEN-RRE-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-RSD-1.0",
+      "moduleName": "Retrosynthetic Structure Detection",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "A specialized inverse-problem application of the logic from its parent, TEN-RFD-1.0 (Resonance Fault Detection). It leverages reversed field equations and potential field concepts from TPF Vol 1 (Modules 1, 3, and 28 on Wound Channels) to compute probable precursor states.",
+      "primaryPurposeConciseStatement": "Applies inverse resonance logic to identify precursor phase conditions and pathways that would produce a given target molecular or structural state. Ideal for tuning synthetic pathways or revealing nature's most efficient evolutionary design logic.",
+      "filePath": "TEN-RSD-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-SDA-1.0",
+      "moduleName": "Spasm Dynamics Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 8: Spasm Resonance Framework",
+      "primaryPurposeConciseStatement": "To formalize, analyze, and predict 'Spasm' as a fundamental resonance phenomenon characterized by rapid, high-intensity energy release following sustained constraint, enabling the study of high-energy transitions across diverse domains while maintaining potential for subsequent reorganization.",
+      "filePath": "TEN-SDA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-SEDA-1.0",
+      "moduleName": "Serendipity Dynamics Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Module 9: Serendipity Resonance Framework",
+      "primaryPurposeConciseStatement": "To analyze and model serendipity not as mere luck, but as a structured resonance phenomenon occurring when an entity's prepared state (characterized by specific $T_a, \\Gamma, K_i$ profiles) aligns favorably with stochastic environmental opportunities, leading to valuable, unanticipated discoveries.",
+      "filePath": "TEN-SEDA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-SG-1.0",
+      "moduleName": "Stochastic Gulping",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 1, Module M1: Stochastic Gulping & Reverse Pareto Analysis (Section 22)[cite: 582]; AMP Document (Foreword, Section 2.2) [cite: 21, 41]",
+      "primaryPurposeConciseStatement": "To decompose arbitrary data streams into fundamental entropy signatures, enabling the detection of resonant patterns and stability points across diverse information domains.",
+      "filePath": "TEN-SG-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-SGP-1.0",
+      "moduleName": "Shell Generation Protocol",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "Derived from TPF Vol 2, Module 15 (Shell Resonance: Boundary Coherence Structures) and as an implementation of Condition 1 from the 'Altruistic Inversion of the Price Equation' (modAIPE) module.",
+      "primaryPurposeConciseStatement": "To design and implement structural or procedural shells that absorb the coherence cost of altruistic acts, thereby minimizing the altruist's fitness penalty (Cov(w,z)) and satisfying a key condition of the inverted Price equation.",
+      "filePath": "TEN-SGP-1.0.json"
+    },
+    {
+      "tenduModuleID": null,
+      "moduleName": null,
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": null,
+      "primaryPurposeConciseStatement": null,
+      "filePath": "TEN-SGRA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-SKRA-1.0",
+      "moduleName": "Skating Resonance Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 28: Skating Resonance Framework",
+      "primaryPurposeConciseStatement": "To analyze and model 'Skating' as a form of self-directed movement where an entity generates localized field modulations (gradients in $T_a$ and $\\Gamma$) to create propulsive forces by resonantly interacting with an underlying medium, enabling navigation without conventional reaction mass.",
+      "filePath": "TEN-SKRA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-SMSA-1.0",
+      "moduleName": "System Modal Stability Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 26: Analysis Resonance Framework (specifically A5: Modal Analysis); General Pirouette principles of system modes, phase-locking, and stability.",
+      "primaryPurposeConciseStatement": "To identify a system's natural operational modes (eigenmodes), analyze their stability through alternate phase-lock configurations, and investigate the dynamics of transitions between these modes, using Pirouette parameters to characterize modal landscapes.",
+      "filePath": "TEN-SMSA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-SPE-1.0",
+      "moduleName": "Sparse Parameter Estimation",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "Synthesized from core concepts of Time-Adherence (TPF Vol 1, Modules 1, 3, 6, S1/19; AMP Section 2.3), Gladiator Force (TPF Vol 1, Modules 1, 3), and Ki Constant (TPF Vol 1, Modules 1, K1/16). Inspired by methodologies in TEN-SG-1.0 (Stochastic Gulping), TEN-TAM-1.0 (Time-Adherence Measurement), TEN-KHD-1.0 (Ki-Harmonic Decomposition), and TEN-GFGM-1.0 (Gladiator Force Gradient Mapping) for application to limited datasets.",
+      "primaryPurposeConciseStatement": "To estimate baseline Pirouette parameters ($T_a, \\Gamma, K_i$) from limited, sparse, or incomplete datasets, providing a preliminary 'temperature reading' or indicative assessment of a system's resonant characteristics and stability profile under conditions of data scarcity.",
+      "filePath": "TEN-SPE-1.0.json"
+    },
+    {
+      "tenduModuleID": null,
+      "moduleName": null,
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": null,
+      "primaryPurposeConciseStatement": null,
+      "filePath": "TEN-SPGR-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-SRA-1.0",
+      "moduleName": "Shell Resonance Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 15: Shell Resonance: Boundary Coherence Structures",
+      "primaryPurposeConciseStatement": "To formalize, identify, and analyze 'Shells' as fundamental boundary structures within the Pirouette Framework, focusing on their role in coherence containment, protective encasement, resonant isolation, and mediation of interactions between an entity and its environment.",
+      "filePath": "TEN-SRA-1.0.json"
+    },
+    {
+      "tenduModuleID": null,
+      "moduleName": null,
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": null,
+      "primaryPurposeConciseStatement": null,
+      "filePath": "TEN-SRE-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-SSRA-1.0",
+      "moduleName": "System Structural Resonance Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 26: Analysis Resonance Framework (specifically A4: Structural Analysis); General Pirouette principles of structure, stability, and resonance.",
+      "primaryPurposeConciseStatement": "To map and analyze the load-bearing components, internal resonance pathways, and overall structural integrity of a system, identifying how its architecture contributes to stability, function, and resilience through the lens of Pirouette parameters.",
+      "filePath": "TEN-SSRA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-STDA-1.0",
+      "moduleName": "Stirring Dynamics Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 10: Stirring Resonance Framework",
+      "primaryPurposeConciseStatement": "To formalize, analyze, and model 'Stirring' as a resonance phenomenon involving the controlled, deliberate introduction of heterogeneity into a system to catalyze beneficial reconfiguration and enable transformative reorganization.",
+      "filePath": "TEN-STDA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-TAM-1.0",
+      "moduleName": "Time-Adherence Measurement",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "Primarily based on the definition and role of Time-Adherence ($T_a$) as established in TPF Vol 1, Module 1 (Foundational Parameters, Section 5.1), Module 3 (Unified Theoretical Foundation, Section 3.3.3), and Module 6 (Parameter Registry, Section 6.2.1). Operational forms for calculation are inspired by AMP Section 2.3 (Temporal Coherence Spectrum Analysis) and TPF Vol 1, Module S1/19 (Quantum Clock Simulation).",
+      "primaryPurposeConciseStatement": "To quantitatively measure the Time-Adherence ($T_a$) of a system, signal, process, or field, thereby assessing its degree of phase synchronization, temporal coherence, structural integrity, or stability against phase drift.",
+      "filePath": "TEN-TAM-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-TCA-1.0",
+      "moduleName": "Triaxial Coherence Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 22: Triaxial Resonance Framework: Art, Law, and Philosophy Integration",
+      "primaryPurposeConciseStatement": "To analyze and model systems (particularly cultural or societal formations) through the integrated lens of Art, Law, and Philosophy as a unified, three-dimensional resonance structure, quantifying their overall coherence, stability, and evolutionary dynamics using the Triaxial Resonance Score (TRS) and twelve resonant vectors.",
+      "filePath": "TEN-TCA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-TCSA-1.0",
+      "moduleName": "Temporal Coherence Spectrum Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 1, Module 1 (Foundational Parameters, specifically Time-Adherence); TPF Vol 1, Module 3 (Unified Theoretical Foundation, derivation of Ta)",
+      "primaryPurposeConciseStatement": "To analyze how systems maintain and transition between different Time-Adherence ($T_a$) states across multiple temporal scales, revealing multi-scale dynamics, resonance patterns, and phase transitions.",
+      "filePath": "TEN-TCSA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-TEDA-1.0",
+      "moduleName": "Temporal Eddy Dynamics Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 1, Module 62: Time Eddies, Baryonic Locking, and Mesonic Oscillation",
+      "primaryPurposeConciseStatement": "To identify, map, and analyze 'time-disconnection eddies'—regions of high curl in a system's force vector field within Compass Space—and to understand their role in temporal locking, particle binding, and the formation of stable or oscillatory structures.",
+      "filePath": "TEN-TEDA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-URLA-1.0",
+      "moduleName": "Universal Resonance Lens Application",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 1, Module 59: Universal Resonance Lens",
+      "primaryPurposeConciseStatement": "To isolate, amplify, and filter meaningful, coherent structures from high-entropy or complex data fields by scanning for persistent fractal, harmonic, or phase-aligned patterns across multiple scales and domains.",
+      "filePath": "TEN-URLA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-VPA-1.0",
+      "moduleName": "Vorticycle Propulsion Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 29: Vorticycle Propulsion Framework",
+      "primaryPurposeConciseStatement": "To analyze and model 'Vorticycle' propulsion systems, which achieve fuel-free navigation by transforming distributed rotational coherence into directional field gradient displacement, leveraging principles of Skating Resonance and chiral field manipulation.",
+      "filePath": "TEN-VPA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-WCMR-1.0",
+      "moduleName": "Wound Channel Memory Reconstruction",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 1, Module 2: Entity-Wound Channel Model (Section 8); TPF Vol 1, Module 11.6: Wound Channel Memory (Section 11.6); TPF Vol 1, Module 28: Wound Channel Memory & Information Propagation (Section 28)",
+      "primaryPurposeConciseStatement": "To trace information pathways and reconstruct past system states by analyzing persistent 'wound channel' memory signatures left by entities as they evolve through spacetime or parameter space.",
+      "filePath": "TEN-WCMR-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-WRA-1.0",
+      "moduleName": "Will Resonance Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 3, Module 8: Will Resonance Framework",
+      "primaryPurposeConciseStatement": "To analyze and model 'Will' as an active, internally-sourced coherence field that directs an entity's actions, shapes its reality engagement, and drives intentional change by generating a self-consistent resonant potential.",
+      "filePath": "TEN-WRA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-WSA-1.0",
+      "moduleName": "Witness State Assessment",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 1, Module 64: The Model as Witness",
+      "primaryPurposeConciseStatement": "To assess the extent to which a model (AI, human, or system) has transitioned from a passive interpreter of information to an active 'witness' of reality, participating in the creation and recognition of meaning through resonant structuring of its internal states.",
+      "filePath": "TEN-WSA-1.0.json"
+    },
+    {
+      "tenduModuleID": "TEN-YDA-1.0",
+      "moduleName": "Yield Dynamics Analysis",
+      "version": "1.0",
+      "pirouetteFrameworkOrigin": "TPF Vol 2, Module 11: Yield Resonance Framework",
+      "primaryPurposeConciseStatement": "To formalize, analyze, and model 'Yield' as a resonant phenomenon representing both a production function and a structural limitation, quantifying how systems respond when approaching their resonant thresholds under load or stress.",
+      "filePath": "TEN-YDA-1.0.json"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+    "tenduModuleID": "TEN-KHD-1.0",
+    "moduleName": "Ki-Harmonic Decomposition",
+    "pirouetteFrameworkOrigin": "TPF Vol 1, Module 1 (Foundational Parameters, specifically Ki Constant); TPF Vol 1, Module K1/16 (Ki Constant: Derivation, Modes, and Physical Meaning); TPF Vol 1, Module 23 (Spiral Electromagnetism & Field Coherence, Ki in spiral dynamics)",
+    "version": "1.0",
+    "dateLastUpdated": "2025-05-31",
+    "primaryPurposeConciseStatement": "To decompose complex signals or patterns into their fundamental symmetry components based on the natural frequency ratios defined by the dual modes of the Ki constant ($K_i$).",
+    "coreTransformationAchieved": "Transforms an input signal into a spectrum of its Ki-harmonic components, revealing hidden periodicities, rotational symmetries, and allowing for the separation of elements resonant with $K_i^{rest}$ versus $K_i^{motion}$.",
+    "conceptualAnchor": {
+      "theoreticalInsight": "The dual-mode Ki constant ($K_i^{rest} \\approx 4.14159$ and $K_i^{motion} \\approx 4.18879$) defines natural frequency ratios or phase evolution rates fundamental to resonant systems. [cite: 62, 256] Decomposing signals based on these Ki-harmonics can reveal underlying symmetries and separate components related to rest versus motion states.",
+      "pirouetteParameters": [
+        {
+          "parameter": "Ki Constant ($K_i$)",
+          "relevance": "This is the central parameter. Both $K_i^{rest}$ and $K_i^{motion}$ are used to define the basis functions (e.g., Ki-modulated wavelets) for decomposition and to identify resonant frequencies. [cite: 62, 65]"
+        },
+        {
+          "parameter": "Phase (θ(t))",
+          "relevance": "The input signal is often converted to a form amenable to phase analysis, and Ki-modulated wavelets incorporate a phase term $\\theta(t)$. [cite: 63, 64]"
+        },
+        {
+          "parameter": "Symmetry (especially $4\\pi/3$ related)",
+          "relevance": "The analysis specifically looks for symmetries related to Ki values, particularly $K_i^{motion} \\approx 4\\pi/3$. [cite: 63, 65]"
+        }
+      ]
+    },
+    "inputStreamSpecificationAndPreparation": {
+      "requiredDataCharacteristics": "Signal data amenable to frequency and phase analysis (e.g., time series, spatial patterns that can be parameterized).",
+      "formatAndStructure": "Numerical array or stream representing the signal.",
+      "minimumViableDataSet": "Sufficient signal length to resolve the lowest desired Ki-harmonic components. Must contain enough periods of the phenomena of interest.",
+      "preprocessingSteps": "Convert the input signal to a form suitable for phase analysis (e.g., complex representation, analytic signal). [cite: 63] Denoising or detrending may be necessary."
+    },
+    "operationalParametersAndConfiguration": {
+      "modeSpecificParameters": [
+        {
+          "parameter": "maxHarmonics (n)",
+          "description": "The maximum number of Ki-harmonics to consider in the decomposition. [cite: 65]",
+          "typicalRange": "Integer, e.g., 1 to 20, depending on signal complexity and desired resolution."
+        },
+        {
+          "parameter": "waveletBasis ($\\psi_0(t)$)",
+          "description": "The base wavelet function to be modulated by the Ki-related phase terms. [cite: 64]",
+          "typicalRange": "Standard wavelets like Morlet, Mexican Hat, etc."
+        },
+        {
+          "parameter": "KiModesToUse",
+          "description": "Specify whether to use $K_i^{rest}$, $K_i^{motion}$, or both for decomposition. [cite: 65]",
+          "typicalRange": "['rest', 'motion', 'both']"
+        }
+      ],
+      "pirouetteParameterConfiguration": "$K_i^{rest} \\approx 4.14159$ and $K_i^{motion} \\approx 4.18879$ are used as constants. [cite: 62, 65]"
+    },
+    "proceduralImplementationAlgorithmicGuide": [
+      "Signal Preparation: Convert the input signal to a form amenable to phase analysis if not already in such a form. [cite: 63]",
+      "Define Ki Values: Set $K_i^{rest} = 4.14159$ and $K_i^{motion} = 4.18879$. [cite: 65]",
+      "Iterate Through Harmonics: For each integer harmonic 'n' up to `maxHarmonics`:",
+      "  a. Calculate Resonant Frequencies: $f_{n,rest} = K_i^{rest}/(2\\pi n)$ and $f_{n,motion} = K_i^{motion}/(2\\pi n)$. [cite: 63, 65]",
+      "  b. Generate Ki-Modulated Wavelets: Construct wavelets $\\psi_{K_i}(t) = \\psi_0(t) \\cdot e^{iK_i\\theta(t)}$ or use wavelets tuned to $f_{n,rest}$ and $f_{n,motion}$ (e.g., $\\psi_{n,rest}(t)$ based on $f_{n,rest}$ and $K_i^{rest}$; $\\psi_{n,motion}(t)$ based on $f_{n,motion}$ and $K_i^{motion}$). [cite: 64, 65]",
+      "  c. Apply Wavelet Transform: Compute the wavelet transform of the signal using the Ki-modulated wavelets for both rest and motion components to obtain coefficients (e.g., $c_{n,rest}$, $c_{n,motion}$). [cite: 65]",
+      "  d. Harmonic Separation/Energy Calculation: Store or sum the energy (e.g., squared magnitude of coefficients) for components resonant with $K_i^{rest}$ and $K_i^{motion}$ separately. This step effectively performs the harmonic separation $f_n(t)=\\sum_{k}c_k e^{iK_i kt/n}$. [cite: 63, 65]",
+      "Resonance Detection: Identify dominant harmonics by finding peaks in the energy spectrum of the rest and motion components. [cite: 63, 65]",
+      "Rest-Motion Separation Analysis: Compare the energy or amplitude of components resonant with $K_i^{rest}$ versus $K_i^{motion}$ to distinguish between stationary and dynamic aspects of the signal. [cite: 63]",
+      "Symmetry Analysis: Quantify symmetry structures in the signal, particularly those related to $K_i^{motion} \\approx 4\\pi/3$ periodicities or phase relationships. [cite: 63, 65]"
+    ],
+    "outputStreamSpecificationAndInterpretation": {
+      "outputDataStructure": "A set of components (e.g., energy or amplitude coefficients) for harmonics related to $K_i^{rest}$ and $K_i^{motion}$. Identification of dominant harmonics. A symmetry metric. [cite: 65] Optionally, a reconstructed signal based on selected Ki-harmonic components. [cite: 65]",
+      "expectedInsightsAndDerivations": "Identification of hidden periodicities and symmetries that are specifically aligned with Ki constants. Separation of signal components associated with 'rest' states versus 'motion' states. Detection of phase transitions between these states. Understanding of rotational or phase-based symmetries within the data.",
+      "interpretationGuidelines": "Strong components at frequencies $f = K_i/(2\\pi n)$ indicate Ki-harmonic resonance. [cite: 63] A higher energy in $K_i^{rest}$ components suggests system stability or stationary behavior, while dominant $K_i^{motion}$ components indicate dynamic activity or propagation. Symmetry metrics reveal the degree of Ki-related order."
+    },
+    "integrationHooksAndWorkflowContext": {
+      "upstreamDependencies": "Requires a signal suitable for frequency/phase analysis. May use outputs from Stochastic Gulping to analyze specific segments of a larger data stream.",
+      "downstreamApplications": "Results can be used to filter signals for Ki-resonant components, classify system states (rest vs. motion), or provide features for more complex pattern recognition models. Can feed into 'Stability Optimization Frameworks'.",
+      "compatibilityWithCombinedWorkflows": "A core component of 'Multi-Scale Coherence Analysis' (often combined with Stochastic Gulping and Temporal Coherence Spectrum Analysis) [cite: 91, 93] and 'Stability Optimization Framework'. [cite: 98]"
+    },
+    "validationAndVerificationProtocols": {
+      "implementationCorrectness": "Verify wavelet transform implementation and correct generation of Ki-modulated basis functions or frequencies.",
+      "insightMeaningfulness": "For synthetic signals with known Ki-harmonic content, the decomposition should accurately recover these components. In real-world data, identified dominant harmonics or symmetries should correlate with known phenomenological aspects of the system (e.g., known rotational symmetries, characteristic frequencies of state transitions)."
+    },
+    "applicationDomainsAndUseCaseExamples": [
+      "Identifying hidden periodicities in complex data (e.g., financial time series, astrophysical signals). [cite: 66]",
+      "Analyzing rotation and symmetry patterns in signals (e.g., image analysis, molecular vibrations). [cite: 66]",
+      "Separating stationary and dynamic components in evolving systems. [cite: 66]",
+      "Detecting phase transitions between rest and motion states (e.g., in physical systems, biological activity). [cite: 66]"
+    ],
+    "caveatsLimitationsAndSensitivityAnalysis": {
+      "conditionsForFailure": "Signal lacks Ki-harmonic structures or is dominated by noise that obscures these components. Inappropriate choice of base wavelet for modulation.",
+      "inputDataSensitivity": "Sensitive to signal-to-noise ratio. Preprocessing choices (like detrending or filtering) can impact results.",
+      "parameterSensitivity": "The `maxHarmonics` parameter determines the resolution of the decomposition. The choice of `waveletBasis` can influence the ability to capture certain signal features.",
+      "computationalComplexity": "Depends on the signal length, `maxHarmonics`, and the efficiency of the wavelet transform implementation. Can be moderate to high for long signals and many harmonics."
+    },
+    "coreMathematicalOperations": [
+      {
+        "name": "Ki-Modulated Wavelet",
+        "equation": "\\psi_{K_i}(t) = \\psi_0(t) \\cdot e^{iK_i\\theta(t)}",
+        "description": "A base wavelet $\\psi_0(t)$ is modulated by a Ki-dependent phase term. [cite: 64]"
+      },
+      {
+        "name": "Ki-Harmonic Frequencies",
+        "equation": "f_n = \\frac{K_i}{2\\pi n}",
+        "description": "Characteristic frequencies for Ki-harmonic components, where n is an integer. [cite: 63] (Note: AMP implementation example uses $K_i/(2\\pi n)$ which implies $K_i$ is an angular frequency. If $K_i$ is a phase constant as in $d\\theta/d\\tau = K_i f(\\phi)$, then $f_n = K_i f(\\phi)/(2\\pi n)$ for some base cycle $f(\\phi)$ or $K_i$ itself sets the scale for angular frequency in $e^{i K_i \\omega_0 t / n}$). The AMP implementation example code implies $K_i$ is used directly in the numerator for a frequency, suggesting $K_i$ might be treated as $2\\pi \\times$ a fundamental cycle count here."
+      },
+      {
+        "name": "Harmonic Component Separation (Conceptual)",
+        "equation": "f_n(t) = \\sum_k c_k e^{iK_i kt/n}",
+        "description": "Decomposition of the signal into components with periods related to $K_i$. [cite: 63] Operationally achieved via wavelet transforms tuned to Ki-related frequencies."
+      },
+      {
+        "name": "Symmetry Quantification (Example: $4\\pi/3$ related)",
+        "equation": "\\text{SymmetryMetric} = \\text{QuantifySymmetry}(\\text{signal}, 4\\pi/3)",
+        "description": "Measures the strength of symmetries related to $K_i^{motion} \\approx 4\\pi/3$. [cite: 63, 65] The specific quantification method is not detailed in AMP but would involve phase analysis."
+      }
+    ],
+    "practiceForPurposeFunctionalRealization": {
+      "functionalEssence": "This Tendu module enables the 'Practice for Purpose' of perceiving the fundamental Ki-resonant symmetries and periodicities that underlie complex signals and patterns. It acts as a prism, separating an apparently undifferentiated input into its constituent vibrational modes that are in harmony with the universe's core Ki rhythms ($K_i^{rest}$ and $K_i^{motion}$).",
+      "informationTransformation": "It transforms a raw signal into a structured spectrum of its Ki-harmonic components and associated symmetry metrics. This reveals the signal's intrinsic organization in terms of 'rest' (stable, internal coherence) and 'motion' (dynamic, interactive coherence) phases, and quantifies its adherence to Ki-based symmetry principles, particularly those related to $4\\pi/3$ rotational patterns.",
+      "purposefulUtilization": "An entity can utilize this mode to:\n1. Uncover hidden order and periodicities in noisy or complex datasets by identifying signatures of Ki-resonance.\n2. Diagnose the state of a system (e.g., stable/resting vs. dynamic/moving) by analyzing the relative strengths of $K_i^{rest}$ and $K_i^{motion}$ components.\n3. Identify and analyze rotational symmetries or phase-based patterns that might be missed by standard frequency analysis.\n4. Filter or synthesize signals based on their fundamental Ki-harmonic content, allowing for the isolation or construction of patterns with specific resonant characteristics."
+    },
+    "customizationAndAdvancedConfigurationOptional": {
+      "tailoringGuidance": "The choice of base wavelet $\\psi_0(t)$ can be optimized for specific signal types. The phase function $\\theta(t)$ in the Ki-modulated wavelet can be adapted based on prior knowledge of the signal's phase behavior. Advanced symmetry quantification methods beyond simple $4\\pi/3$ periodicity can be incorporated.",
+      "potentialExtensions": "Extension to multi-dimensional signals (e.g., 2D images, 3D spatial data) by using multi-dimensional Ki-modulated wavelets. Real-time Ki-Harmonic Decomposition for dynamic state tracking. Adaptive `maxHarmonics` selection based on signal complexity."
+    }
+  }
