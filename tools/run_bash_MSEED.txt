@@ -1,0 +1,2 @@
+C:/Users/keatw/OneDrive/Documents/Doclab/Big_Datasets/target/paper/Ki/Gyroscope_Data
+python ki_mseed_analyzer_advanced_4.py C:/Users/keatw/OneDrive/Documents/Doclab/Big_Datasets/target/paper/Ki/Gyroscope_Data -p "*.msd"
