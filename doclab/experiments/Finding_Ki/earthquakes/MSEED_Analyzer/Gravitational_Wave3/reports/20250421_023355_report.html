@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Ki Resonance Analysis Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; }
+            h1, h2, h3 { color: #333; }
+            .summary { background-color: #f5f5f5; padding: 15px; border-radius: 5px; }
+            table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .highlight { background-color: #ffffcc; }
+            .significant { color: #d9534f; font-weight: bold; }
+            .image-gallery { display: flex; flex-wrap: wrap; gap: 10px; }
+            .image-container { width: 300px; margin-bottom: 20px; }
+            .image-container img { max-width: 100%; height: auto; }
+        </style>
+    </head>
+    <body>
+        <h1>Ki Resonance Analysis Report</h1>
+    
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Session ID: 20250421_023355</p>
+            <p>Analysis date: 2025-04-21 02:33:55</p>
+            <p>Files processed: 0</p>
+            <p>Ki values analyzed: Primary = 4.18879, Alternative = 4.14159</p>
+            <p>Significance threshold: 2.0</p>
+            <p>Total results: 16</p>
+        </div>
+    
+        <h2>Results by Module</h2>
+        <table>
+            <tr>
+                <th>Module</th>
+                <th>Total Results</th>
+                <th>Significant Results</th>
+                <th>Significance Rate</th>
+            </tr>
+    
+            <tr>
+                <td>cycle_ratio</td>
+                <td>2</td>
+                <td>2</td>
+                <td>100.0%</td>
+            </tr>
+            <tr>
+                <td>phase_coupling</td>
+                <td>8</td>
+                <td>8</td>
+                <td>100.0%</td>
+            </tr>
+            <tr>
+                <td>temporal_structure</td>
+                <td>6</td>
+                <td>6</td>
+                <td>100.0%</td>
+            </tr>
+            <tr class="highlight">
+                <td><strong>Total</strong></td>
+                <td><strong>16</strong></td>
+                <td><strong>16</strong></td>
+                <td><strong>100.0%</strong></td>
+            </tr>
+        </table>
+        
+        <h2>Top 10 Significant Findings</h2>
+        <table>
+            <tr>
+                <th>Trace ID</th>
+                <th>Module</th>
+                <th>Metric</th>
+                <th>Value</th>
+                <th>Time Range</th>
+            </tr>
+            
+            <tr>
+                <td>PhaseSynchronization</td>
+                <td>phase_coupling</td>
+                <td>sync_significance</td>
+                <td class="significant">1803.237</td>
+                <td>2025-04-21 02:34:03.726915 to 2025-04-21 02:34:03.726915</td>
+            </tr>
+            <tr>
+                <td>PhaseSynchronization</td>
+                <td>phase_coupling</td>
+                <td>sync_significance</td>
+                <td class="significant">1584.132</td>
+                <td>2025-04-21 02:34:02.545444 to 2025-04-21 02:34:02.545444</td>
+            </tr>
+            <tr>
+                <td>PhaseSynchronization</td>
+                <td>phase_coupling</td>
+                <td>sync_significance</td>
+                <td class="significant">1004.026</td>
+                <td>2025-04-21 02:34:01.489660 to 2025-04-21 02:34:01.489660</td>
+            </tr>
+            <tr>
+                <td>GW.H1..STR</td>
+                <td>temporal_structure</td>
+                <td>rhythm_significance</td>
+                <td class="significant">57.990</td>
+                <td>2006-12-31T10:12:16.000000Z to 2006-12-31T10:13:15.999756Z</td>
+            </tr>
+            <tr>
+                <td>PAC_beta_ki_half</td>
+                <td>phase_coupling</td>
+                <td>pac_significance</td>
+                <td class="significant">53.298</td>
+                <td>2025-04-21 02:34:00.506108 to 2025-04-21 02:34:00.506108</td>
+            </tr>
+            <tr>
+                <td>PAC_beta_ki_fundamental</td>
+                <td>phase_coupling</td>
+                <td>pac_significance</td>
+                <td class="significant">53.114</td>
+                <td>2025-04-21 02:34:01.539720 to 2025-04-21 02:34:01.539720</td>
+            </tr>
+            <tr>
+                <td>GW.H1..STR</td>
+                <td>temporal_structure</td>
+                <td>rhythm_significance</td>
+                <td class="significant">43.406</td>
+                <td>2007-08-13T12:41:21.000000Z to 2007-08-13T12:43:00.999756Z</td>
+            </tr>
+            <tr>
+                <td>GW.L1..STR</td>
+                <td>temporal_structure</td>
+                <td>rhythm_significance</td>
+                <td class="significant">37.024</td>
+                <td>2007-08-13T12:41:21.000000Z to 2007-08-13T12:43:00.999756Z</td>
+            </tr>
+            <tr>
+                <td>GW.H1..STR</td>
+                <td>temporal_structure</td>
+                <td>wavelet_ki_significance</td>
+                <td class="significant">26.594</td>
+                <td>2006-12-31T10:12:16.000000Z to 2006-12-31T10:13:15.999756Z</td>
+            </tr>
+            <tr>
+                <td>PAC_beta_ki_half</td>
+                <td>phase_coupling</td>
+                <td>pac_significance</td>
+                <td class="significant">17.373</td>
+                <td>2025-04-21 02:34:00.296800 to 2025-04-21 02:34:00.296800</td>
+            </tr>
+        </table>
+            
+    </body>
+    </html>
+        

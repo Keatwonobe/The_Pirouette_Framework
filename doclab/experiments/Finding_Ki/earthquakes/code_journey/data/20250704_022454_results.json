@@ -1,0 +1,125 @@
+[
+  {
+    "trace_id": "SY.MAW01.00.BHZ",
+    "start_time": "2025-07-01T09:47:30.100243Z",
+    "end_time": "2025-07-01T09:47:50.095243Z",
+    "metrics": {
+      "ratio_found_golden_ratio": 0.6358792184724689,
+      "ratio_significance": 5.0
+    },
+    "metadata": {
+      "module": "cycle_ratio",
+      "filename": "synthetic_ki_thumper.mseed"
+    },
+    "patterns": {
+      "frequencies": [
+        34.9609375,
+        54.98046875
+      ]
+    }
+  },
+  {
+    "trace_id": "SY.MAW01.00.BHZ",
+    "start_time": "2025-07-01T09:47:30.100243Z",
+    "end_time": "2025-07-01T09:47:50.095243Z",
+    "metrics": {
+      "ratio_found_ki_motion_ratio": 0.7765726681127982,
+      "ratio_significance": 5.0
+    },
+    "metadata": {
+      "module": "cycle_ratio",
+      "filename": "synthetic_ki_thumper.mseed"
+    },
+    "patterns": {
+      "frequencies": [
+        34.9609375,
+        45.01953125
+      ]
+    }
+  },
+  {
+    "trace_id": "SY.MAW01.00.BHZ",
+    "start_time": "2025-07-01T09:47:30.100243Z",
+    "end_time": "2025-07-01T09:47:50.095243Z",
+    "metrics": {
+      "ratio_found_ki_rest_ratio": 0.7765726681127982,
+      "ratio_significance": 5.0
+    },
+    "metadata": {
+      "module": "cycle_ratio",
+      "filename": "synthetic_ki_thumper.mseed"
+    },
+    "patterns": {
+      "frequencies": [
+        34.9609375,
+        45.01953125
+      ]
+    }
+  },
+  {
+    "trace_id": "SY.MAW01.00.BHZ",
+    "start_time": "2025-07-01T09:47:30.100243Z",
+    "end_time": "2025-07-01T09:47:50.095243Z",
+    "metrics": {
+      "ratio_found_ki_motion_ratio": 1.3731707317073172,
+      "ratio_significance": 5.0
+    },
+    "metadata": {
+      "module": "cycle_ratio",
+      "filename": "synthetic_ki_thumper.mseed"
+    },
+    "patterns": {
+      "frequencies": [
+        54.98046875,
+        40.0390625
+      ]
+    }
+  },
+  {
+    "trace_id": "SY.MAW01.00.BHZ",
+    "start_time": "2025-07-01T09:47:30.100243Z",
+    "end_time": "2025-07-01T09:47:50.095243Z",
+    "metrics": {
+      "modulation_index": 0.1503756079048821,
+      "pac_significance": 15.037560790488211
+    },
+    "metadata": {
+      "module": "phase_coupling",
+      "filename": "synthetic_ki_thumper.mseed"
+    },
+    "patterns": {}
+  },
+  {
+    "trace_id": "SY.MAW01.00.BHZ",
+    "start_time": "2025-07-01T09:50:57.791555Z",
+    "end_time": "2025-07-01T09:51:17.789055Z",
+    "metrics": {
+      "ratio_found_ki_rest_ratio": 0.779296875,
+      "ratio_significance": 5.0
+    },
+    "metadata": {
+      "module": "cycle_ratio",
+      "filename": "synthetic_maw_thumper.mseed"
+    },
+    "patterns": {
+      "frequencies": [
+        77.9296875,
+        100.0
+      ]
+    }
+  },
+  {
+    "trace_id": "SY.MAW01.00.BHZ",
+    "start_time": "2025-07-01T09:50:57.791555Z",
+    "end_time": "2025-07-01T09:51:17.789055Z",
+    "metrics": {
+      "modulation_index": 0.16528858492018073,
+      "pac_significance": 16.528858492018074
+    },
+    "metadata": {
+      "module": "phase_coupling",
+      "filename": "synthetic_maw_thumper.mseed"
+    },
+    "patterns": {}
+  }
+]

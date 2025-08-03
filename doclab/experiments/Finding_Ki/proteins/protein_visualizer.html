@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protein Fractal Dimension Visualizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.plot.ly/plotly-2.20.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .drop-zone {
+            border: 2px dashed #cbd5e1;
+            transition: all 0.3s ease;
+        }
+        .drop-zone.drag-over {
+            border-color: #2563eb;
+            background-color: #eff6ff;
+        }
+        .plot-container {
+            transition: opacity 0.5s ease-in-out;
+        }
+        .loader {
+            border: 4px solid #f3f4f6;
+            border-top: 4px solid #3b82f6;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-slate-900">Protein Fractal Dimension Visualizer</h1>
+            <p class="text-lg text-slate-600 mt-2">Upload and explore the results from your protein analysis.</p>
+        </header>
+
+        <!-- File Upload Section -->
+        <div id="upload-container" class="max-w-3xl mx-auto mb-8">
+            <div id="drop-zone" class="drop-zone w-full p-10 rounded-lg bg-white shadow-sm text-center cursor-pointer hover:bg-slate-100">
+                <input type="file" id="csv-file" class="hidden" accept=".csv">
+                <div class="flex flex-col items-center">
+                    <svg class="w-12 h-12 text-slate-400 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+                    </svg>
+                    <p class="font-semibold text-slate-700">Drop your <code class="bg-slate-200 px-1 rounded">protein_ki_final_report.csv</code> file here</p>
+                    <p class="text-slate-500 text-sm mt-1">or click to select a file</p>
+                </div>
+            </div>
+            <div id="loader" class="hidden mx-auto mt-4 loader"></div>
+            <p id="file-info" class="text-center text-sm text-slate-500 mt-2"></p>
+        </div>
+
+        <!-- Visualization Section -->
+        <div id="results-container" class="hidden">
+            <!-- Controls -->
+            <div class="bg-white p-4 rounded-lg shadow-sm mb-6 flex flex-wrap items-center justify-center gap-4 md:gap-6">
+                 <h3 class="text-lg font-semibold text-slate-800 mr-4">Highlight Matches:</h3>
+                 <div class="flex items-center">
+                    <input id="highlight-rest" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" checked>
+                    <label for="highlight-rest" class="ml-2 block text-sm text-gray-900">
+                        Ki Rest (~4.14)
+                    </label>
+                </div>
+                <div class="flex items-center">
+                    <input id="highlight-motion" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-orange-600 focus:ring-orange-500" checked>
+                    <label for="highlight-motion" class="ml-2 block text-sm text-gray-900">
+                        Ki Motion (~4.19)
+                    </label>
+                </div>
+            </div>
+
+            <!-- Plots -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div id="scatter-plot-container" class="lg:col-span-2 bg-white p-4 rounded-lg shadow-sm min-h-[500px]">
+                    <div id="scatter-plot"></div>
+                </div>
+                <div id="histogram-container" class="bg-white p-4 rounded-lg shadow-sm min-h-[500px]">
+                    <div id="histogram-plot"></div>
+                </div>
+            </div>
+
+            <!-- Data Table -->
+            <div class="mt-8 bg-white p-4 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-bold text-slate-900 mb-4">Full Dataset</h2>
+                <div class="overflow-x-auto">
+                    <table id="data-table" class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <!-- Header generated by JS -->
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <!-- Body generated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const dropZone = document.getElementById('drop-zone');
+        const fileInput = document.getElementById('csv-file');
+        const fileInfo = document.getElementById('file-info');
+        const loader = document.getElementById('loader');
+        const uploadContainer = document.getElementById('upload-container');
+        const resultsContainer = document.getElementById('results-container');
+        
+        const KI_REST = 4.14159;
+        const KI_MOTION = 4.18879;
+        const TOLERANCE = 0.1;
+
+        let fullData = [];
+
+        // --- Event Listeners ---
+        dropZone.addEventListener('click', () => fileInput.click());
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('drag-over');
+        });
+        dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('drag-over');
+            const files = e.dataTransfer.files;
+            if (files.length) {
+                handleFile(files[0]);
+            }
+        });
+        fileInput.addEventListener('change', () => {
+            if (fileInput.files.length) {
+                handleFile(fileInput.files[0]);
+            }
+        });
+
+        document.getElementById('highlight-rest').addEventListener('change', () => plotData(fullData));
+        document.getElementById('highlight-motion').addEventListener('change', () => plotData(fullData));
+
+
+        function handleFile(file) {
+            if (!file.name.endsWith('.csv')) {
+                alert('Please upload a valid .csv file.');
+                return;
+            }
+            fileInfo.textContent = `Loading ${file.name}...`;
+            loader.classList.remove('hidden');
+            
+            Papa.parse(file, {
+                header: true,
+                dynamicTyping: true,
+                skipEmptyLines: true,
+                complete: function(results) {
+                    loader.classList.add('hidden');
+                    uploadContainer.classList.add('hidden');
+                    resultsContainer.classList.remove('hidden');
+                    fullData = results.data;
+                    plotData(fullData);
+                    populateTable(fullData);
+                },
+                error: function(error) {
+                    loader.classList.add('hidden');
+                    alert('An error occurred while parsing the CSV file.');
+                    console.error(error);
+                }
+            });
+        }
+
+        function plotData(data) {
+            const highlightRest = document.getElementById('highlight-rest').checked;
+            const highlightMotion = document.getElementById('highlight-motion').checked;
+
+            const headers = data.map(row => row.header);
+            const lengths = data.map(row => row.length);
+            const dimensions = data.map(row => row.fractal_dimension);
+            const zScores = data.map(row => row.D_z_score);
+
+            const traces = [];
+            
+            // --- Define Traces for Scatter Plot ---
+            const baseTrace = {
+                x: lengths,
+                y: dimensions,
+                text: headers.map((h, i) => `Header: ${h}<br>Length: ${lengths[i]}<br>Dimension: ${dimensions[i].toFixed(4)}<br>Z-Score: ${zScores[i].toFixed(4)}`),
+                hoverinfo: 'text',
+                mode: 'markers',
+                type: 'scatter',
+                name: 'Other Proteins',
+                marker: {
+                    color: '#94a3b8', // slate-400
+                    size: 5,
+                    opacity: 0.6
+                }
+            };
+            traces.push(baseTrace);
+
+            if (highlightRest) {
+                const restMatches = data.filter(row => Math.abs(row.D_z_score - KI_REST) < TOLERANCE);
+                traces.push({
+                    x: restMatches.map(r => r.length),
+                    y: restMatches.map(r => r.fractal_dimension),
+                    text: restMatches.map(r => `Header: ${r.header}<br>Length: ${r.length}<br>Dimension: ${r.fractal_dimension.toFixed(4)}<br>Z-Score: ${r.D_z_score.toFixed(4)}`),
+                    hoverinfo: 'text',
+                    mode: 'markers',
+                    type: 'scatter',
+                    name: `Ki Rest Match`,
+                    marker: { color: '#2563eb', size: 8, symbol: 'diamond' }
+                });
+            }
+
+            if (highlightMotion) {
+                const motionMatches = data.filter(row => Math.abs(row.D_z_score - KI_MOTION) < TOLERANCE);
+                traces.push({
+                    x: motionMatches.map(r => r.length),
+                    y: motionMatches.map(r => r.fractal_dimension),
+                    text: motionMatches.map(r => `Header: ${r.header}<br>Length: ${r.length}<br>Dimension: ${r.fractal_dimension.toFixed(4)}<br>Z-Score: ${r.D_z_score.toFixed(4)}`),
+                    hoverinfo: 'text',
+                    mode: 'markers',
+                    type: 'scatter',
+                    name: `Ki Motion Match`,
+                    marker: { color: '#ea580c', size: 8, symbol: 'star' }
+                });
+            }
+
+            const scatterLayout = {
+                title: '<b>Fractal Dimension vs. Protein Length</b>',
+                xaxis: {
+                    title: 'Protein Length (log scale)',
+                    type: 'log',
+                    autorange: true
+                },
+                yaxis: {
+                    title: 'Fractal Dimension (D)',
+                    autorange: true
+                },
+                hovermode: 'closest',
+                showlegend: true,
+                legend: {
+                    x: 1,
+                    xanchor: 'right',
+                    y: 1
+                },
+                margin: { l: 50, r: 20, b: 50, t: 50 }
+            };
+
+            Plotly.newPlot('scatter-plot', traces, scatterLayout, {responsive: true});
+
+            // --- Define Traces for Histogram ---
+            const meanZ = 0;
+            const stdZ = 1;
+
+            const histogramLayout = {
+                title: '<b>Distribution of Z-Scores</b>',
+                xaxis: { title: 'D_z_score' },
+                yaxis: { title: 'Count' },
+                bargap: 0.05,
+                shapes: [
+                    { type: 'line', x0: KI_REST, y0: 0, x1: KI_REST, y1: 1, yref: 'paper', line: { color: '#2563eb', width: 2, dash: 'dash' } },
+                    { type: 'line', x0: KI_MOTION, y0: 0, x1: KI_MOTION, y1: 1, yref: 'paper', line: { color: '#ea580c', width: 2, dash: 'dash' } }
+                ],
+                annotations: [
+                    { x: KI_REST, y: 0.95, yref: 'paper', text: 'Ki Rest', showarrow: false, xanchor: 'left', font: {color: '#2563eb'} },
+                    { x: KI_MOTION, y: 0.90, yref: 'paper', text: 'Ki Motion', showarrow: false, xanchor: 'left', font: {color: '#ea580c'} }
+                ],
+                 margin: { l: 50, r: 20, b: 50, t: 50 }
+            };
+
+            Plotly.newPlot('histogram-plot', [{
+                x: zScores,
+                type: 'histogram',
+                marker: { color: '#64748b' }
+            }], histogramLayout, {responsive: true});
+        }
+
+        function populateTable(data) {
+            const tableHead = document.querySelector('#data-table thead');
+            const tableBody = document.querySelector('#data-table tbody');
+            
+            tableHead.innerHTML = '';
+            tableBody.innerHTML = '';
+
+            if (data.length === 0) return;
+
+            const headers = Object.keys(data[0]);
+            const headerRow = document.createElement('tr');
+            headers.forEach(headerText => {
+                const th = document.createElement('th');
+                th.scope = 'col';
+                th.className = 'px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider';
+                th.textContent = headerText.replace(/_/g, ' ');
+                headerRow.appendChild(th);
+            });
+            tableHead.appendChild(headerRow);
+
+            data.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.className = 'hover:bg-slate-50';
+                headers.forEach(header => {
+                    const td = document.createElement('td');
+                    td.className = 'px-6 py-4 whitespace-nowrap text-sm text-gray-700';
+                    let value = row[header];
+                    if (typeof value === 'number') {
+                        td.textContent = value.toFixed(4);
+                    } else {
+                        td.textContent = value;
+                    }
+                    tr.appendChild(td);
+                });
+                tableBody.appendChild(tr);
+            });
+        }
+    </script>
+</body>
+</html>

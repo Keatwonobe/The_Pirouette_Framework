@@ -1,0 +1,5 @@
+trace_id,start_time,end_time,module,filename,metric_ratio_found_ki_motion_ratio,metric_ratio_significance,metric_ratio_found_ki_rest_ratio,metric_ratio_found_golden_ratio,metric_bicoherence_max,metric_bicoherence_mean,metric_bicoherence_peaks,metric_bicoherence_significance
+IU.MAJO.00.BHZ,2011-03-11T05:00:00.019538Z,2011-03-11T07:59:59.969538Z,cycle_ratio,IU.MAJO.2011.03.11.mseed,1.3333333333333333,5.0,,,,,,
+IU.MAJO.00.BHZ,2011-03-11T05:00:00.019538Z,2011-03-11T07:59:59.969538Z,cycle_ratio,IU.MAJO.2011.03.11.mseed,,5.0,1.3333333333333333,,,,,
+IU.MAJO.00.BHZ,2011-03-11T05:00:00.019538Z,2011-03-11T07:59:59.969538Z,cycle_ratio,IU.MAJO.2011.03.11.mseed,,5.0,,1.6666666666666667,,,,
+IU.MAJO.00.BHZ,2011-03-11T05:00:00.019538Z,2011-03-11T07:59:59.969538Z,phase_coupling,IU.MAJO.2011.03.11.mseed,,,,,0.6656541948611849,0.1632271263751891,126.0,4.168906520028871

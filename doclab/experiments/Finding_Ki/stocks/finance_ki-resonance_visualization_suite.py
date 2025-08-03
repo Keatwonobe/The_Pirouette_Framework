@@ -1,0 +1,119 @@
+#!/usr/bin/env python3
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import warnings
+
+# --- Constants ---
+KI_REST = 4.14159
+KI_MOTION = 4.18879
+TOLERANCE = 0.05  # Use the same tolerance as the analysis script
+
+def visualize_financial_results(final_report_path):
+    """
+    Loads the final stock analysis report and creates a suite of visualizations
+    for the most significant Ki-resonant metrics.
+    """
+    print(f"Loading final report from '{final_report_path}'...")
+    try:
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", pd.errors.DtypeWarning)
+            df = pd.read_csv(final_report_path)
+        print(f"Successfully loaded {len(df):,} records.")
+    except FileNotFoundError:
+        print(f"ERROR: The file '{final_report_path}' was not found.")
+        return
+
+    # --- Identify the key metrics where Ki was found ---
+    # We'll focus on the ones that had strong signals in your output.
+    # This list can be expanded if other metrics are of interest.
+    metrics_to_visualize = [
+        'volatility_kurtosis',
+        'normalized_volume_std_dev',
+        'normalized_volume_kurtosis',
+        'volatility_fundamental_freq'
+    ]
+
+    print(f"\nGenerating visualizations for {len(metrics_to_visualize)} key metrics...")
+
+    for metric_base_name in metrics_to_visualize:
+        zscore_col = f'zscore_{metric_base_name}'
+        
+        # Check if the required columns exist in the dataframe
+        if metric_base_name not in df.columns or zscore_col not in df.columns:
+            print(f"  - Skipping '{metric_base_name}': required columns not found.")
+            continue
+            
+        print(f"  - Processing metric: '{metric_base_name}'...")
+        
+        # --- Create Scatter Plot ---
+        plt.style.use('seaborn-v0_8-whitegrid')
+        fig, ax = plt.subplots(figsize=(16, 9), dpi=150)
+        
+        # Filter for Ki matches for this specific metric
+        rest_matches = df[np.abs(df[zscore_col] - KI_REST) < TOLERANCE]
+        motion_matches = df[np.abs(df[zscore_col] - KI_MOTION) < TOLERANCE]
+        
+        # Plot all other assets as a semi-transparent background
+        ax.scatter(
+            df['data_points'], df[metric_base_name],
+            color='#94a3b8', alpha=0.3, label='Other Assets', s=20
+        )
+        
+        # Plot Ki Rest matches on top
+        ax.scatter(
+            rest_matches['data_points'], rest_matches[metric_base_name],
+            color='#2563eb', marker='D', s=80, edgecolor='white',
+            label=f'Ki Rest Matches ({len(rest_matches)})'
+        )
+        
+        # Plot Ki Motion matches on top
+        ax.scatter(
+            motion_matches['data_points'], motion_matches[metric_base_name],
+            color='#ea580c', marker='*', s=150, edgecolor='black',
+            label=f'Ki Motion Matches ({len(motion_matches)})'
+        )
+        
+        ax.set_xscale('log')
+        ax.set_yscale('log') # Kurtosis and Std Dev often span many orders of magnitude
+        ax.set_title(f'Analysis of: {metric_base_name.replace("_", " ").title()}', fontsize=20, weight='bold')
+        ax.set_xlabel('Trading Days in Dataset (log scale)', fontsize=14)
+        ax.set_ylabel(f'{metric_base_name.replace("_", " ").title()} (log scale)', fontsize=14)
+        ax.legend(fontsize=12)
+        ax.grid(True, which="both", ls="--", c='0.7')
+        
+        scatter_filename = f'plot_scatter_{metric_base_name}.png'
+        plt.savefig(scatter_filename, bbox_inches='tight')
+        print(f"    - Scatter plot saved to '{scatter_filename}'")
+        plt.close(fig)
+
+        # --- Create Histogram Plot ---
+        fig, ax = plt.subplots(figsize=(16, 9), dpi=150)
+        
+        sns.histplot(df[zscore_col].dropna(), kde=True, bins=150, color='#64748b', ax=ax)
+        
+        ax.axvline(KI_REST, color='#2563eb', linestyle='--', linewidth=2.5, label=f'Ki Rest ({KI_REST:.2f})')
+        ax.axvline(KI_MOTION, color='#ea580c', linestyle='--', linewidth=2.5, label=f'Ki Motion ({KI_MOTION:.2f})')
+        
+        # Set x-limits to focus on the main distribution and the Ki signals
+        ax.set_xlim(df[zscore_col].min(), max(8, df[zscore_col].max() * 0.5))
+        
+        ax.set_title(f'Z-Score Distribution for: {metric_base_name.replace("_", " ").title()}', fontsize=20, weight='bold')
+        ax.set_xlabel(f'Z-Score of {metric_base_name.replace("_", " ").title()}', fontsize=14)
+        ax.set_ylabel('Count', fontsize=14)
+        ax.legend(fontsize=12)
+        
+        histogram_filename = f'plot_histogram_{metric_base_name}.png'
+        plt.savefig(histogram_filename, bbox_inches='tight')
+        print(f"    - Histogram saved to '{histogram_filename}'")
+        plt.close(fig)
+
+    print("\n✅ All visualizations have been generated and saved.")
+
+
+if __name__ == '__main__':
+    # The final report CSV generated by the previous script.
+    FINAL_REPORT_CSV = "stock_ki_final_report.csv"
+    
+    visualize_financial_results(FINAL_REPORT_CSV)

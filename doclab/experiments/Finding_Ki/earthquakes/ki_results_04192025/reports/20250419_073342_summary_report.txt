@@ -1,0 +1,38 @@
+================================================================================
+Ki ANALYSIS SUMMARY REPORT
+================================================================================
+
+Session ID: 20250419_073342
+Start Time: 2025-04-19 07:33:42.495021
+End Time: 2025-04-19 07:33:46.484398
+Duration: 0:00:03.989377
+
+Analysis Parameters:
+  Ki Value: 4.18879
+  Band Width: 0.15
+  Significance Threshold: 1.0 std
+
+Results Summary:
+  Total Detections: 8
+  Files with Detections: 8
+  Traces with Detections: 8
+
+Detection Statistics:
+  Mean Energy Ratio: 4.8036
+  Max Energy Ratio: 6.8674
+  Min Ki Distance: 3.914840 Hz
+  Mean Ki Distance: 4.030640 Hz
+
+Top 10 Strongest Detections:
+  1. TW.NA01.01.HJE @ 2024-04-02T23:57:59.999300Z - Energy Ratio: 6.8674
+  2. TW.MDSA0..HLN @ 2024-04-02T23:58:00.000000Z - Energy Ratio: 5.8392
+  3. TW.NA01.01.HJZ @ 2024-04-02T23:57:59.999300Z - Energy Ratio: 5.8347
+  4. TW.NA01..HLE @ 2024-04-02T23:57:59.998391Z - Energy Ratio: 5.1455
+  5. TW.MDSA0..HLZ @ 2024-04-02T23:58:00.000000Z - Energy Ratio: 4.6278
+  6. TW.NA01.01.HJN @ 2024-04-02T23:57:59.999400Z - Energy Ratio: 4.1689
+  7. TW.NA01..HLZ @ 2024-04-02T23:57:59.998393Z - Energy Ratio: 3.1304
+  8. TW.MDSA0.01.HJE @ 2024-04-02T23:57:59.997500Z - Energy Ratio: 2.8153
+
+================================================================================
+Report generated at 2025-04-19 07:33:46.485397
+================================================================================

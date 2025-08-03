@@ -1,0 +1,8 @@
+trace_id,start_time,end_time,module,filename,metric_ratio_found_golden_ratio,metric_ratio_significance,metric_ratio_found_ki_motion_ratio,metric_ratio_found_ki_rest_ratio,metric_modulation_index,metric_pac_significance
+SY.MAW01.00.BHZ,2025-07-01T09:47:30.100243Z,2025-07-01T09:47:50.095243Z,cycle_ratio,synthetic_ki_thumper.mseed,0.6358792184724689,5.0,,,,
+SY.MAW01.00.BHZ,2025-07-01T09:47:30.100243Z,2025-07-01T09:47:50.095243Z,cycle_ratio,synthetic_ki_thumper.mseed,,5.0,0.7765726681127982,,,
+SY.MAW01.00.BHZ,2025-07-01T09:47:30.100243Z,2025-07-01T09:47:50.095243Z,cycle_ratio,synthetic_ki_thumper.mseed,,5.0,,0.7765726681127982,,
+SY.MAW01.00.BHZ,2025-07-01T09:47:30.100243Z,2025-07-01T09:47:50.095243Z,cycle_ratio,synthetic_ki_thumper.mseed,,5.0,1.3731707317073172,,,
+SY.MAW01.00.BHZ,2025-07-01T09:47:30.100243Z,2025-07-01T09:47:50.095243Z,phase_coupling,synthetic_ki_thumper.mseed,,,,,0.1503756079048821,15.037560790488211
+SY.MAW01.00.BHZ,2025-07-01T09:50:57.791555Z,2025-07-01T09:51:17.789055Z,cycle_ratio,synthetic_maw_thumper.mseed,,5.0,,0.779296875,,
+SY.MAW01.00.BHZ,2025-07-01T09:50:57.791555Z,2025-07-01T09:51:17.789055Z,phase_coupling,synthetic_maw_thumper.mseed,,,,,0.16528858492018073,16.528858492018074

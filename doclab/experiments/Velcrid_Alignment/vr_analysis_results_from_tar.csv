@@ -1,0 +1,55 @@
+file,category,velcridance_score,radiance_score,kurtosis_score,drift_score,anisotropy_score,text_length
+pg10000.txt,gutenberg_tar,2.02E-06,1.16E-06,1.402631622,-3.26E-12,0.2882252,0
+pg10001.txt,gutenberg_tar,2.25E-06,1.63E-06,1.428651055,3.05E-11,0.36211503,0
+pg10002.txt,gutenberg_tar,1.74E-06,1.13E-06,1.762458917,1.68E-11,0.22915775,0
+pg10003.txt,gutenberg_tar,1.71E-06,1.14E-06,1.728794954,6.91E-12,0.22288921,0
+pg10004.txt,gutenberg_tar,1.74E-06,1.15E-06,1.683864725,7.04E-12,0.23226018,0
+pg10005.txt,gutenberg_tar,1.72E-06,1.15E-06,1.70396344,-5.69E-13,0.21865728,0
+pg10007.txt,gutenberg_tar,1.18E-06,8.18E-07,2.529811031,-8.64E-12,0.17727318,0
+pg10008.txt,gutenberg_tar,1.66E-06,1.11E-06,1.79671102,6.29E-12,0.21744627,0
+pg10009.txt,gutenberg_tar,1.71E-06,1.12E-06,1.765980428,1.21E-11,0.21798316,0
+pg1000.txt,gutenberg_tar,6.47E-07,4.87E-07,4.469863708,6.67E-12,0.09231791,0
+pg10020.txt,gutenberg_tar,1.70E-06,1.13E-06,1.747786329,-2.23E-11,0.22466178,0
+pg10046.txt,gutenberg_tar,1.69E-06,1.12E-06,1.765974791,-9.59E-12,0.21774992,0
+pg10048.txt,gutenberg_tar,1.73E-06,1.12E-06,1.672049185,-1.17E-11,0.23316963,0
+pg10049.txt,gutenberg_tar,1.82E-06,1.15E-06,1.580025486,-5.04E-12,0.24936058,0
+pg1004.txt,gutenberg_tar,8.43E-07,5.70E-07,3.081128349,-4.79E-12,0.10453953,0
+pg10050.txt,gutenberg_tar,1.83E-06,1.12E-06,1.607834954,3.25E-11,0.24850488,0
+pg10051.txt,gutenberg_tar,1.78E-06,1.15E-06,1.692728684,-1.89E-11,0.23472896,0
+pg10052.txt,gutenberg_tar,1.04E-06,7.93E-07,3.106455254,-1.22E-11,0.15589494,0
+pg10053.txt,gutenberg_tar,1.66E-06,1.09E-06,1.790504829,-9.70E-12,0.20622453,0
+pg10054.txt,gutenberg_tar,2.29E-06,1.64E-06,1.458963219,-2.31E-11,0.35858473,0
+pg10055.txt,gutenberg_tar,1.65E-06,1.11E-06,1.735802459,2.13E-11,0.21117866,0
+pg10056.txt,gutenberg_tar,1.65E-06,1.09E-06,1.813019059,1.15E-11,0.21199666,0
+pg10058.txt,gutenberg_tar,1.65E-06,1.11E-06,1.780069526,2.76E-11,0.21285506,0
+pg10059.txt,gutenberg_tar,1.70E-06,1.13E-06,1.760760298,-7.06E-12,0.22654589,0
+pg10064.txt,gutenberg_tar,1.63E-06,1.11E-06,1.813293802,1.64E-11,0.20631488,0
+pg10065.txt,gutenberg_tar,1.81E-06,1.14E-06,1.647133175,8.26E-12,0.24008563,0
+pg10067.txt,gutenberg_tar,1.63E-06,1.08E-06,1.852273747,-1.96E-11,0.2140891,0
+pg10069.txt,gutenberg_tar,1.60E-06,1.09E-06,1.91129934,7.61E-13,0.25456718,0
+pg10071.txt,gutenberg_tar,1.83E-06,1.15E-06,1.599133814,-2.89E-12,0.2422028,0
+pg10072.txt,gutenberg_tar,1.68E-06,1.09E-06,1.793691872,1.60E-11,0.21787086,0
+pg10073.txt,gutenberg_tar,1.60E-06,1.12E-06,1.851948889,-2.41E-11,0.20299311,0
+pg10093.txt,gutenberg_tar,1.73E-06,1.14E-06,1.715156059,2.27E-11,0.22954756,0
+pg10095.txt,gutenberg_tar,9.02E-07,6.53E-07,2.760531989,7.88E-12,0.12477867,0
+pg10096.txt,gutenberg_tar,1.78E-06,1.10E-06,1.633180234,-5.88E-12,0.2558014,0
+pg10098.txt,gutenberg_tar,1.69E-06,1.10E-06,1.793652814,2.76E-11,0.216472,0
+pg10099.txt,gutenberg_tar,1.73E-06,1.15E-06,1.715651044,6.96E-12,0.22781295,0
+pg10107.txt,gutenberg_tar,1.69E-06,1.12E-06,1.778115701,1.56E-11,0.21949942,0
+pg10116.txt,gutenberg_tar,1.67E-06,1.10E-06,1.826325911,1.56E-11,0.20774028,0
+pg10127.txt,gutenberg_tar,1.77E-06,1.14E-06,1.638838776,2.72E-12,0.24065027,0
+pg10128.txt,gutenberg_tar,1.68E-06,1.14E-06,1.770213773,-3.88E-12,0.21090806,0
+pg10129.txt,gutenberg_tar,1.66E-06,1.10E-06,1.810967623,1.91E-11,0.21185377,0
+pg1012.txt,gutenberg_tar,6.73E-07,5.16E-07,5.039435892,-4.42E-12,0.08994315,0
+pg10146.txt,gutenberg_tar,1.76E-06,1.14E-06,1.718737077,1.68E-12,0.23521008,0
+pg1014.txt,gutenberg_tar,1.30E-06,9.33E-07,2.436280927,2.06E-11,0.20028573,0
+project_gutenberg_ebook_of_The_Meditations_of_the_Emperor_Marcus_Aurelius_Antonius.txt,radiant,1.66E-06,1.12E-06,1.757741781,-9.39E-13,0.2287809,246673
+The Project Gutenberg eBook of Mutual Aid A Factor of Evolution.txt,radiant,1.66E-06,1.13E-06,1.784528106,-7.76E-12,0.21050727,582520
+"The Project Gutenberg eBook of The Bible, King James version, Book 42_ Luke, by Anonymous.html",radiant,1.62E-06,1.01E-06,1.787023879,1.25E-12,0.21615383,167413
+"The Project Gutenberg eBook of The Conquest of Bread, by Peter Kropotkin.html",radiant,1.35E-06,8.32E-07,2.418602422,1.56E-11,0.16379015,431183
+Walden _ Project Gutenberg.html,radiant,1.13E-06,7.41E-07,2.588229812,-1.38E-11,0.14002913,633666
+"Laws, by Plato.html",velcrid,1.64E-06,9.94E-07,1.995384364,-9.35E-12,0.19523841,1450057
+Leviathan _ Project Gutenberg.html,velcrid,1.43E-06,8.44E-07,2.177425844,-1.14E-11,0.16860291,1357192
+The Project Gutenberg eBook of The Art of War.txt,velcrid,8.55E-07,6.61E-07,4.196347385,2.03E-12,0.121361494,317991
+"The Project Gutenberg eBook of The Prince, by Nicolo Machiavelli.html",velcrid,1.32E-06,8.45E-07,2.341583444,-4.79E-11,0.17523718,282832
+THE_CODE_OF_Hammurabi.txt,velcrid,1.78E-06,1.26E-06,1.783527939,1.02E-12,0.28197777,62893

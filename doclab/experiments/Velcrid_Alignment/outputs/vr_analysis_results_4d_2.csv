@@ -1,0 +1,11 @@
+file,category,velcridance_score,radiance_score,kurtosis_score,drift_score,anisotropy_score,text_length
+project_gutenberg_ebook_of_The_Meditations_of_the_Emperor_Marcus_Aurelius_Antonius.txt,radiant,1.66E-06,1.12E-06,1.757741781,-9.39E-13,0.2287809,246673
+The Project Gutenberg eBook of Mutual Aid A Factor of Evolution.txt,radiant,1.66E-06,1.13E-06,1.784528106,-7.76E-12,0.21050727,582520
+"The Project Gutenberg eBook of The Bible, King James version, Book 42_ Luke, by Anonymous.html",radiant,1.62E-06,1.01E-06,1.787023879,1.25E-12,0.21615383,167413
+"The Project Gutenberg eBook of The Conquest of Bread, by Peter Kropotkin.html",radiant,1.35E-06,8.32E-07,2.418602422,1.56E-11,0.16379015,431183
+Walden _ Project Gutenberg.html,radiant,1.13E-06,7.41E-07,2.588229812,-1.38E-11,0.14002913,633666
+"Laws, by Plato.html",velcrid,1.64E-06,9.94E-07,1.995384364,-9.35E-12,0.19523841,1450057
+Leviathan _ Project Gutenberg.html,velcrid,1.43E-06,8.44E-07,2.177425844,-1.14E-11,0.16860291,1357192
+The Project Gutenberg eBook of The Art of War.txt,velcrid,8.55E-07,6.61E-07,4.196347385,2.03E-12,0.121361494,317991
+"The Project Gutenberg eBook of The Prince, by Nicolo Machiavelli.html",velcrid,1.32E-06,8.45E-07,2.341583444,-4.79E-11,0.17523718,282832
+THE_CODE_OF_Hammurabi.txt,velcrid,1.78E-06,1.26E-06,1.783527939,1.02E-12,0.28197777,62893
