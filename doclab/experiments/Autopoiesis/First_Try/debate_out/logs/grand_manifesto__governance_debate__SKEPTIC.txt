@@ -1,0 +1,14 @@
+```json
+{
+  "commentary": "The theory's primary virtue—its elegant, scale-invariant structure—is also its most critical vulnerability. 1. Its claim to be a predictive science, rather than a compelling philosophical metaphor, rests entirely on the unproven and highly challenging assumption that its core abstract concepts (cultural 'frequencies' ω_P, ω_M, ω_X) can be mapped to valid, non-confounded quantitative proxies. This 'proxy problem' is the single point of failure for its entire empirical program. 2. The mathematical formalism, particularly the additive 'Temporal Resonance Condition' (ω_P ≈ ω_M + ω_X), appears asserted for aesthetic reasons rather than derived from first principles. This suggests the theory suffers from 'physics envy,' adopting the language of physics without demonstrating that social dynamics adhere to such a simple, linear relationship.",
+  "experiment": "A pre-registered competitive forecasting tournament. First, an independent team must operationalize the proxies for ω_P, ω_M, and ω_X to construct a 'Temporal Resonance Index' (TRI) for a diverse set of nations over a 50-year period. Second, this TRI model's ability to 'hindcast' major instability events (e.g., civil unrest, state collapse) in the last decade of that period will be competitively benchmarked against a set of simpler, established models using standard economic and political indicators (e.g., Gini coefficient, political polarization metrics). If the TRI does not demonstrate a statistically significant improvement in out-of-sample predictive power over these simpler benchmarks, its claim as a new, fundamental science of civilizational health is falsified, suggesting it adds unnecessary complexity with no practical utility.",
+  "scores": {
+    "coherence": 0.9,
+    "predictivity": 0.7,
+    "falsifiability": 0.8,
+    "external_anchor": 0.3,
+    "dark_residue": 0.5,
+    "elegance": 0.9
+  }
+}
+```

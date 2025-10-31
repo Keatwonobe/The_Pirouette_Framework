@@ -1,0 +1,22 @@
+```json
+{
+  "summary": {
+    "consensus": "There is strong consensus that the theory is ambitious and makes specific, falsifiable claims. However, there is an equally strong consensus (shared by Skeptic, Methodologist, and acknowledged by Proponent) that the core mathematical framework is critically underdeveloped. This creates a severe disconnect between the abstract concepts (e.g., Lagrangian, fields Γ and Ki) and the concrete predictions, making the claimed unification between disparate domains currently an assertion rather than a rigorous derivation.",
+    "conflicts": "The primary conflict concerns the theory's present-day coherence and the appropriate next step. The Proponent argues for high coherence and an immediate physical experiment (Tau g-2 measurement). The Skeptic and Methodologist fundamentally disagree, viewing the theory as currently incoherent and demanding a theoretical derivation as the non-negotiable prerequisite to any new experiment. A secondary conflict is introduced by the Ethicist, who focuses on the unaddressed potential for misuse and the operational vagueness of the core 'Dark Residue' metric."
+  },
+  "decision": "REVISE",
+  "required_changes": [
+    "Prioritize theoretical derivation over new physical experiments. From the proposed core Lagrangian, provide the explicit, non-phenomenological derivation of the function that connects the proposed fields (Γ, Ki) to the lepton anomalous magnetic moment.",
+    "The derivation must yield a specific, zero-free-parameter prediction for a physical observable, such as the ratio of the tau and muon g-2 anomalies (Δa_τ / Δa_μ), to validate the theory's claimed unification.",
+    "Provide a precise and operational definition for the 'Dark Residue' metric, specifying the observables that would be used to quantify it in a real-world or simulated social system."
+  ],
+  "averaged_scores": {
+    "coherence": 0.45,
+    "predictivity": 0.775,
+    "falsifiability": 0.875,
+    "external_anchor": 0.325,
+    "dark_residue": 0.2,
+    "elegance": 0.3
+  }
+}
+```

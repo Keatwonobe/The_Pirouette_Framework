@@ -1,0 +1,119 @@
+{
+  "id": "cea684e2-616e-47cf-a89d-11a0bf027ad8",
+  "problem": {
+    "title": "Coherence Deficit Across Scales",
+    "rationale": "Synthesize open contradictions in modern physics (spacetime emergence, lepton g-2), cognitive science (awareness continuity), and social cascades; propose time-first, coherence-substrate hypotheses with measurable predictions.",
+    "contradictions": [
+      "Relativistic locality vs. quantum nonlocal correlations",
+      "High-precision SM predictions vs. measured lepton g-2 anomalies",
+      "Emergentist consciousness vs. substrate dynamics signatures"
+    ],
+    "related_claims": [
+      {
+        "text": "Muon g-2 deviates from perturbative SM prediction at ppm scale in some analyses",
+        "source": "literature",
+        "confidence": 0.6,
+        "tags": []
+      },
+      {
+        "text": "Neural triadic phase-locking correlates with sustained awareness",
+        "source": "lab-theory",
+        "confidence": 0.5,
+        "tags": []
+      },
+      {
+        "text": "Social cascades exhibit threshold behavior and critical slowing",
+        "source": "socio-dynamics",
+        "confidence": 0.6,
+        "tags": []
+      }
+    ]
+  },
+  "math_sketch": {
+    "assumptions": [
+      "Time-substrate fields exist with adherence T_a and pressure \u0393",
+      "A coherence density Ki couples to observables via gauge-compatible terms",
+      "Measurement deforms local geometry (observer back-action)"
+    ],
+    "variables": {
+      "Ki": "coherence density field",
+      "\u0393": "temporal pressure / load",
+      "T_a": "time-adherence order parameter"
+    },
+    "equations": [
+      "S_time[Ki, \u0393, T_a] = \u222b d^4x L(Ki, \u0393, T_a)",
+      "\u2202_\u03bc J^\u03bc = 0 (coherence current conservation)",
+      "\u0394g-2 \u221d f(\u0393, Ki) at lepton mass shell"
+    ],
+    "invariants": [
+      "Coherence area A_Ki conserved within awareness window",
+      "No free energy from closed coherence loops (second law compliant)"
+    ]
+  },
+  "predictions": [
+    {
+      "statement": "Tau lepton anomalous magnetic moment exhibits \u0393-coupling trend extrapolated from muon channel",
+      "type": "numeric",
+      "falsifiable_criteria": "If precise \u03c4 g-2 measurement matches SM without additional term within uncertainties, hypothesis fails."
+    },
+    {
+      "statement": "EEG/MEG shows narrowing detuning bandwidth \u0394f_allowed \u221d \u0393^{-1/2} during high-load tasks",
+      "type": "phenomenological",
+      "falsifiable_criteria": "If bandwidth does not shrink with task-induced \u0393 increase, falsify."
+    },
+    {
+      "statement": "Pressuron-like signatures alter cluster lensing residuals under specific surface tension regimes",
+      "type": "phenomenological",
+      "falsifiable_criteria": "If stacked clusters show no consistent residual pattern after baryonic modeling, falsify."
+    }
+  ],
+  "experiments": [
+    {
+      "name": "Tau g-2 campaign concept",
+      "apparatus": [
+        "Belle-II dataset access",
+        "QED+EW+hadronic pipeline",
+        "systematics budget"
+      ],
+      "signal": "\u0394a_\u03c4 trend vs. \u0393 proxy",
+      "threshold": "Detect non-SM component at agreed \u03c3 threshold",
+      "failure_mode": "No deviation within uncertainties over multiple datasets"
+    },
+    {
+      "name": "Triadic resonance EEG/MEG replication",
+      "apparatus": [
+        "128ch EEG/MEG",
+        "closed-loop tACS",
+        "Morlet/Hilbert pipeline"
+      ],
+      "signal": "TPCI ridge + \u0394f_allowed shrinkage",
+      "threshold": "Pre-registered effect size (e.g., Cohen's d\u22650.5)",
+      "failure_mode": "No ridge / no shrinkage across participants"
+    }
+  ],
+  "cross_domain_hooks": [
+    "Map RG exponents from neural collapse to social cascade recovery",
+    "Transfer Ki-invariants to market microstructure volatility bursts"
+  ],
+  "philosophy_seeds": [
+    {
+      "question": "Is consciousness fundamentally geometric motion in a time-substrate?",
+      "tension": "Subjective continuity vs. discrete phase slips",
+      "governance_hook": "Design systems that stabilize beneficial coherence while minimizing Dark Residue."
+    },
+    {
+      "question": "When does coherence-maximization conflict with pluralism?",
+      "tension": "Minority resonance vs. global optimum",
+      "governance_hook": "Embed safeguards: consentful coherence and fail-open governance triggers."
+    }
+  ],
+  "created_at": "20251012_191126",
+  "provenance": {
+    "seed_text": "Synthesize open contradictions in modern physics (spacetime emergence, lepton g-2), cognitive science (awareness continuity), and social cascades; propose time-first, coherence-substrate hypotheses with measurable predictions.",
+    "sources": [
+      "local:pirouette_version_6.md"
+    ],
+    "governance_directive": "Minimize the delta between personal and total enthalpy gain; empirically validate by net decrease in systemic Dark Residue.",
+    "has_model": true
+  }
+}

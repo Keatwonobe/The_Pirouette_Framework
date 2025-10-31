@@ -1,0 +1,19 @@
+```json
+{
+  "commentary": "The theory's primary strength is its unifying elegance; it derives a scale-invariant, triadic architecture for all adaptive systems from a single variational principle, providing a common language for disciplines from physics to sociology. Its second critical strength is its commitment to scientific rigor: it moves beyond metaphor by proposing the Temporal Resonance Condition, a quantitative and empirically falsifiable hypothesis that makes it predictive. The main challenge, which the theory rightly identifies as its next research frontier, is the operationalization of its abstract variables (`ω_P`, `ω_M`, `ω_X`) into robust, measurable proxies, without which it cannot be tested.",
+  "experiment": {
+    "name": "The Dissonance Index Historical Back-Test",
+    "objective": "To empirically test the theory's central hypothesis: that a sustained, high 'Dissonance' score, calculated from historical proxies, is a statistically significant leading indicator of systemic crises (e.g., civil unrest, state collapse, revolution).",
+    "methodology": "1. Select 5-10 historical polities with sufficient data (e.g., Late Roman Republic, Weimar Germany, Post-War Japan). 2. For each polity, construct time-series data for the proposed proxies for Probe (e.g., patent filings), Model (e.g., semantic turnover in foundational texts), and Constraint (e.g., legislative velocity). 3. Normalize and combine these proxies to calculate a Dissonance Index, D(t) = |ω_P - (ω_M + ω_X)|, over time. 4. Independently identify and timestamp major systemic crises for each polity. 5. Perform time-series analysis (e.g., Granger causality) to determine if a high D(t) value reliably precedes crisis events by the predicted 5-15 year window.",
+    "falsification": "The theory's central predictive claim is falsified if no statistically significant correlation is found across multiple case studies, or if the Dissonance Index is shown to lag behind, rather than lead, systemic crises."
+  },
+  "scores": {
+    "coherence": 1.0,
+    "predictivity": 0.8,
+    "falsifiability": 0.9,
+    "external_anchor": 0.5,
+    "dark_residue": 0.2,
+    "elegance": 1.0
+  }
+}
+```

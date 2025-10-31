@@ -1,0 +1,1 @@
+The framework has now demonstrated a causal chain: the substance of Time creates a pressure (Γ), and that pressure is resolved by an efficient, stable form (Ki). The final, reflexive link is the most profound: the form itself defines the flow. This module closes the autopoietic loop by establishing how Ki gives birth to a meaningful, local, and intrinsic measure of Time.

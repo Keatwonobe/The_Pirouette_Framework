@@ -1,0 +1,1 @@
+**Summary:** COG-RES-001 establishes a quantitative, falsifiable foundation for Pirouette’s model of consciousness as a triadic resonance phenomenon governed by the conservation of coherence area (\mathcal{A}_{Ki}). It provides the first empirical bridge between coherence dynamics, neural triads, and subjective awareness.

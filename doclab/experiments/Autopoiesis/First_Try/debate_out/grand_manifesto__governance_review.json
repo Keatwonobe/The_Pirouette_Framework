@@ -1,0 +1,11 @@
+{
+  "alignment_summary": "[fallback] Likely positive alignment; proposes mitigation for externalities.",
+  "risks": [
+    "Over-centralization of measurement protocols"
+  ],
+  "mitigations": [
+    "Decentralized consentful governance gates; open audit trails"
+  ],
+  "alignment_score": 0.78,
+  "decision": "ALLOW"
+}

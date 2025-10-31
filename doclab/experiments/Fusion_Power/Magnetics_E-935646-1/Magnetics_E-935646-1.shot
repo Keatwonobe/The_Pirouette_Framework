@@ -1,0 +1,12 @@
+Magnetics_E,DiagnosticsName,Magnetics_E,1
+Magnetics_E,Shot,935646,4
+Magnetics_E,SubShot,1,4
+Magnetics_E,ManagementVersion,10.0.0,1
+Magnetics_E,AcquisitionDate,"Mon, 25 Nov 19 16:58:55 +0900",1
+Magnetics_E,ModuleGroup,WE7000,1
+Magnetics_E,ModuleNumber,6,4
+Magnetics_E,ChannelNumber,20,4
+Magnetics_E,CollectedChannel,20,4
+Magnetics_E,Comment,,1
+Magnetics_E,ArchiveDate,"Mon, 25 Nov 19 16:58:56 +0900",1
+Magnetics_E,SiteName,lhd,1

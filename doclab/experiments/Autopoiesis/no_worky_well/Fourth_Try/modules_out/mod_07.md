@@ -1,0 +1,1 @@
+Healthy adult volunteers (n≥20) with normal or corrected vision and no neurological disorders.

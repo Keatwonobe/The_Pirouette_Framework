@@ -1,0 +1,1 @@
+To formalize the geometry underlying triadic resonance states in consciousness. This module describes how neural phase configurations define a **Triadic Manifold (𝓜₃)** — a dynamic surface on which awareness evolves through coherent motion and critical bifurcations predicted by [MATH-026].

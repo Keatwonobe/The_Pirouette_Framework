@@ -1,0 +1,22 @@
+```json
+{
+  "summary": {
+    "consensus": "There is strong consensus on the theory's elegance, unifying ambition, and its explicit commitment to falsifiability. All roles converge on identifying the primary and most critical weakness: the 'proxy problem'—the immense challenge of operationalizing the abstract variables (ω_P, ω_M, ω_X) into valid, measurable quantities, without which the theory remains a compelling metaphor rather than a predictive science.",
+    "conflicts": "Significant conflict exists on three fronts. First, on its immediate predictivity, with the Proponent and Ethicist being optimistic versus the Skeptic and Methodologist who view it as speculative. Second, on the mathematical formalism (ω_P ≈ ω_M + ω_X), which the Skeptic and Methodologist critique as arbitrary and asserted without rigorous derivation ('physics envy'), a point not contested by the Proponent. Third and most critically, a deep conflict on ethics: the Ethicist identifies a severe 'dark residue,' highlighting the theory's potential for totalitarian misuse and its inherent naturalistic fallacy (conflating stability with 'good'), a concern largely unaddressed by other roles."
+  },
+  "decision": "REVISE",
+  "required_changes": [
+    "The theory must be revised to explicitly address its potential for misuse by incorporating an ethical constraint. It must formally decouple systemic 'coherence' from normative 'good,' acknowledging that principles like justice and individual rights are essential, not merely sources of 'dissonance'.",
+    "The theory must provide a rigorous derivation for the specific additive form of the 'Temporal Resonance Condition' from its foundational variational principle, or re-frame the equation as a provisional, testable heuristic rather than an asserted physical law.",
+    "The experimental program must be revised to prioritize a small-scale pilot study (e.g., on digital communities as suggested by the Methodologist) to first establish the feasibility of creating and validating quantitative proxies for ω_P, ω_M, and ω_X before attempting large-scale historical back-testing."
+  ],
+  "averaged_scores": {
+    "coherence": 0.925,
+    "predictivity": 0.7,
+    "falsifiability": 0.75,
+    "external_anchor": 0.475,
+    "dark_residue": 0.575,
+    "elegance": 0.95
+  }
+}
+```

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Ki Resonance Analysis Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; }
+            h1, h2, h3 { color: #333; }
+            .summary { background-color: #f5f5f5; padding: 15px; border-radius: 5px; }
+            table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .highlight { background-color: #ffffcc; }
+            .significant { color: #d9534f; font-weight: bold; }
+            .image-gallery { display: flex; flex-wrap: wrap; gap: 10px; }
+            .image-container { width: 300px; margin-bottom: 20px; }
+            .image-container img { max-width: 100%; height: auto; }
+        </style>
+    </head>
+    <body>
+        <h1>Ki Resonance Analysis Report</h1>
+    
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Session ID: 20250419_225007</p>
+            <p>Analysis date: 2025-04-19 22:50:07</p>
+            <p>Files processed: 0</p>
+            <p>Ki values analyzed: Primary = 4.18879, Alternative = 4.14159</p>
+            <p>Significance threshold: 2.0</p>
+            <p>Total results: 37</p>
+        </div>
+    
+        <h2>Results by Module</h2>
+        <table>
+            <tr>
+                <th>Module</th>
+                <th>Total Results</th>
+                <th>Significant Results</th>
+                <th>Significance Rate</th>
+            </tr>
+    
+            <tr>
+                <td>cycle_ratio</td>
+                <td>10</td>
+                <td>10</td>
+                <td>100.0%</td>
+            </tr>
+            <tr>
+                <td>temporal_structure</td>
+                <td>19</td>
+                <td>19</td>
+                <td>100.0%</td>
+            </tr>
+            <tr>
+                <td>harmonic_pattern</td>
+                <td>8</td>
+                <td>8</td>
+                <td>100.0%</td>
+            </tr>
+            <tr class="highlight">
+                <td><strong>Total</strong></td>
+                <td><strong>37</strong></td>
+                <td><strong>37</strong></td>
+                <td><strong>100.0%</strong></td>
+            </tr>
+        </table>
+        
+        <h2>Top 10 Significant Findings</h2>
+        <table>
+            <tr>
+                <th>Trace ID</th>
+                <th>Module</th>
+                <th>Metric</th>
+                <th>Value</th>
+                <th>Time Range</th>
+            </tr>
+            
+            <tr>
+                <td>TW.MDSA0.01.HJE</td>
+                <td>harmonic_pattern</td>
+                <td>harmonic_pattern_significance</td>
+                <td class="significant">274.662</td>
+                <td>2024-04-02T23:57:59.997500Z to 2024-04-02T23:59:59.897500Z</td>
+            </tr>
+            <tr>
+                <td>TW.NA01.01.HJE</td>
+                <td>harmonic_pattern</td>
+                <td>harmonic_pattern_significance</td>
+                <td class="significant">213.102</td>
+                <td>2024-04-02T23:57:59.999300Z to 2024-04-03T00:00:00.239300Z</td>
+            </tr>
+            <tr>
+                <td>TW.NA01.01.HJZ</td>
+                <td>harmonic_pattern</td>
+                <td>harmonic_pattern_significance</td>
+                <td class="significant">185.250</td>
+                <td>2024-04-02T23:57:59.999300Z to 2024-04-03T00:00:00.239300Z</td>
+            </tr>
+            <tr>
+                <td>TW.NA01.01.HJN</td>
+                <td>harmonic_pattern</td>
+                <td>harmonic_pattern_significance</td>
+                <td class="significant">184.411</td>
+                <td>2024-04-02T23:57:59.999400Z to 2024-04-03T00:00:00.239400Z</td>
+            </tr>
+            <tr>
+                <td>TW.MDSA0.01.HJN</td>
+                <td>harmonic_pattern</td>
+                <td>harmonic_pattern_significance</td>
+                <td class="significant">173.863</td>
+                <td>2024-04-02T23:57:59.997500Z to 2024-04-02T23:59:59.897500Z</td>
+            </tr>
+            <tr>
+                <td>TW.NA01..HLN</td>
+                <td>harmonic_pattern</td>
+                <td>harmonic_pattern_significance</td>
+                <td class="significant">150.129</td>
+                <td>2024-04-02T23:57:59.998394Z to 2024-04-03T00:07:59.998394Z</td>
+            </tr>
+            <tr>
+                <td>TW.NA01..HLE</td>
+                <td>harmonic_pattern</td>
+                <td>harmonic_pattern_significance</td>
+                <td class="significant">149.848</td>
+                <td>2024-04-02T23:57:59.998391Z to 2024-04-03T00:07:59.998391Z</td>
+            </tr>
+            <tr>
+                <td>TW.NA01..HLZ</td>
+                <td>harmonic_pattern</td>
+                <td>harmonic_pattern_significance</td>
+                <td class="significant">118.052</td>
+                <td>2024-04-02T23:57:59.998393Z to 2024-04-03T00:07:59.998393Z</td>
+            </tr>
+            <tr>
+                <td>TW.MDSA0.01.HJE</td>
+                <td>temporal_structure</td>
+                <td>rhythm_significance</td>
+                <td class="significant">29.687</td>
+                <td>2024-04-02T23:57:59.997500Z to 2024-04-02T23:59:59.897500Z</td>
+            </tr>
+            <tr>
+                <td>TW.MDSA0.01.HJN</td>
+                <td>temporal_structure</td>
+                <td>rhythm_significance</td>
+                <td class="significant">29.077</td>
+                <td>2024-04-02T23:57:59.997500Z to 2024-04-02T23:59:59.897500Z</td>
+            </tr>
+        </table>
+            
+    </body>
+    </html>
+        

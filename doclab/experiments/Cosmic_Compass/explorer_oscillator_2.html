@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirouette Oscillator Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+            color: #f3f4f6; /* text-gray-200 */
+            overflow: hidden; /* Prevent scrollbars */
+        }
+        #info-panel {
+            scrollbar-width: thin;
+            scrollbar-color: #4b5563 #1f2937;
+        }
+        #info-panel::-webkit-scrollbar { width: 8px; }
+        #info-panel::-webkit-scrollbar-track { background: #1f2937; }
+        #info-panel::-webkit-scrollbar-thumb { background-color: #4b5563; border-radius: 4px; }
+        input[type="range"] {
+            -webkit-appearance: none; appearance: none;
+            width: 100%; height: 4px; background: #4b5563;
+            border-radius: 2px; outline: none;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none; appearance: none;
+            width: 16px; height: 16px; background: #e5e7eb;
+            border-radius: 50%; cursor: pointer; border: 2px solid #374151;
+        }
+        input[type="range"]::-moz-range-thumb {
+            width: 16px; height: 16px; background: #e5e7eb;
+            border-radius: 50%; cursor: pointer; border: 2px solid #374151;
+        }
+        #menu-toggle { display: block; }
+        @media (min-width: 768px) { /* md breakpoint */
+            #menu-toggle { display: none; }
+            #info-panel { transform: translateX(0); }
+        }
+    </style>
+    <!-- Import three.js and OrbitControls -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body class="m-0 p-0 flex flex-col md:flex-row">
+
+    <!-- Main Content Area (flex-row) -->
+    <div class="flex-1 flex h-screen">
+        <!-- Main 3D Canvas Container -->
+        <div id="canvas-container-main" class="w-full md:w-2/3 h-1/2 md:h-full relative"></div>
+        
+        <!-- Loop 3D Canvas Container -->
+        <div id="canvas-container-loop" class="w-full md:w-1/3 h-1/2 md:h-full border-t-2 md:border-t-0 md:border-l-2 border-gray-700 bg-gray-950">
+            <div class="p-2 text-xs text-center text-gray-400">Resonant Peak Geometry (Loop View)</div>
+        </div>
+    </div>
+
+
+    <!-- Info Panel (Controls) - Overlays on top -->
+    <div id="info-panel" class="absolute top-0 left-0 h-full w-80 max-w-[90vw] bg-gray-800 bg-opacity-80 backdrop-blur-sm shadow-lg p-6 overflow-y-auto transition-transform duration-300 ease-in-out z-20 md:translate-x-0 -translate-x-full">
+        <div class="flex justify-between items-center mb-4">
+            <h1 class="text-xl font-bold text-white">Pirouette Oscillator</h1>
+            <button id="menu-close" class="md:hidden text-gray-300 hover:text-white">&times;</button>
+        </div>
+        <p class="text-sm text-gray-300 mb-2">
+            Calibrated to Electron Locus.
+        </p>
+        <p class="text-xs text-gray-400 mb-6">
+            Use sliders to find resonant states (n_wind).
+        </p>
+
+        <div id="controls-container" class="space-y-4">
+            <!-- Controls will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button id="menu-toggle" class="absolute top-4 left-4 z-10 p-2 bg-gray-800 bg-opacity-70 rounded-md text-white md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
+
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        // --- Main Scene ---
+        let sceneMain, cameraMain, rendererMain, controlsMain, meshMain;
+        let containerMain = document.getElementById('canvas-container-main');
+        
+        // --- Loop Scene ---
+        let sceneLoop, cameraLoop, rendererLoop, controlsLoop, meshLoop;
+        let containerLoop = document.getElementById('canvas-container-loop');
+
+        // --- CALIBRATED PARAMETERS ---
+        const params = {
+            gamma_scale: 47.5390625,
+            ta_scale: 47.5390625,
+            sigma_r: 7.0,
+            a_wind: 0.35,
+            a_tpci: 0.25,
+            k_wave: 0.45,
+            theta0: 0.0,
+            kappa0: 0.06,
+            kappa_decay: 0.08,
+            xi: 0.8,
+            n_wind: 0.5,
+            extent: 14.0,
+            steps: 100,
+            // New view controls
+            mainOpacity: 0.6,
+            peakThreshold: 0.7 
+        };
+
+        // Slider configurations (min, max, step)
+        const controlConfig = {
+            n_wind: { min: 0.0, max: 8.0, step: 0.125 },
+            mainOpacity: { min: 0.1, max: 1.0, step: 0.01 },
+            peakThreshold: { min: 0.0, max: 1.0, step: 0.01 },
+            kappa0: { min: -0.5, max: 0.5, step: 0.001 },
+            a_wind: { min: 0, max: 2, step: 0.01 },
+            a_tpci: { min: 0, max: 2, step: 0.01 },
+            k_wave: { min: 0, max: 2, step: 0.01 },
+            theta0: { min: -Math.PI, max: Math.PI, step: 0.01 },
+            kappa_decay: { min: 0, max: 0.5, step: 0.001 },
+            xi: { min: 0, max: 2, step: 0.01 },
+            gamma_scale: { min: 1, max: 60, step: 0.1 },
+            ta_scale: { min: 1, max: 60, step: 0.1 },
+            sigma_r: { min: 0.1, max: 15, step: 0.1 }
+        };
+
+        function init() {
+            // --- 1. Main Scene Setup ---
+            sceneMain = new THREE.Scene();
+            sceneMain.background = new THREE.Color(0x111827); // bg-gray-900
+            cameraMain = new THREE.PerspectiveCamera(75, containerMain.clientWidth / containerMain.clientHeight, 0.1, 1000);
+            cameraMain.position.set(10, 10, 10);
+            cameraMain.lookAt(sceneMain.position);
+            rendererMain = new THREE.WebGLRenderer({ antialias: true });
+            rendererMain.setSize(containerMain.clientWidth, containerMain.clientHeight);
+            rendererMain.setPixelRatio(window.devicePixelRatio);
+            containerMain.appendChild(rendererMain.domElement);
+            controlsMain = new OrbitControls(cameraMain, rendererMain.domElement);
+            controlsMain.enableDamping = true;
+            controlsMain.dampingFactor = 0.05;
+            
+            const ambientLightMain = new THREE.AmbientLight(0x404040, 2);
+            sceneMain.add(ambientLightMain);
+            const dirLightMain1 = new THREE.DirectionalLight(0xffffff, 1.5);
+            dirLightMain1.position.set(1, 1, 1);
+            sceneMain.add(dirLightMain1);
+            const dirLightMain2 = new THREE.DirectionalLight(0xffffff, 1.0);
+            dirLightMain2.position.set(-1, -1, -1);
+            sceneMain.add(dirLightMain2);
+
+            // --- 2. Loop Scene Setup ---
+            sceneLoop = new THREE.Scene();
+            sceneLoop.background = new THREE.Color(0x0c0a09); // bg-stone-950
+            cameraLoop = new THREE.PerspectiveCamera(75, containerLoop.clientWidth / containerLoop.clientHeight, 0.1, 1000);
+            cameraLoop.position.set(5, 5, 5);
+            cameraLoop.lookAt(sceneLoop.position);
+            rendererLoop = new THREE.WebGLRenderer({ antialias: true });
+            rendererLoop.setSize(containerLoop.clientWidth, containerLoop.clientHeight);
+            rendererLoop.setPixelRatio(window.devicePixelRatio);
+            containerLoop.appendChild(rendererLoop.domElement);
+            controlsLoop = new OrbitControls(cameraLoop, rendererLoop.domElement);
+            controlsLoop.enableDamping = true;
+            controlsLoop.dampingFactor = 0.05;
+
+            const ambientLightLoop = new THREE.AmbientLight(0xcccccc, 3);
+            sceneLoop.add(ambientLightLoop);
+            const dirLightLoop = new THREE.DirectionalLight(0xffffff, 1.5);
+            dirLightLoop.position.set(1, 1, 1);
+            sceneLoop.add(dirLightLoop);
+
+            // --- 3. UI and General Setup ---
+            const menuToggle = document.getElementById('menu-toggle');
+            const menuClose = document.getElementById('menu-close');
+            const infoPanel = document.getElementById('info-panel');
+            menuToggle.addEventListener('click', () => infoPanel.classList.remove('-translate-x-full'));
+            menuClose.addEventListener('click', () => infoPanel.classList.add('-translate-x-full'));
+
+            createSurface();
+            setupControls();
+            animate();
+            window.addEventListener('resize', onWindowResize, false);
+        }
+
+        // --- Surface Generation Logic ---
+        function polarize(G, T, ps) {
+            const R = Math.sqrt(Math.pow(G / ps.gamma_scale, 2) + Math.pow(T / ps.ta_scale, 2));
+            const Theta = Math.atan2(T / ps.ta_scale, G / ps.gamma_scale);
+            return { R, Theta };
+        }
+        function kappa_field(R, ps) { return ps.kappa0 * Math.exp(-ps.kappa_decay * R); }
+        function G_env(R, ps) { return Math.exp(-Math.pow(R, 2) / (2 * Math.pow(ps.sigma_r, 2))); }
+        function W_wind(Theta, n, ps) { return Math.cos(2 * Math.PI * n * Theta / Math.PI); }
+        function T_tpci(R, Theta, ps) {
+            const sinc_term = (R === 0) ? 1.0 : Math.sin(ps.k_wave * R / Math.PI) / (ps.k_wave * R / Math.PI);
+            return sinc_term * Math.cos(Theta - ps.theta0);
+        }
+        function compass_potential(G, T, n, ps) {
+            const { R, Theta } = polarize(G, T, ps);
+            const kap = kappa_field(R, ps);
+            const Theta_p = Theta + kap * ps.xi;
+            const G_base = G_env(R, ps);
+            const W = W_wind(Theta_p, n, ps);
+            const T_p = T_tpci(R, Theta, ps);
+            const U = G_base * (1 + ps.a_wind * W + ps.a_tpci * T_p);
+            return { U, R, Theta, kap };
+        }
+        
+        // --- Main Function to Create/Update Surfaces ---
+        function createSurface() {
+            // --- 1. Clear Old Geometries ---
+            if (meshMain) {
+                sceneMain.remove(meshMain);
+                meshMain.geometry.dispose();
+                meshMain.material.dispose();
+            }
+            if (meshLoop) {
+                sceneLoop.remove(meshLoop);
+                meshLoop.geometry.dispose();
+                meshLoop.material.dispose();
+            }
+
+            const e = params.extent;
+            const s = params.steps;
+            const mainGeometry = new THREE.PlaneGeometry(e * 2, e * 2, s, s);
+            const vertices = mainGeometry.attributes.position.array;
+            const colors = [];
+            const loopPoints = [];
+
+            const colorA = new THREE.Color(0x3b82f6); // blue-500
+            const colorB = new THREE.Color(0xec4899); // pink-500
+            const colorC = new THREE.Color(0x10b981); // emerald-500
+
+            let minU = Infinity, maxU = -Infinity;
+            const uValues = [];
+            
+            // First pass: calculate U values and find min/max for scaling
+            for (let i = 0; i < vertices.length; i += 3) {
+                const x = vertices[i];     // Gamma
+                const y = vertices[i + 1]; // Ta
+                const { U, kap } = compass_potential(x, y, params.n_wind, params);
+                uValues.push({ U, kap });
+                if (U < minU) minU = U;
+                if (U > maxU) maxU = U;
+            }
+
+            const rangeU = (maxU - minU) || 1;
+            const zScale = 4.0; // Visual scaling factor for height
+            
+            // Second pass: set z, colors, and extract loop points
+            for (let i = 0, j = 0; i < vertices.length; i += 3, j++) {
+                const { U, kap } = uValues[j];
+                const normalizedU = (U - minU) / rangeU;
+                const z = normalizedU * zScale;
+                vertices[i + 2] = z;
+                
+                // Color for main surface
+                const color = colorA.clone().lerp(colorB, (kap - params.kappa0) / (params.kappa0 * 2.0 + 0.1));
+                color.lerp(colorC, normalizedU);
+                colors.push(color.r, color.g, color.b);
+
+                // Check threshold and add to loop geometry
+                if (normalizedU > params.peakThreshold) {
+                    loopPoints.push(vertices[i], vertices[i + 1], z); // x, y, z
+                }
+            }
+
+            // --- 2. Create Main Surface Mesh ---
+            mainGeometry.attributes.position.needsUpdate = true;
+            mainGeometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+            mainGeometry.computeVertexNormals();
+
+            const mainMaterial = new THREE.MeshPhongMaterial({
+                vertexColors: true,
+                shininess: 80,
+                side: THREE.DoubleSide,
+                transparent: true,
+                opacity: params.mainOpacity
+            });
+            meshMain = new THREE.Mesh(mainGeometry, mainMaterial);
+            meshMain.rotation.x = -Math.PI / 2; // Rotate to lie flat on XZ plane
+            sceneMain.add(meshMain);
+
+            // --- 3. Create Loop Points Mesh ---
+            const loopGeometry = new THREE.BufferGeometry();
+            loopGeometry.setAttribute('position', new THREE.Float32BufferAttribute(loopPoints, 3));
+            const loopMaterial = new THREE.PointsMaterial({
+                color: 0xec4899, // pink-500
+                size: 0.1,
+                sizeAttenuation: true
+            });
+            meshLoop = new THREE.Points(loopGeometry, loopMaterial);
+            meshLoop.rotation.x = -Math.PI / 2; // Match main mesh rotation
+            sceneLoop.add(meshLoop);
+        }
+
+        // --- Dynamic Controls Setup ---
+        function setupControls() {
+            const controlsContainer = document.getElementById('controls-container');
+            controlsContainer.innerHTML = ''; // Clear existing controls
+
+            for (const [key, config] of Object.entries(controlConfig)) {
+                const value = params[key];
+                const div = document.createElement('div');
+                
+                const label = document.createElement('label');
+                label.htmlFor = key;
+                label.className = "block text-sm font-medium text-gray-200 mb-1";
+                label.textContent = `${key.replace(/_/g, ' ')} `;
+                
+                const valueSpan = document.createElement('span');
+                valueSpan.className = "text-xs text-gray-400";
+                valueSpan.textContent = value.toFixed(3);
+                label.appendChild(valueSpan);
+
+                const input = document.createElement('input');
+                input.type = 'range';
+                input.id = key;
+                input.min = config.min;
+                input.max = config.max;
+                input.step = config.step;
+                input.value = value;
+                input.className = "w-full";
+
+                input.addEventListener('input', (e) => {
+                    const newValue = parseFloat(e.target.value);
+                    params[key] = newValue;
+                    valueSpan.textContent = newValue.toFixed(3);
+                    
+                    if (key === 'mainOpacity') {
+                        if (meshMain) meshMain.material.opacity = newValue;
+                    } else {
+                        // Debounce the full surface recreation
+                        throttle(createSurface, 100);
+                    }
+                });
+
+                div.appendChild(label);
+                div.appendChild(input);
+                controlsContainer.appendChild(div);
+            }
+        }
+        
+        // Simple throttle function
+        let throttleTimer;
+        function throttle(callback, time) {
+            if (throttleTimer) return;
+            throttleTimer = true;
+            setTimeout(() => {
+                callback();
+                throttleTimer = false;
+            }, time);
+        }
+
+        // --- Animation Loop ---
+        function animate() {
+            requestAnimationFrame(animate);
+            controlsMain.update();
+            controlsLoop.update();
+            rendererMain.render(sceneMain, cameraMain);
+            rendererLoop.render(sceneLoop, cameraLoop);
+        }
+
+        // --- Window Resize Handling ---
+        function onWindowResize() {
+            // Main Viewport
+            cameraMain.aspect = containerMain.clientWidth / containerMain.clientHeight;
+            cameraMain.updateProjectionMatrix();
+            rendererMain.setSize(containerMain.clientWidth, containerMain.clientHeight);
+            
+            // Loop Viewport
+            cameraLoop.aspect = containerLoop.clientWidth / containerLoop.clientHeight;
+            cameraLoop.updateProjectionMatrix();
+            rendererLoop.setSize(containerLoop.clientWidth, containerLoop.clientHeight);
+        }
+
+        init();
+    </script>
+</body>
+</html>

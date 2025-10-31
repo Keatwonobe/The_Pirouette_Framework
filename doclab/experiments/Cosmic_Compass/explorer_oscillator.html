@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cosmic Compass Explorer — Electron-Calibrated</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body{font-family:Inter,system-ui,Arial,sans-serif;background:#111827;color:#f3f4f6;overflow:hidden}
+    #info-panel{scrollbar-width:thin;scrollbar-color:#4b5563 #1f2937}
+    #info-panel::-webkit-scrollbar{width:8px}
+    #info-panel::-webkit-scrollbar-track{background:#1f2937}
+    #info-panel::-webkit-scrollbar-thumb{background:#4b5563;border-radius:4px}
+    input[type="range"]{-webkit-appearance:none;appearance:none;width:100%;height:4px;background:#4b5563;border-radius:2px;outline:none}
+    input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:16px;height:16px;background:#60a5fa;border-radius:50%;cursor:pointer;border:2px solid #1f2937}
+    input[type="range"]::-moz-range-thumb{width:16px;height:16px;background:#60a5fa;border-radius:50%;cursor:pointer;border:2px solid #1f2937}
+    .badge{background:#0b5; padding:2px 6px; border-radius:6px; font-size:11px; margin-left:6px}
+    .pill{background:#1f2937;border:1px solid #374151;border-radius:8px;padding:6px 8px}
+    .kv{display:flex;justify-content:space-between;gap:8px;font-family:ui-monospace,Menlo,Consolas}
+  </style>
+</head>
+<body class="m-0">
+  <div id="container" class="w-full h-screen"></div>
+
+  <div id="info-panel" class="absolute top-0 left-0 h-full w-full md:w-[22rem] bg-gray-900/80 backdrop-blur-sm p-4 overflow-y-auto transition-transform duration-300 -translate-x-full md:translate-x-0 rounded-r-lg shadow-2xl">
+    <h1 class="text-2xl font-bold text-blue-400 mb-1">Cosmic Compass</h1>
+    <p class="text-sm text-gray-400 mb-3">3D potential explorer • <span class="badge">electron-calibrated</span></p>
+
+    <!-- Controls -->
+    <div id="controls" class="space-y-4 mb-4"></div>
+
+    <!-- Compute panel -->
+    <div class="space-y-3">
+      <div class="flex items-center justify-between">
+        <h2 class="text-lg font-semibold">Analysis</h2>
+        <label class="flex items-center gap-2 text-sm">
+          <input id="toggle-heat" type="checkbox" class="accent-blue-400">
+          <span>κ<sub>G</sub> heatmap</span>
+        </label>
+      </div>
+      <div class="pill space-y-2">
+        <div class="kv"><span>cursor (G,T):</span><span id="pt-val">—</span></div>
+        <div class="kv"><span>U:</span><span id="u-val">—</span></div>
+        <div class="kv"><span>κ<sub>G</sub>:</span><span id="kg-val">—</span></div>
+        <div class="kv"><span>QHO k<sub>x</sub>, k<sub>y</sub>:</span><span id="kxy-val">—</span></div>
+        <div class="kv"><span>ω<sub>x</sub>, ω<sub>y</sub>:</span><span id="wxy-val">—</span></div>
+      </div>
+
+      <div class="pill space-y-2">
+        <label class="text-sm">Energy scale E<sub>s</sub> (eV per unit U)
+          <input id="Es" type="range" min="1e-6" max="2" step="1e-6" value="0.511" />
+        </label>
+        <div class="kv"><span>E<sub>s</sub>:</span><span id="Es-val">0.511 eV/U</span></div>
+        <p class="text-xs text-gray-400">Pick a scale: inner (“Compton-like”) try 511 keV → set 511000; atomic (“Rydberg”) try 13.6.</p>
+      </div>
+
+      <button id="scan-minima" class="w-full bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2">Scan minima</button>
+      <p class="text-xs text-gray-400">Click anywhere on the surface to fit a local QHO and draw its ellipse.</p>
+    </div>
+
+    <div class="mt-4 text-[11px] text-gray-400">
+      <p>κ<sub>G</sub> = density × curvature (Gladiator Compass) — maps confinement wells as arenas.:contentReference[oaicite:2]{index=2}</p>
+      <p>Gyre κ and Arrow θ₀ bias geodesics, creating asymmetric wells (prime temporal friction).:contentReference[oaicite:3]{index=3}</p>
+    </div>
+  </div>
+
+  <button id="toggle-panel" class="md:hidden fixed top-4 left-4 z-50 p-2 bg-blue-500 text-white rounded-md">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+    </svg>
+  </button>
+
+  <script type="importmap">
+    {"imports":{
+      "three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }}
+  </script>
+
+  <script type="module">
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+    // --- Scene setup ---
+    let scene,camera,renderer,controls,mesh,wire;
+    let geometry, colorsAttr, ellipseLine=null, minimaGroup=null;
+    const container = document.getElementById('container');
+
+    function init(){
+      scene = new THREE.Scene();
+      scene.fog = new THREE.Fog(0x0a0a2a, 10, 150);
+
+      camera = new THREE.PerspectiveCamera(75, container.clientWidth/container.clientHeight, 0.1, 1000);
+      camera.position.set(12,12,12);
+
+      renderer = new THREE.WebGLRenderer({antialias:true});
+      renderer.setSize(container.clientWidth, container.clientHeight);
+      renderer.setPixelRatio(window.devicePixelRatio);
+      renderer.setClearColor(0x111827);
+      container.appendChild(renderer.domElement);
+
+      controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true; controls.dampingFactor = 0.05;
+
+      const amb = new THREE.AmbientLight(0x4040ff,0.8); scene.add(amb);
+      const d1 = new THREE.DirectionalLight(0xffffff,1.5); d1.position.set(1,1,1); scene.add(d1);
+      const d2 = new THREE.DirectionalLight(0xff8080,0.8); d2.position.set(-1,-1,-0.5); scene.add(d2);
+
+      // UI panel toggle
+      const infoPanel = document.getElementById('info-panel');
+      document.getElementById('toggle-panel').addEventListener('click',()=>infoPanel.classList.toggle('-translate-x-full'));
+
+      setupControls();
+      createSurface();
+      setupPicking();
+      animate();
+    }
+
+    // --- Parameters (electron-calibrated defaults) ---
+    const params = {
+      n: 0.5,
+      gamma_scale: 47.5390625,
+      ta_scale: 47.5390625,
+      sigma_r: 7.0,
+      a_wind: 0.35,
+      a_tpci: 0.25,
+      k_wave: 0.45,
+      theta0: 0.0,
+      kappa0: 0.06,
+      kappa_decay: 0.08,
+      xi: 0.8,
+    };
+    const extent = 14.0;
+    const steps  = 160;       // compute grid
+    const elevZ  = 2.5;       // vertical scale
+
+    function sinc(x){ if(Math.abs(x)<1e-9) return 1.0; const px=Math.PI*x; return Math.sin(px)/px; }
+
+    function compass_potential(G,T,n,ps){
+      const R = Math.hypot(G/ps.gamma_scale, T/ps.ta_scale);
+      const Theta = Math.atan2(T/ps.ta_scale, G/ps.gamma_scale);
+      const kap = ps.kappa0*Math.exp(-ps.kappa_decay*R);
+      const G_env = Math.exp(-(R*R)/(2.0*ps.sigma_r*ps.sigma_r));
+      const Theta_prime = Theta + kap*ps.xi;
+      const winding_val = Math.cos(2.0*Math.PI*n*Theta_prime/Math.PI);
+      const kr = ps.k_wave*R;
+      const radial = sinc(kr/Math.PI);
+      const ang = Math.cos(Theta-ps.theta0);
+      const tpci_hint_val = radial*ang;
+      const U = G_env*(1.0 + ps.a_wind*winding_val + ps.a_tpci*tpci_hint_val);
+      return {U, R, Theta, kap};
+    }
+
+    // κ_G field (Gladiator Compass): density × curvature, computed on mesh
+    function computeKappaG(zField, dx){
+      const nx = steps, ny = steps;
+      const kg = new Float32Array(nx*ny);
+      // local mean-free step proxy (density) via inverse gradient magnitude
+      const grad = new Float32Array(nx*ny);
+      for(let j=1;j<ny-1;j++){
+        for(let i=1;i<nx-1;i++){
+          const id = j*nx+i;
+          const zx = (zField[id+1]-zField[id-1])/(2*dx);
+          const zy = (zField[id+nx]-zField[id-nx])/(2*dx);
+          const g = Math.hypot(zx,zy);
+          grad[id] = g;
+        }
+      }
+      // curvature proxy: second derivative magnitude
+      for(let j=1;j<ny-1;j++){
+        for(let i=1;i<nx-1;i++){
+          const id = j*nx+i;
+          const z = zField[id];
+          const zxx = (zField[id+1]-2*zField[id]+zField[id-1])/(dx*dx);
+          const zyy = (zField[id+nx]-2*zField[id]+zField[id-nx])/(dx*dx);
+          const curvature = Math.abs(zxx)+Math.abs(zyy);
+          const density = 1.0/(grad[id]+1e-9);
+          kg[id] = density*curvature;
+        }
+      }
+      // min-max normalize
+      let min=Infinity, max=-Infinity;
+      for(let k=0;k<kg.length;k++){ if(!isFinite(kg[k])) continue; if(kg[k]<min)min=kg[k]; if(kg[k]>max)max=kg[k]; }
+      const span = (max-min)||1;
+      for(let k=0;k<kg.length;k++){ kg[k] = (kg[k]-min)/span; }
+      return kg;
+    }
+
+    // --- Geometry creation & coloring ---
+    let cachedU = null, cachedXY = null, cachedDX = null, kgField = null;
+
+    function createSurface(){
+      if(mesh){ scene.remove(mesh); geometry.dispose(); mesh.material.dispose(); }
+      if(wire){ scene.remove(wire); wire.geometry.dispose(); wire.material.dispose(); }
+      if(ellipseLine){ scene.remove(ellipseLine); ellipseLine.geometry.dispose(); ellipseLine.material.dispose(); ellipseLine=null; }
+      if(minimaGroup){ scene.remove(minimaGroup); minimaGroup.clear(); minimaGroup=null; }
+
+      geometry = new THREE.PlaneGeometry(extent*2, extent*2, steps-1, steps-1);
+      const pos = geometry.attributes.position;
+      const nx = steps, ny = steps;
+      const dx = (extent*2)/(steps-1);
+      cachedDX = dx;
+
+      // compute U over grid
+      const Ufield = new Float32Array(nx*ny);
+      const XY = new Float32Array(nx*ny*2);
+
+      for(let j=0;j<ny;j++){
+        for(let i=0;i<nx;i++){
+          const id = j*nx+i;
+          const x = -extent + i*dx;
+          const y = -extent + j*dx;
+          const {U} = compass_potential(x,y,params.n,params);
+          Ufield[id] = U;
+          XY[2*id] = x; XY[2*id+1] = y;
+        }
+      }
+      cachedU = Ufield; cachedXY = XY;
+
+      for(let k=0;k<pos.count;k++){
+        const G = pos.getX(k), T = pos.getY(k);
+        // map G,T to nearest grid sample
+        const i = Math.round((G+extent)/dx);
+        const j = Math.round((T+extent)/dx);
+        const id = Math.max(0, Math.min((steps-1),(j)))*steps + Math.max(0, Math.min((steps-1),(i)));
+        const U = Ufield[id];
+        pos.setZ(k, U*elevZ);
+      }
+      pos.needsUpdate = true;
+      geometry.computeVertexNormals();
+
+      // material with vertex colors for κ_G heatmap
+      const material = new THREE.MeshStandardMaterial({color:0x60a5fa, metalness:0.3, roughness:0.6, vertexColors:true, side:THREE.DoubleSide});
+      mesh = new THREE.Mesh(geometry, material);
+      mesh.rotation.x = -Math.PI/2;
+      scene.add(mesh);
+
+      // wireframe accent
+      const geo2 = new THREE.WireframeGeometry(geometry);
+      wire = new THREE.LineSegments(geo2, new THREE.LineBasicMaterial({color:0x1f2f4f, opacity:0.25, transparent:true}));
+      wire.rotation.x = -Math.PI/2; scene.add(wire);
+
+      // κ_G colors
+      colorsAttr = new THREE.Float32BufferAttribute(new Float32Array(geometry.attributes.position.count*3), 3);
+      geometry.setAttribute('color', colorsAttr);
+      kgField = computeKappaG(Ufield, dx);
+      recolorHeatmap(false);
+    }
+
+    function recolorHeatmap(show){
+      const col = colorsAttr.array;
+      for(let k=0;k<colorsAttr.count;k++){
+        const id = k; // vertex == sample after our mapping
+        const v = show? kgField[id] : 0.0;
+        // blue→cyan ramp when showing, flat blue otherwise
+        const r = show? 0.2*v : 0.376;
+        const g = show? (0.5+0.5*v) : 0.647;
+        const b = show? (0.8+0.2*v) : 0.980;
+        col[3*k]=r; col[3*k+1]=g; col[3*k+2]=b;
+      }
+      colorsAttr.needsUpdate = true;
+    }
+
+    // --- Minima scan (very simple 4-neighborhood check on U) ---
+    function scanMinima(){
+      if(minimaGroup){ scene.remove(minimaGroup); minimaGroup.clear(); }
+      minimaGroup = new THREE.Group();
+      const markerM = new THREE.MeshBasicMaterial({color:0xfff, depthTest:true});
+      const markerG = new THREE.SphereGeometry(0.12, 16, 12);
+
+      const nx=steps, ny=steps; const dx=cachedDX;
+      for(let j=1;j<ny-1;j++){
+        for(let i=1;i<nx-1;i++){
+          const id=j*nx+i;
+          const u=cachedU[id];
+          if(u<=cachedU[id-1] && u<=cachedU[id+1] && u<=cachedU[id-nx] && u<=cachedU[id+nx]){
+            const x=-extent+i*dx, y=-extent+j*dx;
+            const {U} = compass_potential(x,y,params.n,params);
+            const z = U*elevZ;
+            const m = new THREE.Mesh(markerG, markerM);
+            m.position.set(x, z+0.02, y);
+            minimaGroup.add(m);
+          }
+        }
+      }
+      scene.add(minimaGroup);
+    }
+
+    // --- Picking and local QHO fit ---
+    const raycaster = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();
+    const ptEl = document.getElementById('pt-val');
+    const uEl = document.getElementById('u-val');
+    const kgEl = document.getElementById('kg-val');
+    const kxyEl = document.getElementById('kxy-val');
+    const wxyEl = document.getElementById('wxy-val');
+
+    function setupPicking(){
+      container.addEventListener('pointerdown', ev=>{
+        const rect = renderer.domElement.getBoundingClientRect();
+        mouse.x = ((ev.clientX-rect.left)/rect.width)*2-1;
+        mouse.y = -((ev.clientY-rect.top)/rect.height)*2+1;
+        raycaster.setFromCamera(mouse, camera);
+        const hits = raycaster.intersectObject(mesh);
+        if(!hits.length) return;
+        const p = hits[0].point;
+        // plane is rotated: x→G, z→T
+        const G = p.x, T = p.z;
+        // sample U, κG and fit QHO
+        const {U} = compass_potential(G,T,params.n,params);
+        const kg = sampleKappaG(G,T);
+        const {k1,k2,axes} = localHessian(G,T);
+        ptEl.textContent = `(${G.toFixed(3)}, ${T.toFixed(3)})`;
+        uEl.textContent  = U.toFixed(6);
+        kgEl.textContent = kg?.toFixed(6) ?? '—';
+        kxyEl.textContent = `${k1.toExponential(3)}, ${k2.toExponential(3)}`;
+        // convert to ω from chosen Es (eV) with user-declared mass m; default m_e (in eV/c^2)
+        const Es = parseFloat(document.getElementById('Es').value); // eV per U
+        const m_e_eV = 510998.95; // electron mass (eV)
+        const L = 2.42631023867e-12/(2*Math.PI); // reduced Compton (m per unit)
+        // ω = sqrt(Es * k / (m * L^2)) in "1/m" units; multiply by ħ to get eV
+        const w1 = Math.sqrt((Es*k1)/(m_e_eV*L*L));
+        const w2 = Math.sqrt((Es*k2)/(m_e_eV*L*L));
+        wxyEl.textContent = `${w1.toExponential(3)}, ${w2.toExponential(3)} (1/m)`;
+        drawEllipse(G,T,axes.eigvecs, axes.eigvals);
+      });
+
+      document.getElementById('scan-minima').addEventListener('click', scanMinima);
+      document.getElementById('toggle-heat').addEventListener('change', (e)=>recolorHeatmap(e.target.checked));
+      const EsSlider = document.getElementById('Es');
+      const EsVal = document.getElementById('Es-val');
+      EsSlider.addEventListener('input', e=>{
+        EsVal.textContent = `${parseFloat(e.target.value)} eV/U`;
+      });
+
+      // hover display
+      container.addEventListener('pointermove', ev=>{
+        const rect = renderer.domElement.getBoundingClientRect();
+        mouse.x = ((ev.clientX-rect.left)/rect.width)*2-1;
+        mouse.y = -((ev.clientY-rect.top)/rect.height)*2+1;
+        raycaster.setFromCamera(mouse, camera);
+        const hits = raycaster.intersectObject(mesh);
+        if(!hits.length) return;
+        const p = hits[0].point; const G=p.x, T=p.z;
+        const {U} = compass_potential(G,T,params.n,params);
+        const kg = sampleKappaG(G,T);
+        ptEl.textContent = `(${G.toFixed(3)}, ${T.toFixed(3)})`;
+        uEl.textContent = U.toFixed(6);
+        kgEl.textContent = kg?.toFixed(6) ?? '—';
+      });
+    }
+
+    function sampleKappaG(G,T){
+      if(!kgField) return null;
+      const dx=cachedDX;
+      const i=Math.round((G+extent)/dx);
+      const j=Math.round((T+extent)/dx);
+      if(i<0||i>=steps||j<0||j>=steps) return null;
+      return kgField[j*steps+i];
+    }
+
+    // Local Hessian of Veff = -U via central differences around (G,T)
+    function localHessian(G0,T0){
+      const h = (extent*2)/(steps-1); // grid step
+      function V(G,T){ return -compass_potential(G,T,params.n,params).U; }
+      const f00 = V(G0,T0);
+      const fpp = (V(G0+h,T0)-2*f00+V(G0-h,T0))/(h*h);
+      const gpp = (V(G0,T0+h)-2*f00+V(G0,T0-h))/(h*h);
+      const fxy = (V(G0+h,T0+h)-V(G0+h,T0-h)-V(G0-h,T0+h)+V(G0-h,T0-h))/(4*h*h);
+      const H = new THREE.Matrix3(); // store as [fpp, fxy; fxy, gpp]
+      // eigen decomposition (2x2 analytic)
+      const a=fpp, b=fxy, c=gpp;
+      const tr=a+c, det=a*c-b*b;
+      const disc=Math.max(tr*tr-4*det,0);
+      const l1=0.5*(tr - Math.sqrt(disc));
+      const l2=0.5*(tr + Math.sqrt(disc));
+      // eigenvectors
+      let v1x=1, v1y=0;
+      if(Math.abs(b)>1e-12){ v1x = l1-c; v1y = b; const n=Math.hypot(v1x,v1y); v1x/=n; v1y/=n; }
+      let v2x = -v1y, v2y = v1x;
+
+      return {
+        k1: l1, k2: l2,
+        axes: { eigvals:[l1,l2], eigvecs:[[v1x,v1y],[v2x,v2y]] }
+      };
+    }
+
+    // Draw ellipse (QHO quadratic contour) around (G0,T0)
+    function drawEllipse(G0,T0,eigvecs,eigvals){
+      if(ellipseLine){ scene.remove(ellipseLine); ellipseLine.geometry.dispose(); ellipseLine.material.dispose(); ellipseLine=null; }
+      const level = 1.0; // contour level in V units (arbitrary visualization)
+      // For quadratic V ~ 1/2 * x^T H x, the contour V=level gives (x along ei) radius r_i = sqrt(2*level / λ_i)
+      const l1=Math.max(eigvals[0],1e-12), l2=Math.max(eigvals[1],1e-12);
+      const a = Math.sqrt(2*level/l1), b = Math.sqrt(2*level/l2);
+      const [v1,v2] = eigvecs;
+      const points=[];
+      const N=128;
+      for(let t=0;t<=N;t++){
+        const th=2*Math.PI*(t/N);
+        const localX=a*Math.cos(th), localY=b*Math.sin(th);
+        const G = G0 + localX*v1[0] + localY*v2[0];
+        const T = T0 + localX*v1[1] + localY*v2[1];
+        const z = compass_potential(G,T,params.n,params).U*elevZ + 0.01;
+        points.push(new THREE.Vector3(G, z, T));
+      }
+      const geo = new THREE.BufferGeometry().setFromPoints(points);
+      ellipseLine = new THREE.LineLoop(geo, new THREE.LineBasicMaterial({color:0xff5af0, linewidth:2}));
+      scene.add(ellipseLine);
+    }
+
+    // --- UI controls (keeps your original layout) ---
+    function setupControls(){
+      const controlsContainer = document.getElementById('controls');
+      const controlConfig = {
+        n:{min:-2,max:2,step:0.1},
+        gamma_scale:{min:4,max:64,step:0.01},
+        ta_scale:{min:4,max:64,step:0.01},
+        sigma_r:{min:1,max:15,step:0.1},
+        a_wind:{min:-1,max:1,step:0.01},
+        a_tpci:{min:-1,max:1,step:0.01},
+        k_wave:{min:0,max:2,step:0.01},
+        theta0:{min:-Math.PI,max:Math.PI,step:0.01},
+        kappa0:{min:0,max:0.5,step:0.001},
+        kappa_decay:{min:0,max:0.5,step:0.001},
+        xi:{min:-2,max:2,step:0.01},
+      };
+      for(const key in controlConfig){
+        const cfg=controlConfig[key];
+        const value=params[key];
+        const div=document.createElement('div');
+        const label=document.createElement('label');
+        label.htmlFor=key; label.className="flex justify-between items-center text-sm font-medium text-gray-300 mb-1";
+        const nameSpan=document.createElement('span'); nameSpan.textContent=key.replace(/_/g,' ');
+        const valueSpan=document.createElement('span'); valueSpan.id=`${key}-value`; valueSpan.className="text-blue-400 font-mono";
+        valueSpan.textContent=parseFloat(value).toFixed(3);
+        label.appendChild(nameSpan); label.appendChild(valueSpan);
+        const input=document.createElement('input');
+        input.type='range'; input.id=key; input.min=cfg.min; input.max=cfg.max; input.step=cfg.step; input.value=value; input.className="w-full";
+        input.addEventListener('input',e=>{
+          params[key]=parseFloat(e.target.value);
+          valueSpan.textContent=params[key].toFixed(3);
+          createSurface();
+        });
+        div.appendChild(label); div.appendChild(input); controlsContainer.appendChild(div);
+      }
+    }
+
+    function animate(){ requestAnimationFrame(animate); controls.update(); renderer.render(scene,camera); }
+    window.addEventListener('resize', ()=>{
+      camera.aspect = container.clientWidth/container.clientHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(container.clientWidth,container.clientHeight);
+    });
+
+    init();
+  </script>
+</body>
+</html>

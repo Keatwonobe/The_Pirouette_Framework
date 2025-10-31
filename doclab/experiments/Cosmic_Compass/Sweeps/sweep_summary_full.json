@@ -1,0 +1,28 @@
+{
+  "best": {
+    "kappa0": 0.08,
+    "interact": true,
+    "ridge": 0.0001,
+    "r_nudge": 0.95,
+    "theta_sweep_deg": 16,
+    "rmse_log": 1.4433544905679532,
+    "mae_log": 1.0716749744464589,
+    "AIC_kOFF": -300.75494966110864,
+    "AIC_kON": -309.88307254157326,
+    "delta_AIC": -9.128122880464616
+  },
+  "n_trials": 600,
+  "grid": "full",
+  "columns": [
+    "kappa0",
+    "interact",
+    "ridge",
+    "r_nudge",
+    "theta_sweep_deg",
+    "rmse_log",
+    "mae_log",
+    "AIC_kOFF",
+    "AIC_kON",
+    "delta_AIC"
+  ]
+}

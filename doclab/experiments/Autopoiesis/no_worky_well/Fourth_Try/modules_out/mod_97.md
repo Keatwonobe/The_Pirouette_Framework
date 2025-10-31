@@ -1,0 +1,3 @@
+We have not simply relabeled electromagnetism; we have derived its essential character from a deeper principle. The attraction and repulsion of charges, the nature of its fields, and the perpendicularity of its magnetic effects all emerge as consequences of a single, universal drive: the maximization of temporal coherence.
+
+The Current is the flow of resonance seeking stability. The Compass is the geometry of the landscape it must navigate. As the original module stated, they are the verse and the chorus of the same song, but we can now see that the song is written with the mathematics of the Lagrangian, and its melody is the simple, relentless pursuit of coherence.

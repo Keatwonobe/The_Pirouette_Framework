@@ -1,0 +1,14 @@
+```json
+{
+  "commentary": "The theory's central weakness is its attempt to unify wildly disparate domains (particle physics, neuroscience, sociology) with a new, undefined ontology ('time-substrate', 'coherence density Ki', 'temporal pressure Γ'). The mathematical framework is entirely schematic, failing to provide a concrete, derivable link between these domains. The connection between a lepton's g-2 and EEG bandwidth, for example, is asserted, not derived, making the unification a semantic illusion rather than a physical reality.",
+  "experiment": "Require the theory to provide the explicit, non-phenomenological derivation of the function `f(Γ, Ki)` for the lepton g-2 anomaly and the precise mapping `Γ = g(Δf_allowed)` linking the theoretical 'temporal pressure' to the observable EEG bandwidth shrinkage. Using the pre-registered effect size from the proposed EEG experiment, the theory must then generate a zero-free-parameter numerical prediction for the tau lepton's anomalous magnetic moment. Failure to provide this derivation or a prediction that matches experiment falsifies the claimed unification.",
+  "scores": {
+    "coherence": 0.0,
+    "predictivity": 0.2,
+    "falsifiability": 0.5,
+    "external_anchor": 0.1,
+    "dark_residue": 0.0,
+    "elegance": 0.0
+  }
+}
+```

@@ -1,0 +1,1 @@
+If entropy tracks the *unwinding* of pattern, the Void hosts its **pre‑entropic twin**—tension without release.  This is a lawful silence: no conflicts yet, therefore no need for resolution.  But in art, suspense cannot last forever; the eye demands a line.  Likewise, philosophy insists that potential must declare itself.  The stage is set for the first asymmetry.

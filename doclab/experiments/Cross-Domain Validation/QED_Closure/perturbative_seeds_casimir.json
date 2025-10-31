@@ -1,0 +1,27 @@
+{
+  "epsilon": 0.1,
+  "seeds": [
+    {
+      "group": "U1",
+      "C2": 0.0,
+      "sigma": 0.25707608825606737,
+      "K": 0.5070267135527154,
+      "note": "epsilon-regularized (\u03b5=0.1)"
+    },
+    {
+      "group": "SU2",
+      "C2": 0.75,
+      "sigma": 1.928070661920505,
+      "K": 1.388549841352663,
+      "note": "Casimir-rescaled from SU3 BEST"
+    },
+    {
+      "group": "SU3",
+      "C2": 1.3333333333333333,
+      "sigma": 3.4276811767475643,
+      "K": 1.8513997884702171,
+      "note": "BEST from closure"
+    }
+  ],
+  "source": "Casimir rescale from SU3 BEST sigma"
+}

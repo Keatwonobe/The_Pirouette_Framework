@@ -1,0 +1,74 @@
+{
+  "stage": "Philosophy Debate",
+  "roles": {
+    "PROPONENT": {
+      "commentary": "The hypothesis's primary strength is its profound explanatory power, unifying disparate anomalies in physics, cognition, and social dynamics under a single, coherent substrate. This elegance is matched by its immediate testability, offering specific, falsifiable predictions. The principal weakness is the current under-specification of the core Lagrangian; fleshing out the mathematical details is the next critical step for generating precise, second-generation predictions.",
+      "experiment": "The decisive experiment is the proposed Tau g-2 measurement campaign. This provides a direct, quantitative test of the theory's fundamental physical claims. We will analyze archived and future collider data (e.g., Belle-II) to precisely measure the tau lepton's anomalous magnetic moment (a_\u03c4). Confirmation of a deviation from the Standard Model, following a trend extrapolated from the muon's anomaly as a function of the temporal pressure proxy (\u0393), would provide profound validation. A null result would falsify the proposed coupling.",
+      "scores": {
+        "coherence": 1.0,
+        "predictivity": 1.0,
+        "falsifiability": 1.0,
+        "external_anchor": 0.0,
+        "dark_residue": 0.0,
+        "elegance": 1.0
+      }
+    },
+    "SKEPTIC": {
+      "commentary": "The theory's central weakness is its attempt to unify wildly disparate domains (particle physics, neuroscience, sociology) with a new, undefined ontology ('time-substrate', 'coherence density Ki', 'temporal pressure \u0393'). The mathematical framework is entirely schematic, failing to provide a concrete, derivable link between these domains. The connection between a lepton's g-2 and EEG bandwidth, for example, is asserted, not derived, making the unification a semantic illusion rather than a physical reality.",
+      "experiment": "Require the theory to provide the explicit, non-phenomenological derivation of the function `f(\u0393, Ki)` for the lepton g-2 anomaly and the precise mapping `\u0393 = g(\u0394f_allowed)` linking the theoretical 'temporal pressure' to the observable EEG bandwidth shrinkage. Using the pre-registered effect size from the proposed EEG experiment, the theory must then generate a zero-free-parameter numerical prediction for the tau lepton's anomalous magnetic moment. Failure to provide this derivation or a prediction that matches experiment falsifies the claimed unification.",
+      "scores": {
+        "coherence": 0.0,
+        "predictivity": 0.2,
+        "falsifiability": 0.5,
+        "external_anchor": 0.1,
+        "dark_residue": 0.0,
+        "elegance": 0.0
+      }
+    },
+    "METHODOLOGIST": {
+      "commentary": "The proposal's primary strengths are its ambitious cross-domain synthesis and its strong commitment to falsifiability, offering specific, testable predictions with clear failure conditions. However, its critical weakness is the severe disconnect between the abstract mathematical sketch and these concrete predictions. The theory introduces new fields (Ki, \u0393) but fails to provide the explicit derivation (e.g., the form of `f(\u0393, Ki)`) that quantitatively links them to high-precision observables like the lepton g-2 anomaly, making the connection currently an assertion rather than a consequence.",
+      "experiment": "The decisive step is not a new physical experiment but a theoretical derivation. Proponents must derive the explicit functional form `f(\u0393, Ki)` connecting the proposed time-substrate fields to the lepton anomalous magnetic moment. This derivation must start from the proposed Lagrangian and, through a justifiable calculation, predict a non-arbitrary scaling relationship between the g-2 anomalies of the muon and the tau lepton (i.e., predict the ratio \u0394a_\u03c4 / \u0394a_\u03bc). Success would validate the theory's mathematical coherence and provide a much sharper, falsifiable prediction than a mere 'trend'; failure to produce a derivation would render the theory's claims on this front vacuous.",
+      "scores": {
+        "coherence": 0.3,
+        "predictivity": 0.9,
+        "falsifiability": 1.0,
+        "external_anchor": 0.7,
+        "dark_residue": 0.8,
+        "elegance": 0.2
+      }
+    },
+    "ETHICIST": {
+      "commentary": "The theory\u2019s primary strength is its proactive ethical framing, explicitly addressing the tension between coherence and pluralism and proposing safeguards like 'consentful coherence'. However, this is undermined by two critical weaknesses: 1) The ambition to model and manipulate social cascades creates a high potential for misuse, risking engineered conformity or suppression of dissent. 2) Its core ethical metric, 'Dark Residue,' is operationally vague, making the central governance directive unfalsifiable and potentially a justification for unforeseen negative externalities.",
+      "experiment": "A 'Governance Sandbox' experiment using an agent-based model to simulate the theory's social dynamics. One group of agents is subjected to a 'coherence maximization' algorithm. A second group is subjected to the same algorithm but with the proposed 'consentful coherence' and 'fail-open' safeguards active. The decisive test is whether the safeguarded group shows a statistically significant reduction in a proxy for 'Dark Residue' (e.g., agent exit rates, expressed dissatisfaction) and maintains greater opinion diversity, thus validating the proposed ethical controls against the risk of manipulative application.",
+      "scores": {
+        "coherence": 0.5,
+        "predictivity": 1.0,
+        "falsifiability": 1.0,
+        "external_anchor": 0.5,
+        "dark_residue": 0.0,
+        "elegance": 0.0
+      }
+    }
+  },
+  "referee": {
+    "summary": {
+      "consensus": "There is strong consensus that the theory is ambitious and makes specific, falsifiable claims. However, there is an equally strong consensus (shared by Skeptic, Methodologist, and acknowledged by Proponent) that the core mathematical framework is critically underdeveloped. This creates a severe disconnect between the abstract concepts (e.g., Lagrangian, fields \u0393 and Ki) and the concrete predictions, making the claimed unification between disparate domains currently an assertion rather than a rigorous derivation.",
+      "conflicts": "The primary conflict concerns the theory's present-day coherence and the appropriate next step. The Proponent argues for high coherence and an immediate physical experiment (Tau g-2 measurement). The Skeptic and Methodologist fundamentally disagree, viewing the theory as currently incoherent and demanding a theoretical derivation as the non-negotiable prerequisite to any new experiment. A secondary conflict is introduced by the Ethicist, who focuses on the unaddressed potential for misuse and the operational vagueness of the core 'Dark Residue' metric."
+    },
+    "decision": "REVISE",
+    "required_changes": [
+      "Prioritize theoretical derivation over new physical experiments. From the proposed core Lagrangian, provide the explicit, non-phenomenological derivation of the function that connects the proposed fields (\u0393, Ki) to the lepton anomalous magnetic moment.",
+      "The derivation must yield a specific, zero-free-parameter prediction for a physical observable, such as the ratio of the tau and muon g-2 anomalies (\u0394a_\u03c4 / \u0394a_\u03bc), to validate the theory's claimed unification.",
+      "Provide a precise and operational definition for the 'Dark Residue' metric, specifying the observables that would be used to quantify it in a real-world or simulated social system."
+    ],
+    "averaged_scores": {
+      "coherence": 0.45,
+      "predictivity": 0.775,
+      "falsifiability": 0.875,
+      "external_anchor": 0.325,
+      "dark_residue": 0.2,
+      "elegance": 0.3
+    }
+  },
+  "timestamp_utc": 1760296570.4039564
+}

@@ -1,0 +1,1 @@
+**Summary:** COG-RES-002 defines the dynamic scaling protocol for triadic resonance collapse and recovery. It operationalizes MATH-026’s renormalization flow predictions, providing quantitative, falsifiable evidence of critical slowing and universality in conscious access dynamics.

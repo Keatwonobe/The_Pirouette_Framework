@@ -1,0 +1,159 @@
+import numpy as np
+from scipy.signal import welch
+from scipy.stats import kurtosis
+import argparse
+import csv
+import re
+from collections import defaultdict, Counter
+
+class NgramProphet:
+    """A simple n-gram model to predict word probabilities based on context."""
+    def __init__(self, n=3):
+        self.n = n
+        self.counts = defaultdict(Counter)
+        self.context_totals = Counter()
+        self.vocabulary = set()
+
+    def train(self, words: list):
+        """Trains the model on a list of words."""
+        self.vocabulary = set(words)
+        for i in range(len(words) - self.n):
+            context = tuple(words[i:i + self.n - 1])
+            next_word = words[i + self.n - 1]
+            self.counts[context][next_word] += 1
+            self.context_totals[context] += 1
+        print(f"Prophet trained on {len(self.vocabulary)} unique words and {len(self.context_totals)} contexts.")
+
+    def predict_probability(self, context: tuple, word: str) -> float:
+        """
+        Calculates the probability of a word given a context,
+        using Laplace (add-1) smoothing for unseen words.
+        """
+        context_count = self.context_totals.get(context, 0)
+        word_count_in_context = self.counts.get(context, {}).get(word, 0)
+        
+        # Laplace smoothing
+        probability = (word_count_in_context + 1) / (context_count + len(self.vocabulary))
+        return probability
+
+class TriaxialSemanticSensorV2:
+    """
+    V2 of the sensor, now incorporating the NgramProphet for a dynamic
+    and context-aware Time-Adherence (Ta) proxy.
+    """
+    def __init__(self, gulp_size: int = 500, grid_size: int = 64):
+        self.gulp_size_chars = gulp_size # Now refers to characters for segmentation
+        self.grid_size = grid_size
+        self.target_size = grid_size * grid_size
+        self.uniform_variance = np.var(np.random.rand(10000)) # More stable reference
+
+    def _clean_and_tokenize(self, text: str) -> list:
+        """Cleans text and splits it into a list of words."""
+        text = text.lower()
+        text = re.sub(r'[^a-z\s]', '', text)
+        words = text.split()
+        return words
+
+    # _text_to_binary_image and parts of _calculate_proxies_from_psd remain the same
+    def _text_to_binary_image(self, text: str) -> np.ndarray:
+        binary_string = ''.join(format(ord(char), '08b') for char in text)
+        binary_array = np.array([int(bit) for bit in binary_string], dtype=np.float32)
+        if binary_array.size < self.target_size:
+            binary_array = np.pad(binary_array, (0, self.target_size - binary_array.size), 'constant')
+        else:
+            binary_array = binary_array[:self.target_size]
+        return binary_array.reshape((self.grid_size, self.grid_size))
+
+    def _calculate_gamma_phi_proxies(self, text_gulp: str):
+        """Calculates Gamma and Phi_dot proxies from the PSD of a text gulp."""
+        binary_image = self._text_to_binary_image(text_gulp)
+        freqs, psd = welch(binary_image.flatten(), nperseg=min(256, self.target_size))
+        
+        if psd.sum() == 0:
+            return np.inf, 0.0
+
+        psd_kurtosis = kurtosis(psd, fisher=False)
+        gamma_proxy = 1.0 / (psd_kurtosis + 1e-6)
+        
+        peak_index = np.argmax(psd[1:]) + 1 if len(psd) > 1 else 0
+        phi_dot_proxy = freqs[peak_index] if len(freqs) > 1 else 0.0
+        
+        return gamma_proxy, phi_dot_proxy
+
+    def process_text_file(self, input_path: str, output_path: str):
+        """
+        The main V2 processing pipeline with the Prophet model.
+        """
+        print(f"--- Starting Triaxial Semantic Sensor V2 Analysis ---")
+        print(f"Reading and cleaning input file: {input_path}")
+        try:
+            with open(input_path, 'r', encoding='utf-8', errors='ignore') as f:
+                content = f.read()
+        except FileNotFoundError:
+            print(f"Error: Input file not found at {input_path}")
+            return
+
+        # --- Step 1: Train the Prophet on the entire document ---
+        print("Training contextual Prophet model on the entire document...")
+        all_words = self._clean_and_tokenize(content)
+        prophet = NgramProphet(n=3)
+        prophet.train(all_words)
+
+        # --- Step 2: Segment and analyze gulp by gulp ---
+        print(f"Segmenting text into 'gulps' of size ~{self.gulp_size_chars} characters...")
+        gulps = [content[i:i + self.gulp_size_chars] for i in range(0, len(content), self.gulp_size_chars)]
+        
+        results = []
+        for i, gulp_text in enumerate(gulps):
+            if not gulp_text.strip():
+                continue
+
+            # --- Calculate new Ta_proxy using the Prophet ---
+            gulp_words = self._clean_and_tokenize(gulp_text)
+            if len(gulp_words) < prophet.n:
+                ta_proxy = 0.0 # Not enough context to predict
+            else:
+                probabilities = []
+                for j in range(len(gulp_words) - prophet.n + 1):
+                    context = tuple(gulp_words[j:j + prophet.n - 1])
+                    word_to_predict = gulp_words[j + prophet.n - 1]
+                    prob = prophet.predict_probability(context, word_to_predict)
+                    probabilities.append(prob)
+                ta_proxy = np.mean(probabilities) if probabilities else 0.0
+            
+            # --- Calculate Gamma and Phi_dot proxies as before ---
+            gamma_proxy, phi_dot_proxy = self._calculate_gamma_phi_proxies(gulp_text)
+
+            results.append({
+                'segment_id': i,
+                'text_preview': gulp_text.replace('\n', ' ').strip()[:50],
+                'Ta_proxy': f"{ta_proxy:.6f}",
+                'Gamma_proxy': f"{gamma_proxy:.6f}",
+                'phi_dot_proxy': f"{phi_dot_proxy:.6f}"
+            })
+        
+        print(f"Analysis complete. Writing {len(results)} segments to {output_path}...")
+        self._write_results_to_csv(results, output_path)
+        print("--- Analysis Finished ---")
+
+    def _write_results_to_csv(self, results: list, output_path: str):
+        if not results:
+            print("No results to write.")
+            return
+        with open(output_path, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=results[0].keys())
+            writer.writeheader()
+            writer.writerows(results)
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(
+        description="TEN-TSS-1.1: Triaxial Semantic Sensor with Prophet Protocol for contextual Ta."
+    )
+    parser.add_argument("input_file", help="Path to the input text file.")
+    parser.add_argument("output_file", help="Path to the output CSV file.")
+    parser.add_argument("--gulp_size", type=int, default=2048, help="The number of characters in each text segment.")
+    
+    args = parser.parse_args()
+
+    sensor = TriaxialSemanticSensorV2(gulp_size=args.gulp_size)
+    sensor.process_text_file(args.input_file, args.output_file)

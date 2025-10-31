@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirouette Framework - Neutrino Oscillation Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/examples/js/controls/OrbitControls.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #111827; color: #d1d5db; }
+        .param-card { background-color: #1f2937; border: 1px solid #374151; }
+        .slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 16px; height: 16px; background: #3b82f6; cursor: pointer; border-radius: 50%; }
+        .slider::-moz-range-thumb { width: 16px; height: 16px; background: #3b82f6; cursor: pointer; border-radius: 50%; }
+        .chart-container { background-color: rgba(31, 41, 55, 0.5); border: 1px solid #374151; }
+        .live-output-val { color: #60a5fa; font-weight: 600; }
+        #manifold_canvas { display: block; width: 100%; height: 400px; border-radius: 0.5rem; }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-white">Neutrino Oscillation Lab</h1>
+            <p class="text-lg text-gray-400 mt-2">Mapping the Prime Resonance Manifold</p>
+        </header>
+
+        <main>
+            <!-- Parameter Control & Output -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="param-card rounded-lg p-6">
+                    <h2 class="text-xl font-semibold text-white mb-4 border-b border-gray-600 pb-2">Targets & Live Output</h2>
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <h3 class="font-semibold text-gray-300 mb-2">Ground Truth (PDG)</h3>
+                            <p><strong>Δm²₂₁:</strong> <span class="live-output-val">7.50e-5</span> eV²</p>
+                            <p><strong>Δm²₃₂:</strong> <span class="live-output-val">2.45e-3</span> eV²</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-300 mb-2">Pirouette Model Output</h3>
+                            <p><strong>Δm²₂₁:</strong> <span id="pir_dm21" class="live-output-val">...</span> eV²</p>
+                            <p><strong>Δm²₃₂:</strong> <span id="pir_dm32" class="live-output-val">...</span> eV²</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="param-card rounded-lg p-6">
+                    <h2 class="text-xl font-semibold text-white mb-4 border-b border-gray-600 pb-2">Manual Parameter Control</h2>
+                     <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium">Base Mass Scale μ_ν (meV)</label>
+                            <input id="mu_nu_input" type="number" value="17.2" step="0.00001" class="w-full bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-1.5">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium">Participation Exponent (p)</label>
+                            <input id="p_exp_input" type="number" value="-1.78545" step="0.00001" class="w-full bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-1.5">
+                        </div>
+                         <div>
+                            <label class="block text-sm font-medium">Purity Exponent (q)</label>
+                            <input id="q_exp_input" type="number" value="-1.416" step="0.00001" class="w-full bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-1.5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manifold Mapper Section -->
+            <div class="param-card rounded-lg p-6 mb-8">
+                <h2 class="text-xl font-semibold text-white mb-4 border-b border-gray-600 pb-2">3D Manifold Plotter</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-end">
+                     <div>
+                        <label for="tolerance_input" class="block text-sm font-medium">Match Tolerance (%)</label>
+                        <input id="tolerance_input" type="number" value="0.5" step="0.01" class="mt-1 w-full bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-1.5">
+                    </div>
+                    <div>
+                        <button id="map_manifold_btn" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-lg transition-colors">Map Solution Space</button>
+                    </div>
+                    <div id="manifold_status" class="text-center text-gray-400">Ready to map the manifold.</div>
+                </div>
+                <div id="manifold_container" class="mt-6 hidden chart-container p-2">
+                     <canvas id="manifold_canvas"></canvas>
+                </div>
+            </div>
+
+            <!-- Chart Section -->
+            <div class="chart-container rounded-lg p-4">
+                 <p class="text-center text-lg font-medium text-white mb-2">P( ν<sub class="text-xs">μ</sub> → ν<sub class="text-xs">e</sub> ) Oscillation Probability</p>
+                <canvas id="oscillationChart"></canvas>
+            </div>
+             <p class="text-center text-xs text-gray-500 mt-2">X-axis: L/E (km/GeV) | Y-axis: Probability</p>
+
+        </main>
+    </div>
+
+    <script type="module">
+        // Using module for better structure with THREE.js
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- 1. SETUP & CONSTANTS ---
+            const L_E_MAX = 2000;
+            const STEPS = 400;
+
+            const GT = { // Ground Truth Parameters
+                s2t12: 0.307, s2t23: 0.534, s2t13: 0.0216,
+                dm21_eV2: 7.50e-5, dm32_eV2: 2.451e-3, d_cp: 1.21 * Math.PI,
+            };
+            GT.dm31_eV2 = GT.dm32_eV2 + GT.dm21_eV2;
+            const CONV_FACTOR = 1.267;
+
+            // --- 2. PHYSICS CALCULATIONS (UNCHANGED) ---
+            function calculateStandardModelProb(L_div_E, dm21, dm31, dm32) {
+                const s12 = Math.sqrt(GT.s2t12), c12 = Math.sqrt(1 - GT.s2t12);
+                const s13 = Math.sqrt(GT.s2t13), c13 = Math.sqrt(1 - GT.s2t13);
+                const s23 = Math.sqrt(GT.s2t23), c23 = Math.sqrt(1 - GT.s2t23);
+                const term1 = 4 * GT.s2t13 * c13*c13 * GT.s2t23 * Math.pow(Math.sin(CONV_FACTOR * dm31 * L_div_E / 2), 2);
+                const term2 = 4 * GT.s2t12 * c12*c12 * c13*c13 * Math.pow(Math.sin(CONV_FACTOR * dm21 * L_div_E / 2), 2);
+                const J = s12 * c12 * s23 * c23 * s13 * c13 * Math.sin(GT.d_cp);
+                const term3 = 8 * J * Math.sin(CONV_FACTOR * dm31 * L_div_E / 2) * Math.sin(CONV_FACTOR * dm21 * L_div_E / 2) * Math.cos(CONV_FACTOR * dm32 * L_div_E / 2);
+                return term1 + term2 + term3;
+            }
+
+            function getPmnsColumnMagnitudesSq(s2t12, s2t13, s2t23) {
+                const c2t12 = 1-s2t12, c2t13 = 1-s2t13, c2t23 = 1-s2t23;
+                const s12 = Math.sqrt(s2t12), c12 = Math.sqrt(c2t12);
+                const s13 = Math.sqrt(s2t13), c13 = Math.sqrt(c2t13);
+                const s23 = Math.sqrt(s2t23), c23 = Math.sqrt(c2t23);
+                return [
+                    [ c12*c12 * c13*c13,   s12*s12 * c13*c13,   s13*s13 ],
+                    [ (c12*s23*s13 - s12*c23)**2, (s12*s23*s13 + c12*c23)**2, c13*c13 * s23*s23 ],
+                    [ (c12*c23*s13 + s12*s23)**2, (s12*c23*s13 - c12*s23)**2, c13*c13 * c23*c23 ]
+                ];
+            }
+
+            function calculatePurityAndPR(U_mag_sq) {
+                const purity = [0,0,0], pr_denom = [0,0,0];
+                for (let i = 0; i < 3; i++) {
+                    let max_val = 0;
+                    for (let alpha = 0; alpha < 3; alpha++) {
+                        const val = U_mag_sq[alpha][i];
+                        if (val > max_val) max_val = val;
+                        pr_denom[i] += val*val;
+                    }
+                    purity[i] = max_val;
+                }
+                const pr = pr_denom.map(d => 1 / d);
+                return { purity, pr };
+            }
+
+            function pirouetteMassLaw(purity, pr, mu_nu, p, q) {
+                return purity.map((pur, i) => mu_nu * Math.pow(pr[i] / 3, p) * Math.pow(pur, q));
+            }
+
+            function getPirouettePrediction(params) {
+                const U_mag_sq = getPmnsColumnMagnitudesSq(GT.s2t12, GT.s2t13, GT.s2t23);
+                const { purity, pr } = calculatePurityAndPR(U_mag_sq);
+                const mu_nu_eV = params.mu_nu / 1000.0;
+                const masses = pirouetteMassLaw(purity, pr, mu_nu_eV, params.p, params.q);
+                masses.sort((a, b) => a - b);
+                const [m1, m2, m3] = masses;
+                const dm21 = m2*m2 - m1*m1;
+                const dm32 = m3*m3 - m2*m2;
+                return { dm21, dm31: dm32 + dm21, dm32 };
+            }
+
+            // --- 3. 2D OSCILLATION CHART ---
+            const ctx = document.getElementById('oscillationChart').getContext('2d');
+            const labels = Array.from({ length: STEPS }, (_, i) => (i * L_E_MAX) / STEPS);
+            const groundTruthData = labels.map(L_E => calculateStandardModelProb(L_E, GT.dm21_eV2, GT.dm31_eV2, GT.dm32_eV2));
+            const chart = new Chart(ctx, {
+                type: 'line',
+                data: { labels, datasets: [
+                        { label: 'Ground Truth (PDG)', data: groundTruthData, borderColor: 'rgba(107, 114, 128, 0.8)', borderWidth: 2, pointRadius: 0, borderDash: [5, 5] },
+                        { label: 'Pirouette Prediction', data: [], borderColor: 'rgba(59, 130, 246, 1)', backgroundColor: 'rgba(59, 130, 246, 0.1)', borderWidth: 2, pointRadius: 0, tension: 0.1, fill: true }
+                    ]},
+                options: { scales: { y: { beginAtZero: true, max: 0.1 } } }
+            });
+            
+            const controls = {
+                mu_nu: document.getElementById('mu_nu_input'),
+                p_exp: document.getElementById('p_exp_input'),
+                q_exp: document.getElementById('q_exp_input')
+            };
+            const outputVals = { dm21: document.getElementById('pir_dm21'), dm32: document.getElementById('pir_dm32') };
+
+            function updateUI() {
+                const pirouetteParams = {
+                    mu_nu: parseFloat(controls.mu_nu.value),
+                    p: parseFloat(controls.p_exp.value),
+                    q: parseFloat(controls.q_exp.value),
+                };
+                if (isNaN(pirouetteParams.mu_nu) || isNaN(pirouetteParams.p) || isNaN(pirouetteParams.q)) return;
+
+                const pirouetteDeltas = getPirouettePrediction(pirouetteParams);
+                outputVals.dm21.textContent = pirouetteDeltas.dm21.toExponential(2);
+                outputVals.dm32.textContent = pirouetteDeltas.dm32.toExponential(2);
+                const pirouetteData = labels.map(L_E => calculateStandardModelProb(L_E, pirouetteDeltas.dm21, pirouetteDeltas.dm31, pirouetteDeltas.dm32));
+                chart.data.datasets[1].data = pirouetteData;
+                chart.update('none');
+            }
+            Object.values(controls).forEach(input => input.addEventListener('input', updateUI));
+
+            // --- 4. 3D MANIFOLD MAPPER ---
+            const mapBtn = document.getElementById('map_manifold_btn');
+            const mapStatus = document.getElementById('manifold_status');
+            const manifoldContainer = document.getElementById('manifold_container');
+            const manifoldCanvas = document.getElementById('manifold_canvas');
+            let renderer, scene, camera, points;
+
+            function init3D() {
+                scene = new THREE.Scene();
+                camera = new THREE.PerspectiveCamera(75, manifoldCanvas.clientWidth / manifoldCanvas.clientHeight, 0.1, 1000);
+                camera.position.z = 30;
+                renderer = new THREE.WebGLRenderer({ canvas: manifoldCanvas, antialias: true });
+                renderer.setSize(manifoldCanvas.clientWidth, manifoldCanvas.clientHeight);
+                renderer.setClearColor(0x1f2937);
+
+                const controls = new THREE.OrbitControls(camera, renderer.domElement);
+                controls.enableDamping = true;
+                
+                const animate = function () {
+                    requestAnimationFrame(animate);
+                    controls.update();
+                    renderer.render(scene, camera);
+                };
+                animate();
+            }
+
+            function render3DPlot(solutions) {
+                if (!renderer) init3D();
+                if (points) scene.remove(points);
+
+                const geometry = new THREE.BufferGeometry();
+                const positions = new Float32Array(solutions.length * 3);
+                
+                // Find bounds for normalization
+                const bounds = solutions.reduce((acc, sol) => ({
+                    mu_nu: { min: Math.min(acc.mu_nu.min, sol.mu_nu), max: Math.max(acc.mu_nu.max, sol.mu_nu) },
+                    p:     { min: Math.min(acc.p.min, sol.p),         max: Math.max(acc.p.max, sol.p) },
+                    q:     { min: Math.min(acc.q.min, sol.q),         max: Math.max(acc.q.max, sol.q) },
+                }), { mu_nu: {min:Infinity, max:-Infinity}, p: {min:Infinity, max:-Infinity}, q: {min:Infinity, max:-Infinity}});
+
+                solutions.forEach((sol, i) => {
+                    // Normalize positions to a [-10, 10] cube for good visualization
+                    positions[i * 3]     = 20 * (sol.mu_nu - bounds.mu_nu.min) / (bounds.mu_nu.max - bounds.mu_nu.min || 1) - 10;
+                    positions[i * 3 + 1] = 20 * (sol.p - bounds.p.min) / (bounds.p.max - bounds.p.min || 1) - 10;
+                    positions[i * 3 + 2] = 20 * (sol.q - bounds.q.min) / (bounds.q.max - bounds.q.min || 1) - 10;
+                });
+
+                geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+                const material = new THREE.PointsMaterial({ color: 0x34d399, size: 0.2 });
+                points = new THREE.Points(geometry, material);
+                scene.add(points);
+                
+                // Add axes helpers
+                const axesHelper = new THREE.AxesHelper(12);
+                scene.add(axesHelper);
+
+                manifoldContainer.classList.remove('hidden');
+            }
+
+            async function mapManifold() {
+                mapBtn.disabled = true;
+                mapStatus.textContent = "Mapping... (this may take a moment)";
+                await new Promise(resolve => setTimeout(resolve, 50));
+
+                const tolerance = parseFloat(document.getElementById('tolerance_input').value) / 100.0;
+                const searchSpace = {
+                    mu_nu: { min: 10, max: 25, steps: 40 },
+                    p:     { min: -2.2, max: -1.5, steps: 40 },
+                    q:     { min: -1.8, max: -1.2, steps: 40 }
+                };
+                const solutions = [];
+                const np = { linspace: (start, stop, num) => Array.from({ length: num }, (_, i) => start + (stop - start) * i / (num - 1)) };
+                const mu_nu_vals = np.linspace(searchSpace.mu_nu.min, searchSpace.mu_nu.max, searchSpace.mu_nu.steps);
+                const p_vals = np.linspace(searchSpace.p.min, searchSpace.p.max, searchSpace.p.steps);
+                const q_vals = np.linspace(searchSpace.q.min, searchSpace.q.max, searchSpace.q.steps);
+
+                for (const mu_nu of mu_nu_vals) {
+                    for (const p of p_vals) {
+                        for (const q of q_vals) {
+                            const pred = getPirouettePrediction({ mu_nu, p, q });
+                            const err_dm21 = Math.abs(pred.dm21 - GT.dm21_eV2) / GT.dm21_eV2;
+                            const err_dm32 = Math.abs(pred.dm32 - GT.dm32_eV2) / GT.dm32_eV2;
+                            if (err_dm21 < tolerance && err_dm32 < tolerance) {
+                                solutions.push({ mu_nu, p, q });
+                            }
+                        }
+                    }
+                }
+                
+                if (solutions.length > 0) {
+                    mapStatus.textContent = `Found ${solutions.length} knots. Rendering 3D manifold...`;
+                    render3DPlot(solutions);
+                } else {
+                    mapStatus.textContent = "No solutions found. Try increasing tolerance or search space.";
+                    manifoldContainer.classList.add('hidden');
+                }
+                mapBtn.disabled = false;
+            }
+            mapBtn.addEventListener('click', mapManifold);
+            updateUI(); // Initial render
+        });
+    </script>
+</body>
+</html>
+

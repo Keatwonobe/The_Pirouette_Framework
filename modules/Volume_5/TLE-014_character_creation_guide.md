@@ -1,0 +1,282 @@
+---
+#───────────── The Lost Eternal ──────────────────────
+id: TLE-014
+title: Character Creation Guide
+version: 1.0-consolidated
+parents: [TLE-000]
+children: []
+engrams:
+ - system:character-creation
+ - mechanic:freeform-creation-system
+ - templates:body-plans
+keywords: [character creation, body plan, attributes, TLE]
+uncertainty_tag: Low
+module_type: core-rulebook-consolidated
+---
+A Guide to Creating Your Character
+Welcome to the Bottom Realm, a world at the edge of all planes, scarred by the echoes of forgotten power. In this reality, a being is not born into a fixed form. A being is a choice, a pattern of will, an entropic form sculpted from the raw potential of your own soul.
+
+This guide will walk you through the process of creating your character. Forget what you know about traditional character sheets. Yours will not be a list of statistics, but a ledger of your will—a blueprint for the soul you choose to manifest.
+
+Step 1: The Spark of Will (Your Entropy Budget)
+Every new being starts as a spark of pure potential. This is your Total Entropy Pool (TEP). It is the finite, precious resource from which you will sculpt every aspect of your character, from the strength of their arm to the sharpness of their mind.
+
+Starting Entropy: Your character begins with a Total Entropy Pool (TEP) of 35 Entropy Points (EP). Every choice you make from now on will be an investment of this pool.
+
+Step 2: The Containers of Will (The Five Attributes)
+Your first act as a sculptor is to give your will a shape by pouring your starting Entropy into five core containers, or Attributes. These are not just numbers; they are the deep reservoirs of your character's innate potential.
+
+To invest in an attribute, simply decide how many of your 35 EP you wish to allocate to it. From this investment, you will calculate two key numbers: the Attribute Score and the Attribute Modifier.
+
+Attribute Score: This represents the raw power of the attribute.
+
+Score = floor(EP Invested / 2)
+
+Attribute Modifier: This is a smaller number used for most in-game checks.
+
+Modifier = floor(Score / 4)
+
+The Five Attributes:
+Strength (STR): Raw physical power and force. A high Strength allows you to overpower foes and shape the physical world.
+
+Dexterity (DEX): Agility, reflexes, and fine control. A high Dexterity allows you to act quickly, aim true, and navigate the flow of combat.
+
+Constitution (CON): Endurance and your connection to the flow of Entropy. A high Constitution determines how quickly you regenerate your power and your ultimate potential for growth.
+
+Intelligence (INT): Logic, memory, and the ability to impose complex will. A high Intelligence allows you to outthink opponents, recall crucial information, and control the battlefield with tactics and magic.
+
+Wisdom (WIS): Intuition, perception, and insight. A high Wisdom allows you to read the intentions of others, notice hidden details, and make sound judgments under pressure.
+
+Narrative Guidance: The "What's Your Story?" Method
+Don't just assign numbers. Ask yourself questions about your character's story to guide your EP investment.
+
+What is your greatest strength? Invest a significant portion of your EP there.
+
+What is a weakness you struggle with? Invest fewer EP in that attribute.
+
+Are you a thinker or a doer? A fighter or a talker? Let the answers shape your soul's blueprint.
+
+Step 3: The Architecture of Being (Your Physical Form)
+Once you have defined the nature of your will, you must give it a physical vessel. You must spend EP from your remaining pool to purchase your character's body, piece by piece.
+
+| Body Part | Base EP Cost | Notes |
+| Torso | 1 EP | Required. The core of your form. |
+| Head | 1 EP | Required. Houses your primary consciousness. |
+| Standard Limb | 3 EP | A complete limb with a manipulator (e.g., arm with hand, leg with foot, tentacle with suckers). |
+| Basic Limb | 2 EP | A simpler limb (e.g., tail, slippery whiplike tentacle). |
+| Wing | 4 EP | A limb specifically for flight. |
+
+Size as Invested Power
+You can invest more EP into a limb beyond its base cost. This extra EP is called Size Entropy and is ring-fenced for that limb. It can only be used to power physical actions made with that specific part (like a mighty punch or a powerful kick). This allows you to create asymmetrical characters—a blacksmith with one massively powerful arm, or a creature with a heavy, club-like tail.
+
+Step 4: The Windows to the World (Your Senses)
+Your ability to perceive the world is a direct function of your investment.
+
+Cost of Senses: Each sensory organ (an eye, an ear, a scent organ) costs 1 EP. A standard humanoid form might have two eyes and two ears, for a total cost of 4 EP.
+
+Mechanical Benefit: You can make one passive perception check per relevant sensory organ each round, making characters with exotic senses exceptionally aware.
+
+Step 5: The Integrity of Form (Health & Defense)
+Your health is a direct measure of your form's coherent integrity. It is not an abstract number, but is derived directly from the EP you invested in your body.
+
+Calculating Max HP:
+
+Max HP = (EP in Torso) + floor(0.5 * Total EP in all Limbs)
+
+This means that a character with more limbs, or more powerfully invested limbs, is inherently tougher and more resilient to damage.
+
+Appendix: Body Plans (Form Templates)
+This section is a modular library of pre-calculated "body plans" to help you quickly assemble a physical form. As you discover or create new forms, you can add them here.
+
+Humanoid, Standard (Total Cost: 18 EP)
+This is a classic, balanced form suitable for most adventurers.
+
+Torso: 1 EP
+
+Head: 1 EP
+
+Arm (x2): 6 EP (3 EP each)
+
+Leg (x2): 6 EP (3 EP each)
+
+Eyes (x2): 2 EP
+
+Ears (x2): 2 EP
+
+Derived Max HP: 1 + floor(0.5 * (6 + 6)) = 7 HP
+
+Quadruped, Sturdy (Total Cost: 20 EP)
+A four-legged form built for stability and power.
+
+Torso: 1 EP
+
+Head: 1 EP
+
+Foreleg (x2): 6 EP (3 EP each)
+
+Hindleg (x2): 6 EP (3 EP each)
+
+Eyes (x2): 2 EP
+
+Ears (x2): 2 EP
+
+Scent Organ (x1): 1 EP (in the snout)
+
+Derived Max HP: 1 + floor(0.5 * (6 + 6)) = 7 HP
+
+Avian, Graceful (Total Cost: 20 EP)
+A form built for flight, prioritizing agility and keen senses.
+
+Torso: 1 EP
+
+Head: 1 EP
+
+Leg (x2): 6 EP (3 EP each)
+
+Wing (x2): 8 EP (4 EP each)
+
+Eyes (x2): 2 EP
+
+Ears (x2): 2 EP
+
+Derived Max HP: 1 + floor(0.5 * (6 + 8)) = 8 HP
+
+Insectoid, Carapaced (Total Cost: 22 EP)
+A multi-limbed form with a sturdy build and exotic senses.
+
+Torso: 1 EP
+
+Head: 1 EP
+
+Standard Limbs (x4 for walking): 12 EP (3 EP each)
+
+Basic Limbs (x2 for manipulation): 4 EP (2 EP each)
+
+Compound Eyes (x2): 2 EP
+
+Antennae (Sensory Organs, x2): 2 EP
+
+Derived Max HP: 1 + floor(0.5 * (12 + 4)) = 9 HP
+
+Giant-kin, Hulking (Total Cost: 18+ EP)
+A form whose power comes from sheer scale, not complexity.
+
+Torso: 1 EP
+
+Head: 1 EP
+
+Arm (x2): 6 EP (3 EP each)
+
+Leg (x2): 6 EP (3 EP each)
+
+Eyes (x2): 2 EP
+
+Ears (x2): 2 EP
+
+Derived Max HP: 1 + floor(0.5 * (6 + 6)) = 7 HP
+
+Note: The power of a Giant-kin comes not from a more complex form, but from investing significant Size Entropy into their limbs during character creation.
+
+Cyclops, Focused (Total Cost: 17 EP)
+A humanoid form with a singular, powerful sense of sight.
+
+Torso: 1 EP
+
+Head: 1 EP
+
+Arm (x2): 6 EP (3 EP each)
+
+Leg (x2): 6 EP (3 EP each)
+
+Eye (x1): 1 EP
+
+Ears (x2): 2 EP
+
+Derived Max HP: 1 + floor(0.5 * (6 + 6)) = 7 HP
+
+Fur-folk, Nimble (Total Cost: 21 EP)
+A quick, agile form with a prehensile tail and heightened senses.
+
+Torso: 1 EP
+
+Head: 1 EP
+
+Arm (x2): 6 EP (3 EP each)
+
+Leg (x2): 6 EP (3 EP each)
+
+Basic Limb (Tail, x1): 2 EP
+
+Eyes (x2): 2 EP
+
+Ears (x2): 2 EP
+
+Scent Organ (x1): 1 EP
+
+Derived Max HP: 1 + floor(0.5 * (6 + 6 + 2)) = 8 HP
+
+Advanced Physical Forms (High EP Cost)
+These templates are for players who wish to create a character that is a true physical specialist. They invest almost their entire starting TEP of 35 EP into their body, leaving little or no EP for their Attributes. This creates a character who is a physical powerhouse but may be vulnerable in mental or social challenges. A true "all-in" build.
+
+Ape-Kin, Brute (Total Cost: 35 EP)
+A hulking bipedal form defined by its massively powerful arms, built to crush and dominate.
+
+Torso: 1 EP
+
+Head: 1 EP
+
+Arm (x2): 20 EP (Base 3 EP + 7 Size Entropy each)
+
+Leg (x2): 8 EP (Base 3 EP + 1 Size Entropy each)
+
+Eyes (x2): 2 EP
+
+Ears (x2): 2 EP
+
+Scent Organ (x1): 1 EP
+
+Derived Max HP: 1 + floor(0.5 * (20 + 8)) = 15 HP
+
+Note: This build leaves 0 EP for Attributes, resulting in all Attribute Scores and Modifiers starting at 0. It is a creature of pure physical instinct and power.
+
+Tiger-Kin, Pouncer (Total Cost: 34 EP)
+A predatory quadruped whose entire form is a weapon, with immense power invested in its legs for explosive lunges and its head for a devastating bite.
+
+Torso: 1 EP
+
+Head: 1 EP + 5 Size Entropy (for a powerful jaw)
+
+Foreleg (x2): 10 EP (Base 3 EP + 2 Size Entropy each)
+
+Hindleg (x2): 12 EP (Base 3 EP + 3 Size Entropy each)
+
+Eyes (x2): 2 EP
+
+Ears (x2): 2 EP
+
+Scent Organ (x1): 1 EP
+
+Derived Max HP: 1 + floor(0.5 * (10 + 12)) = 12 HP
+
+Note: This build leaves 1 EP for Attributes. This single point could be placed in an attribute like Dexterity or Wisdom to represent its predatory cunning, but all other attributes will be 0.
+
+Scorpion-Kin, Terror (Total Cost: 35 EP)
+A nightmarish fusion of humanoid and arachnid, featuring a heavily armored torso, powerful grasping claws, and a venomous tail.
+
+Torso: 1 EP + 4 Size Entropy (for a thick carapace)
+
+Head: 1 EP
+
+Standard Limbs (Legs, x4): 12 EP (3 EP each)
+
+Standard Limbs (Claws, x2): 10 EP (Base 3 EP + 2 Size Entropy each)
+
+Basic Limb (Tail, x1): 2 EP + 1 Size Entropy (for a stinger)
+
+Compound Eyes (x2): 2 EP
+
+Antennae (Sensory Organs, x2): 2 EP
+
+Derived Max HP: 5 + floor(0.5 * (12 + 10 + 3)) = 17 HP
+
+Note: This build leaves 0 EP for Attributes. It is a heavily armored and versatile physical threat, but with no investment in its mental or social capabilities.

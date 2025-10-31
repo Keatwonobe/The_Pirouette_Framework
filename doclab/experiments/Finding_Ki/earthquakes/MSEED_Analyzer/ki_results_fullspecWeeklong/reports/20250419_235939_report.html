@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Ki Resonance Analysis Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; }
+            h1, h2, h3 { color: #333; }
+            .summary { background-color: #f5f5f5; padding: 15px; border-radius: 5px; }
+            table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .highlight { background-color: #ffffcc; }
+            .significant { color: #d9534f; font-weight: bold; }
+            .image-gallery { display: flex; flex-wrap: wrap; gap: 10px; }
+            .image-container { width: 300px; margin-bottom: 20px; }
+            .image-container img { max-width: 100%; height: auto; }
+        </style>
+    </head>
+    <body>
+        <h1>Ki Resonance Analysis Report</h1>
+    
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Session ID: 20250419_235939</p>
+            <p>Analysis date: 2025-04-19 23:59:39</p>
+            <p>Files processed: 1</p>
+            <p>Ki values analyzed: Primary = 4.18879, Alternative = 4.14159</p>
+            <p>Significance threshold: 2.0</p>
+            <p>Total results: 6</p>
+        </div>
+    
+        <h2>Results by Module</h2>
+        <table>
+            <tr>
+                <th>Module</th>
+                <th>Total Results</th>
+                <th>Significant Results</th>
+                <th>Significance Rate</th>
+            </tr>
+    
+            <tr>
+                <td>cycle_ratio</td>
+                <td>1</td>
+                <td>1</td>
+                <td>100.0%</td>
+            </tr>
+            <tr>
+                <td>phase_coupling</td>
+                <td>3</td>
+                <td>3</td>
+                <td>100.0%</td>
+            </tr>
+            <tr>
+                <td>temporal_structure</td>
+                <td>2</td>
+                <td>2</td>
+                <td>100.0%</td>
+            </tr>
+            <tr class="highlight">
+                <td><strong>Total</strong></td>
+                <td><strong>6</strong></td>
+                <td><strong>6</strong></td>
+                <td><strong>100.0%</strong></td>
+            </tr>
+        </table>
+        
+        <h2>Top 6 Significant Findings</h2>
+        <table>
+            <tr>
+                <th>Trace ID</th>
+                <th>Module</th>
+                <th>Metric</th>
+                <th>Value</th>
+                <th>Time Range</th>
+            </tr>
+            
+            <tr>
+                <td>FrequencyCoherence</td>
+                <td>phase_coupling</td>
+                <td>coherence_significance</td>
+                <td class="significant">103734.575</td>
+                <td>2025-04-20 00:12:50.500801 to 2025-04-20 00:12:50.500801</td>
+            </tr>
+            <tr>
+                <td>PhaseSynchronization</td>
+                <td>phase_coupling</td>
+                <td>sync_significance</td>
+                <td class="significant">9198.433</td>
+                <td>2025-04-20 00:04:14.303873 to 2025-04-20 00:04:14.303873</td>
+            </tr>
+            <tr>
+                <td>PAC_delta_ki_half</td>
+                <td>phase_coupling</td>
+                <td>pac_significance</td>
+                <td class="significant">11.910</td>
+                <td>2025-04-20 00:02:01.629549 to 2025-04-20 00:02:01.629549</td>
+            </tr>
+            <tr>
+                <td>IU.ANMO.00.BHZ</td>
+                <td>temporal_structure</td>
+                <td>wavelet_ki_significance</td>
+                <td class="significant">7.594</td>
+                <td>2025-04-12T23:56:43.019538Z to 2025-04-19T23:56:42.994538Z</td>
+            </tr>
+            <tr>
+                <td>IU.ANMO.00.BHZ</td>
+                <td>temporal_structure</td>
+                <td>rhythm_significance</td>
+                <td class="significant">6.856</td>
+                <td>2025-04-12T23:56:43.019538Z to 2025-04-19T23:56:42.994538Z</td>
+            </tr>
+            <tr>
+                <td>IU.ANMO.00.BHZ</td>
+                <td>cycle_ratio</td>
+                <td>ki_rest_significance</td>
+                <td class="significant">4.188</td>
+                <td>2025-04-12T23:56:43.019538Z to 2025-04-19T23:56:42.994538Z</td>
+            </tr>
+        </table>
+            
+    </body>
+    </html>
+        

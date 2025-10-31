@@ -1,0 +1,621 @@
+{
+  "nodes": [
+    {
+      "id": "\\b\u0393\\b",
+      "label": "\u0393",
+      "count": 812
+    },
+    {
+      "id": "\\bKi\\b",
+      "label": "Ki",
+      "count": 716
+    },
+    {
+      "id": "\\bLorentz\\b|\\bGR\\b|\\brelativity\\b",
+      "label": "Lorentz|GR|relativity",
+      "count": 44
+    },
+    {
+      "id": "\\bsubstrate\\b",
+      "label": "substrate",
+      "count": 58
+    },
+    {
+      "id": "\\bK[i\u03b9]\\b",
+      "label": "K[i\u03b9]",
+      "count": 716
+    },
+    {
+      "id": "\\bdecoherence\\b",
+      "label": "decoherence",
+      "count": 27
+    },
+    {
+      "id": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "label": "Informational Inertia|K[_ ]?i",
+      "count": 749
+    },
+    {
+      "id": "\\bpressuron\\b",
+      "label": "pressuron",
+      "count": 51
+    },
+    {
+      "id": "\\bg-2\\b|\\banomalous magnetic moment\\b",
+      "label": "g-2|anomalous magnetic moment",
+      "count": 49
+    },
+    {
+      "id": "\\bCMB\\b|\\bcosmolog\\w+ constant\\b|\\b\u039b\\b",
+      "label": "CMB|cosmolog\\w+ constant|\u039b",
+      "count": 95
+    },
+    {
+      "id": "\\bGamma\\b",
+      "label": "Gamma",
+      "count": 416
+    },
+    {
+      "id": "\\bT[_ ]?a\\b",
+      "label": "T[_ ]?a",
+      "count": 264
+    },
+    {
+      "id": "\\bEEG\\b|\\bMEG\\b|\\bphase[- ]locking\\b|\\bPLV\\b",
+      "label": "EEG|MEG|phase[- ]locking|PLV",
+      "count": 18
+    },
+    {
+      "id": "\\bT[_ ]?c\\b",
+      "label": "T[_ ]?c",
+      "count": 15
+    },
+    {
+      "id": "\\bethic\\w+\\b|\\bgovernance\\b|\\bDark Residue\\b",
+      "label": "ethic\\w+|governance|Dark Residue",
+      "count": 128
+    },
+    {
+      "id": "\\bU[_ ]?s\\b",
+      "label": "U[_ ]?s",
+      "count": 130
+    },
+    {
+      "id": "\\btime[- ]substrate\\b",
+      "label": "time[- ]substrate",
+      "count": 7
+    },
+    {
+      "id": "\\bCasimir\\b",
+      "label": "Casimir",
+      "count": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": "\\bCMB\\b|\\bcosmolog\\w+ constant\\b|\\b\u039b\\b",
+      "target": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "weight": 7
+    },
+    {
+      "source": "\\bCMB\\b|\\bcosmolog\\w+ constant\\b|\\b\u039b\\b",
+      "target": "\\bK[i\u03b9]\\b",
+      "weight": 7
+    },
+    {
+      "source": "\\bCMB\\b|\\bcosmolog\\w+ constant\\b|\\b\u039b\\b",
+      "target": "\\bKi\\b",
+      "weight": 7
+    },
+    {
+      "source": "\\bCMB\\b|\\bcosmolog\\w+ constant\\b|\\b\u039b\\b",
+      "target": "\\bLorentz\\b|\\bGR\\b|\\brelativity\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bCMB\\b|\\bcosmolog\\w+ constant\\b|\\b\u039b\\b",
+      "target": "\\bdecoherence\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bCMB\\b|\\bcosmolog\\w+ constant\\b|\\b\u039b\\b",
+      "target": "\\bg-2\\b|\\banomalous magnetic moment\\b",
+      "weight": 4
+    },
+    {
+      "source": "\\bCMB\\b|\\bcosmolog\\w+ constant\\b|\\b\u039b\\b",
+      "target": "\\bpressuron\\b",
+      "weight": 11
+    },
+    {
+      "source": "\\bCMB\\b|\\bcosmolog\\w+ constant\\b|\\b\u039b\\b",
+      "target": "\\bsubstrate\\b",
+      "weight": 7
+    },
+    {
+      "source": "\\bCMB\\b|\\bcosmolog\\w+ constant\\b|\\b\u039b\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 41
+    },
+    {
+      "source": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "target": "\\bK[i\u03b9]\\b",
+      "weight": 716
+    },
+    {
+      "source": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "target": "\\bKi\\b",
+      "weight": 716
+    },
+    {
+      "source": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "target": "\\bLorentz\\b|\\bGR\\b|\\brelativity\\b",
+      "weight": 14
+    },
+    {
+      "source": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "target": "\\bdecoherence\\b",
+      "weight": 5
+    },
+    {
+      "source": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "target": "\\bg-2\\b|\\banomalous magnetic moment\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "target": "\\bpressuron\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "target": "\\bsubstrate\\b",
+      "weight": 19
+    },
+    {
+      "source": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 163
+    },
+    {
+      "source": "\\bK[i\u03b9]\\b",
+      "target": "\\bKi\\b",
+      "weight": 716
+    },
+    {
+      "source": "\\bK[i\u03b9]\\b",
+      "target": "\\bLorentz\\b|\\bGR\\b|\\brelativity\\b",
+      "weight": 12
+    },
+    {
+      "source": "\\bK[i\u03b9]\\b",
+      "target": "\\bdecoherence\\b",
+      "weight": 4
+    },
+    {
+      "source": "\\bK[i\u03b9]\\b",
+      "target": "\\bg-2\\b|\\banomalous magnetic moment\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bK[i\u03b9]\\b",
+      "target": "\\bpressuron\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bK[i\u03b9]\\b",
+      "target": "\\bsubstrate\\b",
+      "weight": 19
+    },
+    {
+      "source": "\\bK[i\u03b9]\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 162
+    },
+    {
+      "source": "\\bKi\\b",
+      "target": "\\bLorentz\\b|\\bGR\\b|\\brelativity\\b",
+      "weight": 12
+    },
+    {
+      "source": "\\bKi\\b",
+      "target": "\\bdecoherence\\b",
+      "weight": 4
+    },
+    {
+      "source": "\\bKi\\b",
+      "target": "\\bg-2\\b|\\banomalous magnetic moment\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bKi\\b",
+      "target": "\\bpressuron\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bKi\\b",
+      "target": "\\bsubstrate\\b",
+      "weight": 19
+    },
+    {
+      "source": "\\bKi\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 162
+    },
+    {
+      "source": "\\bLorentz\\b|\\bGR\\b|\\brelativity\\b",
+      "target": "\\bdecoherence\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bLorentz\\b|\\bGR\\b|\\brelativity\\b",
+      "target": "\\bg-2\\b|\\banomalous magnetic moment\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bLorentz\\b|\\bGR\\b|\\brelativity\\b",
+      "target": "\\bpressuron\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bLorentz\\b|\\bGR\\b|\\brelativity\\b",
+      "target": "\\bsubstrate\\b",
+      "weight": 5
+    },
+    {
+      "source": "\\bLorentz\\b|\\bGR\\b|\\brelativity\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 8
+    },
+    {
+      "source": "\\bdecoherence\\b",
+      "target": "\\bg-2\\b|\\banomalous magnetic moment\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bdecoherence\\b",
+      "target": "\\bpressuron\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bdecoherence\\b",
+      "target": "\\bsubstrate\\b",
+      "weight": 3
+    },
+    {
+      "source": "\\bdecoherence\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 8
+    },
+    {
+      "source": "\\bg-2\\b|\\banomalous magnetic moment\\b",
+      "target": "\\bpressuron\\b",
+      "weight": 9
+    },
+    {
+      "source": "\\bg-2\\b|\\banomalous magnetic moment\\b",
+      "target": "\\bsubstrate\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bg-2\\b|\\banomalous magnetic moment\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 8
+    },
+    {
+      "source": "\\bpressuron\\b",
+      "target": "\\bsubstrate\\b",
+      "weight": 3
+    },
+    {
+      "source": "\\bpressuron\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 16
+    },
+    {
+      "source": "\\bsubstrate\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 20
+    },
+    {
+      "source": "\\bGamma\\b",
+      "target": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "weight": 72
+    },
+    {
+      "source": "\\bGamma\\b",
+      "target": "\\bK[i\u03b9]\\b",
+      "weight": 63
+    },
+    {
+      "source": "\\bGamma\\b",
+      "target": "\\bKi\\b",
+      "weight": 63
+    },
+    {
+      "source": "\\bGamma\\b",
+      "target": "\\bsubstrate\\b",
+      "weight": 14
+    },
+    {
+      "source": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "target": "\\bT[_ ]?a\\b",
+      "weight": 71
+    },
+    {
+      "source": "\\bK[i\u03b9]\\b",
+      "target": "\\bT[_ ]?a\\b",
+      "weight": 64
+    },
+    {
+      "source": "\\bKi\\b",
+      "target": "\\bT[_ ]?a\\b",
+      "weight": 64
+    },
+    {
+      "source": "\\bT[_ ]?a\\b",
+      "target": "\\bT[_ ]?c\\b",
+      "weight": 12
+    },
+    {
+      "source": "\\bEEG\\b|\\bMEG\\b|\\bphase[- ]locking\\b|\\bPLV\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bT[_ ]?a\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 64
+    },
+    {
+      "source": "\\bGamma\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 58
+    },
+    {
+      "source": "\\bGamma\\b",
+      "target": "\\bT[_ ]?a\\b",
+      "weight": 96
+    },
+    {
+      "source": "\\bsubstrate\\b",
+      "target": "\\btime[- ]substrate\\b",
+      "weight": 7
+    },
+    {
+      "source": "\\bGamma\\b",
+      "target": "\\bpressuron\\b",
+      "weight": 20
+    },
+    {
+      "source": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "target": "\\bethic\\w+\\b|\\bgovernance\\b|\\bDark Residue\\b",
+      "weight": 8
+    },
+    {
+      "source": "\\bK[i\u03b9]\\b",
+      "target": "\\bethic\\w+\\b|\\bgovernance\\b|\\bDark Residue\\b",
+      "weight": 6
+    },
+    {
+      "source": "\\bKi\\b",
+      "target": "\\bethic\\w+\\b|\\bgovernance\\b|\\bDark Residue\\b",
+      "weight": 6
+    },
+    {
+      "source": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "target": "\\bU[_ ]?s\\b",
+      "weight": 5
+    },
+    {
+      "source": "\\bK[i\u03b9]\\b",
+      "target": "\\bU[_ ]?s\\b",
+      "weight": 5
+    },
+    {
+      "source": "\\bKi\\b",
+      "target": "\\bU[_ ]?s\\b",
+      "weight": 5
+    },
+    {
+      "source": "\\bethic\\w+\\b|\\bgovernance\\b|\\bDark Residue\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 6
+    },
+    {
+      "source": "\\bT[_ ]?a\\b",
+      "target": "\\bsubstrate\\b",
+      "weight": 9
+    },
+    {
+      "source": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "target": "\\bT[_ ]?c\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bK[i\u03b9]\\b",
+      "target": "\\bT[_ ]?c\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bKi\\b",
+      "target": "\\bT[_ ]?c\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bT[_ ]?c\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 5
+    },
+    {
+      "source": "\\bU[_ ]?s\\b",
+      "target": "\\bethic\\w+\\b|\\bgovernance\\b|\\bDark Residue\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bU[_ ]?s\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 4
+    },
+    {
+      "source": "\\bGamma\\b",
+      "target": "\\bg-2\\b|\\banomalous magnetic moment\\b",
+      "weight": 12
+    },
+    {
+      "source": "\\bCMB\\b|\\bcosmolog\\w+ constant\\b|\\b\u039b\\b",
+      "target": "\\bT[_ ]?a\\b",
+      "weight": 3
+    },
+    {
+      "source": "\\bEEG\\b|\\bMEG\\b|\\bphase[- ]locking\\b|\\bPLV\\b",
+      "target": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bEEG\\b|\\bMEG\\b|\\bphase[- ]locking\\b|\\bPLV\\b",
+      "target": "\\bK[i\u03b9]\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bEEG\\b|\\bMEG\\b|\\bphase[- ]locking\\b|\\bPLV\\b",
+      "target": "\\bKi\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bGamma\\b",
+      "target": "\\bethic\\w+\\b|\\bgovernance\\b|\\bDark Residue\\b",
+      "weight": 9
+    },
+    {
+      "source": "\\bT[_ ]?a\\b",
+      "target": "\\bethic\\w+\\b|\\bgovernance\\b|\\bDark Residue\\b",
+      "weight": 8
+    },
+    {
+      "source": "\\bT[_ ]?a\\b",
+      "target": "\\bU[_ ]?s\\b",
+      "weight": 4
+    },
+    {
+      "source": "\\bU[_ ]?s\\b",
+      "target": "\\bg-2\\b|\\banomalous magnetic moment\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bCMB\\b|\\bcosmolog\\w+ constant\\b|\\b\u039b\\b",
+      "target": "\\bT[_ ]?c\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bLorentz\\b|\\bGR\\b|\\brelativity\\b",
+      "target": "\\bT[_ ]?a\\b",
+      "weight": 6
+    },
+    {
+      "source": "\\bGamma\\b",
+      "target": "\\bLorentz\\b|\\bGR\\b|\\brelativity\\b",
+      "weight": 6
+    },
+    {
+      "source": "\\bGamma\\b",
+      "target": "\\bT[_ ]?c\\b",
+      "weight": 3
+    },
+    {
+      "source": "\\bT[_ ]?c\\b",
+      "target": "\\bsubstrate\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bEEG\\b|\\bMEG\\b|\\bphase[- ]locking\\b|\\bPLV\\b",
+      "target": "\\bGamma\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bEEG\\b|\\bMEG\\b|\\bphase[- ]locking\\b|\\bPLV\\b",
+      "target": "\\bT[_ ]?a\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bEEG\\b|\\bMEG\\b|\\bphase[- ]locking\\b|\\bPLV\\b",
+      "target": "\\bT[_ ]?c\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bGamma\\b",
+      "target": "\\btime[- ]substrate\\b",
+      "weight": 3
+    },
+    {
+      "source": "\\bInformational Inertia\\b|\\bK[_ ]?i\\b",
+      "target": "\\btime[- ]substrate\\b",
+      "weight": 3
+    },
+    {
+      "source": "\\bK[i\u03b9]\\b",
+      "target": "\\btime[- ]substrate\\b",
+      "weight": 3
+    },
+    {
+      "source": "\\bKi\\b",
+      "target": "\\btime[- ]substrate\\b",
+      "weight": 3
+    },
+    {
+      "source": "\\btime[- ]substrate\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bGamma\\b",
+      "target": "\\bdecoherence\\b",
+      "weight": 4
+    },
+    {
+      "source": "\\bT[_ ]?a\\b",
+      "target": "\\bdecoherence\\b",
+      "weight": 7
+    },
+    {
+      "source": "\\bEEG\\b|\\bMEG\\b|\\bphase[- ]locking\\b|\\bPLV\\b",
+      "target": "\\bU[_ ]?s\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bGamma\\b",
+      "target": "\\bU[_ ]?s\\b",
+      "weight": 6
+    },
+    {
+      "source": "\\bU[_ ]?s\\b",
+      "target": "\\bdecoherence\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bCMB\\b|\\bcosmolog\\w+ constant\\b|\\b\u039b\\b",
+      "target": "\\bGamma\\b",
+      "weight": 5
+    },
+    {
+      "source": "\\bLorentz\\b|\\bGR\\b|\\brelativity\\b",
+      "target": "\\btime[- ]substrate\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bCMB\\b|\\bcosmolog\\w+ constant\\b|\\b\u039b\\b",
+      "target": "\\btime[- ]substrate\\b",
+      "weight": 1
+    },
+    {
+      "source": "\\bCasimir\\b",
+      "target": "\\bGamma\\b",
+      "weight": 2
+    },
+    {
+      "source": "\\bCasimir\\b",
+      "target": "\\b\u0393\\b",
+      "weight": 1
+    }
+  ]
+}

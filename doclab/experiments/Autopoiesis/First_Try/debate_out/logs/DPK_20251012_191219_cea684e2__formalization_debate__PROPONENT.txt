@@ -1,0 +1,14 @@
+```json
+{
+  "commentary": "The framework's primary strength is its unifying power, offering a single coherent substrate to explain anomalies across physics, cognition, and social dynamics. This ambitious scope is grounded by its second key strength: a set of concrete, cross-domain, and readily falsifiable predictions. While the nature of the time-substrate fields is not yet fully derived, this represents the frontier of the research program, not a foundational flaw.",
+  "experiment": "The decisive test is the high-precision measurement of the tau lepton's anomalous magnetic moment (a_τ). The hypothesis predicts a specific deviation from the Standard Model that follows a trend extrapolated from the muon g-2 anomaly, quantitatively coupled to the temporal pressure (Γ) parameter. A null result, where a_τ matches the SM within uncertainty, would directly falsify the core physical coupling of the theory.",
+  "scores": {
+    "coherence": 0.5,
+    "predictivity": 1.0,
+    "falsifiability": 1.0,
+    "external_anchor": 0.0,
+    "dark_residue": 0.5,
+    "elegance": 1.0
+  }
+}
+```

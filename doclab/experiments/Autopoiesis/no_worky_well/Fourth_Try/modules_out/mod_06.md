@@ -1,0 +1,3 @@
+1. **Triadic Resonance Hypothesis:** Conscious perception coincides with phase-locked triads satisfying the Ki-addition rule.
+2. **Detuning Constraint Hypothesis:** The allowed detuning (\Delta f) narrows as (\Gamma) (task complexity / entropy load) increases.
+3. **Area Conservation Hypothesis:** (\mathcal{A}_{Ki}) remains approximately constant across content transitions within continuous awareness.

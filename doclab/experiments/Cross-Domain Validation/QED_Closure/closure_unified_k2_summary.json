@@ -1,0 +1,33 @@
+{
+  "inputs": {
+    "K_U1": 2.625,
+    "K_SU2": 1.878,
+    "K_SU3": 1.047,
+    "Lambda_B_GeV": 200.0,
+    "mapping": "inverse"
+  },
+  "calibration": {
+    "c_norm": 0.11773140692169498,
+    "alpha_em_target": 0.007815247547966081
+  },
+  "MZ_outputs": {
+    "alpha_em_inv": 127.96040754583117,
+    "sin2_thetaW": 0.23103876859773964,
+    "alpha_s": 0.12009955007052638
+  },
+  "unification_probe": {
+    "mu12_GeV": 11468409077276.562,
+    "alpha1_inv_mu12": 42.401960102709346,
+    "alpha2_inv_mu12": 42.39901795922041,
+    "alpha3_inv_mu12": 37.51005813936672,
+    "delta13_mu12": 4.891901963342626,
+    "delta23_mu12": 4.888959819853689
+  },
+  "proton_lifetime_years_band": {
+    "lo": 2.4879658813151747e+23,
+    "hi": 9.951863525260699e+23
+  },
+  "paths": {
+    "figure": "./closure_unified_k2_figure.png"
+  }
+}

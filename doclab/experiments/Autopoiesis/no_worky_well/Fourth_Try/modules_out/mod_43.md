@@ -1,0 +1,1 @@
+**Summary:** COG-RES-003 formalizes consciousness as motion along geodesics of a triadic resonance manifold. It introduces curvature, potential, and topological dynamics as measurable correlates of awareness and establishes the geometric substrate for the forthcoming Caduceus Lens unification.

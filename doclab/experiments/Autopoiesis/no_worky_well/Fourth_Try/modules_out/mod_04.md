@@ -1,0 +1,1 @@
+To formalize the Pirouette model of consciousness as a measurable triadic resonance phenomenon governed by conservation of coherence area ((\mathcal{A}_{Ki})). The protocol specifies experimental conditions for detecting, perturbing, and verifying resonance-locked triads in neural activity.

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cosmic Compass — QHO Explorer (Electron-Calibrated)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body{font-family:Inter,system-ui,Arial,sans-serif;background:#0b1020;color:#e5e7eb;overflow:hidden}
+    #info{scrollbar-width:thin;scrollbar-color:#4b5563 #1f2937}
+    #info::-webkit-scrollbar{width:8px}
+    #info::-webkit-scrollbar-track{background:#1f2937}
+    #info::-webkit-scrollbar-thumb{background:#4b5563;border-radius:4px}
+    input[type="range"]{-webkit-appearance:none;appearance:none;width:100%;height:4px;background:#374151;border-radius:2px;outline:none}
+    input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:16px;height:16px;background:#60a5fa;border-radius:50%;cursor:pointer;border:2px solid #111827}
+    input[type="range"]::-moz-range-thumb{width:16px;height:16px;background:#60a5fa;border-radius:50%;cursor:pointer;border:2px solid #111827}
+    .pill{background:#0f172a;border:1px solid #1f2937;border-radius:10px;padding:8px 10px}
+    .kv{display:flex;justify-content:space-between;gap:8px;font-family:ui-monospace,Menlo,Consolas}
+    .badge{background:#059669;padding:2px 6px;border-radius:6px;font-size:11px;margin-left:6px}
+    .btn{background:#2563eb;border:none;color:white;border-radius:8px;padding:8px 10px}
+    .btn:hover{background:#1d4ed8}
+    #traceWin{position:absolute;right:20px;top:20px;width:440px;height:320px;background:#0a0a0a;border:1px solid #333;border-radius:10px;box-shadow:0 6px 24px rgba(0,0,0,0.5);display:flex;flex-direction:column;z-index:50}
+    #traceBar{cursor:move;background:#111827;color:#f9a8d4;padding:6px 10px;border-top-left-radius:10px;border-top-right-radius:10px;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:space-between}
+    #traceCanvas{flex:1;background:#000}
+    #traceControls{display:flex;gap:8px;padding:6px;background:#0f172a;border-top:1px solid #222;font-size:12px;color:#cbd5e1}
+    .smchk{display:flex;align-items:center;gap:6px}
+  </style>
+</head>
+<body>
+  <div id="view" class="w-full h-screen"></div>
+
+  <div id="info" class="absolute top-0 left-0 h-full w-[22rem] bg-gray-900/85 backdrop-blur p-4 overflow-y-auto rounded-r-lg">
+    <h1 class="text-xl font-bold text-blue-400 mb-1">Cosmic Compass</h1>
+    <div class="text-sm text-gray-400 mb-3">Electron-calibrated<span class="badge">r* = α</span></div>
+    <div id="controls" class="space-y-3 mb-3"></div>
+
+    <div class="pill mb-3 space-y-2">
+      <div class="flex items-center justify-between">
+        <span class="font-semibold">Analysis</span>
+        <label class="text-xs smchk"><input id="heatToggle" type="checkbox" class="accent-blue-400"> κ<span style="font-size:10px;">G</span> heatmap</label>
+      </div>
+      <div class="kv"><span>cursor (G,T)</span><span id="pt">—</span></div>
+      <div class="kv"><span>U</span><span id="u">—</span></div>
+      <div class="kv"><span>κ<span style="font-size:10px;">G</span></span><span id="kg">—</span></div>
+      <div class="kv"><span>k<sub>x</sub>, k<sub>y</sub></span><span id="kxy">—</span></div>
+      <div class="kv"><span>ω<sub>x</sub>, ω<sub>y</sub> (1/m)</span><span id="wxy">—</span></div>
+    </div>
+
+    <div class="pill mb-3 space-y-2">
+      <label class="text-sm">Energy scale E<sub>s</sub> (eV per unit U)
+        <input id="Es" type="range" min="1e-6" max="600000" step="1e-6" value="0.511" />
+      </label>
+      <div class="kv"><span>E<sub>s</sub></span><span id="Esv">0.511 eV/U</span></div>
+      <p class="text-[11px] text-gray-400">Try <b>13.6</b> for atomic; <b>511000</b> for inner Compton-like clock.</p>
+    </div>
+
+    <div class="pill mb-3 space-y-2">
+      <div class="flex items-center justify-between">
+        <span class="font-semibold">Patch Schrödinger</span>
+        <label class="text-xs smchk"><input id="solveGauge" type="checkbox" disabled class="accent-pink-400"> chirality gauge (beta)</label>
+      </div>
+      <div class="kv"><span>Patch size</span><span id="psize">64×64</span></div>
+      <div class="kv"><span>Iterations</span><span id="itval">48</span></div>
+      <div class="flex gap-2">
+        <button id="solveBtn" class="btn">Solve lowest modes</button>
+        <button id="scanBtn" class="btn bg-emerald-600 hover:bg-emerald-700">Scan minima</button>
+      </div>
+      <p class="text-[11px] text-gray-400">Click the surface to place a patch center, then “Solve”. Uses imaginary-time steps to converge ground & first excited modes.</p>
+    </div>
+
+    <div class="text-[11px] text-gray-400">
+      κ<sub>G</sub> = density×curvature (Gladiator) → confinement arena. Gyre κ and Arrow θ₀ bias the phase, twisting nodes (CORE‑017).
+    </div>
+  </div>
+
+  <div id="traceWin">
+    <div id="traceBar">Resonant Peak Geometry (Trace) <span style="color:#9ca3af;font-weight:500">— pink contours</span></div>
+    <canvas id="traceCanvas"></canvas>
+    <div id="traceControls">
+      <label class="smchk"><input id="traceOn" type="checkbox" class="accent-pink-400" checked> show</label>
+      <label class="smchk"><input id="traceHires" type="checkbox" class="accent-pink-400"> hi‑res</label>
+      <label class="smchk">level <input id="traceLevel" type="range" min="0.1" max="0.9" step="0.01" value="0.6" style="width:160px"></label>
+      <span class="ml-auto text-pink-300">drag window by header</span>
+    </div>
+  </div>
+
+  <script type="importmap">
+    {"imports":{
+      "three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }}
+  </script>
+
+  <script type="module">
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+    let scene,camera,renderer,controls,mesh,wire,ellipseLine=null,minimaGroup=null;
+    const container = document.getElementById('view');
+
+    function initScene(){
+      scene = new THREE.Scene();
+      scene.fog = new THREE.Fog(0x0a0a2a, 10, 180);
+      camera = new THREE.PerspectiveCamera(70, container.clientWidth/container.clientHeight, 0.1, 2000);
+      camera.position.set(14,13,14);
+      renderer = new THREE.WebGLRenderer({antialias:true});
+      renderer.setSize(container.clientWidth, container.clientHeight);
+      renderer.setPixelRatio(window.devicePixelRatio);
+      renderer.setClearColor(0x0b1020);
+      container.appendChild(renderer.domElement);
+      controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableDamping=true; controls.dampingFactor=0.05;
+      scene.add(new THREE.AmbientLight(0x6688ff,0.8));
+      const d1 = new THREE.DirectionalLight(0xffffff,1.5); d1.position.set(1,1,1); scene.add(d1);
+      const d2 = new THREE.DirectionalLight(0x88aaff,0.6); d2.position.set(-1,-1,-0.5); scene.add(d2);
+      window.addEventListener('resize',()=>{
+        camera.aspect = container.clientWidth/container.clientHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(container.clientWidth, container.clientHeight);
+      });
+    }
+
+    const params = {
+      n: 0.5,
+      gamma_scale: 47.5390625,
+      ta_scale: 47.5390625,
+      sigma_r: 7.0,
+      a_wind: 0.35,
+      a_tpci: 0.25,
+      k_wave: 0.45,
+      theta0: 0.0,
+      kappa0: 0.06,
+      kappa_decay: 0.08,
+      xi: 0.8,
+      mainOpacity: 1.0,
+      peakThreshold: 0.0,
+    };
+    const extent=14.0, steps=180, elevZ=2.5;
+
+    function sinc(x){ if(Math.abs(x)<1e-9) return 1.0; const px=Math.PI*x; return Math.sin(px)/px; }
+
+    function compass_potential(G,T){
+      const R = Math.hypot(G/params.gamma_scale, T/params.ta_scale);
+      const Theta = Math.atan2(T/params.ta_scale, G/params.gamma_scale);
+      const kap = params.kappa0*Math.exp(-params.kappa_decay*R);
+      const G_env = Math.exp(-(R*R)/(2.0*params.sigma_r*params.sigma_r));
+      const Theta_prime = Theta + kap*params.xi;
+      const winding_val = Math.cos(2.0*Math.PI*params.n*Theta_prime/Math.PI);
+      const kr = params.k_wave*R;
+      const radial = sinc(kr/Math.PI);
+      const ang = Math.cos(Theta-params.theta0);
+      const tpci_hint_val = radial*ang;
+      const U = G_env*(1.0 + params.a_wind*winding_val + params.a_tpci*tpci_hint_val);
+      return U;
+    }
+
+    let geometry, colorsAttr, cachedU=null, cachedDX=null, kgField=null;
+    function createSurface(){
+      if(mesh){ scene.remove(mesh); geometry.dispose(); mesh.material.dispose(); }
+      if(wire){ scene.remove(wire); wire.geometry.dispose(); wire.material.dispose(); }
+      if(ellipseLine){ scene.remove(ellipseLine); ellipseLine.geometry.dispose(); ellipseLine.material.dispose(); ellipseLine=null; }
+      if(minimaGroup){ scene.remove(minimaGroup); minimaGroup.clear(); minimaGroup=null; }
+
+      geometry = new THREE.PlaneGeometry(extent*2, extent*2, steps-1, steps-1);
+      const pos = geometry.attributes.position;
+      const nx=steps, ny=steps, dx=(extent*2)/(steps-1);
+      cachedDX=dx;
+      const Ufield = new Float32Array(nx*ny);
+
+      for(let j=0;j<ny;j++){
+        for(let i=0;i<nx;i++){
+          const x = -extent + i*dx;
+          const y = -extent + j*dx;
+          const id = j*nx+i;
+          const U = compass_potential(x,y);
+          Ufield[id]=U;
+        }
+      }
+      cachedU=Ufield;
+
+      for(let j=0;j<ny;j++){
+        for(let i=0;i<nx;i++){
+          const id=j*nx+i;
+          const U=Ufield[id];
+          const k=j*nx+i;
+          pos.setZ(k, U*elevZ);
+        }
+      }
+      pos.needsUpdate=true;
+      geometry.computeVertexNormals();
+      const mat = new THREE.MeshStandardMaterial({color:0x6ba6ff, metalness:0.3, roughness:0.6, vertexColors:true, transparent:true, opacity:params.mainOpacity, side:THREE.DoubleSide});
+      mesh = new THREE.Mesh(geometry, mat);
+      mesh.rotation.x = -Math.PI/2; scene.add(mesh);
+
+      const geo2 = new THREE.WireframeGeometry(geometry);
+      wire = new THREE.LineSegments(geo2, new THREE.LineBasicMaterial({color:0x1f2f4f, opacity:0.22, transparent:true}));
+      wire.rotation.x = -Math.PI/2; scene.add(wire);
+
+      colorsAttr = new THREE.Float32BufferAttribute(new Float32Array(geometry.attributes.position.count*3), 3);
+      geometry.setAttribute('color', colorsAttr);
+      kgField = computeKappaG(Ufield, dx);
+      recolor(false);
+      renderTrace();
+    }
+
+    function computeKappaG(zField, dx){
+      const nx=steps, ny=steps, kg=new Float32Array(nx*ny), grad=new Float32Array(nx*ny);
+      for(let j=1;j<ny-1;j++){
+        for(let i=1;i<nx-1;i++){
+          const id=j*nx+i;
+          const zx=(zField[id+1]-zField[id-1])/(2*dx);
+          const zy=(zField[id+nx]-zField[id-nx])/(2*dx);
+          grad[id]=Math.hypot(zx,zy);
+        }
+      }
+      for(let j=1;j<ny-1;j++){
+        for(let i=1;i<nx-1;i++){
+          const id=j*nx+i;
+          const z=zField[id];
+          const zxx=(zField[id+1]-2*zField[id]+zField[id-1])/(dx*dx);
+          const zyy=(zField[id+nx]-2*zField[id]+zField[id-nx])/(dx*dx);
+          const curvature=Math.abs(zxx)+Math.abs(zyy);
+          const density=1.0/(grad[id]+1e-9);
+          kg[id]=density*curvature;
+        }
+      }
+      let min=Infinity,max=-Infinity;
+      for(let k=0;k<kg.length;k++){ if(!isFinite(kg[k])) continue; if(kg[k]<min)min=kg[k]; if(kg[k]>max)max=kg[k]; }
+      const span=(max-min)||1;
+      for(let k=0;k<kg.length;k++){ kg[k]=(kg[k]-min)/span; }
+      return kg;
+    }
+
+    function recolor(showHeat){
+      const col=colorsAttr.array;
+      for(let k=0;k<colorsAttr.count;k++){
+        const v = showHeat? kgField[k] : 0.0;
+        const r = showHeat? 0.2*v : 0.376;
+        const g = showHeat? (0.5+0.5*v) : 0.647;
+        const b = showHeat? (0.8+0.2*v) : 0.980;
+        col[3*k]=r; col[3*k+1]=g; col[3*k+2]=b;
+      }
+      colorsAttr.needsUpdate=true;
+    }
+
+    function addSlider(key,label,min,max,step){
+      const c = document.getElementById('controls');
+      const wrap=document.createElement('div');
+      const top=document.createElement('div'); top.className='flex justify-between text-sm';
+      const l=document.createElement('span'); l.textContent=label||key;
+      const v=document.createElement('span'); v.id=`val-${key}`; v.className='text-blue-400 font-mono'; v.textContent=(params[key]??0).toFixed(3);
+      top.appendChild(l); top.appendChild(v);
+      const s=document.createElement('input'); s.type='range'; s.min=min; s.max=max; s.step=step; s.value=params[key]; s.addEventListener('input',e=>{
+        params[key]=parseFloat(e.target.value); v.textContent=params[key].toFixed(3); createSurface();
+      });
+      wrap.appendChild(top); wrap.appendChild(s); c.appendChild(wrap);
+    }
+    function setupUI(){
+      addSlider('n','n wind',-4,4,0.1);
+      addSlider('mainOpacity','mainOpacity',0.05,1,0.01);
+      addSlider('peakThreshold','peakThreshold',0,1,0.01);
+      addSlider('kappa0','kappa0',0,0.5,0.001);
+      addSlider('a_wind','a wind',-1,1,0.01);
+      addSlider('a_tpci','a tpci',-1,1,0.01);
+      addSlider('k_wave','k wave',0,2,0.01);
+      addSlider('theta0','theta0',-Math.PI,Math.PI,0.01);
+      addSlider('kappa_decay','kappa decay',0,0.5,0.001);
+      addSlider('xi','xi',-2,2,0.01);
+      addSlider('gamma_scale','gamma scale',4,64,0.01);
+      addSlider('ta_scale','ta scale',4,64,0.01);
+      addSlider('sigma_r','sigma r',1,15,0.1);
+
+      document.getElementById('heatToggle').addEventListener('change',e=>recolor(e.target.checked));
+      const Es = document.getElementById('Es'); const Esv=document.getElementById('Esv');
+      Es.addEventListener('input',e=>{Esv.textContent=`${parseFloat(e.target.value)} eV/U`;});
+      document.getElementById('scanBtn').addEventListener('click',scanMinima);
+      document.getElementById('solveBtn').addEventListener('click',()=>{ if(lastPick) solvePatch(lastPick.x,lastPick.y); });
+
+      document.getElementById('traceOn').addEventListener('change',renderTrace);
+      document.getElementById('traceHires').addEventListener('change',renderTrace);
+      document.getElementById('traceLevel').addEventListener('input',renderTrace);
+      makeDraggable(document.getElementById('traceWin'), document.getElementById('traceBar'));
+    }
+
+    const raycaster=new THREE.Raycaster(), mouse=new THREE.Vector2();
+    const ptEl=document.getElementById('pt'), uEl=document.getElementById('u'), kgEl=document.getElementById('kg');
+    const kxyEl=document.getElementById('kxy'), wxyEl=document.getElementById('wxy');
+    let lastPick=null;
+    const viewEl=container;
+    viewEl.addEventListener('pointermove',ev=>{
+      const rect=renderer.domElement.getBoundingClientRect();
+      mouse.x=((ev.clientX-rect.left)/rect.width)*2-1;
+      mouse.y=-((ev.clientY-rect.top)/rect.height)*2+1;
+      raycaster.setFromCamera(mouse,camera);
+      const hits=raycaster.intersectObject(mesh);
+      if(!hits.length) return;
+      const p=hits[0].point; const G=p.x, T=p.z;
+      const U=compass_potential(G,T); const kg = sampleKG(G,T);
+      ptEl.textContent=`(${G.toFixed(3)}, ${T.toFixed(3)})`;
+      uEl.textContent=U.toFixed(6); kgEl.textContent=kg?.toFixed(6) ?? '—';
+    });
+    viewEl.addEventListener('pointerdown',ev=>{
+      const rect=renderer.domElement.getBoundingClientRect();
+      mouse.x=((ev.clientX-rect.left)/rect.width)*2-1;
+      mouse.y=-((ev.clientY-rect.top)/rect.height)*2+1;
+      raycaster.setFromCamera(mouse,camera);
+      const hits=raycaster.intersectObject(mesh);
+      if(!hits.length) return;
+      const p=hits[0].point; lastPick={x:p.x,y:p.z};
+      const res = localHessian(p.x,p.z);
+      kxyEl.textContent = `${res.k1.toExponential(3)}, ${res.k2.toExponential(3)}`;
+      const Es=parseFloat(document.getElementById('Es').value);
+      const m_e=510998.95; const L=2.42631023867e-12/(2*Math.PI);
+      const w1=Math.sqrt((Es*res.k1)/(m_e*L*L)); const w2=Math.sqrt((Es*res.k2)/(m_e*L*L));
+      wxyEl.textContent = `${w1.toExponential(3)}, ${w2.toExponential(3)}`;
+      drawEllipse(p.x,p.z,res.axes.eigvecs,res.axes.eigvals);
+    });
+
+    function sampleKG(G,T){
+      const dx=cachedDX; const i=Math.round((G+extent)/dx); const j=Math.round((T+extent)/dx);
+      if(i<0||i>=steps||j<0||j>=steps) return null;
+      return kgField[j*steps+i];
+    }
+
+    function localHessian(G0,T0){
+      const h=(extent*2)/(steps-1);
+      const V=(G,T)=>-compass_potential(G,T);
+      const f00=V(G0,T0);
+      const fpp=(V(G0+h,T0)-2*f00+V(G0-h,T0))/(h*h);
+      const gpp=(V(G0,T0+h)-2*f00+V(G0,T0-h))/(h*h);
+      const fxy=(V(G0+h,T0+h)-V(G0+h,T0-h)-V(G0-h,T0+h)+V(G0-h,T0-h))/(4*h*h);
+      const a=fpp,b=fxy,c=gpp; const tr=a+c, det=a*c-b*b; const disc=Math.max(tr*tr-4*det,0);
+      const l1=0.5*(tr - Math.sqrt(disc)); const l2=0.5*(tr + Math.sqrt(disc));
+      let v1x=1,v1y=0; if(Math.abs(b)>1e-12){ v1x=l1-c; v1y=b; const n=Math.hypot(v1x,v1y); v1x/=n; v1y/=n; }
+      const v2x=-v1y, v2y=v1x;
+      return {k1:l1,k2:l2,axes:{eigvals:[l1,l2],eigvecs:[[v1x,v1y],[v2x,v2y]]}};
+    }
+
+    function drawEllipse(G0,T0,eigvecs,eigvals){
+      if(ellipseLine){ scene.remove(ellipseLine); ellipseLine.geometry.dispose(); ellipseLine.material.dispose(); ellipseLine=null; }
+      const level=1.0; const l1=Math.max(eigvals[0],1e-12), l2=Math.max(eigvals[1],1e-12);
+      const a=Math.sqrt(2*level/l1), b=Math.sqrt(2*level/l2);
+      const [v1,v2]=eigvecs; const pts=[]; const N=128;
+      for(let t=0;t<=N;t++){
+        const th=2*Math.PI*(t/N);
+        const x=a*Math.cos(th), y=b*Math.sin(th);
+        const G=G0 + x*v1[0] + y*v2[0];
+        const T=T0 + x*v1[1] + y*v2[1];
+        const z=compass_potential(G,T)*elevZ + 0.01;
+        pts.push(new THREE.Vector3(G,z,T));
+      }
+      const geo=new THREE.BufferGeometry().setFromPoints(pts);
+      ellipseLine=new THREE.LineLoop(geo,new THREE.LineBasicMaterial({color:0xff5af0,linewidth:2}));
+      scene.add(ellipseLine);
+    }
+
+    function scanMinima(){
+      if(minimaGroup){ scene.remove(minimaGroup); minimaGroup.clear(); }
+      minimaGroup = new THREE.Group();
+      const markerM=new THREE.MeshBasicMaterial({color:0xffffff});
+      const markerG=new THREE.SphereGeometry(0.12,14,10);
+      const nx=steps, ny=steps, dx=cachedDX;
+      for(let j=1;j<ny-1;j++){
+        for(let i=1;i<nx-1;i++){
+          const id=j*nx+i; const u=cachedU[id];
+          if(u<=cachedU[id-1] && u<=cachedU[id+1] && u<=cachedU[id-nx] && u<=cachedU[id+nx]){
+            const x=-extent+i*dx, y=-extent+j*dx; const z=compass_potential(x,y)*elevZ;
+            const m=new THREE.Mesh(markerG,markerM); m.position.set(x,z+0.02,y); minimaGroup.add(m);
+          }
+        }
+      }
+      scene.add(minimaGroup);
+    }
+
+    function solvePatch(Gc,Tc){
+      const N=64; document.getElementById('psize').textContent=`${N}×${N}`;
+      const h=(extent*2)/(steps-1);
+      const half=Math.floor(N/2);
+      const V = new Float32Array(N*N);
+      for(let j=0;j<N;j++){
+        for(let i=0;i<N;i++){
+          const G = Gc + (i-half)*h;
+          const T = Tc + (j-half)*h;
+          const id=j*N+i;
+          V[id] = -compass_potential(G,T);
+        }
+      }
+      const c=1.0; const tau=0.15; const iters=48; document.getElementById('itval').textContent=iters.toString();
+
+      function Hpsi(psi,out){
+        for(let j=0;j<N;j++){
+          for(let i=0;i<N;i++){
+            const id=j*N+i;
+            const psi_c=psi[id];
+            const psi_l=i>0?psi[id-1]:psi_c;
+            const psi_r=i<N-1?psi[id+1]:psi_c;
+            const psi_d=j>0?psi[id-N]:psi_c;
+            const psi_u=j<N-1?psi[id+N]:psi_c;
+            const lap=(psi_l+psi_r+psi_d+psi_u-4*psi_c)/(h*h);
+            out[id] = -c*lap + V[id]*psi_c;
+          }
+        }
+      }
+      let psi = new Float32Array(N*N); for(let k=0;k<psi.length;k++) psi[k]=Math.random();
+      normalize(psi);
+      const tmp = new Float32Array(N*N);
+      for(let it=0; it<iters; it++){ Hpsi(psi,tmp); for(let k=0;k<psi.length;k++) psi[k]-=tau*tmp[k]; normalize(psi); }
+      const E0 = rayleigh(psi,tmp,Hpsi);
+      let phi = new Float32Array(N*N); for(let k=0;k<phi.length;k++) phi[k]=Math.random()-0.5;
+      orth(phi,psi); normalize(phi);
+      for(let it=0; it<iters; it++){ Hpsi(phi,tmp); for(let k=0;k<phi.length;k++) phi[k]-=tau*tmp[k]; orth(phi,psi); normalize(phi); }
+      const E1 = rayleigh(phi,tmp,Hpsi);
+      paintPatchDensity(Gc,Tc,h,N,psi,phi,E0,E1);
+    }
+
+    function dot(a,b){let s=0; for(let i=0;i<a.length;i++) s+=a[i]*b[i]; return s;}
+    function normalize(a){const n=Math.sqrt(dot(a,a))||1; for(let i=0;i<a.length;i++) a[i]/=n;}
+    function orth(a,b){const ab=dot(a,b); for(let i=0;i<a.length;i++) a[i]-=ab*b[i];}
+    function rayleigh(v,tmp,Hpsi){ Hpsi(v,tmp); return dot(v,tmp)/dot(v,v); }
+
+    function paintPatchDensity(Gc,Tc,h,N,psi,phi,E0,E1){
+      const group = new THREE.Group();
+      const g1 = new THREE.BufferGeometry(); const pts1=[]; const col1=[];
+      const g2 = new THREE.BufferGeometry(); const pts2=[]; const col2=[];
+      let max1=0, max2=0;
+      for(let i=0;i<psi.length;i++){ const v=psi[i]*psi[i]; if(v>max1) max1=v; const w=phi[i]*phi[i]; if(w>max2) max2=w; }
+      for(let j=0;j<N;j++){
+        for(let i=0;i<N;i++){
+          const id=j*N+i;
+          const G = Gc + (i-N/2)*h;
+          const T = Tc + (j-N/2)*h;
+          const z = compass_potential(G,T)*elevZ + 0.02;
+          const d1 = (psi[id]*psi[id])/(max1||1);
+          const d2 = (phi[id]*phi[id])/(max2||1);
+          if(d1>0.05){ pts1.push(G,z,T); col1.push(1.0,0.4,0.8); }
+          if(d2>0.05){ pts2.push(G,z+0.01,T); col2.push(0.6,1.0,0.9); }
+        }
+      }
+      g1.setAttribute('position', new THREE.Float32BufferAttribute(new Float32Array(pts1),3));
+      g1.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(col1),3));
+      const m1 = new THREE.PointsMaterial({size:0.06, vertexColors:true, transparent:true, opacity:0.95});
+      const p1 = new THREE.Points(g1,m1); group.add(p1);
+
+      g2.setAttribute('position', new THREE.Float32BufferAttribute(new Float32Array(pts2),3));
+      g2.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(col2),3));
+      const m2 = new THREE.PointsMaterial({size:0.05, vertexColors:true, transparent:true, opacity:0.9});
+      const p2 = new THREE.Points(g2,m2); group.add(p2);
+
+      const sprite = labelSprite(`E0≈${E0.toFixed(3)}, E1≈${E1.toFixed(3)}`);
+      sprite.position.set(Gc, compass_potential(Gc,Tc)*elevZ + 0.3, Tc);
+      group.add(sprite);
+
+      if(window._patchGroup){ scene.remove(window._patchGroup); }
+      window._patchGroup = group; scene.add(group);
+    }
+
+    function labelSprite(text){
+      const c = document.createElement('canvas'); const s=256; c.width=c.height=s;
+      const ctx=c.getContext('2d'); ctx.fillStyle='rgba(10,10,10,0.7)'; ctx.fillRect(0,0,s,s);
+      ctx.fillStyle='#ffffff'; ctx.font='28px monospace'; ctx.textAlign='center'; ctx.textBaseline='middle';
+      ctx.fillText(text, s/2, s/2);
+      const tx = new THREE.CanvasTexture(c);
+      const mat = new THREE.SpriteMaterial({map:tx, depthTest:false});
+      const sp = new THREE.Sprite(mat); sp.scale.set(2,0.7,1);
+      return sp;
+    }
+
+    function renderTrace(){
+      const on = document.getElementById('traceOn').checked;
+      const canvas = document.getElementById('traceCanvas');
+      const hires = document.getElementById('traceHires').checked;
+      const level = parseFloat(document.getElementById('traceLevel').value);
+      const w=canvas.clientWidth||440, h=canvas.clientHeight||260;
+      canvas.width = hires? w*2 : w; canvas.height = hires? h*2 : h;
+      const ctx = canvas.getContext('2d'); ctx.clearRect(0,0,canvas.width,canvas.height);
+      if(!on || !kgField) return;
+
+      const nx=steps, ny=steps;
+      ctx.strokeStyle='#ff5af0'; ctx.lineWidth=hires?2.4:1.4; ctx.globalAlpha=0.95;
+      function val(i,j){ return kgField[j*nx+i]; }
+      function map(ix,iy){ return [ (ix/(nx-1))*canvas.width, (1-iy/(ny-1))*canvas.height ]; }
+      function interp(a,b,va,vb){ const t=(level-va)/((vb-va)||1e-9); return a + t*(b-a); }
+
+      for(let j=0;j<ny-1;j++){
+        for(let i=0;i<nx-1;i++){
+          const va=val(i,j), vb=val(i+1,j), vc=val(i+1,j+1), vd=val(i,j+1);
+          const ex = interp(i,i+1,va,vb), ey=j;
+          const fx = i+1, fy=interp(j,j+1,vb,vc);
+          const gx = interp(i,i+1,vd,vc), gy=j+1;
+          const hx = i, hy=interp(j,j+1,va,vd);
+          const segs=[];
+          const c0 = (va<level), c1=(vb<level), c2=(vc<level), c3=(vd<level);
+          if(c0!=c1) segs.push([[ex,ey],[hx,hy]]);
+          if(c1!=c2) segs.push([[fx,fy],[ex,ey]]);
+          if(c2!=c3) segs.push([[gx,gy],[fx,fy]]);
+          if(c3!=c0) segs.push([[hx,hy],[gx,gy]]);
+          for(const s of segs){
+            const a=map(s[0][0],s[0][1]); const b=map(s[1][0],s[1][1]);
+            ctx.beginPath(); ctx.moveTo(a[0],a[1]); ctx.lineTo(b[0],b[1]); ctx.stroke();
+          }
+        }
+      }
+    }
+
+    function makeDraggable(win, bar){
+      let ox=0, oy=0, dragging=false;
+      bar.addEventListener('mousedown', e=>{ dragging=true; ox=e.clientX-win.offsetLeft; oy=e.clientY-win.offsetTop; });
+      window.addEventListener('mouseup', ()=>dragging=false);
+      window.addEventListener('mousemove', e=>{
+        if(!dragging) return;
+        win.style.left = (e.clientX-ox)+'px';
+        win.style.top  = (e.clientY-oy)+'px';
+        win.style.right='unset';
+      });
+    }
+
+    function animate(){ requestAnimationFrame(animate); controls.update(); renderer.render(scene,camera); }
+
+    initScene(); setupUI(); createSurface(); animate();
+  </script>
+</body>
+</html>

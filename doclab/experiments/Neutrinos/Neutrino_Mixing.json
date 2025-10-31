@@ -1,0 +1,298 @@
+{
+    "status_code": 200,
+    "status_message": "OK",
+    "request_timestamp": "2025-10-06 22:03:11 PST",
+    "request_url": "https://pdgapi.lbl.gov/summaries/S067",
+    "edition": "2025",
+    "about": "For further information see https://pdg.lbl.gov/api",
+    "pdgid": "S067",
+    "description": "Neutrino Mixing",
+    "summaries": {
+      "properties": [
+        {
+          "pdgid": "S067AER",
+          "description": "Events (observed/expected) from accelerator nu_mu experiments."
+        },
+        {
+          "pdgid": "S067RER",
+          "description": "Events (observed/expected) from reactor nubar_e experiments."
+        },
+        {
+          "pdgid": "S067DU0",
+          "description": "R(mu/e) = (Measured Ratio mu/e) / (Expected Ratio mu/e)"
+        },
+        {
+          "pdgid": "S067DU1",
+          "description": "R(nu_mu) = (Measured Flux of nu_mu) / (Expected Flux of nu_mu)"
+        },
+        {
+          "pdgid": "S067DU9",
+          "description": "R(mu/total) = (Measured Ratio mu/total) / (Expected Ratio mu/total)"
+        },
+        {
+          "pdgid": "S067UDM",
+          "description": "N(up)(mu)/N(down)(mu)"
+        },
+        {
+          "pdgid": "S067UDE",
+          "description": "N(up)(e)/N(down)(e)"
+        },
+        {
+          "pdgid": "S067MER",
+          "description": "R(up/down; mu) = (Measured up/down; mu) / (Expected up/down; mu)"
+        },
+        {
+          "pdgid": "S067MPM",
+          "description": "N(mu+)/N(mu-)"
+        },
+        {
+          "pdgid": "S067RPM",
+          "description": "R(mu+/mu-) = (Measured N(mu+)/N(mu-)) / (Expected N(mu+)/N(mu-))"
+        },
+        {
+          "pdgid": "S067SNU",
+          "description": "nu_e Capture Rates from Radiochemical Experiments"
+        },
+        {
+          "pdgid": "S067SES",
+          "description": "phi(ES) (B8)"
+        },
+        {
+          "pdgid": "S067SCC",
+          "description": "phi(CC) (B8)"
+        },
+        {
+          "pdgid": "S067SNC",
+          "description": "phi(NC) (B8)"
+        },
+        {
+          "pdgid": "S067SB8",
+          "description": "phi(nu_mu+nu_tau) (B8)"
+        },
+        {
+          "pdgid": "S067PPT",
+          "description": "Total Flux of Active p p Solar Neutrinos"
+        },
+        {
+          "pdgid": "S067B7T",
+          "description": "Total Flux of Active Be7 Solar Neutrinos"
+        },
+        {
+          "pdgid": "S067PET",
+          "description": "Total Flux of Active p e p Solar Neutrinos"
+        },
+        {
+          "pdgid": "S067SBT",
+          "description": "Total Flux of Active B8 Solar Neutrinos"
+        },
+        {
+          "pdgid": "S067CNT",
+          "description": "Total Flux of Active CNO Solar Neutrinos"
+        },
+        {
+          "pdgid": "S067HPT",
+          "description": "Total Flux of Active hep Solar Neutrinos"
+        },
+        {
+          "pdgid": "S067SDN",
+          "description": "Day-Night Asymmetry (B8)",
+          "pdg_values": [
+            {
+              "value": 0.0286,
+              "error_positive": 0.009082400563727631,
+              "error_negative": 0.009082400563727631,
+              "value_text": "0.029+-0.009",
+              "type": "OUR AVERAGE"
+            }
+          ]
+        },
+        {
+          "pdgid": "S067PBE",
+          "description": "phi(ES) (Be7)"
+        },
+        {
+          "pdgid": "S067PEP",
+          "description": "phi(ES) (p e p)"
+        },
+        {
+          "pdgid": "S067CNO",
+          "description": "phi(ES) (CNO)"
+        },
+        {
+          "pdgid": "S067PPC",
+          "description": "phi(ES)(pp)"
+        },
+        {
+          "pdgid": "S067PPF",
+          "description": "phi(CC)(pp)"
+        },
+        {
+          "pdgid": "S067HEP",
+          "description": "phi(ES) (hep)"
+        },
+        {
+          "pdgid": "S067EB8",
+          "description": "phi(nubar_e) (B8)"
+        },
+        {
+          "pdgid": "S067P12",
+          "description": "sin**2(theta(12))",
+          "pdg_values": [
+            {
+              "value": 0.307,
+              "error_positive": 0.012,
+              "error_negative": 0.012,
+              "value_text": "0.307+-0.012",
+              "type": "OUR AVERAGE"
+            }
+          ]
+        },
+        {
+          "pdgid": "S067DM3",
+          "description": "Deltam(21)**2",
+          "pdg_values": [
+            {
+              "value": 7.500000000000001E-5,
+              "error_positive": 1.9E-6,
+              "error_negative": 1.8E-6,
+              "value_text": "(7.50+-0.19)E-5",
+              "unit": "eV**2",
+              "type": "OUR AVERAGE"
+            }
+          ]
+        },
+        {
+          "pdgid": "S067P23",
+          "description": "sin**2(theta(23))",
+          "pdg_values": [
+            {
+              "value": 0.5367550895136158,
+              "error_positive": 0.01924924061948874,
+              "error_negative": 0.02040933777671124,
+              "value_text": "0.537+-0.020",
+              "scale_factor": 1.150615,
+              "comment": "Assuming inverted mass ordering",
+              "type": "OUR FIT"
+            },
+            {
+              "value": 0.5335584511515125,
+              "error_positive": 0.01492202541253513,
+              "error_negative": 0.01851483485786947,
+              "value_text": "0.534+0.015-0.019",
+              "scale_factor": 1.007697,
+              "comment": "Assuming normal mass ordering",
+              "type": "OUR FIT"
+            }
+          ]
+        },
+        {
+          "pdgid": "S067DM1",
+          "description": "Deltam(32)**2",
+          "pdg_values": [
+            {
+              "value": -0.00252693950951024,
+              "error_positive": 3.243668596800482E-5,
+              "error_negative": 3.464919046029242E-5,
+              "value_text": "-0.002527+-0.000034",
+              "unit": "eV**2",
+              "scale_factor": 1.248513,
+              "comment": "Assuming inverted ordering",
+              "type": "OUR FIT"
+            },
+            {
+              "value": 0.00245067173296739,
+              "error_positive": 2.474405044892461E-5,
+              "error_negative": 2.708973806213066E-5,
+              "value_text": "0.002451+-0.000026",
+              "unit": "eV**2",
+              "scale_factor": 1.001759,
+              "comment": "Assuming normal ordering",
+              "type": "OUR FIT"
+            }
+          ]
+        },
+        {
+          "pdgid": "S067P13",
+          "description": "sin**2(theta(13))",
+          "pdg_values": [
+            {
+              "value": 0.02160372817875048,
+              "error_positive": 6.348527076089226E-4,
+              "error_negative": 6.440016047469267E-4,
+              "value_text": "0.0216+-0.0006",
+              "scale_factor": 1.218249,
+              "type": "OUR AVERAGE"
+            }
+          ]
+        },
+        {
+          "pdgid": "S067DEL",
+          "description": "delta, CP violating phase",
+          "pdg_values": [
+            {
+              "value": 1.21244744583571,
+              "error_positive": 0.1928618716670967,
+              "error_negative": 0.217656597328458,
+              "value_text": "1.21+0.19-0.22",
+              "unit": "pi rad",
+              "scale_factor": 1.242192,
+              "type": "OUR AVERAGE"
+            }
+          ]
+        },
+        {
+          "pdgid": "S067D1",
+          "description": "Delta(m)**2 for sin**2(2*theta) = 1 (nu_mu --> nu_e)"
+        },
+        {
+          "pdgid": "S067S1",
+          "description": "sin**2(2*theta) for ``Large'' Delta(m)**2 (nu_mu --> nu_e)"
+        },
+        {
+          "pdgid": "S067D2",
+          "description": "Delta(m)**2 for sin**2(2*theta) = 1 (nubar_mu --> nubar_e)"
+        },
+        {
+          "pdgid": "S067S2",
+          "description": "sin**2(2*theta) for ``Large'' Delta(m)**2 (nubar_mu --> nubar_e)"
+        },
+        {
+          "pdgid": "S067DU4",
+          "description": "Delta(m)**2 for sin**2(2*theta) = 1 (nu_mu --> nu_s)"
+        },
+        {
+          "pdgid": "S067NUS",
+          "description": "Search for nu_mu or nu(e) --> nu_s"
+        },
+        {
+          "pdgid": "S067CPT",
+          "description": "<Deltamass**2(21)-Deltambar(21)**2>",
+          "pdg_values": [
+            {
+              "value": 1.1E-4,
+              "value_text": "< 1.1 E-4",
+              "is_limit": true,
+              "is_upper_limit": true,
+              "unit": "eV**2",
+              "confidence_level": 99.7,
+              "type": "BEST LIMIT"
+            }
+          ]
+        },
+        {
+          "pdgid": "S067CP2",
+          "description": "<Deltamass**2(32)-Deltambar(32)**2>",
+          "pdg_values": [
+            {
+              "value": -1.2E-4,
+              "error_positive": 2.6E-4,
+              "error_negative": 2.4E-4,
+              "value_text": "(-1.2+-2.5)E-4",
+              "unit": "eV**2",
+              "type": "OUR AVERAGE"
+            }
+          ]
+        }
+      ]
+    }
+  }

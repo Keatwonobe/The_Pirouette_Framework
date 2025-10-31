@@ -1,0 +1,14 @@
+```json
+{
+  "commentary": "The theory’s primary methodological strength is its explicit and rigorous commitment to falsifiability, detailing a clear experimental roadmap and invalidation criteria. However, it possesses two critical weaknesses. First, the entire empirical project rests on proposed proxies for abstract variables (ω_M, ω_X, ω_P) which are highly speculative and face monumental challenges of measurement and validation. Second, the central predictive equation, ω_P ≈ ω_M + ω_X, is asserted rather than formally derived from the foundational action principle, making its specific mathematical form appear arbitrary and weakening its claim to be a physical law instead of an elegant metaphor.",
+  "experiment": "A decisive experiment would be a longitudinal study of hundreds of large-scale, self-governing digital communities (e.g., open-source projects, Wikipedia editions). These systems offer quantifiable data streams that serve as proxies for the triad: rate of new code commits/content for the Probe (ω_P), rate of change in governance protocols/moderation rules for the Constraint (ω_X), and rate of revision of core mission statements/design documents for the Model (ω_M). The experiment would test if the calculated dissonance metric, D ∝ |ω_P - (ω_M + ω_X)|, is a statistically significant leading predictor of observable crises like community forks, user revolts, or project collapse. This would resolve whether the resonance condition has predictive power in a data-rich, controlled environment beyond mere historical narrative.",
+  "scores": {
+    "coherence": 0.8,
+    "predictivity": 0.4,
+    "falsifiability": 0.7,
+    "external_anchor": 0.2,
+    "dark_residue": 0.6,
+    "elegance": 0.9
+  }
+}
+```

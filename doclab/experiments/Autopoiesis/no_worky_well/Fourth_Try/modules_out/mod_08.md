@@ -1,0 +1,1 @@
+High-density EEG (128+ channels) or MEG for frequency- and phase-resolved data.

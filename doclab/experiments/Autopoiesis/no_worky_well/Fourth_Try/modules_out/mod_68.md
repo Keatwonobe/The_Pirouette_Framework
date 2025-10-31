@@ -1,0 +1,3 @@
+The Pirouette Seed (CORE-001) establishes that the universe is a self-creating song. This module describes the first note of that song: the process by which the substance of reality, Time, generates the pressure of reality, Gamma (Γ).
+
+If a single, isolated system has a simple rhythm, the universe is the sum of all rhythms. Every point in spacetime is a nexus, a point of intersection for the echoes of every event within its causal horizon. This superposition of countless rhythms creates a dense, complex, and often chaotic "temporal environment." The measure of this environmental complexity is Γ.

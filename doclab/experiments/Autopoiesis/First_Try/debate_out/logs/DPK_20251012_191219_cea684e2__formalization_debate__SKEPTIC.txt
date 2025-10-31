@@ -1,0 +1,14 @@
+```json
+{
+    "commentary": "The proposal's attempt to unify particle physics, neuroscience, and sociology is a critical weakness, built on undefined concepts like 'temporal pressure' (Γ) and 'coherence density' (Ki). These terms lack a rigorous mathematical or physical connection to established theories, rendering the 'predictions' as untestable assertions. For instance, the theory fails to specify how Γ would be defined or measured in the context of a particle accelerator for the tau g-2 prediction, making the core claim vacuous.",
+    "experiment": "Propose a derivation, not an experiment. From the sketched Lagrangian L(Ki, Γ, T_a), derive the explicit, gauge-invariant coupling terms to the Standard Model lepton and photon fields. This derivation must produce the functional form of the g-2 anomaly, Δa_l = f(Γ, Ki, m_l), and an ab-initio calculation for the vacuum value of Γ. If the model cannot produce a zero-free-parameter prediction for the existing muon g-2 value, it is non-predictive.",
+    "scores": {
+        "coherence": 0.0,
+        "predictivity": 0.0,
+        "falsifiability": 0.5,
+        "external_anchor": 0.0,
+        "dark_residue": 1.0,
+        "elegance": 0.0
+    }
+}
+```

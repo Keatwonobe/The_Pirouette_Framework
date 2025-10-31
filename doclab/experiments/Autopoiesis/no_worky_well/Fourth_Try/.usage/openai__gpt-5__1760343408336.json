@@ -1,0 +1,10 @@
+{
+  "provider": "openai",
+  "usage": {
+    "mode": "responses",
+    "model": "gpt-5",
+    "input_tokens": 1412,
+    "output_tokens": 2200,
+    "total_tokens": 3612
+  }
+}

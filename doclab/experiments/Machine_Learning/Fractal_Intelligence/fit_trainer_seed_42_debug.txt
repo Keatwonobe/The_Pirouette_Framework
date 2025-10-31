@@ -1,0 +1,571 @@
+Using device: cpu
+FIT models will be saved in: ./pirouette_fit_models/
+Initializing Crucible Environment...
+Ep:0010 | Env Reward:    0.36 | Predictive Span (σ): 00/50
+  > Eval Avg Score:    0.48 | Best in Pool:    -inf | Std Dev:0.17
+  > New stable model added to pool at rank 1 with score 0.48
+Ep:0020 | Env Reward:   -0.51 | Predictive Span (σ): 00/50
+  > Eval Avg Score:    0.38 | Best in Pool:    0.48 | Std Dev:0.06
+  > New stable model added to pool at rank 2 with score 0.38
+Ep:0030 | Env Reward:   -0.18 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.40 | Best in Pool:    0.48 | Std Dev:0.11
+  > New stable model added to pool at rank 3 with score 0.40
+Ep:0040 | Env Reward:   -0.32 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.33 | Best in Pool:    0.48 | Std Dev:0.22
+  > New stable model added to pool at rank 4 with score 0.33
+  > Performance below threshold. Bad cycles: 1/10
+Ep:0050 | Env Reward:    0.15 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.41 | Best in Pool:    0.48 | Std Dev:0.13
+  > New stable model added to pool at rank 5 with score 0.41
+Ep:0060 | Env Reward:    0.09 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.46 | Best in Pool:    0.48 | Std Dev:0.17
+  > New stable model added to pool at rank 6 with score 0.46
+Ep:0070 | Env Reward:   -0.25 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.52 | Best in Pool:    0.48 | Std Dev:0.05
+  > New stable model added to pool at rank 7 with score 0.52
+Ep:0080 | Env Reward:    0.05 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.59 | Best in Pool:    0.52 | Std Dev:0.09
+  > New stable model added to pool at rank 8 with score 0.59
+Ep:0090 | Env Reward:   -0.32 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.48 | Best in Pool:    0.59 | Std Dev:0.10
+  > New stable model added to pool at rank 9 with score 0.48
+Ep:0100 | Env Reward:    0.14 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.70 | Best in Pool:    0.59 | Std Dev:0.11
+  > New stable model added to pool at rank 10 with score 0.70
+Ep:0110 | Env Reward:    0.10 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.67 | Best in Pool:    0.70 | Std Dev:0.06
+  > New stable model added to pool at rank 4 with score 0.67
+Ep:0120 | Env Reward:    0.12 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.60 | Best in Pool:    0.70 | Std Dev:0.17
+  > New stable model added to pool at rank 2 with score 0.60
+Ep:0130 | Env Reward:    0.12 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.72 | Best in Pool:    0.70 | Std Dev:0.17
+  > New stable model added to pool at rank 3 with score 0.72
+Ep:0140 | Env Reward:    0.18 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.82 | Best in Pool:    0.72 | Std Dev:0.02
+  > New stable model added to pool at rank 5 with score 0.82
+Ep:0150 | Env Reward:    0.13 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.73 | Best in Pool:    0.82 | Std Dev:0.14
+  > New stable model added to pool at rank 6 with score 0.73
+Ep:0160 | Env Reward:    0.24 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.80 | Best in Pool:    0.82 | Std Dev:0.11
+  > New stable model added to pool at rank 9 with score 0.80
+Ep:0170 | Env Reward:    1.17 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.81 | Best in Pool:    0.82 | Std Dev:0.18
+  > New stable model added to pool at rank 1 with score 0.81
+Ep:0180 | Env Reward:    0.42 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.84 | Best in Pool:    0.82 | Std Dev:0.03
+  > New stable model added to pool at rank 7 with score 0.84
+Ep:0190 | Env Reward:    0.35 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.89 | Best in Pool:    0.84 | Std Dev:0.12
+  > New stable model added to pool at rank 8 with score 0.89
+Ep:0200 | Env Reward:    0.31 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.89 | Best in Pool:    0.89 | Std Dev:0.07
+  > New stable model added to pool at rank 2 with score 0.89
+Ep:0210 | Env Reward:    0.32 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.84 | Best in Pool:    0.89 | Std Dev:0.19
+  > New stable model added to pool at rank 4 with score 0.84
+Ep:0220 | Env Reward:    0.22 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.92 | Best in Pool:    0.89 | Std Dev:0.08
+  > New stable model added to pool at rank 10 with score 0.92
+Ep:0230 | Env Reward:    0.61 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.86 | Best in Pool:    0.92 | Std Dev:0.06
+  > New stable model added to pool at rank 3 with score 0.86
+Ep:0240 | Env Reward:    0.19 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.96 | Best in Pool:    0.92 | Std Dev:0.08
+  > New stable model added to pool at rank 6 with score 0.96
+Ep:0250 | Env Reward:    0.79 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.75 | Best in Pool:    0.96 | Std Dev:0.14
+Ep:0260 | Env Reward:    0.32 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.74 | Best in Pool:    0.96 | Std Dev:0.08
+Ep:0270 | Env Reward:    0.22 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    0.93 | Best in Pool:    0.96 | Std Dev:0.03
+  > New stable model added to pool at rank 9 with score 0.93
+Ep:0280 | Env Reward:    0.59 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.04 | Best in Pool:    0.96 | Std Dev:0.10
+  > New stable model added to pool at rank 1 with score 1.04
+Ep:0290 | Env Reward:    0.87 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.04 | Best in Pool:    1.04 | Std Dev:0.11
+  > New stable model added to pool at rank 5 with score 1.04
+Ep:0300 | Env Reward:    0.80 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.03 | Best in Pool:    1.04 | Std Dev:0.29
+  > New stable model added to pool at rank 7 with score 1.03
+Ep:0310 | Env Reward:    0.63 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.10 | Best in Pool:    1.04 | Std Dev:0.22
+  > New stable model added to pool at rank 4 with score 1.10
+Ep:0320 | Env Reward:    0.60 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.13 | Best in Pool:    1.10 | Std Dev:0.28
+  > New stable model added to pool at rank 3 with score 1.13
+Ep:0330 | Env Reward:    0.89 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.13 | Best in Pool:    1.13 | Std Dev:0.14
+  > New stable model added to pool at rank 8 with score 1.13
+Ep:0340 | Env Reward:    0.25 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.05 | Best in Pool:    1.13 | Std Dev:0.10
+  > New stable model added to pool at rank 2 with score 1.05
+Ep:0350 | Env Reward:    0.77 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.30 | Best in Pool:    1.13 | Std Dev:0.10
+  > New stable model added to pool at rank 10 with score 1.30
+Ep:0360 | Env Reward:    0.36 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.40 | Best in Pool:    1.30 | Std Dev:0.19
+  > New stable model added to pool at rank 9 with score 1.40
+Ep:0370 | Env Reward:    0.49 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.20 | Best in Pool:    1.40 | Std Dev:0.23
+  > New stable model added to pool at rank 6 with score 1.20
+Ep:0380 | Env Reward:    1.13 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.29 | Best in Pool:    1.40 | Std Dev:0.24
+  > New stable model added to pool at rank 7 with score 1.29
+Ep:0390 | Env Reward:    0.75 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.29 | Best in Pool:    1.40 | Std Dev:0.29
+  > New stable model added to pool at rank 5 with score 1.29
+Ep:0400 | Env Reward:    0.98 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.17 | Best in Pool:    1.40 | Std Dev:0.37
+  > New stable model added to pool at rank 1 with score 1.17
+Ep:0410 | Env Reward:    0.81 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.11 | Best in Pool:    1.40 | Std Dev:0.23
+  > New stable model added to pool at rank 2 with score 1.11
+Ep:0420 | Env Reward:    0.86 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.26 | Best in Pool:    1.40 | Std Dev:0.26
+  > New stable model added to pool at rank 4 with score 1.26
+Ep:0430 | Env Reward:    0.38 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.14 | Best in Pool:    1.40 | Std Dev:0.32
+  > New stable model added to pool at rank 2 with score 1.14
+Ep:0440 | Env Reward:    0.26 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.49 | Best in Pool:    1.40 | Std Dev:0.28
+  > New stable model added to pool at rank 8 with score 1.49
+Ep:0450 | Env Reward:    0.80 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.40 | Best in Pool:    1.49 | Std Dev:0.29
+  > New stable model added to pool at rank 3 with score 1.40
+Ep:0460 | Env Reward:    0.60 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.41 | Best in Pool:    1.49 | Std Dev:0.37
+  > New stable model added to pool at rank 2 with score 1.41
+Ep:0470 | Env Reward:    0.29 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.42 | Best in Pool:    1.49 | Std Dev:0.37
+  > New stable model added to pool at rank 1 with score 1.42
+Ep:0480 | Env Reward:    0.22 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.52 | Best in Pool:    1.49 | Std Dev:0.32
+  > New stable model added to pool at rank 6 with score 1.52
+Ep:0490 | Env Reward:    1.08 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.51 | Best in Pool:    1.52 | Std Dev:0.37
+  > New stable model added to pool at rank 4 with score 1.51
+Ep:0500 | Env Reward:    0.64 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.35 | Best in Pool:    1.52 | Std Dev:0.37
+  > New stable model added to pool at rank 7 with score 1.35
+Ep:0510 | Env Reward:    1.27 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.40 | Best in Pool:    1.52 | Std Dev:0.47
+  > New stable model added to pool at rank 5 with score 1.40
+Ep:0520 | Env Reward:    1.05 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.72 | Best in Pool:    1.52 | Std Dev:0.33
+  > New stable model added to pool at rank 10 with score 1.72
+Ep:0530 | Env Reward:    0.45 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.25 | Best in Pool:    1.72 | Std Dev:0.45
+Ep:0540 | Env Reward:    0.66 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.45 | Best in Pool:    1.72 | Std Dev:0.44
+  > New stable model added to pool at rank 7 with score 1.45
+Ep:0550 | Env Reward:    1.58 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.69 | Best in Pool:    1.72 | Std Dev:0.43
+  > New stable model added to pool at rank 5 with score 1.69
+Ep:0560 | Env Reward:    1.60 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.74 | Best in Pool:    1.72 | Std Dev:0.43
+  > New stable model added to pool at rank 9 with score 1.74
+Ep:0570 | Env Reward:    1.69 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.72 | Best in Pool:    1.74 | Std Dev:0.38
+  > New stable model added to pool at rank 3 with score 1.72
+Ep:0580 | Env Reward:    0.67 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.71 | Best in Pool:    1.74 | Std Dev:0.38
+  > New stable model added to pool at rank 2 with score 1.71
+Ep:0590 | Env Reward:    0.30 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.37 | Best in Pool:    1.74 | Std Dev:0.43
+Ep:0600 | Env Reward:    0.59 | Predictive Span (σ): 00/50
+  > Eval Avg Score:    1.86 | Best in Pool:    1.74 | Std Dev:0.30
+  > New stable model added to pool at rank 1 with score 1.86
+Ep:0610 | Env Reward:    0.82 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.92 | Best in Pool:    1.86 | Std Dev:0.37
+  > New stable model added to pool at rank 7 with score 1.92
+Ep:0620 | Env Reward:    0.72 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.82 | Best in Pool:    1.92 | Std Dev:0.44
+  > New stable model added to pool at rank 8 with score 1.82
+Ep:0630 | Env Reward:    1.25 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.40 | Best in Pool:    1.92 | Std Dev:0.30
+Ep:0640 | Env Reward:    0.93 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.20 | Best in Pool:    1.92 | Std Dev:0.39
+  > New stable model added to pool at rank 4 with score 2.20
+Ep:0650 | Env Reward:    0.64 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.03 | Best in Pool:    2.20 | Std Dev:0.56
+  > New stable model added to pool at rank 6 with score 2.03
+Ep:0660 | Env Reward:    0.77 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.13 | Best in Pool:    2.20 | Std Dev:0.48
+  > New stable model added to pool at rank 5 with score 2.13
+Ep:0670 | Env Reward:    0.24 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.66 | Best in Pool:    2.20 | Std Dev:0.58
+Ep:0680 | Env Reward:    1.88 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.45 | Best in Pool:    2.20 | Std Dev:0.11
+  > New stable model added to pool at rank 2 with score 2.45
+Ep:0690 | Env Reward:    0.82 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.57 | Best in Pool:    2.45 | Std Dev:0.12
+  > New stable model added to pool at rank 3 with score 2.57
+Ep:0700 | Env Reward:    0.69 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.37 | Best in Pool:    2.57 | Std Dev:0.04
+  > New stable model added to pool at rank 10 with score 2.37
+Ep:0710 | Env Reward:    1.34 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.22 | Best in Pool:    2.57 | Std Dev:0.49
+  > New stable model added to pool at rank 9 with score 2.22
+Ep:0720 | Env Reward:    1.83 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.73 | Best in Pool:    2.57 | Std Dev:0.08
+  > New stable model added to pool at rank 8 with score 2.73
+Ep:0730 | Env Reward:    1.97 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.59 | Best in Pool:    2.73 | Std Dev:0.11
+  > New stable model added to pool at rank 1 with score 2.59
+Ep:0740 | Env Reward:    2.16 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.47 | Best in Pool:    2.73 | Std Dev:0.05
+  > New stable model added to pool at rank 7 with score 2.47
+Ep:0750 | Env Reward:    2.22 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.28 | Best in Pool:    2.73 | Std Dev:0.46
+  > New stable model added to pool at rank 6 with score 2.28
+Ep:0760 | Env Reward:    2.19 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.72 | Best in Pool:    2.73 | Std Dev:0.08
+  > New stable model added to pool at rank 5 with score 2.72
+Ep:0770 | Env Reward:    2.21 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.30 | Best in Pool:    2.73 | Std Dev:0.58
+  > New stable model added to pool at rank 4 with score 2.30
+Ep:0780 | Env Reward:    2.24 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.38 | Best in Pool:    2.73 | Std Dev:0.34
+  > New stable model added to pool at rank 9 with score 2.38
+Ep:0790 | Env Reward:    1.95 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    1.83 | Best in Pool:    2.73 | Std Dev:1.00
+  > Performance below threshold. Bad cycles: 1/10
+Ep:0800 | Env Reward:    2.12 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.48 | Best in Pool:    2.73 | Std Dev:0.42
+  > New stable model added to pool at rank 6 with score 2.48
+Ep:0810 | Env Reward:    2.61 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.57 | Best in Pool:    2.73 | Std Dev:0.43
+  > New stable model added to pool at rank 4 with score 2.57
+Ep:0820 | Env Reward:    2.20 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.80 | Best in Pool:    2.73 | Std Dev:0.10
+  > New stable model added to pool at rank 10 with score 2.80
+Ep:0830 | Env Reward:    2.18 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.67 | Best in Pool:    2.80 | Std Dev:0.40
+  > New stable model added to pool at rank 9 with score 2.67
+Ep:0840 | Env Reward:    0.57 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.74 | Best in Pool:    2.80 | Std Dev:0.20
+  > New stable model added to pool at rank 2 with score 2.74
+Ep:0850 | Env Reward:    1.00 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.50 | Best in Pool:    2.80 | Std Dev:0.50
+  > New stable model added to pool at rank 7 with score 2.50
+Ep:0860 | Env Reward:    2.26 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.10 | Best in Pool:    2.80 | Std Dev:0.03
+  > New stable model added to pool at rank 6 with score 3.10
+Ep:0870 | Env Reward:    2.54 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.80 | Best in Pool:    3.10 | Std Dev:0.35
+  > New stable model added to pool at rank 7 with score 2.80
+Ep:0880 | Env Reward:    2.46 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.90 | Best in Pool:    3.10 | Std Dev:0.11
+  > New stable model added to pool at rank 3 with score 2.90
+Ep:0890 | Env Reward:    1.11 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.64 | Best in Pool:    3.10 | Std Dev:0.58
+  > New stable model added to pool at rank 4 with score 2.64
+Ep:0900 | Env Reward:    2.61 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.91 | Best in Pool:    3.10 | Std Dev:0.23
+  > New stable model added to pool at rank 1 with score 2.91
+Ep:0910 | Env Reward:    1.78 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.06 | Best in Pool:    3.10 | Std Dev:0.10
+  > New stable model added to pool at rank 4 with score 3.06
+Ep:0920 | Env Reward:    2.29 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.12 | Best in Pool:    3.10 | Std Dev:0.94
+  > Performance below threshold. Bad cycles: 1/10
+Ep:0930 | Env Reward:    1.05 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.58 | Best in Pool:    3.10 | Std Dev:0.69
+Ep:0940 | Env Reward:    2.47 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.01 | Best in Pool:    3.10 | Std Dev:0.07
+  > New stable model added to pool at rank 9 with score 3.01
+Ep:0950 | Env Reward:    2.54 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.06 | Best in Pool:    3.10 | Std Dev:0.08
+  > New stable model added to pool at rank 5 with score 3.06
+Ep:0960 | Env Reward:    2.57 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.06 | Best in Pool:    3.10 | Std Dev:0.07
+  > New stable model added to pool at rank 8 with score 3.06
+Ep:0970 | Env Reward:    2.61 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.77 | Best in Pool:    3.10 | Std Dev:0.79
+  > New stable model added to pool at rank 2 with score 2.77
+Ep:0980 | Env Reward:    2.40 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.04 | Best in Pool:    3.10 | Std Dev:0.18
+  > New stable model added to pool at rank 2 with score 3.04
+Ep:0990 | Env Reward:    1.05 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.05 | Best in Pool:    3.10 | Std Dev:0.11
+  > New stable model added to pool at rank 7 with score 3.05
+Ep:1000 | Env Reward:    2.63 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.18 | Best in Pool:    3.10 | Std Dev:0.06
+  > New stable model added to pool at rank 10 with score 3.18
+Ep:1010 | Env Reward:    0.34 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.09 | Best in Pool:    3.18 | Std Dev:0.94
+  > Performance below threshold. Bad cycles: 1/10
+Ep:1020 | Env Reward:    2.85 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.70 | Best in Pool:    3.18 | Std Dev:0.90
+Ep:1030 | Env Reward:    2.70 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.89 | Best in Pool:    3.18 | Std Dev:0.36
+Ep:1040 | Env Reward:    2.82 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.09 | Best in Pool:    3.18 | Std Dev:0.08
+  > New stable model added to pool at rank 3 with score 3.09
+Ep:1050 | Env Reward:    2.86 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.30 | Best in Pool:    3.18 | Std Dev:0.11
+  > New stable model added to pool at rank 1 with score 3.30
+Ep:1060 | Env Reward:    3.26 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.50 | Best in Pool:    3.30 | Std Dev:0.07
+  > New stable model added to pool at rank 9 with score 3.50
+Ep:1070 | Env Reward:    2.67 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.66 | Best in Pool:    3.50 | Std Dev:0.52
+Ep:1080 | Env Reward:    3.12 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.18 | Best in Pool:    3.50 | Std Dev:0.41
+  > New stable model added to pool at rank 2 with score 3.18
+Ep:1090 | Env Reward:    2.70 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.35 | Best in Pool:    3.50 | Std Dev:0.09
+  > New stable model added to pool at rank 7 with score 3.35
+Ep:1100 | Env Reward:    2.81 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.66 | Best in Pool:    3.50 | Std Dev:0.74
+Ep:1110 | Env Reward:    2.91 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.30 | Best in Pool:    3.50 | Std Dev:0.08
+  > New stable model added to pool at rank 5 with score 3.30
+Ep:1120 | Env Reward:    2.80 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.07 | Best in Pool:    3.50 | Std Dev:0.55
+  > New stable model added to pool at rank 8 with score 3.07
+Ep:1130 | Env Reward:    0.42 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.13 | Best in Pool:    3.50 | Std Dev:0.26
+  > New stable model added to pool at rank 4 with score 3.13
+Ep:1140 | Env Reward:    3.28 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.55 | Best in Pool:    3.50 | Std Dev:0.10
+  > New stable model added to pool at rank 8 with score 3.55
+Ep:1150 | Env Reward:    2.94 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.71 | Best in Pool:    3.55 | Std Dev:0.06
+  > New stable model added to pool at rank 3 with score 3.71
+Ep:1160 | Env Reward:    2.68 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.49 | Best in Pool:    3.71 | Std Dev:0.13
+  > New stable model added to pool at rank 6 with score 3.49
+Ep:1170 | Env Reward:    2.55 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.42 | Best in Pool:    3.71 | Std Dev:0.09
+  > New stable model added to pool at rank 4 with score 3.42
+Ep:1180 | Env Reward:    3.01 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.54 | Best in Pool:    3.71 | Std Dev:0.14
+  > New stable model added to pool at rank 2 with score 3.54
+Ep:1190 | Env Reward:    0.74 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.39 | Best in Pool:    3.71 | Std Dev:0.06
+  > New stable model added to pool at rank 10 with score 3.39
+Ep:1200 | Env Reward:    2.82 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.19 | Best in Pool:    3.71 | Std Dev:0.59
+Ep:1210 | Env Reward:    3.08 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.82 | Best in Pool:    3.71 | Std Dev:0.92
+Ep:1220 | Env Reward:    3.10 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.21 | Best in Pool:    3.71 | Std Dev:0.32
+Ep:1230 | Env Reward:    2.61 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.40 | Best in Pool:    3.71 | Std Dev:0.31
+  > New stable model added to pool at rank 1 with score 3.40
+Ep:1240 | Env Reward:    3.11 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.59 | Best in Pool:    3.71 | Std Dev:0.26
+  > New stable model added to pool at rank 5 with score 3.59
+Ep:1250 | Env Reward:    3.02 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.59 | Best in Pool:    3.71 | Std Dev:0.10
+  > New stable model added to pool at rank 7 with score 3.59
+Ep:1260 | Env Reward:    3.06 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.22 | Best in Pool:    3.71 | Std Dev:0.75
+  > Performance below threshold. Bad cycles: 1/10
+Ep:1270 | Env Reward:    3.05 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.63 | Best in Pool:    3.71 | Std Dev:0.13
+  > New stable model added to pool at rank 10 with score 3.63
+Ep:1280 | Env Reward:    3.18 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.17 | Best in Pool:    3.71 | Std Dev:0.52
+Ep:1290 | Env Reward:    1.05 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.26 | Best in Pool:    3.71 | Std Dev:0.65
+Ep:1300 | Env Reward:    3.22 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.19 | Best in Pool:    3.71 | Std Dev:1.02
+Ep:1310 | Env Reward:    3.23 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.71 | Best in Pool:    3.71 | Std Dev:0.09
+  > New stable model added to pool at rank 1 with score 3.71
+Ep:1320 | Env Reward:    3.05 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.03 | Best in Pool:    3.71 | Std Dev:0.83
+Ep:1330 | Env Reward:    3.27 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.20 | Best in Pool:    3.71 | Std Dev:0.86
+Ep:1340 | Env Reward:    2.92 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.64 | Best in Pool:    3.71 | Std Dev:0.13
+  > New stable model added to pool at rank 4 with score 3.64
+Ep:1350 | Env Reward:    3.02 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.57 | Best in Pool:    3.71 | Std Dev:0.09
+  > New stable model added to pool at rank 6 with score 3.57
+Ep:1360 | Env Reward:    2.97 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.61 | Best in Pool:    3.71 | Std Dev:0.19
+  > New stable model added to pool at rank 9 with score 3.61
+Ep:1370 | Env Reward:    3.21 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.06 | Best in Pool:    3.71 | Std Dev:0.48
+Ep:1380 | Env Reward:    3.10 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.58 | Best in Pool:    3.71 | Std Dev:0.38
+  > New stable model added to pool at rank 2 with score 3.58
+Ep:1390 | Env Reward:    3.24 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.68 | Best in Pool:    3.71 | Std Dev:0.21
+  > New stable model added to pool at rank 8 with score 3.68
+Ep:1400 | Env Reward:    3.56 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.31 | Best in Pool:    3.71 | Std Dev:0.86
+Ep:1410 | Env Reward:    3.39 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    2.87 | Best in Pool:    3.71 | Std Dev:1.09
+Ep:1420 | Env Reward:    3.42 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.67 | Best in Pool:    3.71 | Std Dev:0.22
+  > New stable model added to pool at rank 6 with score 3.67
+Ep:1430 | Env Reward:    3.41 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.88 | Best in Pool:    3.71 | Std Dev:0.10
+  > New stable model added to pool at rank 2 with score 3.88
+Ep:1440 | Env Reward:    2.98 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.73 | Best in Pool:    3.88 | Std Dev:0.11
+  > New stable model added to pool at rank 5 with score 3.73
+Ep:1450 | Env Reward:    1.19 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.74 | Best in Pool:    3.88 | Std Dev:0.23
+  > New stable model added to pool at rank 7 with score 3.74
+Ep:1460 | Env Reward:    3.19 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.19 | Best in Pool:    3.88 | Std Dev:0.80
+Ep:1470 | Env Reward:    3.31 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.85 | Best in Pool:    3.88 | Std Dev:0.14
+  > New stable model added to pool at rank 9 with score 3.85
+Ep:1480 | Env Reward:    3.42 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.52 | Best in Pool:    3.88 | Std Dev:0.67
+Ep:1490 | Env Reward:    3.39 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.65 | Best in Pool:    3.88 | Std Dev:0.69
+  > New stable model added to pool at rank 10 with score 3.65
+Ep:1500 | Env Reward:    3.43 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.81 | Best in Pool:    3.88 | Std Dev:0.09
+  > New stable model added to pool at rank 4 with score 3.81
+Ep:1510 | Env Reward:    3.00 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.68 | Best in Pool:    3.88 | Std Dev:0.10
+  > New stable model added to pool at rank 10 with score 3.68
+Ep:1520 | Env Reward:    3.16 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.12 | Best in Pool:    3.88 | Std Dev:0.12
+  > New stable model added to pool at rank 6 with score 4.12
+Ep:1530 | Env Reward:    3.12 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.99 | Best in Pool:    4.12 | Std Dev:0.11
+  > New stable model added to pool at rank 10 with score 3.99
+Ep:1540 | Env Reward:    3.45 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.55 | Best in Pool:    4.12 | Std Dev:0.66
+Ep:1550 | Env Reward:    3.42 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.36 | Best in Pool:    4.12 | Std Dev:0.82
+Ep:1560 | Env Reward:    2.74 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.98 | Best in Pool:    4.12 | Std Dev:0.13
+  > New stable model added to pool at rank 8 with score 3.98
+Ep:1570 | Env Reward:    3.53 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.24 | Best in Pool:    4.12 | Std Dev:0.19
+  > New stable model added to pool at rank 3 with score 4.24
+Ep:1580 | Env Reward:    3.10 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.88 | Best in Pool:    4.24 | Std Dev:0.20
+  > New stable model added to pool at rank 1 with score 3.88
+Ep:1590 | Env Reward:    1.96 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.12 | Best in Pool:    4.24 | Std Dev:0.18
+  > New stable model added to pool at rank 5 with score 4.12
+Ep:1600 | Env Reward:    3.40 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.01 | Best in Pool:    4.24 | Std Dev:0.23
+  > New stable model added to pool at rank 7 with score 4.01
+Ep:1610 | Env Reward:    3.80 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.77 | Best in Pool:    4.24 | Std Dev:0.78
+Ep:1620 | Env Reward:    3.59 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.60 | Best in Pool:    4.24 | Std Dev:1.00
+Ep:1630 | Env Reward:    3.37 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.73 | Best in Pool:    4.24 | Std Dev:0.65
+Ep:1640 | Env Reward:    3.61 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.00 | Best in Pool:    4.24 | Std Dev:0.14
+  > New stable model added to pool at rank 4 with score 4.00
+Ep:1650 | Env Reward:    3.48 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.98 | Best in Pool:    4.24 | Std Dev:0.16
+  > New stable model added to pool at rank 9 with score 3.98
+Ep:1660 | Env Reward:    3.84 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.55 | Best in Pool:    4.24 | Std Dev:0.87
+Ep:1670 | Env Reward:    2.47 | Predictive Span (σ): 00/50
+  > Eval Avg Score:    4.08 | Best in Pool:    4.24 | Std Dev:0.15
+  > New stable model added to pool at rank 1 with score 4.08
+Ep:1680 | Env Reward:    3.82 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.23 | Best in Pool:    4.24 | Std Dev:0.12
+  > New stable model added to pool at rank 2 with score 4.23
+Ep:1690 | Env Reward:    3.47 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.18 | Best in Pool:    4.24 | Std Dev:0.32
+  > New stable model added to pool at rank 9 with score 4.18
+Ep:1700 | Env Reward:    3.49 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.40 | Best in Pool:    4.24 | Std Dev:0.16
+  > New stable model added to pool at rank 8 with score 4.40
+Ep:1710 | Env Reward:    3.97 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.23 | Best in Pool:    4.40 | Std Dev:0.15
+  > New stable model added to pool at rank 10 with score 4.23
+Ep:1720 | Env Reward:    3.90 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.26 | Best in Pool:    4.40 | Std Dev:0.15
+  > New stable model added to pool at rank 4 with score 4.26
+Ep:1730 | Env Reward:    1.45 | Predictive Span (σ): 49/50
+  > Eval Avg Score:    4.39 | Best in Pool:    4.40 | Std Dev:0.11
+  > New stable model added to pool at rank 7 with score 4.39
+Ep:1740 | Env Reward:    3.74 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.17 | Best in Pool:    4.40 | Std Dev:0.22
+  > New stable model added to pool at rank 1 with score 4.17
+Ep:1750 | Env Reward:    3.74 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.30 | Best in Pool:    4.40 | Std Dev:0.14
+  > New stable model added to pool at rank 6 with score 4.30
+Ep:1760 | Env Reward:    3.68 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.27 | Best in Pool:    4.40 | Std Dev:0.10
+  > New stable model added to pool at rank 5 with score 4.27
+Ep:1770 | Env Reward:    3.78 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.34 | Best in Pool:    4.40 | Std Dev:0.19
+  > New stable model added to pool at rank 1 with score 4.34
+Ep:1780 | Env Reward:    3.90 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.52 | Best in Pool:    4.40 | Std Dev:0.11
+  > New stable model added to pool at rank 9 with score 4.52
+Ep:1790 | Env Reward:    3.59 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.31 | Best in Pool:    4.52 | Std Dev:0.13
+  > New stable model added to pool at rank 2 with score 4.31
+Ep:1800 | Env Reward:    3.66 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.49 | Best in Pool:    4.52 | Std Dev:0.17
+  > New stable model added to pool at rank 10 with score 4.49
+Ep:1810 | Env Reward:    4.16 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.21 | Best in Pool:    4.52 | Std Dev:0.18
+Ep:1820 | Env Reward:    3.76 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.53 | Best in Pool:    4.52 | Std Dev:0.21
+  > New stable model added to pool at rank 3 with score 4.53
+Ep:1830 | Env Reward:    4.17 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.38 | Best in Pool:    4.53 | Std Dev:0.15
+  > New stable model added to pool at rank 4 with score 4.38
+Ep:1840 | Env Reward:    3.93 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.53 | Best in Pool:    4.53 | Std Dev:0.10
+  > New stable model added to pool at rank 5 with score 4.53
+Ep:1850 | Env Reward:    3.77 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.55 | Best in Pool:    4.53 | Std Dev:0.12
+  > New stable model added to pool at rank 6 with score 4.55
+Ep:1860 | Env Reward:    3.54 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.31 | Best in Pool:    4.55 | Std Dev:0.31
+  > New stable model added to pool at rank 2 with score 4.31
+Ep:1870 | Env Reward:    3.64 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.53 | Best in Pool:    4.55 | Std Dev:0.11
+  > New stable model added to pool at rank 2 with score 4.53
+Ep:1880 | Env Reward:    4.08 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    3.95 | Best in Pool:    4.55 | Std Dev:0.72
+Ep:1890 | Env Reward:    3.49 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.37 | Best in Pool:    4.55 | Std Dev:0.07
+  > New stable model added to pool at rank 1 with score 4.37
+Ep:1900 | Env Reward:    3.90 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.41 | Best in Pool:    4.55 | Std Dev:0.04
+  > New stable model added to pool at rank 1 with score 4.41
+Ep:1910 | Env Reward:    3.89 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.54 | Best in Pool:    4.55 | Std Dev:0.14
+  > New stable model added to pool at rank 4 with score 4.54
+Ep:1920 | Env Reward:    1.68 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.64 | Best in Pool:    4.55 | Std Dev:0.13
+  > New stable model added to pool at rank 7 with score 4.64
+Ep:1930 | Env Reward:    4.35 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.57 | Best in Pool:    4.64 | Std Dev:0.16
+  > New stable model added to pool at rank 8 with score 4.57
+Ep:1940 | Env Reward:    3.66 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.53 | Best in Pool:    4.64 | Std Dev:0.14
+  > New stable model added to pool at rank 1 with score 4.53
+Ep:1950 | Env Reward:    4.17 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.48 | Best in Pool:    4.64 | Std Dev:0.08
+Ep:1960 | Env Reward:    4.10 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.65 | Best in Pool:    4.64 | Std Dev:0.17
+  > New stable model added to pool at rank 10 with score 4.65
+Ep:1970 | Env Reward:    3.73 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.40 | Best in Pool:    4.65 | Std Dev:0.16
+Ep:1980 | Env Reward:    4.02 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.72 | Best in Pool:    4.65 | Std Dev:0.14
+  > New stable model added to pool at rank 9 with score 4.72
+Ep:1990 | Env Reward:    3.87 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.10 | Best in Pool:    4.72 | Std Dev:0.80
+Ep:2000 | Env Reward:    3.93 | Predictive Span (σ): 50/50
+  > Eval Avg Score:    4.53 | Best in Pool:    4.72 | Std Dev:0.14
+  > New stable model added to pool at rank 2 with score 4.53
+
+Training finished in 26520.00s.

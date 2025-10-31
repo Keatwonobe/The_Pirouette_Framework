@@ -1,0 +1,1 @@
+The inaugural event is not an explosion but a **curl**—a subtle skew in perfect stillness.  This curvature births **Γ (Gladiator Force)**—the pressure that resists dissolution—and moments later, **Tₐ (Time‑Adherence)**, the habit of persisting along a chosen thread.  Laws now have something to govern, art gains its first gesture, and philosophy gains “before” and “after.”

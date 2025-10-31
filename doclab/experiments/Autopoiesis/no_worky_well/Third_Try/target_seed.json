@@ -1,0 +1,13 @@
+{
+  "selected_nodes": [
+    {"pattern": "\\bΓ\\b", "label": "Gamma (Γ)", "axis": ["Law","Philosophy","Art"]},
+    {"pattern": "\\bK[_ ]?i\\b|\\bInformational Inertia\\b", "label": "Informational Inertia (K_i)", "axis": ["Law","Philosophy","Art"]},
+    {"pattern": "\\bT[_ ]?a\\b|\\bchronon\\b|\\bT[_ ]?c\\b", "label": "Chronon and Time Order (T_a, T_c)", "axis": ["Philosophy","Art","Law"]},
+    {"pattern": "\\bg-2\\b", "label": "Lepton g−2", "axis": ["Law"]},
+    {"pattern": "\\bEEG\\b|\\bphase[- ]locking\\b", "label": "EEG/Phase-Locking", "axis": ["Art","Law"]},
+    {"pattern": "\\bCasimir\\b", "label": "Casimir Tests", "axis": ["Law"]},
+    {"pattern": "\\bDark Residue\\b|\\bgovernance\\b", "label": "Dark Residue & Governance", "axis": ["Philosophy","Law"]}
+  ],
+  "style": "formal, precise, restrained poetic gravitas; define symbols; minimal external anchors; debate resonance micro-section",
+  "vessel_map": "section_map.json"
+}

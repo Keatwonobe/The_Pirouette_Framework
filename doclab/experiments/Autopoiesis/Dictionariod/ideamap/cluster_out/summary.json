@@ -1,0 +1,10 @@
+{
+  "n_nodes": 1687,
+  "n_edges": 21052,
+  "n_clusters": 1,
+  "n_tips": 0,
+  "theta_deg": 90.0,
+  "r_z": 2.0,
+  "ext_thresh": 0.4,
+  "min_tip_percent": 0.02
+}

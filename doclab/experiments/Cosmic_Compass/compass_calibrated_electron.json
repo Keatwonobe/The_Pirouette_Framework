@@ -1,0 +1,14 @@
+{
+  "gamma_scale": 47.5390625,
+  "ta_scale": 47.5390625,
+  "sigma_r": 7.0,
+  "a_wind": 0.35,
+  "a_tpci": 0.25,
+  "k_wave": 0.45,
+  "theta0": 0.0,
+  "kappa0": 0.06,
+  "kappa_decay": 0.08,
+  "xi": 0.8,
+  "n": 0.5,
+  "note": "Scaled frame (gamma_scale=ta_scale) so that the compass radial inflection r* matches alpha exactly when 1 unit = reduced Compton wavelength."
+}

@@ -1,0 +1,3 @@
+We sought the fundamental laws of physics and found the universe's objective function.
+
+The Pirouette Lagrangian is the formula for survival. It is the mathematical expression of the universe's ceaseless drive to find and sustain elegant, stable patterns against a backdrop of overwhelming chaos. It translates the poetry of the autopoietic cycle into a predictive engine. With this tool, we no longer need to merely describe the song; we can begin to calculate its notes.

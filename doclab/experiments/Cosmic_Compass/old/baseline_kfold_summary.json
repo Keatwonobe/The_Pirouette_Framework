@@ -1,0 +1,21 @@
+{
+  "names": [
+    "alpha",
+    "mp_me",
+    "alpha_s",
+    "alpha_w",
+    "sin2_thetaW"
+  ],
+  "K": 5,
+  "rmse_log": 1.4433544905715194,
+  "mae_log": 1.0716749744482743,
+  "spec": {
+    "k0": 0.08,
+    "k1": null,
+    "interact": true,
+    "ridge": 0.0001,
+    "r_nudge": 0.95,
+    "theta_sweep_deg": 16
+  },
+  "n_constants": 5
+}

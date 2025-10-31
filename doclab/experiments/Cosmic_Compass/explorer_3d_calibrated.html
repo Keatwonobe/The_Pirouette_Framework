@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Compass Explorer (Electron Calibrated)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+            color: #f3f4f6; /* text-gray-200 */
+            overflow: hidden; /* Prevent scrollbars from popping up */
+        }
+        #info-panel {
+            scrollbar-width: thin;
+            scrollbar-color: #4b5563 #1f2937;
+        }
+        #info-panel::-webkit-scrollbar {
+            width: 8px;
+        }
+        #info-panel::-webkit-scrollbar-track {
+            background: #1f2937;
+        }
+        #info-panel::-webkit-scrollbar-thumb {
+            background-color: #4b5563;
+            border-radius: 4px;
+        }
+        input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 4px;
+            background: #4b5563;
+            border-radius: 2px;
+            outline: none;
+            transition: background 0.3s;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            background: #e5e7eb;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid #374151;
+        }
+        input[type="range"]::-moz-range-thumb {
+            width: 16px;
+            height: 16px;
+            background: #e5e7eb;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid #374151;
+        }
+        /* Mobile menu button */
+        #menu-toggle {
+            display: block; /* Hidden by default on md and up */
+        }
+        @media (min-width: 768px) { /* md breakpoint */
+            #menu-toggle {
+                display: none;
+            }
+            #info-panel {
+                transform: translateX(0);
+            }
+        }
+    </style>
+    <!-- Import three.js and OrbitControls -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body class="m-0 p-0">
+    <!-- Main 3D Canvas Container -->
+    <div id="canvas-container" class="absolute top-0 left-0 w-full h-full"></div>
+
+    <!-- Info Panel (Controls) -->
+    <div id="info-panel" class_="absolute top-0 left-0 h-full w-80 max-w-[90vw] bg-gray-800 bg-opacity-80 backdrop-blur-sm shadow-lg p-6 overflow-y-auto transition-transform duration-300 ease-in-out z-20 md:translate-x-0 -translate-x-full">
+        <div class="flex justify-between items-center mb-4">
+            <h1 class="text-2xl font-bold text-white">Cosmic Compass</h1>
+            <button id="menu-close" class="md:hidden text-gray-300 hover:text-white">&times;</button>
+        </div>
+        <p class="text-sm text-gray-300 mb-2">
+            Calibrated to Electron Locus.
+        </p>
+        <p class="text-xs text-gray-400 mb-6">
+            Note: Scaled so r* matches alpha.
+        </p>
+
+        <div id="controls-container" class="space-y-4">
+            <!-- Controls will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button id="menu-toggle" class="absolute top-4 left-4 z-10 p-2 bg-gray-800 bg-opacity-70 rounded-md text-white md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
+
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        let scene, camera, renderer, mesh, controls;
+        let container = document.getElementById('canvas-container');
+
+        // --- CALIBRATED PARAMETERS ---
+        // Updated defaults from compass_calibrated_electron.json
+        const params = {
+            gamma_scale: 47.5390625,
+            ta_scale: 47.5390625,
+            sigma_r: 7.0,
+            a_wind: 0.35,
+            a_tpci: 0.25,
+            k_wave: 0.45,
+            theta0: 0.0,
+            kappa0: 0.06,
+            kappa_decay: 0.08,
+            xi: 0.8,
+            n_wind: 0.5, // Mapped from "n" in JSON
+            extent: 14.0,
+            steps: 100 // Lowered steps for smoother interactive performance
+        };
+
+        // Slider configurations (min, max, step)
+        const controlConfig = {
+            gamma_scale: { min: 1, max: 60, step: 0.1 },
+            ta_scale: { min: 1, max: 60, step: 0.1 },
+            sigma_r: { min: 0.1, max: 15, step: 0.1 },
+            a_wind: { min: 0, max: 2, step: 0.01 },
+            a_tpci: { min: 0, max: 2, step: 0.01 },
+            k_wave: { min: 0, max: 2, step: 0.01 },
+            theta0: { min: -Math.PI, max: Math.PI, step: 0.01 },
+            kappa0: { min: -0.5, max: 0.5, step: 0.001 },
+            kappa_decay: { min: 0, max: 0.5, step: 0.001 },
+            xi: { min: 0, max: 2, step: 0.01 },
+            n_wind: { min: 0.0, max: 8.0, step: 0.125 }
+            // extent and steps are not user-adjustable via sliders
+        };
+
+        function init() {
+            // --- Scene Setup ---
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x111827); // bg-gray-900
+
+            // --- Camera Setup ---
+            camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
+            camera.position.set(10, 10, 10);
+            camera.lookAt(scene.position);
+
+            // --- Renderer Setup ---
+            renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setSize(container.clientWidth, container.clientHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            container.appendChild(renderer.domElement);
+
+            // --- Lighting ---
+            const ambientLight = new THREE.AmbientLight(0x404040, 2);
+            scene.add(ambientLight);
+            const directionalLight1 = new THREE.DirectionalLight(0xffffff, 1.5);
+            directionalLight1.position.set(1, 1, 1);
+            scene.add(directionalLight1);
+            const directionalLight2 = new THREE.DirectionalLight(0xffffff, 1.0);
+            directionalLight2.position.set(-1, -1, -1);
+            scene.add(directionalLight2);
+            
+            // --- Controls ---
+            controls = new OrbitControls(camera, renderer.domElement);
+            controls.enableDamping = true;
+            controls.dampingFactor = 0.05;
+
+            // --- Mobile Menu ---
+            const menuToggle = document.getElementById('menu-toggle');
+            const menuClose = document.getElementById('menu-close');
+            const infoPanel = document.getElementById('info-panel');
+            menuToggle.addEventListener('click', () => infoPanel.classList.remove('-translate-x-full'));
+            menuClose.addEventListener('click', () => infoPanel.classList.add('-translate-x-full'));
+
+            // --- Initial Surface and Controls ---
+            createSurface();
+            setupControls();
+            
+            // --- Animation Loop ---
+            function animate() {
+                requestAnimationFrame(animate);
+                controls.update();
+                renderer.render(scene, camera);
+            }
+            animate();
+
+            // --- Window Resize Handling ---
+            window.addEventListener('resize', onWindowResize, false);
+        }
+
+        // --- Surface Generation ---
+        
+        // This function group replicates the core logic from cosmic_compass_modern.py
+        
+        function polarize(G, T, ps) {
+            const R = Math.sqrt(Math.pow(G / ps.gamma_scale, 2) + Math.pow(T / ps.ta_scale, 2));
+            const Theta = Math.atan2(T / ps.ta_scale, G / ps.gamma_scale);
+            return { R, Theta };
+        }
+
+        function kappa_field(R, ps) {
+            return ps.kappa0 * Math.exp(-ps.kappa_decay * R);
+        }
+
+        function G_env(R, ps) {
+            return Math.exp(-Math.pow(R, 2) / (2 * Math.pow(ps.sigma_r, 2)));
+        }
+
+        function W_wind(Theta, n, ps) {
+            return Math.cos(2 * Math.PI * n * Theta / Math.PI);
+        }
+
+        function T_tpci(R, Theta, ps) {
+            const sinc_term = (R === 0) ? 1.0 : Math.sin(ps.k_wave * R / Math.PI) / (ps.k_wave * R / Math.PI);
+            return sinc_term * Math.cos(Theta - ps.theta0);
+        }
+
+        function compass_potential(G, T, n, ps) {
+            const { R, Theta } = polarize(G, T, ps);
+            const kap = kappa_field(R, ps);
+            const Theta_p = Theta + kap * ps.xi;
+            
+            const G_base = G_env(R, ps);
+            const W = W_wind(Theta_p, n, ps);
+            const T_p = T_tpci(R, Theta, ps); // Using original Theta for TPCI hint
+
+            const U = G_base * (1 + ps.a_wind * W + ps.a_tpci * T_p);
+            return { U, R, Theta, kap };
+        }
+        
+        // Main function to create and update the surface
+        function createSurface() {
+            if (mesh) {
+                scene.remove(mesh);
+                mesh.geometry.dispose();
+                mesh.material.dispose();
+            }
+
+            const e = params.extent;
+            const s = params.steps;
+            const geometry = new THREE.PlaneGeometry(e * 2, e * 2, s, s);
+            const vertices = geometry.attributes.position.array;
+            const colors = [];
+
+            const colorA = new THREE.Color(0x3b82f6); // blue-500
+            const colorB = new THREE.Color(0xec4899); // pink-500
+            const colorC = new THREE.Color(0x10b981); // emerald-500
+
+            let minU = Infinity, maxU = -Infinity;
+            const uValues = [];
+            
+            // First pass: calculate U values and find min/max for scaling
+            for (let i = 0, j = 0; i < vertices.length; i += 3, j++) {
+                const x = vertices[i];     // Gamma
+                const y = vertices[i + 1]; // Ta
+                
+                const { U, kap } = compass_potential(x, y, params.n_wind, params);
+                vertices[i + 2] = U; // z-coordinate
+                uValues.push({U, kap});
+                
+                if (U < minU) minU = U;
+                if (U > maxU) maxU = U;
+            }
+
+            // Normalize Z-height for better visualization
+            const rangeU = (maxU - minU) || 1;
+            const zScale = 4.0; // Visual scaling factor for height
+            
+            // Second pass: set normalized z and colors
+            for (let i = 0, j = 0; i < vertices.length; i += 3, j++) {
+                const { U, kap } = uValues[j];
+                const normalizedU = (U - minU) / rangeU;
+                vertices[i + 2] = normalizedU * zScale;
+                
+                // Color based on kappa (vortex) and height (U)
+                const color = colorA.clone().lerp(colorB, (kap - params.kappa0) / (params.kappa0 * 2.0 + 0.1));
+                color.lerp(colorC, normalizedU);
+                
+                colors.push(color.r, color.g, color.b);
+            }
+
+            geometry.attributes.position.needsUpdate = true;
+            geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+            geometry.computeVertexNormals();
+
+            const material = new THREE.MeshPhongMaterial({
+                vertexColors: true,
+                shininess: 80,
+                side: THREE.DoubleSide
+            });
+
+            mesh = new THREE.Mesh(geometry, material);
+            mesh.rotation.x = -Math.PI / 2; // Rotate to lie flat on XZ plane
+            scene.add(mesh);
+        }
+
+        // --- Dynamic Controls Setup ---
+        function setupControls() {
+            const controlsContainer = document.getElementById('controls-container');
+            controlsContainer.innerHTML = ''; // Clear existing controls
+
+            for (const [key, value] of Object.entries(params)) {
+                if (controlConfig[key]) {
+                    const config = controlConfig[key];
+                    const div = document.createElement('div');
+                    
+                    const label = document.createElement('label');
+                    label.htmlFor = key;
+                    label.className = "block text-sm font-medium text-gray-200 mb-1";
+                    label.textContent = `${key} `;
+                    
+                    const valueSpan = document.createElement('span');
+                    valueSpan.className = "text-xs text-gray-400";
+                    valueSpan.textContent = value.toFixed(3);
+                    label.appendChild(valueSpan);
+
+                    const input = document.createElement('input');
+                    input.type = 'range';
+                    input.id = key;
+                    input.min = config.min;
+                    input.max = config.max;
+                    input.step = config.step;
+                    input.value = value;
+                    input.className = "w-full";
+
+                    input.addEventListener('input', (e) => {
+                        params[key] = parseFloat(e.target.value);
+                        valueSpan.textContent = params[key].toFixed(3);
+                        // Debounce the surface creation for performance
+                        throttle(createSurface, 100);
+                    });
+
+                    div.appendChild(label);
+                    div.appendChild(input);
+                    controlsContainer.appendChild(div);
+                }
+            }
+        }
+        
+        // Simple throttle function to prevent lagging during slider drag
+        let throttleTimer;
+        function throttle(callback, time) {
+            if (throttleTimer) return;
+            throttleTimer = true;
+            setTimeout(() => {
+                callback();
+                throttleTimer = false;
+            }, time);
+        }
+
+        // --- Window Resize Handling ---
+        function onWindowResize() {
+            camera.aspect = container.clientWidth / container.clientHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(container.clientWidth, container.clientHeight);
+        }
+
+        init();
+    </script>
+</body>
+</html>

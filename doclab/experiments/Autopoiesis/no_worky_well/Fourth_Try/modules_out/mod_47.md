@@ -1,0 +1,1 @@
+The pre‑universe is often pictured as “nothing.” In Pirouette, we treat it as a **hollow cradle**—an arena already rich with unmet symmetry.  It is an *artistic still‑life*, perfect in composition yet aching for movement.  Legally, it is the baseline against which any later claim must prove legitimacy; philosophically, it is the question mark that demands an answer.

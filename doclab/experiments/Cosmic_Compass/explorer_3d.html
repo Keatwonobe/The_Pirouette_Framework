@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Compass Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+            color: #f3f4f6; /* text-gray-200 */
+            overflow: hidden; /* Prevent scrollbars from popping up */
+        }
+        #info-panel {
+            scrollbar-width: thin;
+            scrollbar-color: #4b5563 #1f2937;
+        }
+        #info-panel::-webkit-scrollbar {
+            width: 8px;
+        }
+        #info-panel::-webkit-scrollbar-track {
+            background: #1f2937;
+        }
+        #info-panel::-webkit-scrollbar-thumb {
+            background-color: #4b5563;
+            border-radius: 4px;
+        }
+        input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 4px;
+            background: #4b5563;
+            border-radius: 2px;
+            outline: none;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            background: #60a5fa; /* blue-400 */
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid #1f2937;
+        }
+        input[type="range"]::-moz-range-thumb {
+            width: 16px;
+            height: 16px;
+            background: #60a5fa;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid #1f2937;
+        }
+    </style>
+</head>
+<body class="m-0">
+    <div id="container" class="w-full h-screen"></div>
+
+    <div id="info-panel" class="absolute top-0 left-0 h-full w-full md:w-80 bg-gray-900 bg-opacity-80 backdrop-blur-sm p-4 overflow-y-auto transition-transform duration-300 -translate-x-full md:translate-x-0 rounded-r-lg shadow-2xl">
+        <h1 class="text-2xl font-bold text-blue-400 mb-1">Cosmic Compass</h1>
+        <p class="text-sm text-gray-400 mb-4">An interactive 3D potential surface explorer.</p>
+        
+        <div id="controls" class="space-y-4">
+            <!-- Controls will be injected here by JavaScript -->
+        </div>
+    </div>
+
+    <button id="toggle-panel" class="md:hidden fixed top-4 left-4 z-50 p-2 bg-blue-500 text-white rounded-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+    </button>
+    
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        // --- Basic Scene Setup ---
+        let scene, camera, renderer, controls, mesh;
+        let geometry;
+
+        const container = document.getElementById('container');
+
+        function init() {
+            scene = new THREE.Scene();
+            
+            // Use a dark blue fog for atmosphere
+            scene.fog = new THREE.Fog(0x0a0a2a, 10, 150);
+
+            camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
+            camera.position.set(12, 12, 12);
+
+            renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setSize(container.clientWidth, container.clientHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            renderer.setClearColor(0x111827); // Match body background
+            container.appendChild(renderer.domElement);
+
+            controls = new OrbitControls(camera, renderer.domElement);
+            controls.enableDamping = true;
+            controls.dampingFactor = 0.05;
+
+            // --- Lighting ---
+            const ambientLight = new THREE.AmbientLight(0x4040ff, 0.8); // Cool ambient light
+            scene.add(ambientLight);
+            
+            const directionalLight1 = new THREE.DirectionalLight(0xffffff, 1.5);
+            directionalLight1.position.set(1, 1, 1);
+            scene.add(directionalLight1);
+            
+            const directionalLight2 = new THREE.DirectionalLight(0xff8080, 0.8); // Warm fill light
+            directionalLight2.position.set(-1, -1, -0.5);
+            scene.add(directionalLight2);
+            
+            // --- UI Panel Toggle ---
+            const infoPanel = document.getElementById('info-panel');
+            const toggleButton = document.getElementById('toggle-panel');
+            toggleButton.addEventListener('click', () => {
+                infoPanel.classList.toggle('-translate-x-full');
+            });
+
+
+            // --- Core Logic Ported from Python ---
+            const params = {
+                // n is special and handled separately
+                n: 0.5,
+                // CompassParams from Python
+                gamma_scale: 6.0,
+                ta_scale: 6.0,
+                sigma_r: 7.0,
+                a_wind: 0.35,
+                a_tpci: 0.25,
+                k_wave: 0.45,
+                theta0: 0.0,
+                kappa0: 0.06,
+                kappa_decay: 0.08,
+                xi: 0.8,
+            };
+            
+            const extent = 14.0;
+            const steps = 120; // Lower resolution for better performance
+
+            function sinc(x) {
+                if (Math.abs(x) < 1e-9) return 1.0;
+                const pix = Math.PI * x;
+                return Math.sin(pix) / pix;
+            }
+
+            function compass_potential(G, T, n, ps) {
+                // polarize
+                const R = Math.sqrt((G / ps.gamma_scale)**2 + (T / ps.ta_scale)**2);
+                const Theta = Math.atan2(T / ps.ta_scale, G / ps.gamma_scale);
+                
+                // kappa_field
+                const kap = ps.kappa0 * Math.exp(-ps.kappa_decay * R);
+                
+                // G_env
+                const G_env = Math.exp(-(R**2) / (2.0 * ps.sigma_r**2));
+                
+                // winding
+                const Theta_prime = Theta + kap * ps.xi;
+                const winding_val = Math.cos(2.0 * Math.PI * n * Theta_prime / Math.PI);
+
+                // tpci_hint
+                const kr = ps.k_wave * R;
+                const radial = sinc(kr / Math.PI);
+                const ang = Math.cos(Theta - ps.theta0);
+                const tpci_hint_val = radial * ang;
+
+                const U = G_env * (1.0 + ps.a_wind * winding_val + ps.a_tpci * tpci_hint_val);
+                return U;
+            }
+
+            // --- Geometry Generation ---
+            function createSurface() {
+                if (mesh) {
+                    scene.remove(mesh);
+                    geometry.dispose();
+                    mesh.material.dispose();
+                }
+
+                geometry = new THREE.PlaneGeometry(extent * 2, extent * 2, steps - 1, steps - 1);
+                const positions = geometry.attributes.position;
+
+                for (let i = 0; i < positions.count; i++) {
+                    const G = positions.getX(i);
+                    const T = positions.getY(i);
+                    const U = compass_potential(G, T, params.n, params);
+                    positions.setZ(i, U * 2.5); // Scale U for better visual height
+                }
+                
+                positions.needsUpdate = true;
+                geometry.computeVertexNormals();
+                
+                const material = new THREE.MeshStandardMaterial({
+                    color: 0x60a5fa, // A nice blue
+                    side: THREE.DoubleSide,
+                    metalness: 0.3,
+                    roughness: 0.6,
+                });
+
+                mesh = new THREE.Mesh(geometry, material);
+                mesh.rotation.x = -Math.PI / 2; // Orient plane to be horizontal
+                scene.add(mesh);
+            }
+
+            // --- UI Controls Generation ---
+            function setupControls() {
+                const controlsContainer = document.getElementById('controls');
+                const controlConfig = {
+                    n: { min: -2, max: 2, step: 0.1 },
+                    gamma_scale: { min: 1, max: 15, step: 0.1 },
+                    ta_scale: { min: 1, max: 15, step: 0.1 },
+                    sigma_r: { min: 1, max: 15, step: 0.1 },
+                    a_wind: { min: -1, max: 1, step: 0.01 },
+                    a_tpci: { min: -1, max: 1, step: 0.01 },
+                    k_wave: { min: 0, max: 2, step: 0.01 },
+                    theta0: { min: -Math.PI, max: Math.PI, step: 0.01 },
+                    kappa0: { min: 0, max: 0.5, step: 0.001 },
+                    kappa_decay: { min: 0, max: 0.5, step: 0.001 },
+                    xi: { min: -2, max: 2, step: 0.01 },
+                };
+
+                for (const key in controlConfig) {
+                    const config = controlConfig[key];
+                    const value = params[key];
+
+                    const div = document.createElement('div');
+                    
+                    const label = document.createElement('label');
+                    label.htmlFor = key;
+                    label.className = "flex justify-between items-center text-sm font-medium text-gray-300 mb-1";
+                    
+                    const nameSpan = document.createElement('span');
+                    nameSpan.textContent = key.replace(/_/g, ' ');
+                    
+                    const valueSpan = document.createElement('span');
+                    valueSpan.id = `${key}-value`;
+                    valueSpan.className = "text-blue-400 font-mono";
+                    valueSpan.textContent = parseFloat(value).toFixed(3);
+                    
+                    label.appendChild(nameSpan);
+                    label.appendChild(valueSpan);
+
+                    const input = document.createElement('input');
+                    input.type = 'range';
+                    input.id = key;
+                    input.min = config.min;
+                    input.max = config.max;
+                    input.step = config.step;
+                    input.value = value;
+                    input.className = "w-full";
+
+                    input.addEventListener('input', (e) => {
+                        params[key] = parseFloat(e.target.value);
+                        valueSpan.textContent = params[key].toFixed(3);
+                        createSurface();
+                    });
+
+                    div.appendChild(label);
+                    div.appendChild(input);
+                    controlsContainer.appendChild(div);
+                }
+            }
+
+            // --- Initialize and Animate ---
+            createSurface();
+            setupControls();
+
+            function animate() {
+                requestAnimationFrame(animate);
+                controls.update();
+                renderer.render(scene, camera);
+            }
+            animate();
+        }
+
+        // --- Window Resize Handling ---
+        function onWindowResize() {
+            camera.aspect = container.clientWidth / container.clientHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(container.clientWidth, container.clientHeight);
+        }
+        window.addEventListener('resize', onWindowResize);
+
+        init();
+    </script>
+</body>
+</html>

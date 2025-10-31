@@ -1,0 +1,37 @@
+{
+  "series": "Magnetics_E-935646-1-8",
+  "sfreq": 10000.0,
+  "n_samples": 900000,
+  "duration_s": 90.0,
+  "bands": [
+    {
+      "name": "low",
+      "lo": 50.0,
+      "hi": 300.0,
+      "center": 175.0
+    },
+    {
+      "name": "mid",
+      "lo": 300.0,
+      "hi": 1200.0,
+      "center": 750.0
+    },
+    {
+      "name": "high",
+      "lo": 1200.0,
+      "hi": 4000.0,
+      "center": 2600.0
+    }
+  ],
+  "win": 0.05,
+  "hop": 0.025,
+  "prm": {
+    "Shot": "935646",
+    "SubShot": "1",
+    "Samples/Ch": "900000",
+    "VResolution": "3.095304423190021e-05",
+    "VOffset": "-0.0002476243538552017",
+    "Range(V)": "1",
+    "ClockInterval(uSec)": "100"
+  }
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirouette Fusion Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0e1a;
+            color: #e0e0e0;
+            overflow: hidden;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            background: #60a5fa;
+            border: 2px solid #0a0e1a;
+        }
+        input[type="range"]::-moz-range-thumb {
+            background: #60a5fa;
+            border: 2px solid #0a0e1a;
+        }
+        .metric-value {
+            font-family: 'ui-monospace', 'Menlo', 'Consolas', monospace;
+            font-size: 1.125rem;
+            font-weight: 700;
+        }
+        #simCanvas {
+            background: linear-gradient(180deg, #101428 0%, #0a0e1a 100%);
+            border-radius: 0.5rem;
+            border: 1px solid #2a304d;
+        }
+    </style>
+</head>
+<body class="flex h-screen w-full items-center justify-center p-4 lg:p-8">
+
+    <div class="flex flex-col lg:flex-row w-full max-w-7xl h-full lg:h-[90vh] bg-[#101428] shadow-2xl rounded-lg border border-[#2a304d]">
+
+        <!-- === CONTROL PANEL === -->
+        <div class="w-full lg:w-1/3 p-6 space-y-6 overflow-y-auto">
+            <h1 class="text-2xl font-bold text-blue-300">Pirouette Fusion Explorer</h1>
+            <p class="text-sm text-gray-400">
+                Test of <span class="font-bold text-blue-400">DYNA-008</span> & <span class="font-bold text-blue-400">XXP-FUS-001</span>.
+                Achieve fusion by tuning the <span class="text-pink-400">Chiral Field (Δκ)</span> to overcome the Coulomb barrier.
+            </p>
+
+            <!-- Sliders -->
+            <div class="space-y-4 pt-4">
+                <div>
+                    <label for="pressureSlider" class="text-sm font-medium text-gray-300">Plasma Pressure (Γ proxy)</label>
+                    <input id="pressureSlider" type="range" min="1e-21" max="10e-21" value="5e-21" step="0.1e-21" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer">
+                </div>
+                <div>
+                    <label for="kappaSlider" class="text-sm font-medium text-gray-300">Chiral Tuning (Δκ)</label>
+                    <input id="kappaSlider" type="range" min="0" max="0.5" value="0.4" step="0.001" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer">
+                    <p class="text-xs text-gray-500 mt-1">Hint: Your research found a critical point near ~0.3</p>
+                </div>
+            </div>
+
+            <!-- Metrics -->
+            <div class="space-y-4 pt-4 border-t border-gray-700">
+                <h2 class="text-lg font-semibold text-blue-300">Reactor Readouts</h2>
+                
+                <!-- Coherence Ratio (Zeta) -->
+                <div class="bg-[#0a0e1a] p-4 rounded-lg border border-gray-700">
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400">Coherence Ratio (ζ)</span>
+                        <span id="zetaReadout" class="metric-value text-red-400">--</span>
+                    </div>
+                    <p id="zetaDescription" class="text-xs text-gray-500 mt-2">
+                        ζ > 1: Dissonant (BREAK). Coulomb barrier active.
+                    </p>
+                </div>
+
+                <!-- Plasma Stability -->
+                <div class="bg-[#0a0e1a] p-4 rounded-lg border border-gray-700">
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400">Plasma Stability</span>
+                        <span id="stabilityReadout" class="metric-value text-red-400">CHAOTIC</span>
+                    </div>
+                </div>
+
+                <!-- Fusion Rate -->
+                <div class="bg-[#0a0e1a] p-4 rounded-lg border border-gray-700">
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400">Fusion Rate (events/s)</span>
+                        <span id="fusionRateReadout" class="metric-value text-gray-500">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <button id="resetButton" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                Reset Simulation
+            </button>
+
+        </div>
+
+        <!-- === SIMULATION CANVAS === -->
+        <div class="w-full lg:w-2/3 h-64 lg:h-full p-4">
+            <canvas id="simCanvas" class="w-full h-full"></canvas>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById('simCanvas');
+            const ctx = canvas.getContext('2d');
+            let width = canvas.clientWidth;
+            let height = canvas.clientHeight;
+            canvas.width = width;
+            canvas.height = height;
+
+            // --- DOM Elements ---
+            const pressureSlider = document.getElementById('pressureSlider');
+            const kappaSlider = document.getElementById('kappaSlider');
+            const zetaReadout = document.getElementById('zetaReadout');
+            const zetaDescription = document.getElementById('zetaDescription');
+            const stabilityReadout = document.getElementById('stabilityReadout');
+            const fusionRateReadout = document.getElementById('fusionRateReadout');
+            const resetButton = document.getElementById('resetButton');
+
+            // --- Pirouette Model Constants ---
+            // This is the key link to your research!
+            // We'll use the 'mean_gap' you found in pirouette_criticality_scan3.csv
+            // (approx 1.6e-19 J) as the intrinsic coherence of the fuel.
+            const HBAR_OMEGA_C = 1.6e-19; // (ħωc) in Joules
+
+            // --- Simulation Parameters ---
+            const PARTICLE_COUNT = 100;
+            const PARTICLE_RADIUS = 3;
+            const FUSED_RADIUS = 5;
+            const COULOMB_FORCE = 80;
+            const FUSION_DISTANCE = PARTICLE_RADIUS * 2;
+            const CHAOS_MULTIPLIER = 2.5; // Extra repulsion when zeta > 1
+            const FUSION_PROBABILITY = 0.1; // 10% chance to fuse if zeta < 1 and close
+            
+            let particles = [];
+            let fusionEvents = 0;
+            let lastTime = 0;
+
+            class Particle {
+                constructor(x, y) {
+                    this.x = x;
+                    this.y = y;
+                    this.vx = (Math.random() - 0.5) * 2;
+                    this.vy = (Math.random() - 0.5) * 2;
+                    this.state = 'fuel'; // 'fuel' or 'fused'
+                    this.life = 0; // Lifespan for fused particles
+                }
+
+                draw(ctx) {
+                    ctx.beginPath();
+                    if (this.state === 'fused') {
+                        // Fused: Bright, glowing, white-yellow
+                        ctx.fillStyle = `rgba(255, 255, 220, ${this.life / 100})`;
+                        ctx.shadowColor = '#ffff00';
+                        ctx.shadowBlur = 15;
+                        ctx.arc(this.x, this.y, FUSED_RADIUS, 0, Math.PI * 2);
+                    } else {
+                        // Fuel: Blue/Purple
+                        ctx.fillStyle = '#a78bfa'; // Violet
+                        ctx.shadowColor = '#8b5cf6'; // Purple
+                        ctx.shadowBlur = 5;
+                        ctx.arc(this.x, this.y, PARTICLE_RADIUS, 0, Math.PI * 2);
+                    }
+                    ctx.fill();
+                    ctx.shadowBlur = 0;
+                }
+
+                update(deltaTime) {
+                    if (this.state === 'fused') {
+                        // Fused particles slow down and fade
+                        this.vx *= 0.95;
+                        this.vy *= 0.95;
+                        this.life -= deltaTime;
+                        if (this.life < 0) this.state = 'spent'; // Mark for removal
+                    }
+
+                    this.x += this.vx * deltaTime;
+                    this.y += this.vy * deltaTime;
+
+                    // Boundary collisions
+                    if (this.x < PARTICLE_RADIUS) { this.x = PARTICLE_RADIUS; this.vx *= -0.8; }
+                    if (this.x > width - PARTICLE_RADIUS) { this.x = width - PARTICLE_RADIUS; this.vx *= -0.8; }
+                    if (this.y < PARTICLE_RADIUS) { this.y = PARTICLE_RADIUS; this.vy *= -0.8; }
+                    if (this.y > height - PARTICLE_RADIUS) { this.y = height - PARTICLE_RADIUS; this.vy *= -0.8; }
+                }
+            }
+
+            function initSimulation() {
+                particles = [];
+                fusionEvents = 0;
+                for (let i = 0; i < PARTICLE_COUNT; i++) {
+                    particles.push(new Particle(
+                        Math.random() * width * 0.5 + width * 0.25,
+                        Math.random() * height * 0.5 + height * 0.25
+                    ));
+                }
+            }
+            
+            function handleInteractions(zeta) {
+                let isStable = (zeta < 1.0);
+                
+                for (let i = 0; i < particles.length; i++) {
+                    let p1 = particles[i];
+                    if (p1.state !== 'fuel') continue;
+
+                    for (let j = i + 1; j < particles.length; j++) {
+                        let p2 = particles[j];
+                        if (p2.state !== 'fuel') continue;
+
+                        const dx = p1.x - p2.x;
+                        const dy = p1.y - p2.y;
+                        const dist = Math.hypot(dx, dy);
+
+                        // --- This is the CORE Pirouette Logic ---
+                        if (dist < FUSION_DISTANCE) {
+                            // Close enough to potentially fuse
+                            if (isStable && Math.random() < FUSION_PROBABILITY) {
+                                // ZETA < 1: "STAY"
+                                // Coherence achieved! Overcome Coulomb barrier.
+                                fuseParticles(p1, p2);
+                                fusionEvents++;
+                            }
+                        }
+                        
+                        // Apply Coulomb Repulsion
+                        if (dist < COULOMB_FORCE && dist > 0) {
+                            const force = 1 / dist;
+                            let forceX = (dx / dist) * force;
+                            let forceY = (dy / dist) * force;
+
+                            if (!isStable) {
+                                // ZETA > 1: "BREAK"
+                                // Dissonant state. Instability is high.
+                                // Amplify repulsion to simulate chaos.
+                                forceX *= CHAOS_MULTIPLIER;
+                                forceY *= CHAOS_MULTIPLIER;
+                            }
+                            
+                            p1.vx += forceX; p1.vy += forceY;
+                            p2.vx -= forceX; p2.vy -= forceY;
+                        }
+                    }
+                }
+                // Filter out spent particles
+                particles = particles.filter(p => p.state !== 'spent');
+            }
+            
+            function fuseParticles(p1, p2) {
+                p1.state = 'fused';
+                p1.life = 100; // Lifespan in frames
+                p1.x = (p1.x + p2.x) / 2; // Merge at midpoint
+                p1.y = (p1.y + p2.y) / 2;
+                p1.vx = (p1.vx + p2.vx) / 2; // Conserve momentum
+                p1.vy = (p1.vy + p2.vy) / 2;
+                
+                // Mark p2 for removal
+                p2.state = 'spent';
+            }
+
+            function updateMetrics(zeta, deltaTime) {
+                zetaReadout.textContent = zeta.toFixed(3);
+                
+                const rate = fusionEvents / (deltaTime * 0.001); // Events per second
+                if (fusionEvents > 0) {
+                    fusionRateReadout.textContent = rate.toFixed(1);
+                }
+                fusionEvents = 0; // Reset counter for next second
+
+                if (zeta < 1.0) {
+                    zetaReadout.className = 'metric-value text-green-400';
+                    zetaDescription.textContent = 'ζ < 1: Resonant (STAY). Barrier overcome.';
+                    if (rate > 5) {
+                        stabilityReadout.textContent = 'IGNITION';
+                        stabilityReadout.className = 'metric-value text-yellow-300';
+                    } else if (rate > 0) {
+                        stabilityReadout.textContent = 'STABLE';
+                        stabilityReadout.className = 'metric-value text-green-400';
+                    } else {
+                        stabilityReadout.textContent = 'COHERENT';
+                        stabilityReadout.className = 'metric-value text-blue-300';
+                    }
+                } else {
+                    zetaReadout.className = 'metric-value text-red-400';
+                    zetaDescription.textContent = 'ζ > 1: Dissonant (BREAK). Barrier active.';
+                    stabilityReadout.textContent = 'CHAOTIC';
+                    stabilityReadout.className = 'metric-value text-red-400';
+                }
+            }
+
+            function animate(timestamp) {
+                const deltaTime = (timestamp - lastTime) / 1000 || 0; // Time in seconds
+                lastTime = timestamp;
+                
+                // Resize handling
+                if (canvas.clientWidth !== width || canvas.clientHeight !== height) {
+                    width = canvas.clientWidth;
+                    height = canvas.clientHeight;
+                    canvas.width = width;
+                    canvas.height = height;
+                }
+
+                ctx.clearRect(0, 0, width, height);
+
+                // --- Get Model Inputs ---
+                const temporalPressure = parseFloat(pressureSlider.value);
+                const deltaKappa = parseFloat(kappaSlider.value);
+                
+                // --- Run Pirouette Model ---
+                // ζ = (Δκ * Γ) / (ħωc)
+                const zeta = (deltaKappa * temporalPressure) / HBAR_OMEGA_C;
+
+                // --- Update Simulation ---
+                handleInteractions(zeta);
+                
+                particles.forEach(p => {
+                    p.update(1.0); // Use fixed timestep for simplicity
+                    p.draw(ctx);
+                });
+
+                // Update UI Metrics
+                // Use a running average for fusion rate
+                if (timestamp % 500 < 20) { // Update metrics every ~500ms
+                    updateMetrics(zeta, 500);
+                }
+
+                requestAnimationFrame(animate);
+            }
+
+            // --- Event Listeners ---
+            resetButton.addEventListener('click', initSimulation);
+            
+            // Handle slider inputs
+            pressureSlider.addEventListener('input', () => {
+                // No need to do anything here, loop reads it
+            });
+            kappaSlider.addEventListener('input', () => {
+                // No need to do anything here, loop reads it
+            });
+
+            // Start
+            initSimulation();
+            animate(0);
+        });
+    </script>
+</body>
+</html>

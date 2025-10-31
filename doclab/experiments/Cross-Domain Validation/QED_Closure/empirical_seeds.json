@@ -1,0 +1,23 @@
+{
+  "description": "Empirical stiffnesses K_i = sqrt(sigma_i) from 'BEST' lattice configurations.",
+  "seeds": [
+    {
+      "group": "U1",
+      "sigma": 6.889634898509595,
+      "K": 2.624811402464869,
+      "note": "BEST from Option-C closure"
+    },
+    {
+      "group": "SU2",
+      "sigma": 3.525609539995046,
+      "K": 1.8776606562409102,
+      "note": "BEST from Option-C closure"
+    },
+    {
+      "group": "SU3",
+      "sigma": 1.0972042282024992,
+      "K": 1.0474751682987522,
+      "note": "BEST from Option-C closure"
+    }
+  ]
+}

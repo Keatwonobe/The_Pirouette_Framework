@@ -1,0 +1,41 @@
+{
+  "names": [
+    "alpha",
+    "mp_me",
+    "alpha_s",
+    "alpha_w",
+    "sin2_thetaW",
+    "alpha_mmu",
+    "alpha_mtau",
+    "alpha_s_2GeV",
+    "alpha_s_1GeV",
+    "Lambda_QCD_over_me",
+    "sin_thetaC",
+    "Vud",
+    "Vus",
+    "Vub",
+    "mmu_me",
+    "mtau_mmu",
+    "mtau_me",
+    "mn_mp",
+    "g_e",
+    "g_p",
+    "g_n",
+    "alpha_G",
+    "Omega_m",
+    "Omega_Lambda",
+    "H0_tP"
+  ],
+  "K": 5,
+  "rmse_log": NaN,
+  "mae_log": NaN,
+  "spec": {
+    "k0": 0.06,
+    "k1": null,
+    "interact": true,
+    "ridge": 0.0001,
+    "r_nudge": 0.95,
+    "theta_sweep_deg": 16
+  },
+  "n_constants": 25
+}

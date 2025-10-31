@@ -1,0 +1,106 @@
+source	target	weight
+Informational Inertia|K[_ ]?i	K[iι]	716
+Informational Inertia|K[_ ]?i	Ki	716
+K[iι]	Ki	716
+Informational Inertia|K[_ ]?i	Γ	163
+K[iι]	Γ	162
+Ki	Γ	162
+Gamma	T[_ ]?a	96
+Gamma	Informational Inertia|K[_ ]?i	72
+Informational Inertia|K[_ ]?i	T[_ ]?a	71
+K[iι]	T[_ ]?a	64
+Ki	T[_ ]?a	64
+T[_ ]?a	Γ	64
+Gamma	K[iι]	63
+Gamma	Ki	63
+Gamma	Γ	58
+CMB|cosmolog\w+ constant|Λ	Γ	41
+substrate	Γ	20
+Gamma	pressuron	20
+Informational Inertia|K[_ ]?i	substrate	19
+K[iι]	substrate	19
+Ki	substrate	19
+pressuron	Γ	16
+Informational Inertia|K[_ ]?i	Lorentz|GR|relativity	14
+Gamma	substrate	14
+K[iι]	Lorentz|GR|relativity	12
+Ki	Lorentz|GR|relativity	12
+T[_ ]?a	T[_ ]?c	12
+Gamma	g-2|anomalous magnetic moment	12
+CMB|cosmolog\w+ constant|Λ	pressuron	11
+g-2|anomalous magnetic moment	pressuron	9
+T[_ ]?a	substrate	9
+Gamma	ethic\w+|governance|Dark Residue	9
+Lorentz|GR|relativity	Γ	8
+decoherence	Γ	8
+g-2|anomalous magnetic moment	Γ	8
+Informational Inertia|K[_ ]?i	ethic\w+|governance|Dark Residue	8
+T[_ ]?a	ethic\w+|governance|Dark Residue	8
+CMB|cosmolog\w+ constant|Λ	Informational Inertia|K[_ ]?i	7
+CMB|cosmolog\w+ constant|Λ	K[iι]	7
+CMB|cosmolog\w+ constant|Λ	Ki	7
+CMB|cosmolog\w+ constant|Λ	substrate	7
+substrate	time[- ]substrate	7
+T[_ ]?a	decoherence	7
+K[iι]	ethic\w+|governance|Dark Residue	6
+Ki	ethic\w+|governance|Dark Residue	6
+ethic\w+|governance|Dark Residue	Γ	6
+Lorentz|GR|relativity	T[_ ]?a	6
+Gamma	Lorentz|GR|relativity	6
+Gamma	U[_ ]?s	6
+Informational Inertia|K[_ ]?i	decoherence	5
+Lorentz|GR|relativity	substrate	5
+Informational Inertia|K[_ ]?i	U[_ ]?s	5
+K[iι]	U[_ ]?s	5
+Ki	U[_ ]?s	5
+T[_ ]?c	Γ	5
+CMB|cosmolog\w+ constant|Λ	Gamma	5
+CMB|cosmolog\w+ constant|Λ	g-2|anomalous magnetic moment	4
+K[iι]	decoherence	4
+Ki	decoherence	4
+U[_ ]?s	Γ	4
+T[_ ]?a	U[_ ]?s	4
+Gamma	decoherence	4
+decoherence	substrate	3
+pressuron	substrate	3
+CMB|cosmolog\w+ constant|Λ	T[_ ]?a	3
+Gamma	T[_ ]?c	3
+Gamma	time[- ]substrate	3
+Informational Inertia|K[_ ]?i	time[- ]substrate	3
+K[iι]	time[- ]substrate	3
+Ki	time[- ]substrate	3
+CMB|cosmolog\w+ constant|Λ	decoherence	2
+Informational Inertia|K[_ ]?i	g-2|anomalous magnetic moment	2
+Informational Inertia|K[_ ]?i	pressuron	2
+K[iι]	g-2|anomalous magnetic moment	2
+K[iι]	pressuron	2
+Ki	g-2|anomalous magnetic moment	2
+Ki	pressuron	2
+decoherence	g-2|anomalous magnetic moment	2
+g-2|anomalous magnetic moment	substrate	2
+EEG|MEG|phase[- ]locking|PLV	Γ	2
+EEG|MEG|phase[- ]locking|PLV	Informational Inertia|K[_ ]?i	2
+EEG|MEG|phase[- ]locking|PLV	K[iι]	2
+EEG|MEG|phase[- ]locking|PLV	Ki	2
+EEG|MEG|phase[- ]locking|PLV	Gamma	2
+EEG|MEG|phase[- ]locking|PLV	T[_ ]?a	2
+time[- ]substrate	Γ	2
+Casimir	Gamma	2
+CMB|cosmolog\w+ constant|Λ	Lorentz|GR|relativity	1
+Lorentz|GR|relativity	decoherence	1
+Lorentz|GR|relativity	g-2|anomalous magnetic moment	1
+Lorentz|GR|relativity	pressuron	1
+decoherence	pressuron	1
+Informational Inertia|K[_ ]?i	T[_ ]?c	1
+K[iι]	T[_ ]?c	1
+Ki	T[_ ]?c	1
+U[_ ]?s	ethic\w+|governance|Dark Residue	1
+U[_ ]?s	g-2|anomalous magnetic moment	1
+CMB|cosmolog\w+ constant|Λ	T[_ ]?c	1
+T[_ ]?c	substrate	1
+EEG|MEG|phase[- ]locking|PLV	T[_ ]?c	1
+EEG|MEG|phase[- ]locking|PLV	U[_ ]?s	1
+U[_ ]?s	decoherence	1
+Lorentz|GR|relativity	time[- ]substrate	1
+CMB|cosmolog\w+ constant|Λ	time[- ]substrate	1
+Casimir	Γ	1

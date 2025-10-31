@@ -1,0 +1,1 @@
+This module describes how to empirically measure and model the **dynamic scaling** of triadic resonance collapse in neural systems, verifying the renormalization flow predictions from [MATH-026]. It aims to detect critical slowing, coherence correlation lengthening, and universality in the temporal dynamics of conscious access.

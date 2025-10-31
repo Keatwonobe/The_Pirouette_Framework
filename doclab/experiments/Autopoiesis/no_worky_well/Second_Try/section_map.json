@@ -1,0 +1,63 @@
+{
+  "title": "A Time-First Unification",
+  "sections": [
+    {
+      "id": "I",
+      "name": "The Foundational Crisis",
+      "max_pages": 6,
+      "required": true
+    },
+    {
+      "id": "II",
+      "name": "The Substrate Action",
+      "max_pages": 10,
+      "required": true
+    },
+    {
+      "id": "III",
+      "name": "Physics Predictions",
+      "max_pages": 15,
+      "required": true
+    },
+    {
+      "id": "IV",
+      "name": "Cross-Domain Instantiation",
+      "max_pages": 12,
+      "required": true
+    },
+    {
+      "id": "V",
+      "name": "Experimental Roadmap",
+      "max_pages": 6,
+      "required": true
+    },
+    {
+      "id": "VI",
+      "name": "Philosophical Implications",
+      "max_pages": 6,
+      "required": true
+    },
+    {
+      "id": "SYN",
+      "name": "Synthesis & Outlook",
+      "max_pages": 4,
+      "required": true
+    },
+    {
+      "id": "APP",
+      "name": "Appendices (Operationalization)",
+      "max_pages": 12,
+      "required": false
+    }
+  ],
+  "style": {
+    "tone": "formal with restrained poetic gravitas",
+    "mandates": [
+      "Define all symbols on first use",
+      "External, load\u2011bearing citations only",
+      "Debate resonance: steelman objections and resolve",
+      "No internal module IDs or repo references",
+      "Plain Markdown + equations in text (no LaTeX required)"
+    ]
+  }
+}

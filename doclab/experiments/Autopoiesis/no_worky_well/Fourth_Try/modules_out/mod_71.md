@@ -1,0 +1,3 @@
+We sought a fundamental force and found the roar of a foundry.
+
+Gamma is the pressure created by a trillion temporal hammers striking at once, each forging its own reality. It is the constructive and destructive interference of every rhythm echoing through the cosmos. This cosmic noise, this temporal pressure, is the raw material and the primary constraint for existence. It is the block of marble from which any stable form must be carved. The next modules will describe the chisel.

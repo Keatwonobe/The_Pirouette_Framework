@@ -1,0 +1,14 @@
+```json
+{
+  "commentary": "The theory’s primary strength is its proactive ethical framing, explicitly addressing the tension between coherence and pluralism and proposing safeguards like 'consentful coherence'. However, this is undermined by two critical weaknesses: 1) The ambition to model and manipulate social cascades creates a high potential for misuse, risking engineered conformity or suppression of dissent. 2) Its core ethical metric, 'Dark Residue,' is operationally vague, making the central governance directive unfalsifiable and potentially a justification for unforeseen negative externalities.",
+  "experiment": "A 'Governance Sandbox' experiment using an agent-based model to simulate the theory's social dynamics. One group of agents is subjected to a 'coherence maximization' algorithm. A second group is subjected to the same algorithm but with the proposed 'consentful coherence' and 'fail-open' safeguards active. The decisive test is whether the safeguarded group shows a statistically significant reduction in a proxy for 'Dark Residue' (e.g., agent exit rates, expressed dissatisfaction) and maintains greater opinion diversity, thus validating the proposed ethical controls against the risk of manipulative application.",
+  "scores": {
+    "coherence": 0.5,
+    "predictivity": 1.0,
+    "falsifiability": 1.0,
+    "external_anchor": 0.5,
+    "dark_residue": 0.0,
+    "elegance": 0.0
+  }
+}
+```

@@ -1,0 +1,149 @@
+{
+  "status_code": 200,
+  "status_message": "OK",
+  "request_timestamp": "2025-10-06 22:01:56 PST",
+  "request_url": "https://pdgapi.lbl.gov/summaries/S066",
+  "edition": "2025",
+  "about": "For further information see https://pdg.lbl.gov/api",
+  "pdgid": "S066",
+  "description": "Neutrino Properties",
+  "summaries": {
+    "properties": [
+      {
+        "pdgid": "S066MAE",
+        "description": "nubar MASS (electron based)",
+        "pdg_values": [
+          {
+            "value": 0.8,
+            "value_text": "< 0.8",
+            "is_limit": true,
+            "is_upper_limit": true,
+            "unit": "eV",
+            "confidence_level": 90.0,
+            "type": "BEST LIMIT"
+          }
+        ]
+      },
+      {
+        "pdgid": "S066M2E",
+        "description": "nubar MASS SQUARED (electron based)",
+        "pdg_values": [
+          {
+            "value": 0.08277243480556398,
+            "error_positive": 0.2964938978517235,
+            "error_negative": 0.2964938978517235,
+            "value_text": "0.08+-0.30",
+            "unit": "eV**2",
+            "type": "OUR AVERAGE"
+          }
+        ]
+      },
+      {
+        "pdgid": "S066MNE",
+        "description": "nu MASS (electron based)"
+      },
+      {
+        "pdgid": "S066MNM",
+        "description": "nu MASS (muon based)",
+        "pdg_values": [
+          {
+            "value_text": "<0.19",
+            "is_limit": true,
+            "is_upper_limit": true,
+            "unit": "MeV",
+            "confidence_level": 90.0,
+            "type": "OUR EVALUATION"
+          }
+        ]
+      },
+      {
+        "pdgid": "S066MNT",
+        "description": "nu MASS (tau based)",
+        "pdg_values": [
+          {
+            "value": 18.2,
+            "value_text": "<18.2",
+            "is_limit": true,
+            "is_upper_limit": true,
+            "unit": "MeV",
+            "confidence_level": 95.0,
+            "type": "BEST LIMIT"
+          }
+        ]
+      },
+      {
+        "pdgid": "S066MNS",
+        "description": "SUM OF THE NEUTRINO MASSES, mass(tot)"
+      },
+      {
+        "pdgid": "S066MSW",
+        "description": "Limits on MASSES of Light Stable Right-Handed nu (with necessarily suppressed interaction strengths)"
+      },
+      {
+        "pdgid": "S066MSH",
+        "description": "Limits on MASSES of Heavy Stable Right-Handed nu (with necessarily suppressed interaction strengths)"
+      },
+      {
+        "pdgid": "S066CHR",
+        "description": "nu CHARGE",
+        "pdg_values": [
+          {
+            "value": 4.0E-35,
+            "value_text": "<4 E-35",
+            "is_limit": true,
+            "is_upper_limit": true,
+            "unit": "e",
+            "confidence_level": 95.0,
+            "type": "BEST LIMIT"
+          }
+        ]
+      },
+      {
+        "pdgid": "S066TMR",
+        "description": "nu (MEAN LIFE) / MASS",
+        "pdg_values": [
+          {
+            "value": 300.0,
+            "value_text": ">300",
+            "is_limit": true,
+            "is_lower_limit": true,
+            "unit": "s/eV",
+            "confidence_level": 90.0,
+            "type": "BEST LIMIT"
+          }
+        ]
+      },
+      {
+        "pdgid": "S066MGM",
+        "description": "nu MAGNETIC MOMENT",
+        "pdg_values": [
+          {
+            "value": 6.4E-12,
+            "value_text": "<6.4 E-12",
+            "is_limit": true,
+            "is_upper_limit": true,
+            "unit": "mu(B)",
+            "confidence_level": 90.0,
+            "type": "BEST LIMIT"
+          }
+        ]
+      },
+      {
+        "pdgid": "S066CRD",
+        "description": "NEUTRINO CHARGE RADIUS SQUARED",
+        "pdg_values": [
+          {
+            "value": 5.999999999999998E-33,
+            "error_positive": 2.7E-32,
+            "error_negative": 2.7E-32,
+            "value_text": "-2.10E-32 to 3.30E-32",
+            "is_limit": true,
+            "unit": "cm**2",
+            "confidence_level": 90.0,
+            "type": "BEST LIMIT"
+          }
+        ]
+      }
+    ]
+  }
+}

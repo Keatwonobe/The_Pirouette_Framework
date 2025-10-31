@@ -1,0 +1,14 @@
+```json
+{
+  "commentary": "Strengths: The hypothesis is highly falsifiable, offering specific, quantitative predictions (e.g., EEG bandwidth scaling ∝ Γ⁻¹/²) across well-instrumented, disparate domains. The ambition to unify anomalies in fundamental physics, neuroscience, and social dynamics is a significant conceptual strength. Weakness: The mathematical model is critically underdeveloped. The crucial link between the proposed fields (Γ, Ki) and physical observables (Δg-2) is an un-derived proportionality, making the core physics prediction incalculable and ad-hoc. The proxy for 'Γ' in a particle physics context is undefined, rendering the g-2 experiment untestable as proposed.",
+  "experiment": "The decisive step is a theoretical derivation, not a new experiment. The proponent must derive the explicit functional form of f(Γ, Ki) that determines the lepton g-2 anomaly, starting from the proposed action S_time and a specified gauge-compatible coupling term. This would transform the vague 'trend' prediction for the tau lepton into a sharp, parameter-dependent value that can be constrained by existing muon g-2 data before being tested.",
+  "scores": {
+    "coherence": 0.3,
+    "predictivity": 0.8,
+    "falsifiability": 0.9,
+    "external_anchor": 0.5,
+    "dark_residue": 0.8,
+    "elegance": 0.2
+  }
+}
+```

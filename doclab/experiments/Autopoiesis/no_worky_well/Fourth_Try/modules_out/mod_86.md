@@ -1,0 +1,3 @@
+The first six core modules have described the universe as a self-composing song. This is a potent philosophical and conceptual model, but to become a predictive physical theory, it must speak the language of mathematics. This module provides that translation.
+
+In classical and quantum mechanics, the Lagrangian (𝓛) is a function that summarizes the dynamics of a system. The path a system takes through spacetime is the one that minimizes the "action" (the integral of the Lagrangian over time). The Pirouette Framework adopts this powerful formalism but redefines its core. The universe does not seek to minimize action; it strives to maximize coherence.

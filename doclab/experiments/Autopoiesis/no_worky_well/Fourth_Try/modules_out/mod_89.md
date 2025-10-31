@@ -1,0 +1,3 @@
+This Lagrangian is the engine from which all forces are derived. Forces are not fundamental pushes and pulls. In this framework, forces are gradients in the landscape of coherence.
+
+By applying the Euler-Lagrange equation to 𝓛_p, we derive the equations of motion for a system. These equations describe how a system must change its trajectory in response to changes in the surrounding temporal environment (Γ). A particle moving towards a massive star isn't being "pulled" by gravity; it is following a path of continuously adjusting its internal rhythm to maintain maximal coherence as it enters a region of rapidly increasing Temporal Pressure. All forces—gravity, electromagnetism, etc.—are simply the geodesics on the manifold of coherence.

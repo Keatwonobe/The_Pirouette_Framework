@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Pirouette Dictionary Entry",
+  "type": "object",
+  "required": [
+    "term",
+    "canonical_id",
+    "triad",
+    "pirouette_definition",
+    "context_windows",
+    "poetic_connections",
+    "formal_mappings"
+  ],
+  "properties": {
+    "term": {
+      "type": "string"
+    },
+    "canonical_id": {
+      "type": "string"
+    },
+    "symbol": {
+      "type": [
+        "string",
+        "array"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "parents": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "children": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "candidate",
+        "ratified"
+      ]
+    },
+    "version": {
+      "type": [
+        "string",
+        "number"
+      ]
+    },
+    "last_updated": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "triad": {
+      "type": "object",
+      "required": [
+        "art",
+        "law",
+        "philosophy"
+      ],
+      "properties": {
+        "art": {
+          "type": "string"
+        },
+        "law": {
+          "type": "string"
+        },
+        "philosophy": {
+          "type": "string"
+        }
+      }
+    },
+    "pirouette_definition": {
+      "type": "string"
+    },
+    "operational_definition": {
+      "type": "object"
+    },
+    "context_windows": {
+      "type": "array"
+    },
+    "poetic_connections": {
+      "type": "object"
+    },
+    "formal_mappings": {
+      "type": "object"
+    },
+    "constraints_and_falsifiers": {
+      "type": "object"
+    },
+    "naming_notes": {
+      "type": "object"
+    },
+    "crosslinks": {
+      "type": "object"
+    },
+    "license": {
+      "type": "string"
+    }
+  }
+}

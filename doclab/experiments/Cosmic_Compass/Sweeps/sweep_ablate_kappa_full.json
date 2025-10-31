@@ -1,0 +1,18 @@
+{
+  "best": {
+    "scenario": "ablate_kappa",
+    "kappa0": 0.0,
+    "interact": false,
+    "ridge": 0.001,
+    "r_nudge": 1.05,
+    "theta_sweep_deg": 16,
+    "rmse_log": 3.432402677071706,
+    "mae_log": 3.0040077878467746,
+    "AIC_kOFF": 15.650533335140217,
+    "AIC_kON": 15.700350192457902,
+    "delta_AIC": 0.04981685731768515
+  },
+  "n_trials": 120,
+  "scenario": "ablate_kappa",
+  "grid": "full"
+}
