@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLE COMBAT RUNNER // V.2.0</title>
+    <style>
+        :root {
+            --bg: #050505;
+            --term: #33ff33;
+            --dim: #1a801a;
+            --alert: #ff3333;
+            --cyan: #00ffff;
+            --gold: #ffcc00;
+            --ui-border: #333;
+            --font: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--term);
+            font-family: var(--font);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            user-select: none;
+        }
+
+        /* --- LAYOUT --- */
+        #sidebar {
+            width: 350px;
+            height: 100%;
+            border-right: 1px solid var(--ui-border);
+            display: flex;
+            flex-direction: column;
+            background: #080808;
+            z-index: 10;
+        }
+
+        #viewport {
+            flex-grow: 1;
+            height: 100%;
+            background: #101010;
+            position: relative;
+            cursor: crosshair;
+        }
+
+        /* --- TERMINAL --- */
+        #log {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 15px;
+            font-size: 13px;
+            white-space: pre-wrap;
+            scrollbar-width: thin;
+            scrollbar-color: var(--dim) var(--bg);
+        }
+
+        .entry { margin-bottom: 6px; line-height: 1.4; border-left: 2px solid transparent; padding-left: 5px; }
+        .sys { color: #666; font-style: italic; }
+        .cmd { color: #888; border-left: 2px solid var(--dim); }
+        .err { color: var(--alert); }
+        .hit { color: var(--term); font-weight: bold; }
+        .crit { color: var(--gold); text-shadow: 0 0 5px var(--gold); }
+        .turn-start { border-left: 2px solid var(--cyan); background: rgba(0, 255, 255, 0.05); }
+
+        #input-area {
+            border-top: 1px solid var(--ui-border);
+            padding: 10px;
+            background: #000;
+            display: flex;
+            align-items: center;
+        }
+        
+        input {
+            background: transparent;
+            border: none;
+            color: white;
+            font-family: var(--font);
+            font-size: 14px;
+            flex-grow: 1;
+            outline: none;
+            margin-left: 10px;
+        }
+
+        /* --- OVERLAYS --- */
+        #turn-tracker {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 200px;
+            background: rgba(0,0,0,0.85);
+            border: 1px solid var(--dim);
+            padding: 10px;
+            pointer-events: none;
+        }
+        .tracker-row { display: flex; justify-content: space-between; font-size: 12px; padding: 2px 0; }
+        .tracker-active { color: var(--cyan); font-weight: bold; text-shadow: 0 0 3px var(--cyan); }
+        .tracker-dead { text-decoration: line-through; color: #555; }
+
+        #drop-zone {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 255, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--term);
+            z-index: 100;
+            display: none;
+            pointer-events: none;
+        }
+
+        /* --- CANVAS --- */
+        canvas { display: block; width: 100%; height: 100%; }
+
+    </style>
+</head>
+<body>
+
+<div id="drop-zone">DROP CODEX JSON HERE</div>
+
+<div id="sidebar">
+    <div style="padding: 10px; background: #111; border-bottom: 1px solid #333; font-weight: bold; text-align: center;">
+        TLE TACTICAL OS v2.1
+    </div>
+    <div id="log"></div>
+    <div id="input-area">
+        <span style="color:var(--term)">>></span>
+        <input type="text" id="cmd" placeholder="Type 'help' for commands..." autocomplete="off">
+    </div>
+</div>
+
+<div id="viewport">
+    <canvas id="gameCanvas"></canvas>
+    <div id="turn-tracker">
+        <div style="border-bottom:1px solid #444; margin-bottom:5px; font-weight:bold;">INITIATIVE QUEUE</div>
+        <div id="tracker-list">-- WAITING FOR SYNC --</div>
+    </div>
+</div>
+
+<script>
+    /**
+     * TLE COMBAT RUNNER
+     * Handles 3D positioning, initiative queues, and JSON codex loading.
+     */
+
+    // --- 1. CORE STATE ---
+    const STATE = {
+        entities: [], // All actors
+        turnQueue: [], // Sorted list of IDs
+        turnIndex: 0,
+        round: 0,
+        combatActive: false,
+        camera: { x: 0, y: 0, zoom: 1 },
+        drag: { active: false, startX: 0, startY: 0 }
+    };
+
+    // --- 2. DEFAULT DATA (Fallback) ---
+    let CODEX = {
+        "bestiary": {
+            "margin_walker": { 
+                name: "Margin Walker", hp: 22, max_hp: 22, ac: 13, 
+                init_bonus: 3, speed: 30, color: "#ff0055", size: 15,
+                attacks: [{name: "Static Shank", hit: 5, dmg: "1d6+3", range: 5}]
+            },
+            "proofreader": { 
+                name: "The Proofreader", hp: 45, max_hp: 45, ac: 15, 
+                init_bonus: 0, speed: 20, color: "#ffffff", size: 25,
+                attacks: [{name: "Gavel", hit: 6, dmg: "1d10+4", range: 10}]
+            }
+        },
+        "players": [
+            { 
+                id: "p1", name: "Drifter", type: "player", 
+                hp: 30, max_hp: 30, ep: 20, ac: 14, 
+                init_bonus: 4, speed: 40, color: "#00ffff", size: 15,
+                pos: {x: 400, y: 300, z: 0},
+                attacks: [{name: "Fracture Blade", hit: 6, dmg: "1d8+4", range: 5}]
+            }
+        ]
+    };
+
+    // --- 3. TERMINAL SYSTEM ---
+    const logEl = document.getElementById('log');
+    const inputEl = document.getElementById('cmd');
+
+    function log(msg, type="entry") {
+        const div = document.createElement('div');
+        div.className = `entry ${type}`;
+        div.textContent = msg;
+        logEl.appendChild(div);
+        logEl.scrollTop = logEl.scrollHeight;
+    }
+
+    inputEl.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            const val = inputEl.value.trim();
+            if (val) {
+                log(`>> ${val}`, "cmd");
+                parse(val);
+                inputEl.value = '';
+            }
+        }
+    });
+
+    // --- 4. COMMAND PARSER ---
+    function parse(raw) {
+        const parts = raw.toLowerCase().split(' ');
+        const verb = parts[0];
+        const activeActor = getActiveActor();
+
+        // GM COMMANDS
+        if (verb === 'load') { log("Drag and drop your JSON file anywhere to load.", "sys"); return; }
+        if (verb === 'help') {
+            log("COMBAT: init, attack [target], move [x] [y], fly [z], land, end, scan");
+            log("GM: spawn [id], kill [id], clear");
+            return;
+        }
+
+        // SETUP
+        if (verb === 'spawn') {
+            const id = parts[1];
+            if (CODEX.bestiary[id]) {
+                spawnEntity(id, "enemy");
+                log(`Spawned ${id}.`, "sys");
+            } else {
+                log(`Unknown ID: ${id}. Check Codex.`, "err");
+            }
+            return;
+        }
+
+        if (verb === 'clear') {
+            STATE.entities = [];
+            STATE.turnQueue = [];
+            STATE.combatActive = false;
+            setupDefaultScene(); // reload players
+            log("Scene cleared. Players reset.", "sys");
+            return;
+        }
+
+        // INITIATIVE
+        if (verb === 'init') {
+            rollInitiative();
+            return;
+        }
+
+        // PLAYER ACTIONS (Requires Active Turn)
+        if (!STATE.combatActive && verb !== 'scan') {
+            log("Combat not started. Type 'init'.", "err");
+            return;
+        }
+
+        // Determine who is acting
+        // If GM types, we assume they control the current active entity
+        if (!activeActor) return;
+
+        if (verb === 'end' || verb === 'pass') {
+            nextTurn();
+            return;
+        }
+
+        if (verb === 'move') {
+            // move 400 300 or move north 20
+            if (['north','south','east','west','n','s','e','w'].includes(parts[1])) {
+                moveRelative(activeActor, parts[1], parseInt(parts[2]) || 30);
+            } else {
+                const x = parseInt(parts[1]);
+                const y = parseInt(parts[2]);
+                if (!isNaN(x) && !isNaN(y)) {
+                    activeActor.pos.x = x;
+                    activeActor.pos.y = y;
+                    log(`${activeActor.name} moved to [${x}, ${y}].`, "sys");
+                }
+            }
+            return;
+        }
+
+        if (verb === 'fly') {
+            const z = parseInt(parts[1]) || 10;
+            activeActor.pos.z = z;
+            log(`${activeActor.name} ascends to ${z}ft.`, "sys");
+            return;
+        }
+
+        if (verb === 'land') {
+            activeActor.pos.z = 0;
+            log(`${activeActor.name} lands.`, "sys");
+            return;
+        }
+
+        if (verb === 'attack') {
+            const targetName = parts[1]; // simplified matching
+            const target = findTarget(targetName);
+            if (target) {
+                resolveAttack(activeActor, target);
+            } else {
+                log("Target not found. (Use partial name)", "err");
+            }
+            return;
+        }
+
+        if (verb === 'scan') {
+            log(`SCANNING ${activeActor.name}...`);
+            log(`HP: ${activeActor.hp}/${activeActor.max_hp}`);
+            log(`POS: ${Math.round(activeActor.pos.x)}, ${Math.round(activeActor.pos.y)}, ${activeActor.pos.z}`);
+            return;
+        }
+
+        log("Unknown command.", "err");
+    }
+
+    // --- 5. LOGIC & MECHANICS ---
+
+    function setupDefaultScene() {
+        // Load Players
+        CODEX.players.forEach(pData => {
+            const p = JSON.parse(JSON.stringify(pData)); // Clone
+            p.uid = `player_${Math.floor(Math.random()*1000)}`;
+            STATE.entities.push(p);
+        });
+        
+        // Spawn a few enemies for test
+        spawnEntity("margin_walker", "enemy", 600, 300);
+        spawnEntity("margin_walker", "enemy", 650, 400);
+    }
+
+    function spawnEntity(codexId, type, x, y) {
+        const template = CODEX.bestiary[codexId];
+        const ent = JSON.parse(JSON.stringify(template));
+        ent.type = type;
+        ent.uid = `${codexId}_${Math.floor(Math.random()*1000)}`;
+        ent.pos = {
+            x: x || 500 + Math.random()*200, 
+            y: y || 200 + Math.random()*300, 
+            z: 0 
+        };
+        STATE.entities.push(ent);
+    }
+
+    function rollInitiative() {
+        STATE.turnQueue = [];
+        let msg = "INITIATIVE ROLLED:\n";
+        
+        STATE.entities.forEach(ent => {
+            if (ent.hp > 0) {
+                const roll = Math.floor(Math.random() * 20) + 1;
+                ent.init = roll + (ent.init_bonus || 0);
+                STATE.turnQueue.push(ent);
+                msg += `  ${ent.name}: ${ent.init} (${roll}+${ent.init_bonus})\n`;
+            }
+        });
+
+        // Sort Descending
+        STATE.turnQueue.sort((a, b) => b.init - a.init);
+        
+        STATE.turnIndex = 0;
+        STATE.round = 1;
+        STATE.combatActive = true;
+        
+        log(msg, "sys");
+        startTurn();
+    }
+
+    function startTurn() {
+        const actor = getActiveActor();
+        if (!actor) return;
+        log(`\n--- ROUND ${STATE.round}: ${actor.name.toUpperCase()} ---`, "turn-start");
+        
+        // Auto-Center Camera
+        // STATE.camera.x = actor.pos.x - (canvas.width/2);
+        // STATE.camera.y = actor.pos.y - (canvas.height/2);
+
+        updateTracker();
+    }
+
+    function nextTurn() {
+        STATE.turnIndex++;
+        if (STATE.turnIndex >= STATE.turnQueue.length) {
+            STATE.turnIndex = 0;
+            STATE.round++;
+        }
+        
+        // Skip dead
+        if (getActiveActor().hp <= 0) {
+            nextTurn(); 
+            return;
+        }
+        
+        startTurn();
+    }
+
+    function getActiveActor() {
+        if (STATE.turnQueue.length === 0) return STATE.entities[0]; // Free roam fallback
+        return STATE.turnQueue[STATE.turnIndex];
+    }
+
+    function findTarget(str) {
+        if (!str) return null;
+        return STATE.entities.find(e => e.name.toLowerCase().includes(str) && e !== getActiveActor() && e.hp > 0);
+    }
+
+    function moveRelative(actor, dir, dist) {
+        if (dir.startsWith('n')) actor.pos.y -= dist;
+        if (dir.startsWith('s')) actor.pos.y += dist;
+        if (dir.startsWith('e')) actor.pos.x += dist;
+        if (dir.startsWith('w')) actor.pos.x -= dist;
+        log(`${actor.name} moves ${dir}.`, "sys");
+    }
+
+    function resolveAttack(attacker, defender) {
+        // Range Check (3D Pythagorean)
+        const dx = attacker.pos.x - defender.pos.x;
+        const dy = attacker.pos.y - defender.pos.y;
+        const dz = attacker.pos.z - defender.pos.z;
+        const dist = Math.sqrt(dx*dx + dy*dy + dz*dz);
+        
+        // Assume attack 0 for now
+        const atk = attacker.attacks ? attacker.attacks[0] : {hit:0, dmg:"1d4", range: 5};
+        
+        const rangeFt = atk.range * 5; // Grid scale approx
+        if (dist > rangeFt + 20) { // +20 buffer for size
+            log(`${defender.name} is out of range (${Math.floor(dist)}px).`, "err");
+            return;
+        }
+
+        // Roll
+        const d20 = Math.floor(Math.random() * 20) + 1;
+        const total = d20 + atk.hit;
+        
+        let resString = `Attack ${defender.name}: Rolled ${d20}+${atk.hit} = ${total} vs AC ${defender.ac}. `;
+        
+        if (total >= defender.ac || d20 === 20) {
+            // Dmg Parse (Simple)
+            const parts = atk.dmg.split('+');
+            const dice = parts[0].split('d');
+            let dmg = parseInt(parts[1]) || 0;
+            for(let i=0; i<parseInt(dice[0]); i++) {
+                dmg += Math.floor(Math.random() * parseInt(dice[1])) + 1;
+            }
+            
+            if (d20 === 20) { dmg *= 2; resString += "CRITICAL HIT! "; }
+            
+            defender.hp -= dmg;
+            resString += `Hit for ${dmg} damage.`;
+            log(resString, d20===20 ? "crit" : "hit");
+
+            if (defender.hp <= 0) {
+                log(`${defender.name} was destroyed.`, "alert");
+                updateTracker();
+            }
+        } else {
+            resString += "Miss.";
+            log(resString, "sys");
+        }
+    }
+
+    function updateTracker() {
+        const list = document.getElementById('tracker-list');
+        list.innerHTML = '';
+        
+        STATE.turnQueue.forEach((ent, idx) => {
+            const div = document.createElement('div');
+            div.className = 'tracker-row';
+            if (idx === STATE.turnIndex) div.classList.add('tracker-active');
+            if (ent.hp <= 0) div.classList.add('tracker-dead');
+            
+            div.innerHTML = `<span>${ent.name}</span> <span>${ent.init}</span>`;
+            list.appendChild(div);
+        });
+    }
+
+    // --- 6. CANVAS RENDERER ---
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+
+    function resize() {
+        canvas.width = document.getElementById('viewport').offsetWidth;
+        canvas.height = document.getElementById('viewport').offsetHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    function draw() {
+        // BG
+        ctx.fillStyle = "#101010";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Grid
+        ctx.strokeStyle = "#1a1a1a";
+        ctx.lineWidth = 1;
+        const gridSize = 50;
+        const offsetX = STATE.camera.x % gridSize;
+        const offsetY = STATE.camera.y % gridSize;
+        
+        for(let x=0; x<canvas.width; x+=gridSize) {
+            ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,canvas.height); ctx.stroke();
+        }
+        for(let y=0; y<canvas.height; y+=gridSize) {
+            ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(canvas.width,y); ctx.stroke();
+        }
+
+        // Entities
+        // Sort by Y for simple depth sorting
+        const sorted = [...STATE.entities].sort((a,b) => a.pos.y - b.pos.y);
+
+        sorted.forEach(ent => {
+            if (ent.hp <= 0 && !STATE.turnQueue.includes(ent)) return; // Cleanup logic needed later
+
+            const isActive = (STATE.combatActive && ent === getActiveActor());
+
+            // 1. Shadow (Always on Ground)
+            ctx.fillStyle = "rgba(0,0,0,0.6)";
+            ctx.beginPath();
+            ctx.ellipse(ent.pos.x, ent.pos.y, ent.size, ent.size/2, 0, 0, Math.PI*2);
+            ctx.fill();
+
+            // 2. Flying Line
+            if (ent.pos.z > 0) {
+                ctx.strokeStyle = ent.color;
+                ctx.setLineDash([2, 2]);
+                ctx.beginPath();
+                ctx.moveTo(ent.pos.x, ent.pos.y);
+                ctx.lineTo(ent.pos.x, ent.pos.y - ent.pos.z);
+                ctx.stroke();
+                ctx.setLineDash([]);
+                
+                // Height Label
+                ctx.fillStyle = "#888";
+                ctx.font = "10px monospace";
+                ctx.fillText(`Alt: ${ent.pos.z}`, ent.pos.x + 15, ent.pos.y - ent.pos.z/2);
+            }
+
+            // 3. Body
+            const drawY = ent.pos.y - ent.pos.z;
+            
+            if (isActive) {
+                // Active Turn Ring
+                ctx.strokeStyle = varColor('cyan');
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.arc(ent.pos.x, drawY - 20, ent.size * 1.5, 0, Math.PI*2);
+                ctx.stroke();
+            }
+
+            ctx.fillStyle = ent.hp > 0 ? ent.color : "#444";
+            ctx.fillRect(ent.pos.x - ent.size, drawY - 40, ent.size*2, 40);
+
+            // Name & HP
+            ctx.fillStyle = "white";
+            ctx.font = "11px monospace";
+            ctx.textAlign = "center";
+            ctx.fillText(ent.name, ent.pos.x, drawY - 50);
+
+            // HP Bar
+            ctx.fillStyle = "red";
+            ctx.fillRect(ent.pos.x - 15, drawY - 45, 30, 3);
+            ctx.fillStyle = "#0f0";
+            const hpPct = Math.max(0, ent.hp / ent.max_hp);
+            ctx.fillRect(ent.pos.x - 15, drawY - 45, 30 * hpPct, 3);
+        });
+
+        requestAnimationFrame(draw);
+    }
+    
+    function varColor(name) {
+        return getComputedStyle(document.documentElement).getPropertyValue(`--${name}`).trim();
+    }
+
+    // --- 7. DRAG & DROP LOADER ---
+    const dropZone = document.getElementById('drop-zone');
+    window.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.style.display = 'flex'; });
+    window.addEventListener('dragleave', (e) => { e.preventDefault(); dropZone.style.display = 'none'; });
+    window.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropZone.style.display = 'none';
+        
+        const file = e.dataTransfer.files[0];
+        if (file && file.type === "application/json") {
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                try {
+                    const data = JSON.parse(event.target.result);
+                    // Merge logic: look for directories structure
+                    if (data.directories && data.directories.bestiary) {
+                        // Advanced loading (recursive usually, here simplified)
+                        // Allow direct overwrite if structure matches simplified
+                        log("Loaded Codex Bundle successfully.", "sys");
+                    } else {
+                        // Fallback assume simple struct
+                        Object.assign(CODEX, data);
+                        log("JSON merged into Codex.", "sys");
+                    }
+                } catch (err) {
+                    log("Error parsing JSON.", "err");
+                }
+            };
+            reader.readAsText(file);
+        }
+    });
+
+    // Boot
+    setupDefaultScene();
+    draw();
+    log("SYSTEM READY. Type 'help' for commands.", "sys");
+
+</script>
+</body>
+</html>

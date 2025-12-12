@@ -1,0 +1,501 @@
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Skogsvätt_Agent> python Skogsvatt_cartpole.py
+Ep 0001 | R=  11 | len= 11 | loss=-0.030
+Ep 0002 | R=  17 | len= 17 | loss=0.038
+Ep 0003 | R=  26 | len= 26 | loss=0.050
+Ep 0004 | R=  12 | len= 12 | loss=-0.123
+Ep 0005 | R=  25 | len= 25 | loss=0.126
+Ep 0006 | R=  16 | len= 16 | loss=0.077
+Ep 0007 | R=  43 | len= 43 | loss=0.097
+Ep 0008 | R=  33 | len= 33 | loss=0.077
+Ep 0009 | R=  29 | len= 29 | loss=0.046
+Ep 0010 | R=   9 | len=  9 | loss=-0.070
+Ep 0011 | R=  13 | len= 13 | loss=-0.039
+Ep 0012 | R=  22 | len= 22 | loss=0.041
+Ep 0013 | R=  14 | len= 14 | loss=-0.072
+Ep 0014 | R=  15 | len= 15 | loss=-0.009
+Ep 0015 | R=  14 | len= 14 | loss=0.112
+Ep 0016 | R=  15 | len= 15 | loss=0.011
+Ep 0017 | R=  33 | len= 33 | loss=-0.011
+Ep 0018 | R=  15 | len= 15 | loss=-0.012
+Ep 0019 | R=  19 | len= 19 | loss=0.027
+Ep 0020 | R=   9 | len=  9 | loss=-0.038
+Ep 0021 | R=  12 | len= 12 | loss=-0.058
+Ep 0022 | R=  24 | len= 24 | loss=-0.013
+Ep 0023 | R=  20 | len= 20 | loss=-0.030
+Ep 0024 | R=  16 | len= 16 | loss=-0.041
+Ep 0025 | R=  10 | len= 10 | loss=-0.070
+Ep 0026 | R=  22 | len= 22 | loss=0.012
+Ep 0027 | R=  20 | len= 20 | loss=0.041
+Ep 0028 | R=  21 | len= 21 | loss=0.044
+Ep 0029 | R=  18 | len= 18 | loss=-0.030
+Ep 0030 | R=  23 | len= 23 | loss=0.044
+Ep 0031 | R=  53 | len= 53 | loss=0.022
+Ep 0032 | R=  26 | len= 26 | loss=0.053
+Ep 0033 | R=  14 | len= 14 | loss=-0.031
+Ep 0034 | R=  12 | len= 12 | loss=-0.082
+Ep 0035 | R=  16 | len= 16 | loss=-0.049
+Ep 0036 | R=  46 | len= 46 | loss=0.019
+Ep 0037 | R=  23 | len= 23 | loss=-0.013
+Ep 0038 | R=  41 | len= 41 | loss=0.012
+Ep 0039 | R=  32 | len= 32 | loss=0.007
+Ep 0040 | R=  12 | len= 12 | loss=-0.070
+Ep 0041 | R=  23 | len= 23 | loss=-0.027
+Ep 0042 | R=  37 | len= 37 | loss=0.005
+Ep 0043 | R=  36 | len= 36 | loss=0.005
+Ep 0044 | R=  36 | len= 36 | loss=0.006
+Ep 0045 | R=  20 | len= 20 | loss=-0.009
+Ep 0046 | R=  34 | len= 34 | loss=-0.051
+Ep 0047 | R=  41 | len= 41 | loss=0.000
+Ep 0048 | R=  37 | len= 37 | loss=-0.002
+Ep 0049 | R=  16 | len= 16 | loss=0.032
+Ep 0050 | R=  34 | len= 34 | loss=-0.004
+Ep 0051 | R=  27 | len= 27 | loss=-0.007
+Ep 0052 | R=  21 | len= 21 | loss=-0.087
+Ep 0053 | R=  47 | len= 47 | loss=0.008
+Ep 0054 | R=  34 | len= 34 | loss=-0.056
+Ep 0055 | R=  32 | len= 32 | loss=0.010
+Ep 0056 | R=  57 | len= 57 | loss=-0.076
+Ep 0057 | R=  63 | len= 63 | loss=-0.038
+Ep 0058 | R=  39 | len= 39 | loss=-0.060
+Ep 0059 | R=  56 | len= 56 | loss=-0.020
+Ep 0060 | R=  77 | len= 77 | loss=-0.014
+Ep 0061 | R=  31 | len= 31 | loss=-0.029
+Ep 0062 | R=  27 | len= 27 | loss=-0.090
+Ep 0063 | R=  39 | len= 39 | loss=-0.147
+Ep 0064 | R=  59 | len= 59 | loss=-0.030
+Ep 0065 | R=  32 | len= 32 | loss=0.006
+Ep 0066 | R=  61 | len= 61 | loss=0.011
+Ep 0067 | R=  40 | len= 40 | loss=-0.005
+Ep 0068 | R= 117 | len=117 | loss=0.034
+Ep 0069 | R=  64 | len= 64 | loss=-0.008
+Ep 0070 | R=  73 | len= 73 | loss=-0.014
+Ep 0071 | R=  77 | len= 77 | loss=-0.001
+Ep 0072 | R=  55 | len= 55 | loss=-0.034
+Ep 0073 | R=  42 | len= 42 | loss=0.062
+Ep 0074 | R=  44 | len= 44 | loss=0.001
+Ep 0075 | R=  62 | len= 62 | loss=0.001
+Ep 0076 | R= 175 | len=175 | loss=0.044
+Ep 0077 | R=  90 | len= 90 | loss=0.001
+Ep 0078 | R=  87 | len= 87 | loss=0.014
+Ep 0079 | R=  78 | len= 78 | loss=-0.040
+Ep 0080 | R=  78 | len= 78 | loss=0.055
+Ep 0081 | R=  82 | len= 82 | loss=0.026
+Ep 0082 | R=  69 | len= 69 | loss=0.027
+Ep 0083 | R= 123 | len=123 | loss=0.052
+Ep 0084 | R=  83 | len= 83 | loss=0.004
+Ep 0085 | R=  58 | len= 58 | loss=-0.037
+Ep 0086 | R=  83 | len= 83 | loss=-0.057
+Ep 0087 | R=  42 | len= 42 | loss=0.080
+Ep 0088 | R= 160 | len=160 | loss=0.002
+Ep 0089 | R=  93 | len= 93 | loss=0.008
+Ep 0090 | R= 175 | len=175 | loss=-0.011
+Ep 0091 | R= 100 | len=100 | loss=-0.008
+Ep 0092 | R= 139 | len=139 | loss=-0.026
+Ep 0093 | R=  93 | len= 93 | loss=0.014
+Ep 0094 | R= 111 | len=111 | loss=0.030
+Ep 0095 | R= 100 | len=100 | loss=0.008
+Ep 0096 | R= 149 | len=149 | loss=0.011
+Ep 0097 | R= 172 | len=172 | loss=-0.017
+Ep 0098 | R= 129 | len=129 | loss=-0.017
+Ep 0099 | R= 154 | len=154 | loss=-0.056
+Ep 0100 | R= 210 | len=210 | loss=-0.061
+Ep 0101 | R= 388 | len=388 | loss=-0.009
+Ep 0102 | R= 398 | len=398 | loss=-0.004
+Ep 0103 | R= 315 | len=315 | loss=-0.006
+Ep 0104 | R= 114 | len=114 | loss=0.060
+Ep 0105 | R= 448 | len=448 | loss=-0.006
+Ep 0106 | R= 156 | len=156 | loss=0.014
+Ep 0107 | R= 161 | len=161 | loss=-0.024
+Ep 0108 | R=  95 | len= 95 | loss=0.050
+Ep 0109 | R= 102 | len=102 | loss=-0.013
+Ep 0110 | R= 280 | len=280 | loss=-0.026
+Ep 0111 | R= 341 | len=341 | loss=-0.023
+Ep 0112 | R= 136 | len=136 | loss=0.019
+Ep 0113 | R= 229 | len=229 | loss=-0.027
+Ep 0114 | R= 180 | len=180 | loss=-0.040
+Ep 0115 | R= 450 | len=450 | loss=-0.034
+Ep 0116 | R= 308 | len=308 | loss=-0.021
+Ep 0117 | R= 147 | len=147 | loss=-0.002
+Ep 0118 | R= 115 | len=115 | loss=0.013
+Ep 0119 | R= 438 | len=438 | loss=-0.023
+Ep 0120 | R= 500 | len=500 | loss=-0.018
+Ep 0121 | R= 241 | len=241 | loss=-0.066
+Ep 0122 | R= 303 | len=303 | loss=-0.028
+Ep 0123 | R= 176 | len=176 | loss=0.004
+Ep 0124 | R= 225 | len=225 | loss=0.020
+Ep 0125 | R= 190 | len=190 | loss=-0.027
+Ep 0126 | R= 164 | len=164 | loss=-0.025
+Ep 0127 | R= 167 | len=167 | loss=-0.035
+Ep 0128 | R= 214 | len=214 | loss=-0.008
+Ep 0129 | R= 288 | len=288 | loss=-0.002
+Ep 0130 | R= 157 | len=157 | loss=0.032
+Ep 0131 | R= 162 | len=162 | loss=-0.014
+Ep 0132 | R= 127 | len=127 | loss=-0.006
+Ep 0133 | R= 106 | len=106 | loss=0.016
+Ep 0134 | R= 175 | len=175 | loss=-0.003
+Ep 0135 | R=  99 | len= 99 | loss=-0.010
+Ep 0136 | R= 178 | len=178 | loss=-0.016
+Ep 0137 | R= 120 | len=120 | loss=-0.041
+Ep 0138 | R= 129 | len=129 | loss=-0.045
+Ep 0139 | R= 111 | len=111 | loss=0.014
+Ep 0140 | R= 141 | len=141 | loss=-0.029
+Ep 0141 | R= 158 | len=158 | loss=0.017
+Ep 0142 | R= 178 | len=178 | loss=0.002
+Ep 0143 | R= 149 | len=149 | loss=0.007
+Ep 0144 | R= 134 | len=134 | loss=-0.100
+Ep 0145 | R= 193 | len=193 | loss=-0.035
+Ep 0146 | R= 108 | len=108 | loss=-0.037
+Ep 0147 | R= 133 | len=133 | loss=-0.001
+Ep 0148 | R= 124 | len=124 | loss=-0.018
+Ep 0149 | R= 249 | len=249 | loss=-0.014
+Ep 0150 | R= 208 | len=208 | loss=-0.019
+Ep 0151 | R= 153 | len=153 | loss=-0.039
+Ep 0152 | R= 224 | len=224 | loss=-0.001
+Ep 0153 | R= 143 | len=143 | loss=-0.013
+Ep 0154 | R= 125 | len=125 | loss=-0.033
+Ep 0155 | R= 175 | len=175 | loss=-0.040
+Ep 0156 | R= 143 | len=143 | loss=-0.113
+Ep 0157 | R= 238 | len=238 | loss=0.003
+Ep 0158 | R= 234 | len=234 | loss=-0.027
+Ep 0159 | R= 414 | len=414 | loss=-0.014
+Ep 0160 | R= 500 | len=500 | loss=-0.014
+Ep 0161 | R= 500 | len=500 | loss=-0.017
+Ep 0162 | R= 500 | len=500 | loss=0.005
+Ep 0163 | R= 500 | len=500 | loss=-0.013
+Ep 0164 | R= 407 | len=407 | loss=0.010
+Ep 0165 | R= 500 | len=500 | loss=0.016
+Ep 0166 | R= 379 | len=379 | loss=-0.026
+Ep 0167 | R= 371 | len=371 | loss=-0.044
+Ep 0168 | R= 378 | len=378 | loss=-0.004
+Ep 0169 | R= 261 | len=261 | loss=-0.007
+Ep 0170 | R= 500 | len=500 | loss=-0.009
+Ep 0171 | R= 500 | len=500 | loss=0.002
+Ep 0172 | R= 500 | len=500 | loss=-0.027
+Ep 0173 | R= 500 | len=500 | loss=0.005
+Ep 0174 | R= 367 | len=367 | loss=-0.050
+Ep 0175 | R= 500 | len=500 | loss=0.023
+Ep 0176 | R= 500 | len=500 | loss=-0.001
+Ep 0177 | R= 136 | len=136 | loss=-0.036
+Ep 0178 | R= 447 | len=447 | loss=-0.001
+Ep 0179 | R= 500 | len=500 | loss=-0.002
+Ep 0180 | R= 500 | len=500 | loss=-0.033
+Ep 0181 | R= 500 | len=500 | loss=-0.010
+Ep 0182 | R= 500 | len=500 | loss=0.007
+Ep 0183 | R= 500 | len=500 | loss=0.010
+Ep 0184 | R= 500 | len=500 | loss=-0.006
+Ep 0185 | R= 500 | len=500 | loss=-0.015
+Ep 0186 | R= 246 | len=246 | loss=-0.041
+Ep 0187 | R= 500 | len=500 | loss=-0.008
+Ep 0188 | R= 242 | len=242 | loss=-0.044
+Ep 0189 | R= 500 | len=500 | loss=-0.007
+Ep 0190 | R= 500 | len=500 | loss=-0.008
+Ep 0191 | R= 500 | len=500 | loss=0.005
+Ep 0192 | R= 500 | len=500 | loss=0.004
+Ep 0193 | R= 500 | len=500 | loss=0.006
+Ep 0194 | R= 500 | len=500 | loss=-0.002
+Ep 0195 | R= 500 | len=500 | loss=-0.008
+Ep 0196 | R= 391 | len=391 | loss=-0.074
+Ep 0197 | R= 500 | len=500 | loss=0.008
+Ep 0198 | R= 500 | len=500 | loss=-0.013
+Ep 0199 | R= 500 | len=500 | loss=0.008
+Ep 0200 | R= 500 | len=500 | loss=0.015
+Ep 0201 | R= 500 | len=500 | loss=0.008
+Ep 0202 | R= 500 | len=500 | loss=-0.006
+Ep 0203 | R= 500 | len=500 | loss=-0.035
+Ep 0204 | R= 500 | len=500 | loss=-0.026
+Ep 0205 | R= 500 | len=500 | loss=-0.026
+Ep 0206 | R= 500 | len=500 | loss=0.012
+Ep 0207 | R= 500 | len=500 | loss=0.010
+Ep 0208 | R= 500 | len=500 | loss=-0.007
+Ep 0209 | R= 500 | len=500 | loss=0.003
+Ep 0210 | R= 500 | len=500 | loss=0.005
+Ep 0211 | R= 500 | len=500 | loss=-0.011
+Ep 0212 | R= 500 | len=500 | loss=0.014
+Ep 0213 | R= 500 | len=500 | loss=0.019
+Ep 0214 | R= 500 | len=500 | loss=-0.015
+Ep 0215 | R= 500 | len=500 | loss=0.001
+Ep 0216 | R= 500 | len=500 | loss=0.010
+Ep 0217 | R= 500 | len=500 | loss=-0.007
+Ep 0218 | R= 500 | len=500 | loss=0.019
+Ep 0219 | R= 500 | len=500 | loss=-0.004
+Ep 0220 | R= 500 | len=500 | loss=-0.018
+Ep 0221 | R= 500 | len=500 | loss=-0.017
+Ep 0222 | R= 500 | len=500 | loss=0.020
+Ep 0223 | R= 500 | len=500 | loss=-0.011
+Ep 0224 | R= 311 | len=311 | loss=-0.045
+Ep 0225 | R= 500 | len=500 | loss=0.005
+Ep 0226 | R= 500 | len=500 | loss=-0.009
+Ep 0227 | R= 500 | len=500 | loss=0.001
+Ep 0228 | R= 500 | len=500 | loss=0.016
+Ep 0229 | R= 500 | len=500 | loss=-0.014
+Ep 0230 | R= 500 | len=500 | loss=0.013
+Ep 0231 | R= 423 | len=423 | loss=-0.025
+Ep 0232 | R= 500 | len=500 | loss=-0.018
+Ep 0233 | R= 452 | len=452 | loss=-0.000
+Ep 0234 | R= 500 | len=500 | loss=0.012
+Ep 0235 | R= 388 | len=388 | loss=0.004
+Ep 0236 | R= 345 | len=345 | loss=0.007
+Ep 0237 | R= 405 | len=405 | loss=0.003
+Ep 0238 | R= 423 | len=423 | loss=0.006
+Ep 0239 | R= 445 | len=445 | loss=0.004
+Ep 0240 | R= 500 | len=500 | loss=-0.008
+Ep 0241 | R= 498 | len=498 | loss=-0.012
+Ep 0242 | R= 500 | len=500 | loss=0.010
+Ep 0243 | R= 500 | len=500 | loss=-0.008
+Ep 0244 | R= 500 | len=500 | loss=-0.013
+Ep 0245 | R= 500 | len=500 | loss=-0.001
+Ep 0246 | R= 500 | len=500 | loss=0.010
+Ep 0247 | R= 500 | len=500 | loss=-0.013
+Ep 0248 | R= 500 | len=500 | loss=-0.012
+Ep 0249 | R= 500 | len=500 | loss=-0.002
+Ep 0250 | R= 500 | len=500 | loss=-0.000
+Ep 0251 | R= 500 | len=500 | loss=0.019
+Ep 0252 | R= 500 | len=500 | loss=-0.011
+Ep 0253 | R= 500 | len=500 | loss=0.001
+Ep 0254 | R= 500 | len=500 | loss=-0.017
+Ep 0255 | R= 500 | len=500 | loss=-0.012
+Ep 0256 | R= 500 | len=500 | loss=0.010
+Ep 0257 | R= 500 | len=500 | loss=0.002
+Ep 0258 | R= 500 | len=500 | loss=0.003
+Ep 0259 | R= 500 | len=500 | loss=-0.005
+Ep 0260 | R= 426 | len=426 | loss=-0.041
+Ep 0261 | R= 500 | len=500 | loss=-0.000
+Ep 0262 | R= 500 | len=500 | loss=0.026
+Ep 0263 | R= 500 | len=500 | loss=0.002
+Ep 0264 | R= 500 | len=500 | loss=-0.007
+Ep 0265 | R= 500 | len=500 | loss=-0.002
+Ep 0266 | R= 500 | len=500 | loss=0.001
+Ep 0267 | R= 500 | len=500 | loss=0.004
+Ep 0268 | R= 500 | len=500 | loss=0.012
+Ep 0269 | R= 500 | len=500 | loss=-0.001
+Ep 0270 | R= 500 | len=500 | loss=-0.015
+Ep 0271 | R= 500 | len=500 | loss=-0.009
+Ep 0272 | R= 500 | len=500 | loss=-0.027
+Ep 0273 | R= 500 | len=500 | loss=-0.011
+Ep 0274 | R= 500 | len=500 | loss=-0.002
+Ep 0275 | R= 500 | len=500 | loss=-0.005
+Ep 0276 | R= 500 | len=500 | loss=-0.013
+Ep 0277 | R= 500 | len=500 | loss=-0.001
+Ep 0278 | R= 500 | len=500 | loss=0.013
+Ep 0279 | R= 500 | len=500 | loss=-0.019
+Ep 0280 | R= 500 | len=500 | loss=-0.007
+Ep 0281 | R= 238 | len=238 | loss=-0.043
+Ep 0282 | R= 500 | len=500 | loss=0.005
+Ep 0283 | R= 500 | len=500 | loss=0.012
+Ep 0284 | R= 500 | len=500 | loss=0.006
+Ep 0285 | R= 500 | len=500 | loss=-0.007
+Ep 0286 | R= 500 | len=500 | loss=0.009
+Ep 0287 | R= 500 | len=500 | loss=0.020
+Ep 0288 | R= 500 | len=500 | loss=0.000
+Ep 0289 | R= 500 | len=500 | loss=-0.027
+Ep 0290 | R= 500 | len=500 | loss=-0.009
+Ep 0291 | R= 500 | len=500 | loss=-0.001
+Ep 0292 | R= 500 | len=500 | loss=-0.010
+Ep 0293 | R= 500 | len=500 | loss=-0.007
+Ep 0294 | R= 500 | len=500 | loss=-0.008
+Ep 0295 | R= 500 | len=500 | loss=-0.000
+Ep 0296 | R= 500 | len=500 | loss=-0.001
+Ep 0297 | R= 500 | len=500 | loss=-0.009
+Ep 0298 | R= 500 | len=500 | loss=0.026
+Ep 0299 | R= 500 | len=500 | loss=-0.007
+Ep 0300 | R= 500 | len=500 | loss=0.036
+Ep 0301 | R= 500 | len=500 | loss=-0.007
+Ep 0302 | R= 500 | len=500 | loss=-0.029
+Ep 0303 | R= 500 | len=500 | loss=-0.014
+Ep 0304 | R= 500 | len=500 | loss=0.003
+Ep 0305 | R= 500 | len=500 | loss=-0.000
+Ep 0306 | R= 500 | len=500 | loss=0.014
+Ep 0307 | R= 500 | len=500 | loss=0.009
+Ep 0308 | R= 500 | len=500 | loss=-0.029
+Ep 0309 | R= 500 | len=500 | loss=-0.036
+Ep 0310 | R= 500 | len=500 | loss=-0.006
+Ep 0311 | R= 500 | len=500 | loss=0.022
+Ep 0312 | R= 500 | len=500 | loss=-0.002
+Ep 0313 | R= 500 | len=500 | loss=-0.011
+Ep 0314 | R= 500 | len=500 | loss=0.007
+Ep 0315 | R= 500 | len=500 | loss=0.023
+Ep 0316 | R= 500 | len=500 | loss=0.001
+Ep 0317 | R= 500 | len=500 | loss=0.001
+Ep 0318 | R= 500 | len=500 | loss=-0.020
+Ep 0319 | R= 500 | len=500 | loss=-0.008
+Ep 0320 | R= 500 | len=500 | loss=0.028
+Ep 0321 | R= 500 | len=500 | loss=-0.002
+Ep 0322 | R= 500 | len=500 | loss=-0.010
+Ep 0323 | R= 500 | len=500 | loss=-0.015
+Ep 0324 | R= 500 | len=500 | loss=-0.016
+Ep 0325 | R= 500 | len=500 | loss=-0.016
+Ep 0326 | R= 500 | len=500 | loss=-0.022
+Ep 0327 | R= 500 | len=500 | loss=-0.004
+Ep 0328 | R= 500 | len=500 | loss=0.003
+Ep 0329 | R= 500 | len=500 | loss=-0.005
+Ep 0330 | R= 500 | len=500 | loss=0.019
+Ep 0331 | R= 500 | len=500 | loss=0.003
+Ep 0332 | R= 500 | len=500 | loss=0.010
+Ep 0333 | R= 500 | len=500 | loss=0.015
+Ep 0334 | R= 500 | len=500 | loss=-0.011
+Ep 0335 | R= 500 | len=500 | loss=-0.012
+Ep 0336 | R= 500 | len=500 | loss=0.013
+Ep 0337 | R= 500 | len=500 | loss=0.014
+Ep 0338 | R= 500 | len=500 | loss=-0.007
+Ep 0339 | R= 256 | len=256 | loss=-0.017
+Ep 0340 | R= 500 | len=500 | loss=0.012
+Ep 0341 | R= 500 | len=500 | loss=0.014
+Ep 0342 | R= 500 | len=500 | loss=0.019
+Ep 0343 | R= 500 | len=500 | loss=0.013
+Ep 0344 | R= 500 | len=500 | loss=0.001
+Ep 0345 | R= 500 | len=500 | loss=-0.011
+Ep 0346 | R= 500 | len=500 | loss=0.027
+Ep 0347 | R= 500 | len=500 | loss=0.008
+Ep 0348 | R= 500 | len=500 | loss=-0.001
+Ep 0349 | R= 500 | len=500 | loss=-0.013
+Ep 0350 | R= 500 | len=500 | loss=0.017
+Ep 0351 | R= 500 | len=500 | loss=-0.028
+Ep 0352 | R= 500 | len=500 | loss=0.006
+Ep 0353 | R= 500 | len=500 | loss=-0.004
+Ep 0354 | R= 500 | len=500 | loss=-0.013
+Ep 0355 | R= 500 | len=500 | loss=0.016
+Ep 0356 | R= 500 | len=500 | loss=0.004
+Ep 0357 | R= 500 | len=500 | loss=-0.008
+Ep 0358 | R= 500 | len=500 | loss=-0.023
+Ep 0359 | R= 500 | len=500 | loss=0.011
+Ep 0360 | R= 500 | len=500 | loss=0.017
+Ep 0361 | R= 500 | len=500 | loss=-0.019
+Ep 0362 | R= 500 | len=500 | loss=0.008
+Ep 0363 | R= 500 | len=500 | loss=0.015
+Ep 0364 | R= 500 | len=500 | loss=-0.004
+Ep 0365 | R= 500 | len=500 | loss=-0.002
+Ep 0366 | R= 500 | len=500 | loss=-0.013
+Ep 0367 | R= 500 | len=500 | loss=0.002
+Ep 0368 | R= 500 | len=500 | loss=0.015
+Ep 0369 | R= 500 | len=500 | loss=-0.011
+Ep 0370 | R= 229 | len=229 | loss=-0.009
+Ep 0371 | R= 500 | len=500 | loss=0.012
+Ep 0372 | R= 500 | len=500 | loss=-0.000
+Ep 0373 | R= 500 | len=500 | loss=-0.011
+Ep 0374 | R= 500 | len=500 | loss=-0.022
+Ep 0375 | R= 500 | len=500 | loss=-0.011
+Ep 0376 | R= 500 | len=500 | loss=-0.013
+Ep 0377 | R= 500 | len=500 | loss=-0.000
+Ep 0378 | R= 500 | len=500 | loss=0.013
+Ep 0379 | R= 500 | len=500 | loss=0.004
+Ep 0380 | R= 500 | len=500 | loss=0.005
+Ep 0381 | R= 500 | len=500 | loss=0.011
+Ep 0382 | R= 500 | len=500 | loss=-0.013
+Ep 0383 | R= 500 | len=500 | loss=-0.045
+Ep 0384 | R= 500 | len=500 | loss=0.032
+Ep 0385 | R= 500 | len=500 | loss=-0.023
+Ep 0386 | R= 500 | len=500 | loss=0.008
+Ep 0387 | R= 500 | len=500 | loss=-0.013
+Ep 0388 | R= 500 | len=500 | loss=-0.017
+Ep 0389 | R= 500 | len=500 | loss=-0.015
+Ep 0390 | R= 500 | len=500 | loss=0.008
+Ep 0391 | R= 500 | len=500 | loss=-0.017
+Ep 0392 | R= 500 | len=500 | loss=0.001
+Ep 0393 | R= 500 | len=500 | loss=-0.002
+Ep 0394 | R= 500 | len=500 | loss=-0.023
+Ep 0395 | R= 500 | len=500 | loss=0.012
+Ep 0396 | R= 500 | len=500 | loss=0.011
+Ep 0397 | R= 500 | len=500 | loss=-0.008
+Ep 0398 | R= 500 | len=500 | loss=-0.009
+Ep 0399 | R= 500 | len=500 | loss=0.017
+Ep 0400 | R= 500 | len=500 | loss=-0.011
+Ep 0401 | R= 500 | len=500 | loss=-0.009
+Ep 0402 | R= 500 | len=500 | loss=0.001
+Ep 0403 | R= 500 | len=500 | loss=0.007
+Ep 0404 | R= 500 | len=500 | loss=-0.024
+Ep 0405 | R= 500 | len=500 | loss=-0.011
+Ep 0406 | R= 500 | len=500 | loss=-0.008
+Ep 0407 | R= 500 | len=500 | loss=0.012
+Ep 0408 | R= 500 | len=500 | loss=-0.004
+Ep 0409 | R= 500 | len=500 | loss=0.002
+Ep 0410 | R= 500 | len=500 | loss=0.011
+Ep 0411 | R= 500 | len=500 | loss=0.003
+Ep 0412 | R= 500 | len=500 | loss=-0.015
+Ep 0413 | R= 500 | len=500 | loss=-0.001
+Ep 0414 | R= 500 | len=500 | loss=-0.010
+Ep 0415 | R= 500 | len=500 | loss=0.003
+Ep 0416 | R= 500 | len=500 | loss=0.013
+Ep 0417 | R= 500 | len=500 | loss=-0.001
+Ep 0418 | R= 500 | len=500 | loss=0.006
+Ep 0419 | R= 500 | len=500 | loss=0.021
+Ep 0420 | R= 500 | len=500 | loss=0.002
+Ep 0421 | R= 500 | len=500 | loss=0.029
+Ep 0422 | R= 500 | len=500 | loss=0.008
+Ep 0423 | R= 500 | len=500 | loss=-0.023
+Ep 0424 | R= 500 | len=500 | loss=-0.030
+Ep 0425 | R= 500 | len=500 | loss=-0.032
+Ep 0426 | R= 500 | len=500 | loss=-0.032
+Ep 0427 | R= 500 | len=500 | loss=0.022
+Ep 0428 | R= 500 | len=500 | loss=-0.023
+Ep 0429 | R= 500 | len=500 | loss=0.003
+Ep 0430 | R= 500 | len=500 | loss=-0.038
+Ep 0431 | R= 500 | len=500 | loss=-0.027
+Ep 0432 | R= 500 | len=500 | loss=-0.002
+Ep 0433 | R= 500 | len=500 | loss=-0.022
+Ep 0434 | R= 500 | len=500 | loss=-0.013
+Ep 0435 | R= 500 | len=500 | loss=0.004
+Ep 0436 | R= 500 | len=500 | loss=0.021
+Ep 0437 | R= 500 | len=500 | loss=-0.008
+Ep 0438 | R= 500 | len=500 | loss=0.031
+Ep 0439 | R= 500 | len=500 | loss=-0.008
+Ep 0440 | R= 500 | len=500 | loss=0.025
+Ep 0441 | R= 500 | len=500 | loss=0.008
+Ep 0442 | R= 500 | len=500 | loss=-0.010
+Ep 0443 | R= 500 | len=500 | loss=-0.020
+Ep 0444 | R= 500 | len=500 | loss=0.012
+Ep 0445 | R= 500 | len=500 | loss=0.006
+Ep 0446 | R= 500 | len=500 | loss=0.025
+Ep 0447 | R= 500 | len=500 | loss=0.004
+Ep 0448 | R= 500 | len=500 | loss=-0.012
+Ep 0449 | R= 500 | len=500 | loss=0.002
+Ep 0450 | R= 500 | len=500 | loss=0.020
+Ep 0451 | R= 500 | len=500 | loss=-0.012
+Ep 0452 | R= 500 | len=500 | loss=-0.030
+Ep 0453 | R= 500 | len=500 | loss=-0.014
+Ep 0454 | R= 500 | len=500 | loss=0.038
+Ep 0455 | R= 500 | len=500 | loss=-0.007
+Ep 0456 | R= 500 | len=500 | loss=0.004
+Ep 0457 | R= 500 | len=500 | loss=-0.006
+Ep 0458 | R= 500 | len=500 | loss=0.029
+Ep 0459 | R= 500 | len=500 | loss=0.007
+Ep 0460 | R= 500 | len=500 | loss=-0.001
+Ep 0461 | R= 500 | len=500 | loss=0.012
+Ep 0462 | R= 500 | len=500 | loss=0.001
+Ep 0463 | R= 500 | len=500 | loss=0.005
+Ep 0464 | R= 500 | len=500 | loss=0.016
+Ep 0465 | R= 500 | len=500 | loss=0.012
+Ep 0466 | R= 500 | len=500 | loss=0.012
+Ep 0467 | R= 500 | len=500 | loss=-0.020
+Ep 0468 | R= 500 | len=500 | loss=-0.031
+Ep 0469 | R= 500 | len=500 | loss=-0.029
+Ep 0470 | R= 500 | len=500 | loss=-0.032
+Ep 0471 | R= 500 | len=500 | loss=0.019
+Ep 0472 | R= 500 | len=500 | loss=-0.021
+Ep 0473 | R= 500 | len=500 | loss=0.021
+Ep 0474 | R= 500 | len=500 | loss=-0.008
+Ep 0475 | R= 500 | len=500 | loss=-0.012
+Ep 0476 | R= 500 | len=500 | loss=0.008
+Ep 0477 | R= 500 | len=500 | loss=-0.006
+Ep 0478 | R= 500 | len=500 | loss=-0.026
+Ep 0479 | R= 500 | len=500 | loss=-0.034
+Ep 0480 | R= 500 | len=500 | loss=0.014
+Ep 0481 | R= 500 | len=500 | loss=0.017
+Ep 0482 | R= 500 | len=500 | loss=-0.002
+Ep 0483 | R= 500 | len=500 | loss=0.010
+Ep 0484 | R= 500 | len=500 | loss=0.008
+Ep 0485 | R= 500 | len=500 | loss=0.000
+Ep 0486 | R= 500 | len=500 | loss=0.011
+Ep 0487 | R= 500 | len=500 | loss=0.016
+Ep 0488 | R= 500 | len=500 | loss=0.016
+Ep 0489 | R= 500 | len=500 | loss=0.031
+Ep 0490 | R= 500 | len=500 | loss=-0.042
+Ep 0491 | R= 500 | len=500 | loss=0.012
+Ep 0492 | R= 500 | len=500 | loss=-0.004
+Ep 0493 | R= 500 | len=500 | loss=-0.026
+Ep 0494 | R= 500 | len=500 | loss=0.012
+Ep 0495 | R= 500 | len=500 | loss=0.014
+Ep 0496 | R= 500 | len=500 | loss=0.007
+Ep 0497 | R= 500 | len=500 | loss=-0.005
+Ep 0498 | R= 500 | len=500 | loss=0.008
+Ep 0499 | R= 500 | len=500 | loss=-0.018
+Ep 0500 | R= 500 | len=500 | loss=0.017

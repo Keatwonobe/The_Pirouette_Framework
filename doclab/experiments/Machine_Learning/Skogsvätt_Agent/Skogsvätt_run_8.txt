@@ -1,0 +1,2096 @@
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Skogsvätt_Agent> python Skogsvatt_pendulum_3.py
+[ENGRAM] New good episode stored at ep 1: R_raw=-1550.92
+[MACRO-RANK] Top macros:
+  #1: score=-1137.53 | origin_ep=   1 | origin_R=-1550.92
+[Pendulum] Ep 0001 | R_raw=-1550.92 | len=200 | loss=577.219
+[ENGRAM] New good episode stored at ep 2: R_raw=-1596.75
+[MACRO-RANK] Top macros:
+  #1: score=-1111.38 | origin_ep=   1 | origin_R=-1550.92
+  #2: score=-1217.67 | origin_ep=   2 | origin_R=-1596.75
+[Pendulum] Ep 0002 | R_raw=-1596.75 | len=200 | loss=633.151
+[ENGRAM] New good episode stored at ep 3: R_raw=-1151.25
+[MACRO-RANK] Top macros:
+  #1: score=-1135.83 | origin_ep=   2 | origin_R=-1596.75
+  #2: score=-1174.29 | origin_ep=   1 | origin_R=-1550.92
+  #3: score=-1664.93 | origin_ep=   3 | origin_R=-1151.25
+[Pendulum] Ep 0003 | R_raw=-1151.25 | len=200 | loss=321.409
+[ENGRAM] New good episode stored at ep 4: R_raw=-1419.33
+[MACRO-RANK] Top macros:
+  #1: score=-1036.33 | origin_ep=   3 | origin_R=-1151.25
+  #2: score=-1167.72 | origin_ep=   2 | origin_R=-1596.75
+  #3: score=-1462.06 | origin_ep=   1 | origin_R=-1550.92
+  #4: score=-1547.56 | origin_ep=   4 | origin_R=-1419.33
+[Pendulum] Ep 0004 | R_raw=-1419.33 | len=200 | loss=518.692
+[ENGRAM] New good episode stored at ep 5: R_raw=-1704.74
+[MACRO-RANK] Top macros:
+  #1: score=-824.89 | origin_ep=   4 | origin_R=-1419.33
+  #2: score=-1146.24 | origin_ep=   1 | origin_R=-1550.92
+  #3: score=-1169.26 | origin_ep=   5 | origin_R=-1704.74
+  #4: score=-1437.19 | origin_ep=   3 | origin_R=-1151.25
+  #5: score=-1554.27 | origin_ep=   2 | origin_R=-1596.75
+[Pendulum] Ep 0005 | R_raw=-1704.74 | len=200 | loss=680.367
+[ENGRAM] New good episode stored at ep 6: R_raw=-927.23
+[MACRO-RANK] Top macros:
+  #1: score=-1049.02 | origin_ep=   2 | origin_R=-1596.75
+  #2: score=-1123.44 | origin_ep=   4 | origin_R=-1419.33
+  #3: score=-1144.15 | origin_ep=   5 | origin_R=-1704.74
+  #4: score=-1349.83 | origin_ep=   1 | origin_R=-1550.92
+  #5: score=-1361.86 | origin_ep=   6 | origin_R=-927.23
+  #6: score=-1380.97 | origin_ep=   3 | origin_R=-1151.25
+[Pendulum] Ep 0006 | R_raw=-927.23 | len=200 | loss=219.552
+[ENGRAM] New good episode stored at ep 7: R_raw=-1474.54
+[MACRO-RANK] Top macros:
+  #1: score=-863.54 | origin_ep=   2 | origin_R=-1596.75
+  #2: score=-1097.25 | origin_ep=   3 | origin_R=-1151.25
+  #3: score=-1291.09 | origin_ep=   6 | origin_R=-927.23
+  #4: score=-1306.62 | origin_ep=   1 | origin_R=-1550.92
+  #5: score=-1395.80 | origin_ep=   4 | origin_R=-1419.33
+  #6: score=-1416.87 | origin_ep=   7 | origin_R=-1474.54
+  #7: score=-1593.02 | origin_ep=   5 | origin_R=-1704.74
+[Pendulum] Ep 0007 | R_raw=-1474.54 | len=200 | loss=559.595
+[ENGRAM] New good episode stored at ep 8: R_raw=-1274.60
+[MACRO-RANK] Top macros:
+  #1: score=-1154.64 | origin_ep=   1 | origin_R=-1550.92
+  #2: score=-1201.74 | origin_ep=   4 | origin_R=-1419.33
+  #3: score=-1205.88 | origin_ep=   6 | origin_R=-927.23
+  #4: score=-1270.98 | origin_ep=   7 | origin_R=-1474.54
+  #5: score=-1333.49 | origin_ep=   5 | origin_R=-1704.74
+  #6: score=-1358.78 | origin_ep=   2 | origin_R=-1596.75
+  #7: score=-1512.24 | origin_ep=   3 | origin_R=-1151.25
+  #8: score=-1629.67 | origin_ep=   8 | origin_R=-1274.60
+[Pendulum] Ep 0008 | R_raw=-1274.60 | len=200 | loss=396.496
+[ENGRAM] New good episode stored at ep 9: R_raw=-942.21
+[MACRO-RANK] Top macros:
+  #1: score=-1091.82 | origin_ep=   6 | origin_R=-927.23
+  #2: score=-1116.54 | origin_ep=   8 | origin_R=-1274.60
+  #3: score=-1210.97 | origin_ep=   5 | origin_R=-1704.74
+  #4: score=-1253.25 | origin_ep=   3 | origin_R=-1151.25
+  #5: score=-1285.57 | origin_ep=   9 | origin_R=-942.21
+  #6: score=-1302.20 | origin_ep=   1 | origin_R=-1550.92
+  #7: score=-1332.14 | origin_ep=   7 | origin_R=-1474.54
+  #8: score=-1344.54 | origin_ep=   2 | origin_R=-1596.75
+  #9: score=-1392.95 | origin_ep=   4 | origin_R=-1419.33
+[Pendulum] Ep 0009 | R_raw=-942.21 | len=200 | loss=190.969
+[ENGRAM] New good episode stored at ep 10: R_raw=-1076.81
+[MACRO-RANK] Top macros:
+  #1: score=-849.88 | origin_ep=   3 | origin_R=-1151.25
+  #2: score=-1069.12 | origin_ep=   1 | origin_R=-1550.92
+  #3: score=-1268.51 | origin_ep=   9 | origin_R=-942.21
+  #4: score=-1308.80 | origin_ep=   2 | origin_R=-1596.75
+  #5: score=-1373.30 | origin_ep=   4 | origin_R=-1419.33
+  #6: score=-1409.41 | origin_ep=   6 | origin_R=-927.23
+  #7: score=-1430.43 | origin_ep=   8 | origin_R=-1274.60
+  #8: score=-1438.40 | origin_ep=   7 | origin_R=-1474.54
+  #9: score=-1462.75 | origin_ep=   5 | origin_R=-1704.74
+  #10: score=-1531.32 | origin_ep=  10 | origin_R=-1076.81
+[Pendulum] Ep 0010 | R_raw=-1076.81 | len=200 | loss=295.118
+[ENGRAM] New good episode stored at ep 11: R_raw=-1223.03
+[MACRO-RANK] Top macros:
+  #1: score=-923.02 | origin_ep=   6 | origin_R=-927.23
+  #2: score=-997.57 | origin_ep=   7 | origin_R=-1474.54
+  #3: score=-1036.80 | origin_ep=   8 | origin_R=-1274.60
+  #4: score=-1111.85 | origin_ep=   9 | origin_R=-942.21
+  #5: score=-1135.78 | origin_ep=   4 | origin_R=-1419.33
+  #6: score=-1220.54 | origin_ep=  11 | origin_R=-1223.03
+  #7: score=-1235.21 | origin_ep=   1 | origin_R=-1550.92
+  #8: score=-1312.26 | origin_ep=   2 | origin_R=-1596.75
+  #9: score=-1376.16 | origin_ep=  10 | origin_R=-1076.81
+  #10: score=-1379.00 | origin_ep=   3 | origin_R=-1151.25
+[Pendulum] Ep 0011 | R_raw=-1223.03 | len=200 | loss=387.562
+[ENGRAM] New good episode stored at ep 12: R_raw=-1354.07
+[MACRO-RANK] Top macros:
+  #1: score=-923.46 | origin_ep=   6 | origin_R=-927.23
+  #2: score=-1127.74 | origin_ep=  11 | origin_R=-1223.03
+  #3: score=-1157.10 | origin_ep=  10 | origin_R=-1076.81
+  #4: score=-1162.39 | origin_ep=   2 | origin_R=-1596.75
+  #5: score=-1199.62 | origin_ep=   8 | origin_R=-1274.60
+  #6: score=-1210.52 | origin_ep=   1 | origin_R=-1550.92
+  #7: score=-1256.60 | origin_ep=   7 | origin_R=-1474.54
+  #8: score=-1317.13 | origin_ep=   4 | origin_R=-1419.33
+  #9: score=-1335.02 | origin_ep=   9 | origin_R=-942.21
+  #10: score=-1340.98 | origin_ep=   3 | origin_R=-1151.25
+[Pendulum] Ep 0012 | R_raw=-1354.07 | len=200 | loss=440.211
+[ENGRAM] New good episode stored at ep 13: R_raw=-1227.59
+[MACRO-RANK] Top macros:
+  #1: score=-863.79 | origin_ep=   8 | origin_R=-1274.60
+  #2: score=-1022.44 | origin_ep=  13 | origin_R=-1227.59
+  #3: score=-1104.42 | origin_ep=  12 | origin_R=-1354.07
+  #4: score=-1168.95 | origin_ep=   2 | origin_R=-1596.75
+  #5: score=-1228.89 | origin_ep=   3 | origin_R=-1151.25
+  #6: score=-1250.97 | origin_ep=   6 | origin_R=-927.23
+  #7: score=-1280.02 | origin_ep=   7 | origin_R=-1474.54
+  #8: score=-1328.31 | origin_ep=  10 | origin_R=-1076.81
+  #9: score=-1371.43 | origin_ep=   9 | origin_R=-942.21
+  #10: score=-1373.74 | origin_ep=  11 | origin_R=-1223.03
+[Pendulum] Ep 0013 | R_raw=-1227.59 | len=200 | loss=384.519
+[ENGRAM] New good episode stored at ep 14: R_raw=-1388.42
+[MACRO-RANK] Top macros:
+  #1: score=-990.31 | origin_ep=   8 | origin_R=-1274.60
+  #2: score=-1032.79 | origin_ep=   6 | origin_R=-927.23
+  #3: score=-1068.38 | origin_ep=   9 | origin_R=-942.21
+  #4: score=-1131.44 | origin_ep=   2 | origin_R=-1596.75
+  #5: score=-1178.53 | origin_ep=  11 | origin_R=-1223.03
+  #6: score=-1218.93 | origin_ep=  12 | origin_R=-1354.07
+  #7: score=-1337.98 | origin_ep=   7 | origin_R=-1474.54
+  #8: score=-1346.77 | origin_ep=  10 | origin_R=-1076.81
+  #9: score=-1460.46 | origin_ep=   4 | origin_R=-1419.33
+  #10: score=-1494.50 | origin_ep=  14 | origin_R=-1388.42
+[Pendulum] Ep 0014 | R_raw=-1388.42 | len=200 | loss=497.832
+[Pendulum] Ep 0015 | R_raw=-1671.53 | len=200 | loss=684.992
+[Pendulum] Ep 0016 | R_raw=-1690.13 | len=200 | loss=674.352
+[Pendulum] Ep 0017 | R_raw=-1790.36 | len=200 | loss=767.190
+[Pendulum] Ep 0018 | R_raw=-1839.83 | len=200 | loss=790.826
+[ENGRAM] New good episode stored at ep 19: R_raw=-1158.44
+[MACRO-RANK] Top macros:
+  #1: score=-889.16 | origin_ep=   2 | origin_R=-1596.75
+  #2: score=-926.34 | origin_ep=  14 | origin_R=-1388.42
+  #3: score=-1083.42 | origin_ep=   4 | origin_R=-1419.33
+  #4: score=-1106.18 | origin_ep=   7 | origin_R=-1474.54
+  #5: score=-1139.61 | origin_ep=   9 | origin_R=-942.21
+  #6: score=-1151.70 | origin_ep=   3 | origin_R=-1151.25
+  #7: score=-1194.34 | origin_ep=  13 | origin_R=-1227.59
+  #8: score=-1218.73 | origin_ep=   8 | origin_R=-1274.60
+  #9: score=-1319.91 | origin_ep=  12 | origin_R=-1354.07
+  #10: score=-1339.27 | origin_ep=  11 | origin_R=-1223.03
+[Pendulum] Ep 0019 | R_raw=-1158.44 | len=200 | loss=333.701
+[Pendulum] Ep 0020 | R_raw=-1704.02 | len=200 | loss=726.097
+[EVAL] Ep 0020 | avg_eval=-1424.67 over 3 episodes
+[CHECKPOINT] New best policy at ep 20: avg_eval=-1424.67
+[ENGRAM] New good episode stored at ep 21: R_raw=-868.52
+[MACRO-RANK] Top macros:
+  #1: score=-921.74 | origin_ep=   9 | origin_R=-942.21
+  #2: score=-1029.72 | origin_ep=   3 | origin_R=-1151.25
+  #3: score=-1065.43 | origin_ep=  11 | origin_R=-1223.03
+  #4: score=-1107.15 | origin_ep=  13 | origin_R=-1227.59
+  #5: score=-1123.37 | origin_ep=   4 | origin_R=-1419.33
+  #6: score=-1195.86 | origin_ep=   2 | origin_R=-1596.75
+  #7: score=-1199.10 | origin_ep=   7 | origin_R=-1474.54
+  #8: score=-1210.92 | origin_ep=   8 | origin_R=-1274.60
+  #9: score=-1222.48 | origin_ep=  19 | origin_R=-1158.44
+  #10: score=-1245.13 | origin_ep=  14 | origin_R=-1388.42
+[Pendulum] Ep 0021 | R_raw=-868.52 | len=200 | loss=200.687
+[Pendulum] Ep 0022 | R_raw=-1779.47 | len=200 | loss=749.118
+[ENGRAM] New good episode stored at ep 23: R_raw=-1334.16
+[MACRO-RANK] Top macros:
+  #1: score=-1079.22 | origin_ep=  13 | origin_R=-1227.59
+  #2: score=-1157.48 | origin_ep=   4 | origin_R=-1419.33
+  #3: score=-1272.77 | origin_ep=   2 | origin_R=-1596.75
+  #4: score=-1295.84 | origin_ep=  21 | origin_R=-868.52
+  #5: score=-1302.85 | origin_ep=   7 | origin_R=-1474.54
+  #6: score=-1335.60 | origin_ep=  10 | origin_R=-1076.81
+  #7: score=-1361.64 | origin_ep=   6 | origin_R=-927.23
+  #8: score=-1394.59 | origin_ep=  23 | origin_R=-1334.16
+  #9: score=-1431.49 | origin_ep=   3 | origin_R=-1151.25
+  #10: score=-1459.85 | origin_ep=  19 | origin_R=-1158.44
+[Pendulum] Ep 0023 | R_raw=-1334.16 | len=200 | loss=451.262
+[ENGRAM] New good episode stored at ep 24: R_raw=-994.04
+[MACRO-RANK] Top macros:
+  #1: score=-936.06 | origin_ep=   7 | origin_R=-1474.54
+  #2: score=-1112.53 | origin_ep=  21 | origin_R=-868.52
+  #3: score=-1130.58 | origin_ep=  13 | origin_R=-1227.59
+  #4: score=-1142.92 | origin_ep=   6 | origin_R=-927.23
+  #5: score=-1210.76 | origin_ep=   4 | origin_R=-1419.33
+  #6: score=-1255.09 | origin_ep=  23 | origin_R=-1334.16
+  #7: score=-1291.85 | origin_ep=   3 | origin_R=-1151.25
+  #8: score=-1296.32 | origin_ep=  10 | origin_R=-1076.81
+  #9: score=-1327.89 | origin_ep=   8 | origin_R=-1274.60
+  #10: score=-1368.87 | origin_ep=   9 | origin_R=-942.21
+[Pendulum] Ep 0024 | R_raw=-994.04 | len=200 | loss=249.950
+[ENGRAM] New good episode stored at ep 25: R_raw=-1183.50
+[MACRO-RANK] Top macros:
+  #1: score=-857.57 | origin_ep=  11 | origin_R=-1223.03
+  #2: score=-972.39 | origin_ep=   9 | origin_R=-942.21
+  #3: score=-975.14 | origin_ep=   7 | origin_R=-1474.54
+  #4: score=-1063.55 | origin_ep=   4 | origin_R=-1419.33
+  #5: score=-1156.99 | origin_ep=  21 | origin_R=-868.52
+  #6: score=-1168.25 | origin_ep=  13 | origin_R=-1227.59
+  #7: score=-1213.70 | origin_ep=  10 | origin_R=-1076.81
+  #8: score=-1216.01 | origin_ep=  25 | origin_R=-1183.50
+  #9: score=-1238.55 | origin_ep=   3 | origin_R=-1151.25
+  #10: score=-1267.93 | origin_ep=  19 | origin_R=-1158.44
+[Pendulum] Ep 0025 | R_raw=-1183.50 | len=200 | loss=372.734
+[Pendulum] Ep 0026 | R_raw=-1705.49 | len=200 | loss=728.273
+[Pendulum] Ep 0027 | R_raw=-1567.12 | len=200 | loss=589.068
+[Pendulum] Ep 0028 | R_raw=-1502.53 | len=200 | loss=555.206
+[Pendulum] Ep 0029 | R_raw=-1332.74 | len=200 | loss=469.849
+[Pendulum] Ep 0030 | R_raw=-1516.97 | len=200 | loss=565.228
+[Pendulum] Ep 0031 | R_raw=-1338.11 | len=200 | loss=444.294
+[ENGRAM] New good episode stored at ep 32: R_raw=-1059.99
+[MACRO-RANK] Top macros:
+  #1: score=-857.31 | origin_ep=  10 | origin_R=-1076.81
+  #2: score=-861.00 | origin_ep=   6 | origin_R=-927.23
+  #3: score=-869.27 | origin_ep=   9 | origin_R=-942.21
+  #4: score=-1034.24 | origin_ep=  24 | origin_R=-994.04
+  #5: score=-1106.85 | origin_ep=  25 | origin_R=-1183.50
+  #6: score=-1116.48 | origin_ep=  19 | origin_R=-1158.44
+  #7: score=-1163.30 | origin_ep=   3 | origin_R=-1151.25
+  #8: score=-1190.21 | origin_ep=  11 | origin_R=-1223.03
+  #9: score=-1199.31 | origin_ep=  13 | origin_R=-1227.59
+  #10: score=-1263.69 | origin_ep=   4 | origin_R=-1419.33
+[Pendulum] Ep 0032 | R_raw=-1059.99 | len=200 | loss=292.570
+[ENGRAM] New good episode stored at ep 33: R_raw=-1163.38
+[MACRO-RANK] Top macros:
+  #1: score=-898.66 | origin_ep=  10 | origin_R=-1076.81
+  #2: score=-987.73 | origin_ep=  11 | origin_R=-1223.03
+  #3: score=-1089.87 | origin_ep=  25 | origin_R=-1183.50
+  #4: score=-1121.71 | origin_ep=   4 | origin_R=-1419.33
+  #5: score=-1170.19 | origin_ep=  21 | origin_R=-868.52
+  #6: score=-1186.14 | origin_ep=  32 | origin_R=-1059.99
+  #7: score=-1201.88 | origin_ep=  24 | origin_R=-994.04
+  #8: score=-1259.22 | origin_ep=  33 | origin_R=-1163.38
+  #9: score=-1262.23 | origin_ep=   9 | origin_R=-942.21
+  #10: score=-1285.43 | origin_ep=  13 | origin_R=-1227.59
+[Pendulum] Ep 0033 | R_raw=-1163.38 | len=200 | loss=324.210
+[Pendulum] Ep 0034 | R_raw=-1617.93 | len=200 | loss=602.633
+[ENGRAM] New good episode stored at ep 35: R_raw=-895.78
+[MACRO-RANK] Top macros:
+  #1: score=-960.49 | origin_ep=  33 | origin_R=-1163.38
+  #2: score=-1030.96 | origin_ep=  11 | origin_R=-1223.03
+  #3: score=-1047.90 | origin_ep=  19 | origin_R=-1158.44
+  #4: score=-1112.77 | origin_ep=   3 | origin_R=-1151.25
+  #5: score=-1149.53 | origin_ep=  35 | origin_R=-895.78
+  #6: score=-1154.67 | origin_ep=  32 | origin_R=-1059.99
+  #7: score=-1331.42 | origin_ep=  25 | origin_R=-1183.50
+  #8: score=-1348.57 | origin_ep=  21 | origin_R=-868.52
+  #9: score=-1351.94 | origin_ep=   4 | origin_R=-1419.33
+  #10: score=-1357.83 | origin_ep=  10 | origin_R=-1076.81
+[Pendulum] Ep 0035 | R_raw=-895.78 | len=200 | loss=204.008
+[ENGRAM] New good episode stored at ep 36: R_raw=-627.22
+[MACRO-RANK] Top macros:
+  #1: score=-932.39 | origin_ep=   9 | origin_R=-942.21
+  #2: score=-1017.68 | origin_ep=  25 | origin_R=-1183.50
+  #3: score=-1044.41 | origin_ep=  36 | origin_R=-627.22
+  #4: score=-1086.25 | origin_ep=  35 | origin_R=-895.78
+  #5: score=-1189.50 | origin_ep=  10 | origin_R=-1076.81
+  #6: score=-1191.23 | origin_ep=   3 | origin_R=-1151.25
+  #7: score=-1210.02 | origin_ep=  33 | origin_R=-1163.38
+  #8: score=-1212.29 | origin_ep=  21 | origin_R=-868.52
+  #9: score=-1249.57 | origin_ep=   6 | origin_R=-927.23
+  #10: score=-1283.47 | origin_ep=   4 | origin_R=-1419.33
+[Pendulum] Ep 0036 | R_raw=-627.22 | len=200 | loss=118.053
+[Pendulum] Ep 0037 | R_raw=-1621.58 | len=200 | loss=611.892
+[Pendulum] Ep 0038 | R_raw=-1595.37 | len=200 | loss=613.032
+[ENGRAM] New good episode stored at ep 39: R_raw=-1069.83
+[MACRO-RANK] Top macros:
+  #1: score=-1012.51 | origin_ep=  32 | origin_R=-1059.99
+  #2: score=-1027.38 | origin_ep=  33 | origin_R=-1163.38
+  #3: score=-1044.64 | origin_ep=  24 | origin_R=-994.04
+  #4: score=-1048.77 | origin_ep=   9 | origin_R=-942.21
+  #5: score=-1103.24 | origin_ep=  21 | origin_R=-868.52
+  #6: score=-1192.95 | origin_ep=  25 | origin_R=-1183.50
+  #7: score=-1193.14 | origin_ep=  35 | origin_R=-895.78
+  #8: score=-1246.70 | origin_ep=  36 | origin_R=-627.22
+  #9: score=-1278.62 | origin_ep=   3 | origin_R=-1151.25
+  #10: score=-1285.11 | origin_ep=   6 | origin_R=-927.23
+[Pendulum] Ep 0039 | R_raw=-1069.83 | len=200 | loss=278.503
+[Pendulum] Ep 0040 | R_raw=-1662.29 | len=200 | loss=647.778
+[EVAL] Ep 0040 | avg_eval=-1670.63 over 3 episodes
+[Pendulum] Ep 0041 | R_raw=-1803.32 | len=200 | loss=753.042
+[ENGRAM] New good episode stored at ep 42: R_raw=-1103.67
+[MACRO-RANK] Top macros:
+  #1: score=-1034.39 | origin_ep=  42 | origin_R=-1103.67
+  #2: score=-1044.45 | origin_ep=  36 | origin_R=-627.22
+  #3: score=-1133.28 | origin_ep=  10 | origin_R=-1076.81
+  #4: score=-1135.96 | origin_ep=  35 | origin_R=-895.78
+  #5: score=-1169.20 | origin_ep=   3 | origin_R=-1151.25
+  #6: score=-1172.54 | origin_ep=  39 | origin_R=-1069.83
+  #7: score=-1214.85 | origin_ep=  21 | origin_R=-868.52
+  #8: score=-1224.76 | origin_ep=  25 | origin_R=-1183.50
+  #9: score=-1254.31 | origin_ep=   6 | origin_R=-927.23
+  #10: score=-1345.54 | origin_ep=  32 | origin_R=-1059.99
+[Pendulum] Ep 0042 | R_raw=-1103.67 | len=200 | loss=317.191
+[Pendulum] Ep 0043 | R_raw=-1750.30 | len=200 | loss=704.159
+[ENGRAM] New good episode stored at ep 44: R_raw=-1095.37
+[MACRO-RANK] Top macros:
+  #1: score=-1021.11 | origin_ep=   3 | origin_R=-1151.25
+  #2: score=-1202.16 | origin_ep=  36 | origin_R=-627.22
+  #3: score=-1219.77 | origin_ep=  25 | origin_R=-1183.50
+  #4: score=-1244.65 | origin_ep=   9 | origin_R=-942.21
+  #5: score=-1266.73 | origin_ep=  35 | origin_R=-895.78
+  #6: score=-1272.17 | origin_ep=  44 | origin_R=-1095.37
+  #7: score=-1273.92 | origin_ep=   6 | origin_R=-927.23
+  #8: score=-1295.21 | origin_ep=  10 | origin_R=-1076.81
+  #9: score=-1313.88 | origin_ep=  42 | origin_R=-1103.67
+  #10: score=-1314.58 | origin_ep=  24 | origin_R=-994.04
+[Pendulum] Ep 0044 | R_raw=-1095.37 | len=200 | loss=294.299
+[ENGRAM] New good episode stored at ep 45: R_raw=-1075.22
+[MACRO-RANK] Top macros:
+  #1: score=-990.30 | origin_ep=  32 | origin_R=-1059.99
+  #2: score=-994.80 | origin_ep=   9 | origin_R=-942.21
+  #3: score=-1022.92 | origin_ep=  25 | origin_R=-1183.50
+  #4: score=-1063.56 | origin_ep=  42 | origin_R=-1103.67
+  #5: score=-1082.87 | origin_ep=  39 | origin_R=-1069.83
+  #6: score=-1123.78 | origin_ep=  21 | origin_R=-868.52
+  #7: score=-1151.73 | origin_ep=  36 | origin_R=-627.22
+  #8: score=-1185.14 | origin_ep=  44 | origin_R=-1095.37
+  #9: score=-1189.16 | origin_ep=  45 | origin_R=-1075.22
+  #10: score=-1239.30 | origin_ep=   6 | origin_R=-927.23
+[Pendulum] Ep 0045 | R_raw=-1075.22 | len=200 | loss=292.831
+[Pendulum] Ep 0046 | R_raw=-1836.25 | len=200 | loss=775.377
+[Pendulum] Ep 0047 | R_raw=-1171.81 | len=200 | loss=318.629
+[Pendulum] Ep 0048 | R_raw=-1387.28 | len=200 | loss=471.740
+[ENGRAM] New good episode stored at ep 49: R_raw=-1071.53
+[MACRO-RANK] Top macros:
+  #1: score=-1011.66 | origin_ep=  36 | origin_R=-627.22
+  #2: score=-1039.32 | origin_ep=   6 | origin_R=-927.23
+  #3: score=-1060.80 | origin_ep=   9 | origin_R=-942.21
+  #4: score=-1064.36 | origin_ep=  44 | origin_R=-1095.37
+  #5: score=-1121.39 | origin_ep=  21 | origin_R=-868.52
+  #6: score=-1158.25 | origin_ep=  32 | origin_R=-1059.99
+  #7: score=-1224.57 | origin_ep=  49 | origin_R=-1071.53
+  #8: score=-1269.40 | origin_ep=  39 | origin_R=-1069.83
+  #9: score=-1385.88 | origin_ep=  25 | origin_R=-1183.50
+  #10: score=-1403.51 | origin_ep=  24 | origin_R=-994.04
+[Pendulum] Ep 0049 | R_raw=-1071.53 | len=200 | loss=262.462
+[ENGRAM] New good episode stored at ep 50: R_raw=-945.48
+[MACRO-RANK] Top macros:
+  #1: score=-1103.29 | origin_ep=   6 | origin_R=-927.23
+  #2: score=-1108.57 | origin_ep=  24 | origin_R=-994.04
+  #3: score=-1149.80 | origin_ep=  44 | origin_R=-1095.37
+  #4: score=-1238.52 | origin_ep=  21 | origin_R=-868.52
+  #5: score=-1254.72 | origin_ep=  49 | origin_R=-1071.53
+  #6: score=-1286.71 | origin_ep=  32 | origin_R=-1059.99
+  #7: score=-1323.09 | origin_ep=   9 | origin_R=-942.21
+  #8: score=-1360.07 | origin_ep=  25 | origin_R=-1183.50
+  #9: score=-1440.53 | origin_ep=  50 | origin_R=-945.48
+  #10: score=-1460.32 | origin_ep=  36 | origin_R=-627.22
+[Pendulum] Ep 0050 | R_raw=-945.48 | len=200 | loss=249.981
+[ENGRAM] New good episode stored at ep 51: R_raw=-766.21
+[MACRO-RANK] Top macros:
+  #1: score=-1009.74 | origin_ep=  32 | origin_R=-1059.99
+  #2: score=-1048.47 | origin_ep=  44 | origin_R=-1095.37
+  #3: score=-1097.24 | origin_ep=  36 | origin_R=-627.22
+  #4: score=-1258.68 | origin_ep=  25 | origin_R=-1183.50
+  #5: score=-1262.32 | origin_ep=  35 | origin_R=-895.78
+  #6: score=-1265.53 | origin_ep=  39 | origin_R=-1069.83
+  #7: score=-1282.07 | origin_ep=  49 | origin_R=-1071.53
+  #8: score=-1317.65 | origin_ep=   9 | origin_R=-942.21
+  #9: score=-1427.39 | origin_ep=  51 | origin_R=-766.21
+  #10: score=-1431.78 | origin_ep=  24 | origin_R=-994.04
+[Pendulum] Ep 0051 | R_raw=-766.21 | len=200 | loss=151.193
+[ENGRAM] New good episode stored at ep 52: R_raw=-909.98
+[MACRO-RANK] Top macros:
+  #1: score=-1097.82 | origin_ep=  25 | origin_R=-1183.50
+  #2: score=-1115.81 | origin_ep=  50 | origin_R=-945.48
+  #3: score=-1162.31 | origin_ep=  32 | origin_R=-1059.99
+  #4: score=-1225.05 | origin_ep=  24 | origin_R=-994.04
+  #5: score=-1259.01 | origin_ep=  39 | origin_R=-1069.83
+  #6: score=-1273.96 | origin_ep=  44 | origin_R=-1095.37
+  #7: score=-1302.50 | origin_ep=  35 | origin_R=-895.78
+  #8: score=-1319.87 | origin_ep=  36 | origin_R=-627.22
+  #9: score=-1352.44 | origin_ep=   9 | origin_R=-942.21
+  #10: score=-1358.62 | origin_ep=  51 | origin_R=-766.21
+[Pendulum] Ep 0052 | R_raw=-909.98 | len=200 | loss=203.432
+[ENGRAM] New good episode stored at ep 53: R_raw=-962.37
+[MACRO-RANK] Top macros:
+  #1: score=-1003.78 | origin_ep=  44 | origin_R=-1095.37
+  #2: score=-1106.51 | origin_ep=  39 | origin_R=-1069.83
+  #3: score=-1109.95 | origin_ep=  35 | origin_R=-895.78
+  #4: score=-1180.70 | origin_ep=  50 | origin_R=-945.48
+  #5: score=-1201.19 | origin_ep=  25 | origin_R=-1183.50
+  #6: score=-1206.14 | origin_ep=   9 | origin_R=-942.21
+  #7: score=-1246.40 | origin_ep=  32 | origin_R=-1059.99
+  #8: score=-1282.68 | origin_ep=  53 | origin_R=-962.37
+  #9: score=-1294.62 | origin_ep=   6 | origin_R=-927.23
+  #10: score=-1344.74 | origin_ep=  52 | origin_R=-909.98
+[Pendulum] Ep 0053 | R_raw=-962.37 | len=200 | loss=212.424
+[ENGRAM] New good episode stored at ep 54: R_raw=-964.17
+[MACRO-RANK] Top macros:
+  #1: score=-1006.03 | origin_ep=  25 | origin_R=-1183.50
+  #2: score=-1050.97 | origin_ep=  44 | origin_R=-1095.37
+  #3: score=-1128.45 | origin_ep=   6 | origin_R=-927.23
+  #4: score=-1159.28 | origin_ep=  54 | origin_R=-964.17
+  #5: score=-1181.54 | origin_ep=  35 | origin_R=-895.78
+  #6: score=-1210.63 | origin_ep=  52 | origin_R=-909.98
+  #7: score=-1212.12 | origin_ep=  32 | origin_R=-1059.99
+  #8: score=-1219.95 | origin_ep=   9 | origin_R=-942.21
+  #9: score=-1259.87 | origin_ep=  36 | origin_R=-627.22
+  #10: score=-1265.80 | origin_ep=  53 | origin_R=-962.37
+[Pendulum] Ep 0054 | R_raw=-964.17 | len=200 | loss=213.134
+[Pendulum] Ep 0055 | R_raw=-1170.94 | len=200 | loss=321.359
+[Pendulum] Ep 0056 | R_raw=-990.83 | len=200 | loss=215.089
+[Pendulum] Ep 0057 | R_raw=-1164.95 | len=200 | loss=320.777
+[Pendulum] Ep 0058 | R_raw=-1495.32 | len=200 | loss=499.494
+[Pendulum] Ep 0059 | R_raw=-1546.19 | len=200 | loss=555.936
+[Pendulum] Ep 0060 | R_raw=-1751.68 | len=200 | loss=699.376
+[EVAL] Ep 0060 | avg_eval=-1535.01 over 3 episodes
+[Pendulum] Ep 0061 | R_raw=-1280.56 | len=200 | loss=368.290
+[ENGRAM] New good episode stored at ep 62: R_raw=-847.14
+[MACRO-RANK] Top macros:
+  #1: score=-936.98 | origin_ep=  21 | origin_R=-868.52
+  #2: score=-993.34 | origin_ep=  50 | origin_R=-945.48
+  #3: score=-1103.11 | origin_ep=   6 | origin_R=-927.23
+  #4: score=-1159.46 | origin_ep=  53 | origin_R=-962.37
+  #5: score=-1174.20 | origin_ep=  25 | origin_R=-1183.50
+  #6: score=-1181.04 | origin_ep=  51 | origin_R=-766.21
+  #7: score=-1192.07 | origin_ep=  44 | origin_R=-1095.37
+  #8: score=-1293.34 | origin_ep=  52 | origin_R=-909.98
+  #9: score=-1309.93 | origin_ep=  35 | origin_R=-895.78
+  #10: score=-1333.50 | origin_ep=  32 | origin_R=-1059.99
+[Pendulum] Ep 0062 | R_raw=-847.14 | len=200 | loss=194.112
+[Pendulum] Ep 0063 | R_raw=-968.79 | len=200 | loss=214.291
+[Pendulum] Ep 0064 | R_raw=-1715.63 | len=200 | loss=666.268
+[ENGRAM] New good episode stored at ep 65: R_raw=-824.04
+[MACRO-RANK] Top macros:
+  #1: score=-983.01 | origin_ep=  32 | origin_R=-1059.99
+  #2: score=-1014.67 | origin_ep=  53 | origin_R=-962.37
+  #3: score=-1078.57 | origin_ep=   9 | origin_R=-942.21
+  #4: score=-1102.21 | origin_ep=  35 | origin_R=-895.78
+  #5: score=-1113.27 | origin_ep=  62 | origin_R=-847.14
+  #6: score=-1157.65 | origin_ep=  65 | origin_R=-824.04
+  #7: score=-1239.13 | origin_ep=  52 | origin_R=-909.98
+  #8: score=-1272.02 | origin_ep=   6 | origin_R=-927.23
+  #9: score=-1283.88 | origin_ep=  25 | origin_R=-1183.50
+  #10: score=-1289.05 | origin_ep=  44 | origin_R=-1095.37
+[Pendulum] Ep 0065 | R_raw=-824.04 | len=200 | loss=188.640
+[Pendulum] Ep 0066 | R_raw=-1677.92 | len=200 | loss=667.769
+[Pendulum] Ep 0067 | R_raw=-1751.44 | len=200 | loss=699.581
+[Pendulum] Ep 0068 | R_raw=-1580.46 | len=200 | loss=550.525
+[Pendulum] Ep 0069 | R_raw=-1374.06 | len=200 | loss=436.040
+[Pendulum] Ep 0070 | R_raw=-1276.96 | len=200 | loss=381.074
+[Pendulum] Ep 0071 | R_raw=-1575.44 | len=200 | loss=563.275
+[Pendulum] Ep 0072 | R_raw=-1684.16 | len=200 | loss=636.007
+[Pendulum] Ep 0073 | R_raw=-994.53 | len=200 | loss=219.155
+[Pendulum] Ep 0074 | R_raw=-1173.58 | len=200 | loss=312.413
+[Pendulum] Ep 0075 | R_raw=-1216.70 | len=200 | loss=337.424
+[ENGRAM] New good episode stored at ep 76: R_raw=-898.68
+[MACRO-RANK] Top macros:
+  #1: score=-882.51 | origin_ep=  44 | origin_R=-1095.37
+  #2: score=-949.92 | origin_ep=   9 | origin_R=-942.21
+  #3: score=-998.37 | origin_ep=  21 | origin_R=-868.52
+  #4: score=-1100.92 | origin_ep=   6 | origin_R=-927.23
+  #5: score=-1170.28 | origin_ep=  51 | origin_R=-766.21
+  #6: score=-1178.55 | origin_ep=  76 | origin_R=-898.68
+  #7: score=-1183.22 | origin_ep=  65 | origin_R=-824.04
+  #8: score=-1183.42 | origin_ep=  36 | origin_R=-627.22
+  #9: score=-1246.80 | origin_ep=  25 | origin_R=-1183.50
+  #10: score=-1344.28 | origin_ep=  35 | origin_R=-895.78
+[Pendulum] Ep 0076 | R_raw=-898.68 | len=200 | loss=174.213
+[Pendulum] Ep 0077 | R_raw=-1361.25 | len=200 | loss=418.445
+[ENGRAM] New good episode stored at ep 78: R_raw=-884.23
+[MACRO-RANK] Top macros:
+  #1: score=-826.98 | origin_ep=   6 | origin_R=-927.23
+  #2: score=-908.48 | origin_ep=  36 | origin_R=-627.22
+  #3: score=-1016.57 | origin_ep=  65 | origin_R=-824.04
+  #4: score=-1126.33 | origin_ep=  21 | origin_R=-868.52
+  #5: score=-1147.63 | origin_ep=   9 | origin_R=-942.21
+  #6: score=-1199.74 | origin_ep=  51 | origin_R=-766.21
+  #7: score=-1273.41 | origin_ep=  35 | origin_R=-895.78
+  #8: score=-1357.65 | origin_ep=  52 | origin_R=-909.98
+  #9: score=-1373.70 | origin_ep=  62 | origin_R=-847.14
+  #10: score=-1439.99 | origin_ep=  78 | origin_R=-884.23
+[Pendulum] Ep 0078 | R_raw=-884.23 | len=200 | loss=204.954
+[Pendulum] Ep 0079 | R_raw=-1696.95 | len=200 | loss=663.076
+[Pendulum] Ep 0080 | R_raw=-1197.31 | len=200 | loss=341.407
+[EVAL] Ep 0080 | avg_eval=-1131.42 over 3 episodes
+[CHECKPOINT] New best policy at ep 80: avg_eval=-1131.42
+[Pendulum] Ep 0081 | R_raw=-1576.02 | len=200 | loss=552.466
+[Pendulum] Ep 0082 | R_raw=-1676.43 | len=200 | loss=644.156
+[Pendulum] Ep 0083 | R_raw=-1623.85 | len=200 | loss=608.490
+[Pendulum] Ep 0084 | R_raw=-1172.79 | len=200 | loss=339.017
+[ENGRAM] New good episode stored at ep 85: R_raw=-865.40
+[MACRO-RANK] Top macros:
+  #1: score=-971.00 | origin_ep=   6 | origin_R=-927.23
+  #2: score=-1002.09 | origin_ep=  35 | origin_R=-895.78
+  #3: score=-1144.59 | origin_ep=  36 | origin_R=-627.22
+  #4: score=-1190.29 | origin_ep=  62 | origin_R=-847.14
+  #5: score=-1245.84 | origin_ep=  78 | origin_R=-884.23
+  #6: score=-1323.77 | origin_ep=  51 | origin_R=-766.21
+  #7: score=-1328.29 | origin_ep=   9 | origin_R=-942.21
+  #8: score=-1341.83 | origin_ep=  52 | origin_R=-909.98
+  #9: score=-1405.42 | origin_ep=  65 | origin_R=-824.04
+  #10: score=-1410.15 | origin_ep=  85 | origin_R=-865.40
+[Pendulum] Ep 0085 | R_raw=-865.40 | len=200 | loss=173.220
+[Pendulum] Ep 0086 | R_raw=-1302.95 | len=200 | loss=384.090
+[Pendulum] Ep 0087 | R_raw=-1277.68 | len=200 | loss=374.397
+[Pendulum] Ep 0088 | R_raw=-1768.85 | len=200 | loss=700.258
+[Pendulum] Ep 0089 | R_raw=-1164.97 | len=200 | loss=330.687
+[Pendulum] Ep 0090 | R_raw=-1568.06 | len=200 | loss=567.384
+[Pendulum] Ep 0091 | R_raw=-1309.98 | len=200 | loss=392.607
+[Pendulum] Ep 0092 | R_raw=-1063.83 | len=200 | loss=284.177
+[Pendulum] Ep 0093 | R_raw=-1292.84 | len=200 | loss=397.151
+[Pendulum] Ep 0094 | R_raw=-1523.23 | len=200 | loss=531.938
+[Pendulum] Ep 0095 | R_raw=-1566.33 | len=200 | loss=585.174
+[Pendulum] Ep 0096 | R_raw=-1582.97 | len=200 | loss=524.703
+[Pendulum] Ep 0097 | R_raw=-1242.63 | len=200 | loss=361.473
+[Pendulum] Ep 0098 | R_raw=-1253.46 | len=200 | loss=370.997
+[Pendulum] Ep 0099 | R_raw=-1727.15 | len=200 | loss=688.356
+[Pendulum] Ep 0100 | R_raw=-1473.29 | len=200 | loss=522.999
+[EVAL] Ep 0100 | avg_eval=-1641.63 over 3 episodes
+[Pendulum] Ep 0101 | R_raw=-1486.20 | len=200 | loss=497.108
+[Pendulum] Ep 0102 | R_raw=-1524.18 | len=200 | loss=561.277
+[Pendulum] Ep 0103 | R_raw=-1412.70 | len=200 | loss=473.099
+[Pendulum] Ep 0104 | R_raw=-1616.38 | len=200 | loss=582.722
+[Pendulum] Ep 0105 | R_raw=-1798.73 | len=200 | loss=730.238
+[Pendulum] Ep 0106 | R_raw=-1810.30 | len=200 | loss=717.752
+[Pendulum] Ep 0107 | R_raw=-1793.42 | len=200 | loss=700.026
+[Pendulum] Ep 0108 | R_raw=-1178.95 | len=200 | loss=356.261
+[Pendulum] Ep 0109 | R_raw=-1827.20 | len=200 | loss=728.750
+[Pendulum] Ep 0110 | R_raw=-1599.69 | len=200 | loss=622.902
+[Pendulum] Ep 0111 | R_raw=-1280.07 | len=200 | loss=397.245
+[Pendulum] Ep 0112 | R_raw=-1185.73 | len=200 | loss=318.726
+[Pendulum] Ep 0113 | R_raw=-1611.39 | len=200 | loss=583.200
+[Pendulum] Ep 0114 | R_raw=-1824.17 | len=200 | loss=721.884
+[Pendulum] Ep 0115 | R_raw=-1125.25 | len=200 | loss=309.162
+[Pendulum] Ep 0116 | R_raw=-1763.45 | len=200 | loss=690.666
+[Pendulum] Ep 0117 | R_raw=-1387.51 | len=200 | loss=469.558
+[Pendulum] Ep 0118 | R_raw=-1859.25 | len=200 | loss=748.673
+[Pendulum] Ep 0119 | R_raw=-1678.39 | len=200 | loss=643.329
+[Pendulum] Ep 0120 | R_raw=-1408.66 | len=200 | loss=465.451
+[EVAL] Ep 0120 | avg_eval=-1772.06 over 3 episodes
+[Pendulum] Ep 0121 | R_raw=-1868.84 | len=200 | loss=752.620
+[Pendulum] Ep 0122 | R_raw=-1331.31 | len=200 | loss=408.568
+[Pendulum] Ep 0123 | R_raw=-1589.47 | len=200 | loss=571.232
+[Pendulum] Ep 0124 | R_raw=-1636.35 | len=200 | loss=601.243
+[Pendulum] Ep 0125 | R_raw=-1791.12 | len=200 | loss=668.095
+[Pendulum] Ep 0126 | R_raw=-1731.14 | len=200 | loss=644.204
+[ENGRAM] New good episode stored at ep 127: R_raw=-845.06
+[MACRO-RANK] Top macros:
+  #1: score=-788.79 | origin_ep=  51 | origin_R=-766.21
+  #2: score=-897.81 | origin_ep=  21 | origin_R=-868.52
+  #3: score=-920.74 | origin_ep=  76 | origin_R=-898.68
+  #4: score=-952.64 | origin_ep=  36 | origin_R=-627.22
+  #5: score=-1137.30 | origin_ep=  85 | origin_R=-865.40
+  #6: score=-1172.18 | origin_ep=   6 | origin_R=-927.23
+  #7: score=-1245.38 | origin_ep=  52 | origin_R=-909.98
+  #8: score=-1286.77 | origin_ep= 127 | origin_R=-845.06
+  #9: score=-1292.51 | origin_ep=  65 | origin_R=-824.04
+  #10: score=-1311.77 | origin_ep=  78 | origin_R=-884.23
+[Pendulum] Ep 0127 | R_raw=-845.06 | len=200 | loss=177.662
+[Pendulum] Ep 0128 | R_raw=-1255.40 | len=200 | loss=365.997
+[Pendulum] Ep 0129 | R_raw=-1050.54 | len=200 | loss=287.040
+[Pendulum] Ep 0130 | R_raw=-1360.17 | len=200 | loss=446.580
+[Pendulum] Ep 0131 | R_raw=-1605.70 | len=200 | loss=580.763
+[Pendulum] Ep 0132 | R_raw=-1429.36 | len=200 | loss=494.057
+[Pendulum] Ep 0133 | R_raw=-1480.58 | len=200 | loss=510.735
+[Pendulum] Ep 0134 | R_raw=-1328.29 | len=200 | loss=418.453
+[Pendulum] Ep 0135 | R_raw=-1846.78 | len=200 | loss=717.550
+[Pendulum] Ep 0136 | R_raw=-1747.86 | len=200 | loss=667.784
+[Pendulum] Ep 0137 | R_raw=-1141.67 | len=200 | loss=301.619
+[Pendulum] Ep 0138 | R_raw=-1415.80 | len=200 | loss=442.753
+[Pendulum] Ep 0139 | R_raw=-1657.95 | len=200 | loss=588.256
+[Pendulum] Ep 0140 | R_raw=-1827.51 | len=200 | loss=706.102
+[EVAL] Ep 0140 | avg_eval=-1447.77 over 3 episodes
+[Pendulum] Ep 0141 | R_raw=-1605.86 | len=200 | loss=567.041
+[Pendulum] Ep 0142 | R_raw=-979.36 | len=200 | loss=240.172
+[Pendulum] Ep 0143 | R_raw=-1342.74 | len=200 | loss=409.971
+[Pendulum] Ep 0144 | R_raw=-1164.14 | len=200 | loss=318.066
+[Pendulum] Ep 0145 | R_raw=-1222.50 | len=200 | loss=359.277
+[Pendulum] Ep 0146 | R_raw=-1148.04 | len=200 | loss=332.779
+[Pendulum] Ep 0147 | R_raw=-1364.34 | len=200 | loss=423.973
+[Pendulum] Ep 0148 | R_raw=-1311.91 | len=200 | loss=393.414
+[Pendulum] Ep 0149 | R_raw=-1747.15 | len=200 | loss=640.363
+[Pendulum] Ep 0150 | R_raw=-1024.22 | len=200 | loss=233.620
+[Pendulum] Ep 0151 | R_raw=-1411.71 | len=200 | loss=447.684
+[Pendulum] Ep 0152 | R_raw=-1643.59 | len=200 | loss=591.960
+[Pendulum] Ep 0153 | R_raw=-1636.13 | len=200 | loss=567.304
+[Pendulum] Ep 0154 | R_raw=-1018.38 | len=200 | loss=234.901
+[Pendulum] Ep 0155 | R_raw=-1341.11 | len=200 | loss=394.844
+[Pendulum] Ep 0156 | R_raw=-1797.22 | len=200 | loss=679.409
+[Pendulum] Ep 0157 | R_raw=-1400.37 | len=200 | loss=417.870
+[Pendulum] Ep 0158 | R_raw=-1458.92 | len=200 | loss=450.311
+[Pendulum] Ep 0159 | R_raw=-1584.55 | len=200 | loss=500.366
+[Pendulum] Ep 0160 | R_raw=-1348.16 | len=200 | loss=386.990
+[EVAL] Ep 0160 | avg_eval=-1459.16 over 3 episodes
+[Pendulum] Ep 0161 | R_raw=-1405.65 | len=200 | loss=420.719
+[Pendulum] Ep 0162 | R_raw=-1356.37 | len=200 | loss=462.724
+[Pendulum] Ep 0163 | R_raw=-1407.64 | len=200 | loss=428.115
+[Pendulum] Ep 0164 | R_raw=-926.18 | len=200 | loss=191.076
+[Pendulum] Ep 0165 | R_raw=-1482.36 | len=200 | loss=474.740
+[Pendulum] Ep 0166 | R_raw=-1128.46 | len=200 | loss=290.015
+[Pendulum] Ep 0167 | R_raw=-1769.38 | len=200 | loss=633.303
+[Pendulum] Ep 0168 | R_raw=-1693.13 | len=200 | loss=615.694
+[Pendulum] Ep 0169 | R_raw=-1255.94 | len=200 | loss=343.147
+[Pendulum] Ep 0170 | R_raw=-1245.93 | len=200 | loss=353.967
+[Pendulum] Ep 0171 | R_raw=-1075.98 | len=200 | loss=288.524
+[Pendulum] Ep 0172 | R_raw=-1366.94 | len=200 | loss=401.344
+[Pendulum] Ep 0173 | R_raw=-1760.11 | len=200 | loss=644.002
+[Pendulum] Ep 0174 | R_raw=-980.88 | len=200 | loss=215.951
+[Pendulum] Ep 0175 | R_raw=-1800.21 | len=200 | loss=649.840
+[Pendulum] Ep 0176 | R_raw=-1059.13 | len=200 | loss=230.979
+[Pendulum] Ep 0177 | R_raw=-1666.33 | len=200 | loss=536.460
+[Pendulum] Ep 0178 | R_raw=-1593.06 | len=200 | loss=521.681
+[Pendulum] Ep 0179 | R_raw=-1305.44 | len=200 | loss=361.160
+[Pendulum] Ep 0180 | R_raw=-1094.47 | len=200 | loss=263.021
+[EVAL] Ep 0180 | avg_eval=-1327.62 over 3 episodes
+[Pendulum] Ep 0181 | R_raw=-1609.97 | len=200 | loss=500.360
+[Pendulum] Ep 0182 | R_raw=-1379.75 | len=200 | loss=376.931
+[Pendulum] Ep 0183 | R_raw=-1604.42 | len=200 | loss=510.958
+[Pendulum] Ep 0184 | R_raw=-1726.18 | len=200 | loss=591.367
+[Pendulum] Ep 0185 | R_raw=-1672.38 | len=200 | loss=545.002
+[Pendulum] Ep 0186 | R_raw=-1176.09 | len=200 | loss=281.926
+[Pendulum] Ep 0187 | R_raw=-1134.52 | len=200 | loss=272.531
+[Pendulum] Ep 0188 | R_raw=-1328.54 | len=200 | loss=347.790
+[Pendulum] Ep 0189 | R_raw=-1788.79 | len=200 | loss=635.820
+[Pendulum] Ep 0190 | R_raw=-1751.21 | len=200 | loss=610.610
+[Pendulum] Ep 0191 | R_raw=-1450.78 | len=200 | loss=417.753
+[Pendulum] Ep 0192 | R_raw=-1410.83 | len=200 | loss=371.283
+[Pendulum] Ep 0193 | R_raw=-1766.36 | len=200 | loss=613.978
+[Pendulum] Ep 0194 | R_raw=-1610.33 | len=200 | loss=535.436
+[Pendulum] Ep 0195 | R_raw=-1237.91 | len=200 | loss=312.508
+[Pendulum] Ep 0196 | R_raw=-1739.26 | len=200 | loss=570.295
+[Pendulum] Ep 0197 | R_raw=-1467.14 | len=200 | loss=399.763
+[Pendulum] Ep 0198 | R_raw=-1258.71 | len=200 | loss=323.172
+[Pendulum] Ep 0199 | R_raw=-1089.82 | len=200 | loss=234.465
+[ENGRAM] Distilling 10 trajectories into policy at ep 200...
+[Pendulum] Ep 0200 | R_raw=-1269.14 | len=200 | loss=309.096
+[EVAL] Ep 0200 | avg_eval=-1417.06 over 3 episodes
+[ENGRAM] New good episode stored at ep 201: R_raw=-820.21
+[MACRO-RANK] Top macros:
+  #1: score=-1070.12 | origin_ep=  76 | origin_R=-898.68
+  #2: score=-1076.67 | origin_ep=  51 | origin_R=-766.21
+  #3: score=-1082.30 | origin_ep=  78 | origin_R=-884.23
+  #4: score=-1182.88 | origin_ep=  21 | origin_R=-868.52
+  #5: score=-1245.82 | origin_ep= 201 | origin_R=-820.21
+  #6: score=-1248.20 | origin_ep=  36 | origin_R=-627.22
+  #7: score=-1252.89 | origin_ep=   6 | origin_R=-927.23
+  #8: score=-1260.11 | origin_ep=  85 | origin_R=-865.40
+  #9: score=-1273.03 | origin_ep=  35 | origin_R=-895.78
+  #10: score=-1286.34 | origin_ep=  65 | origin_R=-824.04
+[Pendulum] Ep 0201 | R_raw=-820.21 | len=200 | loss=128.042
+[Pendulum] Ep 0202 | R_raw=-1477.44 | len=200 | loss=429.526
+[ENGRAM] New good episode stored at ep 203: R_raw=-843.60
+[MACRO-RANK] Top macros:
+  #1: score=-882.03 | origin_ep=  78 | origin_R=-884.23
+  #2: score=-1054.96 | origin_ep=  65 | origin_R=-824.04
+  #3: score=-1108.28 | origin_ep=  76 | origin_R=-898.68
+  #4: score=-1120.68 | origin_ep=  21 | origin_R=-868.52
+  #5: score=-1131.24 | origin_ep=  35 | origin_R=-895.78
+  #6: score=-1143.76 | origin_ep= 127 | origin_R=-845.06
+  #7: score=-1222.93 | origin_ep= 203 | origin_R=-843.60
+  #8: score=-1249.41 | origin_ep=  85 | origin_R=-865.40
+  #9: score=-1280.94 | origin_ep=  62 | origin_R=-847.14
+  #10: score=-1375.76 | origin_ep=  36 | origin_R=-627.22
+[Pendulum] Ep 0203 | R_raw=-843.60 | len=200 | loss=168.308
+[Pendulum] Ep 0204 | R_raw=-1343.94 | len=200 | loss=359.813
+[Pendulum] Ep 0205 | R_raw=-1718.26 | len=200 | loss=565.550
+[Pendulum] Ep 0206 | R_raw=-1335.72 | len=200 | loss=328.122
+[ENGRAM] New good episode stored at ep 207: R_raw=-866.42
+[MACRO-RANK] Top macros:
+  #1: score=-940.09 | origin_ep=  35 | origin_R=-895.78
+  #2: score=-1060.69 | origin_ep=  65 | origin_R=-824.04
+  #3: score=-1073.94 | origin_ep= 127 | origin_R=-845.06
+  #4: score=-1111.17 | origin_ep=  85 | origin_R=-865.40
+  #5: score=-1123.13 | origin_ep= 201 | origin_R=-820.21
+  #6: score=-1138.52 | origin_ep=  62 | origin_R=-847.14
+  #7: score=-1140.45 | origin_ep=  36 | origin_R=-627.22
+  #8: score=-1208.18 | origin_ep=  76 | origin_R=-898.68
+  #9: score=-1218.70 | origin_ep=  78 | origin_R=-884.23
+  #10: score=-1315.84 | origin_ep= 203 | origin_R=-843.60
+[Pendulum] Ep 0207 | R_raw=-866.42 | len=200 | loss=147.564
+[Pendulum] Ep 0208 | R_raw=-987.64 | len=200 | loss=199.393
+[Pendulum] Ep 0209 | R_raw=-1004.40 | len=200 | loss=216.997
+[Pendulum] Ep 0210 | R_raw=-1099.21 | len=200 | loss=271.687
+[Pendulum] Ep 0211 | R_raw=-1196.28 | len=200 | loss=314.917
+[Pendulum] Ep 0212 | R_raw=-965.47 | len=200 | loss=168.169
+[Pendulum] Ep 0213 | R_raw=-1171.23 | len=200 | loss=269.870
+[Pendulum] Ep 0214 | R_raw=-1709.45 | len=200 | loss=584.371
+[Pendulum] Ep 0215 | R_raw=-1221.47 | len=200 | loss=291.416
+[Pendulum] Ep 0216 | R_raw=-1121.29 | len=200 | loss=273.478
+[Pendulum] Ep 0217 | R_raw=-1816.20 | len=200 | loss=621.841
+[Pendulum] Ep 0218 | R_raw=-1316.47 | len=200 | loss=328.602
+[Pendulum] Ep 0219 | R_raw=-1300.97 | len=200 | loss=328.176
+[Pendulum] Ep 0220 | R_raw=-1306.00 | len=200 | loss=348.856
+[EVAL] Ep 0220 | avg_eval=-1586.32 over 3 episodes
+[Pendulum] Ep 0221 | R_raw=-1240.20 | len=200 | loss=292.385
+[ENGRAM] New good episode stored at ep 222: R_raw=-862.62
+[MACRO-RANK] Top macros:
+  #1: score=-1148.56 | origin_ep= 207 | origin_R=-866.42
+  #2: score=-1188.54 | origin_ep=  85 | origin_R=-865.40
+  #3: score=-1188.77 | origin_ep= 203 | origin_R=-843.60
+  #4: score=-1232.22 | origin_ep=  62 | origin_R=-847.14
+  #5: score=-1276.92 | origin_ep=  35 | origin_R=-895.78
+  #6: score=-1290.47 | origin_ep= 201 | origin_R=-820.21
+  #7: score=-1303.34 | origin_ep=  51 | origin_R=-766.21
+  #8: score=-1319.99 | origin_ep= 222 | origin_R=-862.62
+  #9: score=-1332.38 | origin_ep=  78 | origin_R=-884.23
+  #10: score=-1402.60 | origin_ep=  76 | origin_R=-898.68
+[Pendulum] Ep 0222 | R_raw=-862.62 | len=200 | loss=148.033
+[Pendulum] Ep 0223 | R_raw=-1380.75 | len=200 | loss=384.124
+[Pendulum] Ep 0224 | R_raw=-1090.81 | len=200 | loss=221.507
+[Pendulum] Ep 0225 | R_raw=-1046.99 | len=200 | loss=219.908
+[Pendulum] Ep 0226 | R_raw=-1774.95 | len=200 | loss=597.641
+[Pendulum] Ep 0227 | R_raw=-1647.87 | len=200 | loss=504.153
+[Pendulum] Ep 0228 | R_raw=-878.64 | len=200 | loss=148.857
+[Pendulum] Ep 0229 | R_raw=-1752.50 | len=200 | loss=595.605
+[Pendulum] Ep 0230 | R_raw=-1318.85 | len=200 | loss=329.069
+[Pendulum] Ep 0231 | R_raw=-1248.40 | len=200 | loss=311.681
+[Pendulum] Ep 0232 | R_raw=-1680.19 | len=200 | loss=533.287
+[Pendulum] Ep 0233 | R_raw=-1316.51 | len=200 | loss=349.151
+[Pendulum] Ep 0234 | R_raw=-1469.51 | len=200 | loss=420.222
+[Pendulum] Ep 0235 | R_raw=-1705.02 | len=200 | loss=519.168
+[Pendulum] Ep 0236 | R_raw=-1512.83 | len=200 | loss=419.641
+[Pendulum] Ep 0237 | R_raw=-1378.53 | len=200 | loss=362.291
+[Pendulum] Ep 0238 | R_raw=-1586.47 | len=200 | loss=466.021
+[Pendulum] Ep 0239 | R_raw=-1684.49 | len=200 | loss=521.857
+[Pendulum] Ep 0240 | R_raw=-1658.01 | len=200 | loss=497.772
+[EVAL] Ep 0240 | avg_eval=-1510.50 over 3 episodes
+[Pendulum] Ep 0241 | R_raw=-872.06 | len=200 | loss=138.336
+[Pendulum] Ep 0242 | R_raw=-1313.92 | len=200 | loss=342.242
+[Pendulum] Ep 0243 | R_raw=-1503.46 | len=200 | loss=433.775
+[Pendulum] Ep 0244 | R_raw=-1272.87 | len=200 | loss=330.526
+[Pendulum] Ep 0245 | R_raw=-1159.63 | len=200 | loss=267.292
+[Pendulum] Ep 0246 | R_raw=-1222.06 | len=200 | loss=302.594
+[Pendulum] Ep 0247 | R_raw=-1755.49 | len=200 | loss=557.722
+[ENGRAM] New good episode stored at ep 248: R_raw=-748.62
+[MACRO-RANK] Top macros:
+  #1: score=-869.49 | origin_ep=  36 | origin_R=-627.22
+  #2: score=-1113.47 | origin_ep=  51 | origin_R=-766.21
+  #3: score=-1130.99 | origin_ep= 207 | origin_R=-866.42
+  #4: score=-1197.67 | origin_ep= 127 | origin_R=-845.06
+  #5: score=-1201.47 | origin_ep= 248 | origin_R=-748.62
+  #6: score=-1205.38 | origin_ep= 203 | origin_R=-843.60
+  #7: score=-1233.08 | origin_ep=  76 | origin_R=-898.68
+  #8: score=-1275.96 | origin_ep=  85 | origin_R=-865.40
+  #9: score=-1280.79 | origin_ep= 222 | origin_R=-862.62
+  #10: score=-1318.47 | origin_ep=  78 | origin_R=-884.23
+[Pendulum] Ep 0248 | R_raw=-748.62 | len=200 | loss=121.337
+[Pendulum] Ep 0249 | R_raw=-1605.62 | len=200 | loss=452.472
+[Pendulum] Ep 0250 | R_raw=-1830.06 | len=200 | loss=619.371
+[Pendulum] Ep 0251 | R_raw=-1396.36 | len=200 | loss=366.277
+[Pendulum] Ep 0252 | R_raw=-1334.13 | len=200 | loss=348.231
+[Pendulum] Ep 0253 | R_raw=-1280.16 | len=200 | loss=279.825
+[Pendulum] Ep 0254 | R_raw=-1270.81 | len=200 | loss=298.014
+[Pendulum] Ep 0255 | R_raw=-1793.50 | len=200 | loss=581.937
+[Pendulum] Ep 0256 | R_raw=-1701.83 | len=200 | loss=524.101
+[Pendulum] Ep 0257 | R_raw=-1115.80 | len=200 | loss=241.428
+[Pendulum] Ep 0258 | R_raw=-1609.82 | len=200 | loss=484.523
+[Pendulum] Ep 0259 | R_raw=-1426.04 | len=200 | loss=397.140
+[Pendulum] Ep 0260 | R_raw=-1395.94 | len=200 | loss=367.580
+[EVAL] Ep 0260 | avg_eval=-1536.80 over 3 episodes
+[Pendulum] Ep 0261 | R_raw=-1549.65 | len=200 | loss=440.560
+[Pendulum] Ep 0262 | R_raw=-1759.33 | len=200 | loss=556.569
+[Pendulum] Ep 0263 | R_raw=-1601.65 | len=200 | loss=484.645
+[Pendulum] Ep 0264 | R_raw=-1292.97 | len=200 | loss=298.466
+[Pendulum] Ep 0265 | R_raw=-1826.46 | len=200 | loss=601.729
+[Pendulum] Ep 0266 | R_raw=-1703.49 | len=200 | loss=503.744
+[Pendulum] Ep 0267 | R_raw=-1070.21 | len=200 | loss=226.597
+[Pendulum] Ep 0268 | R_raw=-1725.71 | len=200 | loss=553.130
+[Pendulum] Ep 0269 | R_raw=-1502.89 | len=200 | loss=382.680
+[Pendulum] Ep 0270 | R_raw=-1387.06 | len=200 | loss=343.919
+[Pendulum] Ep 0271 | R_raw=-990.86 | len=200 | loss=177.546
+[Pendulum] Ep 0272 | R_raw=-957.79 | len=200 | loss=142.670
+[Pendulum] Ep 0273 | R_raw=-1237.31 | len=200 | loss=267.933
+[Pendulum] Ep 0274 | R_raw=-1608.74 | len=200 | loss=468.795
+[Pendulum] Ep 0275 | R_raw=-1109.92 | len=200 | loss=234.149
+[Pendulum] Ep 0276 | R_raw=-1380.28 | len=200 | loss=348.689
+[Pendulum] Ep 0277 | R_raw=-1272.90 | len=200 | loss=293.779
+[Pendulum] Ep 0278 | R_raw=-1243.06 | len=200 | loss=273.295
+[Pendulum] Ep 0279 | R_raw=-1645.41 | len=200 | loss=485.618
+[Pendulum] Ep 0280 | R_raw=-1068.95 | len=200 | loss=203.470
+[EVAL] Ep 0280 | avg_eval=-1854.03 over 3 episodes
+[Pendulum] Ep 0281 | R_raw=-1409.78 | len=200 | loss=352.184
+[Pendulum] Ep 0282 | R_raw=-1775.69 | len=200 | loss=561.728
+[ENGRAM] New good episode stored at ep 283: R_raw=-858.81
+[MACRO-RANK] Top macros:
+  #1: score=-890.56 | origin_ep=  36 | origin_R=-627.22
+  #2: score=-1058.60 | origin_ep=  51 | origin_R=-766.21
+  #3: score=-1066.80 | origin_ep= 248 | origin_R=-748.62
+  #4: score=-1135.26 | origin_ep=  65 | origin_R=-824.04
+  #5: score=-1137.38 | origin_ep= 207 | origin_R=-866.42
+  #6: score=-1172.06 | origin_ep= 203 | origin_R=-843.60
+  #7: score=-1218.33 | origin_ep=  76 | origin_R=-898.68
+  #8: score=-1253.52 | origin_ep= 127 | origin_R=-845.06
+  #9: score=-1266.61 | origin_ep= 283 | origin_R=-858.81
+  #10: score=-1268.71 | origin_ep=  85 | origin_R=-865.40
+[Pendulum] Ep 0283 | R_raw=-858.81 | len=200 | loss=141.209
+[Pendulum] Ep 0284 | R_raw=-1083.64 | len=200 | loss=219.376
+[Pendulum] Ep 0285 | R_raw=-1065.42 | len=200 | loss=204.988
+[Pendulum] Ep 0286 | R_raw=-1786.68 | len=200 | loss=577.080
+[Pendulum] Ep 0287 | R_raw=-1365.01 | len=200 | loss=307.157
+[Pendulum] Ep 0288 | R_raw=-977.26 | len=200 | loss=162.667
+[Pendulum] Ep 0289 | R_raw=-1382.63 | len=200 | loss=331.682
+[Pendulum] Ep 0290 | R_raw=-1452.30 | len=200 | loss=351.379
+[Pendulum] Ep 0291 | R_raw=-1253.12 | len=200 | loss=280.342
+[Pendulum] Ep 0292 | R_raw=-1627.73 | len=200 | loss=454.669
+[Pendulum] Ep 0293 | R_raw=-1287.15 | len=200 | loss=270.799
+[Pendulum] Ep 0294 | R_raw=-1531.12 | len=200 | loss=400.437
+[Pendulum] Ep 0295 | R_raw=-1200.46 | len=200 | loss=268.503
+[Pendulum] Ep 0296 | R_raw=-1321.09 | len=200 | loss=294.421
+[Pendulum] Ep 0297 | R_raw=-1289.84 | len=200 | loss=263.426
+[Pendulum] Ep 0298 | R_raw=-1713.08 | len=200 | loss=495.048
+[Pendulum] Ep 0299 | R_raw=-1142.81 | len=200 | loss=237.420
+[Pendulum] Ep 0300 | R_raw=-1407.35 | len=200 | loss=368.087
+[EVAL] Ep 0300 | avg_eval=-1229.02 over 3 episodes
+[Pendulum] Ep 0301 | R_raw=-1584.04 | len=200 | loss=428.046
+[Pendulum] Ep 0302 | R_raw=-1269.32 | len=200 | loss=252.739
+[Pendulum] Ep 0303 | R_raw=-1786.63 | len=200 | loss=563.213
+[Pendulum] Ep 0304 | R_raw=-1535.78 | len=200 | loss=414.985
+[Pendulum] Ep 0305 | R_raw=-1656.87 | len=200 | loss=471.365
+[Pendulum] Ep 0306 | R_raw=-1510.27 | len=200 | loss=385.280
+[Pendulum] Ep 0307 | R_raw=-1458.75 | len=200 | loss=358.158
+[Pendulum] Ep 0308 | R_raw=-1177.11 | len=200 | loss=229.257
+[Pendulum] Ep 0309 | R_raw=-1186.21 | len=200 | loss=237.112
+[Pendulum] Ep 0310 | R_raw=-1769.66 | len=200 | loss=537.087
+[Pendulum] Ep 0311 | R_raw=-1752.80 | len=200 | loss=510.642
+[Pendulum] Ep 0312 | R_raw=-1497.64 | len=200 | loss=384.414
+[Pendulum] Ep 0313 | R_raw=-1283.25 | len=200 | loss=287.360
+[Pendulum] Ep 0314 | R_raw=-1138.21 | len=200 | loss=207.643
+[Pendulum] Ep 0315 | R_raw=-1293.23 | len=200 | loss=274.751
+[Pendulum] Ep 0316 | R_raw=-1276.02 | len=200 | loss=255.377
+[Pendulum] Ep 0317 | R_raw=-1176.84 | len=200 | loss=229.062
+[Pendulum] Ep 0318 | R_raw=-1785.24 | len=200 | loss=571.969
+[Pendulum] Ep 0319 | R_raw=-1365.61 | len=200 | loss=296.301
+[Pendulum] Ep 0320 | R_raw=-1075.50 | len=200 | loss=166.206
+[EVAL] Ep 0320 | avg_eval=-1485.50 over 3 episodes
+[Pendulum] Ep 0321 | R_raw=-892.02 | len=200 | loss=128.617
+[Pendulum] Ep 0322 | R_raw=-1812.72 | len=200 | loss=558.871
+[Pendulum] Ep 0323 | R_raw=-1210.46 | len=200 | loss=269.109
+[Pendulum] Ep 0324 | R_raw=-1749.10 | len=200 | loss=520.183
+[Pendulum] Ep 0325 | R_raw=-1516.43 | len=200 | loss=373.245
+[Pendulum] Ep 0326 | R_raw=-1746.96 | len=200 | loss=503.825
+[Pendulum] Ep 0327 | R_raw=-1291.42 | len=200 | loss=264.561
+[Pendulum] Ep 0328 | R_raw=-1463.97 | len=200 | loss=354.266
+[Pendulum] Ep 0329 | R_raw=-1373.21 | len=200 | loss=312.323
+[Pendulum] Ep 0330 | R_raw=-1161.21 | len=200 | loss=237.079
+[Pendulum] Ep 0331 | R_raw=-1660.76 | len=200 | loss=496.247
+[Pendulum] Ep 0332 | R_raw=-1676.17 | len=200 | loss=452.312
+[Pendulum] Ep 0333 | R_raw=-1747.89 | len=200 | loss=506.230
+[Pendulum] Ep 0334 | R_raw=-1211.65 | len=200 | loss=250.816
+[Pendulum] Ep 0335 | R_raw=-1689.69 | len=200 | loss=487.734
+[Pendulum] Ep 0336 | R_raw=-1242.00 | len=200 | loss=239.055
+[Pendulum] Ep 0337 | R_raw=-1645.84 | len=200 | loss=435.174
+[Pendulum] Ep 0338 | R_raw=-1558.65 | len=200 | loss=393.583
+[Pendulum] Ep 0339 | R_raw=-1492.31 | len=200 | loss=360.436
+[Pendulum] Ep 0340 | R_raw=-1393.73 | len=200 | loss=326.495
+[EVAL] Ep 0340 | avg_eval=-1419.27 over 3 episodes
+[Pendulum] Ep 0341 | R_raw=-970.71 | len=200 | loss=141.126
+[Pendulum] Ep 0342 | R_raw=-1380.84 | len=200 | loss=310.863
+[Pendulum] Ep 0343 | R_raw=-1428.37 | len=200 | loss=342.732
+[Pendulum] Ep 0344 | R_raw=-1248.24 | len=200 | loss=239.151
+[Pendulum] Ep 0345 | R_raw=-1237.07 | len=200 | loss=241.422
+[Pendulum] Ep 0346 | R_raw=-1535.29 | len=200 | loss=351.220
+[Pendulum] Ep 0347 | R_raw=-1046.12 | len=200 | loss=168.082
+[Pendulum] Ep 0348 | R_raw=-1559.06 | len=200 | loss=404.101
+[Pendulum] Ep 0349 | R_raw=-1657.22 | len=200 | loss=450.203
+[Pendulum] Ep 0350 | R_raw=-1665.20 | len=200 | loss=422.580
+[Pendulum] Ep 0351 | R_raw=-1755.05 | len=200 | loss=508.723
+[Pendulum] Ep 0352 | R_raw=-1628.13 | len=200 | loss=454.000
+[Pendulum] Ep 0353 | R_raw=-1144.88 | len=200 | loss=201.617
+[Pendulum] Ep 0354 | R_raw=-1626.41 | len=200 | loss=406.678
+[Pendulum] Ep 0355 | R_raw=-1037.08 | len=200 | loss=196.363
+[Pendulum] Ep 0356 | R_raw=-1312.76 | len=200 | loss=270.633
+[ENGRAM] New good episode stored at ep 357: R_raw=-858.27
+[MACRO-RANK] Top macros:
+  #1: score=-1084.21 | origin_ep=  65 | origin_R=-824.04
+  #2: score=-1114.61 | origin_ep= 283 | origin_R=-858.81
+  #3: score=-1149.03 | origin_ep=  51 | origin_R=-766.21
+  #4: score=-1171.53 | origin_ep= 201 | origin_R=-820.21
+  #5: score=-1176.10 | origin_ep=  76 | origin_R=-898.68
+  #6: score=-1196.17 | origin_ep= 203 | origin_R=-843.60
+  #7: score=-1240.15 | origin_ep=  62 | origin_R=-847.14
+  #8: score=-1248.61 | origin_ep=  85 | origin_R=-865.40
+  #9: score=-1248.65 | origin_ep= 248 | origin_R=-748.62
+  #10: score=-1291.83 | origin_ep= 207 | origin_R=-866.42
+[Pendulum] Ep 0357 | R_raw=-858.27 | len=200 | loss=108.276
+[Pendulum] Ep 0358 | R_raw=-1053.16 | len=200 | loss=185.455
+[Pendulum] Ep 0359 | R_raw=-1216.78 | len=200 | loss=221.573
+[Pendulum] Ep 0360 | R_raw=-1779.44 | len=200 | loss=503.704
+[EVAL] Ep 0360 | avg_eval=-1743.51 over 3 episodes
+[Pendulum] Ep 0361 | R_raw=-1409.73 | len=200 | loss=346.928
+[Pendulum] Ep 0362 | R_raw=-1399.78 | len=200 | loss=299.279
+[Pendulum] Ep 0363 | R_raw=-1256.90 | len=200 | loss=251.102
+[Pendulum] Ep 0364 | R_raw=-1463.29 | len=200 | loss=331.510
+[Pendulum] Ep 0365 | R_raw=-1462.97 | len=200 | loss=331.422
+[Pendulum] Ep 0366 | R_raw=-1645.49 | len=200 | loss=432.167
+[Pendulum] Ep 0367 | R_raw=-1346.09 | len=200 | loss=273.034
+[Pendulum] Ep 0368 | R_raw=-1272.92 | len=200 | loss=250.139
+[Pendulum] Ep 0369 | R_raw=-987.85 | len=200 | loss=132.965
+[Pendulum] Ep 0370 | R_raw=-964.17 | len=200 | loss=145.627
+[Pendulum] Ep 0371 | R_raw=-1791.30 | len=200 | loss=507.423
+[Pendulum] Ep 0372 | R_raw=-970.01 | len=200 | loss=141.599
+[Pendulum] Ep 0373 | R_raw=-1119.69 | len=200 | loss=202.708
+[Pendulum] Ep 0374 | R_raw=-1274.60 | len=200 | loss=273.088
+[Pendulum] Ep 0375 | R_raw=-1166.64 | len=200 | loss=209.199
+[Pendulum] Ep 0376 | R_raw=-1761.41 | len=200 | loss=481.085
+[Pendulum] Ep 0377 | R_raw=-1344.15 | len=200 | loss=291.952
+[Pendulum] Ep 0378 | R_raw=-1523.95 | len=200 | loss=356.382
+[Pendulum] Ep 0379 | R_raw=-1668.47 | len=200 | loss=418.585
+[Pendulum] Ep 0380 | R_raw=-969.70 | len=200 | loss=134.560
+[EVAL] Ep 0380 | avg_eval=-1496.18 over 3 episodes
+[Pendulum] Ep 0381 | R_raw=-1433.45 | len=200 | loss=300.697
+[Pendulum] Ep 0382 | R_raw=-1325.15 | len=200 | loss=246.733
+[Pendulum] Ep 0383 | R_raw=-1594.57 | len=200 | loss=387.784
+[Pendulum] Ep 0384 | R_raw=-1268.23 | len=200 | loss=259.325
+[Pendulum] Ep 0385 | R_raw=-1635.05 | len=200 | loss=410.391
+[Pendulum] Ep 0386 | R_raw=-1067.82 | len=200 | loss=161.449
+[Pendulum] Ep 0387 | R_raw=-1175.92 | len=200 | loss=199.616
+[Pendulum] Ep 0388 | R_raw=-1270.47 | len=200 | loss=226.703
+[Pendulum] Ep 0389 | R_raw=-1066.77 | len=200 | loss=164.492
+[Pendulum] Ep 0390 | R_raw=-1477.86 | len=200 | loss=315.456
+[Pendulum] Ep 0391 | R_raw=-968.39 | len=200 | loss=130.901
+[Pendulum] Ep 0392 | R_raw=-1621.94 | len=200 | loss=416.319
+[Pendulum] Ep 0393 | R_raw=-1226.51 | len=200 | loss=226.264
+[Pendulum] Ep 0394 | R_raw=-1800.36 | len=200 | loss=516.522
+[Pendulum] Ep 0395 | R_raw=-1591.27 | len=200 | loss=387.194
+[Pendulum] Ep 0396 | R_raw=-1174.27 | len=200 | loss=207.146
+[ENGRAM] New good episode stored at ep 397: R_raw=-836.31
+[MACRO-RANK] Top macros:
+  #1: score=-945.75 | origin_ep= 248 | origin_R=-748.62
+  #2: score=-1023.73 | origin_ep=  51 | origin_R=-766.21
+  #3: score=-1025.90 | origin_ep= 397 | origin_R=-836.31
+  #4: score=-1053.11 | origin_ep= 203 | origin_R=-843.60
+  #5: score=-1080.93 | origin_ep=  85 | origin_R=-865.40
+  #6: score=-1081.72 | origin_ep=  36 | origin_R=-627.22
+  #7: score=-1133.16 | origin_ep= 357 | origin_R=-858.27
+  #8: score=-1150.16 | origin_ep= 201 | origin_R=-820.21
+  #9: score=-1151.45 | origin_ep= 127 | origin_R=-845.06
+  #10: score=-1223.71 | origin_ep=  62 | origin_R=-847.14
+[Pendulum] Ep 0397 | R_raw=-836.31 | len=200 | loss=96.002
+[Pendulum] Ep 0398 | R_raw=-1256.00 | len=200 | loss=218.128
+[Pendulum] Ep 0399 | R_raw=-1076.69 | len=200 | loss=167.938
+[ENGRAM] Distilling 10 trajectories into policy at ep 400...
+[Pendulum] Ep 0400 | R_raw=-1199.60 | len=200 | loss=213.339
+[EVAL] Ep 0400 | avg_eval=-1278.21 over 3 episodes
+[Pendulum] Ep 0401 | R_raw=-1521.17 | len=200 | loss=328.326
+[Pendulum] Ep 0402 | R_raw=-1289.99 | len=200 | loss=221.556
+[Pendulum] Ep 0403 | R_raw=-1217.94 | len=200 | loss=202.716
+[Pendulum] Ep 0404 | R_raw=-920.42 | len=200 | loss=123.260
+[Pendulum] Ep 0405 | R_raw=-1300.31 | len=200 | loss=240.932
+[Pendulum] Ep 0406 | R_raw=-1270.21 | len=200 | loss=216.403
+[Pendulum] Ep 0407 | R_raw=-1077.17 | len=200 | loss=178.787
+[Pendulum] Ep 0408 | R_raw=-1058.14 | len=200 | loss=133.587
+[Pendulum] Ep 0409 | R_raw=-1532.82 | len=200 | loss=341.433
+[Pendulum] Ep 0410 | R_raw=-1274.87 | len=200 | loss=210.480
+[Pendulum] Ep 0411 | R_raw=-1462.72 | len=200 | loss=307.048
+[Pendulum] Ep 0412 | R_raw=-1708.69 | len=200 | loss=433.808
+[Pendulum] Ep 0413 | R_raw=-875.00 | len=200 | loss=96.312
+[Pendulum] Ep 0414 | R_raw=-1723.44 | len=200 | loss=454.601
+[Pendulum] Ep 0415 | R_raw=-1089.16 | len=200 | loss=155.820
+[Pendulum] Ep 0416 | R_raw=-1625.96 | len=200 | loss=388.048
+[Pendulum] Ep 0417 | R_raw=-1294.92 | len=200 | loss=221.729
+[Pendulum] Ep 0418 | R_raw=-1415.87 | len=200 | loss=282.192
+[Pendulum] Ep 0419 | R_raw=-1401.52 | len=200 | loss=276.336
+[Pendulum] Ep 0420 | R_raw=-1604.63 | len=200 | loss=379.862
+[EVAL] Ep 0420 | avg_eval=-1200.09 over 3 episodes
+[Pendulum] Ep 0421 | R_raw=-1734.28 | len=200 | loss=459.344
+[Pendulum] Ep 0422 | R_raw=-1283.01 | len=200 | loss=214.324
+[Pendulum] Ep 0423 | R_raw=-967.89 | len=200 | loss=117.816
+[Pendulum] Ep 0424 | R_raw=-1496.93 | len=200 | loss=323.582
+[Pendulum] Ep 0425 | R_raw=-971.55 | len=200 | loss=131.250
+[Pendulum] Ep 0426 | R_raw=-1444.97 | len=200 | loss=284.460
+[Pendulum] Ep 0427 | R_raw=-863.46 | len=200 | loss=89.334
+[Pendulum] Ep 0428 | R_raw=-1087.69 | len=200 | loss=143.592
+[ENGRAM] New good episode stored at ep 429: R_raw=-800.66
+[MACRO-RANK] Top macros:
+  #1: score=-1187.56 | origin_ep=  62 | origin_R=-847.14
+  #2: score=-1217.43 | origin_ep= 248 | origin_R=-748.62
+  #3: score=-1226.01 | origin_ep=  51 | origin_R=-766.21
+  #4: score=-1289.66 | origin_ep= 201 | origin_R=-820.21
+  #5: score=-1297.08 | origin_ep=  65 | origin_R=-824.04
+  #6: score=-1335.82 | origin_ep=  85 | origin_R=-865.40
+  #7: score=-1351.89 | origin_ep= 127 | origin_R=-845.06
+  #8: score=-1358.06 | origin_ep= 203 | origin_R=-843.60
+  #9: score=-1360.75 | origin_ep= 397 | origin_R=-836.31
+  #10: score=-1414.11 | origin_ep= 429 | origin_R=-800.66
+[Pendulum] Ep 0429 | R_raw=-800.66 | len=200 | loss=55.792
+[Pendulum] Ep 0430 | R_raw=-853.35 | len=200 | loss=85.936
+[Pendulum] Ep 0431 | R_raw=-1662.06 | len=200 | loss=408.093
+[Pendulum] Ep 0432 | R_raw=-1027.10 | len=200 | loss=129.551
+[Pendulum] Ep 0433 | R_raw=-1444.54 | len=200 | loss=310.596
+[Pendulum] Ep 0434 | R_raw=-1538.04 | len=200 | loss=319.968
+[Pendulum] Ep 0435 | R_raw=-1509.00 | len=200 | loss=323.931
+[Pendulum] Ep 0436 | R_raw=-1770.25 | len=200 | loss=461.742
+[Pendulum] Ep 0437 | R_raw=-1531.90 | len=200 | loss=314.724
+[Pendulum] Ep 0438 | R_raw=-919.98 | len=200 | loss=122.350
+[Pendulum] Ep 0439 | R_raw=-1816.56 | len=200 | loss=514.090
+[Pendulum] Ep 0440 | R_raw=-1288.95 | len=200 | loss=221.889
+[EVAL] Ep 0440 | avg_eval=-1163.08 over 3 episodes
+[ENGRAM] New good episode stored at ep 441: R_raw=-740.77
+[MACRO-RANK] Top macros:
+  #1: score=-1071.53 | origin_ep=  85 | origin_R=-865.40
+  #2: score=-1155.24 | origin_ep= 127 | origin_R=-845.06
+  #3: score=-1181.89 | origin_ep= 203 | origin_R=-843.60
+  #4: score=-1221.33 | origin_ep=  65 | origin_R=-824.04
+  #5: score=-1327.88 | origin_ep=  36 | origin_R=-627.22
+  #6: score=-1347.88 | origin_ep=  51 | origin_R=-766.21
+  #7: score=-1435.14 | origin_ep= 248 | origin_R=-748.62
+  #8: score=-1447.98 | origin_ep= 201 | origin_R=-820.21
+  #9: score=-1481.73 | origin_ep= 429 | origin_R=-800.66
+  #10: score=-1529.01 | origin_ep= 397 | origin_R=-836.31
+[Pendulum] Ep 0441 | R_raw=-740.77 | len=200 | loss=53.398
+[Pendulum] Ep 0442 | R_raw=-1613.93 | len=200 | loss=372.818
+[ENGRAM] New good episode stored at ep 443: R_raw=-751.94
+[MACRO-RANK] Top macros:
+  #1: score=-986.75 | origin_ep=  36 | origin_R=-627.22
+  #2: score=-1047.43 | origin_ep= 201 | origin_R=-820.21
+  #3: score=-1080.69 | origin_ep=  65 | origin_R=-824.04
+  #4: score=-1118.45 | origin_ep= 203 | origin_R=-843.60
+  #5: score=-1209.90 | origin_ep=  85 | origin_R=-865.40
+  #6: score=-1242.45 | origin_ep= 397 | origin_R=-836.31
+  #7: score=-1256.83 | origin_ep= 248 | origin_R=-748.62
+  #8: score=-1289.15 | origin_ep= 429 | origin_R=-800.66
+  #9: score=-1351.04 | origin_ep= 127 | origin_R=-845.06
+  #10: score=-1354.12 | origin_ep=  51 | origin_R=-766.21
+[Pendulum] Ep 0443 | R_raw=-751.94 | len=200 | loss=58.737
+[Pendulum] Ep 0444 | R_raw=-955.29 | len=200 | loss=99.662
+[Pendulum] Ep 0445 | R_raw=-1782.40 | len=200 | loss=471.815
+[Pendulum] Ep 0446 | R_raw=-1714.18 | len=200 | loss=440.470
+[Pendulum] Ep 0447 | R_raw=-1719.13 | len=200 | loss=427.969
+[Pendulum] Ep 0448 | R_raw=-1393.37 | len=200 | loss=264.333
+[Pendulum] Ep 0449 | R_raw=-1737.54 | len=200 | loss=443.068
+[Pendulum] Ep 0450 | R_raw=-1407.75 | len=200 | loss=258.097
+[Pendulum] Ep 0451 | R_raw=-887.22 | len=200 | loss=76.306
+[Pendulum] Ep 0452 | R_raw=-1022.53 | len=200 | loss=130.148
+[ENGRAM] New good episode stored at ep 453: R_raw=-838.39
+[MACRO-RANK] Top macros:
+  #1: score=-1080.28 | origin_ep=  51 | origin_R=-766.21
+  #2: score=-1085.34 | origin_ep= 127 | origin_R=-845.06
+  #3: score=-1110.29 | origin_ep= 441 | origin_R=-740.77
+  #4: score=-1148.65 | origin_ep= 453 | origin_R=-838.39
+  #5: score=-1164.81 | origin_ep= 397 | origin_R=-836.31
+  #6: score=-1219.98 | origin_ep=  85 | origin_R=-865.40
+  #7: score=-1254.59 | origin_ep= 203 | origin_R=-843.60
+  #8: score=-1257.39 | origin_ep= 201 | origin_R=-820.21
+  #9: score=-1334.87 | origin_ep= 248 | origin_R=-748.62
+  #10: score=-1375.33 | origin_ep= 429 | origin_R=-800.66
+[Pendulum] Ep 0453 | R_raw=-838.39 | len=200 | loss=65.362
+[Pendulum] Ep 0454 | R_raw=-1365.91 | len=200 | loss=229.616
+[Pendulum] Ep 0455 | R_raw=-1335.94 | len=200 | loss=227.616
+[Pendulum] Ep 0456 | R_raw=-1553.53 | len=200 | loss=350.842
+[Pendulum] Ep 0457 | R_raw=-966.98 | len=200 | loss=89.164
+[Pendulum] Ep 0458 | R_raw=-1292.75 | len=200 | loss=204.720
+[Pendulum] Ep 0459 | R_raw=-981.23 | len=200 | loss=113.509
+[Pendulum] Ep 0460 | R_raw=-887.12 | len=200 | loss=84.312
+[EVAL] Ep 0460 | avg_eval=-1324.59 over 3 episodes
+[Pendulum] Ep 0461 | R_raw=-869.54 | len=200 | loss=87.651
+[Pendulum] Ep 0462 | R_raw=-1449.35 | len=200 | loss=278.661
+[Pendulum] Ep 0463 | R_raw=-1214.68 | len=200 | loss=175.560
+[Pendulum] Ep 0464 | R_raw=-1542.03 | len=200 | loss=328.796
+[Pendulum] Ep 0465 | R_raw=-866.64 | len=200 | loss=84.126
+[Pendulum] Ep 0466 | R_raw=-1191.89 | len=200 | loss=163.466
+[Pendulum] Ep 0467 | R_raw=-1319.00 | len=200 | loss=225.752
+[Pendulum] Ep 0468 | R_raw=-1271.22 | len=200 | loss=197.743
+[Pendulum] Ep 0469 | R_raw=-1601.80 | len=200 | loss=340.946
+[Pendulum] Ep 0470 | R_raw=-938.99 | len=200 | loss=88.766
+[Pendulum] Ep 0471 | R_raw=-1011.02 | len=200 | loss=129.377
+[Pendulum] Ep 0472 | R_raw=-1055.74 | len=200 | loss=123.103
+[Pendulum] Ep 0473 | R_raw=-1792.74 | len=200 | loss=470.316
+[Pendulum] Ep 0474 | R_raw=-1786.23 | len=200 | loss=471.049
+[Pendulum] Ep 0475 | R_raw=-1301.87 | len=200 | loss=202.837
+[Pendulum] Ep 0476 | R_raw=-884.51 | len=200 | loss=83.424
+[Pendulum] Ep 0477 | R_raw=-1163.63 | len=200 | loss=153.258
+[Pendulum] Ep 0478 | R_raw=-911.45 | len=200 | loss=80.148
+[Pendulum] Ep 0479 | R_raw=-1194.29 | len=200 | loss=166.800
+[Pendulum] Ep 0480 | R_raw=-1414.15 | len=200 | loss=264.656
+[EVAL] Ep 0480 | avg_eval=-1327.84 over 3 episodes
+[Pendulum] Ep 0481 | R_raw=-940.25 | len=200 | loss=93.716
+[Pendulum] Ep 0482 | R_raw=-1052.18 | len=200 | loss=110.023
+[Pendulum] Ep 0483 | R_raw=-932.86 | len=200 | loss=96.682
+[Pendulum] Ep 0484 | R_raw=-1302.99 | len=200 | loss=205.907
+[Pendulum] Ep 0485 | R_raw=-1487.15 | len=200 | loss=295.935
+[Pendulum] Ep 0486 | R_raw=-887.17 | len=200 | loss=92.393
+[Pendulum] Ep 0487 | R_raw=-1273.13 | len=200 | loss=187.750
+[Pendulum] Ep 0488 | R_raw=-1798.85 | len=200 | loss=460.004
+[Pendulum] Ep 0489 | R_raw=-1207.41 | len=200 | loss=177.023
+[Pendulum] Ep 0490 | R_raw=-1696.54 | len=200 | loss=396.504
+[Pendulum] Ep 0491 | R_raw=-1804.81 | len=200 | loss=479.989
+[Pendulum] Ep 0492 | R_raw=-1524.47 | len=200 | loss=315.111
+[Pendulum] Ep 0493 | R_raw=-1283.74 | len=200 | loss=184.531
+[Pendulum] Ep 0494 | R_raw=-1065.44 | len=200 | loss=112.475
+[Pendulum] Ep 0495 | R_raw=-1186.46 | len=200 | loss=174.856
+[Pendulum] Ep 0496 | R_raw=-872.23 | len=200 | loss=83.917
+[Pendulum] Ep 0497 | R_raw=-1254.40 | len=200 | loss=188.264
+[Pendulum] Ep 0498 | R_raw=-1453.84 | len=200 | loss=259.891
+[Pendulum] Ep 0499 | R_raw=-1716.66 | len=200 | loss=401.079
+[Pendulum] Ep 0500 | R_raw=-1444.94 | len=200 | loss=246.922
+[EVAL] Ep 0500 | avg_eval=-1184.09 over 3 episodes
+[Pendulum] Ep 0501 | R_raw=-877.50 | len=200 | loss=75.015
+[Pendulum] Ep 0502 | R_raw=-881.32 | len=200 | loss=65.741
+[Pendulum] Ep 0503 | R_raw=-1361.58 | len=200 | loss=221.505
+[Pendulum] Ep 0504 | R_raw=-1271.52 | len=200 | loss=187.938
+[Pendulum] Ep 0505 | R_raw=-1067.79 | len=200 | loss=122.727
+[Pendulum] Ep 0506 | R_raw=-1537.46 | len=200 | loss=312.332
+[Pendulum] Ep 0507 | R_raw=-880.82 | len=200 | loss=84.818
+[Pendulum] Ep 0508 | R_raw=-1291.85 | len=200 | loss=203.584
+[Pendulum] Ep 0509 | R_raw=-1170.32 | len=200 | loss=152.599
+[Pendulum] Ep 0510 | R_raw=-1387.66 | len=200 | loss=234.790
+[Pendulum] Ep 0511 | R_raw=-1014.54 | len=200 | loss=117.493
+[Pendulum] Ep 0512 | R_raw=-1278.83 | len=200 | loss=191.471
+[Pendulum] Ep 0513 | R_raw=-1168.15 | len=200 | loss=157.003
+[Pendulum] Ep 0514 | R_raw=-888.53 | len=200 | loss=86.600
+[Pendulum] Ep 0515 | R_raw=-969.17 | len=200 | loss=94.480
+[Pendulum] Ep 0516 | R_raw=-948.56 | len=200 | loss=86.138
+[Pendulum] Ep 0517 | R_raw=-1598.76 | len=200 | loss=341.706
+[Pendulum] Ep 0518 | R_raw=-1809.73 | len=200 | loss=461.622
+[Pendulum] Ep 0519 | R_raw=-1066.64 | len=200 | loss=117.830
+[Pendulum] Ep 0520 | R_raw=-1074.63 | len=200 | loss=115.723
+[EVAL] Ep 0520 | avg_eval=-1403.23 over 3 episodes
+[Pendulum] Ep 0521 | R_raw=-1532.00 | len=200 | loss=303.253
+[Pendulum] Ep 0522 | R_raw=-981.33 | len=200 | loss=98.521
+[Pendulum] Ep 0523 | R_raw=-976.78 | len=200 | loss=101.879
+[Pendulum] Ep 0524 | R_raw=-1634.45 | len=200 | loss=351.257
+[Pendulum] Ep 0525 | R_raw=-1248.63 | len=200 | loss=177.166
+[Pendulum] Ep 0526 | R_raw=-1439.25 | len=200 | loss=245.404
+[Pendulum] Ep 0527 | R_raw=-1159.41 | len=200 | loss=136.910
+[Pendulum] Ep 0528 | R_raw=-1381.22 | len=200 | loss=212.124
+[Pendulum] Ep 0529 | R_raw=-995.98 | len=200 | loss=86.956
+[Pendulum] Ep 0530 | R_raw=-1166.09 | len=200 | loss=143.609
+[Pendulum] Ep 0531 | R_raw=-1300.61 | len=200 | loss=200.230
+[Pendulum] Ep 0532 | R_raw=-1408.07 | len=200 | loss=241.712
+[Pendulum] Ep 0533 | R_raw=-971.87 | len=200 | loss=84.261
+[Pendulum] Ep 0534 | R_raw=-1587.80 | len=200 | loss=324.701
+[Pendulum] Ep 0535 | R_raw=-1011.95 | len=200 | loss=112.922
+[Pendulum] Ep 0536 | R_raw=-1337.60 | len=200 | loss=200.603
+[Pendulum] Ep 0537 | R_raw=-1673.09 | len=200 | loss=362.877
+[Pendulum] Ep 0538 | R_raw=-1239.15 | len=200 | loss=186.919
+[Pendulum] Ep 0539 | R_raw=-1780.89 | len=200 | loss=447.830
+[Pendulum] Ep 0540 | R_raw=-1783.42 | len=200 | loss=440.500
+[EVAL] Ep 0540 | avg_eval=-1314.83 over 3 episodes
+[Pendulum] Ep 0541 | R_raw=-1767.06 | len=200 | loss=446.980
+[Pendulum] Ep 0542 | R_raw=-1576.78 | len=200 | loss=324.812
+[Pendulum] Ep 0543 | R_raw=-997.28 | len=200 | loss=86.117
+[Pendulum] Ep 0544 | R_raw=-1568.76 | len=200 | loss=317.085
+[Pendulum] Ep 0545 | R_raw=-1364.80 | len=200 | loss=216.514
+[Pendulum] Ep 0546 | R_raw=-989.97 | len=200 | loss=83.169
+[Pendulum] Ep 0547 | R_raw=-1685.08 | len=200 | loss=357.357
+[Pendulum] Ep 0548 | R_raw=-864.70 | len=200 | loss=68.090
+[Pendulum] Ep 0549 | R_raw=-1445.06 | len=200 | loss=248.138
+[Pendulum] Ep 0550 | R_raw=-1063.37 | len=200 | loss=112.851
+[Pendulum] Ep 0551 | R_raw=-1570.02 | len=200 | loss=322.008
+[Pendulum] Ep 0552 | R_raw=-1429.48 | len=200 | loss=236.358
+[Pendulum] Ep 0553 | R_raw=-983.61 | len=200 | loss=86.197
+[Pendulum] Ep 0554 | R_raw=-1156.32 | len=200 | loss=139.335
+[Pendulum] Ep 0555 | R_raw=-1265.72 | len=200 | loss=174.130
+[Pendulum] Ep 0556 | R_raw=-1067.79 | len=200 | loss=101.593
+[Pendulum] Ep 0557 | R_raw=-1322.69 | len=200 | loss=197.737
+[Pendulum] Ep 0558 | R_raw=-971.95 | len=200 | loss=80.786
+[ENGRAM] New good episode stored at ep 559: R_raw=-737.94
+[MACRO-RANK] Top macros:
+  #1: score=-930.31 | origin_ep=  36 | origin_R=-627.22
+  #2: score=-1089.43 | origin_ep= 397 | origin_R=-836.31
+  #3: score=-1095.41 | origin_ep= 559 | origin_R=-737.94
+  #4: score=-1114.20 | origin_ep=  65 | origin_R=-824.04
+  #5: score=-1239.37 | origin_ep=  51 | origin_R=-766.21
+  #6: score=-1275.50 | origin_ep= 443 | origin_R=-751.94
+  #7: score=-1285.63 | origin_ep= 203 | origin_R=-843.60
+  #8: score=-1317.51 | origin_ep=  85 | origin_R=-865.40
+  #9: score=-1324.26 | origin_ep= 248 | origin_R=-748.62
+  #10: score=-1352.25 | origin_ep= 127 | origin_R=-845.06
+[Pendulum] Ep 0559 | R_raw=-737.94 | len=200 | loss=50.841
+[Pendulum] Ep 0560 | R_raw=-1026.17 | len=200 | loss=100.543
+[EVAL] Ep 0560 | avg_eval=-1553.04 over 3 episodes
+[Pendulum] Ep 0561 | R_raw=-1165.35 | len=200 | loss=138.415
+[Pendulum] Ep 0562 | R_raw=-1110.57 | len=200 | loss=121.716
+[Pendulum] Ep 0563 | R_raw=-1139.32 | len=200 | loss=138.359
+[Pendulum] Ep 0564 | R_raw=-1523.55 | len=200 | loss=279.254
+[Pendulum] Ep 0565 | R_raw=-886.60 | len=200 | loss=69.207
+[Pendulum] Ep 0566 | R_raw=-1503.10 | len=200 | loss=283.922
+[Pendulum] Ep 0567 | R_raw=-1622.40 | len=200 | loss=334.054
+[Pendulum] Ep 0568 | R_raw=-1147.17 | len=200 | loss=133.490
+[Pendulum] Ep 0569 | R_raw=-1346.77 | len=200 | loss=192.155
+[Pendulum] Ep 0570 | R_raw=-1065.42 | len=200 | loss=104.606
+[Pendulum] Ep 0571 | R_raw=-1665.86 | len=200 | loss=339.379
+[Pendulum] Ep 0572 | R_raw=-1544.85 | len=200 | loss=299.620
+[Pendulum] Ep 0573 | R_raw=-1353.34 | len=200 | loss=203.519
+[Pendulum] Ep 0574 | R_raw=-1288.46 | len=200 | loss=177.566
+[Pendulum] Ep 0575 | R_raw=-882.22 | len=200 | loss=60.104
+[Pendulum] Ep 0576 | R_raw=-1573.72 | len=200 | loss=300.280
+[Pendulum] Ep 0577 | R_raw=-1395.28 | len=200 | loss=218.214
+[Pendulum] Ep 0578 | R_raw=-1637.52 | len=200 | loss=337.558
+[Pendulum] Ep 0579 | R_raw=-1403.21 | len=200 | loss=217.332
+[Pendulum] Ep 0580 | R_raw=-880.89 | len=200 | loss=65.351
+[EVAL] Ep 0580 | avg_eval=-1419.43 over 3 episodes
+[Pendulum] Ep 0581 | R_raw=-1606.15 | len=200 | loss=333.284
+[Pendulum] Ep 0582 | R_raw=-1793.52 | len=200 | loss=432.685
+[Pendulum] Ep 0583 | R_raw=-1067.65 | len=200 | loss=106.057
+[Pendulum] Ep 0584 | R_raw=-1267.37 | len=200 | loss=155.920
+[Pendulum] Ep 0585 | R_raw=-1193.14 | len=200 | loss=134.626
+[Pendulum] Ep 0586 | R_raw=-1003.59 | len=200 | loss=89.072
+[Pendulum] Ep 0587 | R_raw=-905.35 | len=200 | loss=86.045
+[Pendulum] Ep 0588 | R_raw=-1198.01 | len=200 | loss=144.149
+[Pendulum] Ep 0589 | R_raw=-1519.46 | len=200 | loss=272.305
+[Pendulum] Ep 0590 | R_raw=-1636.59 | len=200 | loss=326.530
+[Pendulum] Ep 0591 | R_raw=-1800.63 | len=200 | loss=439.378
+[Pendulum] Ep 0592 | R_raw=-959.14 | len=200 | loss=73.432
+[Pendulum] Ep 0593 | R_raw=-891.19 | len=200 | loss=61.757
+[Pendulum] Ep 0594 | R_raw=-1618.64 | len=200 | loss=319.333
+[Pendulum] Ep 0595 | R_raw=-1307.86 | len=200 | loss=178.022
+[Pendulum] Ep 0596 | R_raw=-1080.62 | len=200 | loss=97.585
+[Pendulum] Ep 0597 | R_raw=-1729.50 | len=200 | loss=375.259
+[Pendulum] Ep 0598 | R_raw=-1399.67 | len=200 | loss=223.789
+[Pendulum] Ep 0599 | R_raw=-1395.85 | len=200 | loss=221.466
+[ENGRAM] Distilling 10 trajectories into policy at ep 600...
+[Pendulum] Ep 0600 | R_raw=-1727.48 | len=200 | loss=374.597
+[EVAL] Ep 0600 | avg_eval=-1263.79 over 3 episodes
+[Pendulum] Ep 0601 | R_raw=-1685.75 | len=200 | loss=337.750
+[Pendulum] Ep 0602 | R_raw=-874.38 | len=200 | loss=61.548
+[Pendulum] Ep 0603 | R_raw=-965.51 | len=200 | loss=70.675
+[Pendulum] Ep 0604 | R_raw=-1697.51 | len=200 | loss=360.694
+[Pendulum] Ep 0605 | R_raw=-1833.61 | len=200 | loss=456.279
+[Pendulum] Ep 0606 | R_raw=-1287.11 | len=200 | loss=174.575
+[Pendulum] Ep 0607 | R_raw=-1384.16 | len=200 | loss=198.750
+[Pendulum] Ep 0608 | R_raw=-1337.04 | len=200 | loss=190.306
+[Pendulum] Ep 0609 | R_raw=-1117.39 | len=200 | loss=123.686
+[Pendulum] Ep 0610 | R_raw=-857.35 | len=200 | loss=46.869
+[Pendulum] Ep 0611 | R_raw=-1152.46 | len=200 | loss=123.999
+[Pendulum] Ep 0612 | R_raw=-1707.60 | len=200 | loss=365.229
+[Pendulum] Ep 0613 | R_raw=-1164.26 | len=200 | loss=121.847
+[Pendulum] Ep 0614 | R_raw=-1657.78 | len=200 | loss=337.765
+[Pendulum] Ep 0615 | R_raw=-1677.32 | len=200 | loss=350.919
+[ENGRAM] New good episode stored at ep 616: R_raw=-769.13
+[MACRO-RANK] Top macros:
+  #1: score=-994.80 | origin_ep= 397 | origin_R=-836.31
+  #2: score=-1033.57 | origin_ep=  36 | origin_R=-627.22
+  #3: score=-1034.29 | origin_ep=  85 | origin_R=-865.40
+  #4: score=-1071.46 | origin_ep= 203 | origin_R=-843.60
+  #5: score=-1119.28 | origin_ep= 441 | origin_R=-740.77
+  #6: score=-1160.04 | origin_ep= 127 | origin_R=-845.06
+  #7: score=-1176.11 | origin_ep= 429 | origin_R=-800.66
+  #8: score=-1177.75 | origin_ep= 248 | origin_R=-748.62
+  #9: score=-1221.28 | origin_ep= 443 | origin_R=-751.94
+  #10: score=-1249.01 | origin_ep= 559 | origin_R=-737.94
+[Pendulum] Ep 0616 | R_raw=-769.13 | len=200 | loss=45.250
+[Pendulum] Ep 0617 | R_raw=-1678.51 | len=200 | loss=341.741
+[Pendulum] Ep 0618 | R_raw=-824.44 | len=200 | loss=45.382
+[Pendulum] Ep 0619 | R_raw=-846.33 | len=200 | loss=65.921
+[Pendulum] Ep 0620 | R_raw=-1691.37 | len=200 | loss=358.839
+[EVAL] Ep 0620 | avg_eval=-1059.19 over 3 episodes
+[CHECKPOINT] New best policy at ep 620: avg_eval=-1059.19
+[Pendulum] Ep 0621 | R_raw=-1478.16 | len=200 | loss=246.022
+[Pendulum] Ep 0622 | R_raw=-982.39 | len=200 | loss=78.215
+[Pendulum] Ep 0623 | R_raw=-1426.45 | len=200 | loss=242.684
+[Pendulum] Ep 0624 | R_raw=-1693.58 | len=200 | loss=369.508
+[Pendulum] Ep 0625 | R_raw=-838.09 | len=200 | loss=42.777
+[Pendulum] Ep 0626 | R_raw=-889.61 | len=200 | loss=55.082
+[Pendulum] Ep 0627 | R_raw=-1728.57 | len=200 | loss=373.450
+[Pendulum] Ep 0628 | R_raw=-864.34 | len=200 | loss=51.307
+[Pendulum] Ep 0629 | R_raw=-1590.54 | len=200 | loss=296.961
+[Pendulum] Ep 0630 | R_raw=-901.41 | len=200 | loss=67.204
+[Pendulum] Ep 0631 | R_raw=-1000.54 | len=200 | loss=78.825
+[Pendulum] Ep 0632 | R_raw=-1585.86 | len=200 | loss=290.636
+[Pendulum] Ep 0633 | R_raw=-974.06 | len=200 | loss=69.474
+[Pendulum] Ep 0634 | R_raw=-1296.53 | len=200 | loss=176.798
+[Pendulum] Ep 0635 | R_raw=-1077.26 | len=200 | loss=97.110
+[Pendulum] Ep 0636 | R_raw=-1056.29 | len=200 | loss=88.237
+[Pendulum] Ep 0637 | R_raw=-1700.83 | len=200 | loss=336.518
+[Pendulum] Ep 0638 | R_raw=-1436.70 | len=200 | loss=219.190
+[Pendulum] Ep 0639 | R_raw=-1469.81 | len=200 | loss=225.880
+[Pendulum] Ep 0640 | R_raw=-1157.30 | len=200 | loss=116.243
+[EVAL] Ep 0640 | avg_eval=-949.01 over 3 episodes
+[CHECKPOINT] New best policy at ep 640: avg_eval=-949.01
+[Pendulum] Ep 0641 | R_raw=-888.05 | len=200 | loss=56.665
+[Pendulum] Ep 0642 | R_raw=-1450.13 | len=200 | loss=230.382
+[Pendulum] Ep 0643 | R_raw=-884.15 | len=200 | loss=62.784
+[Pendulum] Ep 0644 | R_raw=-940.37 | len=200 | loss=67.639
+[Pendulum] Ep 0645 | R_raw=-986.39 | len=200 | loss=82.698
+[Pendulum] Ep 0646 | R_raw=-1150.10 | len=200 | loss=114.045
+[Pendulum] Ep 0647 | R_raw=-1182.97 | len=200 | loss=127.049
+[Pendulum] Ep 0648 | R_raw=-1372.57 | len=200 | loss=179.054
+[Pendulum] Ep 0649 | R_raw=-1606.26 | len=200 | loss=291.344
+[ENGRAM] New good episode stored at ep 650: R_raw=-761.34
+[MACRO-RANK] Top macros:
+  #1: score=-1034.14 | origin_ep= 443 | origin_R=-751.94
+  #2: score=-1060.24 | origin_ep= 201 | origin_R=-820.21
+  #3: score=-1068.54 | origin_ep=  85 | origin_R=-865.40
+  #4: score=-1122.94 | origin_ep=  36 | origin_R=-627.22
+  #5: score=-1137.79 | origin_ep= 203 | origin_R=-843.60
+  #6: score=-1147.60 | origin_ep= 559 | origin_R=-737.94
+  #7: score=-1172.06 | origin_ep= 248 | origin_R=-748.62
+  #8: score=-1177.51 | origin_ep=  51 | origin_R=-766.21
+  #9: score=-1180.91 | origin_ep= 650 | origin_R=-761.34
+  #10: score=-1310.71 | origin_ep= 429 | origin_R=-800.66
+[Pendulum] Ep 0650 | R_raw=-761.34 | len=200 | loss=41.343
+[Pendulum] Ep 0651 | R_raw=-1609.18 | len=200 | loss=287.946
+[Pendulum] Ep 0652 | R_raw=-957.28 | len=200 | loss=78.799
+[Pendulum] Ep 0653 | R_raw=-966.17 | len=200 | loss=57.152
+[Pendulum] Ep 0654 | R_raw=-1419.70 | len=200 | loss=206.115
+[Pendulum] Ep 0655 | R_raw=-1296.57 | len=200 | loss=154.079
+[Pendulum] Ep 0656 | R_raw=-1274.52 | len=200 | loss=152.243
+[Pendulum] Ep 0657 | R_raw=-965.78 | len=200 | loss=62.353
+[Pendulum] Ep 0658 | R_raw=-1271.82 | len=200 | loss=146.779
+[Pendulum] Ep 0659 | R_raw=-1488.47 | len=200 | loss=257.048
+[Pendulum] Ep 0660 | R_raw=-891.90 | len=200 | loss=60.747
+[EVAL] Ep 0660 | avg_eval=-1258.08 over 3 episodes
+[Pendulum] Ep 0661 | R_raw=-1568.63 | len=200 | loss=273.153
+[Pendulum] Ep 0662 | R_raw=-1040.87 | len=200 | loss=112.347
+[Pendulum] Ep 0663 | R_raw=-933.03 | len=200 | loss=51.940
+[Pendulum] Ep 0664 | R_raw=-971.74 | len=200 | loss=62.025
+[Pendulum] Ep 0665 | R_raw=-1647.10 | len=200 | loss=306.018
+[Pendulum] Ep 0666 | R_raw=-1409.91 | len=200 | loss=202.138
+[Pendulum] Ep 0667 | R_raw=-1760.09 | len=200 | loss=380.253
+[ENGRAM] New good episode stored at ep 668: R_raw=-743.20
+[MACRO-RANK] Top macros:
+  #1: score=-1039.47 | origin_ep= 201 | origin_R=-820.21
+  #2: score=-1221.22 | origin_ep=  51 | origin_R=-766.21
+  #3: score=-1245.49 | origin_ep= 559 | origin_R=-737.94
+  #4: score=-1280.14 | origin_ep= 441 | origin_R=-740.77
+  #5: score=-1283.44 | origin_ep= 248 | origin_R=-748.62
+  #6: score=-1309.94 | origin_ep= 203 | origin_R=-843.60
+  #7: score=-1368.93 | origin_ep= 443 | origin_R=-751.94
+  #8: score=-1393.91 | origin_ep= 616 | origin_R=-769.13
+  #9: score=-1439.02 | origin_ep= 429 | origin_R=-800.66
+  #10: score=-1442.19 | origin_ep=  85 | origin_R=-865.40
+[Pendulum] Ep 0668 | R_raw=-743.20 | len=200 | loss=27.318
+[Pendulum] Ep 0669 | R_raw=-818.06 | len=200 | loss=31.531
+[Pendulum] Ep 0670 | R_raw=-836.00 | len=200 | loss=35.923
+[Pendulum] Ep 0671 | R_raw=-985.01 | len=200 | loss=59.705
+[Pendulum] Ep 0672 | R_raw=-1355.76 | len=200 | loss=191.491
+[Pendulum] Ep 0673 | R_raw=-1600.82 | len=200 | loss=306.300
+[Pendulum] Ep 0674 | R_raw=-1383.71 | len=200 | loss=178.826
+[Pendulum] Ep 0675 | R_raw=-1250.44 | len=200 | loss=141.094
+[Pendulum] Ep 0676 | R_raw=-1493.09 | len=200 | loss=230.801
+[Pendulum] Ep 0677 | R_raw=-1656.62 | len=200 | loss=306.754
+[Pendulum] Ep 0678 | R_raw=-1178.58 | len=200 | loss=118.680
+[Pendulum] Ep 0679 | R_raw=-1328.11 | len=200 | loss=175.046
+[ENGRAM] New good episode stored at ep 680: R_raw=-791.76
+[MACRO-RANK] Top macros:
+  #1: score=-1028.66 | origin_ep= 201 | origin_R=-820.21
+  #2: score=-1028.99 | origin_ep= 650 | origin_R=-761.34
+  #3: score=-1135.89 | origin_ep= 443 | origin_R=-751.94
+  #4: score=-1201.51 | origin_ep= 680 | origin_R=-791.76
+  #5: score=-1209.75 | origin_ep=  36 | origin_R=-627.22
+  #6: score=-1275.19 | origin_ep= 668 | origin_R=-743.20
+  #7: score=-1299.19 | origin_ep=  51 | origin_R=-766.21
+  #8: score=-1300.36 | origin_ep=  85 | origin_R=-865.40
+  #9: score=-1305.82 | origin_ep= 203 | origin_R=-843.60
+  #10: score=-1342.15 | origin_ep= 559 | origin_R=-737.94
+[Pendulum] Ep 0680 | R_raw=-791.76 | len=200 | loss=45.557
+[EVAL] Ep 0680 | avg_eval=-1452.17 over 3 episodes
+[Pendulum] Ep 0681 | R_raw=-1359.93 | len=200 | loss=180.755
+[Pendulum] Ep 0682 | R_raw=-1097.55 | len=200 | loss=111.922
+[ENGRAM] New good episode stored at ep 683: R_raw=-759.78
+[MACRO-RANK] Top macros:
+  #1: score=-1058.92 | origin_ep= 203 | origin_R=-843.60
+  #2: score=-1118.89 | origin_ep= 650 | origin_R=-761.34
+  #3: score=-1204.14 | origin_ep= 201 | origin_R=-820.21
+  #4: score=-1207.45 | origin_ep=  85 | origin_R=-865.40
+  #5: score=-1252.72 | origin_ep= 441 | origin_R=-740.77
+  #6: score=-1289.73 | origin_ep= 559 | origin_R=-737.94
+  #7: score=-1301.60 | origin_ep= 680 | origin_R=-791.76
+  #8: score=-1316.96 | origin_ep= 443 | origin_R=-751.94
+  #9: score=-1328.19 | origin_ep= 248 | origin_R=-748.62
+  #10: score=-1331.43 | origin_ep=  51 | origin_R=-766.21
+[Pendulum] Ep 0683 | R_raw=-759.78 | len=200 | loss=29.262
+[Pendulum] Ep 0684 | R_raw=-1220.29 | len=200 | loss=124.274
+[Pendulum] Ep 0685 | R_raw=-1070.85 | len=200 | loss=78.171
+[Pendulum] Ep 0686 | R_raw=-1075.19 | len=200 | loss=81.579
+[Pendulum] Ep 0687 | R_raw=-1463.31 | len=200 | loss=208.571
+[Pendulum] Ep 0688 | R_raw=-1272.55 | len=200 | loss=135.093
+[Pendulum] Ep 0689 | R_raw=-1373.84 | len=200 | loss=185.759
+[Pendulum] Ep 0690 | R_raw=-1081.77 | len=200 | loss=89.394
+[Pendulum] Ep 0691 | R_raw=-1538.27 | len=200 | loss=258.826
+[Pendulum] Ep 0692 | R_raw=-1387.77 | len=200 | loss=184.493
+[Pendulum] Ep 0693 | R_raw=-1329.65 | len=200 | loss=163.289
+[Pendulum] Ep 0694 | R_raw=-1393.10 | len=200 | loss=183.072
+[Pendulum] Ep 0695 | R_raw=-1581.72 | len=200 | loss=269.368
+[Pendulum] Ep 0696 | R_raw=-793.03 | len=200 | loss=47.866
+[Pendulum] Ep 0697 | R_raw=-1596.97 | len=200 | loss=268.855
+[Pendulum] Ep 0698 | R_raw=-819.77 | len=200 | loss=39.723
+[Pendulum] Ep 0699 | R_raw=-1063.55 | len=200 | loss=77.715
+[Pendulum] Ep 0700 | R_raw=-1244.14 | len=200 | loss=134.828
+[EVAL] Ep 0700 | avg_eval=-1404.34 over 3 episodes
+[Pendulum] Ep 0701 | R_raw=-964.47 | len=200 | loss=65.809
+[Pendulum] Ep 0702 | R_raw=-1544.80 | len=200 | loss=260.569
+[Pendulum] Ep 0703 | R_raw=-1116.36 | len=200 | loss=89.979
+[Pendulum] Ep 0704 | R_raw=-979.43 | len=200 | loss=63.980
+[Pendulum] Ep 0705 | R_raw=-1080.36 | len=200 | loss=83.877
+[Pendulum] Ep 0706 | R_raw=-1197.77 | len=200 | loss=119.541
+[Pendulum] Ep 0707 | R_raw=-873.73 | len=200 | loss=48.245
+[Pendulum] Ep 0708 | R_raw=-1534.09 | len=200 | loss=247.964
+[Pendulum] Ep 0709 | R_raw=-773.30 | len=200 | loss=40.801
+[Pendulum] Ep 0710 | R_raw=-894.18 | len=200 | loss=54.175
+[Pendulum] Ep 0711 | R_raw=-1165.09 | len=200 | loss=103.542
+[Pendulum] Ep 0712 | R_raw=-926.73 | len=200 | loss=60.823
+[Pendulum] Ep 0713 | R_raw=-967.61 | len=200 | loss=58.200
+[Pendulum] Ep 0714 | R_raw=-1699.64 | len=200 | loss=335.797
+[Pendulum] Ep 0715 | R_raw=-1755.27 | len=200 | loss=371.101
+[Pendulum] Ep 0716 | R_raw=-1846.51 | len=200 | loss=414.552
+[Pendulum] Ep 0717 | R_raw=-1545.94 | len=200 | loss=267.268
+[Pendulum] Ep 0718 | R_raw=-1442.13 | len=200 | loss=205.668
+[Pendulum] Ep 0719 | R_raw=-1452.98 | len=200 | loss=210.494
+[Pendulum] Ep 0720 | R_raw=-1082.16 | len=200 | loss=89.730
+[EVAL] Ep 0720 | avg_eval=-1227.20 over 3 episodes
+[Pendulum] Ep 0721 | R_raw=-1505.07 | len=200 | loss=228.866
+[Pendulum] Ep 0722 | R_raw=-1748.09 | len=200 | loss=339.359
+[Pendulum] Ep 0723 | R_raw=-978.67 | len=200 | loss=68.977
+[Pendulum] Ep 0724 | R_raw=-1346.73 | len=200 | loss=159.644
+[Pendulum] Ep 0725 | R_raw=-1679.94 | len=200 | loss=304.002
+[Pendulum] Ep 0726 | R_raw=-1148.09 | len=200 | loss=108.073
+[Pendulum] Ep 0727 | R_raw=-878.03 | len=200 | loss=51.116
+[Pendulum] Ep 0728 | R_raw=-973.23 | len=200 | loss=75.906
+[Pendulum] Ep 0729 | R_raw=-1346.68 | len=200 | loss=161.378
+[Pendulum] Ep 0730 | R_raw=-1685.75 | len=200 | loss=304.207
+[Pendulum] Ep 0731 | R_raw=-876.05 | len=200 | loss=46.916
+[Pendulum] Ep 0732 | R_raw=-1623.08 | len=200 | loss=290.283
+[Pendulum] Ep 0733 | R_raw=-1708.91 | len=200 | loss=329.515
+[Pendulum] Ep 0734 | R_raw=-1612.45 | len=200 | loss=263.020
+[Pendulum] Ep 0735 | R_raw=-973.77 | len=200 | loss=57.578
+[Pendulum] Ep 0736 | R_raw=-1133.59 | len=200 | loss=90.612
+[Pendulum] Ep 0737 | R_raw=-997.88 | len=200 | loss=65.499
+[Pendulum] Ep 0738 | R_raw=-1517.23 | len=200 | loss=237.195
+[Pendulum] Ep 0739 | R_raw=-881.02 | len=200 | loss=33.897
+[Pendulum] Ep 0740 | R_raw=-1072.39 | len=200 | loss=79.686
+[EVAL] Ep 0740 | avg_eval=-1353.54 over 3 episodes
+[Pendulum] Ep 0741 | R_raw=-864.15 | len=200 | loss=51.074
+[Pendulum] Ep 0742 | R_raw=-1570.98 | len=200 | loss=244.777
+[Pendulum] Ep 0743 | R_raw=-1061.02 | len=200 | loss=74.935
+[Pendulum] Ep 0744 | R_raw=-1620.70 | len=200 | loss=287.711
+[Pendulum] Ep 0745 | R_raw=-1180.61 | len=200 | loss=116.296
+[Pendulum] Ep 0746 | R_raw=-981.79 | len=200 | loss=64.652
+[Pendulum] Ep 0747 | R_raw=-780.66 | len=200 | loss=26.727
+[Pendulum] Ep 0748 | R_raw=-808.55 | len=200 | loss=43.437
+[Pendulum] Ep 0749 | R_raw=-1196.96 | len=200 | loss=117.217
+[Pendulum] Ep 0750 | R_raw=-1299.80 | len=200 | loss=142.348
+[ENGRAM] New good episode stored at ep 751: R_raw=-743.56
+[MACRO-RANK] Top macros:
+  #1: score=-860.21 | origin_ep= 248 | origin_R=-748.62
+  #2: score=-965.09 | origin_ep=  36 | origin_R=-627.22
+  #3: score=-1046.43 | origin_ep= 559 | origin_R=-737.94
+  #4: score=-1048.27 | origin_ep= 650 | origin_R=-761.34
+  #5: score=-1052.28 | origin_ep=  51 | origin_R=-766.21
+  #6: score=-1055.14 | origin_ep= 680 | origin_R=-791.76
+  #7: score=-1058.16 | origin_ep= 441 | origin_R=-740.77
+  #8: score=-1106.91 | origin_ep=  85 | origin_R=-865.40
+  #9: score=-1182.04 | origin_ep= 443 | origin_R=-751.94
+  #10: score=-1282.04 | origin_ep= 683 | origin_R=-759.78
+[Pendulum] Ep 0751 | R_raw=-743.56 | len=200 | loss=32.147
+[Pendulum] Ep 0752 | R_raw=-1074.60 | len=200 | loss=92.606
+[Pendulum] Ep 0753 | R_raw=-962.77 | len=200 | loss=62.909
+[Pendulum] Ep 0754 | R_raw=-836.84 | len=200 | loss=25.440
+[Pendulum] Ep 0755 | R_raw=-1633.29 | len=200 | loss=277.164
+[Pendulum] Ep 0756 | R_raw=-967.69 | len=200 | loss=47.266
+[Pendulum] Ep 0757 | R_raw=-1067.77 | len=200 | loss=76.715
+[Pendulum] Ep 0758 | R_raw=-1461.04 | len=200 | loss=211.256
+[Pendulum] Ep 0759 | R_raw=-880.88 | len=200 | loss=43.993
+[Pendulum] Ep 0760 | R_raw=-1580.78 | len=200 | loss=257.556
+[EVAL] Ep 0760 | avg_eval=-1021.68 over 3 episodes
+[Pendulum] Ep 0761 | R_raw=-956.44 | len=200 | loss=52.844
+[Pendulum] Ep 0762 | R_raw=-869.45 | len=200 | loss=37.238
+[Pendulum] Ep 0763 | R_raw=-1358.54 | len=200 | loss=163.542
+[Pendulum] Ep 0764 | R_raw=-1388.78 | len=200 | loss=174.384
+[Pendulum] Ep 0765 | R_raw=-1506.18 | len=200 | loss=215.672
+[Pendulum] Ep 0766 | R_raw=-903.62 | len=200 | loss=35.050
+[Pendulum] Ep 0767 | R_raw=-1070.94 | len=200 | loss=71.666
+[Pendulum] Ep 0768 | R_raw=-1302.68 | len=200 | loss=139.385
+[Pendulum] Ep 0769 | R_raw=-1587.47 | len=200 | loss=262.968
+[Pendulum] Ep 0770 | R_raw=-886.36 | len=200 | loss=45.074
+[Pendulum] Ep 0771 | R_raw=-1331.69 | len=200 | loss=149.352
+[Pendulum] Ep 0772 | R_raw=-1626.39 | len=200 | loss=266.685
+[Pendulum] Ep 0773 | R_raw=-1768.34 | len=200 | loss=337.672
+[Pendulum] Ep 0774 | R_raw=-1417.81 | len=200 | loss=175.617
+[Pendulum] Ep 0775 | R_raw=-1201.07 | len=200 | loss=110.276
+[Pendulum] Ep 0776 | R_raw=-962.91 | len=200 | loss=53.586
+[Pendulum] Ep 0777 | R_raw=-994.79 | len=200 | loss=55.339
+[Pendulum] Ep 0778 | R_raw=-993.96 | len=200 | loss=60.075
+[Pendulum] Ep 0779 | R_raw=-1059.66 | len=200 | loss=78.526
+[Pendulum] Ep 0780 | R_raw=-1619.54 | len=200 | loss=280.269
+[EVAL] Ep 0780 | avg_eval=-1371.64 over 3 episodes
+[Pendulum] Ep 0781 | R_raw=-1330.73 | len=200 | loss=143.144
+[Pendulum] Ep 0782 | R_raw=-889.16 | len=200 | loss=42.762
+[Pendulum] Ep 0783 | R_raw=-1455.67 | len=200 | loss=191.690
+[Pendulum] Ep 0784 | R_raw=-1275.10 | len=200 | loss=126.083
+[Pendulum] Ep 0785 | R_raw=-1355.88 | len=200 | loss=158.231
+[Pendulum] Ep 0786 | R_raw=-1486.80 | len=200 | loss=199.402
+[Pendulum] Ep 0787 | R_raw=-1193.47 | len=200 | loss=114.396
+[Pendulum] Ep 0788 | R_raw=-920.37 | len=200 | loss=51.536
+[Pendulum] Ep 0789 | R_raw=-972.69 | len=200 | loss=47.804
+[Pendulum] Ep 0790 | R_raw=-1591.42 | len=200 | loss=265.523
+[Pendulum] Ep 0791 | R_raw=-1522.40 | len=200 | loss=226.838
+[Pendulum] Ep 0792 | R_raw=-1090.57 | len=200 | loss=79.089
+[Pendulum] Ep 0793 | R_raw=-1577.50 | len=200 | loss=254.154
+[Pendulum] Ep 0794 | R_raw=-1750.88 | len=200 | loss=327.474
+[Pendulum] Ep 0795 | R_raw=-1331.77 | len=200 | loss=141.839
+[Pendulum] Ep 0796 | R_raw=-1158.67 | len=200 | loss=95.959
+[Pendulum] Ep 0797 | R_raw=-1423.93 | len=200 | loss=182.149
+[Pendulum] Ep 0798 | R_raw=-875.40 | len=200 | loss=33.189
+[Pendulum] Ep 0799 | R_raw=-1067.23 | len=200 | loss=66.234
+[ENGRAM] Distilling 10 trajectories into policy at ep 800...
+[Pendulum] Ep 0800 | R_raw=-888.27 | len=200 | loss=47.866
+[EVAL] Ep 0800 | avg_eval=-1200.27 over 3 episodes
+[Pendulum] Ep 0801 | R_raw=-1001.00 | len=200 | loss=58.731
+[Pendulum] Ep 0802 | R_raw=-1117.38 | len=200 | loss=81.696
+[Pendulum] Ep 0803 | R_raw=-1314.91 | len=200 | loss=137.767
+[Pendulum] Ep 0804 | R_raw=-1558.62 | len=200 | loss=225.759
+[Pendulum] Ep 0805 | R_raw=-931.98 | len=200 | loss=36.792
+[Pendulum] Ep 0806 | R_raw=-1168.61 | len=200 | loss=89.999
+[Pendulum] Ep 0807 | R_raw=-1268.00 | len=200 | loss=113.236
+[Pendulum] Ep 0808 | R_raw=-914.29 | len=200 | loss=50.448
+[Pendulum] Ep 0809 | R_raw=-1493.10 | len=200 | loss=204.218
+[Pendulum] Ep 0810 | R_raw=-1362.87 | len=200 | loss=143.878
+[Pendulum] Ep 0811 | R_raw=-881.95 | len=200 | loss=39.611
+[Pendulum] Ep 0812 | R_raw=-1115.75 | len=200 | loss=86.226
+[Pendulum] Ep 0813 | R_raw=-824.46 | len=200 | loss=29.992
+[Pendulum] Ep 0814 | R_raw=-966.73 | len=200 | loss=52.339
+[Pendulum] Ep 0815 | R_raw=-1364.64 | len=200 | loss=143.085
+[Pendulum] Ep 0816 | R_raw=-882.46 | len=200 | loss=32.529
+[Pendulum] Ep 0817 | R_raw=-1206.02 | len=200 | loss=97.757
+[Pendulum] Ep 0818 | R_raw=-1610.61 | len=200 | loss=241.269
+[Pendulum] Ep 0819 | R_raw=-1620.93 | len=200 | loss=264.997
+[Pendulum] Ep 0820 | R_raw=-893.33 | len=200 | loss=52.621
+[EVAL] Ep 0820 | avg_eval=-994.39 over 3 episodes
+[Pendulum] Ep 0821 | R_raw=-900.75 | len=200 | loss=36.615
+[Pendulum] Ep 0822 | R_raw=-1017.09 | len=200 | loss=57.984
+[Pendulum] Ep 0823 | R_raw=-1166.32 | len=200 | loss=82.868
+[Pendulum] Ep 0824 | R_raw=-987.84 | len=200 | loss=49.704
+[Pendulum] Ep 0825 | R_raw=-1387.56 | len=200 | loss=158.937
+[Pendulum] Ep 0826 | R_raw=-938.38 | len=200 | loss=43.223
+[Pendulum] Ep 0827 | R_raw=-969.90 | len=200 | loss=49.392
+[Pendulum] Ep 0828 | R_raw=-1725.70 | len=200 | loss=320.537
+[Pendulum] Ep 0829 | R_raw=-991.51 | len=200 | loss=42.078
+[Pendulum] Ep 0830 | R_raw=-1559.05 | len=200 | loss=207.631
+[Pendulum] Ep 0831 | R_raw=-1326.98 | len=200 | loss=129.596
+[Pendulum] Ep 0832 | R_raw=-1287.59 | len=200 | loss=116.247
+[Pendulum] Ep 0833 | R_raw=-1163.72 | len=200 | loss=88.207
+[Pendulum] Ep 0834 | R_raw=-885.08 | len=200 | loss=38.437
+[Pendulum] Ep 0835 | R_raw=-1397.84 | len=200 | loss=161.655
+[Pendulum] Ep 0836 | R_raw=-1231.41 | len=200 | loss=108.635
+[Pendulum] Ep 0837 | R_raw=-1305.66 | len=200 | loss=126.930
+[Pendulum] Ep 0838 | R_raw=-864.10 | len=200 | loss=46.055
+[Pendulum] Ep 0839 | R_raw=-973.89 | len=200 | loss=50.673
+[Pendulum] Ep 0840 | R_raw=-1071.87 | len=200 | loss=65.799
+[EVAL] Ep 0840 | avg_eval=-1057.14 over 3 episodes
+[Pendulum] Ep 0841 | R_raw=-886.92 | len=200 | loss=39.657
+[Pendulum] Ep 0842 | R_raw=-865.48 | len=200 | loss=27.256
+[Pendulum] Ep 0843 | R_raw=-976.01 | len=200 | loss=48.910
+[Pendulum] Ep 0844 | R_raw=-1016.07 | len=200 | loss=59.813
+[Pendulum] Ep 0845 | R_raw=-1058.77 | len=200 | loss=53.660
+[Pendulum] Ep 0846 | R_raw=-1279.30 | len=200 | loss=122.388
+[Pendulum] Ep 0847 | R_raw=-967.08 | len=200 | loss=41.757
+[Pendulum] Ep 0848 | R_raw=-1737.16 | len=200 | loss=307.317
+[Pendulum] Ep 0849 | R_raw=-1179.21 | len=200 | loss=88.072
+[Pendulum] Ep 0850 | R_raw=-863.14 | len=200 | loss=33.739
+[Pendulum] Ep 0851 | R_raw=-1436.55 | len=200 | loss=173.517
+[Pendulum] Ep 0852 | R_raw=-1644.62 | len=200 | loss=250.200
+[Pendulum] Ep 0853 | R_raw=-998.03 | len=200 | loss=52.823
+[Pendulum] Ep 0854 | R_raw=-976.61 | len=200 | loss=49.422
+[Pendulum] Ep 0855 | R_raw=-1724.60 | len=200 | loss=294.756
+[Pendulum] Ep 0856 | R_raw=-1572.96 | len=200 | loss=220.603
+[Pendulum] Ep 0857 | R_raw=-1457.48 | len=200 | loss=187.075
+[Pendulum] Ep 0858 | R_raw=-1297.53 | len=200 | loss=120.475
+[Pendulum] Ep 0859 | R_raw=-1002.25 | len=200 | loss=58.119
+[Pendulum] Ep 0860 | R_raw=-1287.50 | len=200 | loss=118.735
+[EVAL] Ep 0860 | avg_eval=-1162.92 over 3 episodes
+[Pendulum] Ep 0861 | R_raw=-1157.64 | len=200 | loss=75.086
+[Pendulum] Ep 0862 | R_raw=-1067.37 | len=200 | loss=67.818
+[Pendulum] Ep 0863 | R_raw=-1666.30 | len=200 | loss=262.389
+[Pendulum] Ep 0864 | R_raw=-992.12 | len=200 | loss=62.021
+[Pendulum] Ep 0865 | R_raw=-966.77 | len=200 | loss=49.370
+[Pendulum] Ep 0866 | R_raw=-1153.30 | len=200 | loss=77.221
+[Pendulum] Ep 0867 | R_raw=-1358.28 | len=200 | loss=145.475
+[Pendulum] Ep 0868 | R_raw=-991.87 | len=200 | loss=44.271
+[Pendulum] Ep 0869 | R_raw=-1662.27 | len=200 | loss=255.538
+[Pendulum] Ep 0870 | R_raw=-901.98 | len=200 | loss=45.173
+[Pendulum] Ep 0871 | R_raw=-1328.99 | len=200 | loss=128.832
+[Pendulum] Ep 0872 | R_raw=-870.52 | len=200 | loss=36.284
+[Pendulum] Ep 0873 | R_raw=-1303.94 | len=200 | loss=125.328
+[Pendulum] Ep 0874 | R_raw=-1790.71 | len=200 | loss=323.992
+[Pendulum] Ep 0875 | R_raw=-1385.58 | len=200 | loss=147.262
+[Pendulum] Ep 0876 | R_raw=-870.03 | len=200 | loss=44.801
+[Pendulum] Ep 0877 | R_raw=-1509.16 | len=200 | loss=191.154
+[Pendulum] Ep 0878 | R_raw=-992.63 | len=200 | loss=46.873
+[Pendulum] Ep 0879 | R_raw=-974.84 | len=200 | loss=48.815
+[Pendulum] Ep 0880 | R_raw=-1681.38 | len=200 | loss=259.963
+[EVAL] Ep 0880 | avg_eval=-1204.56 over 3 episodes
+[ENGRAM] New good episode stored at ep 881: R_raw=-757.43
+[MACRO-RANK] Top macros:
+  #1: score=-964.48 | origin_ep= 248 | origin_R=-748.62
+  #2: score=-973.97 | origin_ep=  51 | origin_R=-766.21
+  #3: score=-1086.59 | origin_ep= 559 | origin_R=-737.94
+  #4: score=-1090.06 | origin_ep=  36 | origin_R=-627.22
+  #5: score=-1100.00 | origin_ep= 751 | origin_R=-743.56
+  #6: score=-1138.72 | origin_ep= 680 | origin_R=-791.76
+  #7: score=-1288.20 | origin_ep= 441 | origin_R=-740.77
+  #8: score=-1321.33 | origin_ep= 683 | origin_R=-759.78
+  #9: score=-1328.55 | origin_ep=  85 | origin_R=-865.40
+  #10: score=-1336.29 | origin_ep= 650 | origin_R=-761.34
+[Pendulum] Ep 0881 | R_raw=-757.43 | len=200 | loss=26.010
+[Pendulum] Ep 0882 | R_raw=-988.22 | len=200 | loss=49.957
+[Pendulum] Ep 0883 | R_raw=-1177.54 | len=200 | loss=84.951
+[Pendulum] Ep 0884 | R_raw=-1652.42 | len=200 | loss=245.352
+[Pendulum] Ep 0885 | R_raw=-965.16 | len=200 | loss=57.070
+[Pendulum] Ep 0886 | R_raw=-1174.05 | len=200 | loss=81.458
+[Pendulum] Ep 0887 | R_raw=-870.02 | len=200 | loss=32.783
+[Pendulum] Ep 0888 | R_raw=-864.81 | len=200 | loss=35.277
+[Pendulum] Ep 0889 | R_raw=-1519.07 | len=200 | loss=204.006
+[Pendulum] Ep 0890 | R_raw=-985.95 | len=200 | loss=43.446
+[Pendulum] Ep 0891 | R_raw=-891.07 | len=200 | loss=40.038
+[Pendulum] Ep 0892 | R_raw=-1259.87 | len=200 | loss=104.166
+[Pendulum] Ep 0893 | R_raw=-1168.75 | len=200 | loss=86.659
+[Pendulum] Ep 0894 | R_raw=-883.82 | len=200 | loss=36.157
+[Pendulum] Ep 0895 | R_raw=-1596.26 | len=200 | loss=226.210
+[Pendulum] Ep 0896 | R_raw=-1533.04 | len=200 | loss=186.675
+[Pendulum] Ep 0897 | R_raw=-981.26 | len=200 | loss=50.915
+[Pendulum] Ep 0898 | R_raw=-1022.50 | len=200 | loss=49.454
+[Pendulum] Ep 0899 | R_raw=-1589.47 | len=200 | loss=215.609
+[Pendulum] Ep 0900 | R_raw=-1519.03 | len=200 | loss=188.045
+[EVAL] Ep 0900 | avg_eval=-1356.44 over 3 episodes
+[Pendulum] Ep 0901 | R_raw=-1401.90 | len=200 | loss=148.133
+[Pendulum] Ep 0902 | R_raw=-1038.06 | len=200 | loss=56.288
+[Pendulum] Ep 0903 | R_raw=-1450.57 | len=200 | loss=169.102
+[Pendulum] Ep 0904 | R_raw=-769.88 | len=200 | loss=26.334
+[Pendulum] Ep 0905 | R_raw=-1408.80 | len=200 | loss=152.754
+[Pendulum] Ep 0906 | R_raw=-1085.35 | len=200 | loss=60.900
+[Pendulum] Ep 0907 | R_raw=-1569.60 | len=200 | loss=209.868
+[Pendulum] Ep 0908 | R_raw=-1444.81 | len=200 | loss=153.541
+[Pendulum] Ep 0909 | R_raw=-1690.01 | len=200 | loss=256.914
+[Pendulum] Ep 0910 | R_raw=-1442.01 | len=200 | loss=148.590
+[Pendulum] Ep 0911 | R_raw=-1069.88 | len=200 | loss=56.440
+[Pendulum] Ep 0912 | R_raw=-899.41 | len=200 | loss=44.187
+[Pendulum] Ep 0913 | R_raw=-969.50 | len=200 | loss=40.136
+[Pendulum] Ep 0914 | R_raw=-978.73 | len=200 | loss=46.871
+[Pendulum] Ep 0915 | R_raw=-1030.40 | len=200 | loss=50.395
+[Pendulum] Ep 0916 | R_raw=-1743.14 | len=200 | loss=280.820
+[Pendulum] Ep 0917 | R_raw=-1168.17 | len=200 | loss=78.599
+[Pendulum] Ep 0918 | R_raw=-909.32 | len=200 | loss=46.636
+[Pendulum] Ep 0919 | R_raw=-1176.97 | len=200 | loss=86.343
+[Pendulum] Ep 0920 | R_raw=-971.78 | len=200 | loss=32.657
+[EVAL] Ep 0920 | avg_eval=-1184.46 over 3 episodes
+[Pendulum] Ep 0921 | R_raw=-1116.15 | len=200 | loss=64.111
+[Pendulum] Ep 0922 | R_raw=-1148.66 | len=200 | loss=74.777
+[Pendulum] Ep 0923 | R_raw=-994.31 | len=200 | loss=42.894
+[Pendulum] Ep 0924 | R_raw=-1736.46 | len=200 | loss=283.771
+[Pendulum] Ep 0925 | R_raw=-1362.88 | len=200 | loss=132.092
+[Pendulum] Ep 0926 | R_raw=-971.78 | len=200 | loss=40.190
+[Pendulum] Ep 0927 | R_raw=-1348.53 | len=200 | loss=132.358
+[Pendulum] Ep 0928 | R_raw=-1786.37 | len=200 | loss=305.457
+[Pendulum] Ep 0929 | R_raw=-1550.46 | len=200 | loss=198.380
+[Pendulum] Ep 0930 | R_raw=-1572.93 | len=200 | loss=206.912
+[Pendulum] Ep 0931 | R_raw=-1199.65 | len=200 | loss=82.027
+[Pendulum] Ep 0932 | R_raw=-897.99 | len=200 | loss=45.991
+[Pendulum] Ep 0933 | R_raw=-1143.30 | len=200 | loss=67.202
+[Pendulum] Ep 0934 | R_raw=-1133.01 | len=200 | loss=69.665
+[Pendulum] Ep 0935 | R_raw=-1167.16 | len=200 | loss=78.071
+[Pendulum] Ep 0936 | R_raw=-1176.57 | len=200 | loss=76.490
+[Pendulum] Ep 0937 | R_raw=-813.39 | len=200 | loss=31.335
+[Pendulum] Ep 0938 | R_raw=-1076.35 | len=200 | loss=66.248
+[Pendulum] Ep 0939 | R_raw=-1505.53 | len=200 | loss=168.948
+[Pendulum] Ep 0940 | R_raw=-1256.30 | len=200 | loss=98.826
+[EVAL] Ep 0940 | avg_eval=-1561.77 over 3 episodes
+[Pendulum] Ep 0941 | R_raw=-963.94 | len=200 | loss=42.807
+[Pendulum] Ep 0942 | R_raw=-929.41 | len=200 | loss=40.919
+[Pendulum] Ep 0943 | R_raw=-978.52 | len=200 | loss=44.624
+[Pendulum] Ep 0944 | R_raw=-1196.85 | len=200 | loss=86.753
+[Pendulum] Ep 0945 | R_raw=-889.08 | len=200 | loss=33.064
+[Pendulum] Ep 0946 | R_raw=-1181.50 | len=200 | loss=87.291
+[Pendulum] Ep 0947 | R_raw=-952.91 | len=200 | loss=38.151
+[Pendulum] Ep 0948 | R_raw=-1069.37 | len=200 | loss=54.777
+[Pendulum] Ep 0949 | R_raw=-1823.53 | len=200 | loss=325.804
+[Pendulum] Ep 0950 | R_raw=-1534.87 | len=200 | loss=191.596
+[Pendulum] Ep 0951 | R_raw=-965.18 | len=200 | loss=56.909
+[Pendulum] Ep 0952 | R_raw=-1068.55 | len=200 | loss=60.623
+[Pendulum] Ep 0953 | R_raw=-982.07 | len=200 | loss=43.728
+[Pendulum] Ep 0954 | R_raw=-980.83 | len=200 | loss=55.409
+[Pendulum] Ep 0955 | R_raw=-971.43 | len=200 | loss=43.077
+[Pendulum] Ep 0956 | R_raw=-1327.00 | len=200 | loss=119.557
+[Pendulum] Ep 0957 | R_raw=-1616.95 | len=200 | loss=224.954
+[Pendulum] Ep 0958 | R_raw=-903.70 | len=200 | loss=28.536
+[Pendulum] Ep 0959 | R_raw=-1484.46 | len=200 | loss=159.070
+[Pendulum] Ep 0960 | R_raw=-1261.58 | len=200 | loss=95.089
+[EVAL] Ep 0960 | avg_eval=-1137.45 over 3 episodes
+[Pendulum] Ep 0961 | R_raw=-1203.64 | len=200 | loss=86.682
+[Pendulum] Ep 0962 | R_raw=-960.86 | len=200 | loss=57.544
+[Pendulum] Ep 0963 | R_raw=-979.33 | len=200 | loss=39.615
+[Pendulum] Ep 0964 | R_raw=-1274.44 | len=200 | loss=94.735
+[Pendulum] Ep 0965 | R_raw=-1368.70 | len=200 | loss=129.519
+[Pendulum] Ep 0966 | R_raw=-973.02 | len=200 | loss=40.901
+[Pendulum] Ep 0967 | R_raw=-1296.83 | len=200 | loss=108.914
+[Pendulum] Ep 0968 | R_raw=-1479.14 | len=200 | loss=157.820
+[Pendulum] Ep 0969 | R_raw=-965.55 | len=200 | loss=41.999
+[Pendulum] Ep 0970 | R_raw=-1298.36 | len=200 | loss=107.146
+[Pendulum] Ep 0971 | R_raw=-1749.83 | len=200 | loss=270.098
+[Pendulum] Ep 0972 | R_raw=-1451.87 | len=200 | loss=149.244
+[Pendulum] Ep 0973 | R_raw=-993.71 | len=200 | loss=37.544
+[Pendulum] Ep 0974 | R_raw=-982.04 | len=200 | loss=47.733
+[Pendulum] Ep 0975 | R_raw=-925.45 | len=200 | loss=32.097
+[Pendulum] Ep 0976 | R_raw=-1792.87 | len=200 | loss=304.451
+[Pendulum] Ep 0977 | R_raw=-896.98 | len=200 | loss=27.087
+[Pendulum] Ep 0978 | R_raw=-844.64 | len=200 | loss=22.235
+[Pendulum] Ep 0979 | R_raw=-872.87 | len=200 | loss=24.723
+[Pendulum] Ep 0980 | R_raw=-1706.35 | len=200 | loss=256.145
+[EVAL] Ep 0980 | avg_eval=-1251.61 over 3 episodes
+[Pendulum] Ep 0981 | R_raw=-1182.31 | len=200 | loss=84.771
+[Pendulum] Ep 0982 | R_raw=-1458.32 | len=200 | loss=144.786
+[Pendulum] Ep 0983 | R_raw=-869.58 | len=200 | loss=27.715
+[Pendulum] Ep 0984 | R_raw=-904.65 | len=200 | loss=35.164
+[Pendulum] Ep 0985 | R_raw=-977.86 | len=200 | loss=42.302
+[Pendulum] Ep 0986 | R_raw=-1432.30 | len=200 | loss=135.162
+[Pendulum] Ep 0987 | R_raw=-973.47 | len=200 | loss=36.089
+[Pendulum] Ep 0988 | R_raw=-1327.40 | len=200 | loss=115.907
+[Pendulum] Ep 0989 | R_raw=-968.65 | len=200 | loss=46.718
+[Pendulum] Ep 0990 | R_raw=-1071.71 | len=200 | loss=56.037
+[Pendulum] Ep 0991 | R_raw=-982.45 | len=200 | loss=38.574
+[Pendulum] Ep 0992 | R_raw=-1444.72 | len=200 | loss=148.255
+[Pendulum] Ep 0993 | R_raw=-1755.30 | len=200 | loss=279.043
+[Pendulum] Ep 0994 | R_raw=-1093.96 | len=200 | loss=59.728
+[Pendulum] Ep 0995 | R_raw=-1361.72 | len=200 | loss=118.430
+[Pendulum] Ep 0996 | R_raw=-1335.39 | len=200 | loss=120.775
+[Pendulum] Ep 0997 | R_raw=-1628.69 | len=200 | loss=218.678
+[Pendulum] Ep 0998 | R_raw=-859.55 | len=200 | loss=33.171
+[Pendulum] Ep 0999 | R_raw=-1499.94 | len=200 | loss=163.596
+[ENGRAM] Distilling 10 trajectories into policy at ep 1000...
+[Pendulum] Ep 1000 | R_raw=-1038.67 | len=200 | loss=41.911
+[EVAL] Ep 1000 | avg_eval=-1436.89 over 3 episodes
+[Pendulum] Ep 1001 | R_raw=-1282.83 | len=200 | loss=100.084
+[Pendulum] Ep 1002 | R_raw=-1184.63 | len=200 | loss=74.795
+[Pendulum] Ep 1003 | R_raw=-1164.52 | len=200 | loss=68.488
+[Pendulum] Ep 1004 | R_raw=-1184.13 | len=200 | loss=68.714
+[Pendulum] Ep 1005 | R_raw=-890.64 | len=200 | loss=42.925
+[Pendulum] Ep 1006 | R_raw=-1668.41 | len=200 | loss=225.346
+[Pendulum] Ep 1007 | R_raw=-1170.92 | len=200 | loss=68.976
+[Pendulum] Ep 1008 | R_raw=-1792.93 | len=200 | loss=279.768
+[Pendulum] Ep 1009 | R_raw=-830.49 | len=200 | loss=25.301
+[Pendulum] Ep 1010 | R_raw=-1176.44 | len=200 | loss=69.929
+[Pendulum] Ep 1011 | R_raw=-1252.89 | len=200 | loss=83.942
+[Pendulum] Ep 1012 | R_raw=-1068.97 | len=200 | loss=57.565
+[Pendulum] Ep 1013 | R_raw=-974.05 | len=200 | loss=34.858
+[Pendulum] Ep 1014 | R_raw=-877.89 | len=200 | loss=27.746
+[Pendulum] Ep 1015 | R_raw=-882.29 | len=200 | loss=38.629
+[Pendulum] Ep 1016 | R_raw=-1071.95 | len=200 | loss=52.023
+[Pendulum] Ep 1017 | R_raw=-1297.65 | len=200 | loss=93.831
+[Pendulum] Ep 1018 | R_raw=-1389.47 | len=200 | loss=124.071
+[Pendulum] Ep 1019 | R_raw=-1170.28 | len=200 | loss=62.600
+[Pendulum] Ep 1020 | R_raw=-1286.79 | len=200 | loss=92.916
+[EVAL] Ep 1020 | avg_eval=-1251.19 over 3 episodes
+[Pendulum] Ep 1021 | R_raw=-899.36 | len=200 | loss=38.559
+[Pendulum] Ep 1022 | R_raw=-1465.68 | len=200 | loss=146.895
+[Pendulum] Ep 1023 | R_raw=-1199.44 | len=200 | loss=68.273
+[Pendulum] Ep 1024 | R_raw=-1191.20 | len=200 | loss=71.794
+[Pendulum] Ep 1025 | R_raw=-1792.98 | len=200 | loss=293.197
+[Pendulum] Ep 1026 | R_raw=-1402.27 | len=200 | loss=122.988
+[Pendulum] Ep 1027 | R_raw=-1071.23 | len=200 | loss=54.230
+[Pendulum] Ep 1028 | R_raw=-1522.55 | len=200 | loss=165.035
+[Pendulum] Ep 1029 | R_raw=-887.46 | len=200 | loss=28.502
+[Pendulum] Ep 1030 | R_raw=-988.47 | len=200 | loss=41.020
+[Pendulum] Ep 1031 | R_raw=-1096.67 | len=200 | loss=58.658
+[Pendulum] Ep 1032 | R_raw=-1464.59 | len=200 | loss=145.250
+[Pendulum] Ep 1033 | R_raw=-867.04 | len=200 | loss=31.911
+[Pendulum] Ep 1034 | R_raw=-1472.87 | len=200 | loss=143.160
+[Pendulum] Ep 1035 | R_raw=-1099.16 | len=200 | loss=54.788
+[Pendulum] Ep 1036 | R_raw=-1665.03 | len=200 | loss=223.420
+[Pendulum] Ep 1037 | R_raw=-1086.72 | len=200 | loss=61.038
+[Pendulum] Ep 1038 | R_raw=-1670.19 | len=200 | loss=229.509
+[Pendulum] Ep 1039 | R_raw=-1301.42 | len=200 | loss=96.835
+[Pendulum] Ep 1040 | R_raw=-1420.62 | len=200 | loss=135.457
+[EVAL] Ep 1040 | avg_eval=-1490.60 over 3 episodes
+[Pendulum] Ep 1041 | R_raw=-834.93 | len=200 | loss=28.493
+[Pendulum] Ep 1042 | R_raw=-1056.40 | len=200 | loss=46.316
+[Pendulum] Ep 1043 | R_raw=-1552.69 | len=200 | loss=186.975
+[Pendulum] Ep 1044 | R_raw=-905.51 | len=200 | loss=35.401
+[Pendulum] Ep 1045 | R_raw=-1068.16 | len=200 | loss=50.551
+[Pendulum] Ep 1046 | R_raw=-878.83 | len=200 | loss=23.226
+[Pendulum] Ep 1047 | R_raw=-1603.76 | len=200 | loss=190.174
+[Pendulum] Ep 1048 | R_raw=-1055.25 | len=200 | loss=47.533
+[Pendulum] Ep 1049 | R_raw=-907.75 | len=200 | loss=32.105
+[Pendulum] Ep 1050 | R_raw=-905.65 | len=200 | loss=36.202
+[Pendulum] Ep 1051 | R_raw=-930.82 | len=200 | loss=28.724
+[Pendulum] Ep 1052 | R_raw=-1076.67 | len=200 | loss=52.783
+[Pendulum] Ep 1053 | R_raw=-1571.77 | len=200 | loss=187.216
+[Pendulum] Ep 1054 | R_raw=-1438.97 | len=200 | loss=126.068
+[Pendulum] Ep 1055 | R_raw=-1148.28 | len=200 | loss=71.099
+[Pendulum] Ep 1056 | R_raw=-1587.39 | len=200 | loss=195.347
+[Pendulum] Ep 1057 | R_raw=-984.25 | len=200 | loss=37.095
+[Pendulum] Ep 1058 | R_raw=-1523.44 | len=200 | loss=166.433
+[Pendulum] Ep 1059 | R_raw=-1479.15 | len=200 | loss=157.961
+[Pendulum] Ep 1060 | R_raw=-1668.09 | len=200 | loss=230.009
+[EVAL] Ep 1060 | avg_eval=-1482.36 over 3 episodes
+[Pendulum] Ep 1061 | R_raw=-882.05 | len=200 | loss=26.366
+[Pendulum] Ep 1062 | R_raw=-1077.66 | len=200 | loss=49.892
+[Pendulum] Ep 1063 | R_raw=-1177.82 | len=200 | loss=73.395
+[Pendulum] Ep 1064 | R_raw=-1317.60 | len=200 | loss=106.843
+[Pendulum] Ep 1065 | R_raw=-1062.59 | len=200 | loss=42.951
+[Pendulum] Ep 1066 | R_raw=-1699.73 | len=200 | loss=235.336
+[Pendulum] Ep 1067 | R_raw=-1735.31 | len=200 | loss=255.325
+[Pendulum] Ep 1068 | R_raw=-1492.68 | len=200 | loss=150.555
+[Pendulum] Ep 1069 | R_raw=-954.95 | len=200 | loss=27.959
+[Pendulum] Ep 1070 | R_raw=-1409.09 | len=200 | loss=130.906
+[Pendulum] Ep 1071 | R_raw=-1071.05 | len=200 | loss=47.211
+[Pendulum] Ep 1072 | R_raw=-1604.26 | len=200 | loss=192.151
+[Pendulum] Ep 1073 | R_raw=-1163.81 | len=200 | loss=62.449
+[Pendulum] Ep 1074 | R_raw=-1729.62 | len=200 | loss=246.854
+[Pendulum] Ep 1075 | R_raw=-1088.36 | len=200 | loss=57.911
+[Pendulum] Ep 1076 | R_raw=-1634.30 | len=200 | loss=206.484
+[Pendulum] Ep 1077 | R_raw=-1283.99 | len=200 | loss=94.143
+[Pendulum] Ep 1078 | R_raw=-981.97 | len=200 | loss=42.136
+[Pendulum] Ep 1079 | R_raw=-1299.67 | len=200 | loss=93.612
+[Pendulum] Ep 1080 | R_raw=-1168.10 | len=200 | loss=65.725
+[EVAL] Ep 1080 | avg_eval=-1382.78 over 3 episodes
+[Pendulum] Ep 1081 | R_raw=-978.95 | len=200 | loss=35.438
+[Pendulum] Ep 1082 | R_raw=-1486.04 | len=200 | loss=147.188
+[Pendulum] Ep 1083 | R_raw=-1065.48 | len=200 | loss=43.898
+[Pendulum] Ep 1084 | R_raw=-1518.18 | len=200 | loss=155.519
+[Pendulum] Ep 1085 | R_raw=-869.13 | len=200 | loss=33.075
+[Pendulum] Ep 1086 | R_raw=-1397.95 | len=200 | loss=124.098
+[Pendulum] Ep 1087 | R_raw=-1381.91 | len=200 | loss=114.422
+[Pendulum] Ep 1088 | R_raw=-1459.77 | len=200 | loss=134.124
+[Pendulum] Ep 1089 | R_raw=-990.79 | len=200 | loss=45.078
+[Pendulum] Ep 1090 | R_raw=-1217.80 | len=200 | loss=90.334
+[Pendulum] Ep 1091 | R_raw=-1056.85 | len=200 | loss=53.010
+[Pendulum] Ep 1092 | R_raw=-1482.49 | len=200 | loss=152.041
+[Pendulum] Ep 1093 | R_raw=-1095.08 | len=200 | loss=55.454
+[Pendulum] Ep 1094 | R_raw=-1119.70 | len=200 | loss=57.974
+[Pendulum] Ep 1095 | R_raw=-1273.13 | len=200 | loss=86.849
+[ENGRAM] New good episode stored at ep 1096: R_raw=-739.75
+[MACRO-RANK] Top macros:
+  #1: score=-934.70 | origin_ep= 683 | origin_R=-759.78
+  #2: score=-1075.48 | origin_ep= 650 | origin_R=-761.34
+  #3: score=-1151.52 | origin_ep=1096 | origin_R=-739.75
+  #4: score=-1173.78 | origin_ep= 441 | origin_R=-740.77
+  #5: score=-1204.13 | origin_ep=  85 | origin_R=-865.40
+  #6: score=-1239.73 | origin_ep= 668 | origin_R=-743.20
+  #7: score=-1241.10 | origin_ep= 680 | origin_R=-791.76
+  #8: score=-1252.76 | origin_ep= 559 | origin_R=-737.94
+  #9: score=-1258.98 | origin_ep=  51 | origin_R=-766.21
+  #10: score=-1259.39 | origin_ep= 751 | origin_R=-743.56
+[Pendulum] Ep 1096 | R_raw=-739.75 | len=200 | loss=19.423
+[Pendulum] Ep 1097 | R_raw=-1621.39 | len=200 | loss=189.581
+[Pendulum] Ep 1098 | R_raw=-1380.64 | len=200 | loss=117.658
+[Pendulum] Ep 1099 | R_raw=-1771.72 | len=200 | loss=261.839
+[ENGRAM] New good episode stored at ep 1100: R_raw=-756.08
+[MACRO-RANK] Top macros:
+  #1: score=-966.98 | origin_ep= 650 | origin_R=-761.34
+  #2: score=-1019.34 | origin_ep=  36 | origin_R=-627.22
+  #3: score=-1047.92 | origin_ep= 441 | origin_R=-740.77
+  #4: score=-1055.59 | origin_ep= 248 | origin_R=-748.62
+  #5: score=-1059.65 | origin_ep= 680 | origin_R=-791.76
+  #6: score=-1096.17 | origin_ep=1096 | origin_R=-739.75
+  #7: score=-1195.63 | origin_ep= 683 | origin_R=-759.78
+  #8: score=-1226.74 | origin_ep=  85 | origin_R=-865.40
+  #9: score=-1270.20 | origin_ep= 751 | origin_R=-743.56
+  #10: score=-1307.97 | origin_ep= 443 | origin_R=-751.94
+[Pendulum] Ep 1100 | R_raw=-756.08 | len=200 | loss=25.252
+[EVAL] Ep 1100 | avg_eval=-1690.62 over 3 episodes
+[Pendulum] Ep 1101 | R_raw=-1183.15 | len=200 | loss=70.479
+[Pendulum] Ep 1102 | R_raw=-1645.96 | len=200 | loss=235.750
+[Pendulum] Ep 1103 | R_raw=-1502.27 | len=200 | loss=146.099
+[Pendulum] Ep 1104 | R_raw=-962.76 | len=200 | loss=31.552
+[Pendulum] Ep 1105 | R_raw=-973.24 | len=200 | loss=43.400
+[Pendulum] Ep 1106 | R_raw=-1114.34 | len=200 | loss=62.010
+[Pendulum] Ep 1107 | R_raw=-1159.84 | len=200 | loss=70.499
+[Pendulum] Ep 1108 | R_raw=-1815.62 | len=200 | loss=281.884
+[Pendulum] Ep 1109 | R_raw=-1192.49 | len=200 | loss=72.517
+[Pendulum] Ep 1110 | R_raw=-1044.56 | len=200 | loss=50.782
+[Pendulum] Ep 1111 | R_raw=-1346.31 | len=200 | loss=101.363
+[Pendulum] Ep 1112 | R_raw=-1510.75 | len=200 | loss=149.756
+[Pendulum] Ep 1113 | R_raw=-1196.87 | len=200 | loss=64.934
+[Pendulum] Ep 1114 | R_raw=-1244.38 | len=200 | loss=79.755
+[Pendulum] Ep 1115 | R_raw=-1522.28 | len=200 | loss=160.996
+[Pendulum] Ep 1116 | R_raw=-1682.86 | len=200 | loss=231.968
+[Pendulum] Ep 1117 | R_raw=-1252.89 | len=200 | loss=90.410
+[Pendulum] Ep 1118 | R_raw=-1629.55 | len=200 | loss=202.781
+[Pendulum] Ep 1119 | R_raw=-1087.09 | len=200 | loss=55.290
+[Pendulum] Ep 1120 | R_raw=-1226.24 | len=200 | loss=68.302
+[EVAL] Ep 1120 | avg_eval=-1564.99 over 3 episodes
+[Pendulum] Ep 1121 | R_raw=-1176.22 | len=200 | loss=68.976
+[Pendulum] Ep 1122 | R_raw=-1381.49 | len=200 | loss=112.128
+[Pendulum] Ep 1123 | R_raw=-1338.54 | len=200 | loss=98.474
+[Pendulum] Ep 1124 | R_raw=-858.44 | len=200 | loss=22.865
+[Pendulum] Ep 1125 | R_raw=-1174.84 | len=200 | loss=60.804
+[Pendulum] Ep 1126 | R_raw=-1545.37 | len=200 | loss=175.884
+[ENGRAM] New good episode stored at ep 1127: R_raw=-751.44
+[MACRO-RANK] Top macros:
+  #1: score=-991.55 | origin_ep= 248 | origin_R=-748.62
+  #2: score=-1099.28 | origin_ep=  85 | origin_R=-865.40
+  #3: score=-1103.87 | origin_ep= 751 | origin_R=-743.56
+  #4: score=-1128.73 | origin_ep= 559 | origin_R=-737.94
+  #5: score=-1128.85 | origin_ep= 441 | origin_R=-740.77
+  #6: score=-1143.47 | origin_ep=1100 | origin_R=-756.08
+  #7: score=-1271.20 | origin_ep= 668 | origin_R=-743.20
+  #8: score=-1310.18 | origin_ep= 680 | origin_R=-791.76
+  #9: score=-1318.00 | origin_ep=1096 | origin_R=-739.75
+  #10: score=-1327.43 | origin_ep=1127 | origin_R=-751.44
+[Pendulum] Ep 1127 | R_raw=-751.44 | len=200 | loss=27.595
+[Pendulum] Ep 1128 | R_raw=-1163.25 | len=200 | loss=63.817
+[Pendulum] Ep 1129 | R_raw=-1674.13 | len=200 | loss=220.191
+[Pendulum] Ep 1130 | R_raw=-1325.65 | len=200 | loss=98.194
+[Pendulum] Ep 1131 | R_raw=-1552.15 | len=200 | loss=154.529
+[Pendulum] Ep 1132 | R_raw=-1711.03 | len=200 | loss=218.031
+[Pendulum] Ep 1133 | R_raw=-979.82 | len=200 | loss=41.332
+[Pendulum] Ep 1134 | R_raw=-1078.64 | len=200 | loss=55.730
+[Pendulum] Ep 1135 | R_raw=-1065.09 | len=200 | loss=46.536
+[Pendulum] Ep 1136 | R_raw=-1313.92 | len=200 | loss=94.865
+[Pendulum] Ep 1137 | R_raw=-1419.95 | len=200 | loss=118.326
+[Pendulum] Ep 1138 | R_raw=-1669.96 | len=200 | loss=202.261
+[Pendulum] Ep 1139 | R_raw=-1668.01 | len=200 | loss=217.724
+[Pendulum] Ep 1140 | R_raw=-1581.67 | len=200 | loss=168.146
+[EVAL] Ep 1140 | avg_eval=-1579.60 over 3 episodes
+[Pendulum] Ep 1141 | R_raw=-1763.15 | len=200 | loss=243.284
+[Pendulum] Ep 1142 | R_raw=-1367.57 | len=200 | loss=114.220
+[Pendulum] Ep 1143 | R_raw=-1358.04 | len=200 | loss=100.012
+[Pendulum] Ep 1144 | R_raw=-1432.85 | len=200 | loss=122.653
+[Pendulum] Ep 1145 | R_raw=-1768.77 | len=200 | loss=250.986
+[Pendulum] Ep 1146 | R_raw=-1264.65 | len=200 | loss=76.684
+[Pendulum] Ep 1147 | R_raw=-1491.47 | len=200 | loss=142.051
+[Pendulum] Ep 1148 | R_raw=-1361.34 | len=200 | loss=98.227
+[Pendulum] Ep 1149 | R_raw=-1457.51 | len=200 | loss=137.003
+[Pendulum] Ep 1150 | R_raw=-1699.03 | len=200 | loss=224.522
+[Pendulum] Ep 1151 | R_raw=-1306.34 | len=200 | loss=88.239
+[Pendulum] Ep 1152 | R_raw=-1802.50 | len=200 | loss=264.146
+[Pendulum] Ep 1153 | R_raw=-1513.95 | len=200 | loss=159.701
+[Pendulum] Ep 1154 | R_raw=-1804.34 | len=200 | loss=264.051
+[Pendulum] Ep 1155 | R_raw=-1385.17 | len=200 | loss=112.984
+[Pendulum] Ep 1156 | R_raw=-1171.57 | len=200 | loss=62.374
+[Pendulum] Ep 1157 | R_raw=-1719.94 | len=200 | loss=246.756
+[Pendulum] Ep 1158 | R_raw=-1679.64 | len=200 | loss=215.354
+[Pendulum] Ep 1159 | R_raw=-1323.99 | len=200 | loss=95.551
+[Pendulum] Ep 1160 | R_raw=-1712.14 | len=200 | loss=224.230
+[EVAL] Ep 1160 | avg_eval=-1595.48 over 3 episodes
+[Pendulum] Ep 1161 | R_raw=-1173.79 | len=200 | loss=58.615
+[Pendulum] Ep 1162 | R_raw=-1540.43 | len=200 | loss=163.475
+[Pendulum] Ep 1163 | R_raw=-1563.91 | len=200 | loss=163.772
+[Pendulum] Ep 1164 | R_raw=-1444.26 | len=200 | loss=128.578
+[Pendulum] Ep 1165 | R_raw=-1153.75 | len=200 | loss=59.375
+[Pendulum] Ep 1166 | R_raw=-1773.93 | len=200 | loss=249.134
+[Pendulum] Ep 1167 | R_raw=-1411.63 | len=200 | loss=113.886
+[Pendulum] Ep 1168 | R_raw=-1285.56 | len=200 | loss=87.065
+[Pendulum] Ep 1169 | R_raw=-1209.73 | len=200 | loss=69.742
+[Pendulum] Ep 1170 | R_raw=-1636.28 | len=200 | loss=191.630
+[Pendulum] Ep 1171 | R_raw=-1523.32 | len=200 | loss=156.536
+[Pendulum] Ep 1172 | R_raw=-1226.19 | len=200 | loss=70.830
+[Pendulum] Ep 1173 | R_raw=-1707.41 | len=200 | loss=229.671
+[Pendulum] Ep 1174 | R_raw=-1705.33 | len=200 | loss=220.266
+[Pendulum] Ep 1175 | R_raw=-1062.24 | len=200 | loss=48.000
+[Pendulum] Ep 1176 | R_raw=-1564.50 | len=200 | loss=170.989
+[Pendulum] Ep 1177 | R_raw=-1683.87 | len=200 | loss=228.028
+[Pendulum] Ep 1178 | R_raw=-1543.36 | len=200 | loss=148.600
+[Pendulum] Ep 1179 | R_raw=-1673.79 | len=200 | loss=199.945
+[Pendulum] Ep 1180 | R_raw=-1138.83 | len=200 | loss=52.271
+[EVAL] Ep 1180 | avg_eval=-1568.15 over 3 episodes
+[Pendulum] Ep 1181 | R_raw=-1126.56 | len=200 | loss=53.620
+[Pendulum] Ep 1182 | R_raw=-1401.28 | len=200 | loss=113.084
+[Pendulum] Ep 1183 | R_raw=-1634.33 | len=200 | loss=195.917
+[Pendulum] Ep 1184 | R_raw=-1131.61 | len=200 | loss=64.117
+[Pendulum] Ep 1185 | R_raw=-1771.59 | len=200 | loss=232.494
+[Pendulum] Ep 1186 | R_raw=-1041.43 | len=200 | loss=39.462
+[Pendulum] Ep 1187 | R_raw=-1763.13 | len=200 | loss=248.469
+[Pendulum] Ep 1188 | R_raw=-1688.34 | len=200 | loss=212.607
+[Pendulum] Ep 1189 | R_raw=-1383.21 | len=200 | loss=105.268
+[Pendulum] Ep 1190 | R_raw=-1725.61 | len=200 | loss=226.632
+[Pendulum] Ep 1191 | R_raw=-1442.54 | len=200 | loss=122.220
+[Pendulum] Ep 1192 | R_raw=-1728.97 | len=200 | loss=226.445
+[Pendulum] Ep 1193 | R_raw=-1637.95 | len=200 | loss=199.926
+[Pendulum] Ep 1194 | R_raw=-1395.86 | len=200 | loss=110.388
+[Pendulum] Ep 1195 | R_raw=-1441.84 | len=200 | loss=122.672
+[Pendulum] Ep 1196 | R_raw=-1090.59 | len=200 | loss=51.053
+[Pendulum] Ep 1197 | R_raw=-1203.43 | len=200 | loss=60.672
+[Pendulum] Ep 1198 | R_raw=-1328.06 | len=200 | loss=88.485
+[Pendulum] Ep 1199 | R_raw=-1779.04 | len=200 | loss=238.775
+[ENGRAM] Distilling 10 trajectories into policy at ep 1200...
+[Pendulum] Ep 1200 | R_raw=-1344.51 | len=200 | loss=101.571
+[EVAL] Ep 1200 | avg_eval=-1103.89 over 3 episodes
+[Pendulum] Ep 1201 | R_raw=-1263.10 | len=200 | loss=73.877
+[Pendulum] Ep 1202 | R_raw=-1010.14 | len=200 | loss=33.987
+[Pendulum] Ep 1203 | R_raw=-1069.40 | len=200 | loss=46.499
+[Pendulum] Ep 1204 | R_raw=-1090.42 | len=200 | loss=49.043
+[Pendulum] Ep 1205 | R_raw=-1720.84 | len=200 | loss=211.960
+[Pendulum] Ep 1206 | R_raw=-1385.97 | len=200 | loss=108.055
+[Pendulum] Ep 1207 | R_raw=-1165.82 | len=200 | loss=59.333
+[Pendulum] Ep 1208 | R_raw=-970.55 | len=200 | loss=28.525
+[Pendulum] Ep 1209 | R_raw=-1480.45 | len=200 | loss=127.239
+[Pendulum] Ep 1210 | R_raw=-953.03 | len=200 | loss=38.482
+[Pendulum] Ep 1211 | R_raw=-1029.72 | len=200 | loss=39.946
+[Pendulum] Ep 1212 | R_raw=-1175.90 | len=200 | loss=54.190
+[ENGRAM] New good episode stored at ep 1213: R_raw=-740.37
+[MACRO-RANK] Top macros:
+  #1: score=-875.21 | origin_ep= 248 | origin_R=-748.62
+  #2: score=-966.01 | origin_ep=  36 | origin_R=-627.22
+  #3: score=-1149.02 | origin_ep= 751 | origin_R=-743.56
+  #4: score=-1151.42 | origin_ep= 559 | origin_R=-737.94
+  #5: score=-1248.36 | origin_ep=1213 | origin_R=-740.37
+  #6: score=-1355.90 | origin_ep=1096 | origin_R=-739.75
+  #7: score=-1360.24 | origin_ep=  85 | origin_R=-865.40
+  #8: score=-1361.06 | origin_ep= 441 | origin_R=-740.77
+  #9: score=-1455.10 | origin_ep=1127 | origin_R=-751.44
+  #10: score=-1483.48 | origin_ep= 668 | origin_R=-743.20
+[Pendulum] Ep 1213 | R_raw=-740.37 | len=200 | loss=33.004
+[Pendulum] Ep 1214 | R_raw=-1712.80 | len=200 | loss=201.968
+[Pendulum] Ep 1215 | R_raw=-966.99 | len=200 | loss=36.261
+[Pendulum] Ep 1216 | R_raw=-1758.43 | len=200 | loss=231.293
+[Pendulum] Ep 1217 | R_raw=-859.47 | len=200 | loss=23.856
+[Pendulum] Ep 1218 | R_raw=-1037.20 | len=200 | loss=40.972
+[Pendulum] Ep 1219 | R_raw=-1706.11 | len=200 | loss=204.163
+[Pendulum] Ep 1220 | R_raw=-1335.30 | len=200 | loss=90.021
+[EVAL] Ep 1220 | avg_eval=-1593.91 over 3 episodes
+[Pendulum] Ep 1221 | R_raw=-1107.54 | len=200 | loss=49.773
+[Pendulum] Ep 1222 | R_raw=-1207.83 | len=200 | loss=66.652
+[Pendulum] Ep 1223 | R_raw=-1163.47 | len=200 | loss=59.779
+[Pendulum] Ep 1224 | R_raw=-1156.81 | len=200 | loss=48.973
+[Pendulum] Ep 1225 | R_raw=-1466.16 | len=200 | loss=119.281
+[Pendulum] Ep 1226 | R_raw=-1545.49 | len=200 | loss=134.449
+[Pendulum] Ep 1227 | R_raw=-1127.15 | len=200 | loss=47.081
+[Pendulum] Ep 1228 | R_raw=-1709.45 | len=200 | loss=193.605
+[Pendulum] Ep 1229 | R_raw=-867.44 | len=200 | loss=26.003
+[Pendulum] Ep 1230 | R_raw=-1592.49 | len=200 | loss=164.475
+[Pendulum] Ep 1231 | R_raw=-1532.16 | len=200 | loss=146.566
+[Pendulum] Ep 1232 | R_raw=-1261.32 | len=200 | loss=73.569
+[Pendulum] Ep 1233 | R_raw=-1728.70 | len=200 | loss=214.492
+[Pendulum] Ep 1234 | R_raw=-1071.53 | len=200 | loss=41.490
+[Pendulum] Ep 1235 | R_raw=-1092.06 | len=200 | loss=49.187
+[Pendulum] Ep 1236 | R_raw=-1280.01 | len=200 | loss=73.864
+[Pendulum] Ep 1237 | R_raw=-863.73 | len=200 | loss=25.587
+[Pendulum] Ep 1238 | R_raw=-1473.26 | len=200 | loss=125.797
+[Pendulum] Ep 1239 | R_raw=-1431.70 | len=200 | loss=115.244
+[Pendulum] Ep 1240 | R_raw=-1650.46 | len=200 | loss=169.036
+[EVAL] Ep 1240 | avg_eval=-1411.89 over 3 episodes
+[Pendulum] Ep 1241 | R_raw=-1641.67 | len=200 | loss=177.991
+[Pendulum] Ep 1242 | R_raw=-1256.64 | len=200 | loss=67.393
+[Pendulum] Ep 1243 | R_raw=-1204.44 | len=200 | loss=68.163
+[Pendulum] Ep 1244 | R_raw=-1769.21 | len=200 | loss=233.143
+[Pendulum] Ep 1245 | R_raw=-1054.64 | len=200 | loss=46.351
+[Pendulum] Ep 1246 | R_raw=-1451.85 | len=200 | loss=116.419
+[Pendulum] Ep 1247 | R_raw=-1168.04 | len=200 | loss=52.755
+[Pendulum] Ep 1248 | R_raw=-1404.75 | len=200 | loss=104.313
+[Pendulum] Ep 1249 | R_raw=-1372.95 | len=200 | loss=93.576
+[Pendulum] Ep 1250 | R_raw=-1836.88 | len=200 | loss=263.779
+[Pendulum] Ep 1251 | R_raw=-1510.18 | len=200 | loss=132.246
+[Pendulum] Ep 1252 | R_raw=-1251.51 | len=200 | loss=71.115
+[Pendulum] Ep 1253 | R_raw=-893.11 | len=200 | loss=27.068
+[Pendulum] Ep 1254 | R_raw=-1376.58 | len=200 | loss=99.809
+[Pendulum] Ep 1255 | R_raw=-1544.99 | len=200 | loss=142.852
+[Pendulum] Ep 1256 | R_raw=-1357.59 | len=200 | loss=90.335
+[Pendulum] Ep 1257 | R_raw=-1354.54 | len=200 | loss=93.967
+[Pendulum] Ep 1258 | R_raw=-1803.02 | len=200 | loss=242.292
+[Pendulum] Ep 1259 | R_raw=-1404.61 | len=200 | loss=97.118
+[Pendulum] Ep 1260 | R_raw=-1273.57 | len=200 | loss=70.591
+[EVAL] Ep 1260 | avg_eval=-1409.22 over 3 episodes
+[Pendulum] Ep 1261 | R_raw=-1075.35 | len=200 | loss=42.417
+[Pendulum] Ep 1262 | R_raw=-1649.25 | len=200 | loss=177.542
+[Pendulum] Ep 1263 | R_raw=-1352.48 | len=200 | loss=93.353
+[Pendulum] Ep 1264 | R_raw=-1780.90 | len=200 | loss=232.662
+[Pendulum] Ep 1265 | R_raw=-1715.66 | len=200 | loss=207.493
+[Pendulum] Ep 1266 | R_raw=-1212.01 | len=200 | loss=62.704
+[Pendulum] Ep 1267 | R_raw=-1423.46 | len=200 | loss=104.916
+[Pendulum] Ep 1268 | R_raw=-1071.33 | len=200 | loss=45.417
+[Pendulum] Ep 1269 | R_raw=-1788.73 | len=200 | loss=231.236
+[Pendulum] Ep 1270 | R_raw=-1694.95 | len=200 | loss=194.198
+[Pendulum] Ep 1271 | R_raw=-1189.47 | len=200 | loss=57.269
+[Pendulum] Ep 1272 | R_raw=-1050.70 | len=200 | loss=35.514
+[Pendulum] Ep 1273 | R_raw=-1325.82 | len=200 | loss=85.503
+[Pendulum] Ep 1274 | R_raw=-1598.21 | len=200 | loss=161.634
+[Pendulum] Ep 1275 | R_raw=-1421.10 | len=200 | loss=108.553
+[Pendulum] Ep 1276 | R_raw=-954.79 | len=200 | loss=33.964
+[Pendulum] Ep 1277 | R_raw=-1117.68 | len=200 | loss=50.088
+[Pendulum] Ep 1278 | R_raw=-1586.19 | len=200 | loss=153.443
+[Pendulum] Ep 1279 | R_raw=-1086.77 | len=200 | loss=45.771
+[Pendulum] Ep 1280 | R_raw=-1359.51 | len=200 | loss=88.544
+[EVAL] Ep 1280 | avg_eval=-1698.16 over 3 episodes
+[Pendulum] Ep 1281 | R_raw=-1011.64 | len=200 | loss=37.462
+[Pendulum] Ep 1282 | R_raw=-1695.78 | len=200 | loss=200.200
+[Pendulum] Ep 1283 | R_raw=-1358.35 | len=200 | loss=94.728
+[Pendulum] Ep 1284 | R_raw=-1011.34 | len=200 | loss=34.777
+[Pendulum] Ep 1285 | R_raw=-997.55 | len=200 | loss=36.425
+[Pendulum] Ep 1286 | R_raw=-1149.83 | len=200 | loss=56.806
+[Pendulum] Ep 1287 | R_raw=-1775.35 | len=200 | loss=218.616
+[Pendulum] Ep 1288 | R_raw=-1736.63 | len=200 | loss=209.643
+[Pendulum] Ep 1289 | R_raw=-1113.15 | len=200 | loss=56.507
+[Pendulum] Ep 1290 | R_raw=-1304.45 | len=200 | loss=73.250
+[Pendulum] Ep 1291 | R_raw=-1482.13 | len=200 | loss=120.817
+[Pendulum] Ep 1292 | R_raw=-1103.41 | len=200 | loss=45.948
+[Pendulum] Ep 1293 | R_raw=-1143.56 | len=200 | loss=48.558
+[Pendulum] Ep 1294 | R_raw=-1190.82 | len=200 | loss=61.403
+[Pendulum] Ep 1295 | R_raw=-1337.48 | len=200 | loss=88.966
+[Pendulum] Ep 1296 | R_raw=-975.34 | len=200 | loss=38.453
+[Pendulum] Ep 1297 | R_raw=-1617.10 | len=200 | loss=166.890
+[Pendulum] Ep 1298 | R_raw=-1742.69 | len=200 | loss=205.791
+[Pendulum] Ep 1299 | R_raw=-1085.04 | len=200 | loss=41.102
+[Pendulum] Ep 1300 | R_raw=-1706.46 | len=200 | loss=184.825
+[EVAL] Ep 1300 | avg_eval=-1394.87 over 3 episodes
+[Pendulum] Ep 1301 | R_raw=-1720.89 | len=200 | loss=196.357
+[Pendulum] Ep 1302 | R_raw=-1459.09 | len=200 | loss=120.267
+[Pendulum] Ep 1303 | R_raw=-1062.78 | len=200 | loss=31.794
+[Pendulum] Ep 1304 | R_raw=-1743.93 | len=200 | loss=217.800
+[Pendulum] Ep 1305 | R_raw=-1382.60 | len=200 | loss=96.577
+[Pendulum] Ep 1306 | R_raw=-1722.99 | len=200 | loss=201.227
+[Pendulum] Ep 1307 | R_raw=-1306.38 | len=200 | loss=77.639
+[Pendulum] Ep 1308 | R_raw=-1191.55 | len=200 | loss=57.090
+[Pendulum] Ep 1309 | R_raw=-1297.36 | len=200 | loss=85.923

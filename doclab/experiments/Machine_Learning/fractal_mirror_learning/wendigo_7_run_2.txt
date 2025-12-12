@@ -1,0 +1,1388 @@
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Pirouette_Volume_6\doclab\experiments\Machine_Learning\fractal_mirror_learning> python wendigo_7.py
+2025-11-02 00:56:44,357 [INFO] Registered task 0 ('cartpole'): Score metric='steps', Range=[0, 500], StepCap=500
+2025-11-02 00:56:44,357 [INFO] Registered task 1 ('pendulum'): Score metric='reward', Range=[-1600.0, 0.0], StepCap=200
+2025-11-02 00:56:44,357 [INFO] Registered task 2 ('mountaincar_cont'): Score metric='reward', Range=[-100, 100], StepCap=999
+Episode 1: Dissonant run. (task=mountaincar_cont) Score: -11.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.56/0.60/0.67/0.74/0.83
+    V/R: 331/668 | CohHead: pred=-60.3 loss=0.065 | PredHead: scorê=-79.7 L̂=-0.040 (target=0.442, loss=0.34768)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 0.0}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 0.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -11.3}}
+Episode 2: Dissonant run. (task=cartpole) Score: 9.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.21/0.32/0.66/1.11/1.14
+    V/R: 3/6 | CohHead: pred=128.7 loss=0.058 | PredHead: scorê=81.3 L̂=0.000 (target=0.015, loss=0.04349)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.0}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 0.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -11.3}}
+Episode 3: Dissonant run. (task=mountaincar_cont) Score: -11.9. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.54/0.58/0.66/0.75/0.84
+    V/R: 343/656 | CohHead: pred=-58.3 loss=0.057 | PredHead: scorê=-77.6 L̂=-0.020 (target=0.436, loss=0.31833)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.0}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 0.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -11.6}}
+Episode 4: Dissonant run. (task=cartpole) Score: 9.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.17/0.27/0.78/1.43/1.61
+    V/R: 5/4 | CohHead: pred=123.8 loss=0.054 | PredHead: scorê=83.4 L̂=0.003 (target=0.010, loss=0.05773)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.0}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 0.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -11.6}}
+Episode 5: Dissonant run. (task=pendulum) Score: -1643.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 1.94/2.18/2.46/2.77/3.00
+    V/R: 61/139 | CohHead: pred=-1225.4 loss=0.058 | PredHead: scorê=-1276.5 L̂=0.085 (target=0.000, loss=0.09518)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.0}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1643.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -11.6}}
+Episode 6: Dissonant run. (task=pendulum) Score: -1607.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 2.03/2.16/2.44/2.77/2.90
+    V/R: 65/135 | CohHead: pred=-1237.7 loss=0.055 | PredHead: scorê=-1294.1 L̂=0.079 (target=0.000, loss=0.08386)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.0}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1625.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -11.6}}
+Episode 7: Dissonant run. (task=pendulum) Score: -1321.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 1.33/1.67/2.29/3.03/3.37
+    V/R: 63/137 | CohHead: pred=-1243.1 loss=0.003 | PredHead: scorê=-1322.2 L̂=0.065 (target=0.137, loss=0.03469)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.0}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1524.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -11.6}}
+Episode 8: Dissonant run. (task=pendulum) Score: -1353.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 1.41/1.74/2.31/2.96/3.23
+    V/R: 71/129 | CohHead: pred=-1255.2 loss=0.005 | PredHead: scorê=-1337.3 L̂=0.063 (target=0.112, loss=0.02824)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.0}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1481.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -11.6}}
+Episode 9: Dissonant run. (task=cartpole) Score: 9.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.16/0.25/0.73/1.37/1.56
+    V/R: 2/7 | CohHead: pred=123.0 loss=0.053 | PredHead: scorê=77.9 L̂=0.011 (target=0.002, loss=0.04126)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.0}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1481.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -11.6}}
+Episode 10: Dissonant run. (task=mountaincar_cont) Score: -11.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.58/0.63/0.67/0.74/0.81
+    V/R: 353/646 | CohHead: pred=-57.2 loss=0.053 | PredHead: scorê=-79.8 L̂=0.014 (target=0.428, loss=0.27695)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.0}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1481.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -11.5}}
+Episode 11: Dissonant run. (task=cartpole) Score: 10.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.20/0.30/0.78/1.52/1.73
+    V/R: 2/8 | CohHead: pred=119.9 loss=0.049 | PredHead: scorê=78.0 L̂=0.017 (target=0.000, loss=0.04433)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1481.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -11.5}}
+Episode 12: Dissonant run. (task=pendulum) Score: -1204.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.57/0.74/1.77/3.35/3.74
+    V/R: 62/138 | CohHead: pred=-1274.6 loss=0.002 | PredHead: scorê=-1394.1 L̂=0.044 (target=0.194, loss=0.02886)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1425.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -11.5}}
+Episode 13: Dissonant run. (task=pendulum) Score: -1525.9. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.68/1.07/2.23/3.48/3.79
+    V/R: 70/130 | CohHead: pred=-1300.8 loss=0.022 | PredHead: scorê=-1380.6 L̂=0.068 (target=0.000, loss=0.01686)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1442.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -11.5}}
+Episode 14: Dissonant run. (task=pendulum) Score: -1197.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.46/0.72/1.79/3.39/3.77
+    V/R: 80/120 | CohHead: pred=-1281.4 loss=0.003 | PredHead: scorê=-1409.1 L̂=0.046 (target=0.190, loss=0.02917)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1407.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -11.5}}
+Episode 15: Dissonant run. (task=mountaincar_cont) Score: -9.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.49/0.55/0.65/0.77/0.88
+    V/R: 345/654 | CohHead: pred=-56.3 loss=0.056 | PredHead: scorê=-80.4 L̂=0.032 (target=0.431, loss=0.25464)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1407.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -10.9}}
+Episode 16: Dissonant run. (task=pendulum) Score: -1215.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.22/0.72/1.81/3.39/3.76
+    V/R: 73/127 | CohHead: pred=-1285.4 loss=0.002 | PredHead: scorê=-1401.2 L̂=0.060 (target=0.170, loss=0.01971)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1383.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -10.9}}
+Episode 17: Dissonant run. (task=mountaincar_cont) Score: -9.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.58/0.61/0.67/0.73/0.82
+    V/R: 352/647 | CohHead: pred=-55.3 loss=0.055 | PredHead: scorê=-78.6 L̂=0.044 (target=0.429, loss=0.24388)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1383.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -10.6}}
+Episode 18: Dissonant run. (task=pendulum) Score: -1072.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.42/0.73/1.75/3.29/3.74
+    V/R: 63/137 | CohHead: pred=-1285.0 loss=0.018 | PredHead: scorê=-1377.6 L̂=0.077 (target=0.252, loss=0.05182)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1348.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -10.6}}
+Episode 19: Dissonant run. (task=pendulum) Score: -871.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.16/0.29/1.30/3.25/3.72
+    V/R: 76/124 | CohHead: pred=-1266.3 loss=0.063 | PredHead: scorê=-1381.1 L̂=0.058 (target=0.388, loss=0.15718)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 9.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1301.1}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -10.6}}
+Episode 20: Dissonant run. (task=cartpole) Score: 15.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.13/0.29/0.52/0.89/1.15
+    V/R: 7/8 | CohHead: pred=114.4 loss=0.039 | PredHead: scorê=73.1 L̂=0.024 (target=0.005, loss=0.01450)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 10.4}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1301.1}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -10.6}}
+Episode 21: Dissonant run. (task=pendulum) Score: -1110.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.32/0.68/1.94/3.18/3.76
+    V/R: 74/126 | CohHead: pred=-1280.5 loss=0.012 | PredHead: scorê=-1322.0 L̂=0.109 (target=0.214, loss=0.02324)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 10.4}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1283.8}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -10.6}}
+Episode 22: Dissonant run. (task=pendulum) Score: -898.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.36/0.60/1.43/3.09/3.72
+    V/R: 69/131 | CohHead: pred=-1261.3 loss=0.053 | PredHead: scorê=-1317.0 L̂=0.102 (target=0.354, loss=0.10169)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 10.4}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1251.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -10.6}}
+Episode 23: Dissonant run. (task=pendulum) Score: -1028.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.40/0.64/1.57/3.34/3.75
+    V/R: 69/131 | CohHead: pred=-1261.2 loss=0.022 | PredHead: scorê=-1282.9 L̂=0.126 (target=0.263, loss=0.03590)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 10.4}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1234.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -10.6}}
+Episode 24: Dissonant run. (task=mountaincar_cont) Score: -8.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.53/0.58/0.67/0.74/0.84
+    V/R: 341/658 | CohHead: pred=-50.6 loss=0.047 | PredHead: scorê=-64.7 L̂=0.097 (target=0.424, loss=0.17733)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 10.4}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1234.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -10.1}}
+Episode 25: Dissonant run. (task=mountaincar_cont) Score: -8.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.47/0.51/0.63/0.80/0.87
+    V/R: 319/680 | CohHead: pred=-49.7 loss=0.044 | PredHead: scorê=-62.1 L̂=0.107 (target=0.419, loss=0.15823)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 10.4}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1234.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -9.9}}
+    Top-15 Norm: [(0.46, np.str_('mountaincar_cont'), -7), (0.46, np.str_('mountaincar_cont'), -8), (np.float64(0.46), np.str_('pendulum'), -871), (0.46, np.str_('mountaincar_cont'), -8), (0.45, np.str_('mountaincar_cont'), -9), (0.44, np.str_('mountaincar_cont'), -11), (0.44, np.str_('mountaincar_cont'), -11), (0.44, np.str_('mountaincar_cont'), -11), (np.float64(0.44), np.str_('pendulum'), -898), (np.float64(0.36), np.str_('pendulum'), -1028), (np.float64(0.33), np.str_('pendulum'), -1072), (np.float64(0.31), np.str_('pendulum'), -1110), (np.float64(0.25), np.str_('pendulum'), -1197), (np.float64(0.25), np.str_('pendulum'), -1204), (np.float64(0.24), np.str_('pendulum'), -1215)] | avg_norm=0.39 | dyn_thr_norm=0.29
+Episode 26: Dissonant run. (task=cartpole) Score: 25.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.14/0.18/0.32/0.61/0.72
+    V/R: 9/16 | CohHead: pred=117.6 loss=0.034 | PredHead: scorê=85.3 L̂=0.045 (target=0.029, loss=0.01682)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 12.8}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1234.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -9.9}}
+Episode 27: Dissonant run. (task=cartpole) Score: 25.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.13/0.35/0.55/0.68
+    V/R: 11/14 | CohHead: pred=116.3 loss=0.033 | PredHead: scorê=85.6 L̂=0.046 (target=0.029, loss=0.01761)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 14.6}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1234.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -9.9}}
+Episode 28: Dissonant run. (task=mountaincar_cont) Score: -8.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.55/0.59/0.66/0.73/0.80
+    V/R: 341/658 | CohHead: pred=-47.3 loss=0.040 | PredHead: scorê=-54.8 L̂=0.137 (target=0.418, loss=0.13599)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 14.6}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1234.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -9.7}}
+Episode 29: Dissonant run. (task=pendulum) Score: -740.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.26/0.45/1.25/3.05/3.63
+    V/R: 58/142 | CohHead: pred=-1218.4 loss=0.092 | PredHead: scorê=-1164.4 L̂=0.183 (target=0.438, loss=0.10783)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 14.6}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1199.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -9.7}}
+Episode 30: Dissonant run. (task=mountaincar_cont) Score: -7.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.50/0.54/0.64/0.77/0.85
+    V/R: 365/634 | CohHead: pred=-45.3 loss=0.039 | PredHead: scorê=-50.6 L̂=0.156 (target=0.421, loss=0.11781)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 14.6}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1199.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -9.4}}
+Episode 31: Dissonant run. (task=cartpole) Score: 30.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.06/0.14/0.32/0.50/0.58
+    V/R: 11/19 | CohHead: pred=116.9 loss=0.030 | PredHead: scorê=96.3 L̂=0.066 (target=0.037, loss=0.02252)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 16.5}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1199.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -9.4}}
+Episode 32: Dissonant run. (task=cartpole) Score: 32.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.13/0.16/0.29/0.52/0.67
+    V/R: 13/19 | CohHead: pred=115.9 loss=0.028 | PredHead: scorê=96.8 L̂=0.068 (target=0.041, loss=0.02227)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 18.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1199.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -9.4}}
+Episode 33: Dissonant run. (task=mountaincar_cont) Score: -4.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.59/0.63/0.67/0.71/0.76
+    V/R: 359/640 | CohHead: pred=-42.9 loss=0.039 | PredHead: scorê=-44.2 L̂=0.192 (target=0.427, loss=0.10260)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 18.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1199.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -8.9}}
+Episode 34: Dissonant run. (task=mountaincar_cont) Score: -4.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.65/0.67/0.70/0.74
+    V/R: 344/655 | CohHead: pred=-42.0 loss=0.038 | PredHead: scorê=-42.2 L̂=0.207 (target=0.428, loss=0.09539)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 18.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1199.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -8.5}}
+Episode 35: Dissonant run. (task=mountaincar_cont) Score: -3.2. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.63/0.67/0.70/0.75
+    V/R: 354/645 | CohHead: pred=-40.8 loss=0.037 | PredHead: scorê=-40.2 L̂=0.220 (target=0.431, loss=0.08717)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 18.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1199.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -8.0}}
+Episode 36: Dissonant run. (task=pendulum) Score: -743.2. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.14/0.37/1.23/3.10/3.58
+    V/R: 81/119 | CohHead: pred=-1168.2 loss=0.074 | PredHead: scorê=-1024.4 L̂=0.273 (target=0.413, loss=0.04992)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 18.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1168.8}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -8.0}}
+Episode 37: Dissonant run. (task=pendulum) Score: -649.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.20/0.38/1.03/3.00/3.64
+    V/R: 77/123 | CohHead: pred=-1151.8 loss=0.103 | PredHead: scorê=-1022.7 L̂=0.276 (target=0.479, loss=0.08776)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 18.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1136.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -8.0}}
+Episode 38: Dissonant run. (task=cartpole) Score: 19.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.16/0.21/0.36/0.53/0.67
+    V/R: 8/11 | CohHead: pred=120.7 loss=0.041 | PredHead: scorê=110.6 L̂=0.099 (target=0.006, loss=0.04301)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 18.3}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1136.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -8.0}}
+Episode 39: Dissonant run. (task=pendulum) Score: -634.9. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.16/0.43/0.95/2.95/3.67
+    V/R: 67/133 | CohHead: pred=-1136.7 loss=0.102 | PredHead: scorê=-978.7 L̂=0.308 (target=0.484, loss=0.07701)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 18.3}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1106.8}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -8.0}}
+Episode 40: Dissonant run. (task=mountaincar_cont) Score: -1.9. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.63/0.67/0.70/0.74
+    V/R: 355/644 | CohHead: pred=-34.9 loss=0.029 | PredHead: scorê=-28.0 L̂=0.300 (target=0.430, loss=0.04801)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 18.3}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1106.8}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -7.5}}
+Episode 41: Dissonant run. (task=mountaincar_cont) Score: -2.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.64/0.66/0.70/0.74
+    V/R: 375/624 | CohHead: pred=-33.5 loss=0.026 | PredHead: scorê=-25.4 L̂=0.315 (target=0.424, loss=0.04028)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 18.3}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1106.8}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -7.2}}
+Episode 42: Dissonant run. (task=pendulum) Score: -364.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.00/0.02/0.07/2.54/3.47
+    V/R: 81/119 | CohHead: pred=-1094.8 loss=0.216 | PredHead: scorê=-1007.8 L̂=0.286 (target=0.700, loss=0.27955)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 18.3}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1065.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -7.2}}
+Episode 43: Dissonant run. (task=pendulum) Score: -246.7. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.06/0.08/2.06/3.53
+    V/R: 67/133 | CohHead: pred=-1083.1 loss=0.283 | PredHead: scorê=-1009.7 L̂=0.294 (target=0.794, loss=0.39686)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 18.3}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1022.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -7.2}}
+Episode 44: Dissonant run. (task=mountaincar_cont) Score: -2.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.59/0.62/0.66/0.71/0.76
+    V/R: 354/645 | CohHead: pred=-28.7 loss=0.020 | PredHead: scorê=-14.9 L̂=0.377 (target=0.421, loss=0.02333)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 18.3}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1022.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -6.9}}
+Episode 45: Dissonant run. (task=cartpole) Score: 42.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.06/0.27/1.15/2.12
+    V/R: 13/29 | CohHead: pred=138.9 loss=0.036 | PredHead: scorê=145.7 L̂=0.167 (target=0.037, loss=0.05470)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 20.5}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -1022.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -6.9}}
+Episode 46: Coherent run. (task=pendulum) Score: -1.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.00/0.01/0.03/0.06/0.48
+    V/R: 75/125 | CohHead: pred=-1061.9 loss=0.453 | PredHead: scorê=-1000.1 L̂=0.310 (target=0.994, loss=0.70411)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 20.5}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -971.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -6.9}}
+Episode 47: Dissonant run. (task=mountaincar_cont) Score: -2.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.62/0.66/0.71/0.75
+    V/R: 321/678 | CohHead: pred=-24.1 loss=0.014 | PredHead: scorê=-2.9 L̂=0.445 (target=0.417, loss=0.01803)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 20.5}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -971.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -6.6}}
+Episode 48: Dissonant run. (task=cartpole) Score: 28.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.05/0.10/0.25/1.22/1.84
+    V/R: 8/20 | CohHead: pred=144.7 loss=0.053 | PredHead: scorê=158.2 L̂=0.200 (target=0.003, loss=0.08993)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 21.1}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -971.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -6.6}}
+Episode 49: Dissonant run. (task=pendulum) Score: -121.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.00/0.01/0.03/0.87/3.54
+    V/R: 67/133 | CohHead: pred=-1008.8 loss=0.317 | PredHead: scorê=-880.3 L̂=0.386 (target=0.895, loss=0.41798)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 21.1}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -930.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -6.6}}
+Episode 50: Dissonant run. (task=pendulum) Score: -242.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.00/0.01/0.03/2.09/3.44
+    V/R: 71/129 | CohHead: pred=-992.8 loss=0.228 | PredHead: scorê=-817.2 L̂=0.422 (target=0.793, loss=0.24679)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 21.1}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -899.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -6.6}}
+    Top-15 Norm: [(np.float64(1.0), np.str_('pendulum'), -1), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.85), np.str_('pendulum'), -242), (np.float64(0.85), np.str_('pendulum'), -246), (np.float64(0.77), np.str_('pendulum'), -364), (np.float64(0.6), np.str_('pendulum'), -634), (np.float64(0.59), np.str_('pendulum'), -649), (np.float64(0.54), np.str_('pendulum'), -739), (np.float64(0.54), np.str_('pendulum'), -743), (0.49, np.str_('mountaincar_cont'), -1), (0.49, np.str_('mountaincar_cont'), -2), (0.49, np.str_('mountaincar_cont'), -2), (0.49, np.str_('mountaincar_cont'), -2), (0.48, np.str_('mountaincar_cont'), -3), (0.48, np.str_('mountaincar_cont'), -3)] | avg_norm=0.64 | dyn_thr_norm=0.48
+Episode 51: Dissonant run. (task=mountaincar_cont) Score: -2.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.52/0.57/0.65/0.73/0.80
+    V/R: 375/624 | CohHead: pred=-17.6 loss=0.007 | PredHead: scorê=13.5 L̂=0.528 (target=0.411, loss=0.03083)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 21.1}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -899.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -6.4}}
+Episode 52: Dissonant run. (task=cartpole) Score: 29.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.14/0.18/0.32/0.47/0.55
+    V/R: 9/20 | CohHead: pred=148.2 loss=0.055 | PredHead: scorê=166.1 L̂=0.220 (target=0.020, loss=0.10483)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 21.7}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -899.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -6.4}}
+Episode 53: Dissonant run. (task=mountaincar_cont) Score: -1.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.62/0.64/0.67/0.70/0.74
+    V/R: 350/649 | CohHead: pred=-15.3 loss=0.006 | PredHead: scorê=21.7 L̂=0.571 (target=0.412, loss=0.04668)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 21.7}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -899.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -6.1}}
+Episode 54: Dissonant run. (task=mountaincar_cont) Score: -2.7. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.55/0.58/0.65/0.73/0.78
+    V/R: 364/635 | CohHead: pred=-14.0 loss=0.004 | PredHead: scorê=23.8 L̂=0.581 (target=0.406, loss=0.05070)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 21.7}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -899.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.9}}
+Episode 55: Dissonant run. (task=pendulum) Score: -126.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.00/0.01/0.02/1.02/3.51
+    V/R: 65/135 | CohHead: pred=-942.4 loss=0.267 | PredHead: scorê=-733.6 L̂=0.479 (target=0.886, loss=0.28537)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 21.7}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -866.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.9}}
+Episode 56: Dissonant run. (task=mountaincar_cont) Score: -3.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.56/0.59/0.66/0.72/0.79
+    V/R: 354/645 | CohHead: pred=-11.5 loss=0.002 | PredHead: scorê=29.0 L̂=0.606 (target=0.399, loss=0.06574)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 21.7}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -866.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.8}}
+Episode 57: Dissonant run. (task=mountaincar_cont) Score: -2.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.59/0.63/0.66/0.70/0.74
+    V/R: 366/633 | CohHead: pred=-10.3 loss=0.002 | PredHead: scorê=30.8 L̂=0.613 (target=0.400, loss=0.06953)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 21.7}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -866.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.6}}
+Episode 58: Dissonant run. (task=cartpole) Score: 54.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.09/0.30/1.30/2.49
+    V/R: 22/32 | CohHead: pred=165.3 loss=0.049 | PredHead: scorê=186.7 L̂=0.259 (target=0.038, loss=0.09592)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 24.0}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -866.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.6}}
+Episode 59: Dissonant run. (task=mountaincar_cont) Score: -2.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.62/0.66/0.71/0.76
+    V/R: 372/627 | CohHead: pred=-8.4 loss=0.001 | PredHead: scorê=32.1 L̂=0.616 (target=0.396, loss=0.07275)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 24.0}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -866.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.5}}
+Episode 60: Dissonant run. (task=mountaincar_cont) Score: -1.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.64/0.67/0.69/0.73
+    V/R: 333/666 | CohHead: pred=-8.0 loss=0.001 | PredHead: scorê=32.1 L̂=0.617 (target=0.399, loss=0.07020)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 24.0}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -866.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.3}}
+Episode 61: Dissonant run. (task=cartpole) Score: 23.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.19/0.22/0.33/0.45/0.52
+    V/R: 7/16 | CohHead: pred=158.0 loss=0.073 | PredHead: scorê=173.6 L̂=0.236 (target=0.000, loss=0.12710)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 23.9}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -866.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.3}}
+Episode 62: Dissonant run. (task=cartpole) Score: 39.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.14/0.17/0.31/0.50/0.63
+    V/R: 15/24 | CohHead: pred=158.8 loss=0.058 | PredHead: scorê=169.8 L̂=0.222 (target=0.032, loss=0.09554)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 24.9}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -866.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.3}}
+Episode 63: Dissonant run. (task=cartpole) Score: 42.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.06/0.15/0.28/0.49/0.56
+    V/R: 20/22 | CohHead: pred=157.2 loss=0.054 | PredHead: scorê=163.7 L̂=0.200 (target=0.041, loss=0.08170)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 25.9}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -866.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.3}}
+Episode 64: Dissonant run. (task=pendulum) Score: -121.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.01/0.03/0.06/0.67/3.53
+    V/R: 72/128 | CohHead: pred=-884.2 loss=0.230 | PredHead: scorê=-718.8 L̂=0.474 (target=0.885, loss=0.29013)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 25.9}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -835.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.3}}
+Episode 65: Dissonant run. (task=cartpole) Score: 28.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.12/0.20/0.31/0.51/0.55
+    V/R: 13/15 | CohHead: pred=154.9 loss=0.065 | PredHead: scorê=158.3 L̂=0.193 (target=0.007, loss=0.09268)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 26.0}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -835.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.3}}
+Episode 66: Dissonant run. (task=cartpole) Score: 48.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.09/0.14/0.26/0.47/0.54
+    V/R: 16/32 | CohHead: pred=155.4 loss=0.047 | PredHead: scorê=160.9 L̂=0.206 (target=0.054, loss=0.07363)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.2}, "pendulum": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -835.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.3}}
+Episode 67: Dissonant run. (task=pendulum) Score: -114.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.01/0.03/0.06/0.52/3.41
+    V/R: 63/137 | CohHead: pred=-876.1 loss=0.230 | PredHead: scorê=-726.0 L̂=0.471 (target=0.888, loss=0.29778)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.2}, "pendulum": {"mastered": false, "norm_avg": 0.497, "raw_recent_avg": -806.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.3}}
+Episode 68: Dissonant run. (task=mountaincar_cont) Score: -1.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.62/0.64/0.66/0.69/0.73
+    V/R: 352/647 | CohHead: pred=-4.0 loss=0.000 | PredHead: scorê=26.4 L̂=0.577 (target=0.391, loss=0.05331)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.2}, "pendulum": {"mastered": false, "norm_avg": 0.497, "raw_recent_avg": -806.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.2}}
+Episode 69: Dissonant run. (task=cartpole) Score: 23.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.06/0.17/0.31/0.66/0.77
+    V/R: 11/12 | CohHead: pred=151.0 loss=0.067 | PredHead: scorê=150.4 L̂=0.179 (target=0.000, loss=0.08536)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 26.9}, "pendulum": {"mastered": false, "norm_avg": 0.497, "raw_recent_avg": -806.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.2}}
+Episode 70: Dissonant run. (task=cartpole) Score: 33.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.05/0.13/0.29/0.61/0.77
+    V/R: 13/20 | CohHead: pred=150.5 loss=0.057 | PredHead: scorê=151.9 L̂=0.187 (target=0.013, loss=0.07753)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.2}, "pendulum": {"mastered": false, "norm_avg": 0.497, "raw_recent_avg": -806.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.2}}
+Episode 71: Dissonant run. (task=pendulum) Score: -116.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.00/0.01/0.04/0.61/3.45
+    V/R: 67/133 | CohHead: pred=-859.8 loss=0.219 | PredHead: scorê=-730.5 L̂=0.464 (target=0.886, loss=0.29564)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.2}, "pendulum": {"mastered": false, "norm_avg": 0.534, "raw_recent_avg": -745.1}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.2}}
+Episode 72: Dissonant run. (task=pendulum) Score: -119.2. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.01/0.01/0.04/0.59/3.58
+    V/R: 78/122 | CohHead: pred=-849.8 loss=0.213 | PredHead: scorê=-728.7 L̂=0.462 (target=0.883, loss=0.29042)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.2}, "pendulum": {"mastered": false, "norm_avg": 0.572, "raw_recent_avg": -685.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.2}}
+Episode 73: Coherent run. (task=pendulum) Score: -0.7. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.00/0.01/0.02/0.06/0.32
+    V/R: 75/125 | CohHead: pred=-848.5 loss=0.288 | PredHead: scorê=-739.4 L̂=0.456 (target=0.994, loss=0.42828)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.2}, "pendulum": {"mastered": false, "norm_avg": 0.605, "raw_recent_avg": -632.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.2}}
+Episode 74: Dissonant run. (task=cartpole) Score: 28.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.13/0.16/0.31/0.74/0.89
+    V/R: 12/16 | CohHead: pred=149.4 loss=0.059 | PredHead: scorê=151.2 L̂=0.188 (target=0.000, loss=0.08090)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.3}, "pendulum": {"mastered": false, "norm_avg": 0.605, "raw_recent_avg": -632.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.2}}
+Episode 75: Dissonant run. (task=pendulum) Score: -230.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.00/0.01/0.02/2.01/3.58
+    V/R: 73/127 | CohHead: pred=-827.3 loss=0.143 | PredHead: scorê=-661.4 L̂=0.504 (target=0.781, loss=0.14874)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.3}, "pendulum": {"mastered": false, "norm_avg": 0.633, "raw_recent_avg": -587.8}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": -5.2}}
+    Top-15 Norm: [(np.float64(1.0), np.str_('pendulum'), 0), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(0.93), np.str_('pendulum'), -114), (np.float64(0.93), np.str_('pendulum'), -116), (np.float64(0.93), np.str_('pendulum'), -119), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -126), (np.float64(0.86), np.str_('pendulum'), -230), (np.float64(0.85), np.str_('pendulum'), -242), (np.float64(0.85), np.str_('pendulum'), -246), (np.float64(0.77), np.str_('pendulum'), -364), (np.float64(0.6), np.str_('pendulum'), -634), (np.float64(0.59), np.str_('pendulum'), -649), (np.float64(0.54), np.str_('pendulum'), -739)] | avg_norm=0.84 | dyn_thr_norm=0.63
+Episode 76: Dissonant run. (task=mountaincar_cont) Score: -2.2. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.62/0.66/0.70/0.75
+    V/R: 323/676 | CohHead: pred=2.0 loss=0.000 | PredHead: scorê=35.2 L̂=0.623 (target=0.374, loss=0.09401)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.3}, "pendulum": {"mastered": false, "norm_avg": 0.633, "raw_recent_avg": -587.8}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.475, "raw_recent_avg": -5.1}}
+Episode 77: Dissonant run. (task=cartpole) Score: 35.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.03/0.18/0.68/0.99
+    V/R: 10/25 | CohHead: pred=149.1 loss=0.052 | PredHead: scorê=157.0 L̂=0.212 (target=0.022, loss=0.08400)
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.6}, "pendulum": {"mastered": false, "norm_avg": 0.633, "raw_recent_avg": -587.8}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.475, "raw_recent_avg": -5.1}}
+Episode 78: Dissonant run. (task=pendulum) Score: -120.6. (Gold: True)
+    DR (min/p10/p50/p90/max): 0.00/0.01/0.01/0.71/3.55
+    V/R: 65/135 | CohHead: pred=-802.9 loss=0.187 | PredHead: scorê=-639.1 L̂=0.519 (target=0.882, loss=0.21269)
+    [GW] best=-120.6 (DR=0.24, task=pendulum) | window=1
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.6}, "pendulum": {"mastered": false, "norm_avg": 0.66, "raw_recent_avg": -544.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.475, "raw_recent_avg": -5.1}}
+Episode 79: Dissonant run. (task=pendulum) Score: -125.2. (Gold: True)
+    DR (min/p10/p50/p90/max): 0.00/0.00/0.01/0.74/3.72
+    V/R: 69/131 | CohHead: pred=-791.3 loss=0.179 | PredHead: scorê=-623.6 L̂=0.527 (target=0.878, loss=0.19800)
+    [GW] best=-120.6 (DR=0.24, task=pendulum) | window=2
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.6}, "pendulum": {"mastered": false, "norm_avg": 0.695, "raw_recent_avg": -488.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.475, "raw_recent_avg": -5.1}}
+Episode 80: Dissonant run. (task=mountaincar_cont) Score: -3.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.64/0.66/0.70/0.78
+    V/R: 356/643 | CohHead: pred=6.6 loss=0.002 | PredHead: scorê=43.3 L̂=0.660 (target=0.361, loss=0.13787)
+    [GW] best=-120.6 (DR=0.24, task=pendulum) | window=2
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.6}, "pendulum": {"mastered": false, "norm_avg": 0.695, "raw_recent_avg": -488.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.476, "raw_recent_avg": -4.7}}
+Episode 81: Dissonant run. (task=mountaincar_cont) Score: -2.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.63/0.66/0.70/0.78
+    V/R: 349/650 | CohHead: pred=7.5 loss=0.002 | PredHead: scorê=44.9 L̂=0.668 (target=0.364, loss=0.14239)
+    [GW] best=-120.6 (DR=0.24, task=pendulum) | window=2
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.6}, "pendulum": {"mastered": false, "norm_avg": 0.695, "raw_recent_avg": -488.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.478, "raw_recent_avg": -4.4}}
+Episode 82: Dissonant run. (task=cartpole) Score: 23.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.08/0.11/0.26/0.82/1.02
+    V/R: 6/17 | CohHead: pred=151.3 loss=0.066 | PredHead: scorê=161.7 L̂=0.227 (target=0.000, loss=0.10382)
+    [GW] best=-120.6 (DR=0.24, task=pendulum) | window=2
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.4}, "pendulum": {"mastered": false, "norm_avg": 0.695, "raw_recent_avg": -488.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.478, "raw_recent_avg": -4.4}}
+Episode 83: Dissonant run. (task=pendulum) Score: -121.7. (Gold: True)
+    DR (min/p10/p50/p90/max): 0.00/0.00/0.01/0.60/3.62
+    V/R: 62/138 | CohHead: pred=-761.3 loss=0.164 | PredHead: scorê=-582.0 L̂=0.551 (target=0.880, loss=0.17058)
+    [GW] best=-120.6 (DR=0.24, task=pendulum) | window=3
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.4}, "pendulum": {"mastered": false, "norm_avg": 0.722, "raw_recent_avg": -445.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.478, "raw_recent_avg": -4.4}}
+Episode 84: Dissonant run. (task=mountaincar_cont) Score: -2.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.64/0.65/0.67/0.69/0.74
+    V/R: 366/633 | CohHead: pred=10.2 loss=0.004 | PredHead: scorê=46.8 L̂=0.673 (target=0.359, loss=0.15458)
+    [GW] best=-120.6 (DR=0.24, task=pendulum) | window=3
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.0, "raw_recent_avg": 27.4}, "pendulum": {"mastered": false, "norm_avg": 0.722, "raw_recent_avg": -445.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.48, "raw_recent_avg": -4.0}}
+Episode 85: Dissonant run. (task=cartpole) Score: 25.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.04/0.08/0.22/0.72/0.91
+    V/R: 11/14 | CohHead: pred=146.7 loss=0.060 | PredHead: scorê=151.9 L̂=0.196 (target=0.000, loss=0.08573)
+    [GW] best=-120.6 (DR=0.24, task=pendulum) | window=3
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.055, "raw_recent_avg": 27.3}, "pendulum": {"mastered": false, "norm_avg": 0.722, "raw_recent_avg": -445.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.48, "raw_recent_avg": -4.0}}
+Episode 86: Dissonant run. (task=mountaincar_cont) Score: -3.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.62/0.63/0.66/0.70/0.76
+    V/R: 344/655 | CohHead: pred=11.0 loss=0.005 | PredHead: scorê=46.4 L̂=0.670 (target=0.353, loss=0.15539)
+    [GW] best=-120.6 (DR=0.24, task=pendulum) | window=3
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.055, "raw_recent_avg": 27.3}, "pendulum": {"mastered": false, "norm_avg": 0.722, "raw_recent_avg": -445.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.481, "raw_recent_avg": -3.8}}
+Episode 87: Dissonant run. (task=cartpole) Score: 22.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.09/0.12/0.25/0.63/0.81
+    V/R: 6/16 | CohHead: pred=147.5 loss=0.064 | PredHead: scorê=154.1 L̂=0.210 (target=0.000, loss=0.09408)
+    [GW] best=-120.6 (DR=0.24, task=pendulum) | window=3
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.056, "raw_recent_avg": 27.8}, "pendulum": {"mastered": false, "norm_avg": 0.722, "raw_recent_avg": -445.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.481, "raw_recent_avg": -3.8}}
+Episode 88: Dissonant run. (task=mountaincar_cont) Score: -1.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.65/0.67/0.69/0.75
+    V/R: 354/645 | CohHead: pred=11.5 loss=0.004 | PredHead: scorê=43.6 L̂=0.652 (target=0.357, loss=0.13902)
+    [GW] best=-120.6 (DR=0.24, task=pendulum) | window=3
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.056, "raw_recent_avg": 27.8}, "pendulum": {"mastered": false, "norm_avg": 0.722, "raw_recent_avg": -445.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.5}}
+Episode 89: Dissonant run. (task=cartpole) Score: 39.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.04/0.19/0.55/0.79
+    V/R: 13/26 | CohHead: pred=144.5 loss=0.046 | PredHead: scorê=147.9 L̂=0.192 (target=0.029, loss=0.06598)
+    [GW] best=-120.6 (DR=0.24, task=pendulum) | window=3
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.058, "raw_recent_avg": 29.0}, "pendulum": {"mastered": false, "norm_avg": 0.722, "raw_recent_avg": -445.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.5}}
+Episode 90: Dissonant run. (task=cartpole) Score: 84.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.07/0.09/0.20/0.44/0.85
+    V/R: 28/56 | CohHead: pred=151.5 loss=0.019 | PredHead: scorê=153.6 L̂=0.202 (target=0.121, loss=0.02882)
+    [GW] best=-120.6 (DR=0.24, task=pendulum) | window=3
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.064, "raw_recent_avg": 32.0}, "pendulum": {"mastered": false, "norm_avg": 0.722, "raw_recent_avg": -445.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.5}}
+Episode 91: Dissonant run. (task=cartpole) Score: 39.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.07/0.18/0.48/0.78
+    V/R: 16/23 | CohHead: pred=138.3 loss=0.041 | PredHead: scorê=138.1 L̂=0.169 (target=0.029, loss=0.05426)
+    [GW] best=-120.6 (DR=0.24, task=pendulum) | window=3
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.066, "raw_recent_avg": 33.2}, "pendulum": {"mastered": false, "norm_avg": 0.722, "raw_recent_avg": -445.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.5}}
+Episode 92: Dissonant run. (task=mountaincar_cont) Score: -1.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.64/0.67/0.70/0.76
+    V/R: 333/666 | CohHead: pred=10.7 loss=0.004 | PredHead: scorê=35.0 L̂=0.605 (target=0.351, loss=0.10655)
+    [GW] best=-120.6 (DR=0.24, task=pendulum) | window=3
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.066, "raw_recent_avg": 33.2}, "pendulum": {"mastered": false, "norm_avg": 0.722, "raw_recent_avg": -445.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.2}}
+Episode 93: Coherent run. (task=pendulum) Score: -1.2. (Gold: True)
+    DR (min/p10/p50/p90/max): 0.00/0.00/0.01/0.06/0.44
+    V/R: 72/128 | CohHead: pred=-746.0 loss=0.219 | PredHead: scorê=-674.4 L̂=0.477 (target=0.992, loss=0.35504)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=4
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.066, "raw_recent_avg": 33.2}, "pendulum": {"mastered": false, "norm_avg": 0.752, "raw_recent_avg": -396.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.2}}
+Episode 94: Coherent run. (task=cartpole) Score: 49.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.04/0.15/0.47/0.98
+    V/R: 17/32 | CohHead: pred=136.8 loss=0.032 | PredHead: scorê=133.2 L̂=0.164 (target=0.052, loss=0.04088)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=4
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.069, "raw_recent_avg": 34.6}, "pendulum": {"mastered": false, "norm_avg": 0.752, "raw_recent_avg": -396.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.2}}
+Episode 95: Dissonant run. (task=cartpole) Score: 93.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.09/0.14/0.34/0.88/2.00
+    V/R: 26/67 | CohHead: pred=152.1 loss=0.015 | PredHead: scorê=144.4 L̂=0.189 (target=0.090, loss=0.01555)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=4
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.075, "raw_recent_avg": 37.3}, "pendulum": {"mastered": false, "norm_avg": 0.752, "raw_recent_avg": -396.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.2}}
+Episode 96: Coherent run. (task=cartpole) Score: 62.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.05/0.05/0.12/0.38/0.85
+    V/R: 23/39 | CohHead: pred=134.5 loss=0.022 | PredHead: scorê=130.2 L̂=0.158 (target=0.084, loss=0.02904)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=4
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.078, "raw_recent_avg": 38.8}, "pendulum": {"mastered": false, "norm_avg": 0.752, "raw_recent_avg": -396.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.2}}
+Episode 97: Dissonant run. (task=cartpole) Score: 62.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.05/0.06/0.17/0.37/0.97
+    V/R: 18/44 | CohHead: pred=135.9 loss=0.023 | PredHead: scorê=130.2 L̂=0.162 (target=0.075, loss=0.02811)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=4
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.08, "raw_recent_avg": 40.0}, "pendulum": {"mastered": false, "norm_avg": 0.752, "raw_recent_avg": -396.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.2}}
+Episode 98: Dissonant run. (task=cartpole) Score: 98.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.10/0.13/0.42/1.08/1.66
+    V/R: 32/66 | CohHead: pred=146.8 loss=0.010 | PredHead: scorê=136.9 L̂=0.172 (target=0.084, loss=0.01022)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=4
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.085, "raw_recent_avg": 42.7}, "pendulum": {"mastered": false, "norm_avg": 0.752, "raw_recent_avg": -396.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.2}}
+Episode 99: Dissonant run. (task=pendulum) Score: -318.2. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.00/0.01/0.02/2.46/3.35
+    V/R: 57/143 | CohHead: pred=-791.4 loss=0.088 | PredHead: scorê=-697.3 L̂=0.463 (target=0.674, loss=0.09695)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=4
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.085, "raw_recent_avg": 42.7}, "pendulum": {"mastered": false, "norm_avg": 0.771, "raw_recent_avg": -366.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.2}}
+Episode 100: Dissonant run. (task=pendulum) Score: -118.3. (Gold: True)
+    DR (min/p10/p50/p90/max): 0.00/0.00/0.01/0.63/3.36
+    V/R: 74/126 | CohHead: pred=-733.0 loss=0.150 | PredHead: scorê=-712.2 L̂=0.449 (target=0.869, loss=0.25711)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.085, "raw_recent_avg": 42.7}, "pendulum": {"mastered": false, "norm_avg": 0.79, "raw_recent_avg": -336.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.2}}
+    Top-15 Norm: [(np.float64(1.0), np.str_('pendulum'), 0), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(0.93), np.str_('pendulum'), -114), (np.float64(0.93), np.str_('pendulum'), -116), (np.float64(0.93), np.str_('pendulum'), -118), (np.float64(0.93), np.str_('pendulum'), -119), (np.float64(0.92), np.str_('pendulum'), -120), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -125), (np.float64(0.92), np.str_('pendulum'), -126), (np.float64(0.86), np.str_('pendulum'), -230), (np.float64(0.85), np.str_('pendulum'), -242)] | avg_norm=0.93 | dyn_thr_norm=0.70
+Episode 101: Dissonant run. (task=cartpole) Score: 29.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.08/0.14/0.23/1.38/2.05
+    V/R: 10/19 | CohHead: pred=128.7 loss=0.041 | PredHead: scorê=120.7 L̂=0.143 (target=0.000, loss=0.04504)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.086, "raw_recent_avg": 43.1}, "pendulum": {"mastered": false, "norm_avg": 0.79, "raw_recent_avg": -336.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.2}}
+Episode 102: Dissonant run. (task=mountaincar_cont) Score: -3.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.56/0.59/0.66/0.73/0.77
+    V/R: 321/678 | CohHead: pred=12.0 loss=0.006 | PredHead: scorê=25.5 L̂=0.553 (target=0.328, loss=0.08611)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.086, "raw_recent_avg": 43.1}, "pendulum": {"mastered": false, "norm_avg": 0.79, "raw_recent_avg": -336.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.485, "raw_recent_avg": -3.0}}
+Episode 103: Dissonant run. (task=mountaincar_cont) Score: -5.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.59/0.63/0.67/0.70/0.76
+    V/R: 341/658 | CohHead: pred=12.3 loss=0.007 | PredHead: scorê=25.2 L̂=0.550 (target=0.318, loss=0.09119)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.086, "raw_recent_avg": 43.1}, "pendulum": {"mastered": false, "norm_avg": 0.79, "raw_recent_avg": -336.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.485, "raw_recent_avg": -2.9}}
+Episode 104: Dissonant run. (task=pendulum) Score: -240.2. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.00/0.00/0.03/2.12/3.47
+    V/R: 72/128 | CohHead: pred=-751.0 loss=0.104 | PredHead: scorê=-705.6 L̂=0.452 (target=0.738, loss=0.14570)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.086, "raw_recent_avg": 43.1}, "pendulum": {"mastered": true, "norm_avg": 0.811, "raw_recent_avg": -301.8}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.485, "raw_recent_avg": -2.9}}
+Episode 105: Coherent run. (task=cartpole) Score: 52.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.08/0.09/0.14/0.51/0.68
+    V/R: 16/36 | CohHead: pred=124.4 loss=0.021 | PredHead: scorê=117.0 L̂=0.140 (target=0.054, loss=0.02594)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.087, "raw_recent_avg": 43.5}, "pendulum": {"mastered": true, "norm_avg": 0.811, "raw_recent_avg": -301.8}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.485, "raw_recent_avg": -2.9}}
+Episode 106: Dissonant run. (task=cartpole) Score: 43.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.07/0.07/0.12/0.75/1.58
+    V/R: 17/26 | CohHead: pred=119.1 loss=0.024 | PredHead: scorê=111.4 L̂=0.129 (target=0.024, loss=0.02704)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.088, "raw_recent_avg": 44.1}, "pendulum": {"mastered": true, "norm_avg": 0.811, "raw_recent_avg": -301.8}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.485, "raw_recent_avg": -2.9}}
+Episode 107: Dissonant run. (task=mountaincar_cont) Score: -5.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.63/0.67/0.71/0.77
+    V/R: 357/642 | CohHead: pred=13.5 loss=0.009 | PredHead: scorê=24.6 L̂=0.541 (target=0.311, loss=0.08881)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.088, "raw_recent_avg": 44.1}, "pendulum": {"mastered": true, "norm_avg": 0.811, "raw_recent_avg": -301.8}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.486, "raw_recent_avg": -2.8}}
+Episode 108: Dissonant run. (task=cartpole) Score: 52.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.09/0.11/0.18/0.49/0.74
+    V/R: 15/37 | CohHead: pred=122.0 loss=0.020 | PredHead: scorê=114.1 L̂=0.135 (target=0.045, loss=0.02344)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.09, "raw_recent_avg": 45.0}, "pendulum": {"mastered": true, "norm_avg": 0.811, "raw_recent_avg": -301.8}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.486, "raw_recent_avg": -2.8}}
+Episode 109: Dissonant run. (task=pendulum) Score: -226.7. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.00/0.01/0.02/2.19/3.41
+    V/R: 70/130 | CohHead: pred=-733.5 loss=0.101 | PredHead: scorê=-710.3 L̂=0.443 (target=0.752, loss=0.16248)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.09, "raw_recent_avg": 45.0}, "pendulum": {"mastered": true, "norm_avg": 0.828, "raw_recent_avg": -274.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.486, "raw_recent_avg": -2.8}}
+Episode 110: Dissonant run. (task=mountaincar_cont) Score: -11.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.54/0.59/0.66/0.72/0.79
+    V/R: 346/653 | CohHead: pred=13.9 loss=0.016 | PredHead: scorê=23.6 L̂=0.533 (target=0.276, loss=0.09918)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.09, "raw_recent_avg": 45.0}, "pendulum": {"mastered": true, "norm_avg": 0.828, "raw_recent_avg": -274.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.1}}
+Episode 111: Dissonant run. (task=cartpole) Score: 28.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.06/0.12/0.22/1.22/1.84
+    V/R: 10/18 | CohHead: pred=115.3 loss=0.032 | PredHead: scorê=106.6 L̂=0.119 (target=0.000, loss=0.03226)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.088, "raw_recent_avg": 44.0}, "pendulum": {"mastered": true, "norm_avg": 0.828, "raw_recent_avg": -274.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.1}}
+Episode 112: Dissonant run. (task=cartpole) Score: 80.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.06/0.06/0.17/0.72/1.97
+    V/R: 29/51 | CohHead: pred=122.2 loss=0.008 | PredHead: scorê=113.0 L̂=0.130 (target=0.084, loss=0.00710)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.092, "raw_recent_avg": 46.2}, "pendulum": {"mastered": true, "norm_avg": 0.828, "raw_recent_avg": -274.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.1}}
+Episode 113: Dissonant run. (task=cartpole) Score: 54.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.04/0.18/0.98/2.14
+    V/R: 22/32 | CohHead: pred=113.7 loss=0.015 | PredHead: scorê=104.4 L̂=0.115 (target=0.014, loss=0.01549)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.094, "raw_recent_avg": 46.8}, "pendulum": {"mastered": true, "norm_avg": 0.828, "raw_recent_avg": -274.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.1}}
+Episode 114: Dissonant run. (task=cartpole) Score: 31.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.10/0.18/0.25/1.24/1.94
+    V/R: 12/19 | CohHead: pred=109.7 loss=0.026 | PredHead: scorê=103.0 L̂=0.111 (target=0.000, loss=0.02772)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.093, "raw_recent_avg": 46.4}, "pendulum": {"mastered": true, "norm_avg": 0.828, "raw_recent_avg": -274.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.1}}
+Episode 115: Dissonant run. (task=mountaincar_cont) Score: -7.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.64/0.66/0.70/0.75
+    V/R: 319/680 | CohHead: pred=12.8 loss=0.010 | PredHead: scorê=21.1 L̂=0.516 (target=0.288, loss=0.07877)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.093, "raw_recent_avg": 46.4}, "pendulum": {"mastered": true, "norm_avg": 0.828, "raw_recent_avg": -274.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.3}}
+Episode 116: Dissonant run. (task=cartpole) Score: 39.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.05/0.09/0.19/1.14/2.02
+    V/R: 17/22 | CohHead: pred=103.3 loss=0.018 | PredHead: scorê=97.6 L̂=0.100 (target=0.000, loss=0.01872)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.094, "raw_recent_avg": 46.8}, "pendulum": {"mastered": true, "norm_avg": 0.828, "raw_recent_avg": -274.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.3}}
+Episode 117: Dissonant run. (task=cartpole) Score: 44.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.09/0.20/1.14/2.15
+    V/R: 17/27 | CohHead: pred=103.8 loss=0.016 | PredHead: scorê=98.1 L̂=0.101 (target=0.000, loss=0.01679)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.093, "raw_recent_avg": 46.7}, "pendulum": {"mastered": true, "norm_avg": 0.828, "raw_recent_avg": -274.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.3}}
+Episode 118: Dissonant run. (task=cartpole) Score: 44.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.10/0.25/1.07/2.05
+    V/R: 17/27 | CohHead: pred=101.7 loss=0.014 | PredHead: scorê=96.4 L̂=0.097 (target=0.000, loss=0.01574)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.095, "raw_recent_avg": 47.5}, "pendulum": {"mastered": true, "norm_avg": 0.828, "raw_recent_avg": -274.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.3}}
+Episode 119: Dissonant run. (task=mountaincar_cont) Score: -5.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.64/0.70/0.73/0.77
+    V/R: 341/658 | CohHead: pred=11.1 loss=0.007 | PredHead: scorê=17.1 L̂=0.490 (target=0.285, loss=0.06855)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.095, "raw_recent_avg": 47.5}, "pendulum": {"mastered": true, "norm_avg": 0.828, "raw_recent_avg": -274.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.3}}
+Episode 120: Dissonant run. (task=pendulum) Score: -121.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.00/0.00/0.03/0.73/3.44
+    V/R: 60/140 | CohHead: pred=-730.0 loss=0.145 | PredHead: scorê=-757.5 L̂=0.402 (target=0.852, loss=0.29670)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.095, "raw_recent_avg": 47.5}, "pendulum": {"mastered": true, "norm_avg": 0.851, "raw_recent_avg": -238.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.3}}
+Episode 121: Dissonant run. (task=cartpole) Score: 68.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.07/0.09/0.17/0.64/1.79
+    V/R: 20/48 | CohHead: pred=102.9 loss=0.005 | PredHead: scorê=97.8 L̂=0.102 (target=0.058, loss=0.00702)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.098, "raw_recent_avg": 48.9}, "pendulum": {"mastered": true, "norm_avg": 0.851, "raw_recent_avg": -238.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.3}}
+Episode 122: Dissonant run. (task=mountaincar_cont) Score: -2.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.53/0.56/0.66/0.75/0.81
+    V/R: 364/635 | CohHead: pred=11.3 loss=0.005 | PredHead: scorê=15.7 L̂=0.476 (target=0.302, loss=0.04865)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.098, "raw_recent_avg": 48.9}, "pendulum": {"mastered": true, "norm_avg": 0.851, "raw_recent_avg": -238.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.4}}
+Episode 123: Dissonant run. (task=mountaincar_cont) Score: -3.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.58/0.63/0.67/0.72/0.77
+    V/R: 336/663 | CohHead: pred=10.6 loss=0.005 | PredHead: scorê=15.2 L̂=0.475 (target=0.293, loss=0.05162)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.098, "raw_recent_avg": 48.9}, "pendulum": {"mastered": true, "norm_avg": 0.851, "raw_recent_avg": -238.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.4}}
+Episode 124: Dissonant run. (task=cartpole) Score: 83.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.09/0.11/0.19/0.49/1.99
+    V/R: 31/52 | CohHead: pred=98.0 loss=0.001 | PredHead: scorê=95.2 L̂=0.094 (target=0.085, loss=0.00290)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.102, "raw_recent_avg": 51.1}, "pendulum": {"mastered": true, "norm_avg": 0.851, "raw_recent_avg": -238.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.4}}
+Episode 125: Dissonant run. (task=cartpole) Score: 35.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.11/0.16/0.24/1.19/1.97
+    V/R: 15/20 | CohHead: pred=87.5 loss=0.012 | PredHead: scorê=87.8 L̂=0.075 (target=0.000, loss=0.01422)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.102, "raw_recent_avg": 51.1}, "pendulum": {"mastered": true, "norm_avg": 0.851, "raw_recent_avg": -238.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.4}}
+    Top-15 Norm: [(np.float64(1.0), np.str_('pendulum'), 0), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(0.93), np.str_('pendulum'), -114), (np.float64(0.93), np.str_('pendulum'), -116), (np.float64(0.93), np.str_('pendulum'), -118), (np.float64(0.93), np.str_('pendulum'), -119), (np.float64(0.92), np.str_('pendulum'), -120), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -125), (np.float64(0.92), np.str_('pendulum'), -126), (np.float64(0.86), np.str_('pendulum'), -226)] | avg_norm=0.94 | dyn_thr_norm=0.70
+Episode 126: Dissonant run. (task=cartpole) Score: 127.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.04/0.06/0.14/0.30/2.08
+    V/R: 42/85 | CohHead: pred=109.2 loss=0.001 | PredHead: scorê=105.2 L̂=0.109 (target=0.190, loss=0.01082)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.111, "raw_recent_avg": 55.3}, "pendulum": {"mastered": true, "norm_avg": 0.851, "raw_recent_avg": -238.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.4}}
+Episode 127: Dissonant run. (task=mountaincar_cont) Score: -3.2. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.64/0.67/0.70/0.76
+    V/R: 354/645 | CohHead: pred=9.7 loss=0.004 | PredHead: scorê=12.7 L̂=0.455 (target=0.290, loss=0.04067)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.111, "raw_recent_avg": 55.3}, "pendulum": {"mastered": true, "norm_avg": 0.851, "raw_recent_avg": -238.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.4}}
+Episode 128: Dissonant run. (task=mountaincar_cont) Score: -2.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.62/0.65/0.67/0.70/0.76
+    V/R: 348/651 | CohHead: pred=9.2 loss=0.004 | PredHead: scorê=12.0 L̂=0.450 (target=0.289, loss=0.03829)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.111, "raw_recent_avg": 55.3}, "pendulum": {"mastered": true, "norm_avg": 0.851, "raw_recent_avg": -238.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.5}}
+Episode 129: Dissonant run. (task=mountaincar_cont) Score: -3.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.58/0.61/0.66/0.73/0.79
+    V/R: 345/654 | CohHead: pred=8.7 loss=0.004 | PredHead: scorê=11.1 L̂=0.443 (target=0.284, loss=0.03570)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.111, "raw_recent_avg": 55.3}, "pendulum": {"mastered": true, "norm_avg": 0.851, "raw_recent_avg": -238.6}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 130: Dissonant run. (task=pendulum) Score: -125.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.01/0.01/0.02/0.74/3.75
+    V/R: 64/136 | CohHead: pred=-745.1 loss=0.151 | PredHead: scorê=-787.8 L̂=0.366 (target=0.845, loss=0.33548)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.111, "raw_recent_avg": 55.3}, "pendulum": {"mastered": true, "norm_avg": 0.866, "raw_recent_avg": -214.1}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 131: Dissonant run. (task=pendulum) Score: -121.7. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.01/0.02/0.03/0.66/3.71
+    V/R: 64/136 | CohHead: pred=-736.7 loss=0.151 | PredHead: scorê=-785.4 L̂=0.365 (target=0.849, loss=0.34071)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.111, "raw_recent_avg": 55.3}, "pendulum": {"mastered": true, "norm_avg": 0.882, "raw_recent_avg": -189.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 132: Dissonant run. (task=cartpole) Score: 140.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.14/0.37/0.86/1.13
+    V/R: 47/93 | CohHead: pred=111.0 loss=0.004 | PredHead: scorê=101.8 L̂=0.096 (target=0.144, loss=0.00699)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.12, "raw_recent_avg": 59.9}, "pendulum": {"mastered": true, "norm_avg": 0.882, "raw_recent_avg": -189.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 133: Dissonant run. (task=pendulum) Score: -120.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.03/0.04/0.62/3.36
+    V/R: 78/122 | CohHead: pred=-722.4 loss=0.146 | PredHead: scorê=-769.4 L̂=0.368 (target=0.844, loss=0.32972)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.12, "raw_recent_avg": 59.9}, "pendulum": {"mastered": true, "norm_avg": 0.895, "raw_recent_avg": -168.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 134: Dissonant run. (task=mountaincar_cont) Score: -3.7. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.62/0.65/0.67/0.72/0.81
+    V/R: 338/661 | CohHead: pred=11.6 loss=0.005 | PredHead: scorê=14.3 L̂=0.449 (target=0.273, loss=0.03791)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.12, "raw_recent_avg": 59.9}, "pendulum": {"mastered": true, "norm_avg": 0.895, "raw_recent_avg": -168.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.6}}
+Episode 135: Dissonant run. (task=mountaincar_cont) Score: -3.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.57/0.59/0.67/0.76/0.80
+    V/R: 373/626 | CohHead: pred=12.6 loss=0.006 | PredHead: scorê=15.8 L̂=0.452 (target=0.277, loss=0.03672)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.12, "raw_recent_avg": 59.9}, "pendulum": {"mastered": true, "norm_avg": 0.895, "raw_recent_avg": -168.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.6}}
+Episode 136: Dissonant run. (task=mountaincar_cont) Score: -2.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.65/0.67/0.69/0.74
+    V/R: 332/667 | CohHead: pred=12.6 loss=0.005 | PredHead: scorê=16.8 L̂=0.457 (target=0.279, loss=0.03643)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.12, "raw_recent_avg": 59.9}, "pendulum": {"mastered": true, "norm_avg": 0.895, "raw_recent_avg": -168.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.6}}
+Episode 137: Dissonant run. (task=pendulum) Score: -222.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.01/0.01/0.04/2.13/3.28
+    V/R: 73/127 | CohHead: pred=-728.5 loss=0.103 | PredHead: scorê=-731.4 L̂=0.384 (target=0.725, loss=0.20486)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.12, "raw_recent_avg": 59.9}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.6}}
+Episode 138: Dissonant run. (task=cartpole) Score: 85.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.01/0.09/0.18/0.45/0.77
+    V/R: 36/49 | CohHead: pred=94.6 loss=0.000 | PredHead: scorê=96.9 L̂=0.087 (target=0.097, loss=0.00548)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.125, "raw_recent_avg": 62.4}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.6}}
+Episode 139: Dissonant run. (task=mountaincar_cont) Score: -1.9. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.64/0.67/0.69/0.77
+    V/R: 353/646 | CohHead: pred=14.8 loss=0.007 | PredHead: scorê=20.2 L̂=0.462 (target=0.278, loss=0.03888)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.125, "raw_recent_avg": 62.4}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.6}}
+Episode 140: Dissonant run. (task=mountaincar_cont) Score: -2.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.63/0.66/0.71/0.77
+    V/R: 369/630 | CohHead: pred=15.2 loss=0.008 | PredHead: scorê=21.0 L̂=0.462 (target=0.274, loss=0.04039)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.125, "raw_recent_avg": 62.4}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 141: Dissonant run. (task=cartpole) Score: 141.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.08/0.12/0.30/0.65/1.20
+    V/R: 45/96 | CohHead: pred=120.2 loss=0.002 | PredHead: scorê=115.4 L̂=0.112 (target=0.168, loss=0.00604)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.133, "raw_recent_avg": 66.5}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 142: Dissonant run. (task=cartpole) Score: 74.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.09/0.15/0.33/0.65/0.91
+    V/R: 23/51 | CohHead: pred=100.5 loss=0.003 | PredHead: scorê=98.7 L̂=0.088 (target=0.030, loss=0.00519)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.132, "raw_recent_avg": 66.1}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 143: Dissonant run. (task=cartpole) Score: 146.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.09/0.11/0.23/0.59/1.13
+    V/R: 52/94 | CohHead: pred=120.0 loss=0.003 | PredHead: scorê=119.0 L̂=0.114 (target=0.196, loss=0.00989)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.141, "raw_recent_avg": 70.4}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 144: Dissonant run. (task=cartpole) Score: 92.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.07/0.13/0.35/0.92/1.16
+    V/R: 27/65 | CohHead: pred=109.0 loss=0.001 | PredHead: scorê=104.3 L̂=0.091 (target=0.036, loss=0.00221)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.144, "raw_recent_avg": 72.1}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 145: Dissonant run. (task=cartpole) Score: 92.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.07/0.16/0.40/0.89/1.16
+    V/R: 35/57 | CohHead: pred=104.0 loss=0.001 | PredHead: scorê=101.3 L̂=0.085 (target=0.032, loss=0.00174)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.144, "raw_recent_avg": 72.0}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 146: Dissonant run. (task=cartpole) Score: 132.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.06/0.08/0.29/0.83/1.48
+    V/R: 49/83 | CohHead: pred=116.4 loss=0.001 | PredHead: scorê=113.5 L̂=0.104 (target=0.137, loss=0.00290)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.15, "raw_recent_avg": 74.8}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 147: Dissonant run. (task=mountaincar_cont) Score: -3.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.62/0.66/0.72/0.81
+    V/R: 356/643 | CohHead: pred=16.4 loss=0.010 | PredHead: scorê=22.4 L̂=0.450 (target=0.259, loss=0.04150)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.15, "raw_recent_avg": 74.8}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.6}}
+Episode 148: Dissonant run. (task=mountaincar_cont) Score: -2.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.53/0.57/0.64/0.75/0.81
+    V/R: 369/630 | CohHead: pred=16.5 loss=0.009 | PredHead: scorê=22.1 L̂=0.445 (target=0.268, loss=0.03597)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.15, "raw_recent_avg": 74.8}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.7}}
+Episode 149: Dissonant run. (task=cartpole) Score: 133.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.11/0.29/0.85/1.21
+    V/R: 48/85 | CohHead: pred=117.7 loss=0.001 | PredHead: scorê=113.6 L̂=0.101 (target=0.129, loss=0.00257)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.155, "raw_recent_avg": 77.7}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.7}}
+Episode 150: Coherent run. (task=cartpole) Score: 215.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.01/0.04/0.13/0.50/0.98
+    V/R: 68/147 | CohHead: pred=150.1 loss=0.017 | PredHead: scorê=145.2 L̂=0.145 (target=0.363, loss=0.05432)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.165, "raw_recent_avg": 82.4}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.7}}
+    Top-15 Norm: [(np.float64(1.0), np.str_('pendulum'), 0), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(0.93), np.str_('pendulum'), -114), (np.float64(0.93), np.str_('pendulum'), -116), (np.float64(0.93), np.str_('pendulum'), -118), (np.float64(0.93), np.str_('pendulum'), -119), (np.float64(0.92), np.str_('pendulum'), -120), (np.float64(0.92), np.str_('pendulum'), -120), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -125)] | avg_norm=0.94 | dyn_thr_norm=0.70
+Episode 151: Dissonant run. (task=cartpole) Score: 147.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.05/0.07/0.27/1.04/1.46
+    V/R: 49/98 | CohHead: pred=125.4 loss=0.002 | PredHead: scorê=118.0 L̂=0.105 (target=0.148, loss=0.00473)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.174, "raw_recent_avg": 87.1}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.7}}
+Episode 152: Dissonant run. (task=cartpole) Score: 112.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.04/0.12/0.29/0.75/1.14
+    V/R: 42/70 | CohHead: pred=111.9 loss=0.000 | PredHead: scorê=108.1 L̂=0.091 (target=0.093, loss=0.00093)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.179, "raw_recent_avg": 89.5}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.7}}
+Episode 153: Dissonant run. (task=mountaincar_cont) Score: -1.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.64/0.66/0.70/0.76
+    V/R: 355/644 | CohHead: pred=16.0 loss=0.008 | PredHead: scorê=19.6 L̂=0.424 (target=0.257, loss=0.03086)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.179, "raw_recent_avg": 89.5}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.6}}
+Episode 154: Dissonant run. (task=mountaincar_cont) Score: -3.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.64/0.66/0.67/0.70/0.76
+    V/R: 346/653 | CohHead: pred=15.6 loss=0.009 | PredHead: scorê=18.9 L̂=0.419 (target=0.245, loss=0.03362)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.179, "raw_recent_avg": 89.5}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.6}}
+Episode 155: Dissonant run. (task=cartpole) Score: 206.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.04/0.06/0.20/0.81/1.03
+    V/R: 77/129 | CohHead: pred=143.0 loss=0.016 | PredHead: scorê=138.3 L̂=0.127 (target=0.295, loss=0.03554)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.192, "raw_recent_avg": 96.0}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.6}}
+Episode 156: Dissonant run. (task=mountaincar_cont) Score: -1.9. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.62/0.64/0.66/0.70/0.75
+    V/R: 353/646 | CohHead: pred=15.3 loss=0.008 | PredHead: scorê=17.3 L̂=0.406 (target=0.252, loss=0.02579)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.192, "raw_recent_avg": 96.0}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.6}}
+Episode 157: Dissonant run. (task=mountaincar_cont) Score: -1.7. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.57/0.59/0.64/0.74/0.78
+    V/R: 325/674 | CohHead: pred=14.7 loss=0.007 | PredHead: scorê=16.3 L̂=0.401 (target=0.257, loss=0.02167)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.192, "raw_recent_avg": 96.0}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.6}}
+Episode 158: Coherent run. (task=cartpole) Score: 372.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.04/0.12/0.56/1.23
+    V/R: 134/238 | CohHead: pred=200.5 loss=0.120 | PredHead: scorê=195.9 L̂=0.208 (target=0.670, loss=0.25017)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.218, "raw_recent_avg": 108.8}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.6}}
+Episode 159: Dissonant run. (task=cartpole) Score: 131.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.11/0.24/0.62/1.09
+    V/R: 48/83 | CohHead: pred=122.6 loss=0.000 | PredHead: scorê=116.0 L̂=0.097 (target=0.147, loss=0.00482)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.226, "raw_recent_avg": 112.9}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.6}}
+Episode 160: Dissonant run. (task=cartpole) Score: 160.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.05/0.08/0.21/0.65/1.03
+    V/R: 60/100 | CohHead: pred=133.6 loss=0.003 | PredHead: scorê=126.4 L̂=0.108 (target=0.217, loss=0.01464)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.232, "raw_recent_avg": 116.1}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.6}}
+Episode 161: Dissonant run. (task=mountaincar_cont) Score: -1.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.64/0.66/0.70/0.76
+    V/R: 339/660 | CohHead: pred=14.7 loss=0.007 | PredHead: scorê=13.8 L̂=0.380 (target=0.247, loss=0.01799)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.232, "raw_recent_avg": 116.1}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 162: Dissonant run. (task=cartpole) Score: 179.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.06/0.13/0.28/0.82/1.09
+    V/R: 66/113 | CohHead: pred=142.4 loss=0.006 | PredHead: scorê=131.4 L̂=0.113 (target=0.220, loss=0.01655)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.242, "raw_recent_avg": 121.1}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 163: Dissonant run. (task=cartpole) Score: 225.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.05/0.18/0.80/1.15
+    V/R: 78/147 | CohHead: pred=161.1 loss=0.017 | PredHead: scorê=150.0 L̂=0.137 (target=0.334, loss=0.04679)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.258, "raw_recent_avg": 128.9}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 164: Dissonant run. (task=mountaincar_cont) Score: -2.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.63/0.66/0.71/0.76
+    V/R: 342/657 | CohHead: pred=14.7 loss=0.007 | PredHead: scorê=12.9 L̂=0.370 (target=0.239, loss=0.01688)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.258, "raw_recent_avg": 128.9}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 165: Dissonant run. (task=mountaincar_cont) Score: -1.7. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.62/0.66/0.71/0.76
+    V/R: 378/621 | CohHead: pred=14.8 loss=0.007 | PredHead: scorê=12.6 L̂=0.365 (target=0.241, loss=0.01538)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.258, "raw_recent_avg": 128.9}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 166: Dissonant run. (task=cartpole) Score: 162.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.05/0.14/0.34/0.98/1.27
+    V/R: 68/94 | CohHead: pred=140.7 loss=0.002 | PredHead: scorê=126.1 L̂=0.102 (target=0.145, loss=0.00615)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.268, "raw_recent_avg": 133.8}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 167: Dissonant run. (task=cartpole) Score: 388.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.01/0.03/0.14/0.72/1.17
+    V/R: 138/250 | CohHead: pred=218.4 loss=0.119 | PredHead: scorê=207.6 L̂=0.215 (target=0.686, loss=0.26050)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.295, "raw_recent_avg": 147.6}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.482, "raw_recent_avg": -3.5}}
+Episode 168: Dissonant run. (task=mountaincar_cont) Score: -2.2. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.62/0.66/0.71/0.80
+    V/R: 337/662 | CohHead: pred=14.6 loss=0.007 | PredHead: scorê=11.7 L̂=0.357 (target=0.234, loss=0.01415)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.295, "raw_recent_avg": 147.6}, "pendulum": {"mastered": true, "norm_avg": 0.905, "raw_recent_avg": -151.5}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.5}}
+Episode 169: Dissonant run. (task=pendulum) Score: -118.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.01/0.05/0.06/0.58/3.55
+    V/R: 65/135 | CohHead: pred=-666.8 loss=0.120 | PredHead: scorê=-720.8 L̂=0.329 (target=0.819, loss=0.33882)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.295, "raw_recent_avg": 147.6}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.5}}
+Episode 170: Dissonant run. (task=cartpole) Score: 228.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.04/0.12/0.30/1.21/1.55
+    V/R: 83/145 | CohHead: pred=172.8 loss=0.013 | PredHead: scorê=155.2 L̂=0.141 (target=0.258, loss=0.02839)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.31, "raw_recent_avg": 154.9}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.5}}
+Episode 171: Dissonant run. (task=mountaincar_cont) Score: -1.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.63/0.66/0.71/0.75
+    V/R: 318/681 | CohHead: pred=15.9 loss=0.007 | PredHead: scorê=13.9 L̂=0.362 (target=0.231, loss=0.01651)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.31, "raw_recent_avg": 154.9}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.483, "raw_recent_avg": -3.3}}
+Episode 172: Dissonant run. (task=mountaincar_cont) Score: -2.2. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.63/0.67/0.72/0.77
+    V/R: 330/669 | CohHead: pred=16.2 loss=0.008 | PredHead: scorê=14.7 L̂=0.363 (target=0.225, loss=0.01888)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.31, "raw_recent_avg": 154.9}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.484, "raw_recent_avg": -3.2}}
+Episode 173: Dissonant run. (task=mountaincar_cont) Score: -2.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.59/0.62/0.66/0.71/0.77
+    V/R: 376/623 | CohHead: pred=16.7 loss=0.009 | PredHead: scorê=15.3 L̂=0.361 (target=0.228, loss=0.01807)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.31, "raw_recent_avg": 154.9}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.486, "raw_recent_avg": -2.8}}
+Episode 174: Dissonant run. (task=mountaincar_cont) Score: -1.9. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.62/0.64/0.67/0.71/0.75
+    V/R: 365/634 | CohHead: pred=16.3 loss=0.008 | PredHead: scorê=15.2 L̂=0.358 (target=0.224, loss=0.01853)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.31, "raw_recent_avg": 154.9}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.487, "raw_recent_avg": -2.6}}
+Episode 175: Dissonant run. (task=mountaincar_cont) Score: -1.9. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.65/0.67/0.70/0.74
+    V/R: 345/654 | CohHead: pred=15.8 loss=0.008 | PredHead: scorê=14.8 L̂=0.355 (target=0.222, loss=0.01798)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.31, "raw_recent_avg": 154.9}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.5}}
+    Top-15 Norm: [(np.float64(1.0), np.str_('pendulum'), 0), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(0.93), np.str_('pendulum'), -114), (np.float64(0.93), np.str_('pendulum'), -116), (np.float64(0.93), np.str_('pendulum'), -118), (np.float64(0.93), np.str_('pendulum'), -118), (np.float64(0.93), np.str_('pendulum'), -119), (np.float64(0.92), np.str_('pendulum'), -120), (np.float64(0.92), np.str_('pendulum'), -120), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121)] | avg_norm=0.94 | dyn_thr_norm=0.71
+Episode 176: Dissonant run. (task=cartpole) Score: 434.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.01/0.03/0.15/0.87/1.31
+    V/R: 156/278 | CohHead: pred=244.9 loss=0.146 | PredHead: scorê=236.1 L̂=0.251 (target=0.749, loss=0.29936)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.339, "raw_recent_avg": 169.6}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.5}}
+Episode 177: Dissonant run. (task=cartpole) Score: 190.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.09/0.15/0.34/1.31/1.92
+    V/R: 66/124 | CohHead: pred=172.5 loss=0.001 | PredHead: scorê=152.0 L̂=0.132 (target=0.153, loss=0.00600)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.348, "raw_recent_avg": 173.8}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.5}}
+Episode 178: Dissonant run. (task=mountaincar_cont) Score: -2.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.59/0.61/0.65/0.71/0.77
+    V/R: 371/628 | CohHead: pred=16.4 loss=0.009 | PredHead: scorê=14.7 L̂=0.350 (target=0.219, loss=0.01722)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.348, "raw_recent_avg": 173.8}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.5}}
+Episode 179: Dissonant run. (task=mountaincar_cont) Score: -1.7. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.62/0.64/0.67/0.70/0.74
+    V/R: 363/636 | CohHead: pred=16.0 loss=0.008 | PredHead: scorê=14.5 L̂=0.348 (target=0.218, loss=0.01663)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.348, "raw_recent_avg": 173.8}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.4}}
+Episode 180: Dissonant run. (task=mountaincar_cont) Score: -1.7. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.63/0.66/0.70/0.77
+    V/R: 368/631 | CohHead: pred=15.7 loss=0.008 | PredHead: scorê=14.1 L̂=0.345 (target=0.218, loss=0.01572)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.348, "raw_recent_avg": 173.8}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.3}}
+Episode 181: Dissonant run. (task=mountaincar_cont) Score: -1.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.64/0.67/0.70/0.76
+    V/R: 339/660 | CohHead: pred=15.0 loss=0.007 | PredHead: scorê=13.3 L̂=0.341 (target=0.215, loss=0.01480)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.348, "raw_recent_avg": 173.8}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.3}}
+Episode 182: Dissonant run. (task=cartpole) Score: 369.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.06/0.21/0.57/1.23
+    V/R: 140/229 | CohHead: pred=237.4 loss=0.071 | PredHead: scorê=222.2 L̂=0.222 (target=0.627, loss=0.18458)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.374, "raw_recent_avg": 187.2}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.3}}
+Episode 183: Coherent run. (task=cartpole) Score: 500.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.09/0.17/0.29/0.47
+    V/R: 176/324 | CohHead: pred=271.7 loss=0.212 | PredHead: scorê=264.3 L̂=0.291 (target=0.924, loss=0.46117)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.404, "raw_recent_avg": 202.1}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.3}}
+Episode 184: Dissonant run. (task=mountaincar_cont) Score: -1.9. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.59/0.62/0.65/0.72/0.78
+    V/R: 345/654 | CohHead: pred=15.4 loss=0.007 | PredHead: scorê=12.9 L̂=0.336 (target=0.211, loss=0.01412)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.404, "raw_recent_avg": 202.1}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 185: Dissonant run. (task=pendulum) Score: -121.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.05/0.08/0.84/3.30
+    V/R: 78/122 | CohHead: pred=-642.6 loss=0.109 | PredHead: scorê=-677.7 L̂=0.328 (target=0.787, loss=0.30364)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.404, "raw_recent_avg": 202.1}, "pendulum": {"mastered": true, "norm_avg": 0.915, "raw_recent_avg": -136.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 186: Dissonant run. (task=cartpole) Score: 214.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.12/0.32/0.95/1.24
+    V/R: 74/140 | CohHead: pred=193.4 loss=0.002 | PredHead: scorê=175.7 L̂=0.159 (target=0.241, loss=0.01079)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.41, "raw_recent_avg": 205.1}, "pendulum": {"mastered": true, "norm_avg": 0.915, "raw_recent_avg": -136.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 187: Dissonant run. (task=cartpole) Score: 253.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.05/0.15/0.31/0.64/1.08
+    V/R: 90/163 | CohHead: pred=210.6 loss=0.008 | PredHead: scorê=196.0 L̂=0.187 (target=0.352, loss=0.03105)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.424, "raw_recent_avg": 211.8}, "pendulum": {"mastered": true, "norm_avg": 0.915, "raw_recent_avg": -136.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 188: Dissonant run. (task=pendulum) Score: -244.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.04/0.07/2.04/3.69
+    V/R: 64/136 | CohHead: pred=-646.7 loss=0.066 | PredHead: scorê=-655.0 L̂=0.342 (target=0.631, loss=0.17338)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.424, "raw_recent_avg": 211.8}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 189: Dissonant run. (task=mountaincar_cont) Score: -1.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.62/0.63/0.66/0.70/0.78
+    V/R: 385/614 | CohHead: pred=19.3 loss=0.010 | PredHead: scorê=20.6 L̂=0.361 (target=0.203, loss=0.02706)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.424, "raw_recent_avg": 211.8}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.1}}
+Episode 190: Dissonant run. (task=cartpole) Score: 329.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.06/0.24/0.72/1.41
+    V/R: 113/216 | CohHead: pred=246.6 loss=0.029 | PredHead: scorê=234.9 L̂=0.246 (target=0.521, loss=0.08253)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.439, "raw_recent_avg": 219.3}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.1}}
+Episode 191: Dissonant run. (task=cartpole) Score: 252.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.14/0.30/0.76/1.46
+    V/R: 68/184 | CohHead: pred=221.6 loss=0.004 | PredHead: scorê=210.1 L̂=0.216 (target=0.334, loss=0.01737)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.453, "raw_recent_avg": 226.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.1}}
+Episode 192: Dissonant run. (task=mountaincar_cont) Score: -1.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.64/0.66/0.70/0.75
+    V/R: 328/671 | CohHead: pred=21.3 loss=0.012 | PredHead: scorê=26.0 L̂=0.384 (target=0.200, loss=0.03861)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.453, "raw_recent_avg": 226.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 193: Dissonant run. (task=cartpole) Score: 413.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.04/0.08/0.20/0.93/1.61
+    V/R: 140/273 | CohHead: pred=269.7 loss=0.085 | PredHead: scorê=274.3 L̂=0.308 (target=0.666, loss=0.15093)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.474, "raw_recent_avg": 237.1}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 194: Dissonant run. (task=mountaincar_cont) Score: -2.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.59/0.63/0.66/0.71/0.79
+    V/R: 356/643 | CohHead: pred=22.8 loss=0.015 | PredHead: scorê=29.0 L̂=0.394 (target=0.192, loss=0.04899)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.474, "raw_recent_avg": 237.1}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 195: Dissonant run. (task=mountaincar_cont) Score: -4.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.62/0.66/0.71/0.77
+    V/R: 350/649 | CohHead: pred=22.9 loss=0.018 | PredHead: scorê=29.8 L̂=0.397 (target=0.184, loss=0.05524)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.474, "raw_recent_avg": 237.1}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.1}}
+Episode 196: Dissonant run. (task=cartpole) Score: 262.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.08/0.15/0.45/1.19/1.48
+    V/R: 82/180 | CohHead: pred=230.4 loss=0.004 | PredHead: scorê=223.8 L̂=0.236 (target=0.279, loss=0.00683)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": 243.9}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.1}}
+Episode 197: Dissonant run. (task=cartpole) Score: 282.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.07/0.11/0.27/0.84/1.36
+    V/R: 96/186 | CohHead: pred=244.1 loss=0.006 | PredHead: scorê=238.3 L̂=0.256 (target=0.397, loss=0.02098)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.503, "raw_recent_avg": 251.5}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.1}}
+Episode 198: Dissonant run. (task=cartpole) Score: 281.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.12/0.32/0.75/1.33
+    V/R: 93/188 | CohHead: pred=245.6 loss=0.006 | PredHead: scorê=239.9 L̂=0.259 (target=0.392, loss=0.01860)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.515, "raw_recent_avg": 257.5}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.1}}
+Episode 199: Dissonant run. (task=mountaincar_cont) Score: -1.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.63/0.65/0.71/0.76
+    V/R: 355/644 | CohHead: pred=23.9 loss=0.016 | PredHead: scorê=30.5 L̂=0.399 (target=0.190, loss=0.05254)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.515, "raw_recent_avg": 257.5}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.1}}
+Episode 200: Dissonant run. (task=mountaincar_cont) Score: -2.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.58/0.62/0.66/0.71/0.79
+    V/R: 362/637 | CohHead: pred=23.6 loss=0.018 | PredHead: scorê=30.0 L̂=0.397 (target=0.184, loss=0.05406)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.515, "raw_recent_avg": 257.5}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+    Top-15 Norm: [(1.0, np.str_('cartpole'), 500), (np.float64(1.0), np.str_('pendulum'), 0), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(0.93), np.str_('pendulum'), -114), (np.float64(0.93), np.str_('pendulum'), -116), (np.float64(0.93), np.str_('pendulum'), -118), (np.float64(0.93), np.str_('pendulum'), -118), (np.float64(0.93), np.str_('pendulum'), -119), (np.float64(0.92), np.str_('pendulum'), -120), (np.float64(0.92), np.str_('pendulum'), -120), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121)] | avg_norm=0.95 | dyn_thr_norm=0.71
+Episode 201: Dissonant run. (task=mountaincar_cont) Score: -2.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.54/0.57/0.64/0.75/0.81
+    V/R: 358/641 | CohHead: pred=23.2 loss=0.017 | PredHead: scorê=28.9 L̂=0.392 (target=0.188, loss=0.04946)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.515, "raw_recent_avg": 257.5}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 202: Coherent run. (task=cartpole) Score: 431.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.01/0.03/0.15/0.44/1.07
+    V/R: 161/270 | CohHead: pred=292.2 loss=0.078 | PredHead: scorê=298.2 L̂=0.343 (target=0.767, loss=0.17953)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.539, "raw_recent_avg": 269.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 203: Dissonant run. (task=mountaincar_cont) Score: -1.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.62/0.63/0.66/0.70/0.75
+    V/R: 375/624 | CohHead: pred=22.5 loss=0.015 | PredHead: scorê=26.0 L̂=0.380 (target=0.184, loss=0.04292)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.539, "raw_recent_avg": 269.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 204: Dissonant run. (task=mountaincar_cont) Score: -2.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.59/0.61/0.66/0.71/0.79
+    V/R: 354/645 | CohHead: pred=21.8 loss=0.015 | PredHead: scorê=24.4 L̂=0.375 (target=0.182, loss=0.04050)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.539, "raw_recent_avg": 269.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 205: Dissonant run. (task=mountaincar_cont) Score: -2.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.62/0.65/0.71/0.77
+    V/R: 364/635 | CohHead: pred=20.9 loss=0.015 | PredHead: scorê=22.4 L̂=0.366 (target=0.178, loss=0.03716)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.539, "raw_recent_avg": 269.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 206: Dissonant run. (task=mountaincar_cont) Score: -1.9. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.63/0.66/0.70/0.79
+    V/R: 378/621 | CohHead: pred=19.8 loss=0.013 | PredHead: scorê=19.9 L̂=0.355 (target=0.178, loss=0.03164)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.539, "raw_recent_avg": 269.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 207: Dissonant run. (task=mountaincar_cont) Score: -2.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.62/0.64/0.66/0.69/0.76
+    V/R: 349/650 | CohHead: pred=18.5 loss=0.012 | PredHead: scorê=16.9 L̂=0.345 (target=0.174, loss=0.02749)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.539, "raw_recent_avg": 269.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 208: Dissonant run. (task=cartpole) Score: 300.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.06/0.11/0.32/1.08/1.37
+    V/R: 105/195 | CohHead: pred=245.4 loss=0.012 | PredHead: scorê=236.4 L̂=0.246 (target=0.372, loss=0.02501)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.546, "raw_recent_avg": 272.8}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 209: Dissonant run. (task=cartpole) Score: 183.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.07/0.28/0.51/1.28/1.74
+    V/R: 73/110 | CohHead: pred=209.8 loss=0.003 | PredHead: scorê=183.0 L̂=0.164 (target=0.055, loss=0.00776)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.548, "raw_recent_avg": 274.2}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 210: Dissonant run. (task=mountaincar_cont) Score: -2.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.53/0.58/0.64/0.74/0.79
+    V/R: 338/661 | CohHead: pred=15.8 loss=0.009 | PredHead: scorê=9.4 L̂=0.317 (target=0.177, loss=0.01482)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.548, "raw_recent_avg": 274.2}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 211: Dissonant run. (task=mountaincar_cont) Score: -2.2. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.62/0.65/0.71/0.78
+    V/R: 335/664 | CohHead: pred=14.6 loss=0.008 | PredHead: scorê=6.9 L̂=0.307 (target=0.170, loss=0.01349)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.548, "raw_recent_avg": 274.2}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 212: Dissonant run. (task=cartpole) Score: 240.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.07/0.16/0.51/1.12/1.64
+    V/R: 79/161 | CohHead: pred=224.1 loss=0.001 | PredHead: scorê=202.6 L̂=0.189 (target=0.202, loss=0.00570)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.559, "raw_recent_avg": 279.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 213: Dissonant run. (task=mountaincar_cont) Score: -1.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.62/0.65/0.71/0.75
+    V/R: 321/678 | CohHead: pred=12.6 loss=0.006 | PredHead: scorê=2.8 L̂=0.291 (target=0.171, loss=0.00915)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.559, "raw_recent_avg": 279.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 214: Dissonant run. (task=mountaincar_cont) Score: -2.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.64/0.66/0.69/0.74
+    V/R: 330/669 | CohHead: pred=11.5 loss=0.005 | PredHead: scorê=1.0 L̂=0.282 (target=0.163, loss=0.00901)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.559, "raw_recent_avg": 279.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 215: Dissonant run. (task=mountaincar_cont) Score: -2.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.51/0.57/0.65/0.74/0.79
+    V/R: 346/653 | CohHead: pred=10.7 loss=0.005 | PredHead: scorê=-0.6 L̂=0.274 (target=0.169, loss=0.00636)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.559, "raw_recent_avg": 279.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 216: Dissonant run. (task=cartpole) Score: 304.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.06/0.32/0.98/1.66
+    V/R: 107/197 | CohHead: pred=241.0 loss=0.016 | PredHead: scorê=224.9 L̂=0.212 (target=0.392, loss=0.04375)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=5
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.567, "raw_recent_avg": 283.3}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.4}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 217: Coherent run. (task=pendulum) Score: -3.0. (Gold: True)
+    DR (min/p10/p50/p90/max): 0.04/0.04/0.05/0.22/0.41
+    V/R: 80/120 | CohHead: pred=-616.8 loss=0.148 | PredHead: scorê=-680.8 L̂=0.307 (target=0.955, loss=0.47692)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.567, "raw_recent_avg": 283.3}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 218: Dissonant run. (task=cartpole) Score: 334.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.04/0.07/0.24/0.96/1.40
+    V/R: 129/205 | CohHead: pred=251.2 loss=0.028 | PredHead: scorê=237.7 L̂=0.227 (target=0.463, loss=0.06909)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.564, "raw_recent_avg": 281.8}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -141.7}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 219: Dissonant run. (task=pendulum) Score: -123.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.06/0.06/0.07/0.85/3.50
+    V/R: 80/120 | CohHead: pred=-636.7 loss=0.105 | PredHead: scorê=-695.9 L̂=0.296 (target=0.768, loss=0.31274)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.564, "raw_recent_avg": 281.8}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -137.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 220: Dissonant run. (task=mountaincar_cont) Score: -2.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.57/0.58/0.64/0.74/0.80
+    V/R: 347/652 | CohHead: pred=10.8 loss=0.004 | PredHead: scorê=0.1 L̂=0.266 (target=0.161, loss=0.00648)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.564, "raw_recent_avg": 281.8}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -137.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 221: Dissonant run. (task=cartpole) Score: 241.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.07/0.19/0.48/1.14/1.67
+    V/R: 86/155 | CohHead: pred=225.5 loss=0.001 | PredHead: scorê=207.2 L̂=0.184 (target=0.197, loss=0.00466)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.572, "raw_recent_avg": 286.2}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -137.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 222: Dissonant run. (task=cartpole) Score: 424.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.05/0.29/0.79/1.48
+    V/R: 151/273 | CohHead: pred=280.4 loss=0.085 | PredHead: scorê=284.3 L̂=0.297 (target=0.667, loss=0.15575)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.593, "raw_recent_avg": 296.7}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -137.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 223: Dissonant run. (task=cartpole) Score: 299.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.05/0.09/0.36/1.06/1.64
+    V/R: 108/191 | CohHead: pred=248.0 loss=0.011 | PredHead: scorê=241.2 L̂=0.235 (target=0.362, loss=0.02254)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.603, "raw_recent_avg": 301.5}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -137.0}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 224: Dissonant run. (task=pendulum) Score: -126.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.04/0.05/1.01/3.46
+    V/R: 77/123 | CohHead: pred=-601.4 loss=0.092 | PredHead: scorê=-606.4 L̂=0.336 (target=0.768, loss=0.24779)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.603, "raw_recent_avg": 301.5}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 225: Dissonant run. (task=mountaincar_cont) Score: -2.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.57/0.61/0.65/0.72/0.81
+    V/R: 363/636 | CohHead: pred=14.9 loss=0.007 | PredHead: scorê=12.1 L̂=0.295 (target=0.149, loss=0.01889)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.603, "raw_recent_avg": 301.5}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+    Top-15 Norm: [(1.0, np.str_('cartpole'), 500), (np.float64(1.0), np.str_('pendulum'), 0), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(1.0), np.str_('pendulum'), -3), (np.float64(0.93), np.str_('pendulum'), -114), (np.float64(0.93), np.str_('pendulum'), -116), (np.float64(0.93), np.str_('pendulum'), -118), (np.float64(0.93), np.str_('pendulum'), -118), (np.float64(0.93), np.str_('pendulum'), -119), (np.float64(0.92), np.str_('pendulum'), -120), (np.float64(0.92), np.str_('pendulum'), -120), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121), (np.float64(0.92), np.str_('pendulum'), -121)] | avg_norm=0.95 | dyn_thr_norm=0.71
+Episode 226: Dissonant run. (task=mountaincar_cont) Score: -2.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.62/0.66/0.71/0.78
+    V/R: 367/632 | CohHead: pred=15.6 loss=0.007 | PredHead: scorê=14.9 L̂=0.303 (target=0.147, loss=0.02314)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.603, "raw_recent_avg": 301.5}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.1}}
+Episode 227: Dissonant run. (task=mountaincar_cont) Score: -1.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.65/0.67/0.69/0.77
+    V/R: 379/620 | CohHead: pred=16.0 loss=0.007 | PredHead: scorê=16.9 L̂=0.309 (target=0.146, loss=0.02645)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.603, "raw_recent_avg": 301.5}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 228: Dissonant run. (task=mountaincar_cont) Score: -2.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.59/0.61/0.65/0.72/0.81
+    V/R: 331/668 | CohHead: pred=16.4 loss=0.008 | PredHead: scorê=18.2 L̂=0.316 (target=0.146, loss=0.02896)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.603, "raw_recent_avg": 301.5}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 229: Dissonant run. (task=mountaincar_cont) Score: -1.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.64/0.65/0.67/0.69/0.75
+    V/R: 330/669 | CohHead: pred=16.2 loss=0.008 | PredHead: scorê=18.7 L̂=0.316 (target=0.141, loss=0.03075)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.603, "raw_recent_avg": 301.5}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 230: Dissonant run. (task=cartpole) Score: 229.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.11/0.19/0.51/1.05/1.24
+    V/R: 76/153 | CohHead: pred=235.5 loss=0.000 | PredHead: scorê=233.7 L̂=0.231 (target=0.162, loss=0.00266)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.603, "raw_recent_avg": 301.7}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 231: Dissonant run. (task=mountaincar_cont) Score: -1.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.64/0.66/0.70/0.75
+    V/R: 357/642 | CohHead: pred=16.0 loss=0.008 | PredHead: scorê=19.0 L̂=0.311 (target=0.139, loss=0.03063)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.603, "raw_recent_avg": 301.7}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 232: Dissonant run. (task=cartpole) Score: 332.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.05/0.11/0.31/1.08/1.50
+    V/R: 121/211 | CohHead: pred=265.9 loss=0.018 | PredHead: scorê=280.8 L̂=0.295 (target=0.408, loss=0.01743)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.617, "raw_recent_avg": 308.5}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 233: Dissonant run. (task=cartpole) Score: 288.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.08/0.14/0.36/1.06/1.24
+    V/R: 90/198 | CohHead: pred=255.5 loss=0.004 | PredHead: scorê=262.9 L̂=0.271 (target=0.315, loss=0.00380)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.609, "raw_recent_avg": 304.5}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 234: Dissonant run. (task=cartpole) Score: 327.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.07/0.11/0.32/1.01/1.28
+    V/R: 104/223 | CohHead: pred=267.7 loss=0.015 | PredHead: scorê=281.5 L̂=0.297 (target=0.410, loss=0.01579)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.617, "raw_recent_avg": 308.4}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 235: Dissonant run. (task=mountaincar_cont) Score: -1.2. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.64/0.66/0.70/0.74
+    V/R: 346/653 | CohHead: pred=16.2 loss=0.008 | PredHead: scorê=18.3 L̂=0.301 (target=0.137, loss=0.02722)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.617, "raw_recent_avg": 308.4}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 236: Dissonant run. (task=mountaincar_cont) Score: -1.2. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.65/0.66/0.67/0.68/0.72
+    V/R: 345/654 | CohHead: pred=15.8 loss=0.007 | PredHead: scorê=17.8 L̂=0.297 (target=0.132, loss=0.02739)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.617, "raw_recent_avg": 308.4}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 237: Dissonant run. (task=cartpole) Score: 424.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.04/0.06/0.19/0.87/1.69
+    V/R: 156/268 | CohHead: pred=299.9 loss=0.063 | PredHead: scorê=324.5 L̂=0.352 (target=0.660, loss=0.09425)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.616, "raw_recent_avg": 308.0}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 238: Dissonant run. (task=cartpole) Score: 361.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.04/0.09/0.22/0.94/1.40
+    V/R: 125/236 | CohHead: pred=284.7 loss=0.024 | PredHead: scorê=301.5 L̂=0.320 (target=0.510, loss=0.03564)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.63, "raw_recent_avg": 314.9}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 239: Dissonant run. (task=mountaincar_cont) Score: -1.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.65/0.66/0.67/0.68/0.73
+    V/R: 348/651 | CohHead: pred=16.2 loss=0.008 | PredHead: scorê=16.9 L̂=0.291 (target=0.126, loss=0.02593)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.63, "raw_recent_avg": 314.9}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 240: Dissonant run. (task=mountaincar_cont) Score: -2.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.64/0.65/0.67/0.69/0.73
+    V/R: 364/635 | CohHead: pred=16.1 loss=0.008 | PredHead: scorê=16.6 L̂=0.289 (target=0.122, loss=0.02610)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.63, "raw_recent_avg": 314.9}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 241: Dissonant run. (task=cartpole) Score: 418.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.05/0.18/0.77/1.54
+    V/R: 151/267 | CohHead: pred=304.9 loss=0.052 | PredHead: scorê=328.1 L̂=0.357 (target=0.666, loss=0.08939)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.634, "raw_recent_avg": 316.8}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 242: Dissonant run. (task=mountaincar_cont) Score: -2.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.57/0.59/0.64/0.72/0.78
+    V/R: 338/661 | CohHead: pred=16.4 loss=0.009 | PredHead: scorê=15.7 L̂=0.286 (target=0.126, loss=0.02323)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.634, "raw_recent_avg": 316.8}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -1.9}}
+Episode 243: Dissonant run. (task=cartpole) Score: 315.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.04/0.11/0.30/1.04/1.59
+    V/R: 109/206 | CohHead: pred=275.3 loss=0.007 | PredHead: scorê=286.3 L̂=0.298 (target=0.389, loss=0.00902)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.619, "raw_recent_avg": 309.4}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -1.9}}
+Episode 244: Dissonant run. (task=mountaincar_cont) Score: -2.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.62/0.64/0.66/0.69/0.76
+    V/R: 325/674 | CohHead: pred=15.8 loss=0.009 | PredHead: scorê=14.0 L̂=0.281 (target=0.116, loss=0.02255)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.619, "raw_recent_avg": 309.4}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 245: Dissonant run. (task=mountaincar_cont) Score: -2.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.65/0.67/0.69/0.75
+    V/R: 360/639 | CohHead: pred=15.3 loss=0.008 | PredHead: scorê=13.1 L̂=0.277 (target=0.114, loss=0.02132)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.619, "raw_recent_avg": 309.4}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -1.9}}
+Episode 246: Dissonant run. (task=cartpole) Score: 500.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.06/0.16/0.79/1.23
+    V/R: 167/333 | CohHead: pred=324.6 loss=0.125 | PredHead: scorê=360.2 L̂=0.405 (target=0.830, loss=0.18384)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.642, "raw_recent_avg": 320.9}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -1.9}}
+Episode 247: Coherent run. (task=cartpole) Score: 500.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.03/0.12/0.17/0.31
+    V/R: 190/310 | CohHead: pred=338.0 loss=0.108 | PredHead: scorê=365.2 L̂=0.418 (target=0.941, loss=0.24272)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.662, "raw_recent_avg": 330.8}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -1.9}}
+Episode 248: Dissonant run. (task=mountaincar_cont) Score: -1.9. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.62/0.67/0.70/0.78
+    V/R: 328/671 | CohHead: pred=15.9 loss=0.008 | PredHead: scorê=12.3 L̂=0.278 (target=0.113, loss=0.02010)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.662, "raw_recent_avg": 330.8}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -1.9}}
+Episode 249: Dissonant run. (task=mountaincar_cont) Score: -1.7. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.63/0.66/0.70/0.73
+    V/R: 363/636 | CohHead: pred=15.9 loss=0.008 | PredHead: scorê=12.8 L̂=0.279 (target=0.115, loss=0.02035)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.662, "raw_recent_avg": 330.8}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -1.9}}
+Episode 250: Dissonant run. (task=mountaincar_cont) Score: -3.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.59/0.62/0.66/0.71/0.78
+    V/R: 333/666 | CohHead: pred=15.5 loss=0.009 | PredHead: scorê=12.3 L̂=0.279 (target=0.105, loss=0.02268)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.662, "raw_recent_avg": 330.8}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+    Top-15 Norm: [(1.0, np.str_('cartpole'), 500), (1.0, np.str_('cartpole'), 500), (1.0, np.str_('cartpole'), 500), (np.float64(1.0), np.str_('pendulum'), 0), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(1.0), np.str_('pendulum'), -3), (np.float64(0.93), np.str_('pendulum'), -114), (np.float64(0.93), np.str_('pendulum'), -116), (np.float64(0.93), np.str_('pendulum'), -118), (np.float64(0.93), np.str_('pendulum'), -118), (np.float64(0.93), np.str_('pendulum'), -119), (np.float64(0.92), np.str_('pendulum'), -120), (np.float64(0.92), np.str_('pendulum'), -120), (np.float64(0.92), np.str_('pendulum'), -121)] | avg_norm=0.96 | dyn_thr_norm=0.72
+Episode 251: Dissonant run. (task=mountaincar_cont) Score: -2.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.64/0.66/0.69/0.73
+    V/R: 361/638 | CohHead: pred=14.9 loss=0.008 | PredHead: scorê=11.6 L̂=0.275 (target=0.106, loss=0.02061)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.662, "raw_recent_avg": 330.8}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 252: Dissonant run. (task=mountaincar_cont) Score: -2.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.55/0.58/0.64/0.73/0.79
+    V/R: 354/645 | CohHead: pred=14.4 loss=0.008 | PredHead: scorê=10.8 L̂=0.270 (target=0.113, loss=0.01753)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.662, "raw_recent_avg": 330.8}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 253: Dissonant run. (task=cartpole) Score: 500.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.04/0.17/0.69/1.06
+    V/R: 185/315 | CohHead: pred=337.3 loss=0.108 | PredHead: scorê=375.3 L̂=0.434 (target=0.849, loss=0.16492)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.675, "raw_recent_avg": 337.6}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.49, "raw_recent_avg": -2.0}}
+Episode 254: Dissonant run. (task=mountaincar_cont) Score: -5.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.64/0.66/0.69/0.75
+    V/R: 357/642 | CohHead: pred=13.3 loss=0.010 | PredHead: scorê=8.4 L̂=0.258 (target=0.083, loss=0.02148)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.675, "raw_recent_avg": 337.6}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 255: Dissonant run. (task=mountaincar_cont) Score: -2.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.63/0.67/0.70/0.76
+    V/R: 364/635 | CohHead: pred=12.7 loss=0.007 | PredHead: scorê=7.6 L̂=0.253 (target=0.098, loss=0.01591)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.675, "raw_recent_avg": 337.6}, "pendulum": {"mastered": true, "norm_avg": 0.914, "raw_recent_avg": -136.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 256: Dissonant run. (task=pendulum) Score: -255.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.07/0.08/0.09/2.11/3.70
+    V/R: 69/131 | CohHead: pred=-590.5 loss=0.044 | PredHead: scorê=-565.1 L̂=0.340 (target=0.525, loss=0.11124)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.675, "raw_recent_avg": 337.6}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -142.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 257: Dissonant run. (task=cartpole) Score: 433.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.05/0.18/0.93/1.30
+    V/R: 171/262 | CohHead: pred=322.3 loss=0.051 | PredHead: scorê=353.5 L̂=0.398 (target=0.644, loss=0.06069)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.69, "raw_recent_avg": 344.8}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -142.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 258: Dissonant run. (task=cartpole) Score: 413.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.07/0.25/0.94/1.40
+    V/R: 145/268 | CohHead: pred=318.2 loss=0.038 | PredHead: scorê=348.5 L̂=0.394 (target=0.598, loss=0.04157)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.69, "raw_recent_avg": 344.8}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -142.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 259: Dissonant run. (task=cartpole) Score: 325.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.07/0.11/0.33/1.01/1.54
+    V/R: 118/207 | CohHead: pred=294.8 loss=0.004 | PredHead: scorê=310.0 L̂=0.338 (target=0.393, loss=0.00346)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.695, "raw_recent_avg": 347.4}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -142.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 260: Dissonant run. (task=cartpole) Score: 273.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.05/0.12/0.37/1.03/1.51
+    V/R: 98/175 | CohHead: pred=276.3 loss=0.000 | PredHead: scorê=285.9 L̂=0.304 (target=0.256, loss=0.00187)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.694, "raw_recent_avg": 347.0}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -142.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 261: Dissonant run. (task=mountaincar_cont) Score: -2.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.61/0.62/0.66/0.71/0.78
+    V/R: 346/653 | CohHead: pred=14.4 loss=0.007 | PredHead: scorê=9.4 L̂=0.251 (target=0.093, loss=0.01791)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.694, "raw_recent_avg": 347.0}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -142.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 262: Dissonant run. (task=cartpole) Score: 285.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.09/0.16/0.36/1.01/1.60
+    V/R: 94/191 | CohHead: pred=284.4 loss=0.000 | PredHead: scorê=296.4 L̂=0.322 (target=0.285, loss=0.00129)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.694, "raw_recent_avg": 347.2}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -142.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 263: Coherent run. (task=cartpole) Score: 500.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.05/0.11/0.24/0.56
+    V/R: 182/318 | CohHead: pred=361.6 loss=0.079 | PredHead: scorê=406.7 L̂=0.488 (target=0.922, loss=0.14927)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.7, "raw_recent_avg": 349.9}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -142.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 264: Dissonant run. (task=cartpole) Score: 391.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.05/0.09/0.28/0.94/1.41
+    V/R: 133/258 | CohHead: pred=322.7 loss=0.020 | PredHead: scorê=354.7 L̂=0.410 (target=0.531, loss=0.01401)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.707, "raw_recent_avg": 353.6}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -142.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 265: Dissonant run. (task=mountaincar_cont) Score: -2.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.60/0.63/0.66/0.70/0.74
+    V/R: 323/676 | CohHead: pred=16.2 loss=0.008 | PredHead: scorê=11.8 L̂=0.259 (target=0.086, loss=0.02287)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.707, "raw_recent_avg": 353.6}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -142.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 266: Coherent run. (task=cartpole) Score: 500.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.02/0.04/0.15/0.22/0.54
+    V/R: 163/337 | CohHead: pred=368.4 loss=0.073 | PredHead: scorê=419.1 L̂=0.517 (target=0.917, loss=0.12367)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.732, "raw_recent_avg": 366.2}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -142.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.2}}
+Episode 267: Dissonant run. (task=mountaincar_cont) Score: -2.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.63/0.65/0.67/0.69/0.75
+    V/R: 328/671 | CohHead: pred=17.0 loss=0.010 | PredHead: scorê=13.3 L̂=0.267 (target=0.078, loss=0.02805)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.732, "raw_recent_avg": 366.2}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -142.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.3}}
+Episode 268: Dissonant run. (task=cartpole) Score: 446.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.00/0.03/0.21/0.89/1.29
+    V/R: 160/286 | CohHead: pred=351.8 loss=0.038 | PredHead: scorê=399.1 L̂=0.489 (target=0.678, loss=0.02924)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.749, "raw_recent_avg": 374.5}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -142.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.3}}
+Episode 269: Dissonant run. (task=cartpole) Score: 450.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.06/0.19/0.88/1.45
+    V/R: 145/305 | CohHead: pred=355.1 loss=0.039 | PredHead: scorê=405.0 L̂=0.502 (target=0.686, loss=0.02742)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.761, "raw_recent_avg": 380.3}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -142.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.489, "raw_recent_avg": -2.3}}
+Episode 270: Dissonant run. (task=mountaincar_cont) Score: -3.3. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.62/0.64/0.66/0.70/0.76
+    V/R: 365/634 | CohHead: pred=18.6 loss=0.012 | PredHead: scorê=16.1 L̂=0.280 (target=0.072, loss=0.03547)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.761, "raw_recent_avg": 380.3}, "pendulum": {"mastered": true, "norm_avg": 0.911, "raw_recent_avg": -142.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.3}}
+Episode 271: Dissonant run. (task=pendulum) Score: -229.2. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.04/0.11/0.15/2.13/3.40
+    V/R: 74/126 | CohHead: pred=-502.3 loss=0.031 | PredHead: scorê=-425.4 L̂=0.417 (target=0.537, loss=0.06078)
+    [GW] best=-1.2 (DR=0.03, task=pendulum) | window=6
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.761, "raw_recent_avg": 380.3}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.3}}
+Episode 272: Coherent run. (task=cartpole) Score: 500.0. (Gold: True)
+    DR (min/p10/p50/p90/max): 0.01/0.03/0.15/0.39/0.64
+    V/R: 189/311 | CohHead: pred=386.2 loss=0.055 | PredHead: scorê=445.8 L̂=0.576 (target=0.886, loss=0.06822)
+    [GW] best=500.0 (DR=0.18, task=cartpole) | window=7
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.774, "raw_recent_avg": 387.0}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.3}}
+Episode 273: Coherent run. (task=cartpole) Score: 500.0. (Gold: True)
+    DR (min/p10/p50/p90/max): 0.01/0.02/0.14/0.32/0.51
+    V/R: 170/330 | CohHead: pred=391.3 loss=0.051 | PredHead: scorê=453.4 L̂=0.596 (target=0.912, loss=0.06878)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.795, "raw_recent_avg": 397.3}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.3}}
+Episode 274: Dissonant run. (task=mountaincar_cont) Score: -2.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.59/0.62/0.66/0.71/0.76
+    V/R: 353/646 | CohHead: pred=22.7 loss=0.015 | PredHead: scorê=21.2 L̂=0.309 (target=0.074, loss=0.04735)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.795, "raw_recent_avg": 397.3}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.3}}
+Episode 275: Dissonant run. (task=cartpole) Score: 285.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.08/0.13/0.46/1.01/1.33
+    V/R: 105/180 | CohHead: pred=312.6 loss=0.003 | PredHead: scorê=338.1 L̂=0.415 (target=0.243, loss=0.02761)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.784, "raw_recent_avg": 391.8}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.3}}
+    Top-15 Norm: [(1.0, np.str_('cartpole'), 500), (1.0, np.str_('cartpole'), 500), (1.0, np.str_('cartpole'), 500), (1.0, np.str_('cartpole'), 500), (1.0, np.str_('cartpole'), 500), (1.0, np.str_('cartpole'), 500), (1.0, np.str_('cartpole'), 500), (1.0, np.str_('cartpole'), 500), (np.float64(1.0), np.str_('pendulum'), 0), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(1.0), np.str_('pendulum'), -1), (np.float64(1.0), np.str_('pendulum'), -3), (np.float64(0.93), np.str_('pendulum'), -114), (np.float64(0.93), np.str_('pendulum'), -116), (np.float64(0.93), np.str_('pendulum'), -118)] | avg_norm=0.99 | dyn_thr_norm=0.74
+Episode 276: Dissonant run. (task=mountaincar_cont) Score: -2.8. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.59/0.63/0.66/0.70/0.78
+    V/R: 316/683 | CohHead: pred=23.4 loss=0.017 | PredHead: scorê=21.7 L̂=0.316 (target=0.069, loss=0.05200)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.784, "raw_recent_avg": 391.8}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -146.9}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.3}}
+Episode 277: Dissonant run. (task=pendulum) Score: -126.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.05/0.11/0.17/0.85/3.41
+    V/R: 70/130 | CohHead: pred=-427.3 loss=0.037 | PredHead: scorê=-323.2 L̂=0.489 (target=0.690, loss=0.06817)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.784, "raw_recent_avg": 391.8}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -147.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.3}}
+Episode 278: Dissonant run. (task=cartpole) Score: 321.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.07/0.13/0.44/0.98/1.36
+    V/R: 113/208 | CohHead: pred=332.9 loss=0.000 | PredHead: scorê=363.3 L̂=0.462 (target=0.328, loss=0.01752)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.785, "raw_recent_avg": 392.6}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -147.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.3}}
+Episode 279: Dissonant run. (task=mountaincar_cont) Score: -3.4. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.64/0.66/0.67/0.69/0.74
+    V/R: 370/629 | CohHead: pred=24.1 loss=0.019 | PredHead: scorê=20.8 L̂=0.311 (target=0.054, loss=0.05650)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.785, "raw_recent_avg": 392.6}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -147.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.4}}
+Episode 280: Dissonant run. (task=mountaincar_cont) Score: -2.5. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.56/0.61/0.65/0.72/0.77
+    V/R: 361/638 | CohHead: pred=23.9 loss=0.018 | PredHead: scorê=19.6 L̂=0.305 (target=0.066, loss=0.04868)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.785, "raw_recent_avg": 392.6}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -147.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.4}}
+Episode 281: Dissonant run. (task=mountaincar_cont) Score: -1.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.51/0.56/0.65/0.75/0.81
+    V/R: 352/647 | CohHead: pred=23.3 loss=0.017 | PredHead: scorê=17.5 L̂=0.295 (target=0.076, loss=0.03932)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.785, "raw_recent_avg": 392.6}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -147.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.4}}
+Episode 282: Dissonant run. (task=cartpole) Score: 438.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.01/0.06/0.19/0.85/1.50
+    V/R: 156/282 | CohHead: pred=383.9 loss=0.012 | PredHead: scorê=433.7 L̂=0.580 (target=0.658, loss=0.00313)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.802, "raw_recent_avg": 401.0}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -147.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.4}}
+Episode 283: Dissonant run. (task=cartpole) Score: 309.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.04/0.11/0.33/1.03/1.69
+    V/R: 106/203 | CohHead: pred=332.3 loss=0.002 | PredHead: scorê=352.5 L̂=0.444 (target=0.329, loss=0.01526)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.8, "raw_recent_avg": 400.1}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -147.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.4}}
+Episode 284: Dissonant run. (task=cartpole) Score: 307.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.05/0.13/0.37/1.03/1.47
+    V/R: 105/202 | CohHead: pred=330.3 loss=0.002 | PredHead: scorê=347.0 L̂=0.433 (target=0.316, loss=0.01451)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.802, "raw_recent_avg": 400.8}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -147.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.4}}
+Episode 285: Dissonant run. (task=cartpole) Score: 342.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.03/0.10/0.32/0.97/1.40
+    V/R: 110/232 | CohHead: pred=345.7 loss=0.000 | PredHead: scorê=364.3 L̂=0.461 (target=0.409, loss=0.00385)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.803, "raw_recent_avg": 401.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -147.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.488, "raw_recent_avg": -2.4}}
+Episode 286: Dissonant run. (task=mountaincar_cont) Score: -3.6. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.55/0.58/0.64/0.73/0.78
+    V/R: 354/645 | CohHead: pred=19.4 loss=0.014 | PredHead: scorê=3.3 L̂=0.233 (target=0.056, loss=0.02084)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.803, "raw_recent_avg": 401.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -147.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.487, "raw_recent_avg": -2.5}}
+Episode 287: Dissonant run. (task=mountaincar_cont) Score: -3.7. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.57/0.63/0.66/0.70/0.76
+    V/R: 357/642 | CohHead: pred=17.7 loss=0.013 | PredHead: scorê=0.2 L̂=0.220 (target=0.046, loss=0.02005)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.803, "raw_recent_avg": 401.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -147.3}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.487, "raw_recent_avg": -2.6}}
+Episode 288: Dissonant run. (task=pendulum) Score: -117.1. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.07/0.08/0.12/0.51/3.51
+    V/R: 64/136 | CohHead: pred=-438.2 loss=0.040 | PredHead: scorê=-446.8 L̂=0.416 (target=0.721, loss=0.12657)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.803, "raw_recent_avg": 401.4}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -147.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.487, "raw_recent_avg": -2.6}}
+Episode 289: Dissonant run. (task=cartpole) Score: 457.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.01/0.04/0.17/0.84/1.61
+    V/R: 168/289 | CohHead: pred=391.3 loss=0.018 | PredHead: scorê=421.2 L̂=0.547 (target=0.705, loss=0.01782)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.806, "raw_recent_avg": 402.8}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -147.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.487, "raw_recent_avg": -2.6}}
+Episode 290: Dissonant run. (task=cartpole) Score: 316.0. (Gold: False)
+    DR (min/p10/p50/p90/max): 0.07/0.14/0.40/1.02/1.58
+    V/R: 111/205 | CohHead: pred=328.1 loss=0.001 | PredHead: scorê=330.7 L̂=0.395 (target=0.305, loss=0.00647)
+    [GW] best=500.0 (DR=0.14, task=cartpole) | window=8
+    Mastery: {"cartpole": {"mastered": false, "norm_avg": 0.802, "raw_recent_avg": 401.0}, "pendulum": {"mastered": true, "norm_avg": 0.908, "raw_recent_avg": -147.2}, "mountaincar_cont": {"mastered": false, "norm_avg": 0.487, "raw_recent_avg": -2.6}}

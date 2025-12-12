@@ -1,0 +1,1203 @@
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Skogsvätt_Agent> python Skogsvatt_pendulum_elite.py
+Using device: cuda
+[INIT] best_eval=-1146.55
+
+=== Generation 1/50 ===
+[Train] Gen 1 Ep 1/20 GlobalEp 1 | R_raw=-1408.91 | len=200 | actor_loss=0.020 | critic_loss=95363.266
+[Train] Gen 1 Ep 2/20 GlobalEp 2 | R_raw=-1739.74 | len=200 | actor_loss=-0.058 | critic_loss=147236.594
+[Train] Gen 1 Ep 3/20 GlobalEp 3 | R_raw=-1753.80 | len=200 | actor_loss=0.108 | critic_loss=145414.844
+[Train] Gen 1 Ep 4/20 GlobalEp 4 | R_raw=-1644.66 | len=200 | actor_loss=0.026 | critic_loss=129059.914
+[Train] Gen 1 Ep 5/20 GlobalEp 5 | R_raw=-1104.99 | len=200 | actor_loss=0.031 | critic_loss=53121.570
+[Train] Gen 1 Ep 6/20 GlobalEp 6 | R_raw=-1423.00 | len=200 | actor_loss=-0.022 | critic_loss=91244.930
+[Train] Gen 1 Ep 7/20 GlobalEp 7 | R_raw=-1203.91 | len=200 | actor_loss=-0.013 | critic_loss=67855.156
+[Train] Gen 1 Ep 8/20 GlobalEp 8 | R_raw=-1697.69 | len=200 | actor_loss=0.058 | critic_loss=135506.781
+[Train] Gen 1 Ep 9/20 GlobalEp 9 | R_raw=-885.98 | len=200 | actor_loss=-0.028 | critic_loss=36956.754
+[Train] Gen 1 Ep 10/20 GlobalEp 10 | R_raw=-969.31 | len=200 | actor_loss=0.005 | critic_loss=45512.539
+[Train] Gen 1 Ep 11/20 GlobalEp 11 | R_raw=-1323.20 | len=200 | actor_loss=0.072 | critic_loss=85709.719
+[Train] Gen 1 Ep 12/20 GlobalEp 12 | R_raw=-1269.67 | len=200 | actor_loss=0.051 | critic_loss=75414.016
+[Train] Gen 1 Ep 13/20 GlobalEp 13 | R_raw=-992.89 | len=200 | actor_loss=0.051 | critic_loss=53169.375
+[Train] Gen 1 Ep 14/20 GlobalEp 14 | R_raw=-925.74 | len=200 | actor_loss=0.069 | critic_loss=42126.059
+[Train] Gen 1 Ep 15/20 GlobalEp 15 | R_raw=-968.74 | len=200 | actor_loss=-0.096 | critic_loss=45506.801
+[Train] Gen 1 Ep 16/20 GlobalEp 16 | R_raw=-1642.85 | len=200 | actor_loss=0.010 | critic_loss=128338.297
+[Train] Gen 1 Ep 17/20 GlobalEp 17 | R_raw=-1093.82 | len=200 | actor_loss=-0.011 | critic_loss=55540.367
+[Train] Gen 1 Ep 18/20 GlobalEp 18 | R_raw=-886.51 | len=200 | actor_loss=-0.013 | critic_loss=36212.023
+[Train] Gen 1 Ep 19/20 GlobalEp 19 | R_raw=-901.71 | len=200 | actor_loss=-0.034 | critic_loss=37869.488
+[Train] Gen 1 Ep 20/20 GlobalEp 20 | R_raw=-927.75 | len=200 | actor_loss=-0.027 | critic_loss=44316.516
+[Eval] Gen 1 | avg_train=-1238.24 | avg_eval=-1185.37 | best_eval=-1146.55
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 2/50 ===
+[Train] Gen 2 Ep 1/20 GlobalEp 21 | R_raw=-1134.99 | len=200 | actor_loss=-0.002 | critic_loss=61564.430
+[Train] Gen 2 Ep 2/20 GlobalEp 22 | R_raw=-876.69 | len=200 | actor_loss=0.039 | critic_loss=42481.617
+[Train] Gen 2 Ep 3/20 GlobalEp 23 | R_raw=-868.05 | len=200 | actor_loss=0.026 | critic_loss=38130.121
+[Train] Gen 2 Ep 4/20 GlobalEp 24 | R_raw=-895.50 | len=200 | actor_loss=-0.057 | critic_loss=35238.820
+[Train] Gen 2 Ep 5/20 GlobalEp 25 | R_raw=-902.22 | len=200 | actor_loss=0.004 | critic_loss=37680.723
+[Train] Gen 2 Ep 6/20 GlobalEp 26 | R_raw=-1338.70 | len=200 | actor_loss=-0.032 | critic_loss=86226.539
+[Train] Gen 2 Ep 7/20 GlobalEp 27 | R_raw=-1199.64 | len=200 | actor_loss=-0.029 | critic_loss=68904.008
+[Train] Gen 2 Ep 8/20 GlobalEp 28 | R_raw=-1569.63 | len=200 | actor_loss=-0.051 | critic_loss=116757.055
+[Train] Gen 2 Ep 9/20 GlobalEp 29 | R_raw=-886.93 | len=200 | actor_loss=0.018 | critic_loss=40050.047
+[Train] Gen 2 Ep 10/20 GlobalEp 30 | R_raw=-887.39 | len=200 | actor_loss=0.017 | critic_loss=40453.145
+[Train] Gen 2 Ep 11/20 GlobalEp 31 | R_raw=-1189.52 | len=200 | actor_loss=-0.048 | critic_loss=65772.820
+[Train] Gen 2 Ep 12/20 GlobalEp 32 | R_raw=-1393.81 | len=200 | actor_loss=0.102 | critic_loss=91287.195
+[Train] Gen 2 Ep 13/20 GlobalEp 33 | R_raw=-877.62 | len=200 | actor_loss=-0.042 | critic_loss=33867.359
+[Train] Gen 2 Ep 14/20 GlobalEp 34 | R_raw=-974.18 | len=200 | actor_loss=0.030 | critic_loss=46450.879
+[Train] Gen 2 Ep 15/20 GlobalEp 35 | R_raw=-1749.52 | len=200 | actor_loss=-0.015 | critic_loss=144095.562
+[Train] Gen 2 Ep 16/20 GlobalEp 36 | R_raw=-1331.51 | len=200 | actor_loss=-0.027 | critic_loss=81844.000
+[Train] Gen 2 Ep 17/20 GlobalEp 37 | R_raw=-840.11 | len=200 | actor_loss=-0.113 | critic_loss=30840.539
+[Train] Gen 2 Ep 18/20 GlobalEp 38 | R_raw=-958.87 | len=200 | actor_loss=-0.006 | critic_loss=41151.863
+[Train] Gen 2 Ep 19/20 GlobalEp 39 | R_raw=-831.19 | len=200 | actor_loss=-0.068 | critic_loss=29563.615
+[Train] Gen 2 Ep 20/20 GlobalEp 40 | R_raw=-1082.63 | len=200 | actor_loss=-0.081 | critic_loss=52143.020
+[Eval] Gen 2 | avg_train=-1089.43 | avg_eval=-1168.66 | best_eval=-1146.55
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 3/50 ===
+[Train] Gen 3 Ep 1/20 GlobalEp 41 | R_raw=-1176.15 | len=200 | actor_loss=-0.007 | critic_loss=67169.148
+[Train] Gen 3 Ep 2/20 GlobalEp 42 | R_raw=-897.81 | len=200 | actor_loss=-0.010 | critic_loss=38046.078
+[Train] Gen 3 Ep 3/20 GlobalEp 43 | R_raw=-1181.07 | len=200 | actor_loss=-0.002 | critic_loss=65113.859
+[Train] Gen 3 Ep 4/20 GlobalEp 44 | R_raw=-1364.75 | len=200 | actor_loss=0.020 | critic_loss=91298.680
+[Train] Gen 3 Ep 5/20 GlobalEp 45 | R_raw=-1189.04 | len=200 | actor_loss=-0.086 | critic_loss=65945.055
+[Train] Gen 3 Ep 6/20 GlobalEp 46 | R_raw=-1034.40 | len=200 | actor_loss=-0.027 | critic_loss=56355.910
+[Train] Gen 3 Ep 7/20 GlobalEp 47 | R_raw=-922.53 | len=200 | actor_loss=-0.008 | critic_loss=40214.945
+[Train] Gen 3 Ep 8/20 GlobalEp 48 | R_raw=-995.91 | len=200 | actor_loss=-0.060 | critic_loss=44327.562
+[Train] Gen 3 Ep 9/20 GlobalEp 49 | R_raw=-918.99 | len=200 | actor_loss=0.040 | critic_loss=41652.723
+[Train] Gen 3 Ep 10/20 GlobalEp 50 | R_raw=-1647.85 | len=200 | actor_loss=-0.023 | critic_loss=126422.844
+[Train] Gen 3 Ep 11/20 GlobalEp 51 | R_raw=-904.42 | len=200 | actor_loss=0.025 | critic_loss=40174.367
+[Train] Gen 3 Ep 12/20 GlobalEp 52 | R_raw=-1196.59 | len=200 | actor_loss=-0.050 | critic_loss=67851.375
+[Train] Gen 3 Ep 13/20 GlobalEp 53 | R_raw=-810.83 | len=200 | actor_loss=0.029 | critic_loss=31175.066
+[Train] Gen 3 Ep 14/20 GlobalEp 54 | R_raw=-1098.34 | len=200 | actor_loss=0.023 | critic_loss=57669.668
+[Train] Gen 3 Ep 15/20 GlobalEp 55 | R_raw=-1333.43 | len=200 | actor_loss=-0.013 | critic_loss=85496.602
+[Train] Gen 3 Ep 16/20 GlobalEp 56 | R_raw=-869.16 | len=200 | actor_loss=0.146 | critic_loss=45074.430
+[Train] Gen 3 Ep 17/20 GlobalEp 57 | R_raw=-1194.33 | len=200 | actor_loss=-0.047 | critic_loss=70285.289
+[Train] Gen 3 Ep 18/20 GlobalEp 58 | R_raw=-1000.48 | len=200 | actor_loss=0.065 | critic_loss=50329.773
+[Train] Gen 3 Ep 19/20 GlobalEp 59 | R_raw=-1421.40 | len=200 | actor_loss=-0.046 | critic_loss=100688.828
+[Train] Gen 3 Ep 20/20 GlobalEp 60 | R_raw=-1234.29 | len=200 | actor_loss=0.039 | critic_loss=75017.336
+[Eval] Gen 3 | avg_train=-1119.59 | avg_eval=-1335.05 | best_eval=-1146.55
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 4/50 ===
+[Train] Gen 4 Ep 1/20 GlobalEp 61 | R_raw=-1060.89 | len=200 | actor_loss=0.009 | critic_loss=59027.883
+[Train] Gen 4 Ep 2/20 GlobalEp 62 | R_raw=-1628.90 | len=200 | actor_loss=-0.059 | critic_loss=124453.094
+[Train] Gen 4 Ep 3/20 GlobalEp 63 | R_raw=-1018.92 | len=200 | actor_loss=-0.067 | critic_loss=47179.453
+[Train] Gen 4 Ep 4/20 GlobalEp 64 | R_raw=-1142.09 | len=200 | actor_loss=0.013 | critic_loss=67984.016
+[Train] Gen 4 Ep 5/20 GlobalEp 65 | R_raw=-1264.65 | len=200 | actor_loss=-0.054 | critic_loss=75958.781
+[Train] Gen 4 Ep 6/20 GlobalEp 66 | R_raw=-874.22 | len=200 | actor_loss=0.002 | critic_loss=36867.301
+[Train] Gen 4 Ep 7/20 GlobalEp 67 | R_raw=-1185.80 | len=200 | actor_loss=-0.076 | critic_loss=66731.789
+[Train] Gen 4 Ep 8/20 GlobalEp 68 | R_raw=-973.89 | len=200 | actor_loss=0.071 | critic_loss=44919.844
+[Train] Gen 4 Ep 9/20 GlobalEp 69 | R_raw=-833.17 | len=200 | actor_loss=0.135 | critic_loss=31723.160
+[Train] Gen 4 Ep 10/20 GlobalEp 70 | R_raw=-1559.70 | len=200 | actor_loss=0.030 | critic_loss=111439.500
+[Train] Gen 4 Ep 11/20 GlobalEp 71 | R_raw=-966.51 | len=200 | actor_loss=0.049 | critic_loss=48900.590
+[Train] Gen 4 Ep 12/20 GlobalEp 72 | R_raw=-823.74 | len=200 | actor_loss=0.017 | critic_loss=33696.238
+[Train] Gen 4 Ep 13/20 GlobalEp 73 | R_raw=-965.80 | len=200 | actor_loss=-0.031 | critic_loss=47229.152
+[Train] Gen 4 Ep 14/20 GlobalEp 74 | R_raw=-909.70 | len=200 | actor_loss=-0.034 | critic_loss=37069.648
+[Train] Gen 4 Ep 15/20 GlobalEp 75 | R_raw=-1090.97 | len=200 | actor_loss=0.024 | critic_loss=56471.215
+[Train] Gen 4 Ep 16/20 GlobalEp 76 | R_raw=-759.78 | len=200 | actor_loss=-0.040 | critic_loss=27680.148
+[Train] Gen 4 Ep 17/20 GlobalEp 77 | R_raw=-1367.63 | len=200 | actor_loss=0.078 | critic_loss=87034.070
+[Train] Gen 4 Ep 18/20 GlobalEp 78 | R_raw=-1381.63 | len=200 | actor_loss=0.025 | critic_loss=89608.391
+[Train] Gen 4 Ep 19/20 GlobalEp 79 | R_raw=-1009.59 | len=200 | actor_loss=0.019 | critic_loss=49733.426
+[Train] Gen 4 Ep 20/20 GlobalEp 80 | R_raw=-1121.99 | len=200 | actor_loss=0.011 | critic_loss=63742.918
+[Eval] Gen 4 | avg_train=-1096.98 | avg_eval=-1237.15 | best_eval=-1146.55
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 5/50 ===
+[Train] Gen 5 Ep 1/20 GlobalEp 81 | R_raw=-1082.69 | len=200 | actor_loss=-0.028 | critic_loss=54132.047
+[Train] Gen 5 Ep 2/20 GlobalEp 82 | R_raw=-1266.47 | len=200 | actor_loss=0.003 | critic_loss=76624.938
+[Train] Gen 5 Ep 3/20 GlobalEp 83 | R_raw=-1762.68 | len=200 | actor_loss=0.031 | critic_loss=146643.062
+[Train] Gen 5 Ep 4/20 GlobalEp 84 | R_raw=-1180.94 | len=200 | actor_loss=-0.054 | critic_loss=66131.805
+[Train] Gen 5 Ep 5/20 GlobalEp 85 | R_raw=-1205.41 | len=200 | actor_loss=-0.041 | critic_loss=77824.359
+[Train] Gen 5 Ep 6/20 GlobalEp 86 | R_raw=-1592.12 | len=200 | actor_loss=-0.034 | critic_loss=124468.297
+[Train] Gen 5 Ep 7/20 GlobalEp 87 | R_raw=-1508.23 | len=200 | actor_loss=0.082 | critic_loss=106228.859
+[Train] Gen 5 Ep 8/20 GlobalEp 88 | R_raw=-1181.72 | len=200 | actor_loss=0.008 | critic_loss=69218.641
+[Train] Gen 5 Ep 9/20 GlobalEp 89 | R_raw=-1247.33 | len=200 | actor_loss=-0.041 | critic_loss=72869.602
+[Train] Gen 5 Ep 10/20 GlobalEp 90 | R_raw=-1438.81 | len=200 | actor_loss=-0.017 | critic_loss=100948.719
+[Train] Gen 5 Ep 11/20 GlobalEp 91 | R_raw=-1174.32 | len=200 | actor_loss=0.012 | critic_loss=66302.492
+[Train] Gen 5 Ep 12/20 GlobalEp 92 | R_raw=-1218.58 | len=200 | actor_loss=0.044 | critic_loss=69548.758
+[Train] Gen 5 Ep 13/20 GlobalEp 93 | R_raw=-1518.31 | len=200 | actor_loss=0.033 | critic_loss=110214.148
+[Train] Gen 5 Ep 14/20 GlobalEp 94 | R_raw=-887.28 | len=200 | actor_loss=0.006 | critic_loss=35485.113
+[Train] Gen 5 Ep 15/20 GlobalEp 95 | R_raw=-1558.84 | len=200 | actor_loss=0.018 | critic_loss=114244.547
+[Train] Gen 5 Ep 16/20 GlobalEp 96 | R_raw=-1378.28 | len=200 | actor_loss=0.016 | critic_loss=91361.516
+[Train] Gen 5 Ep 17/20 GlobalEp 97 | R_raw=-873.93 | len=200 | actor_loss=0.049 | critic_loss=36202.078
+[Train] Gen 5 Ep 18/20 GlobalEp 98 | R_raw=-1216.50 | len=200 | actor_loss=0.003 | critic_loss=71950.984
+[Train] Gen 5 Ep 19/20 GlobalEp 99 | R_raw=-1359.43 | len=200 | actor_loss=-0.056 | critic_loss=87058.258
+[Train] Gen 5 Ep 20/20 GlobalEp 100 | R_raw=-1523.61 | len=200 | actor_loss=-0.039 | critic_loss=109416.297
+[Eval] Gen 5 | avg_train=-1308.77 | avg_eval=-1199.00 | best_eval=-1146.55
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 6/50 ===
+[Train] Gen 6 Ep 1/20 GlobalEp 101 | R_raw=-874.98 | len=200 | actor_loss=-0.048 | critic_loss=37071.496
+[Train] Gen 6 Ep 2/20 GlobalEp 102 | R_raw=-1192.62 | len=200 | actor_loss=-0.012 | critic_loss=66286.508
+[Train] Gen 6 Ep 3/20 GlobalEp 103 | R_raw=-1674.93 | len=200 | actor_loss=-0.054 | critic_loss=129494.250
+[Train] Gen 6 Ep 4/20 GlobalEp 104 | R_raw=-870.61 | len=200 | actor_loss=-0.050 | critic_loss=36382.383
+[Train] Gen 6 Ep 5/20 GlobalEp 105 | R_raw=-1515.71 | len=200 | actor_loss=-0.076 | critic_loss=110116.438
+[Train] Gen 6 Ep 6/20 GlobalEp 106 | R_raw=-1004.87 | len=200 | actor_loss=0.061 | critic_loss=47523.203
+[Train] Gen 6 Ep 7/20 GlobalEp 107 | R_raw=-812.47 | len=200 | actor_loss=0.046 | critic_loss=39922.715
+[Train] Gen 6 Ep 8/20 GlobalEp 108 | R_raw=-971.86 | len=200 | actor_loss=0.030 | critic_loss=45809.668
+[Train] Gen 6 Ep 9/20 GlobalEp 109 | R_raw=-757.73 | len=200 | actor_loss=-0.023 | critic_loss=28819.750
+[Train] Gen 6 Ep 10/20 GlobalEp 110 | R_raw=-915.60 | len=200 | actor_loss=-0.054 | critic_loss=41990.184
+[Train] Gen 6 Ep 11/20 GlobalEp 111 | R_raw=-978.15 | len=200 | actor_loss=-0.013 | critic_loss=51495.258
+[Train] Gen 6 Ep 12/20 GlobalEp 112 | R_raw=-1550.09 | len=200 | actor_loss=0.019 | critic_loss=107428.875
+[Train] Gen 6 Ep 13/20 GlobalEp 113 | R_raw=-1308.12 | len=200 | actor_loss=0.013 | critic_loss=82261.875
+[Train] Gen 6 Ep 14/20 GlobalEp 114 | R_raw=-1631.29 | len=200 | actor_loss=0.035 | critic_loss=125138.766
+[Train] Gen 6 Ep 15/20 GlobalEp 115 | R_raw=-1303.01 | len=200 | actor_loss=0.000 | critic_loss=83529.469
+[Train] Gen 6 Ep 16/20 GlobalEp 116 | R_raw=-1611.34 | len=200 | actor_loss=-0.010 | critic_loss=125169.695
+[Train] Gen 6 Ep 17/20 GlobalEp 117 | R_raw=-1183.11 | len=200 | actor_loss=0.041 | critic_loss=66238.539
+[Train] Gen 6 Ep 18/20 GlobalEp 118 | R_raw=-1423.86 | len=200 | actor_loss=-0.083 | critic_loss=99961.602
+[Train] Gen 6 Ep 19/20 GlobalEp 119 | R_raw=-966.03 | len=200 | actor_loss=0.013 | critic_loss=44844.398
+[Train] Gen 6 Ep 20/20 GlobalEp 120 | R_raw=-1202.09 | len=200 | actor_loss=0.032 | critic_loss=66354.375
+[Eval] Gen 6 | avg_train=-1187.42 | avg_eval=-1230.14 | best_eval=-1146.55
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 7/50 ===
+[Train] Gen 7 Ep 1/20 GlobalEp 121 | R_raw=-1843.79 | len=200 | actor_loss=0.115 | critic_loss=163485.016
+[Train] Gen 7 Ep 2/20 GlobalEp 122 | R_raw=-887.98 | len=200 | actor_loss=-0.040 | critic_loss=41242.426
+[Train] Gen 7 Ep 3/20 GlobalEp 123 | R_raw=-858.11 | len=200 | actor_loss=-0.048 | critic_loss=37229.758
+[Train] Gen 7 Ep 4/20 GlobalEp 124 | R_raw=-971.17 | len=200 | actor_loss=-0.062 | critic_loss=47689.141
+[Train] Gen 7 Ep 5/20 GlobalEp 125 | R_raw=-892.98 | len=200 | actor_loss=-0.021 | critic_loss=38939.598
+[Train] Gen 7 Ep 6/20 GlobalEp 126 | R_raw=-1547.07 | len=200 | actor_loss=0.133 | critic_loss=113820.844
+[Train] Gen 7 Ep 7/20 GlobalEp 127 | R_raw=-1066.23 | len=200 | actor_loss=0.044 | critic_loss=51369.055
+[Train] Gen 7 Ep 8/20 GlobalEp 128 | R_raw=-866.96 | len=200 | actor_loss=-0.018 | critic_loss=33512.293
+[Train] Gen 7 Ep 9/20 GlobalEp 129 | R_raw=-1722.37 | len=200 | actor_loss=-0.073 | critic_loss=138364.172
+[Train] Gen 7 Ep 10/20 GlobalEp 130 | R_raw=-946.41 | len=200 | actor_loss=-0.009 | critic_loss=42279.660
+[Train] Gen 7 Ep 11/20 GlobalEp 131 | R_raw=-817.85 | len=200 | actor_loss=0.001 | critic_loss=33892.719
+[Train] Gen 7 Ep 12/20 GlobalEp 132 | R_raw=-1460.29 | len=200 | actor_loss=-0.012 | critic_loss=98638.008
+[Train] Gen 7 Ep 13/20 GlobalEp 133 | R_raw=-1418.88 | len=200 | actor_loss=-0.039 | critic_loss=96253.234
+[Train] Gen 7 Ep 14/20 GlobalEp 134 | R_raw=-877.95 | len=200 | actor_loss=0.073 | critic_loss=35811.531
+[Train] Gen 7 Ep 15/20 GlobalEp 135 | R_raw=-1260.41 | len=200 | actor_loss=-0.124 | critic_loss=74218.109
+[Train] Gen 7 Ep 16/20 GlobalEp 136 | R_raw=-1798.13 | len=200 | actor_loss=-0.071 | critic_loss=153189.781
+[Train] Gen 7 Ep 17/20 GlobalEp 137 | R_raw=-1072.19 | len=200 | actor_loss=0.004 | critic_loss=51396.805
+[Train] Gen 7 Ep 18/20 GlobalEp 138 | R_raw=-1179.52 | len=200 | actor_loss=0.037 | critic_loss=67341.227
+[Train] Gen 7 Ep 19/20 GlobalEp 139 | R_raw=-982.49 | len=200 | actor_loss=0.049 | critic_loss=42195.801
+[Train] Gen 7 Ep 20/20 GlobalEp 140 | R_raw=-1289.02 | len=200 | actor_loss=-0.002 | critic_loss=77621.477
+[Eval] Gen 7 | avg_train=-1187.99 | avg_eval=-992.59 | best_eval=-1146.55
+[SELECT] New elite (improved) with avg_eval=-992.59
+
+=== Generation 8/50 ===
+[Train] Gen 8 Ep 1/20 GlobalEp 141 | R_raw=-1788.59 | len=200 | actor_loss=0.010 | critic_loss=155457.875
+[Train] Gen 8 Ep 2/20 GlobalEp 142 | R_raw=-1532.29 | len=200 | actor_loss=0.028 | critic_loss=108140.680
+[Train] Gen 8 Ep 3/20 GlobalEp 143 | R_raw=-1169.18 | len=200 | actor_loss=0.014 | critic_loss=66093.594
+[Train] Gen 8 Ep 4/20 GlobalEp 144 | R_raw=-760.08 | len=200 | actor_loss=-0.054 | critic_loss=26318.508
+[Train] Gen 8 Ep 5/20 GlobalEp 145 | R_raw=-743.98 | len=200 | actor_loss=-0.086 | critic_loss=28458.898
+[Train] Gen 8 Ep 6/20 GlobalEp 146 | R_raw=-1584.17 | len=200 | actor_loss=0.051 | critic_loss=120680.047
+[Train] Gen 8 Ep 7/20 GlobalEp 147 | R_raw=-1696.62 | len=200 | actor_loss=-0.044 | critic_loss=140492.016
+[Train] Gen 8 Ep 8/20 GlobalEp 148 | R_raw=-1065.20 | len=200 | actor_loss=-0.045 | critic_loss=53718.480
+[Train] Gen 8 Ep 9/20 GlobalEp 149 | R_raw=-1091.99 | len=200 | actor_loss=-0.037 | critic_loss=58816.469
+[Train] Gen 8 Ep 10/20 GlobalEp 150 | R_raw=-1326.94 | len=200 | actor_loss=0.018 | critic_loss=80978.000
+[Train] Gen 8 Ep 11/20 GlobalEp 151 | R_raw=-1312.74 | len=200 | actor_loss=-0.101 | critic_loss=78427.617
+[Train] Gen 8 Ep 12/20 GlobalEp 152 | R_raw=-1165.44 | len=200 | actor_loss=0.060 | critic_loss=66815.875
+[Train] Gen 8 Ep 13/20 GlobalEp 153 | R_raw=-1633.16 | len=200 | actor_loss=0.077 | critic_loss=132448.938
+[Train] Gen 8 Ep 14/20 GlobalEp 154 | R_raw=-878.58 | len=200 | actor_loss=-0.024 | critic_loss=38291.816
+[Train] Gen 8 Ep 15/20 GlobalEp 155 | R_raw=-992.02 | len=200 | actor_loss=0.021 | critic_loss=49161.367
+[Train] Gen 8 Ep 16/20 GlobalEp 156 | R_raw=-1353.09 | len=200 | actor_loss=-0.047 | critic_loss=83431.000
+[Train] Gen 8 Ep 17/20 GlobalEp 157 | R_raw=-1844.32 | len=200 | actor_loss=-0.008 | critic_loss=162199.016
+[Train] Gen 8 Ep 18/20 GlobalEp 158 | R_raw=-991.28 | len=200 | actor_loss=0.017 | critic_loss=40635.633
+[Train] Gen 8 Ep 19/20 GlobalEp 159 | R_raw=-1614.00 | len=200 | actor_loss=0.015 | critic_loss=121830.000
+[Train] Gen 8 Ep 20/20 GlobalEp 160 | R_raw=-1188.44 | len=200 | actor_loss=-0.021 | critic_loss=66727.703
+[Eval] Gen 8 | avg_train=-1286.61 | avg_eval=-1315.22 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 9/50 ===
+[Train] Gen 9 Ep 1/20 GlobalEp 161 | R_raw=-1583.94 | len=200 | actor_loss=-0.060 | critic_loss=119878.359
+[Train] Gen 9 Ep 2/20 GlobalEp 162 | R_raw=-854.27 | len=200 | actor_loss=0.021 | critic_loss=34768.699
+[Train] Gen 9 Ep 3/20 GlobalEp 163 | R_raw=-1121.62 | len=200 | actor_loss=0.065 | critic_loss=56531.078
+[Train] Gen 9 Ep 4/20 GlobalEp 164 | R_raw=-1074.39 | len=200 | actor_loss=-0.033 | critic_loss=53634.398
+[Train] Gen 9 Ep 5/20 GlobalEp 165 | R_raw=-1172.25 | len=200 | actor_loss=-0.020 | critic_loss=64111.008
+[Train] Gen 9 Ep 6/20 GlobalEp 166 | R_raw=-878.99 | len=200 | actor_loss=0.002 | critic_loss=35948.270
+[Train] Gen 9 Ep 7/20 GlobalEp 167 | R_raw=-1253.65 | len=200 | actor_loss=-0.085 | critic_loss=69951.836
+[Train] Gen 9 Ep 8/20 GlobalEp 168 | R_raw=-1613.19 | len=200 | actor_loss=0.064 | critic_loss=119729.305
+[Train] Gen 9 Ep 9/20 GlobalEp 169 | R_raw=-1007.01 | len=200 | actor_loss=0.063 | critic_loss=48842.488
+[Train] Gen 9 Ep 10/20 GlobalEp 170 | R_raw=-1078.95 | len=200 | actor_loss=0.003 | critic_loss=58591.059
+[Train] Gen 9 Ep 11/20 GlobalEp 171 | R_raw=-1624.56 | len=200 | actor_loss=-0.003 | critic_loss=129364.617
+[Train] Gen 9 Ep 12/20 GlobalEp 172 | R_raw=-1718.47 | len=200 | actor_loss=-0.077 | critic_loss=135996.844
+[Train] Gen 9 Ep 13/20 GlobalEp 173 | R_raw=-782.07 | len=200 | actor_loss=0.096 | critic_loss=35005.695
+[Train] Gen 9 Ep 14/20 GlobalEp 174 | R_raw=-872.83 | len=200 | actor_loss=0.069 | critic_loss=39150.352
+[Train] Gen 9 Ep 15/20 GlobalEp 175 | R_raw=-1266.97 | len=200 | actor_loss=-0.029 | critic_loss=78487.469
+[Train] Gen 9 Ep 16/20 GlobalEp 176 | R_raw=-1053.53 | len=200 | actor_loss=0.037 | critic_loss=61400.555
+[Train] Gen 9 Ep 17/20 GlobalEp 177 | R_raw=-1557.98 | len=200 | actor_loss=0.040 | critic_loss=116031.641
+[Train] Gen 9 Ep 18/20 GlobalEp 178 | R_raw=-1433.34 | len=200 | actor_loss=0.019 | critic_loss=95646.188
+[Train] Gen 9 Ep 19/20 GlobalEp 179 | R_raw=-1598.19 | len=200 | actor_loss=0.064 | critic_loss=120035.961
+[Train] Gen 9 Ep 20/20 GlobalEp 180 | R_raw=-1438.26 | len=200 | actor_loss=-0.055 | critic_loss=102403.914
+[Eval] Gen 9 | avg_train=-1249.22 | avg_eval=-1356.70 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 10/50 ===
+[Train] Gen 10 Ep 1/20 GlobalEp 181 | R_raw=-902.84 | len=200 | actor_loss=0.022 | critic_loss=37435.176
+[Train] Gen 10 Ep 2/20 GlobalEp 182 | R_raw=-1395.54 | len=200 | actor_loss=-0.001 | critic_loss=95164.039
+[Train] Gen 10 Ep 3/20 GlobalEp 183 | R_raw=-1332.04 | len=200 | actor_loss=0.045 | critic_loss=86459.289
+[Train] Gen 10 Ep 4/20 GlobalEp 184 | R_raw=-1041.14 | len=200 | actor_loss=0.028 | critic_loss=49507.039
+[Train] Gen 10 Ep 5/20 GlobalEp 185 | R_raw=-1093.67 | len=200 | actor_loss=0.005 | critic_loss=61301.223
+[Train] Gen 10 Ep 6/20 GlobalEp 186 | R_raw=-894.51 | len=200 | actor_loss=0.012 | critic_loss=37954.320
+[Train] Gen 10 Ep 7/20 GlobalEp 187 | R_raw=-1008.75 | len=200 | actor_loss=-0.021 | critic_loss=48937.695
+[Train] Gen 10 Ep 8/20 GlobalEp 188 | R_raw=-1252.02 | len=200 | actor_loss=-0.044 | critic_loss=73421.836
+[Train] Gen 10 Ep 9/20 GlobalEp 189 | R_raw=-1326.30 | len=200 | actor_loss=-0.017 | critic_loss=85565.531
+[Train] Gen 10 Ep 10/20 GlobalEp 190 | R_raw=-777.44 | len=200 | actor_loss=-0.101 | critic_loss=29413.170
+[Train] Gen 10 Ep 11/20 GlobalEp 191 | R_raw=-1453.72 | len=200 | actor_loss=0.028 | critic_loss=100515.102
+[Train] Gen 10 Ep 12/20 GlobalEp 192 | R_raw=-1624.56 | len=200 | actor_loss=-0.020 | critic_loss=126287.680
+[Train] Gen 10 Ep 13/20 GlobalEp 193 | R_raw=-1358.01 | len=200 | actor_loss=-0.037 | critic_loss=89941.281
+[Train] Gen 10 Ep 14/20 GlobalEp 194 | R_raw=-1251.16 | len=200 | actor_loss=-0.031 | critic_loss=71542.984
+[Train] Gen 10 Ep 15/20 GlobalEp 195 | R_raw=-1539.08 | len=200 | actor_loss=0.034 | critic_loss=114179.984
+[Train] Gen 10 Ep 16/20 GlobalEp 196 | R_raw=-881.62 | len=200 | actor_loss=0.068 | critic_loss=38597.355
+[Train] Gen 10 Ep 17/20 GlobalEp 197 | R_raw=-1529.52 | len=200 | actor_loss=-0.031 | critic_loss=108639.414
+[Train] Gen 10 Ep 18/20 GlobalEp 198 | R_raw=-1630.90 | len=200 | actor_loss=0.009 | critic_loss=122745.289
+[Train] Gen 10 Ep 19/20 GlobalEp 199 | R_raw=-1773.83 | len=200 | actor_loss=-0.014 | critic_loss=151372.031
+[Train] Gen 10 Ep 20/20 GlobalEp 200 | R_raw=-882.55 | len=200 | actor_loss=-0.022 | critic_loss=40622.828
+[Eval] Gen 10 | avg_train=-1247.46 | avg_eval=-1214.73 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 11/50 ===
+[Train] Gen 11 Ep 1/20 GlobalEp 201 | R_raw=-1186.86 | len=200 | actor_loss=-0.030 | critic_loss=69951.141
+[Train] Gen 11 Ep 2/20 GlobalEp 202 | R_raw=-1791.79 | len=200 | actor_loss=-0.014 | critic_loss=151560.734
+[Train] Gen 11 Ep 3/20 GlobalEp 203 | R_raw=-1111.42 | len=200 | actor_loss=0.060 | critic_loss=59123.379
+[Train] Gen 11 Ep 4/20 GlobalEp 204 | R_raw=-1211.70 | len=200 | actor_loss=0.056 | critic_loss=70528.836
+[Train] Gen 11 Ep 5/20 GlobalEp 205 | R_raw=-950.82 | len=200 | actor_loss=0.109 | critic_loss=42740.410
+[Train] Gen 11 Ep 6/20 GlobalEp 206 | R_raw=-864.49 | len=200 | actor_loss=0.001 | critic_loss=35516.266
+[Train] Gen 11 Ep 7/20 GlobalEp 207 | R_raw=-1570.15 | len=200 | actor_loss=-0.058 | critic_loss=120404.539
+[Train] Gen 11 Ep 8/20 GlobalEp 208 | R_raw=-946.13 | len=200 | actor_loss=-0.022 | critic_loss=48742.598
+[Train] Gen 11 Ep 9/20 GlobalEp 209 | R_raw=-1078.90 | len=200 | actor_loss=-0.054 | critic_loss=60231.562
+[Train] Gen 11 Ep 10/20 GlobalEp 210 | R_raw=-1310.32 | len=200 | actor_loss=-0.068 | critic_loss=88081.102
+[Train] Gen 11 Ep 11/20 GlobalEp 211 | R_raw=-1201.58 | len=200 | actor_loss=0.062 | critic_loss=77874.500
+[Train] Gen 11 Ep 12/20 GlobalEp 212 | R_raw=-1187.84 | len=200 | actor_loss=0.035 | critic_loss=66588.023
+[Train] Gen 11 Ep 13/20 GlobalEp 213 | R_raw=-1005.77 | len=200 | actor_loss=0.013 | critic_loss=47096.809
+[Train] Gen 11 Ep 14/20 GlobalEp 214 | R_raw=-1693.18 | len=200 | actor_loss=-0.011 | critic_loss=136194.609
+[Train] Gen 11 Ep 15/20 GlobalEp 215 | R_raw=-1075.72 | len=200 | actor_loss=0.044 | critic_loss=50594.145
+[Train] Gen 11 Ep 16/20 GlobalEp 216 | R_raw=-983.31 | len=200 | actor_loss=-0.094 | critic_loss=43276.180
+[Train] Gen 11 Ep 17/20 GlobalEp 217 | R_raw=-1470.79 | len=200 | actor_loss=-0.041 | critic_loss=98746.680
+[Train] Gen 11 Ep 18/20 GlobalEp 218 | R_raw=-964.17 | len=200 | actor_loss=-0.076 | critic_loss=43744.969
+[Train] Gen 11 Ep 19/20 GlobalEp 219 | R_raw=-1709.87 | len=200 | actor_loss=-0.108 | critic_loss=134248.453
+[Train] Gen 11 Ep 20/20 GlobalEp 220 | R_raw=-962.68 | len=200 | actor_loss=0.024 | critic_loss=42793.453
+[Eval] Gen 11 | avg_train=-1213.88 | avg_eval=-1172.33 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 12/50 ===
+[Train] Gen 12 Ep 1/20 GlobalEp 221 | R_raw=-1366.46 | len=200 | actor_loss=-0.005 | critic_loss=88642.398
+[Train] Gen 12 Ep 2/20 GlobalEp 222 | R_raw=-1345.15 | len=200 | actor_loss=0.031 | critic_loss=84891.906
+[Train] Gen 12 Ep 3/20 GlobalEp 223 | R_raw=-1281.46 | len=200 | actor_loss=0.020 | critic_loss=78869.008
+[Train] Gen 12 Ep 4/20 GlobalEp 224 | R_raw=-957.75 | len=200 | actor_loss=0.096 | critic_loss=44123.340
+[Train] Gen 12 Ep 5/20 GlobalEp 225 | R_raw=-991.89 | len=200 | actor_loss=0.063 | critic_loss=46140.562
+[Train] Gen 12 Ep 6/20 GlobalEp 226 | R_raw=-1531.95 | len=200 | actor_loss=0.007 | critic_loss=112544.516
+[Train] Gen 12 Ep 7/20 GlobalEp 227 | R_raw=-1412.43 | len=200 | actor_loss=-0.044 | critic_loss=92275.180
+[Train] Gen 12 Ep 8/20 GlobalEp 228 | R_raw=-955.55 | len=200 | actor_loss=0.072 | critic_loss=43694.000
+[Train] Gen 12 Ep 9/20 GlobalEp 229 | R_raw=-738.83 | len=200 | actor_loss=-0.041 | critic_loss=26508.709
+[Train] Gen 12 Ep 10/20 GlobalEp 230 | R_raw=-1080.67 | len=200 | actor_loss=0.004 | critic_loss=55538.652
+[Train] Gen 12 Ep 11/20 GlobalEp 231 | R_raw=-835.58 | len=200 | actor_loss=0.019 | critic_loss=38447.762
+[Train] Gen 12 Ep 12/20 GlobalEp 232 | R_raw=-886.72 | len=200 | actor_loss=-0.011 | critic_loss=39588.910
+[Train] Gen 12 Ep 13/20 GlobalEp 233 | R_raw=-1193.93 | len=200 | actor_loss=0.055 | critic_loss=70801.516
+[Train] Gen 12 Ep 14/20 GlobalEp 234 | R_raw=-1177.94 | len=200 | actor_loss=0.000 | critic_loss=68613.930
+[Train] Gen 12 Ep 15/20 GlobalEp 235 | R_raw=-881.40 | len=200 | actor_loss=0.023 | critic_loss=39685.891
+[Train] Gen 12 Ep 16/20 GlobalEp 236 | R_raw=-875.72 | len=200 | actor_loss=-0.053 | critic_loss=40431.211
+[Train] Gen 12 Ep 17/20 GlobalEp 237 | R_raw=-757.18 | len=200 | actor_loss=0.026 | critic_loss=29806.490
+[Train] Gen 12 Ep 18/20 GlobalEp 238 | R_raw=-1153.07 | len=200 | actor_loss=0.015 | critic_loss=69501.922
+[Train] Gen 12 Ep 19/20 GlobalEp 239 | R_raw=-1140.60 | len=200 | actor_loss=0.059 | critic_loss=70703.445
+[Train] Gen 12 Ep 20/20 GlobalEp 240 | R_raw=-957.59 | len=200 | actor_loss=-0.084 | critic_loss=44281.367
+[Eval] Gen 12 | avg_train=-1076.09 | avg_eval=-1471.59 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 13/50 ===
+[Train] Gen 13 Ep 1/20 GlobalEp 241 | R_raw=-858.70 | len=200 | actor_loss=0.059 | critic_loss=39998.891
+[Train] Gen 13 Ep 2/20 GlobalEp 242 | R_raw=-1218.33 | len=200 | actor_loss=-0.009 | critic_loss=67633.594
+[Train] Gen 13 Ep 3/20 GlobalEp 243 | R_raw=-1076.07 | len=200 | actor_loss=-0.065 | critic_loss=55817.840
+[Train] Gen 13 Ep 4/20 GlobalEp 244 | R_raw=-747.42 | len=200 | actor_loss=0.009 | critic_loss=30393.039
+[Train] Gen 13 Ep 5/20 GlobalEp 245 | R_raw=-1081.70 | len=200 | actor_loss=0.047 | critic_loss=55334.379
+[Train] Gen 13 Ep 6/20 GlobalEp 246 | R_raw=-1804.56 | len=200 | actor_loss=-0.007 | critic_loss=152498.312
+[Train] Gen 13 Ep 7/20 GlobalEp 247 | R_raw=-939.17 | len=200 | actor_loss=0.018 | critic_loss=46176.320
+[Train] Gen 13 Ep 8/20 GlobalEp 248 | R_raw=-1291.38 | len=200 | actor_loss=0.019 | critic_loss=83007.266
+[Train] Gen 13 Ep 9/20 GlobalEp 249 | R_raw=-1683.35 | len=200 | actor_loss=-0.005 | critic_loss=131097.781
+[Train] Gen 13 Ep 10/20 GlobalEp 250 | R_raw=-964.06 | len=200 | actor_loss=0.114 | critic_loss=46096.309
+[Train] Gen 13 Ep 11/20 GlobalEp 251 | R_raw=-1732.53 | len=200 | actor_loss=0.035 | critic_loss=139492.484
+[Train] Gen 13 Ep 12/20 GlobalEp 252 | R_raw=-840.24 | len=200 | actor_loss=0.039 | critic_loss=35760.828
+[Train] Gen 13 Ep 13/20 GlobalEp 253 | R_raw=-966.05 | len=200 | actor_loss=-0.008 | critic_loss=52477.438
+[Train] Gen 13 Ep 14/20 GlobalEp 254 | R_raw=-1623.88 | len=200 | actor_loss=0.032 | critic_loss=127957.039
+[Train] Gen 13 Ep 15/20 GlobalEp 255 | R_raw=-973.68 | len=200 | actor_loss=-0.081 | critic_loss=44143.785
+[Train] Gen 13 Ep 16/20 GlobalEp 256 | R_raw=-1661.04 | len=200 | actor_loss=0.012 | critic_loss=130918.438
+[Train] Gen 13 Ep 17/20 GlobalEp 257 | R_raw=-1759.12 | len=200 | actor_loss=-0.024 | critic_loss=146535.719
+[Train] Gen 13 Ep 18/20 GlobalEp 258 | R_raw=-1062.39 | len=200 | actor_loss=-0.006 | critic_loss=54308.809
+[Train] Gen 13 Ep 19/20 GlobalEp 259 | R_raw=-886.81 | len=200 | actor_loss=0.016 | critic_loss=42606.793
+[Train] Gen 13 Ep 20/20 GlobalEp 260 | R_raw=-1623.80 | len=200 | actor_loss=-0.027 | critic_loss=130268.164
+[Eval] Gen 13 | avg_train=-1239.71 | avg_eval=-1339.53 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 14/50 ===
+[Train] Gen 14 Ep 1/20 GlobalEp 261 | R_raw=-974.70 | len=200 | actor_loss=0.022 | critic_loss=44959.359
+[Train] Gen 14 Ep 2/20 GlobalEp 262 | R_raw=-1088.72 | len=200 | actor_loss=-0.022 | critic_loss=53748.914
+[Train] Gen 14 Ep 3/20 GlobalEp 263 | R_raw=-1179.39 | len=200 | actor_loss=-0.008 | critic_loss=66094.641
+[Train] Gen 14 Ep 4/20 GlobalEp 264 | R_raw=-1105.47 | len=200 | actor_loss=-0.007 | critic_loss=61286.492
+[Train] Gen 14 Ep 5/20 GlobalEp 265 | R_raw=-980.68 | len=200 | actor_loss=0.052 | critic_loss=50123.410
+[Train] Gen 14 Ep 6/20 GlobalEp 266 | R_raw=-1072.45 | len=200 | actor_loss=-0.016 | critic_loss=52641.809
+[Train] Gen 14 Ep 7/20 GlobalEp 267 | R_raw=-979.47 | len=200 | actor_loss=-0.011 | critic_loss=46563.367
+[Train] Gen 14 Ep 8/20 GlobalEp 268 | R_raw=-1566.34 | len=200 | actor_loss=0.059 | critic_loss=117055.836
+[Train] Gen 14 Ep 9/20 GlobalEp 269 | R_raw=-857.24 | len=200 | actor_loss=-0.028 | critic_loss=33809.375
+[Train] Gen 14 Ep 10/20 GlobalEp 270 | R_raw=-1228.78 | len=200 | actor_loss=0.009 | critic_loss=70984.438
+[Train] Gen 14 Ep 11/20 GlobalEp 271 | R_raw=-962.09 | len=200 | actor_loss=0.027 | critic_loss=50594.277
+[Train] Gen 14 Ep 12/20 GlobalEp 272 | R_raw=-781.12 | len=200 | actor_loss=-0.002 | critic_loss=35433.656
+[Train] Gen 14 Ep 13/20 GlobalEp 273 | R_raw=-974.16 | len=200 | actor_loss=-0.000 | critic_loss=42944.684
+[Train] Gen 14 Ep 14/20 GlobalEp 274 | R_raw=-1550.55 | len=200 | actor_loss=0.015 | critic_loss=110157.680
+[Train] Gen 14 Ep 15/20 GlobalEp 275 | R_raw=-975.56 | len=200 | actor_loss=-0.026 | critic_loss=45812.367
+[Train] Gen 14 Ep 16/20 GlobalEp 276 | R_raw=-1675.81 | len=200 | actor_loss=0.002 | critic_loss=137765.312
+[Train] Gen 14 Ep 17/20 GlobalEp 277 | R_raw=-967.72 | len=200 | actor_loss=0.086 | critic_loss=43401.125
+[Train] Gen 14 Ep 18/20 GlobalEp 278 | R_raw=-1448.99 | len=200 | actor_loss=-0.006 | critic_loss=97917.938
+[Train] Gen 14 Ep 19/20 GlobalEp 279 | R_raw=-1162.65 | len=200 | actor_loss=0.011 | critic_loss=64933.473
+[Train] Gen 14 Ep 20/20 GlobalEp 280 | R_raw=-1315.76 | len=200 | actor_loss=-0.032 | critic_loss=82120.461
+[Eval] Gen 14 | avg_train=-1142.38 | avg_eval=-1014.54 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 15/50 ===
+[Train] Gen 15 Ep 1/20 GlobalEp 281 | R_raw=-895.54 | len=200 | actor_loss=-0.037 | critic_loss=40834.730
+[Train] Gen 15 Ep 2/20 GlobalEp 282 | R_raw=-1071.54 | len=200 | actor_loss=-0.020 | critic_loss=58279.000
+[Train] Gen 15 Ep 3/20 GlobalEp 283 | R_raw=-969.32 | len=200 | actor_loss=-0.004 | critic_loss=47934.957
+[Train] Gen 15 Ep 4/20 GlobalEp 284 | R_raw=-1029.02 | len=200 | actor_loss=0.030 | critic_loss=51660.418
+[Train] Gen 15 Ep 5/20 GlobalEp 285 | R_raw=-1424.78 | len=200 | actor_loss=0.051 | critic_loss=94622.906
+[Train] Gen 15 Ep 6/20 GlobalEp 286 | R_raw=-1582.08 | len=200 | actor_loss=0.019 | critic_loss=121874.578
+[Train] Gen 15 Ep 7/20 GlobalEp 287 | R_raw=-1363.17 | len=200 | actor_loss=-0.002 | critic_loss=90363.258
+[Train] Gen 15 Ep 8/20 GlobalEp 288 | R_raw=-1364.72 | len=200 | actor_loss=0.030 | critic_loss=89278.289
+[Train] Gen 15 Ep 9/20 GlobalEp 289 | R_raw=-996.88 | len=200 | actor_loss=0.020 | critic_loss=46842.645
+[Train] Gen 15 Ep 10/20 GlobalEp 290 | R_raw=-950.90 | len=200 | actor_loss=0.003 | critic_loss=47357.668
+[Train] Gen 15 Ep 11/20 GlobalEp 291 | R_raw=-875.19 | len=200 | actor_loss=-0.064 | critic_loss=40047.656
+[Train] Gen 15 Ep 12/20 GlobalEp 292 | R_raw=-883.71 | len=200 | actor_loss=-0.062 | critic_loss=39355.078
+[Train] Gen 15 Ep 13/20 GlobalEp 293 | R_raw=-1693.10 | len=200 | actor_loss=-0.010 | critic_loss=137992.422
+[Train] Gen 15 Ep 14/20 GlobalEp 294 | R_raw=-1624.39 | len=200 | actor_loss=0.020 | critic_loss=123909.859
+[Train] Gen 15 Ep 15/20 GlobalEp 295 | R_raw=-1179.23 | len=200 | actor_loss=-0.038 | critic_loss=64584.910
+[Train] Gen 15 Ep 16/20 GlobalEp 296 | R_raw=-1585.62 | len=200 | actor_loss=-0.050 | critic_loss=114508.336
+[Train] Gen 15 Ep 17/20 GlobalEp 297 | R_raw=-860.95 | len=200 | actor_loss=-0.042 | critic_loss=34436.215
+[Train] Gen 15 Ep 18/20 GlobalEp 298 | R_raw=-1233.38 | len=200 | actor_loss=-0.015 | critic_loss=69960.586
+[Train] Gen 15 Ep 19/20 GlobalEp 299 | R_raw=-1710.33 | len=200 | actor_loss=0.020 | critic_loss=144522.844
+[Train] Gen 15 Ep 20/20 GlobalEp 300 | R_raw=-1622.02 | len=200 | actor_loss=-0.064 | critic_loss=122427.766
+[Eval] Gen 15 | avg_train=-1245.79 | avg_eval=-1324.39 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 16/50 ===
+[Train] Gen 16 Ep 1/20 GlobalEp 301 | R_raw=-1250.40 | len=200 | actor_loss=-0.040 | critic_loss=72339.445
+[Train] Gen 16 Ep 2/20 GlobalEp 302 | R_raw=-748.08 | len=200 | actor_loss=-0.011 | critic_loss=30523.232
+[Train] Gen 16 Ep 3/20 GlobalEp 303 | R_raw=-1109.02 | len=200 | actor_loss=-0.069 | critic_loss=60459.508
+[Train] Gen 16 Ep 4/20 GlobalEp 304 | R_raw=-1487.92 | len=200 | actor_loss=0.054 | critic_loss=99264.695
+[Train] Gen 16 Ep 5/20 GlobalEp 305 | R_raw=-843.51 | len=200 | actor_loss=0.062 | critic_loss=35421.512
+[Train] Gen 16 Ep 6/20 GlobalEp 306 | R_raw=-1601.23 | len=200 | actor_loss=-0.007 | critic_loss=119995.734
+[Train] Gen 16 Ep 7/20 GlobalEp 307 | R_raw=-836.34 | len=200 | actor_loss=0.042 | critic_loss=33683.289
+[Train] Gen 16 Ep 8/20 GlobalEp 308 | R_raw=-1278.64 | len=200 | actor_loss=-0.019 | critic_loss=76020.352
+[Train] Gen 16 Ep 9/20 GlobalEp 309 | R_raw=-1101.67 | len=200 | actor_loss=0.033 | critic_loss=55839.113
+[Train] Gen 16 Ep 10/20 GlobalEp 310 | R_raw=-1160.74 | len=200 | actor_loss=0.051 | critic_loss=70226.445
+[Train] Gen 16 Ep 11/20 GlobalEp 311 | R_raw=-1280.49 | len=200 | actor_loss=-0.082 | critic_loss=78670.117
+[Train] Gen 16 Ep 12/20 GlobalEp 312 | R_raw=-1668.33 | len=200 | actor_loss=0.028 | critic_loss=129920.008
+[Train] Gen 16 Ep 13/20 GlobalEp 313 | R_raw=-1175.33 | len=200 | actor_loss=-0.132 | critic_loss=67557.375
+[Train] Gen 16 Ep 14/20 GlobalEp 314 | R_raw=-890.43 | len=200 | actor_loss=0.049 | critic_loss=40785.324
+[Train] Gen 16 Ep 15/20 GlobalEp 315 | R_raw=-755.62 | len=200 | actor_loss=-0.007 | critic_loss=27348.496
+[Train] Gen 16 Ep 16/20 GlobalEp 316 | R_raw=-1356.72 | len=200 | actor_loss=0.062 | critic_loss=85942.570
+[Train] Gen 16 Ep 17/20 GlobalEp 317 | R_raw=-981.35 | len=200 | actor_loss=0.033 | critic_loss=43055.418
+[Train] Gen 16 Ep 18/20 GlobalEp 318 | R_raw=-1323.04 | len=200 | actor_loss=-0.041 | critic_loss=80799.055
+[Train] Gen 16 Ep 19/20 GlobalEp 319 | R_raw=-1015.56 | len=200 | actor_loss=-0.019 | critic_loss=50695.820
+[Train] Gen 16 Ep 20/20 GlobalEp 320 | R_raw=-907.61 | len=200 | actor_loss=-0.033 | critic_loss=39993.203
+[Eval] Gen 16 | avg_train=-1138.60 | avg_eval=-1071.69 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 17/50 ===
+[Train] Gen 17 Ep 1/20 GlobalEp 321 | R_raw=-874.12 | len=200 | actor_loss=-0.030 | critic_loss=38388.598
+[Train] Gen 17 Ep 2/20 GlobalEp 322 | R_raw=-1309.72 | len=200 | actor_loss=0.029 | critic_loss=79155.766
+[Train] Gen 17 Ep 3/20 GlobalEp 323 | R_raw=-1242.95 | len=200 | actor_loss=-0.049 | critic_loss=73907.922
+[Train] Gen 17 Ep 4/20 GlobalEp 324 | R_raw=-1049.33 | len=200 | actor_loss=-0.009 | critic_loss=57019.367
+[Train] Gen 17 Ep 5/20 GlobalEp 325 | R_raw=-1000.37 | len=200 | actor_loss=0.024 | critic_loss=48376.109
+[Train] Gen 17 Ep 6/20 GlobalEp 326 | R_raw=-1529.00 | len=200 | actor_loss=0.042 | critic_loss=109814.031
+[Train] Gen 17 Ep 7/20 GlobalEp 327 | R_raw=-1444.68 | len=200 | actor_loss=0.074 | critic_loss=101354.047
+[Train] Gen 17 Ep 8/20 GlobalEp 328 | R_raw=-1478.03 | len=200 | actor_loss=0.059 | critic_loss=101997.719
+[Train] Gen 17 Ep 9/20 GlobalEp 329 | R_raw=-1200.98 | len=200 | actor_loss=0.014 | critic_loss=68213.250
+[Train] Gen 17 Ep 10/20 GlobalEp 330 | R_raw=-769.66 | len=200 | actor_loss=0.019 | critic_loss=28864.209
+[Train] Gen 17 Ep 11/20 GlobalEp 331 | R_raw=-922.75 | len=200 | actor_loss=0.050 | critic_loss=42266.078
+[Train] Gen 17 Ep 12/20 GlobalEp 332 | R_raw=-823.00 | len=200 | actor_loss=-0.039 | critic_loss=33866.930
+[Train] Gen 17 Ep 13/20 GlobalEp 333 | R_raw=-1331.21 | len=200 | actor_loss=0.107 | critic_loss=83570.602
+[Train] Gen 17 Ep 14/20 GlobalEp 334 | R_raw=-1692.65 | len=200 | actor_loss=0.138 | critic_loss=136388.062
+[Train] Gen 17 Ep 15/20 GlobalEp 335 | R_raw=-897.34 | len=200 | actor_loss=0.040 | critic_loss=36204.148
+[Train] Gen 17 Ep 16/20 GlobalEp 336 | R_raw=-973.37 | len=200 | actor_loss=-0.036 | critic_loss=46901.254
+[Train] Gen 17 Ep 17/20 GlobalEp 337 | R_raw=-1189.63 | len=200 | actor_loss=-0.092 | critic_loss=69986.539
+[Train] Gen 17 Ep 18/20 GlobalEp 338 | R_raw=-1656.77 | len=200 | actor_loss=-0.082 | critic_loss=132393.938
+[Train] Gen 17 Ep 19/20 GlobalEp 339 | R_raw=-1181.48 | len=200 | actor_loss=0.021 | critic_loss=67366.945
+[Train] Gen 17 Ep 20/20 GlobalEp 340 | R_raw=-1645.79 | len=200 | actor_loss=-0.035 | critic_loss=132045.594
+[Eval] Gen 17 | avg_train=-1210.64 | avg_eval=-1224.99 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 18/50 ===
+[Train] Gen 18 Ep 1/20 GlobalEp 341 | R_raw=-1631.47 | len=200 | actor_loss=-0.085 | critic_loss=123488.438
+[Train] Gen 18 Ep 2/20 GlobalEp 342 | R_raw=-967.47 | len=200 | actor_loss=-0.015 | critic_loss=42902.938
+[Train] Gen 18 Ep 3/20 GlobalEp 343 | R_raw=-772.22 | len=200 | actor_loss=-0.063 | critic_loss=33068.082
+[Train] Gen 18 Ep 4/20 GlobalEp 344 | R_raw=-1763.46 | len=200 | actor_loss=0.080 | critic_loss=151490.984
+[Train] Gen 18 Ep 5/20 GlobalEp 345 | R_raw=-1067.80 | len=200 | actor_loss=0.051 | critic_loss=52561.320
+[Train] Gen 18 Ep 6/20 GlobalEp 346 | R_raw=-1503.43 | len=200 | actor_loss=0.019 | critic_loss=106913.719
+[Train] Gen 18 Ep 7/20 GlobalEp 347 | R_raw=-1639.06 | len=200 | actor_loss=0.038 | critic_loss=121545.961
+[Train] Gen 18 Ep 8/20 GlobalEp 348 | R_raw=-1040.02 | len=200 | actor_loss=-0.021 | critic_loss=50718.207
+[Train] Gen 18 Ep 9/20 GlobalEp 349 | R_raw=-1269.35 | len=200 | actor_loss=0.009 | critic_loss=78408.477
+[Train] Gen 18 Ep 10/20 GlobalEp 350 | R_raw=-1621.45 | len=200 | actor_loss=-0.100 | critic_loss=123489.586
+[Train] Gen 18 Ep 11/20 GlobalEp 351 | R_raw=-1367.62 | len=200 | actor_loss=0.055 | critic_loss=85529.938
+[Train] Gen 18 Ep 12/20 GlobalEp 352 | R_raw=-987.93 | len=200 | actor_loss=0.038 | critic_loss=42530.398
+[Train] Gen 18 Ep 13/20 GlobalEp 353 | R_raw=-906.95 | len=200 | actor_loss=-0.032 | critic_loss=37844.215
+[Train] Gen 18 Ep 14/20 GlobalEp 354 | R_raw=-1597.67 | len=200 | actor_loss=-0.031 | critic_loss=116527.039
+[Train] Gen 18 Ep 15/20 GlobalEp 355 | R_raw=-1078.95 | len=200 | actor_loss=-0.006 | critic_loss=54909.688
+[Train] Gen 18 Ep 16/20 GlobalEp 356 | R_raw=-1374.92 | len=200 | actor_loss=0.038 | critic_loss=92225.758
+[Train] Gen 18 Ep 17/20 GlobalEp 357 | R_raw=-1182.45 | len=200 | actor_loss=-0.016 | critic_loss=67056.711
+[Train] Gen 18 Ep 18/20 GlobalEp 358 | R_raw=-989.89 | len=200 | actor_loss=-0.046 | critic_loss=42963.949
+[Train] Gen 18 Ep 19/20 GlobalEp 359 | R_raw=-878.58 | len=200 | actor_loss=-0.040 | critic_loss=37967.590
+[Train] Gen 18 Ep 20/20 GlobalEp 360 | R_raw=-1671.80 | len=200 | actor_loss=-0.039 | critic_loss=135021.703
+[Eval] Gen 18 | avg_train=-1265.63 | avg_eval=-1139.80 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 19/50 ===
+[Train] Gen 19 Ep 1/20 GlobalEp 361 | R_raw=-983.60 | len=200 | actor_loss=0.039 | critic_loss=44111.301
+[Train] Gen 19 Ep 2/20 GlobalEp 362 | R_raw=-763.88 | len=200 | actor_loss=-0.010 | critic_loss=27014.885
+[Train] Gen 19 Ep 3/20 GlobalEp 363 | R_raw=-1416.40 | len=200 | actor_loss=-0.066 | critic_loss=95961.977
+[Train] Gen 19 Ep 4/20 GlobalEp 364 | R_raw=-868.05 | len=200 | actor_loss=0.021 | critic_loss=35475.445
+[Train] Gen 19 Ep 5/20 GlobalEp 365 | R_raw=-871.93 | len=200 | actor_loss=0.053 | critic_loss=36923.785
+[Train] Gen 19 Ep 6/20 GlobalEp 366 | R_raw=-1451.20 | len=200 | actor_loss=0.007 | critic_loss=103180.320
+[Train] Gen 19 Ep 7/20 GlobalEp 367 | R_raw=-834.86 | len=200 | actor_loss=-0.097 | critic_loss=35377.766
+[Train] Gen 19 Ep 8/20 GlobalEp 368 | R_raw=-1376.07 | len=200 | actor_loss=0.058 | critic_loss=96208.391
+[Train] Gen 19 Ep 9/20 GlobalEp 369 | R_raw=-877.00 | len=200 | actor_loss=0.023 | critic_loss=40397.844
+[Train] Gen 19 Ep 10/20 GlobalEp 370 | R_raw=-1663.23 | len=200 | actor_loss=0.083 | critic_loss=132242.469
+[Train] Gen 19 Ep 11/20 GlobalEp 371 | R_raw=-1745.04 | len=200 | actor_loss=0.002 | critic_loss=147681.312
+[Train] Gen 19 Ep 12/20 GlobalEp 372 | R_raw=-753.10 | len=200 | actor_loss=0.043 | critic_loss=26461.330
+[Train] Gen 19 Ep 13/20 GlobalEp 373 | R_raw=-989.63 | len=200 | actor_loss=-0.030 | critic_loss=49165.344
+[Train] Gen 19 Ep 14/20 GlobalEp 374 | R_raw=-1084.28 | len=200 | actor_loss=-0.073 | critic_loss=59927.789
+[Train] Gen 19 Ep 15/20 GlobalEp 375 | R_raw=-1342.05 | len=200 | actor_loss=0.017 | critic_loss=86142.359
+[Train] Gen 19 Ep 16/20 GlobalEp 376 | R_raw=-1246.31 | len=200 | actor_loss=0.042 | critic_loss=74725.703
+[Train] Gen 19 Ep 17/20 GlobalEp 377 | R_raw=-1293.61 | len=200 | actor_loss=0.048 | critic_loss=77301.070
+[Train] Gen 19 Ep 18/20 GlobalEp 378 | R_raw=-1470.49 | len=200 | actor_loss=-0.031 | critic_loss=102901.680
+[Train] Gen 19 Ep 19/20 GlobalEp 379 | R_raw=-1213.82 | len=200 | actor_loss=-0.014 | critic_loss=70942.875
+[Train] Gen 19 Ep 20/20 GlobalEp 380 | R_raw=-1301.81 | len=200 | actor_loss=0.008 | critic_loss=79030.625
+[Eval] Gen 19 | avg_train=-1177.32 | avg_eval=-1089.83 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 20/50 ===
+[Train] Gen 20 Ep 1/20 GlobalEp 381 | R_raw=-1162.44 | len=200 | actor_loss=-0.007 | critic_loss=65748.180
+[Train] Gen 20 Ep 2/20 GlobalEp 382 | R_raw=-1210.00 | len=200 | actor_loss=0.014 | critic_loss=71491.641
+[Train] Gen 20 Ep 3/20 GlobalEp 383 | R_raw=-1716.42 | len=200 | actor_loss=-0.049 | critic_loss=138452.812
+[Train] Gen 20 Ep 4/20 GlobalEp 384 | R_raw=-1534.98 | len=200 | actor_loss=0.029 | critic_loss=111916.555
+[Train] Gen 20 Ep 5/20 GlobalEp 385 | R_raw=-1468.44 | len=200 | actor_loss=0.012 | critic_loss=105042.016
+[Train] Gen 20 Ep 6/20 GlobalEp 386 | R_raw=-1312.88 | len=200 | actor_loss=-0.035 | critic_loss=81296.391
+[Train] Gen 20 Ep 7/20 GlobalEp 387 | R_raw=-851.77 | len=200 | actor_loss=0.041 | critic_loss=34486.367
+[Train] Gen 20 Ep 8/20 GlobalEp 388 | R_raw=-806.71 | len=200 | actor_loss=-0.017 | critic_loss=33087.496
+[Train] Gen 20 Ep 9/20 GlobalEp 389 | R_raw=-1114.03 | len=200 | actor_loss=-0.045 | critic_loss=57701.723
+[Train] Gen 20 Ep 10/20 GlobalEp 390 | R_raw=-1553.48 | len=200 | actor_loss=-0.027 | critic_loss=112205.758
+[Train] Gen 20 Ep 11/20 GlobalEp 391 | R_raw=-880.26 | len=200 | actor_loss=-0.013 | critic_loss=40604.523
+[Train] Gen 20 Ep 12/20 GlobalEp 392 | R_raw=-973.21 | len=200 | actor_loss=-0.037 | critic_loss=43237.270
+[Train] Gen 20 Ep 13/20 GlobalEp 393 | R_raw=-1124.55 | len=200 | actor_loss=-0.063 | critic_loss=61897.359
+[Train] Gen 20 Ep 14/20 GlobalEp 394 | R_raw=-1468.99 | len=200 | actor_loss=0.062 | critic_loss=101631.141
+[Train] Gen 20 Ep 15/20 GlobalEp 395 | R_raw=-1152.58 | len=200 | actor_loss=0.008 | critic_loss=61925.172
+[Train] Gen 20 Ep 16/20 GlobalEp 396 | R_raw=-760.68 | len=200 | actor_loss=0.013 | critic_loss=29913.594
+[Train] Gen 20 Ep 17/20 GlobalEp 397 | R_raw=-1494.42 | len=200 | actor_loss=0.006 | critic_loss=106430.141
+[Train] Gen 20 Ep 18/20 GlobalEp 398 | R_raw=-1219.02 | len=200 | actor_loss=-0.001 | critic_loss=70934.000
+[Train] Gen 20 Ep 19/20 GlobalEp 399 | R_raw=-1384.24 | len=200 | actor_loss=-0.023 | critic_loss=96089.117
+[Train] Gen 20 Ep 20/20 GlobalEp 400 | R_raw=-1607.47 | len=200 | actor_loss=0.013 | critic_loss=120800.406
+[Eval] Gen 20 | avg_train=-1239.83 | avg_eval=-1390.39 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 21/50 ===
+[Train] Gen 21 Ep 1/20 GlobalEp 401 | R_raw=-967.52 | len=200 | actor_loss=-0.024 | critic_loss=42985.164
+[Train] Gen 21 Ep 2/20 GlobalEp 402 | R_raw=-1305.87 | len=200 | actor_loss=-0.048 | critic_loss=81956.039
+[Train] Gen 21 Ep 3/20 GlobalEp 403 | R_raw=-762.52 | len=200 | actor_loss=0.060 | critic_loss=29303.273
+[Train] Gen 21 Ep 4/20 GlobalEp 404 | R_raw=-1106.07 | len=200 | actor_loss=0.019 | critic_loss=60468.098
+[Train] Gen 21 Ep 5/20 GlobalEp 405 | R_raw=-1394.61 | len=200 | actor_loss=-0.015 | critic_loss=93703.234
+[Train] Gen 21 Ep 6/20 GlobalEp 406 | R_raw=-1248.24 | len=200 | actor_loss=0.025 | critic_loss=73128.031
+[Train] Gen 21 Ep 7/20 GlobalEp 407 | R_raw=-873.43 | len=200 | actor_loss=-0.021 | critic_loss=41049.238
+[Train] Gen 21 Ep 8/20 GlobalEp 408 | R_raw=-1502.95 | len=200 | actor_loss=-0.020 | critic_loss=111650.445
+[Train] Gen 21 Ep 9/20 GlobalEp 409 | R_raw=-851.90 | len=200 | actor_loss=0.050 | critic_loss=34255.738
+[Train] Gen 21 Ep 10/20 GlobalEp 410 | R_raw=-1184.55 | len=200 | actor_loss=0.005 | critic_loss=68679.547
+[Train] Gen 21 Ep 11/20 GlobalEp 411 | R_raw=-1218.14 | len=200 | actor_loss=0.000 | critic_loss=69576.531
+[Train] Gen 21 Ep 12/20 GlobalEp 412 | R_raw=-748.49 | len=200 | actor_loss=0.013 | critic_loss=29277.646
+[Train] Gen 21 Ep 13/20 GlobalEp 413 | R_raw=-1679.35 | len=200 | actor_loss=0.002 | critic_loss=133053.844
+[Train] Gen 21 Ep 14/20 GlobalEp 414 | R_raw=-1555.48 | len=200 | actor_loss=0.016 | critic_loss=116432.641
+[Train] Gen 21 Ep 15/20 GlobalEp 415 | R_raw=-1174.51 | len=200 | actor_loss=-0.008 | critic_loss=66093.328
+[Train] Gen 21 Ep 16/20 GlobalEp 416 | R_raw=-1296.29 | len=200 | actor_loss=0.085 | critic_loss=80448.430
+[Train] Gen 21 Ep 17/20 GlobalEp 417 | R_raw=-1074.19 | len=200 | actor_loss=0.008 | critic_loss=59921.590
+[Train] Gen 21 Ep 18/20 GlobalEp 418 | R_raw=-1293.06 | len=200 | actor_loss=-0.054 | critic_loss=82626.992
+[Train] Gen 21 Ep 19/20 GlobalEp 419 | R_raw=-1165.93 | len=200 | actor_loss=0.046 | critic_loss=67883.812
+[Train] Gen 21 Ep 20/20 GlobalEp 420 | R_raw=-1067.03 | len=200 | actor_loss=0.038 | critic_loss=56222.672
+[Eval] Gen 21 | avg_train=-1173.51 | avg_eval=-1124.08 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 22/50 ===
+[Train] Gen 22 Ep 1/20 GlobalEp 421 | R_raw=-880.25 | len=200 | actor_loss=-0.036 | critic_loss=39025.969
+[Train] Gen 22 Ep 2/20 GlobalEp 422 | R_raw=-964.02 | len=200 | actor_loss=-0.068 | critic_loss=46308.699
+[Train] Gen 22 Ep 3/20 GlobalEp 423 | R_raw=-840.90 | len=200 | actor_loss=0.043 | critic_loss=43575.551
+[Train] Gen 22 Ep 4/20 GlobalEp 424 | R_raw=-1213.76 | len=200 | actor_loss=-0.011 | critic_loss=72388.469
+[Train] Gen 22 Ep 5/20 GlobalEp 425 | R_raw=-1349.72 | len=200 | actor_loss=0.033 | critic_loss=89222.508
+[Train] Gen 22 Ep 6/20 GlobalEp 426 | R_raw=-1185.35 | len=200 | actor_loss=0.007 | critic_loss=69457.047
+[Train] Gen 22 Ep 7/20 GlobalEp 427 | R_raw=-1627.19 | len=200 | actor_loss=0.069 | critic_loss=130962.398
+[Train] Gen 22 Ep 8/20 GlobalEp 428 | R_raw=-1199.08 | len=200 | actor_loss=-0.009 | critic_loss=65923.094
+[Train] Gen 22 Ep 9/20 GlobalEp 429 | R_raw=-1628.28 | len=200 | actor_loss=0.042 | critic_loss=128589.938
+[Train] Gen 22 Ep 10/20 GlobalEp 430 | R_raw=-1146.04 | len=200 | actor_loss=0.004 | critic_loss=62669.230
+[Train] Gen 22 Ep 11/20 GlobalEp 431 | R_raw=-1103.68 | len=200 | actor_loss=0.059 | critic_loss=60019.883
+[Train] Gen 22 Ep 12/20 GlobalEp 432 | R_raw=-1299.84 | len=200 | actor_loss=0.028 | critic_loss=77729.383
+[Train] Gen 22 Ep 13/20 GlobalEp 433 | R_raw=-1472.03 | len=200 | actor_loss=-0.006 | critic_loss=103043.281
+[Train] Gen 22 Ep 14/20 GlobalEp 434 | R_raw=-943.16 | len=200 | actor_loss=-0.003 | critic_loss=43732.785
+[Train] Gen 22 Ep 15/20 GlobalEp 435 | R_raw=-1648.20 | len=200 | actor_loss=-0.003 | critic_loss=135539.297
+[Train] Gen 22 Ep 16/20 GlobalEp 436 | R_raw=-1443.84 | len=200 | actor_loss=-0.056 | critic_loss=102153.820
+[Train] Gen 22 Ep 17/20 GlobalEp 437 | R_raw=-1416.43 | len=200 | actor_loss=-0.021 | critic_loss=94443.680
+[Train] Gen 22 Ep 18/20 GlobalEp 438 | R_raw=-994.05 | len=200 | actor_loss=-0.027 | critic_loss=45214.809
+[Train] Gen 22 Ep 19/20 GlobalEp 439 | R_raw=-1370.80 | len=200 | actor_loss=-0.027 | critic_loss=84382.984
+[Train] Gen 22 Ep 20/20 GlobalEp 440 | R_raw=-1558.22 | len=200 | actor_loss=0.094 | critic_loss=113777.094
+[Eval] Gen 22 | avg_train=-1264.24 | avg_eval=-1345.51 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 23/50 ===
+[Train] Gen 23 Ep 1/20 GlobalEp 441 | R_raw=-895.76 | len=200 | actor_loss=0.095 | critic_loss=38178.801
+[Train] Gen 23 Ep 2/20 GlobalEp 442 | R_raw=-1127.10 | len=200 | actor_loss=-0.054 | critic_loss=62363.250
+[Train] Gen 23 Ep 3/20 GlobalEp 443 | R_raw=-1249.02 | len=200 | actor_loss=-0.110 | critic_loss=73776.547
+[Train] Gen 23 Ep 4/20 GlobalEp 444 | R_raw=-811.10 | len=200 | actor_loss=0.034 | critic_loss=32125.643
+[Train] Gen 23 Ep 5/20 GlobalEp 445 | R_raw=-1499.38 | len=200 | actor_loss=0.009 | critic_loss=104343.828
+[Train] Gen 23 Ep 6/20 GlobalEp 446 | R_raw=-882.45 | len=200 | actor_loss=0.018 | critic_loss=34293.758
+[Train] Gen 23 Ep 7/20 GlobalEp 447 | R_raw=-897.81 | len=200 | actor_loss=0.019 | critic_loss=41226.055
+[Train] Gen 23 Ep 8/20 GlobalEp 448 | R_raw=-1161.94 | len=200 | actor_loss=-0.127 | critic_loss=65638.820
+[Train] Gen 23 Ep 9/20 GlobalEp 449 | R_raw=-1053.38 | len=200 | actor_loss=0.008 | critic_loss=53896.992
+[Train] Gen 23 Ep 10/20 GlobalEp 450 | R_raw=-1064.96 | len=200 | actor_loss=0.004 | critic_loss=56240.543
+[Train] Gen 23 Ep 11/20 GlobalEp 451 | R_raw=-883.45 | len=200 | actor_loss=0.057 | critic_loss=38241.387
+[Train] Gen 23 Ep 12/20 GlobalEp 452 | R_raw=-1376.05 | len=200 | actor_loss=-0.094 | critic_loss=96781.297
+[Train] Gen 23 Ep 13/20 GlobalEp 453 | R_raw=-1670.18 | len=200 | actor_loss=0.041 | critic_loss=136600.625
+[Train] Gen 23 Ep 14/20 GlobalEp 454 | R_raw=-1326.58 | len=200 | actor_loss=-0.009 | critic_loss=88330.898
+[Train] Gen 23 Ep 15/20 GlobalEp 455 | R_raw=-1086.10 | len=200 | actor_loss=-0.007 | critic_loss=58171.418
+[Train] Gen 23 Ep 16/20 GlobalEp 456 | R_raw=-1803.13 | len=200 | actor_loss=0.039 | critic_loss=153483.438
+[Train] Gen 23 Ep 17/20 GlobalEp 457 | R_raw=-1180.28 | len=200 | actor_loss=0.001 | critic_loss=69729.047
+[Train] Gen 23 Ep 18/20 GlobalEp 458 | R_raw=-1335.21 | len=200 | actor_loss=0.007 | critic_loss=84915.148
+[Train] Gen 23 Ep 19/20 GlobalEp 459 | R_raw=-1534.02 | len=200 | actor_loss=0.025 | critic_loss=116234.461
+[Train] Gen 23 Ep 20/20 GlobalEp 460 | R_raw=-1294.99 | len=200 | actor_loss=0.019 | critic_loss=79886.016
+[Eval] Gen 23 | avg_train=-1206.64 | avg_eval=-1506.82 | best_eval=-992.59
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 24/50 ===
+[Train] Gen 24 Ep 1/20 GlobalEp 461 | R_raw=-960.63 | len=200 | actor_loss=0.056 | critic_loss=47736.320
+[Train] Gen 24 Ep 2/20 GlobalEp 462 | R_raw=-908.49 | len=200 | actor_loss=0.091 | critic_loss=43105.410
+[Train] Gen 24 Ep 3/20 GlobalEp 463 | R_raw=-1170.59 | len=200 | actor_loss=0.094 | critic_loss=67519.039
+[Train] Gen 24 Ep 4/20 GlobalEp 464 | R_raw=-971.13 | len=200 | actor_loss=-0.043 | critic_loss=43361.629
+[Train] Gen 24 Ep 5/20 GlobalEp 465 | R_raw=-966.90 | len=200 | actor_loss=0.057 | critic_loss=45936.051
+[Train] Gen 24 Ep 6/20 GlobalEp 466 | R_raw=-761.89 | len=200 | actor_loss=0.037 | critic_loss=30447.398
+[Train] Gen 24 Ep 7/20 GlobalEp 467 | R_raw=-1740.00 | len=200 | actor_loss=-0.024 | critic_loss=142128.297
+[Train] Gen 24 Ep 8/20 GlobalEp 468 | R_raw=-1167.75 | len=200 | actor_loss=-0.052 | critic_loss=62514.590
+[Train] Gen 24 Ep 9/20 GlobalEp 469 | R_raw=-959.29 | len=200 | actor_loss=0.022 | critic_loss=43469.078
+[Train] Gen 24 Ep 10/20 GlobalEp 470 | R_raw=-1079.29 | len=200 | actor_loss=-0.032 | critic_loss=53392.488
+[Train] Gen 24 Ep 11/20 GlobalEp 471 | R_raw=-1400.68 | len=200 | actor_loss=-0.056 | critic_loss=96168.047
+[Train] Gen 24 Ep 12/20 GlobalEp 472 | R_raw=-981.18 | len=200 | actor_loss=0.015 | critic_loss=44427.520
+[Train] Gen 24 Ep 13/20 GlobalEp 473 | R_raw=-1475.97 | len=200 | actor_loss=0.153 | critic_loss=104792.180
+[Train] Gen 24 Ep 14/20 GlobalEp 474 | R_raw=-778.97 | len=200 | actor_loss=-0.007 | critic_loss=29787.734
+[Train] Gen 24 Ep 15/20 GlobalEp 475 | R_raw=-1077.55 | len=200 | actor_loss=0.042 | critic_loss=56259.359
+[Train] Gen 24 Ep 16/20 GlobalEp 476 | R_raw=-1106.63 | len=200 | actor_loss=-0.079 | critic_loss=55127.859
+[Train] Gen 24 Ep 17/20 GlobalEp 477 | R_raw=-1306.93 | len=200 | actor_loss=0.037 | critic_loss=81588.461
+[Train] Gen 24 Ep 18/20 GlobalEp 478 | R_raw=-900.52 | len=200 | actor_loss=0.119 | critic_loss=41259.109
+[Train] Gen 24 Ep 19/20 GlobalEp 479 | R_raw=-1694.33 | len=200 | actor_loss=-0.024 | critic_loss=132680.094
+[Train] Gen 24 Ep 20/20 GlobalEp 480 | R_raw=-1641.94 | len=200 | actor_loss=-0.013 | critic_loss=126604.695
+[Eval] Gen 24 | avg_train=-1152.53 | avg_eval=-972.18 | best_eval=-992.59
+[SELECT] New elite (sideways) with avg_eval=-972.18
+
+=== Generation 25/50 ===
+[Train] Gen 25 Ep 1/20 GlobalEp 481 | R_raw=-1083.55 | len=200 | actor_loss=-0.025 | critic_loss=51741.090
+[Train] Gen 25 Ep 2/20 GlobalEp 482 | R_raw=-1173.24 | len=200 | actor_loss=-0.033 | critic_loss=64112.164
+[Train] Gen 25 Ep 3/20 GlobalEp 483 | R_raw=-766.95 | len=200 | actor_loss=-0.016 | critic_loss=32175.639
+[Train] Gen 25 Ep 4/20 GlobalEp 484 | R_raw=-923.40 | len=200 | actor_loss=-0.052 | critic_loss=41697.039
+[Train] Gen 25 Ep 5/20 GlobalEp 485 | R_raw=-1056.62 | len=200 | actor_loss=0.049 | critic_loss=58893.930
+[Train] Gen 25 Ep 6/20 GlobalEp 486 | R_raw=-934.10 | len=200 | actor_loss=0.019 | critic_loss=42456.652
+[Train] Gen 25 Ep 7/20 GlobalEp 487 | R_raw=-1766.64 | len=200 | actor_loss=0.004 | critic_loss=147752.438
+[Train] Gen 25 Ep 8/20 GlobalEp 488 | R_raw=-889.79 | len=200 | actor_loss=-0.038 | critic_loss=37320.777
+[Train] Gen 25 Ep 9/20 GlobalEp 489 | R_raw=-1596.28 | len=200 | actor_loss=0.019 | critic_loss=122241.609
+[Train] Gen 25 Ep 10/20 GlobalEp 490 | R_raw=-863.81 | len=200 | actor_loss=0.019 | critic_loss=39202.906
+[Train] Gen 25 Ep 11/20 GlobalEp 491 | R_raw=-938.24 | len=200 | actor_loss=0.011 | critic_loss=47599.348
+[Train] Gen 25 Ep 12/20 GlobalEp 492 | R_raw=-1189.62 | len=200 | actor_loss=-0.088 | critic_loss=65114.828
+[Train] Gen 25 Ep 13/20 GlobalEp 493 | R_raw=-1406.63 | len=200 | actor_loss=0.003 | critic_loss=95774.047
+[Train] Gen 25 Ep 14/20 GlobalEp 494 | R_raw=-1611.17 | len=200 | actor_loss=-0.007 | critic_loss=134952.516
+[Train] Gen 25 Ep 15/20 GlobalEp 495 | R_raw=-767.09 | len=200 | actor_loss=-0.065 | critic_loss=34462.043
+[Train] Gen 25 Ep 16/20 GlobalEp 496 | R_raw=-1078.82 | len=200 | actor_loss=0.038 | critic_loss=57552.117
+[Train] Gen 25 Ep 17/20 GlobalEp 497 | R_raw=-1462.11 | len=200 | actor_loss=0.040 | critic_loss=105540.297
+[Train] Gen 25 Ep 18/20 GlobalEp 498 | R_raw=-1619.83 | len=200 | actor_loss=-0.030 | critic_loss=128324.680
+[Train] Gen 25 Ep 19/20 GlobalEp 499 | R_raw=-1310.18 | len=200 | actor_loss=-0.035 | critic_loss=83215.672
+[Train] Gen 25 Ep 20/20 GlobalEp 500 | R_raw=-1180.05 | len=200 | actor_loss=0.095 | critic_loss=66690.547
+[Eval] Gen 25 | avg_train=-1180.91 | avg_eval=-1378.57 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 26/50 ===
+[Train] Gen 26 Ep 1/20 GlobalEp 501 | R_raw=-1327.23 | len=200 | actor_loss=0.009 | critic_loss=80454.008
+[Train] Gen 26 Ep 2/20 GlobalEp 502 | R_raw=-1566.88 | len=200 | actor_loss=0.057 | critic_loss=116260.039
+[Train] Gen 26 Ep 3/20 GlobalEp 503 | R_raw=-978.50 | len=200 | actor_loss=-0.064 | critic_loss=46404.703
+[Train] Gen 26 Ep 4/20 GlobalEp 504 | R_raw=-1169.39 | len=200 | actor_loss=-0.008 | critic_loss=63995.059
+[Train] Gen 26 Ep 5/20 GlobalEp 505 | R_raw=-798.38 | len=200 | actor_loss=0.028 | critic_loss=29438.580
+[Train] Gen 26 Ep 6/20 GlobalEp 506 | R_raw=-1424.43 | len=200 | actor_loss=0.033 | critic_loss=94980.789
+[Train] Gen 26 Ep 7/20 GlobalEp 507 | R_raw=-1495.64 | len=200 | actor_loss=-0.072 | critic_loss=106592.961
+[Train] Gen 26 Ep 8/20 GlobalEp 508 | R_raw=-833.91 | len=200 | actor_loss=-0.008 | critic_loss=35112.285
+[Train] Gen 26 Ep 9/20 GlobalEp 509 | R_raw=-1586.28 | len=200 | actor_loss=-0.025 | critic_loss=115971.125
+[Train] Gen 26 Ep 10/20 GlobalEp 510 | R_raw=-898.82 | len=200 | actor_loss=0.034 | critic_loss=40156.273
+[Train] Gen 26 Ep 11/20 GlobalEp 511 | R_raw=-958.48 | len=200 | actor_loss=-0.000 | critic_loss=40352.355
+[Train] Gen 26 Ep 12/20 GlobalEp 512 | R_raw=-1682.38 | len=200 | actor_loss=0.066 | critic_loss=132641.844
+[Train] Gen 26 Ep 13/20 GlobalEp 513 | R_raw=-1156.86 | len=200 | actor_loss=-0.051 | critic_loss=62958.273
+[Train] Gen 26 Ep 14/20 GlobalEp 514 | R_raw=-1590.88 | len=200 | actor_loss=0.009 | critic_loss=119325.445
+[Train] Gen 26 Ep 15/20 GlobalEp 515 | R_raw=-865.19 | len=200 | actor_loss=0.037 | critic_loss=32484.607
+[Train] Gen 26 Ep 16/20 GlobalEp 516 | R_raw=-1809.64 | len=200 | actor_loss=-0.067 | critic_loss=153538.672
+[Train] Gen 26 Ep 17/20 GlobalEp 517 | R_raw=-894.68 | len=200 | actor_loss=0.053 | critic_loss=37376.598
+[Train] Gen 26 Ep 18/20 GlobalEp 518 | R_raw=-1137.18 | len=200 | actor_loss=-0.029 | critic_loss=63998.887
+[Train] Gen 26 Ep 19/20 GlobalEp 519 | R_raw=-778.02 | len=200 | actor_loss=0.034 | critic_loss=29347.062
+[Train] Gen 26 Ep 20/20 GlobalEp 520 | R_raw=-1108.67 | len=200 | actor_loss=-0.027 | critic_loss=58010.965
+[Eval] Gen 26 | avg_train=-1203.07 | avg_eval=-1130.78 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 27/50 ===
+[Train] Gen 27 Ep 1/20 GlobalEp 521 | R_raw=-1070.11 | len=200 | actor_loss=-0.046 | critic_loss=56278.254
+[Train] Gen 27 Ep 2/20 GlobalEp 522 | R_raw=-1288.07 | len=200 | actor_loss=-0.016 | critic_loss=80187.125
+[Train] Gen 27 Ep 3/20 GlobalEp 523 | R_raw=-1179.37 | len=200 | actor_loss=0.011 | critic_loss=68562.992
+[Train] Gen 27 Ep 4/20 GlobalEp 524 | R_raw=-881.77 | len=200 | actor_loss=0.018 | critic_loss=36980.781
+[Train] Gen 27 Ep 5/20 GlobalEp 525 | R_raw=-902.65 | len=200 | actor_loss=-0.037 | critic_loss=40126.551
+[Train] Gen 27 Ep 6/20 GlobalEp 526 | R_raw=-1591.49 | len=200 | actor_loss=-0.000 | critic_loss=118223.305
+[Train] Gen 27 Ep 7/20 GlobalEp 527 | R_raw=-1532.39 | len=200 | actor_loss=0.023 | critic_loss=104932.047
+[Train] Gen 27 Ep 8/20 GlobalEp 528 | R_raw=-1111.47 | len=200 | actor_loss=-0.031 | critic_loss=54211.793
+[Train] Gen 27 Ep 9/20 GlobalEp 529 | R_raw=-1072.05 | len=200 | actor_loss=-0.032 | critic_loss=51732.070
+[Train] Gen 27 Ep 10/20 GlobalEp 530 | R_raw=-1493.35 | len=200 | actor_loss=0.046 | critic_loss=106516.516
+[Train] Gen 27 Ep 11/20 GlobalEp 531 | R_raw=-1357.72 | len=200 | actor_loss=0.035 | critic_loss=88836.820
+[Train] Gen 27 Ep 12/20 GlobalEp 532 | R_raw=-878.53 | len=200 | actor_loss=-0.005 | critic_loss=38235.434
+[Train] Gen 27 Ep 13/20 GlobalEp 533 | R_raw=-980.29 | len=200 | actor_loss=0.058 | critic_loss=47051.043
+[Train] Gen 27 Ep 14/20 GlobalEp 534 | R_raw=-1522.96 | len=200 | actor_loss=0.055 | critic_loss=116380.219
+[Train] Gen 27 Ep 15/20 GlobalEp 535 | R_raw=-1575.32 | len=200 | actor_loss=-0.060 | critic_loss=118243.398
+[Train] Gen 27 Ep 16/20 GlobalEp 536 | R_raw=-1430.94 | len=200 | actor_loss=0.010 | critic_loss=95075.625
+[Train] Gen 27 Ep 17/20 GlobalEp 537 | R_raw=-1169.77 | len=200 | actor_loss=-0.036 | critic_loss=62567.320
+[Train] Gen 27 Ep 18/20 GlobalEp 538 | R_raw=-1166.12 | len=200 | actor_loss=-0.045 | critic_loss=69695.117
+[Train] Gen 27 Ep 19/20 GlobalEp 539 | R_raw=-1088.40 | len=200 | actor_loss=-0.044 | critic_loss=54871.008
+[Train] Gen 27 Ep 20/20 GlobalEp 540 | R_raw=-1317.92 | len=200 | actor_loss=-0.022 | critic_loss=78697.516
+[Eval] Gen 27 | avg_train=-1230.53 | avg_eval=-1467.00 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 28/50 ===
+[Train] Gen 28 Ep 1/20 GlobalEp 541 | R_raw=-1466.51 | len=200 | actor_loss=-0.049 | critic_loss=100649.852
+[Train] Gen 28 Ep 2/20 GlobalEp 542 | R_raw=-900.73 | len=200 | actor_loss=0.088 | critic_loss=40173.102
+[Train] Gen 28 Ep 3/20 GlobalEp 543 | R_raw=-897.95 | len=200 | actor_loss=-0.013 | critic_loss=38262.883
+[Train] Gen 28 Ep 4/20 GlobalEp 544 | R_raw=-994.67 | len=200 | actor_loss=0.051 | critic_loss=45418.723
+[Train] Gen 28 Ep 5/20 GlobalEp 545 | R_raw=-1009.68 | len=200 | actor_loss=-0.034 | critic_loss=48697.875
+[Train] Gen 28 Ep 6/20 GlobalEp 546 | R_raw=-782.99 | len=200 | actor_loss=0.054 | critic_loss=35302.352
+[Train] Gen 28 Ep 7/20 GlobalEp 547 | R_raw=-908.74 | len=200 | actor_loss=0.026 | critic_loss=38390.074
+[Train] Gen 28 Ep 8/20 GlobalEp 548 | R_raw=-980.44 | len=200 | actor_loss=0.034 | critic_loss=44465.859
+[Train] Gen 28 Ep 9/20 GlobalEp 549 | R_raw=-1710.25 | len=200 | actor_loss=-0.052 | critic_loss=139044.312
+[Train] Gen 28 Ep 10/20 GlobalEp 550 | R_raw=-1424.78 | len=200 | actor_loss=0.025 | critic_loss=94850.117
+[Train] Gen 28 Ep 11/20 GlobalEp 551 | R_raw=-992.10 | len=200 | actor_loss=-0.111 | critic_loss=47128.828
+[Train] Gen 28 Ep 12/20 GlobalEp 552 | R_raw=-1042.13 | len=200 | actor_loss=-0.033 | critic_loss=53869.219
+[Train] Gen 28 Ep 13/20 GlobalEp 553 | R_raw=-1302.50 | len=200 | actor_loss=-0.033 | critic_loss=79512.367
+[Train] Gen 28 Ep 14/20 GlobalEp 554 | R_raw=-1188.09 | len=200 | actor_loss=-0.051 | critic_loss=62392.039
+[Train] Gen 28 Ep 15/20 GlobalEp 555 | R_raw=-1221.21 | len=200 | actor_loss=-0.026 | critic_loss=63781.199
+[Train] Gen 28 Ep 16/20 GlobalEp 556 | R_raw=-894.47 | len=200 | actor_loss=0.064 | critic_loss=39830.867
+[Train] Gen 28 Ep 17/20 GlobalEp 557 | R_raw=-907.16 | len=200 | actor_loss=0.015 | critic_loss=42156.078
+[Train] Gen 28 Ep 18/20 GlobalEp 558 | R_raw=-1463.37 | len=200 | actor_loss=-0.112 | critic_loss=96529.359
+[Train] Gen 28 Ep 19/20 GlobalEp 559 | R_raw=-1326.98 | len=200 | actor_loss=-0.031 | critic_loss=81176.734
+[Train] Gen 28 Ep 20/20 GlobalEp 560 | R_raw=-986.63 | len=200 | actor_loss=0.037 | critic_loss=44479.910
+[Eval] Gen 28 | avg_train=-1120.07 | avg_eval=-1116.09 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 29/50 ===
+[Train] Gen 29 Ep 1/20 GlobalEp 561 | R_raw=-1502.01 | len=200 | actor_loss=0.014 | critic_loss=102642.375
+[Train] Gen 29 Ep 2/20 GlobalEp 562 | R_raw=-1286.74 | len=200 | actor_loss=-0.020 | critic_loss=80243.391
+[Train] Gen 29 Ep 3/20 GlobalEp 563 | R_raw=-792.92 | len=200 | actor_loss=-0.047 | critic_loss=33007.941
+[Train] Gen 29 Ep 4/20 GlobalEp 564 | R_raw=-807.45 | len=200 | actor_loss=-0.072 | critic_loss=26478.744
+[Train] Gen 29 Ep 5/20 GlobalEp 565 | R_raw=-996.87 | len=200 | actor_loss=0.072 | critic_loss=47420.520
+[Train] Gen 29 Ep 6/20 GlobalEp 566 | R_raw=-986.82 | len=200 | actor_loss=0.028 | critic_loss=48148.090
+[Train] Gen 29 Ep 7/20 GlobalEp 567 | R_raw=-1025.31 | len=200 | actor_loss=-0.044 | critic_loss=50407.223
+[Train] Gen 29 Ep 8/20 GlobalEp 568 | R_raw=-1072.62 | len=200 | actor_loss=-0.016 | critic_loss=51358.133
+[Train] Gen 29 Ep 9/20 GlobalEp 569 | R_raw=-1830.85 | len=200 | actor_loss=-0.043 | critic_loss=158008.844
+[Train] Gen 29 Ep 10/20 GlobalEp 570 | R_raw=-965.30 | len=200 | actor_loss=0.042 | critic_loss=42905.070
+[Train] Gen 29 Ep 11/20 GlobalEp 571 | R_raw=-1299.34 | len=200 | actor_loss=0.019 | critic_loss=78406.180
+[Train] Gen 29 Ep 12/20 GlobalEp 572 | R_raw=-1299.26 | len=200 | actor_loss=-0.009 | critic_loss=83455.438
+[Train] Gen 29 Ep 13/20 GlobalEp 573 | R_raw=-906.63 | len=200 | actor_loss=-0.043 | critic_loss=41498.898
+[Train] Gen 29 Ep 14/20 GlobalEp 574 | R_raw=-1087.21 | len=200 | actor_loss=0.018 | critic_loss=54810.609
+[Train] Gen 29 Ep 15/20 GlobalEp 575 | R_raw=-891.44 | len=200 | actor_loss=-0.027 | critic_loss=38770.285
+[Train] Gen 29 Ep 16/20 GlobalEp 576 | R_raw=-1002.52 | len=200 | actor_loss=-0.055 | critic_loss=50451.176
+[Train] Gen 29 Ep 17/20 GlobalEp 577 | R_raw=-1506.64 | len=200 | actor_loss=0.027 | critic_loss=109678.320
+[Train] Gen 29 Ep 18/20 GlobalEp 578 | R_raw=-1562.51 | len=200 | actor_loss=0.021 | critic_loss=113332.438
+[Train] Gen 29 Ep 19/20 GlobalEp 579 | R_raw=-1628.81 | len=200 | actor_loss=0.003 | critic_loss=131124.750
+[Train] Gen 29 Ep 20/20 GlobalEp 580 | R_raw=-853.75 | len=200 | actor_loss=-0.045 | critic_loss=32541.910
+[Eval] Gen 29 | avg_train=-1165.25 | avg_eval=-1227.62 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 30/50 ===
+[Train] Gen 30 Ep 1/20 GlobalEp 581 | R_raw=-872.62 | len=200 | actor_loss=0.023 | critic_loss=34780.727
+[Train] Gen 30 Ep 2/20 GlobalEp 582 | R_raw=-899.74 | len=200 | actor_loss=0.057 | critic_loss=41866.434
+[Train] Gen 30 Ep 3/20 GlobalEp 583 | R_raw=-1556.26 | len=200 | actor_loss=-0.042 | critic_loss=114436.336
+[Train] Gen 30 Ep 4/20 GlobalEp 584 | R_raw=-1184.98 | len=200 | actor_loss=-0.137 | critic_loss=65596.438
+[Train] Gen 30 Ep 5/20 GlobalEp 585 | R_raw=-802.71 | len=200 | actor_loss=-0.039 | critic_loss=33538.293
+[Train] Gen 30 Ep 6/20 GlobalEp 586 | R_raw=-994.44 | len=200 | actor_loss=-0.037 | critic_loss=44965.758
+[Train] Gen 30 Ep 7/20 GlobalEp 587 | R_raw=-1213.57 | len=200 | actor_loss=0.064 | critic_loss=67395.523
+[Train] Gen 30 Ep 8/20 GlobalEp 588 | R_raw=-962.11 | len=200 | actor_loss=-0.022 | critic_loss=49424.625
+[Train] Gen 30 Ep 9/20 GlobalEp 589 | R_raw=-955.80 | len=200 | actor_loss=-0.064 | critic_loss=45894.895
+[Train] Gen 30 Ep 10/20 GlobalEp 590 | R_raw=-859.68 | len=200 | actor_loss=-0.079 | critic_loss=39217.715
+[Train] Gen 30 Ep 11/20 GlobalEp 591 | R_raw=-910.01 | len=200 | actor_loss=-0.089 | critic_loss=41860.023
+[Train] Gen 30 Ep 12/20 GlobalEp 592 | R_raw=-1070.31 | len=200 | actor_loss=0.059 | critic_loss=52582.418
+[Train] Gen 30 Ep 13/20 GlobalEp 593 | R_raw=-1004.82 | len=200 | actor_loss=0.037 | critic_loss=48404.695
+[Train] Gen 30 Ep 14/20 GlobalEp 594 | R_raw=-912.71 | len=200 | actor_loss=-0.063 | critic_loss=39338.098
+[Train] Gen 30 Ep 15/20 GlobalEp 595 | R_raw=-894.96 | len=200 | actor_loss=0.032 | critic_loss=35645.684
+[Train] Gen 30 Ep 16/20 GlobalEp 596 | R_raw=-1077.79 | len=200 | actor_loss=0.089 | critic_loss=51040.902
+[Train] Gen 30 Ep 17/20 GlobalEp 597 | R_raw=-1208.55 | len=200 | actor_loss=0.048 | critic_loss=67327.602
+[Train] Gen 30 Ep 18/20 GlobalEp 598 | R_raw=-1077.61 | len=200 | actor_loss=0.011 | critic_loss=52358.812
+[Train] Gen 30 Ep 19/20 GlobalEp 599 | R_raw=-876.76 | len=200 | actor_loss=-0.049 | critic_loss=35039.141
+[Train] Gen 30 Ep 20/20 GlobalEp 600 | R_raw=-1002.18 | len=200 | actor_loss=-0.052 | critic_loss=46999.395
+[Eval] Gen 30 | avg_train=-1016.88 | avg_eval=-1185.34 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 31/50 ===
+[Train] Gen 31 Ep 1/20 GlobalEp 601 | R_raw=-968.59 | len=200 | actor_loss=-0.001 | critic_loss=45392.383
+[Train] Gen 31 Ep 2/20 GlobalEp 602 | R_raw=-1408.36 | len=200 | actor_loss=0.041 | critic_loss=95439.797
+[Train] Gen 31 Ep 3/20 GlobalEp 603 | R_raw=-883.25 | len=200 | actor_loss=0.117 | critic_loss=39233.379
+[Train] Gen 31 Ep 4/20 GlobalEp 604 | R_raw=-929.65 | len=200 | actor_loss=0.030 | critic_loss=40834.645
+[Train] Gen 31 Ep 5/20 GlobalEp 605 | R_raw=-927.90 | len=200 | actor_loss=0.009 | critic_loss=41036.539
+[Train] Gen 31 Ep 6/20 GlobalEp 606 | R_raw=-968.57 | len=200 | actor_loss=0.007 | critic_loss=44902.527
+[Train] Gen 31 Ep 7/20 GlobalEp 607 | R_raw=-1622.02 | len=200 | actor_loss=-0.048 | critic_loss=125806.680
+[Train] Gen 31 Ep 8/20 GlobalEp 608 | R_raw=-1715.68 | len=200 | actor_loss=0.090 | critic_loss=142317.172
+[Train] Gen 31 Ep 9/20 GlobalEp 609 | R_raw=-1591.22 | len=200 | actor_loss=0.088 | critic_loss=115357.164
+[Train] Gen 31 Ep 10/20 GlobalEp 610 | R_raw=-906.95 | len=200 | actor_loss=-0.033 | critic_loss=37327.344
+[Train] Gen 31 Ep 11/20 GlobalEp 611 | R_raw=-1076.91 | len=200 | actor_loss=0.075 | critic_loss=54105.016
+[Train] Gen 31 Ep 12/20 GlobalEp 612 | R_raw=-1544.46 | len=200 | actor_loss=0.020 | critic_loss=114873.539
+[Train] Gen 31 Ep 13/20 GlobalEp 613 | R_raw=-864.29 | len=200 | actor_loss=-0.001 | critic_loss=34335.250
+[Train] Gen 31 Ep 14/20 GlobalEp 614 | R_raw=-1008.36 | len=200 | actor_loss=-0.060 | critic_loss=48091.340
+[Train] Gen 31 Ep 15/20 GlobalEp 615 | R_raw=-1010.08 | len=200 | actor_loss=-0.025 | critic_loss=47352.875
+[Train] Gen 31 Ep 16/20 GlobalEp 616 | R_raw=-1222.93 | len=200 | actor_loss=0.028 | critic_loss=72852.008
+[Train] Gen 31 Ep 17/20 GlobalEp 617 | R_raw=-1075.71 | len=200 | actor_loss=-0.044 | critic_loss=54016.719
+[Train] Gen 31 Ep 18/20 GlobalEp 618 | R_raw=-1349.29 | len=200 | actor_loss=0.076 | critic_loss=84457.859
+[Train] Gen 31 Ep 19/20 GlobalEp 619 | R_raw=-981.12 | len=200 | actor_loss=0.089 | critic_loss=45344.070
+[Train] Gen 31 Ep 20/20 GlobalEp 620 | R_raw=-1837.07 | len=200 | actor_loss=0.019 | critic_loss=158145.859
+[Eval] Gen 31 | avg_train=-1194.62 | avg_eval=-1037.80 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 32/50 ===
+[Train] Gen 32 Ep 1/20 GlobalEp 621 | R_raw=-1007.97 | len=200 | actor_loss=0.046 | critic_loss=46684.648
+[Train] Gen 32 Ep 2/20 GlobalEp 622 | R_raw=-1176.01 | len=200 | actor_loss=0.083 | critic_loss=67474.930
+[Train] Gen 32 Ep 3/20 GlobalEp 623 | R_raw=-1643.21 | len=200 | actor_loss=-0.024 | critic_loss=129583.234
+[Train] Gen 32 Ep 4/20 GlobalEp 624 | R_raw=-1091.34 | len=200 | actor_loss=0.070 | critic_loss=57442.367
+[Train] Gen 32 Ep 5/20 GlobalEp 625 | R_raw=-1192.98 | len=200 | actor_loss=-0.031 | critic_loss=65536.195
+[Train] Gen 32 Ep 6/20 GlobalEp 626 | R_raw=-1611.05 | len=200 | actor_loss=0.068 | critic_loss=121217.094
+[Train] Gen 32 Ep 7/20 GlobalEp 627 | R_raw=-1227.04 | len=200 | actor_loss=0.072 | critic_loss=67548.625
+[Train] Gen 32 Ep 8/20 GlobalEp 628 | R_raw=-1252.97 | len=200 | actor_loss=-0.073 | critic_loss=69839.875
+[Train] Gen 32 Ep 9/20 GlobalEp 629 | R_raw=-1131.60 | len=200 | actor_loss=-0.021 | critic_loss=61983.238
+[Train] Gen 32 Ep 10/20 GlobalEp 630 | R_raw=-1580.87 | len=200 | actor_loss=-0.026 | critic_loss=117688.227
+[Train] Gen 32 Ep 11/20 GlobalEp 631 | R_raw=-1080.26 | len=200 | actor_loss=-0.050 | critic_loss=54113.641
+[Train] Gen 32 Ep 12/20 GlobalEp 632 | R_raw=-1707.08 | len=200 | actor_loss=-0.030 | critic_loss=136728.094
+[Train] Gen 32 Ep 13/20 GlobalEp 633 | R_raw=-1015.21 | len=200 | actor_loss=-0.037 | critic_loss=46810.008
+[Train] Gen 32 Ep 14/20 GlobalEp 634 | R_raw=-868.06 | len=200 | actor_loss=-0.037 | critic_loss=34193.754
+[Train] Gen 32 Ep 15/20 GlobalEp 635 | R_raw=-1020.05 | len=200 | actor_loss=-0.015 | critic_loss=51290.820
+[Train] Gen 32 Ep 16/20 GlobalEp 636 | R_raw=-757.93 | len=200 | actor_loss=-0.047 | critic_loss=28571.148
+[Train] Gen 32 Ep 17/20 GlobalEp 637 | R_raw=-1180.04 | len=200 | actor_loss=-0.034 | critic_loss=62054.453
+[Train] Gen 32 Ep 18/20 GlobalEp 638 | R_raw=-875.04 | len=200 | actor_loss=-0.025 | critic_loss=34268.453
+[Train] Gen 32 Ep 19/20 GlobalEp 639 | R_raw=-1364.76 | len=200 | actor_loss=0.013 | critic_loss=84847.430
+[Train] Gen 32 Ep 20/20 GlobalEp 640 | R_raw=-890.37 | len=200 | actor_loss=-0.027 | critic_loss=39897.500
+[Eval] Gen 32 | avg_train=-1183.69 | avg_eval=-1114.15 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 33/50 ===
+[Train] Gen 33 Ep 1/20 GlobalEp 641 | R_raw=-1472.01 | len=200 | actor_loss=-0.010 | critic_loss=99499.758
+[Train] Gen 33 Ep 2/20 GlobalEp 642 | R_raw=-1082.42 | len=200 | actor_loss=0.155 | critic_loss=54904.027
+[Train] Gen 33 Ep 3/20 GlobalEp 643 | R_raw=-1218.36 | len=200 | actor_loss=-0.057 | critic_loss=69800.156
+[Train] Gen 33 Ep 4/20 GlobalEp 644 | R_raw=-1500.94 | len=200 | actor_loss=-0.001 | critic_loss=104788.047
+[Train] Gen 33 Ep 5/20 GlobalEp 645 | R_raw=-1543.86 | len=200 | actor_loss=-0.052 | critic_loss=114451.219
+[Train] Gen 33 Ep 6/20 GlobalEp 646 | R_raw=-1640.85 | len=200 | actor_loss=0.032 | critic_loss=126948.008
+[Train] Gen 33 Ep 7/20 GlobalEp 647 | R_raw=-1066.24 | len=200 | actor_loss=-0.116 | critic_loss=50974.449
+[Train] Gen 33 Ep 8/20 GlobalEp 648 | R_raw=-903.97 | len=200 | actor_loss=-0.041 | critic_loss=42581.176
+[Train] Gen 33 Ep 9/20 GlobalEp 649 | R_raw=-1326.18 | len=200 | actor_loss=0.032 | critic_loss=77870.805
+[Train] Gen 33 Ep 10/20 GlobalEp 650 | R_raw=-909.94 | len=200 | actor_loss=0.037 | critic_loss=41337.949
+[Train] Gen 33 Ep 11/20 GlobalEp 651 | R_raw=-870.02 | len=200 | actor_loss=-0.108 | critic_loss=35325.996
+[Train] Gen 33 Ep 12/20 GlobalEp 652 | R_raw=-1514.10 | len=200 | actor_loss=-0.155 | critic_loss=108174.086
+[Train] Gen 33 Ep 13/20 GlobalEp 653 | R_raw=-986.27 | len=200 | actor_loss=-0.061 | critic_loss=51123.094
+[Train] Gen 33 Ep 14/20 GlobalEp 654 | R_raw=-1076.63 | len=200 | actor_loss=0.012 | critic_loss=54865.953
+[Train] Gen 33 Ep 15/20 GlobalEp 655 | R_raw=-1117.60 | len=200 | actor_loss=-0.062 | critic_loss=56388.898
+[Train] Gen 33 Ep 16/20 GlobalEp 656 | R_raw=-1090.09 | len=200 | actor_loss=0.007 | critic_loss=54491.320
+[Train] Gen 33 Ep 17/20 GlobalEp 657 | R_raw=-1017.78 | len=200 | actor_loss=0.027 | critic_loss=50934.758
+[Train] Gen 33 Ep 18/20 GlobalEp 658 | R_raw=-1041.93 | len=200 | actor_loss=0.095 | critic_loss=56586.520
+[Train] Gen 33 Ep 19/20 GlobalEp 659 | R_raw=-1142.57 | len=200 | actor_loss=0.007 | critic_loss=57438.391
+[Train] Gen 33 Ep 20/20 GlobalEp 660 | R_raw=-1049.11 | len=200 | actor_loss=0.015 | critic_loss=55214.055
+[Eval] Gen 33 | avg_train=-1178.54 | avg_eval=-1149.31 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 34/50 ===
+[Train] Gen 34 Ep 1/20 GlobalEp 661 | R_raw=-882.33 | len=200 | actor_loss=0.028 | critic_loss=36181.148
+[Train] Gen 34 Ep 2/20 GlobalEp 662 | R_raw=-1021.68 | len=200 | actor_loss=-0.019 | critic_loss=50669.629
+[Train] Gen 34 Ep 3/20 GlobalEp 663 | R_raw=-760.39 | len=200 | actor_loss=-0.015 | critic_loss=24021.592
+[Train] Gen 34 Ep 4/20 GlobalEp 664 | R_raw=-1414.80 | len=200 | actor_loss=-0.043 | critic_loss=94041.695
+[Train] Gen 34 Ep 5/20 GlobalEp 665 | R_raw=-1078.02 | len=200 | actor_loss=-0.064 | critic_loss=54152.340
+[Train] Gen 34 Ep 6/20 GlobalEp 666 | R_raw=-1076.40 | len=200 | actor_loss=0.004 | critic_loss=57267.949
+[Train] Gen 34 Ep 7/20 GlobalEp 667 | R_raw=-1008.13 | len=200 | actor_loss=0.013 | critic_loss=49138.016
+[Train] Gen 34 Ep 8/20 GlobalEp 668 | R_raw=-1032.04 | len=200 | actor_loss=0.008 | critic_loss=52483.184
+[Train] Gen 34 Ep 9/20 GlobalEp 669 | R_raw=-1109.60 | len=200 | actor_loss=0.036 | critic_loss=58406.965
+[Train] Gen 34 Ep 10/20 GlobalEp 670 | R_raw=-905.09 | len=200 | actor_loss=0.124 | critic_loss=41323.113
+[Train] Gen 34 Ep 11/20 GlobalEp 671 | R_raw=-884.23 | len=200 | actor_loss=-0.018 | critic_loss=36807.246
+[Train] Gen 34 Ep 12/20 GlobalEp 672 | R_raw=-888.66 | len=200 | actor_loss=-0.066 | critic_loss=38742.676
+[Train] Gen 34 Ep 13/20 GlobalEp 673 | R_raw=-997.94 | len=200 | actor_loss=-0.035 | critic_loss=44826.086
+[Train] Gen 34 Ep 14/20 GlobalEp 674 | R_raw=-1517.95 | len=200 | actor_loss=-0.031 | critic_loss=113655.617
+[Train] Gen 34 Ep 15/20 GlobalEp 675 | R_raw=-781.14 | len=200 | actor_loss=-0.046 | critic_loss=30109.000
+[Train] Gen 34 Ep 16/20 GlobalEp 676 | R_raw=-828.30 | len=200 | actor_loss=0.062 | critic_loss=33949.688
+[Train] Gen 34 Ep 17/20 GlobalEp 677 | R_raw=-1512.72 | len=200 | actor_loss=-0.015 | critic_loss=105071.414
+[Train] Gen 34 Ep 18/20 GlobalEp 678 | R_raw=-914.19 | len=200 | actor_loss=-0.088 | critic_loss=37326.547
+[Train] Gen 34 Ep 19/20 GlobalEp 679 | R_raw=-900.23 | len=200 | actor_loss=-0.018 | critic_loss=39647.930
+[Train] Gen 34 Ep 20/20 GlobalEp 680 | R_raw=-1031.08 | len=200 | actor_loss=-0.013 | critic_loss=52466.820
+[Eval] Gen 34 | avg_train=-1027.25 | avg_eval=-1223.47 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 35/50 ===
+[Train] Gen 35 Ep 1/20 GlobalEp 681 | R_raw=-886.58 | len=200 | actor_loss=-0.041 | critic_loss=36784.188
+[Train] Gen 35 Ep 2/20 GlobalEp 682 | R_raw=-1254.32 | len=200 | actor_loss=0.021 | critic_loss=73974.930
+[Train] Gen 35 Ep 3/20 GlobalEp 683 | R_raw=-983.04 | len=200 | actor_loss=0.001 | critic_loss=41352.445
+[Train] Gen 35 Ep 4/20 GlobalEp 684 | R_raw=-905.18 | len=200 | actor_loss=-0.032 | critic_loss=42388.777
+[Train] Gen 35 Ep 5/20 GlobalEp 685 | R_raw=-1308.53 | len=200 | actor_loss=-0.018 | critic_loss=79312.352
+[Train] Gen 35 Ep 6/20 GlobalEp 686 | R_raw=-979.56 | len=200 | actor_loss=-0.060 | critic_loss=46296.398
+[Train] Gen 35 Ep 7/20 GlobalEp 687 | R_raw=-1694.44 | len=200 | actor_loss=0.035 | critic_loss=136033.141
+[Train] Gen 35 Ep 8/20 GlobalEp 688 | R_raw=-1065.96 | len=200 | actor_loss=0.015 | critic_loss=54541.148
+[Train] Gen 35 Ep 9/20 GlobalEp 689 | R_raw=-772.87 | len=200 | actor_loss=-0.062 | critic_loss=29752.279
+[Train] Gen 35 Ep 10/20 GlobalEp 690 | R_raw=-789.12 | len=200 | actor_loss=-0.042 | critic_loss=40989.805
+[Train] Gen 35 Ep 11/20 GlobalEp 691 | R_raw=-1377.50 | len=200 | actor_loss=0.027 | critic_loss=87182.086
+[Train] Gen 35 Ep 12/20 GlobalEp 692 | R_raw=-1062.74 | len=200 | actor_loss=-0.030 | critic_loss=55002.684
+[Train] Gen 35 Ep 13/20 GlobalEp 693 | R_raw=-1021.44 | len=200 | actor_loss=0.059 | critic_loss=49411.820
+[Train] Gen 35 Ep 14/20 GlobalEp 694 | R_raw=-1279.34 | len=200 | actor_loss=-0.004 | critic_loss=75407.789
+[Train] Gen 35 Ep 15/20 GlobalEp 695 | R_raw=-1489.72 | len=200 | actor_loss=-0.077 | critic_loss=102873.500
+[Train] Gen 35 Ep 16/20 GlobalEp 696 | R_raw=-1214.59 | len=200 | actor_loss=0.023 | critic_loss=75215.469
+[Train] Gen 35 Ep 17/20 GlobalEp 697 | R_raw=-935.89 | len=200 | actor_loss=0.027 | critic_loss=43651.500
+[Train] Gen 35 Ep 18/20 GlobalEp 698 | R_raw=-1394.09 | len=200 | actor_loss=0.049 | critic_loss=89842.719
+[Train] Gen 35 Ep 19/20 GlobalEp 699 | R_raw=-1193.48 | len=200 | actor_loss=-0.049 | critic_loss=67356.516
+[Train] Gen 35 Ep 20/20 GlobalEp 700 | R_raw=-1009.22 | len=200 | actor_loss=0.020 | critic_loss=50385.758
+[Eval] Gen 35 | avg_train=-1130.88 | avg_eval=-1054.32 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 36/50 ===
+[Train] Gen 36 Ep 1/20 GlobalEp 701 | R_raw=-890.85 | len=200 | actor_loss=0.060 | critic_loss=39763.395
+[Train] Gen 36 Ep 2/20 GlobalEp 702 | R_raw=-1401.26 | len=200 | actor_loss=0.005 | critic_loss=94369.680
+[Train] Gen 36 Ep 3/20 GlobalEp 703 | R_raw=-1164.50 | len=200 | actor_loss=-0.040 | critic_loss=61768.805
+[Train] Gen 36 Ep 4/20 GlobalEp 704 | R_raw=-1605.84 | len=200 | actor_loss=-0.027 | critic_loss=118689.078
+[Train] Gen 36 Ep 5/20 GlobalEp 705 | R_raw=-1009.66 | len=200 | actor_loss=-0.026 | critic_loss=48788.148
+[Train] Gen 36 Ep 6/20 GlobalEp 706 | R_raw=-1300.76 | len=200 | actor_loss=0.050 | critic_loss=75498.617
+[Train] Gen 36 Ep 7/20 GlobalEp 707 | R_raw=-1401.38 | len=200 | actor_loss=-0.003 | critic_loss=96950.680
+[Train] Gen 36 Ep 8/20 GlobalEp 708 | R_raw=-1202.14 | len=200 | actor_loss=-0.028 | critic_loss=70213.570
+[Train] Gen 36 Ep 9/20 GlobalEp 709 | R_raw=-1165.65 | len=200 | actor_loss=0.007 | critic_loss=65237.590
+[Train] Gen 36 Ep 10/20 GlobalEp 710 | R_raw=-1609.04 | len=200 | actor_loss=0.071 | critic_loss=125354.859
+[Train] Gen 36 Ep 11/20 GlobalEp 711 | R_raw=-1026.87 | len=200 | actor_loss=-0.009 | critic_loss=52052.000
+[Train] Gen 36 Ep 12/20 GlobalEp 712 | R_raw=-1735.32 | len=200 | actor_loss=0.059 | critic_loss=141769.969
+[Train] Gen 36 Ep 13/20 GlobalEp 713 | R_raw=-1401.70 | len=200 | actor_loss=0.043 | critic_loss=95081.109
+[Train] Gen 36 Ep 14/20 GlobalEp 714 | R_raw=-1486.97 | len=200 | actor_loss=-0.051 | critic_loss=98511.719
+[Train] Gen 36 Ep 15/20 GlobalEp 715 | R_raw=-1745.97 | len=200 | actor_loss=0.084 | critic_loss=143805.297
+[Train] Gen 36 Ep 16/20 GlobalEp 716 | R_raw=-1310.20 | len=200 | actor_loss=-0.005 | critic_loss=80791.305
+[Train] Gen 36 Ep 17/20 GlobalEp 717 | R_raw=-1644.77 | len=200 | actor_loss=0.052 | critic_loss=124707.477
+[Train] Gen 36 Ep 18/20 GlobalEp 718 | R_raw=-1077.01 | len=200 | actor_loss=0.005 | critic_loss=54466.578
+[Train] Gen 36 Ep 19/20 GlobalEp 719 | R_raw=-1192.97 | len=200 | actor_loss=-0.024 | critic_loss=64982.965
+[Train] Gen 36 Ep 20/20 GlobalEp 720 | R_raw=-1485.91 | len=200 | actor_loss=0.086 | critic_loss=103370.539
+[Eval] Gen 36 | avg_train=-1342.94 | avg_eval=-1205.25 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 37/50 ===
+[Train] Gen 37 Ep 1/20 GlobalEp 721 | R_raw=-1058.83 | len=200 | actor_loss=-0.042 | critic_loss=52385.340
+[Train] Gen 37 Ep 2/20 GlobalEp 722 | R_raw=-853.29 | len=200 | actor_loss=0.040 | critic_loss=34734.801
+[Train] Gen 37 Ep 3/20 GlobalEp 723 | R_raw=-868.93 | len=200 | actor_loss=0.073 | critic_loss=37299.277
+[Train] Gen 37 Ep 4/20 GlobalEp 724 | R_raw=-1341.85 | len=200 | actor_loss=0.024 | critic_loss=85104.836
+[Train] Gen 37 Ep 5/20 GlobalEp 725 | R_raw=-962.24 | len=200 | actor_loss=-0.017 | critic_loss=41104.016
+[Train] Gen 37 Ep 6/20 GlobalEp 726 | R_raw=-1668.37 | len=200 | actor_loss=0.017 | critic_loss=128618.047
+[Train] Gen 37 Ep 7/20 GlobalEp 727 | R_raw=-1211.94 | len=200 | actor_loss=0.028 | critic_loss=66542.008
+[Train] Gen 37 Ep 8/20 GlobalEp 728 | R_raw=-1206.63 | len=200 | actor_loss=-0.015 | critic_loss=68648.352
+[Train] Gen 37 Ep 9/20 GlobalEp 729 | R_raw=-874.13 | len=200 | actor_loss=0.006 | critic_loss=34626.703
+[Train] Gen 37 Ep 10/20 GlobalEp 730 | R_raw=-1484.39 | len=200 | actor_loss=-0.034 | critic_loss=106097.586
+[Train] Gen 37 Ep 11/20 GlobalEp 731 | R_raw=-1503.16 | len=200 | actor_loss=-0.001 | critic_loss=108570.000
+[Train] Gen 37 Ep 12/20 GlobalEp 732 | R_raw=-1064.40 | len=200 | actor_loss=0.008 | critic_loss=48797.520
+[Train] Gen 37 Ep 13/20 GlobalEp 733 | R_raw=-1034.35 | len=200 | actor_loss=-0.069 | critic_loss=51152.660
+[Train] Gen 37 Ep 14/20 GlobalEp 734 | R_raw=-1019.06 | len=200 | actor_loss=-0.042 | critic_loss=51519.328
+[Train] Gen 37 Ep 15/20 GlobalEp 735 | R_raw=-914.14 | len=200 | actor_loss=-0.060 | critic_loss=37273.680
+[Train] Gen 37 Ep 16/20 GlobalEp 736 | R_raw=-1256.35 | len=200 | actor_loss=0.037 | critic_loss=74954.172
+[Train] Gen 37 Ep 17/20 GlobalEp 737 | R_raw=-1103.06 | len=200 | actor_loss=-0.007 | critic_loss=64478.723
+[Train] Gen 37 Ep 18/20 GlobalEp 738 | R_raw=-1481.12 | len=200 | actor_loss=0.068 | critic_loss=100832.398
+[Train] Gen 37 Ep 19/20 GlobalEp 739 | R_raw=-917.40 | len=200 | actor_loss=0.083 | critic_loss=39737.738
+[Train] Gen 37 Ep 20/20 GlobalEp 740 | R_raw=-1532.75 | len=200 | actor_loss=-0.062 | critic_loss=116272.156
+[Eval] Gen 37 | avg_train=-1167.82 | avg_eval=-1245.79 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 38/50 ===
+[Train] Gen 38 Ep 1/20 GlobalEp 741 | R_raw=-975.42 | len=200 | actor_loss=-0.037 | critic_loss=44884.250
+[Train] Gen 38 Ep 2/20 GlobalEp 742 | R_raw=-978.48 | len=200 | actor_loss=-0.042 | critic_loss=46486.000
+[Train] Gen 38 Ep 3/20 GlobalEp 743 | R_raw=-1086.73 | len=200 | actor_loss=0.022 | critic_loss=54571.590
+[Train] Gen 38 Ep 4/20 GlobalEp 744 | R_raw=-764.27 | len=200 | actor_loss=-0.065 | critic_loss=30159.871
+[Train] Gen 38 Ep 5/20 GlobalEp 745 | R_raw=-1765.96 | len=200 | actor_loss=0.021 | critic_loss=151714.641
+[Train] Gen 38 Ep 6/20 GlobalEp 746 | R_raw=-878.42 | len=200 | actor_loss=0.060 | critic_loss=36792.078
+[Train] Gen 38 Ep 7/20 GlobalEp 747 | R_raw=-1069.37 | len=200 | actor_loss=0.031 | critic_loss=54215.688
+[Train] Gen 38 Ep 8/20 GlobalEp 748 | R_raw=-876.90 | len=200 | actor_loss=-0.082 | critic_loss=35512.469
+[Train] Gen 38 Ep 9/20 GlobalEp 749 | R_raw=-861.52 | len=200 | actor_loss=0.012 | critic_loss=36283.352
+[Train] Gen 38 Ep 10/20 GlobalEp 750 | R_raw=-992.30 | len=200 | actor_loss=-0.007 | critic_loss=45064.711
+[Train] Gen 38 Ep 11/20 GlobalEp 751 | R_raw=-1669.59 | len=200 | actor_loss=-0.108 | critic_loss=131258.688
+[Train] Gen 38 Ep 12/20 GlobalEp 752 | R_raw=-1494.48 | len=200 | actor_loss=0.045 | critic_loss=101323.938
+[Train] Gen 38 Ep 13/20 GlobalEp 753 | R_raw=-1073.82 | len=200 | actor_loss=0.027 | critic_loss=55938.570
+[Train] Gen 38 Ep 14/20 GlobalEp 754 | R_raw=-908.62 | len=200 | actor_loss=0.018 | critic_loss=41464.801
+[Train] Gen 38 Ep 15/20 GlobalEp 755 | R_raw=-1397.64 | len=200 | actor_loss=0.029 | critic_loss=95200.617
+[Train] Gen 38 Ep 16/20 GlobalEp 756 | R_raw=-971.94 | len=200 | actor_loss=-0.011 | critic_loss=44965.340
+[Train] Gen 38 Ep 17/20 GlobalEp 757 | R_raw=-1569.01 | len=200 | actor_loss=0.017 | critic_loss=116761.211
+[Train] Gen 38 Ep 18/20 GlobalEp 758 | R_raw=-1386.45 | len=200 | actor_loss=0.042 | critic_loss=89545.234
+[Train] Gen 38 Ep 19/20 GlobalEp 759 | R_raw=-932.42 | len=200 | actor_loss=-0.038 | critic_loss=41146.570
+[Train] Gen 38 Ep 20/20 GlobalEp 760 | R_raw=-1651.62 | len=200 | actor_loss=0.032 | critic_loss=137398.031
+[Eval] Gen 38 | avg_train=-1165.25 | avg_eval=-1272.52 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 39/50 ===
+[Train] Gen 39 Ep 1/20 GlobalEp 761 | R_raw=-987.73 | len=200 | actor_loss=0.009 | critic_loss=45914.379
+[Train] Gen 39 Ep 2/20 GlobalEp 762 | R_raw=-851.57 | len=200 | actor_loss=0.134 | critic_loss=32110.699
+[Train] Gen 39 Ep 3/20 GlobalEp 763 | R_raw=-763.38 | len=200 | actor_loss=-0.096 | critic_loss=32142.148
+[Train] Gen 39 Ep 4/20 GlobalEp 764 | R_raw=-1593.45 | len=200 | actor_loss=-0.056 | critic_loss=118342.016
+[Train] Gen 39 Ep 5/20 GlobalEp 765 | R_raw=-924.81 | len=200 | actor_loss=-0.066 | critic_loss=41393.953
+[Train] Gen 39 Ep 6/20 GlobalEp 766 | R_raw=-963.39 | len=200 | actor_loss=-0.061 | critic_loss=45974.988
+[Train] Gen 39 Ep 7/20 GlobalEp 767 | R_raw=-1306.83 | len=200 | actor_loss=-0.056 | critic_loss=79847.234
+[Train] Gen 39 Ep 8/20 GlobalEp 768 | R_raw=-887.84 | len=200 | actor_loss=-0.004 | critic_loss=39137.102
+[Train] Gen 39 Ep 9/20 GlobalEp 769 | R_raw=-1573.24 | len=200 | actor_loss=-0.055 | critic_loss=118004.109
+[Train] Gen 39 Ep 10/20 GlobalEp 770 | R_raw=-1282.66 | len=200 | actor_loss=0.039 | critic_loss=76657.711
+[Train] Gen 39 Ep 11/20 GlobalEp 771 | R_raw=-886.02 | len=200 | actor_loss=-0.036 | critic_loss=35215.945
+[Train] Gen 39 Ep 12/20 GlobalEp 772 | R_raw=-1070.45 | len=200 | actor_loss=-0.138 | critic_loss=53242.270
+[Train] Gen 39 Ep 13/20 GlobalEp 773 | R_raw=-1224.90 | len=200 | actor_loss=0.049 | critic_loss=68950.281
+[Train] Gen 39 Ep 14/20 GlobalEp 774 | R_raw=-889.10 | len=200 | actor_loss=0.097 | critic_loss=35599.488
+[Train] Gen 39 Ep 15/20 GlobalEp 775 | R_raw=-1038.60 | len=200 | actor_loss=0.011 | critic_loss=50782.418
+[Train] Gen 39 Ep 16/20 GlobalEp 776 | R_raw=-1267.53 | len=200 | actor_loss=0.119 | critic_loss=73357.727
+[Train] Gen 39 Ep 17/20 GlobalEp 777 | R_raw=-1200.36 | len=200 | actor_loss=-0.033 | critic_loss=65444.023
+[Train] Gen 39 Ep 18/20 GlobalEp 778 | R_raw=-785.84 | len=200 | actor_loss=-0.015 | critic_loss=30723.119
+[Train] Gen 39 Ep 19/20 GlobalEp 779 | R_raw=-1812.52 | len=200 | actor_loss=-0.019 | critic_loss=160256.891
+[Train] Gen 39 Ep 20/20 GlobalEp 780 | R_raw=-1484.06 | len=200 | actor_loss=0.030 | critic_loss=102811.078
+[Eval] Gen 39 | avg_train=-1139.71 | avg_eval=-1360.66 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 40/50 ===
+[Train] Gen 40 Ep 1/20 GlobalEp 781 | R_raw=-940.70 | len=200 | actor_loss=0.103 | critic_loss=39613.598
+[Train] Gen 40 Ep 2/20 GlobalEp 782 | R_raw=-1275.77 | len=200 | actor_loss=-0.031 | critic_loss=79153.047
+[Train] Gen 40 Ep 3/20 GlobalEp 783 | R_raw=-958.75 | len=200 | actor_loss=-0.041 | critic_loss=39607.641
+[Train] Gen 40 Ep 4/20 GlobalEp 784 | R_raw=-1568.86 | len=200 | actor_loss=0.065 | critic_loss=116192.938
+[Train] Gen 40 Ep 5/20 GlobalEp 785 | R_raw=-803.29 | len=200 | actor_loss=0.047 | critic_loss=36080.684
+[Train] Gen 40 Ep 6/20 GlobalEp 786 | R_raw=-1110.34 | len=200 | actor_loss=-0.123 | critic_loss=57229.238
+[Train] Gen 40 Ep 7/20 GlobalEp 787 | R_raw=-1021.76 | len=200 | actor_loss=0.034 | critic_loss=50883.867
+[Train] Gen 40 Ep 8/20 GlobalEp 788 | R_raw=-1085.34 | len=200 | actor_loss=-0.011 | critic_loss=54604.020
+[Train] Gen 40 Ep 9/20 GlobalEp 789 | R_raw=-1022.34 | len=200 | actor_loss=-0.088 | critic_loss=53019.738
+[Train] Gen 40 Ep 10/20 GlobalEp 790 | R_raw=-789.09 | len=200 | actor_loss=-0.006 | critic_loss=33445.348
+[Train] Gen 40 Ep 11/20 GlobalEp 791 | R_raw=-984.77 | len=200 | actor_loss=-0.099 | critic_loss=45014.035
+[Train] Gen 40 Ep 12/20 GlobalEp 792 | R_raw=-894.99 | len=200 | actor_loss=0.000 | critic_loss=40005.953
+[Train] Gen 40 Ep 13/20 GlobalEp 793 | R_raw=-1528.88 | len=200 | actor_loss=0.025 | critic_loss=112319.648
+[Train] Gen 40 Ep 14/20 GlobalEp 794 | R_raw=-1050.72 | len=200 | actor_loss=-0.083 | critic_loss=54203.152
+[Train] Gen 40 Ep 15/20 GlobalEp 795 | R_raw=-1634.04 | len=200 | actor_loss=-0.006 | critic_loss=132391.344
+[Train] Gen 40 Ep 16/20 GlobalEp 796 | R_raw=-766.67 | len=200 | actor_loss=0.008 | critic_loss=33740.059
+[Train] Gen 40 Ep 17/20 GlobalEp 797 | R_raw=-1295.92 | len=200 | actor_loss=0.047 | critic_loss=82847.516
+[Train] Gen 40 Ep 18/20 GlobalEp 798 | R_raw=-1734.54 | len=200 | actor_loss=0.004 | critic_loss=146152.750
+[Train] Gen 40 Ep 19/20 GlobalEp 799 | R_raw=-1037.52 | len=200 | actor_loss=-0.029 | critic_loss=53554.719
+[Train] Gen 40 Ep 20/20 GlobalEp 800 | R_raw=-889.13 | len=200 | actor_loss=-0.066 | critic_loss=36383.773
+[Eval] Gen 40 | avg_train=-1119.67 | avg_eval=-1219.44 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 41/50 ===
+[Train] Gen 41 Ep 1/20 GlobalEp 801 | R_raw=-1384.79 | len=200 | actor_loss=0.098 | critic_loss=89254.516
+[Train] Gen 41 Ep 2/20 GlobalEp 802 | R_raw=-1001.53 | len=200 | actor_loss=0.037 | critic_loss=46426.250
+[Train] Gen 41 Ep 3/20 GlobalEp 803 | R_raw=-1424.13 | len=200 | actor_loss=-0.015 | critic_loss=95509.117
+[Train] Gen 41 Ep 4/20 GlobalEp 804 | R_raw=-1493.67 | len=200 | actor_loss=-0.012 | critic_loss=108754.219
+[Train] Gen 41 Ep 5/20 GlobalEp 805 | R_raw=-947.35 | len=200 | actor_loss=-0.013 | critic_loss=43563.789
+[Train] Gen 41 Ep 6/20 GlobalEp 806 | R_raw=-1454.69 | len=200 | actor_loss=0.008 | critic_loss=98327.219
+[Train] Gen 41 Ep 7/20 GlobalEp 807 | R_raw=-1179.29 | len=200 | actor_loss=0.062 | critic_loss=66562.008
+[Train] Gen 41 Ep 8/20 GlobalEp 808 | R_raw=-764.45 | len=200 | actor_loss=-0.059 | critic_loss=32188.094
+[Train] Gen 41 Ep 9/20 GlobalEp 809 | R_raw=-1073.76 | len=200 | actor_loss=0.004 | critic_loss=52989.207
+[Train] Gen 41 Ep 10/20 GlobalEp 810 | R_raw=-962.27 | len=200 | actor_loss=-0.014 | critic_loss=45486.301
+[Train] Gen 41 Ep 11/20 GlobalEp 811 | R_raw=-910.61 | len=200 | actor_loss=0.090 | critic_loss=39530.617
+[Train] Gen 41 Ep 12/20 GlobalEp 812 | R_raw=-893.70 | len=200 | actor_loss=0.033 | critic_loss=38053.598
+[Train] Gen 41 Ep 13/20 GlobalEp 813 | R_raw=-991.98 | len=200 | actor_loss=0.073 | critic_loss=44935.613
+[Train] Gen 41 Ep 14/20 GlobalEp 814 | R_raw=-790.48 | len=200 | actor_loss=0.047 | critic_loss=35921.902
+[Train] Gen 41 Ep 15/20 GlobalEp 815 | R_raw=-1035.01 | len=200 | actor_loss=-0.003 | critic_loss=55646.320
+[Train] Gen 41 Ep 16/20 GlobalEp 816 | R_raw=-951.05 | len=200 | actor_loss=-0.068 | critic_loss=42145.902
+[Train] Gen 41 Ep 17/20 GlobalEp 817 | R_raw=-911.09 | len=200 | actor_loss=-0.061 | critic_loss=39774.836
+[Train] Gen 41 Ep 18/20 GlobalEp 818 | R_raw=-1190.38 | len=200 | actor_loss=-0.005 | critic_loss=68163.422
+[Train] Gen 41 Ep 19/20 GlobalEp 819 | R_raw=-1353.57 | len=200 | actor_loss=-0.054 | critic_loss=87510.375
+[Train] Gen 41 Ep 20/20 GlobalEp 820 | R_raw=-980.26 | len=200 | actor_loss=0.010 | critic_loss=42157.527
+[Eval] Gen 41 | avg_train=-1084.70 | avg_eval=-1163.35 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 42/50 ===
+[Train] Gen 42 Ep 1/20 GlobalEp 821 | R_raw=-1079.60 | len=200 | actor_loss=-0.035 | critic_loss=52631.930
+[Train] Gen 42 Ep 2/20 GlobalEp 822 | R_raw=-766.83 | len=200 | actor_loss=0.002 | critic_loss=31610.635
+[Train] Gen 42 Ep 3/20 GlobalEp 823 | R_raw=-1299.98 | len=200 | actor_loss=-0.090 | critic_loss=77753.039
+[Train] Gen 42 Ep 4/20 GlobalEp 824 | R_raw=-1208.94 | len=200 | actor_loss=0.045 | critic_loss=66545.297
+[Train] Gen 42 Ep 5/20 GlobalEp 825 | R_raw=-897.44 | len=200 | actor_loss=-0.013 | critic_loss=40310.520
+[Train] Gen 42 Ep 6/20 GlobalEp 826 | R_raw=-1069.41 | len=200 | actor_loss=0.105 | critic_loss=53969.504
+[Train] Gen 42 Ep 7/20 GlobalEp 827 | R_raw=-1644.07 | len=200 | actor_loss=0.076 | critic_loss=131333.641
+[Train] Gen 42 Ep 8/20 GlobalEp 828 | R_raw=-1318.81 | len=200 | actor_loss=0.000 | critic_loss=82669.836
+[Train] Gen 42 Ep 9/20 GlobalEp 829 | R_raw=-1186.31 | len=200 | actor_loss=0.058 | critic_loss=64607.297
+[Train] Gen 42 Ep 10/20 GlobalEp 830 | R_raw=-1717.48 | len=200 | actor_loss=-0.044 | critic_loss=140134.344
+[Train] Gen 42 Ep 11/20 GlobalEp 831 | R_raw=-1577.10 | len=200 | actor_loss=-0.026 | critic_loss=114506.430
+[Train] Gen 42 Ep 12/20 GlobalEp 832 | R_raw=-1301.45 | len=200 | actor_loss=-0.005 | critic_loss=80855.500
+[Train] Gen 42 Ep 13/20 GlobalEp 833 | R_raw=-1441.91 | len=200 | actor_loss=0.027 | critic_loss=98608.156
+[Train] Gen 42 Ep 14/20 GlobalEp 834 | R_raw=-1414.89 | len=200 | actor_loss=0.063 | critic_loss=96992.016
+[Train] Gen 42 Ep 15/20 GlobalEp 835 | R_raw=-1208.92 | len=200 | actor_loss=-0.061 | critic_loss=71137.211
+[Train] Gen 42 Ep 16/20 GlobalEp 836 | R_raw=-753.37 | len=200 | actor_loss=0.084 | critic_loss=26601.080
+[Train] Gen 42 Ep 17/20 GlobalEp 837 | R_raw=-1080.27 | len=200 | actor_loss=0.073 | critic_loss=51625.648
+[Train] Gen 42 Ep 18/20 GlobalEp 838 | R_raw=-851.41 | len=200 | actor_loss=0.112 | critic_loss=33307.648
+[Train] Gen 42 Ep 19/20 GlobalEp 839 | R_raw=-1668.33 | len=200 | actor_loss=-0.021 | critic_loss=137034.094
+[Train] Gen 42 Ep 20/20 GlobalEp 840 | R_raw=-1799.08 | len=200 | actor_loss=0.051 | critic_loss=155617.562
+[Eval] Gen 42 | avg_train=-1264.28 | avg_eval=-1266.99 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 43/50 ===
+[Train] Gen 43 Ep 1/20 GlobalEp 841 | R_raw=-1561.08 | len=200 | actor_loss=-0.017 | critic_loss=117272.281
+[Train] Gen 43 Ep 2/20 GlobalEp 842 | R_raw=-992.77 | len=200 | actor_loss=0.070 | critic_loss=44717.277
+[Train] Gen 43 Ep 3/20 GlobalEp 843 | R_raw=-1179.08 | len=200 | actor_loss=0.013 | critic_loss=62811.453
+[Train] Gen 43 Ep 4/20 GlobalEp 844 | R_raw=-876.73 | len=200 | actor_loss=0.036 | critic_loss=34517.184
+[Train] Gen 43 Ep 5/20 GlobalEp 845 | R_raw=-962.12 | len=200 | actor_loss=-0.036 | critic_loss=42027.617
+[Train] Gen 43 Ep 6/20 GlobalEp 846 | R_raw=-1021.64 | len=200 | actor_loss=-0.036 | critic_loss=52694.113
+[Train] Gen 43 Ep 7/20 GlobalEp 847 | R_raw=-1314.20 | len=200 | actor_loss=-0.013 | critic_loss=80215.547
+[Train] Gen 43 Ep 8/20 GlobalEp 848 | R_raw=-907.40 | len=200 | actor_loss=-0.032 | critic_loss=41831.137
+[Train] Gen 43 Ep 9/20 GlobalEp 849 | R_raw=-785.91 | len=200 | actor_loss=0.066 | critic_loss=32977.582
+[Train] Gen 43 Ep 10/20 GlobalEp 850 | R_raw=-1024.91 | len=200 | actor_loss=-0.034 | critic_loss=55072.402
+[Train] Gen 43 Ep 11/20 GlobalEp 851 | R_raw=-1183.93 | len=200 | actor_loss=0.027 | critic_loss=69921.172
+[Train] Gen 43 Ep 12/20 GlobalEp 852 | R_raw=-1037.17 | len=200 | actor_loss=-0.043 | critic_loss=56494.859
+[Train] Gen 43 Ep 13/20 GlobalEp 853 | R_raw=-1172.31 | len=200 | actor_loss=-0.016 | critic_loss=69268.180
+[Train] Gen 43 Ep 14/20 GlobalEp 854 | R_raw=-941.27 | len=200 | actor_loss=0.039 | critic_loss=46852.754
+[Train] Gen 43 Ep 15/20 GlobalEp 855 | R_raw=-1489.25 | len=200 | actor_loss=-0.050 | critic_loss=108593.008
+[Train] Gen 43 Ep 16/20 GlobalEp 856 | R_raw=-1162.68 | len=200 | actor_loss=-0.011 | critic_loss=69683.641
+[Train] Gen 43 Ep 17/20 GlobalEp 857 | R_raw=-778.31 | len=200 | actor_loss=-0.073 | critic_loss=30563.092
+[Train] Gen 43 Ep 18/20 GlobalEp 858 | R_raw=-1420.47 | len=200 | actor_loss=0.001 | critic_loss=97278.820
+[Train] Gen 43 Ep 19/20 GlobalEp 859 | R_raw=-1492.84 | len=200 | actor_loss=-0.049 | critic_loss=111654.469
+[Train] Gen 43 Ep 20/20 GlobalEp 860 | R_raw=-1190.12 | len=200 | actor_loss=0.010 | critic_loss=65962.477
+[Eval] Gen 43 | avg_train=-1124.71 | avg_eval=-1150.45 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 44/50 ===
+[Train] Gen 44 Ep 1/20 GlobalEp 861 | R_raw=-1187.05 | len=200 | actor_loss=0.081 | critic_loss=66412.867
+[Train] Gen 44 Ep 2/20 GlobalEp 862 | R_raw=-1577.26 | len=200 | actor_loss=-0.071 | critic_loss=120408.797
+[Train] Gen 44 Ep 3/20 GlobalEp 863 | R_raw=-1089.95 | len=200 | actor_loss=0.028 | critic_loss=57453.832
+[Train] Gen 44 Ep 4/20 GlobalEp 864 | R_raw=-788.82 | len=200 | actor_loss=0.030 | critic_loss=27189.219
+[Train] Gen 44 Ep 5/20 GlobalEp 865 | R_raw=-1594.32 | len=200 | actor_loss=0.014 | critic_loss=115600.281
+[Train] Gen 44 Ep 6/20 GlobalEp 866 | R_raw=-1034.49 | len=200 | actor_loss=-0.016 | critic_loss=50036.891
+[Train] Gen 44 Ep 7/20 GlobalEp 867 | R_raw=-1368.58 | len=200 | actor_loss=-0.030 | critic_loss=83856.328
+[Train] Gen 44 Ep 8/20 GlobalEp 868 | R_raw=-926.73 | len=200 | actor_loss=0.002 | critic_loss=36791.855
+[Train] Gen 44 Ep 9/20 GlobalEp 869 | R_raw=-1435.66 | len=200 | actor_loss=0.034 | critic_loss=94099.602
+[Train] Gen 44 Ep 10/20 GlobalEp 870 | R_raw=-1049.02 | len=200 | actor_loss=0.093 | critic_loss=49495.508
+[Train] Gen 44 Ep 11/20 GlobalEp 871 | R_raw=-875.44 | len=200 | actor_loss=0.072 | critic_loss=33247.945
+[Train] Gen 44 Ep 12/20 GlobalEp 872 | R_raw=-866.61 | len=200 | actor_loss=-0.071 | critic_loss=38764.129
+[Train] Gen 44 Ep 13/20 GlobalEp 873 | R_raw=-1615.10 | len=200 | actor_loss=-0.028 | critic_loss=122219.875
+[Train] Gen 44 Ep 14/20 GlobalEp 874 | R_raw=-995.79 | len=200 | actor_loss=0.007 | critic_loss=48260.859
+[Train] Gen 44 Ep 15/20 GlobalEp 875 | R_raw=-1704.98 | len=200 | actor_loss=-0.009 | critic_loss=137797.828
+[Train] Gen 44 Ep 16/20 GlobalEp 876 | R_raw=-1356.22 | len=200 | actor_loss=0.078 | critic_loss=85701.258
+[Train] Gen 44 Ep 17/20 GlobalEp 877 | R_raw=-1254.36 | len=200 | actor_loss=-0.031 | critic_loss=71816.164
+[Train] Gen 44 Ep 18/20 GlobalEp 878 | R_raw=-1041.26 | len=200 | actor_loss=0.006 | critic_loss=58283.918
+[Train] Gen 44 Ep 19/20 GlobalEp 879 | R_raw=-1004.04 | len=200 | actor_loss=-0.044 | critic_loss=50747.480
+[Train] Gen 44 Ep 20/20 GlobalEp 880 | R_raw=-854.89 | len=200 | actor_loss=-0.028 | critic_loss=33335.633
+[Eval] Gen 44 | avg_train=-1181.03 | avg_eval=-1128.94 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 45/50 ===
+[Train] Gen 45 Ep 1/20 GlobalEp 881 | R_raw=-1129.58 | len=200 | actor_loss=0.025 | critic_loss=60409.805
+[Train] Gen 45 Ep 2/20 GlobalEp 882 | R_raw=-1773.37 | len=200 | actor_loss=0.086 | critic_loss=152025.547
+[Train] Gen 45 Ep 3/20 GlobalEp 883 | R_raw=-1560.50 | len=200 | actor_loss=0.069 | critic_loss=113365.820
+[Train] Gen 45 Ep 4/20 GlobalEp 884 | R_raw=-1200.57 | len=200 | actor_loss=-0.053 | critic_loss=69283.086
+[Train] Gen 45 Ep 5/20 GlobalEp 885 | R_raw=-1227.30 | len=200 | actor_loss=0.033 | critic_loss=66309.125
+[Train] Gen 45 Ep 6/20 GlobalEp 886 | R_raw=-1697.51 | len=200 | actor_loss=-0.035 | critic_loss=133859.203
+[Train] Gen 45 Ep 7/20 GlobalEp 887 | R_raw=-1411.00 | len=200 | actor_loss=0.041 | critic_loss=95518.695
+[Train] Gen 45 Ep 8/20 GlobalEp 888 | R_raw=-1499.14 | len=200 | actor_loss=-0.037 | critic_loss=105952.906
+[Train] Gen 45 Ep 9/20 GlobalEp 889 | R_raw=-1189.25 | len=200 | actor_loss=0.030 | critic_loss=66117.547
+[Train] Gen 45 Ep 10/20 GlobalEp 890 | R_raw=-1333.71 | len=200 | actor_loss=0.020 | critic_loss=82594.016
+[Train] Gen 45 Ep 11/20 GlobalEp 891 | R_raw=-1210.99 | len=200 | actor_loss=0.057 | critic_loss=72434.102
+[Train] Gen 45 Ep 12/20 GlobalEp 892 | R_raw=-1074.19 | len=200 | actor_loss=-0.092 | critic_loss=57926.289
+[Train] Gen 45 Ep 13/20 GlobalEp 893 | R_raw=-1601.05 | len=200 | actor_loss=0.038 | critic_loss=123390.375
+[Train] Gen 45 Ep 14/20 GlobalEp 894 | R_raw=-1002.69 | len=200 | actor_loss=-0.035 | critic_loss=49338.699
+[Train] Gen 45 Ep 15/20 GlobalEp 895 | R_raw=-1328.24 | len=200 | actor_loss=-0.002 | critic_loss=82388.219
+[Train] Gen 45 Ep 16/20 GlobalEp 896 | R_raw=-1394.73 | len=200 | actor_loss=0.081 | critic_loss=90318.938
+[Train] Gen 45 Ep 17/20 GlobalEp 897 | R_raw=-1489.95 | len=200 | actor_loss=0.048 | critic_loss=99666.750
+[Train] Gen 45 Ep 18/20 GlobalEp 898 | R_raw=-1720.47 | len=200 | actor_loss=-0.075 | critic_loss=148187.453
+[Train] Gen 45 Ep 19/20 GlobalEp 899 | R_raw=-1333.48 | len=200 | actor_loss=0.119 | critic_loss=82168.547
+[Train] Gen 45 Ep 20/20 GlobalEp 900 | R_raw=-891.96 | len=200 | actor_loss=-0.023 | critic_loss=37863.395
+[Eval] Gen 45 | avg_train=-1353.48 | avg_eval=-1085.80 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 46/50 ===
+[Train] Gen 46 Ep 1/20 GlobalEp 901 | R_raw=-931.51 | len=200 | actor_loss=-0.000 | critic_loss=39370.695
+[Train] Gen 46 Ep 2/20 GlobalEp 902 | R_raw=-1351.08 | len=200 | actor_loss=0.046 | critic_loss=86175.078
+[Train] Gen 46 Ep 3/20 GlobalEp 903 | R_raw=-992.78 | len=200 | actor_loss=0.097 | critic_loss=45491.234
+[Train] Gen 46 Ep 4/20 GlobalEp 904 | R_raw=-1703.04 | len=200 | actor_loss=0.030 | critic_loss=145598.203
+[Train] Gen 46 Ep 5/20 GlobalEp 905 | R_raw=-996.14 | len=200 | actor_loss=0.019 | critic_loss=47257.391
+[Train] Gen 46 Ep 6/20 GlobalEp 906 | R_raw=-747.34 | len=200 | actor_loss=0.031 | critic_loss=32324.791
+[Train] Gen 46 Ep 7/20 GlobalEp 907 | R_raw=-1754.57 | len=200 | actor_loss=0.061 | critic_loss=146072.672
+[Train] Gen 46 Ep 8/20 GlobalEp 908 | R_raw=-1348.99 | len=200 | actor_loss=0.122 | critic_loss=88731.609
+[Train] Gen 46 Ep 9/20 GlobalEp 909 | R_raw=-1672.30 | len=200 | actor_loss=-0.007 | critic_loss=128363.844
+[Train] Gen 46 Ep 10/20 GlobalEp 910 | R_raw=-951.39 | len=200 | actor_loss=0.096 | critic_loss=38237.500
+[Train] Gen 46 Ep 11/20 GlobalEp 911 | R_raw=-1637.77 | len=200 | actor_loss=0.036 | critic_loss=124100.273
+[Train] Gen 46 Ep 12/20 GlobalEp 912 | R_raw=-992.05 | len=200 | actor_loss=0.006 | critic_loss=50554.379
+[Train] Gen 46 Ep 13/20 GlobalEp 913 | R_raw=-1700.49 | len=200 | actor_loss=-0.079 | critic_loss=138352.484
+[Train] Gen 46 Ep 14/20 GlobalEp 914 | R_raw=-1671.17 | len=200 | actor_loss=-0.050 | critic_loss=130977.836
+[Train] Gen 46 Ep 15/20 GlobalEp 915 | R_raw=-1534.47 | len=200 | actor_loss=0.032 | critic_loss=111374.898
+[Train] Gen 46 Ep 16/20 GlobalEp 916 | R_raw=-907.63 | len=200 | actor_loss=0.021 | critic_loss=41392.094
+[Train] Gen 46 Ep 17/20 GlobalEp 917 | R_raw=-967.03 | len=200 | actor_loss=-0.045 | critic_loss=48450.430
+[Train] Gen 46 Ep 18/20 GlobalEp 918 | R_raw=-880.51 | len=200 | actor_loss=0.068 | critic_loss=37897.082
+[Train] Gen 46 Ep 19/20 GlobalEp 919 | R_raw=-970.58 | len=200 | actor_loss=-0.016 | critic_loss=44494.078
+[Train] Gen 46 Ep 20/20 GlobalEp 920 | R_raw=-880.32 | len=200 | actor_loss=-0.010 | critic_loss=35663.930
+[Eval] Gen 46 | avg_train=-1229.56 | avg_eval=-1005.80 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 47/50 ===
+[Train] Gen 47 Ep 1/20 GlobalEp 921 | R_raw=-1564.43 | len=200 | actor_loss=0.010 | critic_loss=114207.977
+[Train] Gen 47 Ep 2/20 GlobalEp 922 | R_raw=-901.63 | len=200 | actor_loss=0.020 | critic_loss=39344.879
+[Train] Gen 47 Ep 3/20 GlobalEp 923 | R_raw=-1168.40 | len=200 | actor_loss=-0.002 | critic_loss=60173.910
+[Train] Gen 47 Ep 4/20 GlobalEp 924 | R_raw=-1034.00 | len=200 | actor_loss=0.014 | critic_loss=57220.117
+[Train] Gen 47 Ep 5/20 GlobalEp 925 | R_raw=-1047.47 | len=200 | actor_loss=-0.017 | critic_loss=51239.664
+[Train] Gen 47 Ep 6/20 GlobalEp 926 | R_raw=-1030.55 | len=200 | actor_loss=0.029 | critic_loss=53211.648
+[Train] Gen 47 Ep 7/20 GlobalEp 927 | R_raw=-916.31 | len=200 | actor_loss=-0.120 | critic_loss=44417.789
+[Train] Gen 47 Ep 8/20 GlobalEp 928 | R_raw=-1314.17 | len=200 | actor_loss=-0.162 | critic_loss=81934.047
+[Train] Gen 47 Ep 9/20 GlobalEp 929 | R_raw=-897.58 | len=200 | actor_loss=0.077 | critic_loss=39155.430
+[Train] Gen 47 Ep 10/20 GlobalEp 930 | R_raw=-935.12 | len=200 | actor_loss=0.023 | critic_loss=43479.695
+[Train] Gen 47 Ep 11/20 GlobalEp 931 | R_raw=-726.96 | len=200 | actor_loss=-0.041 | critic_loss=25768.262
+[Train] Gen 47 Ep 12/20 GlobalEp 932 | R_raw=-1183.36 | len=200 | actor_loss=-0.039 | critic_loss=67103.711
+[Train] Gen 47 Ep 13/20 GlobalEp 933 | R_raw=-921.48 | len=200 | actor_loss=-0.024 | critic_loss=45760.340
+[Train] Gen 47 Ep 14/20 GlobalEp 934 | R_raw=-774.85 | len=200 | actor_loss=0.004 | critic_loss=30789.959
+[Train] Gen 47 Ep 15/20 GlobalEp 935 | R_raw=-960.98 | len=200 | actor_loss=-0.089 | critic_loss=44764.574
+[Train] Gen 47 Ep 16/20 GlobalEp 936 | R_raw=-1021.97 | len=200 | actor_loss=-0.003 | critic_loss=48934.867
+[Train] Gen 47 Ep 17/20 GlobalEp 937 | R_raw=-871.83 | len=200 | actor_loss=0.031 | critic_loss=35385.309
+[Train] Gen 47 Ep 18/20 GlobalEp 938 | R_raw=-996.52 | len=200 | actor_loss=0.042 | critic_loss=47274.328
+[Train] Gen 47 Ep 19/20 GlobalEp 939 | R_raw=-1770.24 | len=200 | actor_loss=-0.031 | critic_loss=147916.609
+[Train] Gen 47 Ep 20/20 GlobalEp 940 | R_raw=-1183.31 | len=200 | actor_loss=-0.020 | critic_loss=65019.469
+[Eval] Gen 47 | avg_train=-1061.06 | avg_eval=-1333.72 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 48/50 ===
+[Train] Gen 48 Ep 1/20 GlobalEp 941 | R_raw=-1320.43 | len=200 | actor_loss=0.014 | critic_loss=86335.516
+[Train] Gen 48 Ep 2/20 GlobalEp 942 | R_raw=-1279.63 | len=200 | actor_loss=0.020 | critic_loss=80435.305
+[Train] Gen 48 Ep 3/20 GlobalEp 943 | R_raw=-1042.69 | len=200 | actor_loss=-0.005 | critic_loss=51588.930
+[Train] Gen 48 Ep 4/20 GlobalEp 944 | R_raw=-984.63 | len=200 | actor_loss=0.028 | critic_loss=50751.152
+[Train] Gen 48 Ep 5/20 GlobalEp 945 | R_raw=-1216.61 | len=200 | actor_loss=0.060 | critic_loss=70328.891
+[Train] Gen 48 Ep 6/20 GlobalEp 946 | R_raw=-1054.82 | len=200 | actor_loss=-0.027 | critic_loss=59463.902
+[Train] Gen 48 Ep 7/20 GlobalEp 947 | R_raw=-1354.98 | len=200 | actor_loss=-0.077 | critic_loss=87058.602
+[Train] Gen 48 Ep 8/20 GlobalEp 948 | R_raw=-1198.84 | len=200 | actor_loss=-0.028 | critic_loss=65902.602
+[Train] Gen 48 Ep 9/20 GlobalEp 949 | R_raw=-1502.98 | len=200 | actor_loss=-0.050 | critic_loss=107680.070
+[Train] Gen 48 Ep 10/20 GlobalEp 950 | R_raw=-1560.19 | len=200 | actor_loss=-0.014 | critic_loss=111180.898
+[Train] Gen 48 Ep 11/20 GlobalEp 951 | R_raw=-1188.17 | len=200 | actor_loss=-0.041 | critic_loss=69870.102
+[Train] Gen 48 Ep 12/20 GlobalEp 952 | R_raw=-1029.59 | len=200 | actor_loss=-0.018 | critic_loss=56132.180
+[Train] Gen 48 Ep 13/20 GlobalEp 953 | R_raw=-996.94 | len=200 | actor_loss=-0.051 | critic_loss=48271.633
+[Train] Gen 48 Ep 14/20 GlobalEp 954 | R_raw=-1548.00 | len=200 | actor_loss=-0.009 | critic_loss=119637.461
+[Train] Gen 48 Ep 15/20 GlobalEp 955 | R_raw=-1533.69 | len=200 | actor_loss=0.036 | critic_loss=109190.328
+[Train] Gen 48 Ep 16/20 GlobalEp 956 | R_raw=-1074.34 | len=200 | actor_loss=0.063 | critic_loss=52103.582
+[Train] Gen 48 Ep 17/20 GlobalEp 957 | R_raw=-1080.19 | len=200 | actor_loss=-0.040 | critic_loss=55190.859
+[Train] Gen 48 Ep 18/20 GlobalEp 958 | R_raw=-1403.12 | len=200 | actor_loss=0.003 | critic_loss=94466.438
+[Train] Gen 48 Ep 19/20 GlobalEp 959 | R_raw=-1615.67 | len=200 | actor_loss=-0.036 | critic_loss=123369.078
+[Train] Gen 48 Ep 20/20 GlobalEp 960 | R_raw=-1348.12 | len=200 | actor_loss=0.013 | critic_loss=83246.055
+[Eval] Gen 48 | avg_train=-1266.68 | avg_eval=-1266.62 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 49/50 ===
+[Train] Gen 49 Ep 1/20 GlobalEp 961 | R_raw=-964.64 | len=200 | actor_loss=-0.015 | critic_loss=46911.969
+[Train] Gen 49 Ep 2/20 GlobalEp 962 | R_raw=-970.07 | len=200 | actor_loss=0.041 | critic_loss=41694.125
+[Train] Gen 49 Ep 3/20 GlobalEp 963 | R_raw=-1310.83 | len=200 | actor_loss=0.019 | critic_loss=82500.672
+[Train] Gen 49 Ep 4/20 GlobalEp 964 | R_raw=-1687.99 | len=200 | actor_loss=-0.071 | critic_loss=134102.703
+[Train] Gen 49 Ep 5/20 GlobalEp 965 | R_raw=-1517.20 | len=200 | actor_loss=0.013 | critic_loss=111411.297
+[Train] Gen 49 Ep 6/20 GlobalEp 966 | R_raw=-1688.18 | len=200 | actor_loss=-0.032 | critic_loss=133479.328
+[Train] Gen 49 Ep 7/20 GlobalEp 967 | R_raw=-957.98 | len=200 | actor_loss=0.088 | critic_loss=41537.891
+[Train] Gen 49 Ep 8/20 GlobalEp 968 | R_raw=-1128.04 | len=200 | actor_loss=0.028 | critic_loss=60807.008
+[Train] Gen 49 Ep 9/20 GlobalEp 969 | R_raw=-1383.04 | len=200 | actor_loss=0.008 | critic_loss=90956.625
+[Train] Gen 49 Ep 10/20 GlobalEp 970 | R_raw=-987.80 | len=200 | actor_loss=0.078 | critic_loss=46922.957
+[Train] Gen 49 Ep 11/20 GlobalEp 971 | R_raw=-1309.83 | len=200 | actor_loss=-0.100 | critic_loss=83719.289
+[Train] Gen 49 Ep 12/20 GlobalEp 972 | R_raw=-1199.89 | len=200 | actor_loss=0.021 | critic_loss=66914.336
+[Train] Gen 49 Ep 13/20 GlobalEp 973 | R_raw=-1101.30 | len=200 | actor_loss=-0.071 | critic_loss=62362.410
+[Train] Gen 49 Ep 14/20 GlobalEp 974 | R_raw=-945.38 | len=200 | actor_loss=-0.024 | critic_loss=44548.020
+[Train] Gen 49 Ep 15/20 GlobalEp 975 | R_raw=-1428.73 | len=200 | actor_loss=-0.040 | critic_loss=101607.414
+[Train] Gen 49 Ep 16/20 GlobalEp 976 | R_raw=-1425.66 | len=200 | actor_loss=0.002 | critic_loss=96069.391
+[Train] Gen 49 Ep 17/20 GlobalEp 977 | R_raw=-898.88 | len=200 | actor_loss=-0.025 | critic_loss=43123.160
+[Train] Gen 49 Ep 18/20 GlobalEp 978 | R_raw=-1253.73 | len=200 | actor_loss=-0.047 | critic_loss=72981.406
+[Train] Gen 49 Ep 19/20 GlobalEp 979 | R_raw=-969.58 | len=200 | actor_loss=0.011 | critic_loss=44378.961
+[Train] Gen 49 Ep 20/20 GlobalEp 980 | R_raw=-1023.91 | len=200 | actor_loss=-0.046 | critic_loss=49812.500
+[Eval] Gen 49 | avg_train=-1207.63 | avg_eval=-1251.06 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite.
+
+=== Generation 50/50 ===
+[Train] Gen 50 Ep 1/20 GlobalEp 981 | R_raw=-1013.62 | len=200 | actor_loss=0.044 | critic_loss=52067.117
+[Train] Gen 50 Ep 2/20 GlobalEp 982 | R_raw=-1178.62 | len=200 | actor_loss=0.119 | critic_loss=63111.293
+[Train] Gen 50 Ep 3/20 GlobalEp 983 | R_raw=-1485.25 | len=200 | actor_loss=-0.093 | critic_loss=97742.359
+[Train] Gen 50 Ep 4/20 GlobalEp 984 | R_raw=-868.22 | len=200 | actor_loss=0.046 | critic_loss=37585.199
+[Train] Gen 50 Ep 5/20 GlobalEp 985 | R_raw=-890.76 | len=200 | actor_loss=0.009 | critic_loss=38839.918
+[Train] Gen 50 Ep 6/20 GlobalEp 986 | R_raw=-1420.72 | len=200 | actor_loss=-0.048 | critic_loss=96429.219
+[Train] Gen 50 Ep 7/20 GlobalEp 987 | R_raw=-1454.19 | len=200 | actor_loss=0.100 | critic_loss=101434.078
+[Train] Gen 50 Ep 8/20 GlobalEp 988 | R_raw=-1024.46 | len=200 | actor_loss=-0.024 | critic_loss=57229.891
+[Train] Gen 50 Ep 9/20 GlobalEp 989 | R_raw=-961.64 | len=200 | actor_loss=0.037 | critic_loss=44152.039
+[Train] Gen 50 Ep 10/20 GlobalEp 990 | R_raw=-1593.97 | len=200 | actor_loss=-0.049 | critic_loss=124781.375
+[Train] Gen 50 Ep 11/20 GlobalEp 991 | R_raw=-912.20 | len=200 | actor_loss=0.095 | critic_loss=44864.344
+[Train] Gen 50 Ep 12/20 GlobalEp 992 | R_raw=-1209.68 | len=200 | actor_loss=0.099 | critic_loss=63508.527
+[Train] Gen 50 Ep 13/20 GlobalEp 993 | R_raw=-874.36 | len=200 | actor_loss=0.046 | critic_loss=35698.266
+[Train] Gen 50 Ep 14/20 GlobalEp 994 | R_raw=-1189.90 | len=200 | actor_loss=0.047 | critic_loss=65744.906
+[Train] Gen 50 Ep 15/20 GlobalEp 995 | R_raw=-987.76 | len=200 | actor_loss=-0.036 | critic_loss=44461.809
+[Train] Gen 50 Ep 16/20 GlobalEp 996 | R_raw=-1169.68 | len=200 | actor_loss=-0.022 | critic_loss=62566.000
+[Train] Gen 50 Ep 17/20 GlobalEp 997 | R_raw=-1068.39 | len=200 | actor_loss=-0.022 | critic_loss=50795.820
+[Train] Gen 50 Ep 18/20 GlobalEp 998 | R_raw=-970.24 | len=200 | actor_loss=-0.026 | critic_loss=41262.652
+[Train] Gen 50 Ep 19/20 GlobalEp 999 | R_raw=-1429.66 | len=200 | actor_loss=-0.062 | critic_loss=92835.680
+[Train] Gen 50 Ep 20/20 GlobalEp 1000 | R_raw=-1016.45 | len=200 | actor_loss=0.067 | critic_loss=47978.629
+[Eval] Gen 50 | avg_train=-1135.99 | avg_eval=-1236.67 | best_eval=-972.18
+[REJECT] Candidate discarded; keeping previous elite

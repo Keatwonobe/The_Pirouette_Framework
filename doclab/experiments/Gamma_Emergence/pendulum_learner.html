@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirouette Agent (Pendulum)</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Chart.js for plotting reward -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Use the Inter font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Tailwind gray-100 */
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100 text-gray-800">
+
+    <div class="w-full max-w-6xl p-6 bg-white rounded-2xl shadow-xl">
+        <h1 class="text-3xl font-bold text-center text-indigo-700 mb-4">Pirouette-Inspired Agent</h1>
+        <p class="text-center text-gray-600 mb-6">Demonstrating the "Triage" & "Contrast" Learning Blueprint.</p>
+
+        <!-- Main Grid Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+            <!-- Left Column: Simulation & Plots -->
+            <div>
+                <!-- Environment Canvas -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-semibold mb-2 text-center">Environment: Pendulum</h2>
+                    <canvas id="env-canvas" class="w-full h-64 bg-gray-800 rounded-lg shadow-inner"></canvas>
+                </div>
+                
+                <!-- Reward Plot -->
+                <div>
+                    <h2 class="text-xl font-semibold mb-2 text-center">Reward Over Time</h2>
+                    <div class="bg-gray-50 p-4 rounded-lg shadow-inner">
+                        <canvas id="reward-chart" class="w-full h-48"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Manifold & Controls -->
+            <div class="flex flex-col">
+                
+                <!-- Manifold Canvas (The "EEG X-ray") -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-semibold mb-2 text-center">"Contrast Manifold" (The "Exhaust")</h2>
+                    <canvas id="manifold-canvas" class="w-full h-64 bg-gray-800 rounded-lg shadow-inner"></canvas>
+                    <p class="text-xs text-center text-gray-500 mt-2">X-Axis: Angle (Theta) | Y-Axis: Velocity | Color: Reward Contrast (Delta)</p>
+                </div>
+
+                <!-- Controls & Status -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner flex-grow">
+                    <h2 class="text-xl font-semibold mb-4">Agent Status</h2>
+                    <button id="start-button" class="w-full bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300">
+                        Start Simulation
+                    </button>
+                    
+                    <div class="mt-6 space-y-3">
+                        <div>
+                            <span class="font-bold text-indigo-700">Phase:</span>
+                            <span id="phase-status" class="font-mono ml-2 p-1 bg-gray-200 rounded">IDLE</span>
+                        </div>
+                        <div>
+                            <span class="font-bold text-indigo-700">Step:</span>
+                            <span id="step-counter" class="font-mono ml-2">0</span>
+                        </div>
+                        <div>
+                            <span class="font-bold text-indigo-700">"Easy Sort" (Hotspot):</span>
+                            <span id="hotspot-status" class="font-mono ml-2 p-1 bg-gray-200 rounded">Not Found</span>
+                        </div>
+                        <div id="message-box" class="pt-4 text-sm text-gray-700"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Get DOM Elements ---
+        const envCanvas = document.getElementById('env-canvas');
+        const manifoldCanvas = document.getElementById('manifold-canvas');
+        const envCtx = envCanvas.getContext('2d');
+        const manifoldCtx = manifoldCanvas.getContext('2d');
+
+        const startButton = document.getElementById('start-button');
+        const phaseStatus = document.getElementById('phase-status');
+        const stepCounter = document.getElementById('step-counter');
+        const hotspotStatus = document.getElementById('hotspot-status');
+        const messageBox = document.getElementById('message-box');
+        
+        // Ensure canvases have correct internal resolution
+        envCanvas.width = envCanvas.clientWidth;
+        envCanvas.height = envCanvas.clientHeight;
+        manifoldCanvas.width = manifoldCanvas.clientWidth;
+        manifoldCanvas.height = manifoldCanvas.clientHeight;
+
+        // --- 1. The Environment (Pendulum) ---
+        class PendulumEnv {
+            constructor() {
+                this.g = 9.81; // gravity
+                this.m = 1.0;  // mass
+                this.l = 1.0;  // length
+                this.dt = 0.05; // time step
+                this.max_speed = 8.0;
+                this.max_torque = 2.0;
+                this.reset();
+            }
+
+            reset() {
+                this.theta = Math.PI * (Math.random() * 2 - 1); // random angle
+                this.velocity = (Math.random() * 2 - 1);      // random velocity
+                return this.getState();
+            }
+
+            getState() {
+                return [Math.cos(this.theta), Math.sin(this.theta), this.velocity];
+            }
+
+            step(action) { // action is torque, from -max_torque to +max_torque
+                let torque = action * this.max_torque;
+                
+                // Physics update (Euler's method)
+                let new_velocity = this.velocity + 
+                    (-this.g / this.l * Math.sin(this.theta + Math.PI) + torque / (this.m * this.l * this.l)) * this.dt;
+                
+                this.theta += new_velocity * this.dt;
+                this.velocity = Math.max(Math.min(new_velocity, this.max_speed), -this.max_speed);
+                
+                // Normalize theta to [-PI, PI]
+                this.theta = ((this.theta + Math.PI) % (2 * Math.PI)) - Math.PI;
+
+                // Reward: Be upright (cos(theta) > 0) and not moving fast
+                let reward = Math.cos(this.theta) - 0.1 * Math.abs(this.velocity);
+                
+                return { state: this.getState(), reward: reward };
+            }
+
+            render() {
+                const w = envCanvas.width;
+                const h = envCanvas.height;
+                const pivotX = w / 2;
+                const pivotY = h / 2;
+                const bobX = pivotX + (w * 0.4) * Math.sin(this.theta);
+                const bobY = pivotY + (h * 0.4) * Math.cos(this.theta);
+
+                // Clear canvas
+                envCtx.fillStyle = '#1f2937'; // gray-800
+                envCtx.fillRect(0, 0, w, h);
+
+                // Draw arm
+                envCtx.strokeStyle = '#9ca3af'; // gray-400
+                envCtx.lineWidth = 4;
+                envCtx.beginPath();
+                envCtx.moveTo(pivotX, pivotY);
+                envCtx.lineTo(bobX, bobY);
+                envCtx.stroke();
+
+                // Draw pivot
+                envCtx.fillStyle = '#f3f4f6'; // gray-100
+                envCtx.beginPath();
+                envCtx.arc(pivotX, pivotY, 8, 0, 2 * Math.PI);
+                envCtx.fill();
+
+                // Draw bob
+                envCtx.fillStyle = '#6366f1'; // indigo-600
+                envCtx.beginPath();
+                envCtx.arc(bobX, bobY, 15, 0, 2 * Math.PI);
+                envCtx.fill();
+            }
+        }
+
+        // --- 2. The Pirouette-Inspired Agent ---
+        class PirouetteAgent {
+            constructor() {
+                this.phase = "IDLE";
+                this.totalSteps = 0;
+                this.triageSteps = 3000;
+                this.learnSteps = 10000;
+
+                // --- Manifold ("EEG X-ray") ---
+                // We discretize the state space for the manifold
+                this.angleBins = 20;  // X-axis
+                this.velocityBins = 20; // Y-axis
+                // manifoldData stores { sumContrast: 0, count: 0 }
+                this.manifoldData = new Map();
+                this.maxManifoldContrast = 0;
+                this.hotspotThreshold = 0.8; // Top 20% is the "Easy Sort"
+                this.hotspot = new Set();
+                this.lastReward = 0;
+
+                // --- Q-Learner (The "Action Cluster") ---
+                // We use a simple Q-table for this demo
+                // We discretize actions: [-1 (full left), 0 (none), 1 (full right)]
+                this.actions = [-1, 0, 1];
+                this.qTable = new Map();
+                this.epsilon = 0.9; // Exploration rate
+                this.baseLearningRate = 0.1;
+                this.discount = 0.99;
+                
+                this.rewardHistory = [];
+            }
+
+            // Discretize continuous state for manifold and Q-table
+            discretizeState(state) {
+                // state = [cos(theta), sin(theta), velocity]
+                // We use theta_rad and velocity
+                let theta_rad = Math.atan2(state[1], state[0]); // -PI to PI
+                let velocity = state[2];
+
+                let angleBin = Math.floor((theta_rad + Math.PI) / (2 * Math.PI) * this.angleBins);
+                let velocityBin = Math.floor((velocity + this.max_speed) / (2 * this.max_speed) * this.velocityBins);
+
+                // Clamp bins
+                angleBin = Math.max(0, Math.min(this.angleBins - 1, angleBin));
+                velocityBin = Math.max(0, Math.min(this.velocityBins - 1, velocityBin));
+                
+                return `${angleBin},${velocityBin}`;
+            }
+
+            chooseAction(discreteState) {
+                if (this.phase === "TRIAGE" || Math.random() < this.epsilon) {
+                    // Random action (exploration)
+                    return this.actions[Math.floor(Math.random() * this.actions.length)];
+                } else {
+                    // Greedy action (exploitation)
+                    let bestAction = 0;
+                    let maxQ = -Infinity;
+                    for (const action of this.actions) {
+                        let key = `${discreteState}:${action}`;
+                        let qVal = this.qTable.get(key) || 0;
+                        if (qVal > maxQ) {
+                            maxQ = qVal;
+                            bestAction = action;
+                        }
+                    }
+                    return bestAction;
+                }
+            }
+
+            // This is the core logic
+            update(state, nextState, reward) {
+                this.totalSteps++;
+                stepCounter.textContent = this.totalSteps;
+                
+                // --- 1. Calculate Contrast (The "Delta") ---
+                // This is the "low/high pressure" signal
+                const contrast = Math.abs(reward - this.lastReward);
+                this.lastReward = reward;
+                
+                const discreteState = this.discretizeState(state);
+                const action = this.chooseAction(discreteState);
+
+                // --- 2. Update based on Phase ---
+                if (this.phase === "TRIAGE") {
+                    this.updateManifold(discreteState, contrast);
+                } 
+                else if (this.phase === "LEARN") {
+                    this.updateQTable(discreteState, action, nextState, reward);
+                    // Decay epsilon
+                    this.epsilon = Math.max(0.01, this.epsilon * 0.9999);
+                }
+                
+                // Update reward history for plotting
+                if(this.totalSteps % 50 === 0) {
+                    this.rewardHistory.push({x: this.totalSteps, y: reward});
+                    updateRewardChart(this.rewardHistory);
+                }
+
+                return action;
+            }
+            
+            // --- PASS 1: Triage Phase ---
+            updateManifold(discreteState, contrast) {
+                let data = this.manifoldData.get(discreteState) || { sumContrast: 0, count: 0 };
+                data.sumContrast += contrast;
+                data.count++;
+                this.manifoldData.set(discreteState, data);
+
+                let avgContrast = data.sumContrast / data.count;
+                if (avgContrast > this.maxManifoldContrast) {
+                    this.maxManifoldContrast = avgContrast;
+                }
+            }
+
+            // --- PASS 2: Find "Easy Sort" ---
+            findHotspot() {
+                messageBox.textContent = "Pass 2: Analyzing manifold to find 'Easy Sort' (hotspot)...";
+                this.hotspot.clear();
+                
+                if (this.maxManifoldContrast === 0) return; // Nothing found
+
+                const threshold = this.maxManifoldContrast * this.hotspotThreshold;
+                
+                for (const [discreteState, data] of this.manifoldData.entries()) {
+                    let avgContrast = data.sumContrast / data.count;
+                    if (avgContrast >= threshold) {
+                        this.hotspot.add(discreteState);
+                    }
+                }
+                hotspotStatus.textContent = `Found ${this.hotspot.size} high-contrast states.`;
+                this.renderManifold(true); // Re-render with hotspot
+            }
+
+            // --- PASS 3: Learning Phase ---
+            updateQTable(discreteState, action, nextState, reward) {
+                const discreteNextState = this.discretizeState(nextState);
+                const actionKey = `${discreteState}:${action}`;
+
+                // Get old Q-value
+                const oldQ = this.qTable.get(actionKey) || 0;
+
+                // Find max Q-value for next state
+                let maxNextQ = -Infinity;
+                for (const nextAction of this.actions) {
+                    maxNextQ = Math.max(maxNextQ, this.qTable.get(`${discreteNextState}:${nextAction}`) || 0);
+                }
+
+                // Q-Learning update
+                const target = reward + this.discount * maxNextQ;
+                
+                // --- THIS IS THE PIROUETTE BLUEPRINT ---
+                // "Bump contrast up mathematically"
+                let learningRate = this.baseLearningRate;
+                if (this.hotspot.has(discreteState)) {
+                    // Apply learning bonus in the "hotspot"
+                    learningRate *= 5.0; // 5x learning rate in the "right window"
+                }
+                
+                const newQ = oldQ + learningRate * (target - oldQ);
+                this.qTable.set(actionKey, newQ);
+            }
+
+            // --- Visualization ---
+            renderManifold(showHotspot = false) {
+                const w = manifoldCanvas.width;
+                const h = manifoldCanvas.height;
+                const cellW = w / this.angleBins;
+                const cellH = h / this.velocityBins;
+                
+                manifoldCtx.clearRect(0, 0, w, h);
+                manifoldCtx.fillStyle = '#1f2937'; // gray-800
+                manifoldCtx.fillRect(0, 0, w, h);
+
+                if (this.maxManifoldContrast === 0) return;
+
+                for (let v = 0; v < this.velocityBins; v++) {
+                    for (let a = 0; a < this.angleBins; a++) {
+                        const discreteState = `${a},${v}`;
+                        const data = this.manifoldData.get(discreteState);
+                        
+                        if (data) {
+                            const avgContrast = data.sumContrast / data.count;
+                            // Scale color from 0 to 1
+                            const intensity = avgContrast / this.maxManifoldContrast;
+                            // Use a hot colormap (blue -> yellow)
+                            const r = Math.floor(255 * Math.sqrt(intensity));
+                            const g = Math.floor(255 * (intensity * intensity));
+                            const b = Math.floor(255 * (0.25 * intensity));
+                            manifoldCtx.fillStyle = `rgb(${r},${g},${b})`;
+                            manifoldCtx.fillRect(a * cellW, v * cellH, cellW, cellH);
+                            
+                            // Highlight the "Easy Sort" / "Hotspot"
+                            if (showHotspot && this.hotspot.has(discreteState)) {
+                                manifoldCtx.strokeStyle = '#34d399'; // emerald-400
+                                manifoldCtx.lineWidth = 2;
+                                manifoldCtx.strokeRect(a * cellW, v * cellH, cellW, cellH);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        // --- 3. Chart.js Setup ---
+        let rewardChart;
+        function setupRewardChart() {
+            const ctx = document.getElementById('reward-chart').getContext('2d');
+            rewardChart = new Chart(ctx, {
+                type: 'line',
+                data: { datasets: [{ 
+                    label: 'Smoothed Reward', 
+                    data: [], 
+                    borderColor: '#6366f1', 
+                    backgroundColor: 'rgba(99, 102, 241, 0.1)',
+                    borderWidth: 2,
+                    pointRadius: 0,
+                    tension: 0.1
+                }] },
+                options: {
+                    scales: {
+                        x: { type: 'linear', title: { display: true, text: 'Time Step' } },
+                        y: { title: { display: true, text: 'Reward' } }
+                    },
+                    animation: { duration: 0 }
+                }
+            });
+        }
+        
+        function updateRewardChart(rewardData) {
+            // Simple smoothing (e.g., show last 200 points)
+            const smoothedData = rewardData.slice(-200);
+            rewardChart.data.datasets[0].data = smoothedData;
+            rewardChart.update();
+        }
+
+        // --- 4. Main Simulation Loop ---
+        const env = new PendulumEnv();
+        const agent = new PirouetteAgent();
+        let currentState = env.reset();
+
+        function simulationLoop() {
+            if (agent.phase === "IDLE") return;
+
+            // 1. Agent updates its state and chooses an action
+            const nextStateReward = env.step(agent.lastAction || 0);
+            const action = agent.update(currentState, nextStateReward.state, nextStateReward.reward);
+            agent.lastAction = action;
+            currentState = nextStateReward.state;
+
+            // 2. Render the environment and manifold
+            env.render();
+            if (agent.phase === "TRIAGE" && agent.totalSteps % 50 === 0) {
+                agent.renderManifold();
+            }
+
+            // 3. Check for phase transitions
+            if (agent.phase === "TRIAGE" && agent.totalSteps >= agent.triageSteps) {
+                agent.phase = "FIND_HOTSPOT";
+                phaseStatus.textContent = "ANALYZING";
+                phaseStatus.className = "font-mono ml-2 p-1 bg-yellow-200 rounded";
+                
+                // Use setTimeout to allow UI to update
+                setTimeout(() => {
+                    agent.findHotspot(); // This is Pass 2
+                    
+                    // Start Pass 3
+                    agent.phase = "LEARN";
+                    phaseStatus.textContent = "LEARNING";
+                    phaseStatus.className = "font-mono ml-2 p-1 bg-green-200 rounded";
+                    messageBox.textContent = "Pass 3: Learning with 'bumped contrast' in hotspot.";
+                    requestAnimationFrame(simulationLoop);
+                }, 100);
+
+            } else if (agent.phase === "LEARN" && agent.totalSteps >= (agent.triageSteps + agent.learnSteps)) {
+                agent.phase = "DONE";
+                phaseStatus.textContent = "DONE";
+                phaseStatus.className = "font-mono ml-2 p-1 bg-blue-200 rounded";
+                messageBox.textContent = "Simulation complete. Agent has learned the policy.";
+                startButton.disabled = false;
+                startButton.textContent = "Run Again";
+            
+            } else if (agent.phase !== "IDLE" && agent.phase !== "FIND_HOTSPOT") {
+                // Continue the loop
+                requestAnimationFrame(simulationLoop);
+            }
+        }
+
+        // --- Start Button ---
+        startButton.addEventListener('click', () => {
+            console.log("Starting simulation...");
+            startButton.disabled = true;
+            startButton.textContent = "Running...";
+            
+            // Reset everything
+            currentState = env.reset();
+            agent.totalSteps = 0;
+            agent.manifoldData.clear();
+            agent.qTable.clear();
+            agent.hotspot.clear();
+            agent.maxManifoldContrast = 0;
+            agent.rewardHistory = [];
+            setupRewardChart();
+            
+            agent.phase = "TRIAGE";
+            phaseStatus.textContent = "TRIAGE (PASS 1)";
+            phaseStatus.className = "font-mono ml-2 p-1 bg-yellow-200 rounded";
+            hotspotStatus.textContent = "Not Found";
+            messageBox.textContent = "Pass 1: Running random actions to build 'Contrast Manifold'...";
+            
+            // Kick off the loop
+            requestAnimationFrame(simulationLoop);
+        });
+
+        // Initial setup
+        setupRewardChart();
+        env.render();
+        agent.renderManifold();
+
+    </script>
+</body>
+</html>

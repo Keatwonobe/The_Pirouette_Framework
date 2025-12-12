@@ -4,9 +4,9 @@ import shutil
 # --- Configuration ---
 # Define the paths to your directories.
 # Make sure to replace these placeholder paths with your actual folder paths.
-folder_a = 'C:/Users/keatw/OneDrive/Documents/Doclab/Big_Datasets/target/paper/Pirouette_Volume_6/modules'      # Folder with original markdown files
-folder_b = 'C:/Users/keatw/OneDrive/Documents/Doclab/Big_Datasets/target/paper/Pirouette_Volume_6/doclab/experiments/Autopoiesis/Essentialization/essentialized' # Folder with processed files
-folder_c = 'C:/Users/keatw/OneDrive/Documents/Doclab/Big_Datasets/target/paper/Pirouette_Volume_6/doclab/experiments/Autopoiesis/Essentialization/to_do'  # Folder where new files will be copied
+folder_a = 'C:/Users/keatw/OneDrive/Documents/Doclab/Big_Datasets/target/Pirouette_Volume_7/modules'      # Folder with original markdown files
+folder_b = 'C:/Users/keatw/OneDrive/Documents/Doclab/Big_Datasets/target/Pirouette_Volume_7/doclab/experiments/Autopoiesis/Essentialization/essentialized' # Folder with processed files
+folder_c = 'C:/Users/keatw/OneDrive/Documents/Doclab/Big_Datasets/target/Pirouette_Volume_7/doclab/experiments/Autopoiesis/Essentialization/to_do'  # Folder where new files will be copied
 
 # --- Script Logic ---
 def process_files():

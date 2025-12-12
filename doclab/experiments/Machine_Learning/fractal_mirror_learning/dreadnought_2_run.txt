@@ -1,0 +1,1501 @@
+Episode 1: Coherent run. Score: 26. (KS updates: 5)
+    Avg Dark Residue: 0.40 (max 1.00) | Vigor/Rigor: 0/3
+    Top-1 scores: [26] | avg=0.00 | dyn_threshold=120
+Episode 2: Coherent run. Score: 39. (KS updates: 1)
+    Avg Dark Residue: 0.27 (max 0.94) | Vigor/Rigor: 17/3
+    Top-2 scores: [39, 26] | avg=26.00 | dyn_threshold=120
+Episode 3: Coherent run. Score: 156. (KS updates: 4)
+    Avg Dark Residue: 0.31 (max 0.86) | Vigor/Rigor: 63/3
+    Top-3 scores: [156, 39, 26] | avg=32.50 | dyn_threshold=120
+Episode 4: Dissonant run. Score: 22. (KS updates: 5)
+    Avg Dark Residue: 0.44 (max 1.05) | Vigor/Rigor: 0/3
+    Top-4 scores: [156, 39, 26, 22] | avg=73.67 | dyn_threshold=120
+Episode 5: Coherent run. Score: 170. (KS updates: 4)
+    Avg Dark Residue: 0.30 (max 1.11) | Vigor/Rigor: 98/2
+    Top-5 scores: [170, 156, 39, 26, 22] | avg=60.75 | dyn_threshold=120
+Episode 6: Coherent run. Score: 128. (KS updates: 7)
+    Avg Dark Residue: 0.31 (max 1.22) | Vigor/Rigor: 60/3
+    Top-6 scores: [170, 156, 128, 39, 26, 22] | avg=82.60 | dyn_threshold=127
+Episode 7: Coherent run. Score: 190. (KS updates: 4)
+    Avg Dark Residue: 0.23 (max 1.27) | Vigor/Rigor: 117/2
+    Top-7 scores: [190, 170, 156, 128, 39, 26, 22] | avg=90.17 | dyn_threshold=127
+Episode 8: Coherent run. Score: 202. (KS updates: 1)
+    Avg Dark Residue: 0.24 (max 0.99) | Vigor/Rigor: 125/2
+    Top-8 scores: [202, 190, 170, 156, 128, 39, 26, 22] | avg=104.43 | dyn_threshold=142
+Episode 9: Coherent run. Score: 184. (KS updates: 0)
+    Avg Dark Residue: 0.26 (max 0.80) | Vigor/Rigor: 104/2
+    Top-9 scores: [202, 190, 184, 170, 156, 128, 39, 26, 22] | avg=116.62 | dyn_threshold=151
+Episode 10: Coherent run. Score: 162. (KS updates: 3)
+    Avg Dark Residue: 0.20 (max 0.95) | Vigor/Rigor: 115/2
+    Top-10 scores: [202, 190, 184, 170, 162, 156, 128, 39, 26, 22] | avg=124.11 | dyn_threshold=151
+Episode 11: Coherent run. Score: 130. (KS updates: 3)
+    Avg Dark Residue: 0.23 (max 0.83) | Vigor/Rigor: 68/2
+    Top-11 scores: [202, 190, 184, 170, 162, 156, 130, 128, 39, 26, 22] | avg=127.90 | dyn_threshold=151
+Episode 12: Dissonant run. Score: 29. (KS updates: 3)
+    Avg Dark Residue: 0.34 (max 0.62) | Vigor/Rigor: 12/3
+    Top-12 scores: [202, 190, 184, 170, 162, 156, 130, 128, 39, 29, 26, 22] | avg=128.09 | dyn_threshold=151
+Episode 13: Dissonant run. Score: 82. (KS updates: 1)
+    Avg Dark Residue: 0.21 (max 0.59) | Vigor/Rigor: 37/3
+    Top-13 scores: [202, 190, 184, 170, 162, 156, 130, 128, 82, 39, 29, 26, 22] | avg=119.83 | dyn_threshold=151
+Episode 14: Coherent run. Score: 122. (KS updates: 2)
+    Avg Dark Residue: 0.23 (max 0.90) | Vigor/Rigor: 71/2
+    Top-14 scores: [202, 190, 184, 170, 162, 156, 130, 128, 122, 82, 39, 29, 26, 22] | avg=116.92 | dyn_threshold=151
+Episode 15: Dissonant run. Score: 33. (KS updates: 2)
+    Avg Dark Residue: 0.33 (max 0.70) | Vigor/Rigor: 15/3
+    Top-15 scores: [202, 190, 184, 170, 162, 156, 130, 128, 122, 82, 39, 33, 29, 26, 22] | avg=117.29 | dyn_threshold=151
+Episode 16: Coherent run. Score: 120. (KS updates: 4)
+    Avg Dark Residue: 0.28 (max 1.25) | Vigor/Rigor: 78/2
+    Top-15 scores: [202, 190, 184, 170, 162, 156, 130, 128, 122, 120, 82, 39, 33, 29, 26] | avg=111.67 | dyn_threshold=151
+Episode 17: Dissonant run. Score: 24. (KS updates: 2)
+    Avg Dark Residue: 0.34 (max 0.83) | Vigor/Rigor: 11/3
+    Top-15 scores: [202, 190, 184, 170, 162, 156, 130, 128, 122, 120, 82, 39, 33, 29, 26] | avg=118.20 | dyn_threshold=151
+Episode 18: Coherent run. Score: 136. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 1.05) | Vigor/Rigor: 100/2
+    Top-15 scores: [202, 190, 184, 170, 162, 156, 136, 130, 128, 122, 120, 82, 39, 33, 29] | avg=118.20 | dyn_threshold=151
+Episode 19: Dissonant run. Score: 33. (KS updates: 1)
+    Avg Dark Residue: 0.28 (max 1.03) | Vigor/Rigor: 26/2
+    Top-15 scores: [202, 190, 184, 170, 162, 156, 136, 130, 128, 122, 120, 82, 39, 33, 33] | avg=125.53 | dyn_threshold=151
+Episode 20: Dissonant run. Score: 44. (KS updates: 2)
+    Avg Dark Residue: 0.28 (max 1.18) | Vigor/Rigor: 23/2
+    Top-15 scores: [202, 190, 184, 170, 162, 156, 136, 130, 128, 122, 120, 82, 44, 39, 33] | avg=125.80 | dyn_threshold=151
+Episode 21: Coherent run. Score: 214. (KS updates: 2)
+    Avg Dark Residue: 0.25 (max 2.05) | Vigor/Rigor: 163/2
+    Top-15 scores: [214, 202, 190, 184, 170, 162, 156, 136, 130, 128, 122, 120, 82, 44, 39] | avg=126.53 | dyn_threshold=151
+Episode 22: Coherent run. Score: 152. (KS updates: 0)
+    Avg Dark Residue: 0.29 (max 1.07) | Vigor/Rigor: 78/2
+    Top-15 scores: [214, 202, 190, 184, 170, 162, 156, 152, 136, 130, 128, 122, 120, 82, 44] | avg=138.60 | dyn_threshold=160
+Episode 23: Dissonant run. Score: 88. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.79) | Vigor/Rigor: 47/2
+    Top-15 scores: [214, 202, 190, 184, 170, 162, 156, 152, 136, 130, 128, 122, 120, 88, 82] | avg=146.13 | dyn_threshold=160
+Episode 24: Dissonant run. Score: 63. (KS updates: 0)
+    Avg Dark Residue: 0.29 (max 1.09) | Vigor/Rigor: 41/2
+    Top-15 scores: [214, 202, 190, 184, 170, 162, 156, 152, 136, 130, 128, 122, 120, 88, 82] | avg=149.07 | dyn_threshold=160
+Episode 25: Dissonant run. Score: 108. (KS updates: 0)
+    Avg Dark Residue: 0.32 (max 1.66) | Vigor/Rigor: 68/2
+    Top-15 scores: [214, 202, 190, 184, 170, 162, 156, 152, 136, 130, 128, 122, 120, 108, 88] | avg=149.07 | dyn_threshold=160
+Episode 26: Dissonant run. Score: 100. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.77) | Vigor/Rigor: 62/2
+    Top-15 scores: [214, 202, 190, 184, 170, 162, 156, 152, 136, 130, 128, 122, 120, 108, 100] | avg=150.80 | dyn_threshold=160
+Episode 27: Coherent run. Score: 158. (KS updates: 2)
+    Avg Dark Residue: 0.26 (max 1.08) | Vigor/Rigor: 104/2
+    Top-15 scores: [214, 202, 190, 184, 170, 162, 158, 156, 152, 136, 130, 128, 122, 120, 108] | avg=151.60 | dyn_threshold=160
+Episode 28: Dissonant run. Score: 24. (KS updates: 1)
+    Avg Dark Residue: 0.35 (max 0.95) | Vigor/Rigor: 14/2
+    Top-15 scores: [214, 202, 190, 184, 170, 162, 158, 156, 152, 136, 130, 128, 122, 120, 108] | avg=155.47 | dyn_threshold=160
+Episode 29: Coherent run. Score: 226. (KS updates: 0)
+    Avg Dark Residue: 0.28 (max 0.87) | Vigor/Rigor: 151/2
+    Top-15 scores: [226, 214, 202, 190, 184, 170, 162, 158, 156, 152, 136, 130, 128, 122, 120] | avg=155.47 | dyn_threshold=160
+Episode 30: Dissonant run. Score: 134. (KS updates: 0)
+    Avg Dark Residue: 0.26 (max 1.04) | Vigor/Rigor: 86/2
+    Top-15 scores: [226, 214, 202, 190, 184, 170, 162, 158, 156, 152, 136, 134, 130, 128, 122] | avg=163.33 | dyn_threshold=169
+Episode 31: Dissonant run. Score: 122. (KS updates: 0)
+    Avg Dark Residue: 0.26 (max 1.11) | Vigor/Rigor: 81/2
+    Top-15 scores: [226, 214, 202, 190, 184, 170, 162, 158, 156, 152, 136, 134, 130, 128, 122] | avg=164.27 | dyn_threshold=169
+Episode 32: Dissonant run. Score: 87. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 1.28) | Vigor/Rigor: 51/2
+    Top-15 scores: [226, 214, 202, 190, 184, 170, 162, 158, 156, 152, 136, 134, 130, 128, 122] | avg=164.27 | dyn_threshold=169
+Episode 33: Dissonant run. Score: 141. (KS updates: 0)
+    Avg Dark Residue: 0.33 (max 1.69) | Vigor/Rigor: 81/2
+    Top-15 scores: [226, 214, 202, 190, 184, 170, 162, 158, 156, 152, 141, 136, 134, 130, 128] | avg=164.27 | dyn_threshold=169
+Episode 34: Dissonant run. Score: 118. (KS updates: 0)
+    Avg Dark Residue: 0.36 (max 1.83) | Vigor/Rigor: 64/2
+    Top-15 scores: [226, 214, 202, 190, 184, 170, 162, 158, 156, 152, 141, 136, 134, 130, 128] | avg=165.53 | dyn_threshold=169
+Episode 35: Dissonant run. Score: 61. (KS updates: 1)
+    Avg Dark Residue: 0.29 (max 0.92) | Vigor/Rigor: 38/2
+    Top-15 scores: [226, 214, 202, 190, 184, 170, 162, 158, 156, 152, 141, 136, 134, 130, 128] | avg=165.53 | dyn_threshold=169
+Episode 36: Dissonant run. Score: 130. (KS updates: 1)
+    Avg Dark Residue: 0.29 (max 1.36) | Vigor/Rigor: 75/2
+    Top-15 scores: [226, 214, 202, 190, 184, 170, 162, 158, 156, 152, 141, 136, 134, 130, 130] | avg=165.53 | dyn_threshold=169
+Episode 37: Dissonant run. Score: 162. (KS updates: 0)
+    Avg Dark Residue: 0.28 (max 1.09) | Vigor/Rigor: 91/2
+    Top-15 scores: [226, 214, 202, 190, 184, 170, 162, 162, 158, 156, 152, 141, 136, 134, 130] | avg=165.67 | dyn_threshold=169
+Episode 38: Dissonant run. Score: 158. (KS updates: 0)
+    Avg Dark Residue: 0.28 (max 1.43) | Vigor/Rigor: 76/3
+    Top-15 scores: [226, 214, 202, 190, 184, 170, 162, 162, 158, 158, 156, 152, 141, 136, 134] | avg=167.80 | dyn_threshold=169
+Episode 39: Dissonant run. Score: 162. (KS updates: 0)
+    Avg Dark Residue: 0.31 (max 1.09) | Vigor/Rigor: 97/2
+    Top-15 scores: [226, 214, 202, 190, 184, 170, 162, 162, 162, 158, 158, 156, 152, 141, 136] | avg=169.67 | dyn_threshold=169
+Episode 40: Coherent run. Score: 218. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 1.22) | Vigor/Rigor: 181/1
+    Top-15 scores: [226, 218, 214, 202, 190, 184, 170, 162, 162, 162, 158, 158, 156, 152, 141] | avg=171.53 | dyn_threshold=169
+Episode 41: Dissonant run. Score: 48. (KS updates: 3)
+    Avg Dark Residue: 0.25 (max 1.06) | Vigor/Rigor: 27/2
+    Top-15 scores: [226, 218, 214, 202, 190, 184, 170, 162, 162, 162, 158, 158, 156, 152, 141] | avg=177.00 | dyn_threshold=169
+Episode 42: Coherent run. Score: 187. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.86) | Vigor/Rigor: 96/2
+    Top-15 scores: [226, 218, 214, 202, 190, 187, 184, 170, 162, 162, 162, 158, 158, 156, 152] | avg=177.00 | dyn_threshold=169
+Episode 43: Dissonant run. Score: 149. (KS updates: 0)
+    Avg Dark Residue: 0.35 (max 1.13) | Vigor/Rigor: 81/2
+    Top-15 scores: [226, 218, 214, 202, 190, 187, 184, 170, 162, 162, 162, 158, 158, 156, 152] | avg=180.07 | dyn_threshold=169
+Episode 44: Coherent run. Score: 185. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.80) | Vigor/Rigor: 111/2
+    Top-15 scores: [226, 218, 214, 202, 190, 187, 185, 184, 170, 162, 162, 162, 158, 158, 156] | avg=180.07 | dyn_threshold=169
+Episode 45: Dissonant run. Score: 124. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.72) | Vigor/Rigor: 82/2
+    Top-15 scores: [226, 218, 214, 202, 190, 187, 185, 184, 170, 162, 162, 162, 158, 158, 156] | avg=182.27 | dyn_threshold=169
+Episode 46: Dissonant run. Score: 102. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.69) | Vigor/Rigor: 74/2
+    Top-15 scores: [226, 218, 214, 202, 190, 187, 185, 184, 170, 162, 162, 162, 158, 158, 156] | avg=182.27 | dyn_threshold=169
+Episode 47: Dissonant run. Score: 129. (KS updates: 1)
+    Avg Dark Residue: 0.37 (max 1.24) | Vigor/Rigor: 73/2
+    Top-15 scores: [226, 218, 214, 202, 190, 187, 185, 184, 170, 162, 162, 162, 158, 158, 156] | avg=182.27 | dyn_threshold=169
+Episode 48: Coherent run. Score: 206. (KS updates: 0)
+    Avg Dark Residue: 0.32 (max 1.32) | Vigor/Rigor: 122/2
+    Top-15 scores: [226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 162, 162, 162, 158, 158] | avg=182.27 | dyn_threshold=169
+Episode 49: Dissonant run. Score: 61. (KS updates: 0)
+    Avg Dark Residue: 0.26 (max 1.09) | Vigor/Rigor: 28/3
+    Top-15 scores: [226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 162, 162, 162, 158, 158] | avg=185.60 | dyn_threshold=169
+Episode 50: Dissonant run. Score: 130. (KS updates: 0)
+    Avg Dark Residue: 0.25 (max 1.00) | Vigor/Rigor: 91/2
+    Top-15 scores: [226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 162, 162, 162, 158, 158] | avg=185.60 | dyn_threshold=169
+Episode 51: Dissonant run. Score: 44. (KS updates: 2)
+    Avg Dark Residue: 0.34 (max 0.73) | Vigor/Rigor: 12/3
+    Top-15 scores: [226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 162, 162, 162, 158, 158] | avg=185.60 | dyn_threshold=169
+Episode 52: Dissonant run. Score: 155. (KS updates: 0)
+    Avg Dark Residue: 0.31 (max 1.47) | Vigor/Rigor: 85/2
+    Top-15 scores: [226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 162, 162, 162, 158, 158] | avg=185.60 | dyn_threshold=169
+Episode 53: Dissonant run. Score: 167. (KS updates: 1)
+    Avg Dark Residue: 0.32 (max 1.02) | Vigor/Rigor: 77/3
+    Top-15 scores: [226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 167, 162, 162, 162, 158] | avg=185.60 | dyn_threshold=169
+Episode 54: Dissonant run. Score: 76. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.81) | Vigor/Rigor: 45/2
+    Top-15 scores: [226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 167, 162, 162, 162, 158] | avg=186.20 | dyn_threshold=169
+Episode 55: Dissonant run. Score: 111. (KS updates: 1)
+    Avg Dark Residue: 0.31 (max 1.00) | Vigor/Rigor: 73/2
+    Top-15 scores: [226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 167, 162, 162, 162, 158] | avg=186.20 | dyn_threshold=169
+Episode 56: Dissonant run. Score: 53. (KS updates: 1)
+    Avg Dark Residue: 0.26 (max 0.90) | Vigor/Rigor: 34/2
+    Top-15 scores: [226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 167, 162, 162, 162, 158] | avg=186.20 | dyn_threshold=169
+Episode 57: Dissonant run. Score: 128. (KS updates: 1)
+    Avg Dark Residue: 0.34 (max 1.35) | Vigor/Rigor: 80/2
+    Top-15 scores: [226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 167, 162, 162, 162, 158] | avg=186.20 | dyn_threshold=169
+Episode 58: Dissonant run. Score: 152. (KS updates: 0)
+    Avg Dark Residue: 0.27 (max 1.11) | Vigor/Rigor: 85/2
+    Top-15 scores: [226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 167, 162, 162, 162, 158] | avg=186.20 | dyn_threshold=169
+Episode 59: Dissonant run. Score: 94. (KS updates: 0)
+    Avg Dark Residue: 0.26 (max 1.03) | Vigor/Rigor: 60/2
+    Top-15 scores: [226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 167, 162, 162, 162, 158] | avg=186.20 | dyn_threshold=169
+Episode 60: Coherent run. Score: 230. (KS updates: 0)
+    Avg Dark Residue: 0.28 (max 1.48) | Vigor/Rigor: 161/2
+    Top-15 scores: [230, 226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 167, 162, 162, 162] | avg=186.20 | dyn_threshold=169
+Episode 61: Dissonant run. Score: 105. (KS updates: 0)
+    Avg Dark Residue: 0.36 (max 1.09) | Vigor/Rigor: 47/3
+    Top-15 scores: [230, 226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 167, 162, 162, 162] | avg=191.00 | dyn_threshold=172
+Episode 62: Dissonant run. Score: 96. (KS updates: 1)
+    Avg Dark Residue: 0.37 (max 1.49) | Vigor/Rigor: 44/3
+    Top-15 scores: [230, 226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 167, 162, 162, 162] | avg=191.00 | dyn_threshold=172
+Episode 63: Dissonant run. Score: 120. (KS updates: 0)
+    Avg Dark Residue: 0.32 (max 0.91) | Vigor/Rigor: 63/2
+    Top-15 scores: [230, 226, 218, 214, 206, 202, 190, 187, 185, 184, 170, 167, 162, 162, 162] | avg=191.00 | dyn_threshold=172
+Episode 64: Coherent run. Score: 189. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.88) | Vigor/Rigor: 120/2
+    Top-15 scores: [230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 170, 167, 162, 162] | avg=191.00 | dyn_threshold=172
+Episode 65: Coherent run. Score: 176. (KS updates: 3)
+    Avg Dark Residue: 0.29 (max 1.55) | Vigor/Rigor: 102/2
+    Top-15 scores: [230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 176, 170, 167, 162] | avg=192.80 | dyn_threshold=172
+Episode 66: Dissonant run. Score: 24. (KS updates: 3)
+    Avg Dark Residue: 0.38 (max 0.76) | Vigor/Rigor: 7/3
+    Top-15 scores: [230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 176, 170, 167, 162] | avg=193.73 | dyn_threshold=172
+Episode 67: Dissonant run. Score: 61. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.86) | Vigor/Rigor: 36/2
+    Top-15 scores: [230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 176, 170, 167, 162] | avg=193.73 | dyn_threshold=172
+Episode 68: Dissonant run. Score: 116. (KS updates: 0)
+    Avg Dark Residue: 0.27 (max 1.29) | Vigor/Rigor: 71/2
+    Top-15 scores: [230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 176, 170, 167, 162] | avg=193.73 | dyn_threshold=172
+Episode 69: Dissonant run. Score: 101. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.62) | Vigor/Rigor: 63/2
+    Top-15 scores: [230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 176, 170, 167, 162] | avg=193.73 | dyn_threshold=172
+Episode 70: Coherent run. Score: 311. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 1.69) | Vigor/Rigor: 234/2
+    Top-15 scores: [311, 230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 176, 170, 167] | avg=193.73 | dyn_threshold=172
+Episode 71: Dissonant run. Score: 119. (KS updates: 0)
+    Avg Dark Residue: 0.36 (max 1.36) | Vigor/Rigor: 62/2
+    Top-15 scores: [311, 230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 176, 170, 167] | avg=203.67 | dyn_threshold=233
+Episode 72: Coherent run. Score: 235. (KS updates: 3)
+    Avg Dark Residue: 0.27 (max 1.21) | Vigor/Rigor: 157/2
+    Top-15 scores: [311, 235, 230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 176, 170] | avg=203.67 | dyn_threshold=233
+Episode 73: Dissonant run. Score: 166. (KS updates: 0)
+    Avg Dark Residue: 0.28 (max 0.90) | Vigor/Rigor: 86/2
+    Top-15 scores: [311, 235, 230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 176, 170] | avg=208.20 | dyn_threshold=233
+Episode 74: Dissonant run. Score: 128. (KS updates: 0)
+    Avg Dark Residue: 0.35 (max 1.32) | Vigor/Rigor: 65/2
+    Top-15 scores: [311, 235, 230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 176, 170] | avg=208.20 | dyn_threshold=233
+Episode 75: Dissonant run. Score: 112. (KS updates: 0)
+    Avg Dark Residue: 0.25 (max 0.68) | Vigor/Rigor: 76/2
+    Top-15 scores: [311, 235, 230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 176, 170] | avg=208.20 | dyn_threshold=233
+Episode 76: Coherent run. Score: 279. (KS updates: 2)
+    Avg Dark Residue: 0.23 (max 0.88) | Vigor/Rigor: 186/2
+    Top-15 scores: [311, 279, 235, 230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 176] | avg=208.20 | dyn_threshold=233
+Episode 77: Dissonant run. Score: 167. (KS updates: 1)
+    Avg Dark Residue: 0.29 (max 1.37) | Vigor/Rigor: 101/2
+    Top-15 scores: [311, 279, 235, 230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 176] | avg=215.47 | dyn_threshold=233
+Episode 78: Dissonant run. Score: 171. (KS updates: 0)
+    Avg Dark Residue: 0.28 (max 0.81) | Vigor/Rigor: 86/2
+    Top-15 scores: [311, 279, 235, 230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 176] | avg=215.47 | dyn_threshold=233
+Episode 79: Dissonant run. Score: 64. (KS updates: 0)
+    Avg Dark Residue: 0.27 (max 0.70) | Vigor/Rigor: 43/2
+    Top-15 scores: [311, 279, 235, 230, 226, 218, 214, 206, 202, 190, 189, 187, 185, 184, 176] | avg=215.47 | dyn_threshold=233
+Episode 80: Dissonant run. Score: 208. (KS updates: 0)
+    Avg Dark Residue: 0.29 (max 0.88) | Vigor/Rigor: 90/3
+    Top-15 scores: [311, 279, 235, 230, 226, 218, 214, 208, 206, 202, 190, 189, 187, 185, 184] | avg=215.47 | dyn_threshold=233
+Episode 81: Dissonant run. Score: 141. (KS updates: 0)
+    Avg Dark Residue: 0.34 (max 1.35) | Vigor/Rigor: 77/2
+    Top-15 scores: [311, 279, 235, 230, 226, 218, 214, 208, 206, 202, 190, 189, 187, 185, 184] | avg=217.60 | dyn_threshold=233
+Episode 82: Dissonant run. Score: 198. (KS updates: 0)
+    Avg Dark Residue: 0.25 (max 1.06) | Vigor/Rigor: 128/2
+    Top-15 scores: [311, 279, 235, 230, 226, 218, 214, 208, 206, 202, 198, 190, 189, 187, 185] | avg=217.60 | dyn_threshold=233
+Episode 83: Dissonant run. Score: 141. (KS updates: 0)
+    Avg Dark Residue: 0.26 (max 1.24) | Vigor/Rigor: 89/2
+    Top-15 scores: [311, 279, 235, 230, 226, 218, 214, 208, 206, 202, 198, 190, 189, 187, 185] | avg=218.53 | dyn_threshold=233
+Episode 84: Coherent run. Score: 327. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 1.19) | Vigor/Rigor: 233/2
+    Top-15 scores: [327, 311, 279, 235, 230, 226, 218, 214, 208, 206, 202, 198, 190, 189, 187] | avg=218.53 | dyn_threshold=233
+Episode 85: Dissonant run. Score: 203. (KS updates: 0)
+    Avg Dark Residue: 0.28 (max 0.89) | Vigor/Rigor: 99/3
+    Top-15 scores: [327, 311, 279, 235, 230, 226, 218, 214, 208, 206, 203, 202, 198, 190, 189] | avg=228.00 | dyn_threshold=245
+Episode 86: Dissonant run. Score: 118. (KS updates: 1)
+    Avg Dark Residue: 0.43 (max 1.04) | Vigor/Rigor: 47/3
+    Top-15 scores: [327, 311, 279, 235, 230, 226, 218, 214, 208, 206, 203, 202, 198, 190, 189] | avg=229.07 | dyn_threshold=245
+Episode 87: Dissonant run. Score: 184. (KS updates: 0)
+    Avg Dark Residue: 0.25 (max 0.66) | Vigor/Rigor: 110/2
+    Top-15 scores: [327, 311, 279, 235, 230, 226, 218, 214, 208, 206, 203, 202, 198, 190, 189] | avg=229.07 | dyn_threshold=245
+Episode 88: Coherent run. Score: 295. (KS updates: 3)
+    Avg Dark Residue: 0.23 (max 0.89) | Vigor/Rigor: 191/2
+    Top-15 scores: [327, 311, 295, 279, 235, 230, 226, 218, 214, 208, 206, 203, 202, 198, 190] | avg=229.07 | dyn_threshold=245
+Episode 89: Coherent run. Score: 266. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.82) | Vigor/Rigor: 165/2
+    Top-15 scores: [327, 311, 295, 279, 266, 235, 230, 226, 218, 214, 208, 206, 203, 202, 198] | avg=236.13 | dyn_threshold=245
+Episode 90: Coherent run. Score: 289. (KS updates: 0)
+    Avg Dark Residue: 0.29 (max 0.92) | Vigor/Rigor: 92/3
+    Top-15 scores: [327, 311, 295, 289, 279, 266, 235, 230, 226, 218, 214, 208, 206, 203, 202] | avg=241.20 | dyn_threshold=245
+Episode 91: Coherent run. Score: 394. (KS updates: 0)
+    Avg Dark Residue: 0.26 (max 0.84) | Vigor/Rigor: 219/2
+    Top-15 scores: [394, 327, 311, 295, 289, 279, 266, 235, 230, 226, 218, 214, 208, 206, 203] | avg=247.27 | dyn_threshold=245
+Episode 92: Coherent run. Score: 446. (KS updates: 2)
+    Avg Dark Residue: 0.27 (max 0.82) | Vigor/Rigor: 256/2
+    Top-15 scores: [446, 394, 327, 311, 295, 289, 279, 266, 235, 230, 226, 218, 214, 208, 206] | avg=260.07 | dyn_threshold=295
+Episode 93: Dissonant run. Score: 133. (KS updates: 0)
+    Avg Dark Residue: 0.34 (max 0.93) | Vigor/Rigor: 52/3
+    Top-15 scores: [446, 394, 327, 311, 295, 289, 279, 266, 235, 230, 226, 218, 214, 208, 206] | avg=276.27 | dyn_threshold=334
+Episode 94: Coherent run. Score: 388. (KS updates: 0)
+    Avg Dark Residue: 0.25 (max 0.71) | Vigor/Rigor: 249/2
+    Top-15 scores: [446, 394, 388, 327, 311, 295, 289, 279, 266, 235, 230, 226, 218, 214, 208] | avg=276.27 | dyn_threshold=334
+Episode 95: Dissonant run. Score: 134. (KS updates: 0)
+    Avg Dark Residue: 0.31 (max 0.78) | Vigor/Rigor: 60/3
+    Top-15 scores: [446, 394, 388, 327, 311, 295, 289, 279, 266, 235, 230, 226, 218, 214, 208] | avg=288.40 | dyn_threshold=334
+Episode 96: Dissonant run. Score: 252. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.69) | Vigor/Rigor: 128/2
+    Top-15 scores: [446, 394, 388, 327, 311, 295, 289, 279, 266, 252, 235, 230, 226, 218, 214] | avg=288.40 | dyn_threshold=334
+Episode 97: Dissonant run. Score: 240. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.77) | Vigor/Rigor: 127/2
+    Top-15 scores: [446, 394, 388, 327, 311, 295, 289, 279, 266, 252, 240, 235, 230, 226, 218] | avg=291.33 | dyn_threshold=334
+Episode 98: Dissonant run. Score: 142. (KS updates: 0)
+    Avg Dark Residue: 0.32 (max 0.88) | Vigor/Rigor: 61/3
+    Top-15 scores: [446, 394, 388, 327, 311, 295, 289, 279, 266, 252, 240, 235, 230, 226, 218] | avg=293.07 | dyn_threshold=334
+Episode 99: Dissonant run. Score: 184. (KS updates: 0)
+    Avg Dark Residue: 0.26 (max 0.78) | Vigor/Rigor: 94/2
+    Top-15 scores: [446, 394, 388, 327, 311, 295, 289, 279, 266, 252, 240, 235, 230, 226, 218] | avg=293.07 | dyn_threshold=334
+Episode 100: Dissonant run. Score: 139. (KS updates: 0)
+    Avg Dark Residue: 0.32 (max 0.89) | Vigor/Rigor: 71/2
+    Top-15 scores: [446, 394, 388, 327, 311, 295, 289, 279, 266, 252, 240, 235, 230, 226, 218] | avg=293.07 | dyn_threshold=334
+Episode 101: Dissonant run. Score: 186. (KS updates: 1)
+    Avg Dark Residue: 0.31 (max 0.87) | Vigor/Rigor: 65/3
+    Top-15 scores: [446, 394, 388, 327, 311, 295, 289, 279, 266, 252, 240, 235, 230, 226, 218] | avg=293.07 | dyn_threshold=334
+Episode 102: Coherent run. Score: 345. (KS updates: 4)
+    Avg Dark Residue: 0.27 (max 1.17) | Vigor/Rigor: 205/2
+    Top-15 scores: [446, 394, 388, 345, 327, 311, 295, 289, 279, 266, 252, 240, 235, 230, 226] | avg=293.07 | dyn_threshold=334
+Episode 103: Coherent run. Score: 455. (KS updates: 1)
+    Avg Dark Residue: 0.21 (max 0.82) | Vigor/Rigor: 237/2
+    Top-15 scores: [455, 446, 394, 388, 345, 327, 311, 295, 289, 279, 266, 252, 240, 235, 230] | avg=301.53 | dyn_threshold=334
+Episode 104: Dissonant run. Score: 199. (KS updates: 0)
+    Avg Dark Residue: 0.25 (max 0.81) | Vigor/Rigor: 113/2
+    Top-15 scores: [455, 446, 394, 388, 345, 327, 311, 295, 289, 279, 266, 252, 240, 235, 230] | avg=316.80 | dyn_threshold=341
+Episode 105: Dissonant run. Score: 193. (KS updates: 0)
+    Avg Dark Residue: 0.28 (max 0.79) | Vigor/Rigor: 81/3
+    Top-15 scores: [455, 446, 394, 388, 345, 327, 311, 295, 289, 279, 266, 252, 240, 235, 230] | avg=316.80 | dyn_threshold=341
+Episode 106: Coherent run. Score: 389. (KS updates: 3)
+    Avg Dark Residue: 0.20 (max 0.69) | Vigor/Rigor: 262/2
+    Top-15 scores: [455, 446, 394, 389, 388, 345, 327, 311, 295, 289, 279, 266, 252, 240, 235] | avg=316.80 | dyn_threshold=341
+Episode 107: Coherent run. Score: 406. (KS updates: 2)
+    Avg Dark Residue: 0.21 (max 0.74) | Vigor/Rigor: 286/2
+    Top-15 scores: [455, 446, 406, 394, 389, 388, 345, 327, 311, 295, 289, 279, 266, 252, 240] | avg=327.40 | dyn_threshold=341
+Episode 108: Dissonant run. Score: 193. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.63) | Vigor/Rigor: 100/2
+    Top-15 scores: [455, 446, 406, 394, 389, 388, 345, 327, 311, 295, 289, 279, 266, 252, 240] | avg=338.80 | dyn_threshold=341
+Episode 109: Dissonant run. Score: 184. (KS updates: 0)
+    Avg Dark Residue: 0.25 (max 0.66) | Vigor/Rigor: 90/3
+    Top-15 scores: [455, 446, 406, 394, 389, 388, 345, 327, 311, 295, 289, 279, 266, 252, 240] | avg=338.80 | dyn_threshold=341
+Episode 110: Dissonant run. Score: 159. (KS updates: 0)
+    Avg Dark Residue: 0.26 (max 0.66) | Vigor/Rigor: 76/3
+    Top-15 scores: [455, 446, 406, 394, 389, 388, 345, 327, 311, 295, 289, 279, 266, 252, 240] | avg=338.80 | dyn_threshold=341
+Episode 111: Dissonant run. Score: 159. (KS updates: 0)
+    Avg Dark Residue: 0.28 (max 0.60) | Vigor/Rigor: 79/3
+    Top-15 scores: [455, 446, 406, 394, 389, 388, 345, 327, 311, 295, 289, 279, 266, 252, 240] | avg=338.80 | dyn_threshold=341
+Episode 112: Coherent run. Score: 370. (KS updates: 1)
+    Avg Dark Residue: 0.24 (max 0.87) | Vigor/Rigor: 178/3
+    Top-15 scores: [455, 446, 406, 394, 389, 388, 370, 345, 327, 311, 295, 289, 279, 266, 252] | avg=338.80 | dyn_threshold=341
+Episode 113: Dissonant run. Score: 280. (KS updates: 0)
+    Avg Dark Residue: 0.25 (max 0.92) | Vigor/Rigor: 131/3
+    Top-15 scores: [455, 446, 406, 394, 389, 388, 370, 345, 327, 311, 295, 289, 280, 279, 266] | avg=347.47 | dyn_threshold=341
+Episode 114: Dissonant run. Score: 264. (KS updates: 0)
+    Avg Dark Residue: 0.25 (max 0.92) | Vigor/Rigor: 136/2
+    Top-15 scores: [455, 446, 406, 394, 389, 388, 370, 345, 327, 311, 295, 289, 280, 279, 266] | avg=349.33 | dyn_threshold=341
+Episode 115: Dissonant run. Score: 276. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.65) | Vigor/Rigor: 162/2
+    Top-15 scores: [455, 446, 406, 394, 389, 388, 370, 345, 327, 311, 295, 289, 280, 279, 276] | avg=349.33 | dyn_threshold=341
+Episode 116: Dissonant run. Score: 152. (KS updates: 0)
+    Avg Dark Residue: 0.30 (max 0.80) | Vigor/Rigor: 76/3
+    Top-15 scores: [455, 446, 406, 394, 389, 388, 370, 345, 327, 311, 295, 289, 280, 279, 276] | avg=350.00 | dyn_threshold=341
+Episode 117: Dissonant run. Score: 152. (KS updates: 0)
+    Avg Dark Residue: 0.28 (max 0.65) | Vigor/Rigor: 72/3
+    Top-15 scores: [455, 446, 406, 394, 389, 388, 370, 345, 327, 311, 295, 289, 280, 279, 276] | avg=350.00 | dyn_threshold=341
+Episode 118: Coherent run. Score: 392. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.81) | Vigor/Rigor: 254/2
+    Top-15 scores: [455, 446, 406, 394, 392, 389, 388, 370, 345, 327, 311, 295, 289, 280, 279] | avg=350.00 | dyn_threshold=341
+Episode 119: Dissonant run. Score: 133. (KS updates: 0)
+    Avg Dark Residue: 0.32 (max 0.78) | Vigor/Rigor: 49/3
+    Top-15 scores: [455, 446, 406, 394, 392, 389, 388, 370, 345, 327, 311, 295, 289, 280, 279] | avg=357.73 | dyn_threshold=341
+Episode 120: Dissonant run. Score: 170. (KS updates: 0)
+    Avg Dark Residue: 0.25 (max 0.65) | Vigor/Rigor: 84/3
+    Top-15 scores: [455, 446, 406, 394, 392, 389, 388, 370, 345, 327, 311, 295, 289, 280, 279] | avg=357.73 | dyn_threshold=341
+Episode 121: Dissonant run. Score: 200. (KS updates: 0)
+    Avg Dark Residue: 0.25 (max 0.69) | Vigor/Rigor: 105/2
+    Top-15 scores: [455, 446, 406, 394, 392, 389, 388, 370, 345, 327, 311, 295, 289, 280, 279] | avg=357.73 | dyn_threshold=341
+Episode 122: Dissonant run. Score: 221. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.61) | Vigor/Rigor: 110/3
+    Top-15 scores: [455, 446, 406, 394, 392, 389, 388, 370, 345, 327, 311, 295, 289, 280, 279] | avg=357.73 | dyn_threshold=341
+Episode 123: Dissonant run. Score: 192. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.57) | Vigor/Rigor: 105/2
+    Top-15 scores: [455, 446, 406, 394, 392, 389, 388, 370, 345, 327, 311, 295, 289, 280, 279] | avg=357.73 | dyn_threshold=341
+Episode 124: Dissonant run. Score: 212. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.52) | Vigor/Rigor: 105/3
+    Top-15 scores: [455, 446, 406, 394, 392, 389, 388, 370, 345, 327, 311, 295, 289, 280, 279] | avg=357.73 | dyn_threshold=341
+Episode 125: Dissonant run. Score: 316. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.70) | Vigor/Rigor: 171/2
+    Top-15 scores: [455, 446, 406, 394, 392, 389, 388, 370, 345, 327, 316, 311, 295, 289, 280] | avg=357.73 | dyn_threshold=341
+Episode 126: Coherent run. Score: 353. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.69) | Vigor/Rigor: 197/2
+    Top-15 scores: [455, 446, 406, 394, 392, 389, 388, 370, 353, 345, 327, 316, 311, 295, 289] | avg=360.20 | dyn_threshold=341
+Episode 127: Dissonant run. Score: 233. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.63) | Vigor/Rigor: 115/3
+    Top-15 scores: [455, 446, 406, 394, 392, 389, 388, 370, 353, 345, 327, 316, 311, 295, 289] | avg=365.07 | dyn_threshold=341
+Episode 128: Dissonant run. Score: 305. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.64) | Vigor/Rigor: 170/2
+    Top-15 scores: [455, 446, 406, 394, 392, 389, 388, 370, 353, 345, 327, 316, 311, 305, 295] | avg=365.07 | dyn_threshold=341
+Episode 129: Dissonant run. Score: 309. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.51) | Vigor/Rigor: 168/2
+    Top-15 scores: [455, 446, 406, 394, 392, 389, 388, 370, 353, 345, 327, 316, 311, 309, 305] | avg=366.13 | dyn_threshold=341
+Episode 130: Dissonant run. Score: 283. (KS updates: 0)
+    Avg Dark Residue: 0.25 (max 0.72) | Vigor/Rigor: 167/2
+    Top-15 scores: [455, 446, 406, 394, 392, 389, 388, 370, 353, 345, 327, 316, 311, 309, 305] | avg=367.07 | dyn_threshold=341
+Episode 131: Dissonant run. Score: 180. (KS updates: 2)
+    Avg Dark Residue: 0.30 (max 0.65) | Vigor/Rigor: 59/3
+    Top-15 scores: [455, 446, 406, 394, 392, 389, 388, 370, 353, 345, 327, 316, 311, 309, 305] | avg=367.07 | dyn_threshold=341
+Episode 132: Coherent run. Score: 500. (KS updates: 2)
+    Avg Dark Residue: 0.16 (max 0.54) | Vigor/Rigor: 384/2
+    Top-15 scores: [500, 455, 446, 406, 394, 392, 389, 388, 370, 353, 345, 327, 316, 311, 309] | avg=367.07 | dyn_threshold=341
+Episode 133: Dissonant run. Score: 331. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.86) | Vigor/Rigor: 193/2
+    Top-15 scores: [500, 455, 446, 406, 394, 392, 389, 388, 370, 353, 345, 331, 327, 316, 311] | avg=380.07 | dyn_threshold=375
+Episode 134: Dissonant run. Score: 366. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.67) | Vigor/Rigor: 202/2
+    Top-15 scores: [500, 455, 446, 406, 394, 392, 389, 388, 370, 366, 353, 345, 331, 327, 316] | avg=381.53 | dyn_threshold=375
+Episode 135: Dissonant run. Score: 220. (KS updates: 0)
+    Avg Dark Residue: 0.28 (max 0.90) | Vigor/Rigor: 113/2
+    Top-15 scores: [500, 455, 446, 406, 394, 392, 389, 388, 370, 366, 353, 345, 331, 327, 316] | avg=385.20 | dyn_threshold=375
+Episode 136: Dissonant run. Score: 283. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.76) | Vigor/Rigor: 193/2
+    Top-15 scores: [500, 455, 446, 406, 394, 392, 389, 388, 370, 366, 353, 345, 331, 327, 316] | avg=385.20 | dyn_threshold=375
+Episode 137: Dissonant run. Score: 227. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.74) | Vigor/Rigor: 135/2
+    Top-15 scores: [500, 455, 446, 406, 394, 392, 389, 388, 370, 366, 353, 345, 331, 327, 316] | avg=385.20 | dyn_threshold=375
+Episode 138: Coherent run. Score: 422. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.63) | Vigor/Rigor: 249/2
+    Top-15 scores: [500, 455, 446, 422, 406, 394, 392, 389, 388, 370, 366, 353, 345, 331, 327] | avg=385.20 | dyn_threshold=375
+Episode 139: Coherent run. Score: 410. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.78) | Vigor/Rigor: 206/2
+    Top-15 scores: [500, 455, 446, 422, 410, 406, 394, 392, 389, 388, 370, 366, 353, 345, 331] | avg=392.27 | dyn_threshold=375
+Episode 140: Dissonant run. Score: 318. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.74) | Vigor/Rigor: 181/2
+    Top-15 scores: [500, 455, 446, 422, 410, 406, 394, 392, 389, 388, 370, 366, 353, 345, 331] | avg=397.80 | dyn_threshold=375
+Episode 141: Dissonant run. Score: 355. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.66) | Vigor/Rigor: 213/2
+    Top-15 scores: [500, 455, 446, 422, 410, 406, 394, 392, 389, 388, 370, 366, 355, 353, 345] | avg=397.80 | dyn_threshold=375
+Episode 142: Dissonant run. Score: 248. (KS updates: 0)
+    Avg Dark Residue: 0.28 (max 0.64) | Vigor/Rigor: 107/3
+    Top-15 scores: [500, 455, 446, 422, 410, 406, 394, 392, 389, 388, 370, 366, 355, 353, 345] | avg=399.40 | dyn_threshold=375
+Episode 143: Dissonant run. Score: 361. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.68) | Vigor/Rigor: 171/3
+    Top-15 scores: [500, 455, 446, 422, 410, 406, 394, 392, 389, 388, 370, 366, 361, 355, 353] | avg=399.40 | dyn_threshold=375
+Episode 144: Coherent run. Score: 462. (KS updates: 1)
+    Avg Dark Residue: 0.21 (max 0.61) | Vigor/Rigor: 313/2
+    Top-15 scores: [500, 462, 455, 446, 422, 410, 406, 394, 392, 389, 388, 370, 366, 361, 355] | avg=400.47 | dyn_threshold=375
+Episode 145: Dissonant run. Score: 286. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.59) | Vigor/Rigor: 163/2
+    Top-15 scores: [500, 462, 455, 446, 422, 410, 406, 394, 392, 389, 388, 370, 366, 361, 355] | avg=407.73 | dyn_threshold=375
+Episode 146: Dissonant run. Score: 186. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.53) | Vigor/Rigor: 89/3
+    Top-15 scores: [500, 462, 455, 446, 422, 410, 406, 394, 392, 389, 388, 370, 366, 361, 355] | avg=407.73 | dyn_threshold=375
+Episode 147: Dissonant run. Score: 335. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.57) | Vigor/Rigor: 213/2
+    Top-15 scores: [500, 462, 455, 446, 422, 410, 406, 394, 392, 389, 388, 370, 366, 361, 355] | avg=407.73 | dyn_threshold=375
+Episode 148: Dissonant run. Score: 306. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.66) | Vigor/Rigor: 139/3
+    Top-15 scores: [500, 462, 455, 446, 422, 410, 406, 394, 392, 389, 388, 370, 366, 361, 355] | avg=407.73 | dyn_threshold=375
+Episode 149: Dissonant run. Score: 287. (KS updates: 1)
+    Avg Dark Residue: 0.27 (max 0.75) | Vigor/Rigor: 120/3
+    Top-15 scores: [500, 462, 455, 446, 422, 410, 406, 394, 392, 389, 388, 370, 366, 361, 355] | avg=407.73 | dyn_threshold=375
+Episode 150: Coherent run. Score: 407. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.70) | Vigor/Rigor: 203/3
+    Top-15 scores: [500, 462, 455, 446, 422, 410, 407, 406, 394, 392, 389, 388, 370, 366, 361] | avg=407.73 | dyn_threshold=375
+Episode 151: Dissonant run. Score: 228. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.51) | Vigor/Rigor: 113/3
+    Top-15 scores: [500, 462, 455, 446, 422, 410, 407, 406, 394, 392, 389, 388, 370, 366, 361] | avg=411.20 | dyn_threshold=375
+Episode 152: Dissonant run. Score: 255. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.58) | Vigor/Rigor: 146/2
+    Top-15 scores: [500, 462, 455, 446, 422, 410, 407, 406, 394, 392, 389, 388, 370, 366, 361] | avg=411.20 | dyn_threshold=375
+Episode 153: Dissonant run. Score: 289. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.55) | Vigor/Rigor: 159/2
+    Top-15 scores: [500, 462, 455, 446, 422, 410, 407, 406, 394, 392, 389, 388, 370, 366, 361] | avg=411.20 | dyn_threshold=375
+Episode 154: Dissonant run. Score: 299. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.55) | Vigor/Rigor: 145/3
+    Top-15 scores: [500, 462, 455, 446, 422, 410, 407, 406, 394, 392, 389, 388, 370, 366, 361] | avg=411.20 | dyn_threshold=375
+Episode 155: Dissonant run. Score: 296. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.68) | Vigor/Rigor: 171/2
+    Top-15 scores: [500, 462, 455, 446, 422, 410, 407, 406, 394, 392, 389, 388, 370, 366, 361] | avg=411.20 | dyn_threshold=375
+Episode 156: Dissonant run. Score: 140. (KS updates: 0)
+    Avg Dark Residue: 0.29 (max 0.61) | Vigor/Rigor: 79/2
+    Top-15 scores: [500, 462, 455, 446, 422, 410, 407, 406, 394, 392, 389, 388, 370, 366, 361] | avg=411.20 | dyn_threshold=375
+Episode 157: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.57) | Vigor/Rigor: 349/2
+    Top-15 scores: [500, 500, 462, 455, 446, 422, 410, 407, 406, 394, 392, 389, 388, 370, 366] | avg=411.20 | dyn_threshold=375
+Episode 158: Dissonant run. Score: 342. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.57) | Vigor/Rigor: 186/2
+    Top-15 scores: [500, 500, 462, 455, 446, 422, 410, 407, 406, 394, 392, 389, 388, 370, 366] | avg=420.47 | dyn_threshold=375
+Episode 159: Dissonant run. Score: 252. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.65) | Vigor/Rigor: 146/2
+    Top-15 scores: [500, 500, 462, 455, 446, 422, 410, 407, 406, 394, 392, 389, 388, 370, 366] | avg=420.47 | dyn_threshold=375
+Episode 160: Coherent run. Score: 430. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.48) | Vigor/Rigor: 247/2
+    Top-15 scores: [500, 500, 462, 455, 446, 430, 422, 410, 407, 406, 394, 392, 389, 388, 370] | avg=420.47 | dyn_threshold=375
+Episode 161: Coherent run. Score: 398. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.50) | Vigor/Rigor: 248/2
+    Top-15 scores: [500, 500, 462, 455, 446, 430, 422, 410, 407, 406, 398, 394, 392, 389, 388] | avg=424.73 | dyn_threshold=375
+Episode 162: Dissonant run. Score: 330. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.55) | Vigor/Rigor: 181/2
+    Top-15 scores: [500, 500, 462, 455, 446, 430, 422, 410, 407, 406, 398, 394, 392, 389, 388] | avg=426.60 | dyn_threshold=375
+Episode 163: Dissonant run. Score: 187. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.63) | Vigor/Rigor: 88/3
+    Top-15 scores: [500, 500, 462, 455, 446, 430, 422, 410, 407, 406, 398, 394, 392, 389, 388] | avg=426.60 | dyn_threshold=375
+Episode 164: Coherent run. Score: 407. (KS updates: 1)
+    Avg Dark Residue: 0.20 (max 0.57) | Vigor/Rigor: 242/2
+    Top-15 scores: [500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392, 389] | avg=426.60 | dyn_threshold=375
+Episode 165: Dissonant run. Score: 303. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.48) | Vigor/Rigor: 166/2
+    Top-15 scores: [500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392, 389] | avg=427.87 | dyn_threshold=375
+Episode 166: Coherent run. Score: 383. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.62) | Vigor/Rigor: 218/2
+    Top-15 scores: [500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392, 389] | avg=427.87 | dyn_threshold=375
+Episode 167: Dissonant run. Score: 229. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.56) | Vigor/Rigor: 118/2
+    Top-15 scores: [500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392, 389] | avg=427.87 | dyn_threshold=375
+Episode 168: Coherent run. Score: 380. (KS updates: 1)
+    Avg Dark Residue: 0.19 (max 0.49) | Vigor/Rigor: 219/2
+    Top-15 scores: [500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392, 389] | avg=427.87 | dyn_threshold=375
+Episode 169: Dissonant run. Score: 362. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.65) | Vigor/Rigor: 214/2
+    Top-15 scores: [500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392, 389] | avg=427.87 | dyn_threshold=375
+Episode 170: Dissonant run. Score: 184. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.50) | Vigor/Rigor: 87/3
+    Top-15 scores: [500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392, 389] | avg=427.87 | dyn_threshold=375
+Episode 171: Dissonant run. Score: 352. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.66) | Vigor/Rigor: 195/2
+    Top-15 scores: [500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392, 389] | avg=427.87 | dyn_threshold=375
+Episode 172: Coherent run. Score: 500. (KS updates: 1)
+    Avg Dark Residue: 0.17 (max 0.52) | Vigor/Rigor: 298/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392] | avg=427.87 | dyn_threshold=375
+Episode 173: Dissonant run. Score: 275. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.52) | Vigor/Rigor: 121/3
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392] | avg=435.27 | dyn_threshold=375
+Episode 174: Dissonant run. Score: 352. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.63) | Vigor/Rigor: 227/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392] | avg=435.27 | dyn_threshold=375
+Episode 175: Dissonant run. Score: 266. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.62) | Vigor/Rigor: 140/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392] | avg=435.27 | dyn_threshold=375
+Episode 176: Dissonant run. Score: 338. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.58) | Vigor/Rigor: 209/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392] | avg=435.27 | dyn_threshold=375
+Episode 177: Dissonant run. Score: 343. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.62) | Vigor/Rigor: 204/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392] | avg=435.27 | dyn_threshold=375
+Episode 178: Dissonant run. Score: 205. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.55) | Vigor/Rigor: 108/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392] | avg=435.27 | dyn_threshold=375
+Episode 179: Dissonant run. Score: 283. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.54) | Vigor/Rigor: 170/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392] | avg=435.27 | dyn_threshold=375
+Episode 180: Coherent run. Score: 383. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.57) | Vigor/Rigor: 225/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392] | avg=435.27 | dyn_threshold=375
+Episode 181: Dissonant run. Score: 218. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.54) | Vigor/Rigor: 122/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392] | avg=435.27 | dyn_threshold=375
+Episode 182: Dissonant run. Score: 318. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.54) | Vigor/Rigor: 191/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 430, 422, 410, 407, 407, 406, 398, 394, 392] | avg=435.27 | dyn_threshold=375
+Episode 183: Coherent run. Score: 434. (KS updates: 2)
+    Avg Dark Residue: 0.17 (max 0.56) | Vigor/Rigor: 257/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 434, 430, 422, 410, 407, 407, 406, 398, 394] | avg=435.27 | dyn_threshold=375
+Episode 184: Dissonant run. Score: 317. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.49) | Vigor/Rigor: 180/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 434, 430, 422, 410, 407, 407, 406, 398, 394] | avg=438.07 | dyn_threshold=375
+Episode 185: Dissonant run. Score: 164. (KS updates: 0)
+    Avg Dark Residue: 0.25 (max 0.61) | Vigor/Rigor: 94/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 434, 430, 422, 410, 407, 407, 406, 398, 394] | avg=438.07 | dyn_threshold=375
+Episode 186: Dissonant run. Score: 332. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.54) | Vigor/Rigor: 186/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 434, 430, 422, 410, 407, 407, 406, 398, 394] | avg=438.07 | dyn_threshold=375
+Episode 187: Dissonant run. Score: 188. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.49) | Vigor/Rigor: 98/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 434, 430, 422, 410, 407, 407, 406, 398, 394] | avg=438.07 | dyn_threshold=375
+Episode 188: Coherent run. Score: 445. (KS updates: 2)
+    Avg Dark Residue: 0.18 (max 0.52) | Vigor/Rigor: 270/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 445, 434, 430, 422, 410, 407, 407, 406, 398] | avg=438.07 | dyn_threshold=375
+Episode 189: Dissonant run. Score: 244. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.52) | Vigor/Rigor: 111/3
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 445, 434, 430, 422, 410, 407, 407, 406, 398] | avg=441.47 | dyn_threshold=375
+Episode 190: Dissonant run. Score: 322. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.66) | Vigor/Rigor: 191/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 445, 434, 430, 422, 410, 407, 407, 406, 398] | avg=441.47 | dyn_threshold=375
+Episode 191: Dissonant run. Score: 367. (KS updates: 1)
+    Avg Dark Residue: 0.24 (max 0.60) | Vigor/Rigor: 217/2
+    Top-15 scores: [500, 500, 500, 462, 455, 446, 445, 434, 430, 422, 410, 407, 407, 406, 398] | avg=441.47 | dyn_threshold=375
+Episode 192: Coherent run. Score: 496. (KS updates: 1)
+    Avg Dark Residue: 0.16 (max 0.54) | Vigor/Rigor: 320/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 434, 430, 422, 410, 407, 407, 406] | avg=441.47 | dyn_threshold=375
+Episode 193: Dissonant run. Score: 252. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.53) | Vigor/Rigor: 136/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 434, 430, 422, 410, 407, 407, 406] | avg=448.00 | dyn_threshold=375
+Episode 194: Dissonant run. Score: 240. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.52) | Vigor/Rigor: 128/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 434, 430, 422, 410, 407, 407, 406] | avg=448.00 | dyn_threshold=375
+Episode 195: Dissonant run. Score: 246. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.64) | Vigor/Rigor: 127/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 434, 430, 422, 410, 407, 407, 406] | avg=448.00 | dyn_threshold=375
+Episode 196: Dissonant run. Score: 226. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.55) | Vigor/Rigor: 109/3
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 434, 430, 422, 410, 407, 407, 406] | avg=448.00 | dyn_threshold=375
+Episode 197: Coherent run. Score: 392. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.50) | Vigor/Rigor: 237/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 434, 430, 422, 410, 407, 407, 406] | avg=448.00 | dyn_threshold=375
+Episode 198: Coherent run. Score: 435. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.66) | Vigor/Rigor: 250/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 435, 434, 430, 422, 410, 407, 407] | avg=448.00 | dyn_threshold=375
+Episode 199: Coherent run. Score: 445. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.55) | Vigor/Rigor: 288/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 407] | avg=449.93 | dyn_threshold=375
+Episode 200: Coherent run. Score: 408. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.45) | Vigor/Rigor: 232/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.47 | dyn_threshold=375
+Episode 201: Dissonant run. Score: 294. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.53) | Vigor/Rigor: 176/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 202: Dissonant run. Score: 366. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.48) | Vigor/Rigor: 172/3
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 203: Dissonant run. Score: 238. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.50) | Vigor/Rigor: 136/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 204: Dissonant run. Score: 228. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.56) | Vigor/Rigor: 131/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 205: Dissonant run. Score: 197. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.58) | Vigor/Rigor: 111/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 206: Dissonant run. Score: 282. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.56) | Vigor/Rigor: 155/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 207: Dissonant run. Score: 201. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.48) | Vigor/Rigor: 91/3
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 208: Dissonant run. Score: 220. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.56) | Vigor/Rigor: 119/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 209: Dissonant run. Score: 223. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.50) | Vigor/Rigor: 124/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 210: Dissonant run. Score: 322. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.61) | Vigor/Rigor: 183/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 211: Dissonant run. Score: 231. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.46) | Vigor/Rigor: 124/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 212: Dissonant run. Score: 273. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.51) | Vigor/Rigor: 163/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 213: Dissonant run. Score: 243. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.52) | Vigor/Rigor: 138/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 214: Dissonant run. Score: 288. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.48) | Vigor/Rigor: 182/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 215: Dissonant run. Score: 202. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.53) | Vigor/Rigor: 105/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 216: Dissonant run. Score: 335. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.56) | Vigor/Rigor: 195/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 217: Dissonant run. Score: 367. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.49) | Vigor/Rigor: 219/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 218: Dissonant run. Score: 237. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.47) | Vigor/Rigor: 127/2
+    Top-15 scores: [500, 500, 500, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410, 408] | avg=452.53 | dyn_threshold=375
+Episode 219: Coherent run. Score: 496. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.52) | Vigor/Rigor: 331/2
+    Top-15 scores: [500, 500, 500, 496, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410] | avg=452.53 | dyn_threshold=375
+Episode 220: Dissonant run. Score: 252. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.53) | Vigor/Rigor: 133/2
+    Top-15 scores: [500, 500, 500, 496, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410] | avg=458.40 | dyn_threshold=375
+Episode 221: Dissonant run. Score: 319. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.51) | Vigor/Rigor: 192/2
+    Top-15 scores: [500, 500, 500, 496, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410] | avg=458.40 | dyn_threshold=375
+Episode 222: Dissonant run. Score: 341. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.51) | Vigor/Rigor: 208/2
+    Top-15 scores: [500, 500, 500, 496, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410] | avg=458.40 | dyn_threshold=375
+Episode 223: Dissonant run. Score: 215. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.49) | Vigor/Rigor: 124/2
+    Top-15 scores: [500, 500, 500, 496, 496, 462, 455, 446, 445, 445, 435, 434, 430, 422, 410] | avg=458.40 | dyn_threshold=375
+Episode 224: Coherent run. Score: 457. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.48) | Vigor/Rigor: 271/2
+    Top-15 scores: [500, 500, 500, 496, 496, 462, 457, 455, 446, 445, 445, 435, 434, 430, 422] | avg=458.40 | dyn_threshold=375
+Episode 225: Dissonant run. Score: 285. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.48) | Vigor/Rigor: 167/2
+    Top-15 scores: [500, 500, 500, 496, 496, 462, 457, 455, 446, 445, 445, 435, 434, 430, 422] | avg=461.53 | dyn_threshold=375
+Episode 226: Dissonant run. Score: 280. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.45) | Vigor/Rigor: 149/2
+    Top-15 scores: [500, 500, 500, 496, 496, 462, 457, 455, 446, 445, 445, 435, 434, 430, 422] | avg=461.53 | dyn_threshold=375
+Episode 227: Coherent run. Score: 387. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.55) | Vigor/Rigor: 226/2
+    Top-15 scores: [500, 500, 500, 496, 496, 462, 457, 455, 446, 445, 445, 435, 434, 430, 422] | avg=461.53 | dyn_threshold=375
+Episode 228: Dissonant run. Score: 227. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.54) | Vigor/Rigor: 118/2
+    Top-15 scores: [500, 500, 500, 496, 496, 462, 457, 455, 446, 445, 445, 435, 434, 430, 422] | avg=461.53 | dyn_threshold=375
+Episode 229: Coherent run. Score: 491. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.54) | Vigor/Rigor: 302/2
+    Top-15 scores: [500, 500, 500, 496, 496, 491, 462, 457, 455, 446, 445, 445, 435, 434, 430] | avg=461.53 | dyn_threshold=375
+Episode 230: Dissonant run. Score: 330. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.51) | Vigor/Rigor: 195/2
+    Top-15 scores: [500, 500, 500, 496, 496, 491, 462, 457, 455, 446, 445, 445, 435, 434, 430] | avg=466.13 | dyn_threshold=375
+Episode 231: Dissonant run. Score: 329. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.48) | Vigor/Rigor: 181/2
+    Top-15 scores: [500, 500, 500, 496, 496, 491, 462, 457, 455, 446, 445, 445, 435, 434, 430] | avg=466.13 | dyn_threshold=375
+Episode 232: Coherent run. Score: 418. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.61) | Vigor/Rigor: 261/2
+    Top-15 scores: [500, 500, 500, 496, 496, 491, 462, 457, 455, 446, 445, 445, 435, 434, 430] | avg=466.13 | dyn_threshold=375
+Episode 233: Dissonant run. Score: 252. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.47) | Vigor/Rigor: 152/2
+    Top-15 scores: [500, 500, 500, 496, 496, 491, 462, 457, 455, 446, 445, 445, 435, 434, 430] | avg=466.13 | dyn_threshold=375
+Episode 234: Coherent run. Score: 500. (KS updates: 1)
+    Avg Dark Residue: 0.13 (max 0.37) | Vigor/Rigor: 353/2
+    Top-15 scores: [500, 500, 500, 500, 496, 496, 491, 462, 457, 455, 446, 445, 445, 435, 434] | avg=466.13 | dyn_threshold=375
+Episode 235: Coherent run. Score: 458. (KS updates: 1)
+    Avg Dark Residue: 0.15 (max 0.45) | Vigor/Rigor: 275/2
+    Top-15 scores: [500, 500, 500, 500, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445, 435] | avg=470.80 | dyn_threshold=375
+Episode 236: Dissonant run. Score: 302. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.44) | Vigor/Rigor: 169/2
+    Top-15 scores: [500, 500, 500, 500, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445, 435] | avg=472.40 | dyn_threshold=375
+Episode 237: Dissonant run. Score: 303. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.54) | Vigor/Rigor: 176/2
+    Top-15 scores: [500, 500, 500, 500, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445, 435] | avg=472.40 | dyn_threshold=375
+Episode 238: Dissonant run. Score: 370. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.54) | Vigor/Rigor: 223/2
+    Top-15 scores: [500, 500, 500, 500, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445, 435] | avg=472.40 | dyn_threshold=375
+Episode 239: Coherent run. Score: 498. (KS updates: 0)
+    Avg Dark Residue: 0.15 (max 0.54) | Vigor/Rigor: 311/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=472.40 | dyn_threshold=375
+Episode 240: Dissonant run. Score: 255. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.51) | Vigor/Rigor: 135/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 241: Dissonant run. Score: 286. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.46) | Vigor/Rigor: 154/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 242: Dissonant run. Score: 279. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.45) | Vigor/Rigor: 163/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 243: Dissonant run. Score: 234. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.47) | Vigor/Rigor: 133/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 244: Dissonant run. Score: 328. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.46) | Vigor/Rigor: 197/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 245: Dissonant run. Score: 332. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.56) | Vigor/Rigor: 190/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 246: Dissonant run. Score: 197. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.58) | Vigor/Rigor: 93/3
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 247: Dissonant run. Score: 167. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.44) | Vigor/Rigor: 96/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 248: Dissonant run. Score: 299. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.44) | Vigor/Rigor: 171/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 249: Dissonant run. Score: 192. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.49) | Vigor/Rigor: 97/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 250: Dissonant run. Score: 239. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.50) | Vigor/Rigor: 139/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 251: Dissonant run. Score: 169. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.46) | Vigor/Rigor: 91/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 252: Dissonant run. Score: 203. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.49) | Vigor/Rigor: 105/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 253: Dissonant run. Score: 199. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.45) | Vigor/Rigor: 112/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 254: Coherent run. Score: 393. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.52) | Vigor/Rigor: 239/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 255: Dissonant run. Score: 212. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.43) | Vigor/Rigor: 114/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 256: Dissonant run. Score: 251. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.51) | Vigor/Rigor: 131/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 257: Dissonant run. Score: 322. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.47) | Vigor/Rigor: 194/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 258: Coherent run. Score: 416. (KS updates: 1)
+    Avg Dark Residue: 0.16 (max 0.46) | Vigor/Rigor: 259/2
+    Top-15 scores: [500, 500, 500, 500, 498, 496, 496, 491, 462, 458, 457, 455, 446, 445, 445] | avg=476.60 | dyn_threshold=375
+Episode 259: Coherent run. Score: 497. (KS updates: 2)
+    Avg Dark Residue: 0.15 (max 0.53) | Vigor/Rigor: 341/2
+    Top-15 scores: [500, 500, 500, 500, 498, 497, 496, 496, 491, 462, 458, 457, 455, 446, 445] | avg=476.60 | dyn_threshold=375
+Episode 260: Coherent run. Score: 375. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.41) | Vigor/Rigor: 204/2
+    Top-15 scores: [500, 500, 500, 500, 498, 497, 496, 496, 491, 462, 458, 457, 455, 446, 445] | avg=480.07 | dyn_threshold=375
+Episode 261: Dissonant run. Score: 227. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.49) | Vigor/Rigor: 111/3
+    Top-15 scores: [500, 500, 500, 500, 498, 497, 496, 496, 491, 462, 458, 457, 455, 446, 445] | avg=480.07 | dyn_threshold=375
+Episode 262: Dissonant run. Score: 277. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.55) | Vigor/Rigor: 134/3
+    Top-15 scores: [500, 500, 500, 500, 498, 497, 496, 496, 491, 462, 458, 457, 455, 446, 445] | avg=480.07 | dyn_threshold=375
+Episode 263: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.14 (max 0.40) | Vigor/Rigor: 362/2
+    Top-15 scores: [500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 462, 458, 457, 455, 446] | avg=480.07 | dyn_threshold=375
+Episode 264: Coherent run. Score: 414. (KS updates: 3)
+    Avg Dark Residue: 0.16 (max 0.49) | Vigor/Rigor: 257/2
+    Top-15 scores: [500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 462, 458, 457, 455, 446] | avg=483.73 | dyn_threshold=375
+Episode 265: Dissonant run. Score: 344. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.54) | Vigor/Rigor: 218/2
+    Top-15 scores: [500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 462, 458, 457, 455, 446] | avg=483.73 | dyn_threshold=375
+Episode 266: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.14 (max 0.45) | Vigor/Rigor: 317/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 462, 458, 457, 455] | avg=483.73 | dyn_threshold=375
+Episode 267: Coherent run. Score: 490. (KS updates: 0)
+    Avg Dark Residue: 0.15 (max 0.45) | Vigor/Rigor: 305/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 462, 458, 457] | avg=487.33 | dyn_threshold=375
+Episode 268: Dissonant run. Score: 296. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.47) | Vigor/Rigor: 158/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 462, 458, 457] | avg=489.67 | dyn_threshold=375
+Episode 269: Dissonant run. Score: 288. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.45) | Vigor/Rigor: 167/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 462, 458, 457] | avg=489.67 | dyn_threshold=375
+Episode 270: Coherent run. Score: 487. (KS updates: 0)
+    Avg Dark Residue: 0.15 (max 0.45) | Vigor/Rigor: 302/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=489.67 | dyn_threshold=375
+Episode 271: Dissonant run. Score: 217. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.45) | Vigor/Rigor: 113/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 272: Dissonant run. Score: 233. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.45) | Vigor/Rigor: 121/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 273: Dissonant run. Score: 288. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.44) | Vigor/Rigor: 166/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 274: Dissonant run. Score: 245. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.48) | Vigor/Rigor: 127/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 275: Dissonant run. Score: 308. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.46) | Vigor/Rigor: 173/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 276: Dissonant run. Score: 198. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.43) | Vigor/Rigor: 93/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 277: Dissonant run. Score: 295. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.47) | Vigor/Rigor: 164/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 278: Dissonant run. Score: 204. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.42) | Vigor/Rigor: 105/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 279: Dissonant run. Score: 185. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.41) | Vigor/Rigor: 99/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 280: Dissonant run. Score: 330. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.44) | Vigor/Rigor: 196/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 281: Coherent run. Score: 444. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.54) | Vigor/Rigor: 265/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 282: Dissonant run. Score: 248. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.42) | Vigor/Rigor: 130/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 283: Dissonant run. Score: 314. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.58) | Vigor/Rigor: 187/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 284: Dissonant run. Score: 225. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.51) | Vigor/Rigor: 117/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 285: Dissonant run. Score: 206. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.45) | Vigor/Rigor: 103/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 286: Dissonant run. Score: 305. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.48) | Vigor/Rigor: 171/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 287: Dissonant run. Score: 209. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.46) | Vigor/Rigor: 123/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 288: Dissonant run. Score: 309. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.47) | Vigor/Rigor: 170/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 289: Dissonant run. Score: 286. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.47) | Vigor/Rigor: 159/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 290: Dissonant run. Score: 175. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.45) | Vigor/Rigor: 88/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 291: Coherent run. Score: 383. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.43) | Vigor/Rigor: 227/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 292: Dissonant run. Score: 347. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.43) | Vigor/Rigor: 209/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 293: Dissonant run. Score: 213. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.44) | Vigor/Rigor: 114/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 294: Dissonant run. Score: 286. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.46) | Vigor/Rigor: 189/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 295: Dissonant run. Score: 185. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.48) | Vigor/Rigor: 97/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 296: Dissonant run. Score: 236. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.45) | Vigor/Rigor: 116/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 297: Dissonant run. Score: 305. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.51) | Vigor/Rigor: 167/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 298: Dissonant run. Score: 327. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.46) | Vigor/Rigor: 183/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 458] | avg=491.67 | dyn_threshold=375
+Episode 299: Coherent run. Score: 462. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.53) | Vigor/Rigor: 279/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 462] | avg=491.67 | dyn_threshold=375
+Episode 300: Dissonant run. Score: 340. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.45) | Vigor/Rigor: 193/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 462] | avg=491.93 | dyn_threshold=375
+Episode 301: Dissonant run. Score: 259. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.54) | Vigor/Rigor: 129/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 462] | avg=491.93 | dyn_threshold=375
+Episode 302: Coherent run. Score: 396. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.50) | Vigor/Rigor: 259/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462, 462] | avg=491.93 | dyn_threshold=375
+Episode 303: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.13 (max 0.40) | Vigor/Rigor: 337/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462] | avg=491.93 | dyn_threshold=375
+Episode 304: Dissonant run. Score: 337. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.46) | Vigor/Rigor: 185/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462] | avg=494.47 | dyn_threshold=375
+Episode 305: Dissonant run. Score: 207. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.47) | Vigor/Rigor: 101/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462] | avg=494.47 | dyn_threshold=375
+Episode 306: Dissonant run. Score: 198. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.50) | Vigor/Rigor: 97/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462] | avg=494.47 | dyn_threshold=375
+Episode 307: Dissonant run. Score: 248. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.44) | Vigor/Rigor: 131/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487, 462] | avg=494.47 | dyn_threshold=375
+Episode 308: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.64) | Vigor/Rigor: 341/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487] | avg=494.47 | dyn_threshold=375
+Episode 309: Dissonant run. Score: 364. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.45) | Vigor/Rigor: 201/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487] | avg=497.00 | dyn_threshold=375
+Episode 310: Dissonant run. Score: 346. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.44) | Vigor/Rigor: 193/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490, 487] | avg=497.00 | dyn_threshold=375
+Episode 311: Coherent run. Score: 500. (KS updates: 2)
+    Avg Dark Residue: 0.10 (max 0.29) | Vigor/Rigor: 351/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.00 | dyn_threshold=375
+Episode 312: Dissonant run. Score: 263. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.42) | Vigor/Rigor: 148/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 313: Dissonant run. Score: 223. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.46) | Vigor/Rigor: 110/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 314: Dissonant run. Score: 261. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.50) | Vigor/Rigor: 143/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 315: Dissonant run. Score: 203. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.45) | Vigor/Rigor: 101/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 316: Dissonant run. Score: 368. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.48) | Vigor/Rigor: 228/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 317: Dissonant run. Score: 176. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.41) | Vigor/Rigor: 87/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 318: Coherent run. Score: 375. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.48) | Vigor/Rigor: 214/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 319: Coherent run. Score: 442. (KS updates: 0)
+    Avg Dark Residue: 0.15 (max 0.48) | Vigor/Rigor: 276/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 320: Dissonant run. Score: 169. (KS updates: 0)
+    Avg Dark Residue: 0.24 (max 0.59) | Vigor/Rigor: 102/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 321: Dissonant run. Score: 226. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.46) | Vigor/Rigor: 118/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 322: Dissonant run. Score: 211. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.42) | Vigor/Rigor: 103/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 323: Dissonant run. Score: 305. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.53) | Vigor/Rigor: 160/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 324: Dissonant run. Score: 234. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.46) | Vigor/Rigor: 129/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 325: Dissonant run. Score: 243. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.42) | Vigor/Rigor: 139/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 326: Coherent run. Score: 404. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.46) | Vigor/Rigor: 248/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 327: Dissonant run. Score: 315. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.41) | Vigor/Rigor: 198/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 328: Dissonant run. Score: 315. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.45) | Vigor/Rigor: 171/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491, 490] | avg=497.87 | dyn_threshold=375
+Episode 329: Coherent run. Score: 500. (KS updates: 1)
+    Avg Dark Residue: 0.14 (max 0.41) | Vigor/Rigor: 324/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491] | avg=497.87 | dyn_threshold=375
+Episode 330: Dissonant run. Score: 195. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.45) | Vigor/Rigor: 97/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491] | avg=498.53 | dyn_threshold=375
+Episode 331: Dissonant run. Score: 187. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.56) | Vigor/Rigor: 94/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491] | avg=498.53 | dyn_threshold=375
+Episode 332: Dissonant run. Score: 288. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.44) | Vigor/Rigor: 167/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491] | avg=498.53 | dyn_threshold=375
+Episode 333: Coherent run. Score: 387. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.48) | Vigor/Rigor: 232/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491] | avg=498.53 | dyn_threshold=375
+Episode 334: Dissonant run. Score: 253. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.47) | Vigor/Rigor: 142/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491] | avg=498.53 | dyn_threshold=375
+Episode 335: Coherent run. Score: 376. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.45) | Vigor/Rigor: 218/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491] | avg=498.53 | dyn_threshold=375
+Episode 336: Dissonant run. Score: 282. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.44) | Vigor/Rigor: 159/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496, 491] | avg=498.53 | dyn_threshold=375
+Episode 337: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.11 (max 0.25) | Vigor/Rigor: 365/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496] | avg=498.53 | dyn_threshold=375
+Episode 338: Coherent run. Score: 474. (KS updates: 0)
+    Avg Dark Residue: 0.15 (max 0.57) | Vigor/Rigor: 306/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496] | avg=499.13 | dyn_threshold=375
+Episode 339: Dissonant run. Score: 231. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.48) | Vigor/Rigor: 122/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496] | avg=499.13 | dyn_threshold=375
+Episode 340: Dissonant run. Score: 174. (KS updates: 0)
+    Avg Dark Residue: 0.23 (max 0.43) | Vigor/Rigor: 80/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496] | avg=499.13 | dyn_threshold=375
+Episode 341: Dissonant run. Score: 299. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.56) | Vigor/Rigor: 169/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496] | avg=499.13 | dyn_threshold=375
+Episode 342: Dissonant run. Score: 371. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.47) | Vigor/Rigor: 210/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496] | avg=499.13 | dyn_threshold=375
+Episode 343: Dissonant run. Score: 298. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.54) | Vigor/Rigor: 169/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496] | avg=499.13 | dyn_threshold=375
+Episode 344: Dissonant run. Score: 298. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.47) | Vigor/Rigor: 172/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496] | avg=499.13 | dyn_threshold=375
+Episode 345: Coherent run. Score: 414. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.52) | Vigor/Rigor: 257/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496] | avg=499.13 | dyn_threshold=375
+Episode 346: Coherent run. Score: 415. (KS updates: 0)
+    Avg Dark Residue: 0.15 (max 0.44) | Vigor/Rigor: 269/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496] | avg=499.13 | dyn_threshold=375
+Episode 347: Dissonant run. Score: 311. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.51) | Vigor/Rigor: 166/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496] | avg=499.13 | dyn_threshold=375
+Episode 348: Dissonant run. Score: 346. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.42) | Vigor/Rigor: 212/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496] | avg=499.13 | dyn_threshold=375
+Episode 349: Coherent run. Score: 463. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.58) | Vigor/Rigor: 285/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496] | avg=499.13 | dyn_threshold=375
+Episode 350: Dissonant run. Score: 369. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.50) | Vigor/Rigor: 211/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496, 496] | avg=499.13 | dyn_threshold=375
+Episode 351: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.10 (max 0.23) | Vigor/Rigor: 353/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496] | avg=499.13 | dyn_threshold=375
+Episode 352: Dissonant run. Score: 325. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.50) | Vigor/Rigor: 187/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496] | avg=499.40 | dyn_threshold=375
+Episode 353: Coherent run. Score: 396. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.43) | Vigor/Rigor: 260/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496] | avg=499.40 | dyn_threshold=375
+Episode 354: Dissonant run. Score: 263. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.52) | Vigor/Rigor: 159/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496] | avg=499.40 | dyn_threshold=375
+Episode 355: Dissonant run. Score: 256. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.62) | Vigor/Rigor: 131/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497, 496] | avg=499.40 | dyn_threshold=375
+Episode 356: Coherent run. Score: 500. (KS updates: 3)
+    Avg Dark Residue: 0.10 (max 0.32) | Vigor/Rigor: 348/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498, 497] | avg=499.40 | dyn_threshold=375
+Episode 357: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.11 (max 0.24) | Vigor/Rigor: 359/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498] | avg=499.67 | dyn_threshold=375
+Episode 358: Dissonant run. Score: 202. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.44) | Vigor/Rigor: 96/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498] | avg=499.87 | dyn_threshold=375
+Episode 359: Dissonant run. Score: 329. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.53) | Vigor/Rigor: 192/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498] | avg=499.87 | dyn_threshold=375
+Episode 360: Dissonant run. Score: 336. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.48) | Vigor/Rigor: 191/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 498] | avg=499.87 | dyn_threshold=375
+Episode 361: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.14 (max 0.47) | Vigor/Rigor: 339/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=499.87 | dyn_threshold=375
+Episode 362: Coherent run. Score: 407. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.52) | Vigor/Rigor: 244/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 363: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.12 (max 0.36) | Vigor/Rigor: 358/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 364: Dissonant run. Score: 302. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.49) | Vigor/Rigor: 182/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 365: Dissonant run. Score: 355. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.52) | Vigor/Rigor: 220/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 366: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.12 (max 0.46) | Vigor/Rigor: 355/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 367: Dissonant run. Score: 244. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.44) | Vigor/Rigor: 114/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 368: Dissonant run. Score: 297. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.46) | Vigor/Rigor: 163/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 369: Dissonant run. Score: 199. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.48) | Vigor/Rigor: 106/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 370: Dissonant run. Score: 245. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.41) | Vigor/Rigor: 115/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 371: Coherent run. Score: 427. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.52) | Vigor/Rigor: 257/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 372: Coherent run. Score: 497. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.48) | Vigor/Rigor: 353/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 373: Dissonant run. Score: 188. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.48) | Vigor/Rigor: 88/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 374: Dissonant run. Score: 366. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.48) | Vigor/Rigor: 214/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 375: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.11 (max 0.29) | Vigor/Rigor: 367/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 376: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.11 (max 0.34) | Vigor/Rigor: 346/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 377: Dissonant run. Score: 254. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.40) | Vigor/Rigor: 121/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 378: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.14 (max 0.37) | Vigor/Rigor: 302/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 379: Dissonant run. Score: 296. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.47) | Vigor/Rigor: 173/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 380: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.37) | Vigor/Rigor: 374/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 381: Coherent run. Score: 403. (KS updates: 1)
+    Avg Dark Residue: 0.16 (max 0.53) | Vigor/Rigor: 252/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 382: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.11 (max 0.29) | Vigor/Rigor: 356/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 383: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.10 (max 0.35) | Vigor/Rigor: 351/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 384: Dissonant run. Score: 248. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.42) | Vigor/Rigor: 126/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 385: Dissonant run. Score: 282. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.45) | Vigor/Rigor: 155/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 386: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.12 (max 0.36) | Vigor/Rigor: 353/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 387: Coherent run. Score: 468. (KS updates: 0)
+    Avg Dark Residue: 0.15 (max 0.53) | Vigor/Rigor: 304/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 388: Dissonant run. Score: 335. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.49) | Vigor/Rigor: 197/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 389: Dissonant run. Score: 371. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.49) | Vigor/Rigor: 220/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 390: Dissonant run. Score: 287. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.49) | Vigor/Rigor: 153/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 391: Coherent run. Score: 378. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.59) | Vigor/Rigor: 251/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 392: Dissonant run. Score: 249. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.50) | Vigor/Rigor: 120/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 393: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.10 (max 0.23) | Vigor/Rigor: 373/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 394: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.13 (max 0.37) | Vigor/Rigor: 344/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 395: Coherent run. Score: 500. (KS updates: 5)
+    Avg Dark Residue: 0.10 (max 0.24) | Vigor/Rigor: 358/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 396: Dissonant run. Score: 311. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.42) | Vigor/Rigor: 183/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 397: Dissonant run. Score: 291. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.55) | Vigor/Rigor: 154/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 398: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.91) | Vigor/Rigor: 320/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 399: Coherent run. Score: 481. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.60) | Vigor/Rigor: 302/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 400: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.11 (max 0.26) | Vigor/Rigor: 364/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 401: Coherent run. Score: 460. (KS updates: 0)
+    Avg Dark Residue: 0.15 (max 0.50) | Vigor/Rigor: 271/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 402: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.14 (max 0.46) | Vigor/Rigor: 321/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 403: Dissonant run. Score: 369. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.59) | Vigor/Rigor: 223/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 404: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.10 (max 0.27) | Vigor/Rigor: 366/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 405: Dissonant run. Score: 310. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.50) | Vigor/Rigor: 184/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 406: Dissonant run. Score: 202. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.49) | Vigor/Rigor: 102/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 407: Dissonant run. Score: 258. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.51) | Vigor/Rigor: 123/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 408: Dissonant run. Score: 307. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.48) | Vigor/Rigor: 176/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 409: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.63) | Vigor/Rigor: 314/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 410: Coherent run. Score: 436. (KS updates: 0)
+    Avg Dark Residue: 0.15 (max 0.44) | Vigor/Rigor: 270/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 411: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.12 (max 0.40) | Vigor/Rigor: 375/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 412: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.13 (max 0.37) | Vigor/Rigor: 361/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 413: Dissonant run. Score: 250. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.46) | Vigor/Rigor: 123/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 414: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.15 (max 0.44) | Vigor/Rigor: 360/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 415: Dissonant run. Score: 237. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.41) | Vigor/Rigor: 122/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 416: Dissonant run. Score: 302. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.48) | Vigor/Rigor: 161/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 417: Coherent run. Score: 459. (KS updates: 1)
+    Avg Dark Residue: 0.16 (max 0.41) | Vigor/Rigor: 279/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 418: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.10 (max 0.34) | Vigor/Rigor: 363/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 419: Dissonant run. Score: 231. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.43) | Vigor/Rigor: 121/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 420: Dissonant run. Score: 359. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.48) | Vigor/Rigor: 165/3
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 421: Dissonant run. Score: 214. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.44) | Vigor/Rigor: 122/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 422: Coherent run. Score: 401. (KS updates: 1)
+    Avg Dark Residue: 0.17 (max 0.46) | Vigor/Rigor: 234/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 423: Dissonant run. Score: 192. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.50) | Vigor/Rigor: 103/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 424: Dissonant run. Score: 237. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.42) | Vigor/Rigor: 137/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 425: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.12 (max 0.29) | Vigor/Rigor: 362/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 426: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.11 (max 0.31) | Vigor/Rigor: 378/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 427: Dissonant run. Score: 277. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.47) | Vigor/Rigor: 175/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 428: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.11 (max 0.34) | Vigor/Rigor: 366/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 429: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.11 (max 0.34) | Vigor/Rigor: 357/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 430: Coherent run. Score: 459. (KS updates: 0)
+    Avg Dark Residue: 0.15 (max 0.45) | Vigor/Rigor: 303/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 431: Coherent run. Score: 430. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.48) | Vigor/Rigor: 229/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 432: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.15 (max 0.48) | Vigor/Rigor: 359/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 433: Dissonant run. Score: 338. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.38) | Vigor/Rigor: 189/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 434: Coherent run. Score: 448. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.38) | Vigor/Rigor: 255/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 435: Dissonant run. Score: 192. (KS updates: 0)
+    Avg Dark Residue: 0.22 (max 0.44) | Vigor/Rigor: 115/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 436: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.11 (max 0.32) | Vigor/Rigor: 362/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 437: Coherent run. Score: 500. (KS updates: 1)
+    Avg Dark Residue: 0.21 (max 0.61) | Vigor/Rigor: 296/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 438: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.14 (max 0.44) | Vigor/Rigor: 339/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 439: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.14 (max 0.35) | Vigor/Rigor: 327/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 440: Dissonant run. Score: 217. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.43) | Vigor/Rigor: 127/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 441: Coherent run. Score: 377. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.42) | Vigor/Rigor: 248/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 442: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.11 (max 0.26) | Vigor/Rigor: 364/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 443: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.66) | Vigor/Rigor: 310/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 444: Dissonant run. Score: 371. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.44) | Vigor/Rigor: 225/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 445: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.14 (max 0.36) | Vigor/Rigor: 352/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 446: Dissonant run. Score: 336. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.41) | Vigor/Rigor: 193/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 447: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.11 (max 0.35) | Vigor/Rigor: 378/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 448: Dissonant run. Score: 243. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.41) | Vigor/Rigor: 130/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 449: Dissonant run. Score: 368. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.45) | Vigor/Rigor: 244/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 450: Coherent run. Score: 500. (KS updates: 2)
+    Avg Dark Residue: 0.10 (max 0.21) | Vigor/Rigor: 370/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 451: Coherent run. Score: 500. (KS updates: 2)
+    Avg Dark Residue: 0.13 (max 0.35) | Vigor/Rigor: 363/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 452: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.10 (max 0.30) | Vigor/Rigor: 358/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 453: Dissonant run. Score: 310. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.42) | Vigor/Rigor: 160/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 454: Coherent run. Score: 469. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.51) | Vigor/Rigor: 344/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 455: Dissonant run. Score: 241. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.41) | Vigor/Rigor: 135/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 456: Dissonant run. Score: 342. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.44) | Vigor/Rigor: 221/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 457: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.13 (max 0.36) | Vigor/Rigor: 350/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 458: Coherent run. Score: 395. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.42) | Vigor/Rigor: 254/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 459: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.12 (max 0.29) | Vigor/Rigor: 347/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 460: Dissonant run. Score: 371. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.46) | Vigor/Rigor: 241/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 461: Dissonant run. Score: 349. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.39) | Vigor/Rigor: 219/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 462: Dissonant run. Score: 290. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.49) | Vigor/Rigor: 191/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 463: Coherent run. Score: 450. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.47) | Vigor/Rigor: 286/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 464: Dissonant run. Score: 238. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.37) | Vigor/Rigor: 127/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 465: Coherent run. Score: 387. (KS updates: 1)
+    Avg Dark Residue: 0.18 (max 0.46) | Vigor/Rigor: 257/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 466: Coherent run. Score: 431. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.43) | Vigor/Rigor: 288/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 467: Dissonant run. Score: 248. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.40) | Vigor/Rigor: 129/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 468: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.12 (max 0.31) | Vigor/Rigor: 362/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 469: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.15 (max 0.43) | Vigor/Rigor: 364/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 470: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.13 (max 0.48) | Vigor/Rigor: 344/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 471: Coherent run. Score: 431. (KS updates: 0)
+    Avg Dark Residue: 0.15 (max 0.48) | Vigor/Rigor: 290/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 472: Dissonant run. Score: 337. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.47) | Vigor/Rigor: 219/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 473: Dissonant run. Score: 330. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.44) | Vigor/Rigor: 212/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 474: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.13 (max 0.37) | Vigor/Rigor: 362/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 475: Dissonant run. Score: 212. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.45) | Vigor/Rigor: 120/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 476: Coherent run. Score: 414. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.48) | Vigor/Rigor: 282/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 477: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.10 (max 0.25) | Vigor/Rigor: 363/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 478: Dissonant run. Score: 299. (KS updates: 0)
+    Avg Dark Residue: 0.19 (max 0.43) | Vigor/Rigor: 194/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 479: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.14 (max 0.62) | Vigor/Rigor: 365/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 480: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.11 (max 0.28) | Vigor/Rigor: 357/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 481: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.51) | Vigor/Rigor: 350/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 482: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.12 (max 0.33) | Vigor/Rigor: 339/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 483: Dissonant run. Score: 217. (KS updates: 0)
+    Avg Dark Residue: 0.21 (max 0.48) | Vigor/Rigor: 142/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 484: Dissonant run. Score: 322. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.43) | Vigor/Rigor: 193/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 485: Coherent run. Score: 388. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.45) | Vigor/Rigor: 265/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 486: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.15 (max 0.43) | Vigor/Rigor: 337/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 487: Coherent run. Score: 475. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.49) | Vigor/Rigor: 300/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 488: Dissonant run. Score: 330. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.43) | Vigor/Rigor: 207/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 489: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.12 (max 0.34) | Vigor/Rigor: 351/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 490: Dissonant run. Score: 308. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.45) | Vigor/Rigor: 227/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 491: Coherent run. Score: 415. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.46) | Vigor/Rigor: 270/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 492: Dissonant run. Score: 228. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.46) | Vigor/Rigor: 123/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 493: Coherent run. Score: 409. (KS updates: 0)
+    Avg Dark Residue: 0.17 (max 0.44) | Vigor/Rigor: 284/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 494: Dissonant run. Score: 340. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.44) | Vigor/Rigor: 223/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 495: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.14 (max 0.37) | Vigor/Rigor: 358/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 496: Dissonant run. Score: 307. (KS updates: 0)
+    Avg Dark Residue: 0.18 (max 0.50) | Vigor/Rigor: 211/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 497: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.13 (max 0.43) | Vigor/Rigor: 337/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 498: Dissonant run. Score: 221. (KS updates: 0)
+    Avg Dark Residue: 0.20 (max 0.44) | Vigor/Rigor: 131/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 499: Coherent run. Score: 424. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.41) | Vigor/Rigor: 250/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Episode 500: Coherent run. Score: 500. (KS updates: 0)
+    Avg Dark Residue: 0.16 (max 0.43) | Vigor/Rigor: 267/2
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=375
+Training complete.

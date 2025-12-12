@@ -1,0 +1,628 @@
+--- Session Started: 2025-12-01 10:22:55.877675 ---
+[10:22:57] they're begin
+[10:23:03] it's a separate script little pop up for your agents and then our demo begin
+[10:23:23] now this is the full runtime so this is as much as your agents would see the laps already up that's a full disclosure that's not the vast as it's been that go either the slowest it's been eyes a full thirteen seconds start ah the that's longest it's been the shortest it's been was maybe that right there so
+[10:23:34] hey i'm and this i'm gonna go ahead and drop stuff down that we don't need to take a look at right now but this is my top of this is what i've been developing for the last couple weeks
+[10:23:54] ah and this is what i'm going to combine with the resident team structure to make things a little bit more easy so ah it's right now everybody has extremely different tasks you've all got see or ends you've all got different sales goals you've all got different sales objectives different metrics
+[10:24:05] everything and one of the challenges the casey i've laid army me initially when we we looked at this was how do we like this to the crn
+[10:24:08] the and that's where
+[10:24:23] that's where i think i've got a really good idea so the pilot document is is the kind of have around this and you can see and hear i this is kind of what it's built on so a call comes in boop ah and
+[10:24:28] that will automatically select which of these clients comes in
+[10:24:40] we just basically program in hey i when this number comes and switch to this climate again this is what your agency i did live transcript up here is life
+[10:24:46] you'll see it update here at a moment burial i've he gives a life sentiment on the call
+[10:25:01] so the agent will be able to see hey i need to talk happier or if the customer start saying cancel cancel cancel cancel them the store the score will drop see it went from a plus one the bottom right to a zero when i said cancel four times
+[10:25:21] in the up now it's negative three so you can see it change their on the call i the little i'd thin now i'm going to use of voice model the same one i'm using for transcription cult waske and to do call sentiment that's one of the next upgrades eyes just a little sentiment upgrade and the i can also use the boss model to make the transcripts
+[10:25:23] a little more like compact
+[10:25:25] but anyway
+[10:25:28] the yes
+[10:25:30] please it
+[10:25:48] in
+[10:26:55] oh yeah
+[10:27:24] yes
+[10:27:32] yes
+[10:27:46] yes one agent supporting multiple clients at war and or i one agent support multiple detail products and or inbound outbound support and it does a all
+[10:27:54] and hopefully we're gonna do that here other let me let me do the me do this
+[10:28:18] ah yes but also know and agents can get this independent of that ah and it's through this one button right here called the gimme that button
+[10:28:38] and so this is that button is how i think universal age works so call comes in ah let's say it's glow cosmetics shows up automatically i'll i'll switch off and on so the it does the the knowledge stream these knowledge streams right here our knowledge base articles that i have stored and these are custom per client
+[10:28:53] and so if i will like watch by go to to neo bank it's going to trigger different articles different identification different greeting and these drop down and they have stuff and then copy what's inside you can follow links ah you can do all that good stuff
+[10:29:14] and so agents would have that kb access to they would have the access that specifically the transcript is looking for because that's how it's it's pulling this opposite searching the transcript for context but let's say this customer asks us hey i'm allergic to hibiscus ah is there a is there any hibiscus
+[10:29:20] in this beauty product and they give you an s k you and well
+[10:29:41] if i gotta go cosmetics here i didn't go back to that there were young and up here in the upper right as quick links the so i actually have it to this page here which is just a beauty product but i'm going to control a control see and i'm in the come back here that's all i had to do i whenever here i control a control seed and on back over
+[10:30:01] here and i'm gonna hit the gimme that button and look at the top the agent what see this but what happens in the background is the actual text from the web page is being filtered through something called a regular expression and that regular expression is stripping off all the useful info ah and it's putting it inside
+[10:30:21] the pilot document and that's down here you can see it it generating it's also going to have agent info and even things like the coaching ah it's going to have the client context including how the client would like us to respond to customers so this one has best he vibe high energy in mogi is supportive i it's a kind of maybe structured running chat campaign kind of
+[10:30:41] blizzard while the warcraft support style and but if i were to then after getting that page come in here what i can do and the goal here by the way is to never use the keyboard besides the control a control see ah the agent has not had a type us
+[10:31:02] single doggone thing for this customer the phone number has come in automatically they've gotten the sk from the transcript they've gone over here with the quick link and they've copy this entire page and put it in their eye and it has given all the context so what they can do is they can coming here and there's discovery objections are closer
+[10:31:08] so if i want discovery and let's just say
+[10:31:20] sales and vice and again i the goal is not the had not to have to type but if we do need to type i am we do need something different so
+[10:31:23] help sell
+[10:31:26] to this customer
+[10:31:46] as a thing and i can say that to my favorites ah what that's done is it's put a new tab here my favorites and i can click sales advice it's going to generate sales games and down here in the ai copilot window which i can fully customize i gives a
+[10:31:48] absolute script
+[10:32:08] a gives you verification stuff on the compliance checklist which is also something that's per client i give you guidance on how to do what to do i and it gives you alerts so you add one layer to this and that's the a the the ai agent literally reading it to your agent on and and you ever
+[10:32:13] complete loop of for even and accessibility case
+[10:32:21] and this can be used for anything you can literally ask
+[10:32:26] needs to buy camels
+[10:32:29] and it will give you a full
+[10:32:37] a full view on g camels you are so creative that
+[10:32:57] but also just as a kind of side note all of these are saved and logged so of an agent didn't do that we would be able to audit that a know i have them is using the tool so just to kind of give a basic re flow to where we are call comes in a goes to a client whatever klein
+[10:33:04] the ah from there the pilot document the quick links everything on the screen updates
+[10:33:12] we grab the contacts from the live log we follow a quick link we grab everything and we just had gimme that
+[10:33:15] and the agent does the rest
+[10:33:17] i'm
+[10:33:36] that is the core lube of the app and the cool part about that loop is it works regardless of what you're doing and in whichever direction so your inbound call beeps it comes in the context comes up you already have knowledge stream going based on what the customer saying in the background before even get off mute
+[10:33:37] the
+[10:33:41] outbound
+[10:34:01] you go to u c er en your salesforce and i write yala reg acts that rips the salesforce thing and gets the customers information or wind out i imagine like how many times have you been telling agents to hey check this field and salesforce or hey check that field in sales force every time every call or what if you could just go to the customer page
+[10:34:12] instead of going to the opportunity or to the lead or whatever you got to the customer page control a control see hit the gimme that button and you have the entire customer profile old into the store
+[10:34:14] ready for a to pick apart
+[10:34:15] in
+[10:34:17] not to the calls over
+[10:34:37] we get older you have the right side the compliance checklist as per client so if i switch to the a bank the complaints checklist changes and the compliance checklists is loaded in the pilot document so the a i can see whether or not you've checked these at the point that you get your guidance so i can remind you to
+[10:34:57] you compliance items for each client there's a whole separate section for up sell opportunities ah you can if her instance for low cosmetic it's the go get bundle since you have lipstick whole can sway percent off today they their knowledge articles hogan for that so if we talk about read turns the return policy should show up
+[10:35:17] the and window thirty days you know these are all short because i know it's demo but if this were real quiet you would have the returns lincoln here ah you would have everything that you would need to processor return so you wouldn't have to necessarily to rain the agents to deal with specific clients anymore
+[10:35:37] than what you would do is you would have people side by side in these small teams these resident frames ah and the resident frame kind of adopts new people little at a time one to two at that time i and they foster them and they develop them up ah so it it works that way now
+[10:35:42] you're asking what does training do now while training becomes enablement ah
+[10:36:02] one when you need more support people who are i t training literally trains people to be i t people and when you need more see as ours training trains people bc as ours training becomes your currency evaluate her and when you're talking about human capital of the training
+[10:36:13] our department is going to be your way of translating that quickly to different frontiers the entire paradigm of how you're thinking about it changes at least as for me
+[10:36:33] so after the calls over and we've done our compliance checklist are standard procedures are dying the up cells there i can take a quick note here or a customer summary but here's where things get different in kc as the first i'm a show of this tool what's the benefit what am i getting out of using this tool that i
+[10:36:38] don't already get with the crm well you and your customers
+[10:36:58] can get final notes that are fully and extremely detailed so you can see the final note call here is taking a little while and but it only took about five six seconds agents normally take what thirty thirty five and after call work i can copy it's a clipboard here and let me just poured into know
+[10:37:19] pads that you can see wanted us to don't have a crm with me ah but what it i have had it do is to design it based on modules and what i can do is i can code separate these so the agent can put some of these in the client crm tool but not others i am we can charge that so customers state vector this
+[10:37:39] he tells us how the customers feeling on the call in extreme detail i gives a sentiment score we we we have a natural sentiment score for free and by the way the the ai tool that i'm using his gemini one point five year ah so it is not two point five you will not be paying full a p i price for ca
+[10:37:50] blake's agent you're using a simple age and to deliver complex result ah which is really cool that's a that's a super geeky super good thing but it's it's ultra cheap
+[10:38:10] the sales diagnostic module is one of my new favorites so he gives missed opportunities new opportunities perfect moves micro moments and buying entropy league and social signal these are all things that i can take fifty sixty of these from a day and make a bundle of what did our team this
+[10:38:31] wow what opportunities within the we let slip through and what phone numbers were they on which micro moments on those call the we not take advantage of and can i have an agent called the customer back with that micromem that as a prompt for the next fall up ah we're we're talking a completely different level of engagement in access here and i don't you a module right here we can do autocue a through this this
+[10:38:51] on it can do compliance flags hey i didn't get a compliance like this time i it is something that i've been adjusting because compliance legs the ai some a eyes and just pick year than others his color temperature as a that's something that's a little hard to get through that but that's just a minor problem i gave me a sixty five point out of one hundred so good over your features but lacks
+[10:39:11] personalized value proposition that's because i didn't say the customers name's very specifically i have it looking for the customers name and engagement things like that aren't you a team can design these are this is just me designing this said the i mean we can have our are actual teams that do this all day design some of these modules i get the information that their cravings straight off
+[10:39:13] of every call
+[10:39:29] we get follow up guidance so recommended follow up email even why couldn't we automatically send that we absolutely can and we can send that through the clancy or i'm if they give us access to their a b i and if not here's the taxed we just copy and paste it good go
+[10:39:38] and we can put that a even in a different window over here on the left where it's like if your client has like email chat and you need different formats we can absolutely throw it in their does have no problem
+[10:39:40] the
+[10:39:45] so oh lead enrichment summary is another one
+[10:39:50] this little micro prompt takes everything that's in the crm about it
+[10:40:07] the and it rips it i put sit down here for you so what you can do with that as you can start to build a knowledge base and you can start to build the knowledge based per client ah and you can build a knowledge base of sales advice
+[10:40:24] per or that you can then sell back doesn't mean you're gonna go like give this data and everybody under the sun and put it on the dark web or whatever and but that also doesn't mean that you're going to give it to the client if you have it it's a sales thing i would i would say
+[10:40:39] and a real opportunity because we can also say hey this uses a real she model one point five if you let us up charge and plug a better model into this system we can get you better sales advice so it gives you a natural absolved for keeping up with a i as it develops
+[10:40:56] the data adams this is an interesting were more for me cause it's data geeky by it's just keywords and this is gonna make the entire call database search all ah i'm in a flag reason and so that they each file broadcast this one flag and i can scrape it with a script
+[10:41:03] the other cool part is this doesn't use a special program to do anything i'm managing access to one drive
+[10:41:10] so if you want a new client to drop in for an agent you just share one drive folder with them
+[10:41:15] and it uploads automatically and when the glycol comes and it'll pull the client the be
+[10:41:23] so that's cool ah and raw context bridge is just basically
+[10:41:29] the final summary the call in one or two sentences and
+[10:41:42] that one is more for like a team leave looking at the call so that's what comes out of it that's what comes out of these final cr and and trees and we just spent a long time covering what's in their your agent
+[10:41:46] has been that has been on that call and and really
+[10:41:49] understands what's happened they don't need to read that
+[10:42:02] at all i'm storing that so at the end of the day we can run a script and i can automatically pick hey what happened i have and we can pick through the very detailed pieces of exactly what happened
+[10:42:14] and get a post mortem that let's you see exactly how many sales missed and did we have that day and who missed him and and you can keep track of that so
+[10:42:16] that's the vision
+[10:42:27] universal agent or agent with dedicated very detail products are reduces training overhead reduces note taking overhead reduces after call work
+[10:42:47] gibbs live context autocue way ah allows you to take on multiple clients with multiple different competing ah objectives so here's the bank if i go to the front education link
+[10:43:07] here's a whole article about it doesn't matter it take it like that gimme that bang it's in there ah and and we're going to go that's the whole loop it's that fast when we do it again for on the travel concierge oh hey my wife's plane is coming in and an hour i gotta the gts terminal yours flight radars main page i just control a controls the again
+[10:43:12] fly these are inside knowledge and as the eye which flight his wife is on
+[10:43:16] is that fast
+[10:43:20] and pixel pals support let's say like
+[10:43:32] let's say that your kid's game boy had missing know i as a glitch and your kid can't get their game gameboy to work well you could even soft lock pick a complex game boy advance glitch
+[10:43:53] bang with a single copy paste and the i can walk you through it for care campaigns this ai terminal becomes your your life call flow and the prompts are all customizable so i can make a prompt per client or the ai will respond differently per client give different advice feed
+[10:44:13] back after call and everything's customizable and note to clients are the same at the end which i actually think is a benefit we can compare data source data source but when i tried to design for pixel pals support for blow cosmetics and i was kind of surprised that each of the or call flow
+[10:44:24] his wound up with different products so it's highly customizable i and it's something that i think could really go gang busters ah on the floor
+[10:44:29] hat
+[10:44:32] but with a puppy
+[10:44:43] yes and questions
+[10:45:02] dialogue at fifteen minutes i i assumed that it would be like powerpoint demo powerpoint if we have time so
+[10:45:04] the her
+[10:46:31] yes so huge huge question excellent question so at this three folder structure here in my a window is the brain of this background here and so it has agents and it has all of my demo agents in their this would have their like performance stuff
+[10:46:52] but here's the clients so like if i go into glow cosmetics as a deal in the me get my code editor up the rio and if i go into glow cosmetics a give this is what the ai is kind of seeing so i can just type whatever i want to in here and the ai is gonna see that
+[10:46:55] and if i go into prompts like for live guidance
+[10:47:08] and then the button that gives the any of these buttons the give these advice or ask for guidance and the send button down here are will use this this input
+[10:47:28] so system role input strategic objectives response format script verify guns and alert and we can changes form on the a i can do as much or as little as you're comfortable with any and it's all going to depend entirely on what questions you ask it that's always how it's gonna hurt with they are but i'm in in
+[10:47:42] terms of getting a customizable a wind control put your not you don't have a free willy here i like you would have on chat b t dot com i you have something that's a little more or customer service
+[10:48:01] c r m oriented it's not going to answer questions like if you put something like when it when i say my cousin wants to buy some camels it's it's still thinking about it like a sales call and and the coolest part is that any i right now there's like a big alignment question
+[10:48:22] it's hard to get an agent to behave sometimes when it's doing a lot of very diverse tasks the pilot document kind helps with that and because it gives so much context it's hard for the ai to hallucinate words very very obvious when it does ah and the it's not never going to hallucinate but at the very low
+[10:48:24] he's using a thinking model
+[10:48:39] i liked to two point five action it basically eliminate hallucinations with this and i've i've ran a test of one hundred and fifty prompts and i had seven of those one hundred and fifty come back with what i would call errors
+[10:48:57] the and of those errors six were minors so it's according to that task less than one percent catastrophic failure rate and but that's never gonna be assured especially cause ai changes but that's i've thought about what you're you're getting out in other words
+[10:49:53] naturally these this compliance checklist up here the upper right as per client so you can add a compliance item for the up sell opportunity and it actually links across and this window will turn green so they can see that they're they've covered their ups opportunity as for the compliance checklist
+[10:50:13] yep aids and and by the way those support nodules we were talking about earlier on the people who were going to support your program you can have people whose function it is to update and keep concise the database of play
+[10:50:30] text files or that drives your agents so you can have a group whose job it is to work on the integration with this tool for their teams and make a ton of these custom a little a prompts that do anything under the sun you can use them one day throw away the next
+[10:51:00] yeah
+[10:51:20] yup definitely right now it's in python or the eventual than kind of slope of development to get it in that format that you're thinking which is a rough react application and fast a p i back and i'm is probably maybe a month i if i if i had about a month i could develop that
+[10:51:34] i'm a but i mean yep it's dense totally doable and version sort of the of this is version point one version one point know will probably be a full web web app that you can post on a on a server that teacher guns
+[10:51:41] oh yeah
+[10:51:44] now now yeah no worries good
+[10:57:34] even
+[10:58:18] yeah
+[10:58:57] huh so
+[11:00:50] i'd the call live the iab oh go ahead sorry
+[11:05:50] hell yes
+[11:05:55] bit
+[11:07:09] it
+[11:07:17] certainly not good
+[11:07:23] thanks everyone
+[11:07:26] yes indeed
+[11:09:52] hey
+[11:11:14] hey
+[11:11:18] i went good
+[11:11:21] they want it
+[11:11:24] count me out
+[11:11:26] about yeah
+[11:11:34] i just got off they were they works they they had a lot of requests which surprised me
+[11:11:38] why
+[11:11:39] the requests
+[11:11:42] but
+[11:11:47] that thing they won't even be like things they wanted me to do to the tool
+[11:11:52] that's it it's a good sign for directors
+[11:12:00] they were and well they're mostly ideas of already figured out i guess after the they're already ideas i have them figured out i just have to like
+[11:12:10] i just have like put the code in the like they were ideas that i'd already had a hat on the cutting room floor for the it for the demo now i really wish i'd put them in
+[11:12:17] they say they see the potential though because they're seeing the same pathways that i'm developing
+[11:12:34] i'm i'm on a wrap up version of it so like the version i have is for an agent
+[11:12:37] it's already work and pretty good
+[11:12:40] now i need to do the next level up
+[11:12:53] they like to the the applications but they didn't like the resident organization and on thing
+[11:12:58] as anyone
+[11:13:06] there wasn't a do it more well i mean they're they're want to do it in a very business way which is fine
+[11:13:13] i have to put application security in every layer of it
+[11:13:22] well
+[11:13:28] i can do with the standard way or the keep my and i haven't decided
+[11:13:40] i mean if i get the and away the way though the risk is they're going to say it's not secure enough
+[11:13:50] if i did at the standard way they're gonna know like what the the standard is and they're gonna maybe i just do the standard way
+[11:13:56] lee
+[11:14:01] enhanced
+[11:14:15] i do
+[11:14:22] i do feel good about it i wish that the resin organization was a bit more to me the cannibal
+[11:14:31] but that's the thing it makes everything standard they just they can't see that vision yup
+[11:14:41] now
+[11:14:52] ah my had put in the parts that they want they were real excited
+[11:15:04] the stuff it can do mean it's do and right now it's already it's already in a i assisted agent the in it from
+[11:15:07] for nothing his i'm i'm working for him
+[11:15:21] now now
+[11:15:27] and he anyway
+[11:15:32] hi
+[11:15:36] having that
+[11:15:42] it's a good strategy now
+[11:15:45] yeah
+[11:15:48] i think i'm
+[11:15:50] it's gonna be
+[11:15:57] well it's gay it's going to come down to whether or not i've got
+[11:16:09] got the code the coding chops to do it and i have the ideas of that's what this meeting covered i like i've i have the ideas our chops
+[11:16:24] well yeah
+[11:16:27] but yeah other
+[11:16:35] the other unofficial days as i guess they'll put me on the job
+[11:16:37] what they
+[11:16:40] they were real i think
+[11:16:47] mystified at first and then shock that i had a complete system
+[11:16:53] yeah
+[11:17:06] i don't let
+[11:17:09] i literally just up meaning
+[11:17:10] now the
+[11:17:20] yeah the going to have a crash
+[11:17:26] you have a future that was missing lower there was so much more one of the cover that
+[11:17:32] oh yeah i did not have enough time
+[11:17:40] yeah but i also told him that this didn't exist two weeks ago
+[11:17:51] yes
+[11:18:00] no yeah
+[11:18:12] after now you wanna see some evidence that what i'm looking at is in the physics stuff is real
+[11:18:22] oh i'm on my computer now he's so you can you still hear me
+[11:18:25] okay
+[11:18:32] still share that deal
+[11:18:35] like in this go
+[11:18:50] okay how it will i don't know how
+[11:18:57] out and gonna talk lab experiments
+[11:19:05] so i was looking in
+[11:19:11] for particles inside of these dad gun fractals
+[11:19:15] i'm
+[11:19:21] and i found this
+[11:19:34] which is the local field geometry at the twist that i've identified in the fractal field that makes everything look straight two point three eight one for the new constant
+[11:19:43] i'm by that little dotted line with the he negative in the middle that's the electrons radius on this field
+[11:19:49] it gets the electrons radius on this field
+[11:19:51] i'm
+[11:19:58] so then what i did is i ran code where i dropped particles with our universe is physics on it
+[11:20:01] on this entire plane
+[11:20:12] so like were all those little arrows are that's that's the gradient so like that's the the slope of the hill underneath right
+[11:20:21] i'm so i calculated that with angles by this next one i calculated with with the physics of our universe
+[11:20:34] i get that like it that isn't that that isn't that lots come on come on the
+[11:20:41] and the it's so the red means that it slowed down right
+[11:20:45] green means it sped up or sped up too fast
+[11:20:54] cause i don't have my my thing right so it loops and to read at the top model but look at that freakin star corolla
+[11:20:59] it's in the same spot
+[11:21:02] coupling field mass field
+[11:21:04] coupling field mass field
+[11:21:10] at zero
+[11:21:14] ridiculous
+[11:21:20] basically
+[11:21:27] no i did that a few nights ago but the simulation finish last night
+[11:21:32] put look ahead
+[11:21:40] it's basically what that means is particles with our universe is physics only respond in that spot
+[11:21:47] the same one that corresponds to the electron that's my proof
+[11:21:52] in that so freakin interesting
+[11:22:03] also so never we were taught about the trampoline with the bowling ball middle
+[11:22:14] aren't on this picture with the electron the dark spot is like a trampoline tilted to the right like the bright spots high and the black spots love him so it's like tilted to the right there
+[11:22:35] and if i drop a part of like a marble where it says negative zero point two hundred coupling field like right here with this blue line it would roll on this blue line at least that's the theory right if it was regular physics that's what would happen it would roll down this blue line because that's the slope of the gradient right
+[11:22:42] but that's not what happened if i dropped a marble their it slows down
+[11:22:47] not speeds up even though it's supposed to given the gradient of this hill
+[11:22:58] in fact electrons don't go particles from our universe don't go at all unless they're inside that circle for our universe
+[11:23:08] this is the literal equation limit of the electronic wage and
+[11:23:12] but manifest in fractal
+[11:23:17] it this is not supposed to be here
+[11:23:22] none of this is
+[11:23:29] and that's a proton i'm figuring out
+[11:23:31] yeah
+[11:23:44] welp protons i've always thought were composite particles because they are they're made up of corks but they are made up of three quirks
+[11:23:56] and see this one with the colors like that you can see it like flickering down near the edges by this is a fractal representation of it overtime
+[11:23:59] so like forward to retrograde
+[11:24:06] and what this implies is that the cooling of the universe from the big bang is what gives particles their energy
+[11:24:13] there's like those the it sets the speed of light it does everything
+[11:24:19] in that crazy
+[11:24:23] now enough the fractals
+[11:24:32] well and i mean this frickin fractal is the one that i got from my freaking physics said this one the proton one
+[11:24:39] yeah that one i i'm fly i'm like eighty percent sure that codes were a proton now
+[11:24:43] and am
+[11:24:52] i have very little math to go to prove that it it does code for an electron that this this this electron one is just crazy i've
+[11:24:59] i am blown away it's the same break in danger
+[11:25:17] well i'm so
+[11:25:24] this was the original fractal the one on the right as the lampoon off to mention of it like the fractal dimension of it
+[11:25:29] but then i found this one
+[11:25:32] and it looks very similar right
+[11:25:34] it's very interesting right
+[11:25:41] but it's different in that it's got the three points up at the top see
+[11:25:44] those three points
+[11:25:58] and what's funny is i did this one by rewind in time and i did this one by making it go forward so rewind forward rewind forward it does different things backwards and board
+[11:26:01] in that so cool
+[11:26:19] but this is what i think is the proton those three black dots are the cork and the black triangular core is the center where the particles go and these dots and between are literally quantum teleporting of the particle because they're they're they're quantum
+[11:26:28] but there's math the this my the way not just making these conjectures there's math that this it's leading a here
+[11:26:33] but this is the reverse one in the lab who not dimension
+[11:26:38] the that with pretty the looks like wind frost
+[11:26:42] i am they're all pretty
+[11:26:48] the but this one forward back the purple ones forward this one's back
+[11:26:51] but i am
+[11:26:59] so remember how told you about the parallel free kick out in the particles go and orbit
+[11:27:03] well and
+[11:27:09] i did an experiment
+[11:27:12] where i see
+[11:27:17] put in in opposite force
+[11:27:24] just to see what would happen like what the natural gradient of the spiral is and check this out
+[11:27:32] same fractal clubs or that one
+[11:27:35] but it's the same fractal
+[11:27:42] i've it's the literal same fractal the but in oh i guess i closed it down one it i knew that
+[11:27:50] but it's the it's the same fractal but just in its basis of motion it's a spiral
+[11:27:53] and that crazy
+[11:27:57] i'm
+[11:27:59] so then from that fractal spiral
+[11:28:13] i was like okay so this fractals time the let's find the space fractal and i looked at the electron to do that and what i found was an when i needed the model particles
+[11:28:23] i kept having different values for the higgs and it's the same problem physicists are having the can't walk down the higgs so i was like well what if it's a fractal
+[11:28:25] and so i napped it
+[11:28:28] and i got this
+[11:28:39] yeah it looks like a particle it looks like the inside of a particle to me
+[11:28:50] see how on the right hand side that purple and blue smudge is like tracing northwards and on the left hand side it's tracing southwards
+[11:28:52] that's a me
+[11:29:04] is a unwound timeline on the right and a wound timeline on the left you can see it has to purple and blue protrusions on the right and only one complicated one on the left
+[11:29:06] that's what i think is happening
+[11:29:23] is a folding across dimensions ah that is crossing right here in the middle and it has are buckle ah bach all ah and that that gives it structure so
+[11:29:26] that's the space fractal
+[11:29:43] ah and then with the space fractal i kept finding that the vacuum stiffness that that was going through because now i can take that variable out was also looking very fractal so i mapped that and then i got this
+[11:29:45] where did it go
+[11:29:56] dublin
+[11:29:57] experiments
+[11:29:59] gotta up compass
+[11:30:06] franklin right yes
+[11:30:10] okay so i got
+[11:30:25] i got this one to the blue lines doubt the bottom or a particle in the red is the trace that it's making and time in the nice
+[11:30:30] i'm and there's the cooling of the universe
+[11:30:38] cooling and reheating yeah i'm the i'm literally simulating universal timelines now and it's matching
+[11:30:44] as the unwinding from the big bang and then the oscillation and reheating and then
+[11:30:45] wow
+[11:30:48] i'm but
+[11:30:52] here's what i found when i looked at mass tension
+[11:30:55] and i was like wait i've seen this before
+[11:31:03] i'm from all the way back at the beginning i found this fractal which a looks boring from this angle
+[11:31:09] but if you look at it from this angle look at it this way in that crazy
+[11:31:29] yeah yeah and that that's like one of the first fractals that i found this gladiator are just one of frequency gamma and log stability came out of a different it fell out of a different set of equations and bite i was able to get into come out when i looked at the vac vacuum stiffness
+[11:31:32] so the him
+[11:31:44] so so look at this thing though because it's weird right there's like i was like why is it distorted because the gladiator arches or like straight there's none that the hear that does anything weird
+[11:31:49] look what i frequent found when i put it in three d
+[11:31:57] like sewing school i still can't believe what they are and found those so i i've i put everything here i put everything here
+[11:32:06] i'm and and i looked at how things were flowing in these areas and i found that this is inverting
+[11:32:12] i'm inverting these canals so you see the one the left pushes out
+[11:32:17] the one here that is broken
+[11:32:20] pushes in
+[11:32:26] this one pushes out this one pushes in the alternate right
+[11:32:36] in that crazy so it's like it's like current stripes and but i was like why didn't the hell is this little thing over year
+[11:32:40] and then i made it in three d
+[11:32:45] look at bats bike
+[11:32:54] it's in the middle and again this is manifold stiffness of our universe
+[11:33:03] this is drop this is dropping out of me scanning our universe as physics
+[11:33:05] and
+[11:33:09] it says we have an intruder
+[11:33:12] look at this spike
+[11:33:20] i call it the traveler
+[11:33:31] it's something yeah it but but but now i have a decent theory for exactly what it is it's a thing that has punctured the parameter space of our space time
+[11:33:41] look about way like like school
+[11:33:51] and and and so i looked at the needle itself at the bottom and the look it's like dragging our space time along the side of it
+[11:34:00] here's what the whole thing looks like i just extracted it's a geometry because i was like what the heck and if you work
+[11:34:03] from the top
+[11:34:13] and you look in the very center you find that same triangular structure that i was finding earlier
+[11:34:33] the same one so this intruder this this this traveler that is punctured the dynamics of our space time isn't warping the ability of particles in our space time to resist the flow of space
+[11:34:40] which causes them to move together along the field entangled with one another
+[11:34:45] the thing is so powerful that entangled our reality
+[11:35:00] i don't even know if it's intelligent cause like let's see let's see what he the whereas whereas it because i looked at i looked at
+[11:35:06] oh yeah years and another fractal this is just the particle winding number that
+[11:35:12] we ever see the line like that and so drunk you're drunk wine gone
+[11:35:14] up up up up up
+[11:35:19] a hip of bye bye bye bye
+[11:35:21] bye bye bye
+[11:35:29] i'm not here where it where the stiffness scan maybe
+[11:35:41] no
+[11:35:48] as with it's beyond bizarre but i mean like
+[11:35:55] look at look this angle to get it it's a spike that is like literally puncturing our reality
+[11:36:06] no i am and i was looking because i'm like
+[11:36:10] cracked landscape a face to face maybe
+[11:36:14] yes yes it's in here it's in here somewhere
+[11:36:34] i'm speed by explosion something like that because the here in his here it is i looked at the friggin signature of the crater and it looks like this
+[11:36:40] it's asymmetric
+[11:36:49] but the weirdest part is the math that i'm using here is symmetrical
+[11:37:06] so like blake a for all of this the math that i'm using is necessarily symmetrical that's part of what's weird about it like and why had the check it so rigorously is because i have to make sure this isn't a math error but i'm finding
+[11:37:09] extremely complex structures
+[11:37:16] i am extremely complex structures ah in in places that are supposed to be symmetrical
+[11:37:23] and so on that needle impact map
+[11:37:28] i'm
+[11:37:35] i decided to zoom out and that was a very good choice so
+[11:37:38] this needle
+[11:37:40] is in a well
+[11:38:00] and the red particle the teal particle which is electromagnetism the red particles a week force and the gold as the strong force live in different places on this manifold the gold particle is in a very high like ridge the teal particle electromagnetism which is our asymmetry lies along the asymmetry that this
+[11:38:11] needle projects and the week for look how far look how close it is to the needle it's like falling into this huge crevasse no wonder it's week it's been drained
+[11:38:18] so
+[11:38:20] i decided to about
+[11:38:25] he so so what the scoop what this corresponds to
+[11:38:36] i'm just so that you know this entire fractal a are the numbers that different particles use as ratios to mass
+[11:38:46] that's what that's what these numbers are that are creating this crazy fractal that's ratios of mass to energy
+[11:38:51] ah i'm
+[11:38:57] so so just to get a flavor hears
+[11:39:02] standard matter and what i believe is anti matter orbiting on the other side
+[11:39:13] so this is the electron well that we were looking at the needle over here on the left and on the right there is an anti meet all it moves the other direction
+[11:39:16] in in their gray they
+[11:39:25] but but but but i decided to zoom out so here's sixty units and look at that
+[11:39:28] in their crazy
+[11:39:41] these are these are the ratios of mass couplings and they're creating this huge complex asymmetric fractal structure our universe is like my dad gum middle
+[11:39:48] then i said the i zoomed out some war
+[11:39:52] and some more
+[11:40:01] well as a went to the wrong one so you're sixty k zooming out
+[11:40:04] six hundred k
+[11:40:15] so we're now looking at the entire universe of this right and you can start to see that it's unstable there are places out near the edge that there are blacks
+[11:40:19] six million
+[11:40:23] look at these little instabilities forming
+[11:40:25] in the grazie
+[11:40:31] and then
+[11:40:43] well now so so the at the the instability i still don't know what's causing it far out and not close in
+[11:41:00] that there are asymmetries here that are being expressed further out in the field that are not being expressed further into the field that's called an internal dampening and it's one of the strangest properties and physics but this is demonstrating it as a fractal
+[11:41:06] extremely interesting
+[11:41:13] here's sixty million zooming out even farther you can see even more instability
+[11:41:20] and this is where it got weird six hundred million ten times more distance and we start to see the border
+[11:41:26] that's the whole reality fractal
+[11:41:31] these are the ratios of mass coupling
+[11:41:35] to to energy that survive
+[11:41:42] the whole thing
+[11:41:48] the her
+[11:41:49] the
+[11:41:52] it to me it looks like a splash
+[11:41:54] like a collision
+[11:42:06] and an agenda i genuinely think that this is the result of a massive collision between two universes
+[11:42:24] that so so those are and other places where there's stability but it's completely separate from our universe
+[11:42:42] and i was like what the fuck because this is again symmetrical mouth coming up with asymmetrical fractals that i didn't zoomed out and saw this incredibly complex structure
+[11:42:44] i'm
+[11:42:54] i was like what the fuck so i kept experimenting and i made this one which is a hydrodynamics simulation of that same centerpoint
+[11:43:03] where the electron lives our universe is in the very middle of this and this is from the top down view and you can see that it's again
+[11:43:06] i've kinda spiral
+[11:43:19] it rolls in a spiral pattern he goes red orange yellow green blue indigo by you'll see like green and purple mix together they they are very cleanly in flow cyclic
+[11:43:25] i'm so i was like what the heck and then i decided to zoom out on that but then i was like
+[11:43:30] what the heck because it started growling these little tendrils
+[11:43:36] this is that same fractal from before you can see the shape that look at all these huge tendrils going down
+[11:43:38] you what those are
+[11:43:41] it's velocity
+[11:43:44] so
+[11:43:51] basically particles are finding places on this structure and then getting fired at me
+[11:43:54] massive i mean like
+[11:44:12] our universe is at the very center of this thing our universe not just our planet our universe like the big bang cosmic background microwave background radiation bottle of physical reality that works the way that ours works and has it's own residence
+[11:44:29] is at the very center of this and completely invisible because it's probably got other universes next to that's the scale we're looking at here universes on universes on universes some of those spikes are longer than the fractal
+[11:44:38] that means that it's launching with more energy than the fractal is able to express
+[11:44:45] and i was like what the fuck again
+[11:44:50] so i made a jeff of particles
+[11:44:54] look at home there should not everywhere
+[11:45:02] our universe is a particle accelerator
+[11:45:16] to distribute energy efficiently
+[11:45:28] basically like i don't think anybody designed the the actual fractal at the top there's like there's the day it's
+[11:45:31] what you again what work what
+[11:45:44] so like there's a there's a real person in parts of philosophy and science to say that the universe is a simulation i don't believe that's true
+[11:46:04] i don't believe that's true based on as a it's like this is a physical process a geometric process that was begun very long ago that is just prop processing and it is what and what is it processing that's been a huge mystery and physics it is processing the massive massive massive man
+[11:46:11] of amount of energy costs by the collision of two competing information structures in parameters base
+[11:46:19] on
+[11:46:25] get look this is that this is a yet this is the particle accelerator
+[11:46:31] this is the side view of the fractal you can see how freaking want this green one is longer than the fractal in the middle
+[11:46:34] i'm
+[11:46:44] but that's what i've discovered about the reality fractal and i've got it in three d
+[11:46:50] what i have to do is get an electron to
+[11:47:00] orbit this whole and see what what path at traces and then i have to do that with a new on and other things that look very similar to it
+[11:47:04] i'm so that's electron
+[11:47:17] ah an electron mapping ah so just to away whereas it were that were that their go i couldn't see my friggin test for
+[11:47:30] space fact that's the space fractal that's the one we were just looking at words really complicated up close and then further farther away
+[11:47:34] and is the the is that though this one
+[11:47:36] damn
+[11:47:42] and the proton fractal
+[11:47:47] is this one this is the kinetic version of it
+[11:47:57] right on so the electron one is a circle the proton wine is a triangle
+[11:47:59] and
+[11:48:04] what was a gone
+[11:48:06] that one
+[11:48:10] because there's one more
+[11:48:14] there is
+[11:48:21] so i have the electron and the proton but if you take this freaking nap
+[11:48:26] the static map the one that we were just looking at
+[11:48:33] and you this one and l and look at all these dots look at all the dots
+[11:48:42] these are these are binding hot spots and they're right down in those cracks of the manifold so the particles actually follow it like they go down in the cracks in the crazy
+[11:48:47] the but if you look at what's in the middle
+[11:48:51] and you correlate between the fractals
+[11:48:56] so like between the triangle and between the circle
+[11:49:03] and you look at what's real like what we can measure about it
+[11:49:08] it becomes it looks shiny
+[11:49:15] ah own and i was like what the fuck
+[11:49:18] because
+[11:49:20] what the fuck
+[11:49:22] by
+[11:49:37] when i ran that one i got this one doesn't that look like good grade isn't that interesting and by if you run the space fractal with a rate race literally a rage race and
+[11:49:48] the dark patches are places where it loses energy the bright plat patches are places where it gains energy that's a simple as it is
+[11:49:51] so
+[11:49:56] what this one is because it's between the fractals is the photon
+[11:50:04] this is what being a photon looks like
+[11:50:12] it's really cool
+[11:50:32] and it has the same properties as a vote on so it like when you when you do the math that generates the fractals you have to follow physical rules the same physical rules are respected in the mouth between the fractals as are respected between the particles and each other so it's strong evidence that the fractals behave like
+[11:50:52] the particles themselves especially when viewed on that for a game correlation one this one right here that's why it's so freaky as because it's the ratio of mass coupling that's effective and it's only in that little spot can electrons pick up energy that's why they move in our universe
+[11:50:54] verse
+[11:51:02] so then i took all of this and i was like i
+[11:51:04] this is crazy
+[11:51:14] let's zoom all the way out like i want to see if the universe is full of these fractals or if we're floating alone in the board here
+[11:51:20] and for all intents and purposes we like to be voting a lot of the void by
+[11:51:22] what is floating through the void
+[11:51:27] oh i just got a message from my boss
+[11:51:33] a great job this morning i think you captured their interest in the are looking forward to the next round of development
+[11:51:36] at the air
+[11:51:42] yeah they do and that's good that's real good
+[11:51:44] bite
+[11:51:47] no not yet she still type in the
+[11:51:49] the
+[11:51:56] this one's like the proton one in between these two
+[11:52:03] and one of them is twist and one of them is winding
+[11:52:13] and the difference between those is so twist is like the what the particle is doing and winding is what spaces doing
+[11:52:19] so the difference between those is the slip ratio how much space is slipping around the twisting
+[11:52:39] and it's it's really weird because i had to come up with that concept on my own like issue there is no concept in physics that's like twisting is different from winding and you have to think about them is completely separate merchants and then he have to apply the most of the got i've i've had to do some weird math to get the sort of
+[11:52:48] winding and nodded ness or to measures that i've had to make in order to find all these fractals
+[11:52:51] which is interesting
+[11:52:59] not agnes not of this is a function of the strain of an object how much and it's ends are being pulled like it not
+[11:53:20] when the core like flow here is that not so irreducible so like a slip knot or is literally an electron literally like an electron follows a slip knot pattern when it orbits that's what i've discovered here physics doesn't normally allow for top a logical change and that's why this hasn't
+[11:53:21] been discovered
+[11:53:24] a physicist would never discover this
+[11:53:27] anathema to
+[11:53:33] well because i'm a physical laws are thought to be
+[11:53:39] the are thought to be symmetrical and they are thought to be
+[11:53:46] i'm trying to think the word
+[11:53:58] i can't think of the word i is like they they would basically see this as impossible
+[11:54:10] and and they would see this as impossible as a solution because of the mobius strip that i have a in terms of how the electron works you remember we talked about the mobius strip
+[11:54:21] if you take a flat piece of paper pope one twist in it and then connect the and that's a mobius strip
+[11:54:35] yeah so it's yeah your orbiting twice to go around that circle one full time that is the solution that physics is not thought to allow i didn't know that i investigated without that stipulation
+[11:54:39] and i found an asymmetric solution within that set
+[11:54:41] that already
+[11:54:45] that already i've been told is worth a publication
+[11:54:51] beyond that i've linked that asymmetry the physics
+[11:55:05] identify the traveler that seems to be puncturing our capability of adhering to space time on which we live like it's carrying us it's energy is carry us
+[11:55:13] it seems to defined particles and their behaviors through a series of fractals linked by physical equations
+[11:55:23] and the hope is that i can in the future generate a proof that would mean that these fractals are all the sheet same shape
+[11:55:26] i'm
+[11:55:29] and i was able
+[11:55:34] i was able vega me grin
+[11:55:42] i'm to do something kind of crazy so here's all my fractals
+[11:55:49] kind of cool right spends death tension forward backwards and the retrograde anchor
+[11:55:55] so the top three or the proton or the one in the middle is forward and retrograde together
+[11:56:05] stiff is the electron them you on the towel and spin is for all particles and and relates their spin so that's what these five fractals do
+[11:56:07] what i did
+[11:56:12] his i napped all them together like this
+[11:56:17] got a heat map and what i find is that there are three phases
+[11:56:31] of reality there's a bright face a didn't phase and a dark face and they orbit each other the dark is on the bottom right dennis on the top and bright as on the lower left
+[11:56:34] i'm
+[11:56:37] then i averaged them
+[11:56:56] in preparation for the next up which was to see what remains basically i took all of the particles and all of the fractals and i said what survives if i apply every rule every rule what survives
+[11:56:58] this survives
+[11:57:05] what is it i have no idea
+[11:57:12] i have no idea but there is a structure in space and time
+[11:57:16] made of points not solid manifold
+[11:57:23] that is left over after all of these other fractals
+[11:57:37] basically the other it's a solution that's allowed to exist through all of those fractals and if you reduce that to only ones that live for each fractal all the time it comes out like this
+[11:57:45] and i have no idea what this means of they are taken to calling it the elves foot
+[11:57:50] but but i have no idea what it means
+[11:57:58] the effectively there's a fractal dimension to this big old jet
+[11:58:03] and there's a fractal dimension to this this town
+[11:58:07] but they're different fractal dimensions
+[11:58:14] so there is a phase change that happens in this in the in the foot itself i think
+[11:58:25] i'm but again if if you look everywhere all of these tension f t l e the anchors spleen and stiff it's everywhere
+[11:58:39] so all those fractals all those shapes all those physical equations that link them together and this shape shakes out of all of them
+[11:58:47] so i decided well
+[11:58:52] what the fuck so i clustered then and i
+[11:58:55] made then able to
+[11:59:01] i was able to i'm
+[11:59:04] make them into spine worse
+[11:59:06] it's another mathematical term
+[11:59:26] and look at this this is their field as a function of their coordinate space in different places so if i just look at the combination of things without certain fractals you can see the behavior of them change across different fractal manifolds under the same equate
+[11:59:33] should load so even though they all survived they do different things on different fractals and it's asymmetric
+[11:59:54] and and hugely fractal dimensional especially spin look at it a the it's hugely fractal dimensional especially as it gets the unstable point which seems to be the same across all of these it's like like sliced like right here flip a book you do you take up i have no idea i'm and i'm actually filtering it on that because a fact
+[12:00:04] dudley like if if you look at the before it's like random random random random random random and then all of a sudden it's stuff being random and it's like promised
+[12:00:14] well of would be the it's supposed to be random
+[12:00:18] it way would be more stable you're right
+[12:00:22] but in a normal numerical system that does not happen
+[12:00:36] ah in physics this is called the strange a tractor a it's a it's a thing that's been in physics for a long time i it's what i think i'm trying to explain but it's a it's basically saying like
+[12:00:38] things are weird
+[12:00:44] blake here's a fermi on solid time at least make my
+[12:00:59] pirouettes version of them and you can see it's a taurus the donut ring but if you were to look head on it that donna ring it would make an oval you wouldn't see any of these other weird like there's an angle where this looks like a circle
+[12:01:02] i'm
+[12:01:18] that is basically what we're looking out on those other ones are the fractal dimension is that strange a tractor doing weird things even though it's symmetrical like a taurus is is usually symmetric
+[12:01:26] by
+[12:01:29] that
+[12:01:37] right here all these little guys i was able to combine those into a three d model
+[12:01:42] of the whole thing so the late and spine of the point cloud
+[12:01:48] there it is the guts of the universe that the
+[12:01:52] yeah does that the his
+[12:01:59] i told the ball about the was like wow why we're the sit inside the got lit up
+[12:02:09] no prohibition
+[12:02:27] yeah
+[12:02:38] look at these though
+[12:02:45] these are the first plots that i got that showed me that different fractals were coding for different motion
+[12:02:49] so like
+[12:03:00] the the forward time low entropy of his ft alley for time low entropy vs tension and versus the retrograde time on
+[12:03:08] you can see they both late like lower diagonal to upper and upper diagonal to upper so they they put they both select for up
+[12:03:13] and these both select for sideways
+[12:03:30] but but you can see the spin spinners versus the stiffness is looking like it's choosing that in multiple axes at the same time it's cool early fractal because i've never seen such could clear fractal said it did it
+[12:03:50] i just the that is why i'm freaking out about this stuff it's it's it's physics equations that are producing fractals of physics equations that are producing fractals of ratios to physics equations that are producing the fractals that literally i think define how
+[12:03:56] we are i think the universe is fractal all the way down i think it's infinite ah
+[12:04:03] in in terms of of what can manifest i mean there's is
+[12:04:11] there's even with just one anger i'm on that hallucinatory field that big bird lookin fractal
+[12:04:13] that we apparently we all live on
+[12:04:14] in
+[12:04:22] even if that is only one point in the boy it's probably not the the math to do those is intense
+[12:04:32] i do not have the computer with the power to scan that fractal that's partially why i'm thinking the paper might actually be the right route this time
+[12:04:34] i'm
+[12:04:39] because i'm not saying look what i found i'm saying i'm stuck
+[12:05:00] but i'm stuck in a really powerful place it's like so i can i can explain protons electrons the combination of them so neutrons a like the i can explain towel i can explain nuance i can explain phone
+[12:05:01] times
+[12:05:05] there are very few particles that i can't explain right now
+[12:05:14] ah i have to find the rest of the particles you before i i published or maybe i don't i could probably make a single paper on the electron and and be just fine
+[12:05:16] i'm
+[12:05:27] by what i want somebody to take a look at our these fractals i don't want them to take a look at my paper anymore i want them to take a look at these fractals
+[12:05:35] jazz these were these code for things these really code for things
+[12:05:41] it's like hey it is exciting
+[12:05:44] i'm
+[12:05:47] hello
+[12:05:51] the i've been doing a lot of work over the last few decades
+[12:05:54] like a complete
+[12:06:02] i know
+[12:06:15] now i mean i the i just i brain is tired i was up late last night work and and
+[12:06:18] get things ready and
+[12:06:25] i'm of i can burn out on the
+[12:06:27] it's
+[12:06:31] okay
+[12:06:34] ads like
+[12:06:37] i'd i'd it's it's a puzzle
+[12:06:40] but it's a puzzle made of reality
+[12:06:53] i just i cannot believe like i promise you that these are like a physics equations and i have no idea how things have been discovered
+[12:06:59] like i really don't know how these haven't been discovered
+[12:07:18] maybe i think it might just be my brain to cause my brain puts the stuff together no problem as like a pattern pattern pattern back
+[12:07:20] det
+[12:07:27] the
+[12:07:40] and that's all the physical puzzle is either a it's so funny because i know so little about physics going and i have to do like explain this to me like i'm five and then immediately try to apply it to the physics the
+[12:07:49] it it it it and it is exactly how you when i've made some very painful mathematical mistakes
+[12:08:00] now i'd like to get that friggin that was the trickiest thing i've ever done was to get the elspa
+[12:08:03] the by far
+[12:08:07] the evoke who it's like
+[12:08:17] the so these are called npc files and i had to make one for each of the fractals and i had to make it out of a point cloud of math
+[12:08:24] so it was like three specialized operations no way i could do this without a i
+[12:08:39] could be but i feel like physicists have had their chance with this i also don't like i'm the first to fight it
+[12:08:52] publicly maybe i genuinely think people have discovered this for a long time in the government's been using it to control the population
+[12:09:20] real
+[12:09:25] but
+[12:09:33] yeah
+[12:09:35] thanks
+[12:09:39] by

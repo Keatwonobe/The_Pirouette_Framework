@@ -1,0 +1,1081 @@
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Skogsvätt_Agent> python Skogsvatt_multi_2.py
+[CartPole-v1] Ep 0001 | R_raw=  19.00 | len= 19 | loss=-0.021
+[CartPole-v1] Ep 0002 | R_raw=  13.00 | len= 13 | loss=-0.035
+[CartPole-v1] Ep 0003 | R_raw=  39.00 | len= 39 | loss=0.018
+[CartPole-v1] Ep 0004 | R_raw=  13.00 | len= 13 | loss=-0.032
+[CartPole-v1] Ep 0005 | R_raw=  26.00 | len= 26 | loss=0.009
+[CartPole-v1] Ep 0006 | R_raw=  17.00 | len= 17 | loss=-0.038
+[CartPole-v1] Ep 0007 | R_raw=  16.00 | len= 16 | loss=-0.059
+[CartPole-v1] Ep 0008 | R_raw=  13.00 | len= 13 | loss=-0.089
+[CartPole-v1] Ep 0009 | R_raw=  17.00 | len= 17 | loss=0.010
+[CartPole-v1] Ep 0010 | R_raw=  25.00 | len= 25 | loss=-0.016
+[CartPole-v1] Ep 0011 | R_raw=  27.00 | len= 27 | loss=0.041
+[CartPole-v1] Ep 0012 | R_raw=  17.00 | len= 17 | loss=-0.126
+[CartPole-v1] Ep 0013 | R_raw=  26.00 | len= 26 | loss=-0.030
+[CartPole-v1] Ep 0014 | R_raw=  52.00 | len= 52 | loss=-0.001
+[CartPole-v1] Ep 0015 | R_raw=  30.00 | len= 30 | loss=-0.034
+[CartPole-v1] Ep 0016 | R_raw=  24.00 | len= 24 | loss=0.005
+[CartPole-v1] Ep 0017 | R_raw=  35.00 | len= 35 | loss=0.028
+[CartPole-v1] Ep 0018 | R_raw=  27.00 | len= 27 | loss=-0.029
+[CartPole-v1] Ep 0019 | R_raw=  38.00 | len= 38 | loss=0.015
+[CartPole-v1] Ep 0020 | R_raw=  30.00 | len= 30 | loss=-0.017
+[CartPole-v1] Ep 0021 | R_raw=  61.00 | len= 61 | loss=0.006
+[CartPole-v1] Ep 0022 | R_raw=  52.00 | len= 52 | loss=-0.063
+[CartPole-v1] Ep 0023 | R_raw=  53.00 | len= 53 | loss=-0.006
+[CartPole-v1] Ep 0024 | R_raw=  23.00 | len= 23 | loss=0.017
+[CartPole-v1] Ep 0025 | R_raw=  20.00 | len= 20 | loss=0.105
+[CartPole-v1] Ep 0026 | R_raw=  42.00 | len= 42 | loss=-0.019
+[CartPole-v1] Ep 0027 | R_raw=  22.00 | len= 22 | loss=-0.032
+[CartPole-v1] Ep 0028 | R_raw=  25.00 | len= 25 | loss=-0.032
+[CartPole-v1] Ep 0029 | R_raw=  37.00 | len= 37 | loss=-0.035
+[CartPole-v1] Ep 0030 | R_raw=  46.00 | len= 46 | loss=0.079
+[CartPole-v1] Ep 0031 | R_raw=  35.00 | len= 35 | loss=0.043
+[CartPole-v1] Ep 0032 | R_raw=  20.00 | len= 20 | loss=-0.063
+[CartPole-v1] Ep 0033 | R_raw=  41.00 | len= 41 | loss=-0.014
+[CartPole-v1] Ep 0034 | R_raw=  45.00 | len= 45 | loss=0.003
+[CartPole-v1] Ep 0035 | R_raw=  74.00 | len= 74 | loss=0.014
+[CartPole-v1] Ep 0036 | R_raw=  42.00 | len= 42 | loss=0.008
+[CartPole-v1] Ep 0037 | R_raw=  52.00 | len= 52 | loss=-0.010
+[CartPole-v1] Ep 0038 | R_raw=  23.00 | len= 23 | loss=-0.089
+[CartPole-v1] Ep 0039 | R_raw=  28.00 | len= 28 | loss=0.037
+[CartPole-v1] Ep 0040 | R_raw=  76.00 | len= 76 | loss=-0.076
+[CartPole-v1] Ep 0041 | R_raw=  51.00 | len= 51 | loss=-0.002
+[CartPole-v1] Ep 0042 | R_raw=  49.00 | len= 49 | loss=0.007
+[CartPole-v1] Ep 0043 | R_raw=  33.00 | len= 33 | loss=0.006
+[CartPole-v1] Ep 0044 | R_raw=  27.00 | len= 27 | loss=0.109
+[CartPole-v1] Ep 0045 | R_raw=  67.00 | len= 67 | loss=0.018
+[CartPole-v1] Ep 0046 | R_raw=  52.00 | len= 52 | loss=-0.008
+[CartPole-v1] Ep 0047 | R_raw=  48.00 | len= 48 | loss=-0.064
+[CartPole-v1] Ep 0048 | R_raw=  37.00 | len= 37 | loss=0.032
+[CartPole-v1] Ep 0049 | R_raw=  45.00 | len= 45 | loss=0.000
+[CartPole-v1] Ep 0050 | R_raw= 106.00 | len=106 | loss=-0.029
+[CartPole-v1] Ep 0051 | R_raw=  47.00 | len= 47 | loss=-0.039
+[CartPole-v1] Ep 0052 | R_raw=  44.00 | len= 44 | loss=0.046
+[CartPole-v1] Ep 0053 | R_raw= 134.00 | len=134 | loss=-0.035
+[CartPole-v1] Ep 0054 | R_raw=  94.00 | len= 94 | loss=-0.026
+[CartPole-v1] Ep 0055 | R_raw=  39.00 | len= 39 | loss=-0.115
+[CartPole-v1] Ep 0056 | R_raw=  89.00 | len= 89 | loss=-0.005
+[CartPole-v1] Ep 0057 | R_raw=  64.00 | len= 64 | loss=0.027
+[CartPole-v1] Ep 0058 | R_raw=  64.00 | len= 64 | loss=-0.021
+[CartPole-v1] Ep 0059 | R_raw=  49.00 | len= 49 | loss=-0.007
+[CartPole-v1] Ep 0060 | R_raw=  35.00 | len= 35 | loss=0.078
+[CartPole-v1] Ep 0061 | R_raw=  80.00 | len= 80 | loss=0.011
+[CartPole-v1] Ep 0062 | R_raw= 123.00 | len=123 | loss=0.023
+[CartPole-v1] Ep 0063 | R_raw= 124.00 | len=124 | loss=0.004
+[CartPole-v1] Ep 0064 | R_raw=  62.00 | len= 62 | loss=0.024
+[CartPole-v1] Ep 0065 | R_raw=  47.00 | len= 47 | loss=0.024
+[CartPole-v1] Ep 0066 | R_raw=  72.00 | len= 72 | loss=0.010
+[CartPole-v1] Ep 0067 | R_raw=  65.00 | len= 65 | loss=0.037
+[CartPole-v1] Ep 0068 | R_raw=  69.00 | len= 69 | loss=0.023
+[CartPole-v1] Ep 0069 | R_raw= 148.00 | len=148 | loss=-0.015
+[CartPole-v1] Ep 0070 | R_raw=  87.00 | len= 87 | loss=0.065
+[CartPole-v1] Ep 0071 | R_raw=  72.00 | len= 72 | loss=0.004
+[CartPole-v1] Ep 0072 | R_raw=  45.00 | len= 45 | loss=-0.024
+[CartPole-v1] Ep 0073 | R_raw= 117.00 | len=117 | loss=0.048
+[CartPole-v1] Ep 0074 | R_raw= 234.00 | len=234 | loss=0.018
+[CartPole-v1] Ep 0075 | R_raw= 156.00 | len=156 | loss=0.005
+[CartPole-v1] Ep 0076 | R_raw= 213.00 | len=213 | loss=-0.019
+[CartPole-v1] Ep 0077 | R_raw= 149.00 | len=149 | loss=0.003
+[CartPole-v1] Ep 0078 | R_raw= 212.00 | len=212 | loss=-0.026
+[CartPole-v1] Ep 0079 | R_raw= 219.00 | len=219 | loss=0.030
+[CartPole-v1] Ep 0080 | R_raw= 210.00 | len=210 | loss=-0.023
+[CartPole-v1] Ep 0081 | R_raw=  23.00 | len= 23 | loss=0.082
+[CartPole-v1] Ep 0082 | R_raw= 237.00 | len=237 | loss=0.006
+[CartPole-v1] Ep 0083 | R_raw= 288.00 | len=288 | loss=-0.032
+[CartPole-v1] Ep 0084 | R_raw= 434.00 | len=434 | loss=-0.022
+[CartPole-v1] Ep 0085 | R_raw= 300.00 | len=300 | loss=0.009
+[CartPole-v1] Ep 0086 | R_raw= 115.00 | len=115 | loss=-0.005
+[CartPole-v1] Ep 0087 | R_raw=  77.00 | len= 77 | loss=-0.013
+[CartPole-v1] Ep 0088 | R_raw= 399.00 | len=399 | loss=0.003
+[CartPole-v1] Ep 0089 | R_raw= 242.00 | len=242 | loss=0.010
+[CartPole-v1] Ep 0090 | R_raw=  65.00 | len= 65 | loss=0.080
+[CartPole-v1] Ep 0091 | R_raw= 500.00 | len=500 | loss=-0.029
+[CartPole-v1] Ep 0092 | R_raw= 136.00 | len=136 | loss=0.003
+[CartPole-v1] Ep 0093 | R_raw= 158.00 | len=158 | loss=0.015
+[CartPole-v1] Ep 0094 | R_raw= 174.00 | len=174 | loss=0.016
+[CartPole-v1] Ep 0095 | R_raw= 217.00 | len=217 | loss=0.002
+[CartPole-v1] Ep 0096 | R_raw= 218.00 | len=218 | loss=0.021
+[CartPole-v1] Ep 0097 | R_raw= 254.00 | len=254 | loss=-0.032
+[CartPole-v1] Ep 0098 | R_raw= 252.00 | len=252 | loss=0.006
+[CartPole-v1] Ep 0099 | R_raw= 203.00 | len=203 | loss=-0.021
+[CartPole-v1] Ep 0100 | R_raw= 429.00 | len=429 | loss=-0.005
+[CartPole-v1] Ep 0101 | R_raw= 316.00 | len=316 | loss=-0.021
+[CartPole-v1] Ep 0102 | R_raw= 186.00 | len=186 | loss=0.012
+[CartPole-v1] Ep 0103 | R_raw= 297.00 | len=297 | loss=0.022
+[CartPole-v1] Ep 0104 | R_raw= 410.00 | len=410 | loss=0.025
+[CartPole-v1] Ep 0105 | R_raw= 218.00 | len=218 | loss=0.043
+[CartPole-v1] Ep 0106 | R_raw= 236.00 | len=236 | loss=0.021
+[CartPole-v1] Ep 0107 | R_raw= 268.00 | len=268 | loss=-0.011
+[CartPole-v1] Ep 0108 | R_raw= 134.00 | len=134 | loss=-0.111
+[CartPole-v1] Ep 0109 | R_raw= 467.00 | len=467 | loss=-0.015
+[CartPole-v1] Ep 0110 | R_raw= 196.00 | len=196 | loss=0.010
+[CartPole-v1] Ep 0111 | R_raw= 235.00 | len=235 | loss=0.000
+[CartPole-v1] Ep 0112 | R_raw= 174.00 | len=174 | loss=-0.010
+[CartPole-v1] Ep 0113 | R_raw= 155.00 | len=155 | loss=0.008
+[CartPole-v1] Ep 0114 | R_raw= 177.00 | len=177 | loss=0.049
+[CartPole-v1] Ep 0115 | R_raw= 145.00 | len=145 | loss=0.019
+[CartPole-v1] Ep 0116 | R_raw= 225.00 | len=225 | loss=-0.023
+[CartPole-v1] Ep 0117 | R_raw= 178.00 | len=178 | loss=-0.010
+[CartPole-v1] Ep 0118 | R_raw= 137.00 | len=137 | loss=-0.018
+[CartPole-v1] Ep 0119 | R_raw= 171.00 | len=171 | loss=0.013
+[CartPole-v1] Ep 0120 | R_raw= 122.00 | len=122 | loss=0.022
+[CartPole-v1] Ep 0121 | R_raw=  97.00 | len= 97 | loss=0.003
+[CartPole-v1] Ep 0122 | R_raw=  97.00 | len= 97 | loss=-0.001
+[CartPole-v1] Ep 0123 | R_raw= 127.00 | len=127 | loss=-0.019
+[CartPole-v1] Ep 0124 | R_raw= 108.00 | len=108 | loss=-0.065
+[CartPole-v1] Ep 0125 | R_raw= 155.00 | len=155 | loss=0.046
+[CartPole-v1] Ep 0126 | R_raw= 143.00 | len=143 | loss=0.007
+[CartPole-v1] Ep 0127 | R_raw= 161.00 | len=161 | loss=0.014
+[CartPole-v1] Ep 0128 | R_raw= 240.00 | len=240 | loss=-0.022
+[CartPole-v1] Ep 0129 | R_raw= 164.00 | len=164 | loss=0.002
+[CartPole-v1] Ep 0130 | R_raw= 156.00 | len=156 | loss=0.007
+[CartPole-v1] Ep 0131 | R_raw= 118.00 | len=118 | loss=0.005
+[CartPole-v1] Ep 0132 | R_raw= 139.00 | len=139 | loss=0.035
+[CartPole-v1] Ep 0133 | R_raw= 120.00 | len=120 | loss=0.045
+[CartPole-v1] Ep 0134 | R_raw= 147.00 | len=147 | loss=-0.007
+[CartPole-v1] Ep 0135 | R_raw= 134.00 | len=134 | loss=-0.016
+[CartPole-v1] Ep 0136 | R_raw= 150.00 | len=150 | loss=-0.017
+[CartPole-v1] Ep 0137 | R_raw= 105.00 | len=105 | loss=-0.111
+[CartPole-v1] Ep 0138 | R_raw= 173.00 | len=173 | loss=0.021
+[CartPole-v1] Ep 0139 | R_raw= 133.00 | len=133 | loss=0.068
+[CartPole-v1] Ep 0140 | R_raw= 164.00 | len=164 | loss=0.019
+[CartPole-v1] Ep 0141 | R_raw= 154.00 | len=154 | loss=-0.044
+[CartPole-v1] Ep 0142 | R_raw= 196.00 | len=196 | loss=-0.021
+[CartPole-v1] Ep 0143 | R_raw= 160.00 | len=160 | loss=-0.056
+[CartPole-v1] Ep 0144 | R_raw= 217.00 | len=217 | loss=0.023
+[CartPole-v1] Ep 0145 | R_raw= 191.00 | len=191 | loss=-0.040
+[CartPole-v1] Ep 0146 | R_raw= 241.00 | len=241 | loss=0.007
+[CartPole-v1] Ep 0147 | R_raw= 270.00 | len=270 | loss=0.002
+[CartPole-v1] Ep 0148 | R_raw= 255.00 | len=255 | loss=0.041
+[CartPole-v1] Ep 0149 | R_raw= 220.00 | len=220 | loss=0.019
+[CartPole-v1] Ep 0150 | R_raw= 269.00 | len=269 | loss=0.003
+[CartPole-v1] Ep 0151 | R_raw= 327.00 | len=327 | loss=-0.030
+[CartPole-v1] Ep 0152 | R_raw= 223.00 | len=223 | loss=-0.049
+[CartPole-v1] Ep 0153 | R_raw= 248.00 | len=248 | loss=0.023
+[CartPole-v1] Ep 0154 | R_raw= 264.00 | len=264 | loss=0.008
+[CartPole-v1] Ep 0155 | R_raw= 276.00 | len=276 | loss=-0.033
+[CartPole-v1] Ep 0156 | R_raw= 211.00 | len=211 | loss=0.004
+[CartPole-v1] Ep 0157 | R_raw= 263.00 | len=263 | loss=0.038
+[CartPole-v1] Ep 0158 | R_raw= 252.00 | len=252 | loss=-0.024
+[CartPole-v1] Ep 0159 | R_raw= 271.00 | len=271 | loss=0.046
+[CartPole-v1] Ep 0160 | R_raw= 288.00 | len=288 | loss=0.001
+[CartPole-v1] Ep 0161 | R_raw= 357.00 | len=357 | loss=0.015
+[CartPole-v1] Ep 0162 | R_raw= 499.00 | len=499 | loss=-0.011
+[CartPole-v1] Ep 0163 | R_raw= 500.00 | len=500 | loss=0.002
+[CartPole-v1] Ep 0164 | R_raw= 500.00 | len=500 | loss=0.010
+>>> Quota snapshot 0 saved to ./skogsvatt_quota\CartPole-v1_quota_0_ep0164_R500.pth
+[CartPole-v1] Ep 0165 | R_raw= 500.00 | len=500 | loss=-0.015
+[CartPole-v1] Ep 0166 | R_raw= 500.00 | len=500 | loss=-0.016
+[CartPole-v1] Ep 0167 | R_raw= 500.00 | len=500 | loss=0.004
+>>> Quota snapshot 1 saved to ./skogsvatt_quota\CartPole-v1_quota_1_ep0167_R500.pth
+[CartPole-v1] Ep 0168 | R_raw= 500.00 | len=500 | loss=0.002
+[CartPole-v1] Ep 0169 | R_raw= 500.00 | len=500 | loss=0.026
+[CartPole-v1] Ep 0170 | R_raw= 500.00 | len=500 | loss=-0.022
+>>> Quota snapshot 2 saved to ./skogsvatt_quota\CartPole-v1_quota_2_ep0170_R500.pth
+[CartPole-v1] Ep 0171 | R_raw= 500.00 | len=500 | loss=0.011
+[CartPole-v1] Ep 0172 | R_raw= 500.00 | len=500 | loss=-0.056
+[CartPole-v1] Ep 0173 | R_raw= 500.00 | len=500 | loss=0.001
+>>> Quota snapshot 3 saved to ./skogsvatt_quota\CartPole-v1_quota_3_ep0173_R500.pth
+[CartPole-v1] Ep 0174 | R_raw= 500.00 | len=500 | loss=0.018
+[CartPole-v1] Ep 0175 | R_raw= 500.00 | len=500 | loss=0.006
+[CartPole-v1] Ep 0176 | R_raw= 500.00 | len=500 | loss=-0.000
+>>> Quota snapshot 4 saved to ./skogsvatt_quota\CartPole-v1_quota_4_ep0176_R500.pth
+>>> Quota filled, stopping training.
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Skogsvätt_Agent> python Skogsvatt_multi_2.py
+[Pendulum-v1] Ep 0001 | R_raw=-1324.59 | len=200 | loss=0.025
+[Pendulum-v1] Ep 0002 | R_raw=-1173.65 | len=200 | loss=0.129
+[Pendulum-v1] Ep 0003 | R_raw=-978.97 | len=200 | loss=-0.069
+[Pendulum-v1] Ep 0004 | R_raw=-1084.52 | len=200 | loss=-0.007
+[Pendulum-v1] Ep 0005 | R_raw=-1208.66 | len=200 | loss=0.087
+[Pendulum-v1] Ep 0006 | R_raw=-909.44 | len=200 | loss=0.029
+[Pendulum-v1] Ep 0007 | R_raw=-1140.05 | len=200 | loss=0.026
+[Pendulum-v1] Ep 0008 | R_raw=-1399.63 | len=200 | loss=-0.019
+[Pendulum-v1] Ep 0009 | R_raw=-1052.29 | len=200 | loss=-0.207
+[Pendulum-v1] Ep 0010 | R_raw=-1172.53 | len=200 | loss=-0.128
+[Pendulum-v1] Ep 0011 | R_raw=-1252.33 | len=200 | loss=-0.024
+[Pendulum-v1] Ep 0012 | R_raw=-1265.67 | len=200 | loss=-0.140
+[Pendulum-v1] Ep 0013 | R_raw=-1163.91 | len=200 | loss=-0.159
+[Pendulum-v1] Ep 0014 | R_raw=-1285.03 | len=200 | loss=-0.220
+[Pendulum-v1] Ep 0015 | R_raw=-1202.10 | len=200 | loss=-0.241
+[Pendulum-v1] Ep 0016 | R_raw=-1169.16 | len=200 | loss=0.009
+[Pendulum-v1] Ep 0017 | R_raw=-1130.80 | len=200 | loss=-0.017
+[Pendulum-v1] Ep 0018 | R_raw=-1327.92 | len=200 | loss=-0.195
+[Pendulum-v1] Ep 0019 | R_raw=-1276.54 | len=200 | loss=-0.225
+[Pendulum-v1] Ep 0020 | R_raw=-1297.04 | len=200 | loss=-0.059
+[Pendulum-v1] Ep 0021 | R_raw=-1363.13 | len=200 | loss=-0.018
+[Pendulum-v1] Ep 0022 | R_raw=-1345.76 | len=200 | loss=-0.076
+[Pendulum-v1] Ep 0023 | R_raw=-1370.03 | len=200 | loss=0.135
+[Pendulum-v1] Ep 0024 | R_raw=-1182.70 | len=200 | loss=-0.086
+[Pendulum-v1] Ep 0025 | R_raw=-1159.16 | len=200 | loss=-0.086
+[Pendulum-v1] Ep 0026 | R_raw=-1201.72 | len=200 | loss=0.042
+[Pendulum-v1] Ep 0027 | R_raw=-1388.79 | len=200 | loss=0.026
+[Pendulum-v1] Ep 0028 | R_raw=-1156.65 | len=200 | loss=-0.106
+[Pendulum-v1] Ep 0029 | R_raw=-1192.14 | len=200 | loss=0.063
+[Pendulum-v1] Ep 0030 | R_raw=-1376.45 | len=200 | loss=-0.071
+[Pendulum-v1] Ep 0031 | R_raw=-1321.89 | len=200 | loss=-0.014
+[Pendulum-v1] Ep 0032 | R_raw=-1375.42 | len=200 | loss=0.047
+[Pendulum-v1] Ep 0033 | R_raw=-1322.80 | len=200 | loss=0.095
+[Pendulum-v1] Ep 0034 | R_raw=-1126.41 | len=200 | loss=-0.133
+[Pendulum-v1] Ep 0035 | R_raw=-938.55 | len=200 | loss=0.052
+[Pendulum-v1] Ep 0036 | R_raw=-1139.23 | len=200 | loss=-0.067
+[Pendulum-v1] Ep 0037 | R_raw=-1205.60 | len=200 | loss=-0.127
+[Pendulum-v1] Ep 0038 | R_raw=-1145.30 | len=200 | loss=-0.053
+[Pendulum-v1] Ep 0039 | R_raw=-1239.67 | len=200 | loss=-0.101
+[Pendulum-v1] Ep 0040 | R_raw=-1309.43 | len=200 | loss=-0.177
+[Pendulum-v1] Ep 0041 | R_raw=-1028.46 | len=200 | loss=0.013
+[Pendulum-v1] Ep 0042 | R_raw=-1060.55 | len=200 | loss=-0.175
+[Pendulum-v1] Ep 0043 | R_raw=-1101.76 | len=200 | loss=0.041
+[Pendulum-v1] Ep 0044 | R_raw=-1188.10 | len=200 | loss=-0.107
+[Pendulum-v1] Ep 0045 | R_raw=-1279.03 | len=200 | loss=-0.062
+[Pendulum-v1] Ep 0046 | R_raw=-1274.87 | len=200 | loss=-0.237
+[Pendulum-v1] Ep 0047 | R_raw=-1265.07 | len=200 | loss=-0.288
+[Pendulum-v1] Ep 0048 | R_raw=-1286.64 | len=200 | loss=-0.167
+[Pendulum-v1] Ep 0049 | R_raw=-1085.92 | len=200 | loss=0.055
+[Pendulum-v1] Ep 0050 | R_raw=-1221.89 | len=200 | loss=-0.043
+[Pendulum-v1] Ep 0051 | R_raw=-1321.55 | len=200 | loss=0.013
+[Pendulum-v1] Ep 0052 | R_raw=-1151.49 | len=200 | loss=-0.223
+[Pendulum-v1] Ep 0053 | R_raw=-1359.39 | len=200 | loss=0.045
+[Pendulum-v1] Ep 0054 | R_raw=-1324.52 | len=200 | loss=-0.144
+[Pendulum-v1] Ep 0055 | R_raw=-1107.91 | len=200 | loss=-0.040
+[Pendulum-v1] Ep 0056 | R_raw=-1230.71 | len=200 | loss=-0.070
+[Pendulum-v1] Ep 0057 | R_raw=-1143.46 | len=200 | loss=0.095
+[Pendulum-v1] Ep 0058 | R_raw=-1207.61 | len=200 | loss=-0.241
+[Pendulum-v1] Ep 0059 | R_raw=-1054.76 | len=200 | loss=0.126
+[Pendulum-v1] Ep 0060 | R_raw=-1225.71 | len=200 | loss=-0.153
+[Pendulum-v1] Ep 0061 | R_raw=-1240.00 | len=200 | loss=-0.202
+[Pendulum-v1] Ep 0062 | R_raw=-1386.25 | len=200 | loss=-0.040
+[Pendulum-v1] Ep 0063 | R_raw=-1357.58 | len=200 | loss=-0.075
+[Pendulum-v1] Ep 0064 | R_raw=-1252.36 | len=200 | loss=-0.337
+[Pendulum-v1] Ep 0065 | R_raw=-1092.73 | len=200 | loss=-0.356
+[Pendulum-v1] Ep 0066 | R_raw=-1061.21 | len=200 | loss=-0.459
+[Pendulum-v1] Ep 0067 | R_raw=-1355.89 | len=200 | loss=0.054
+[Pendulum-v1] Ep 0068 | R_raw=-1342.13 | len=200 | loss=-0.407
+[Pendulum-v1] Ep 0069 | R_raw=-1156.20 | len=200 | loss=-0.329
+[Pendulum-v1] Ep 0070 | R_raw=-988.67 | len=200 | loss=-0.135
+[Pendulum-v1] Ep 0071 | R_raw=-1209.10 | len=200 | loss=-0.140
+[Pendulum-v1] Ep 0072 | R_raw=-1223.87 | len=200 | loss=-0.136
+[Pendulum-v1] Ep 0073 | R_raw=-1125.04 | len=200 | loss=-0.236
+[Pendulum-v1] Ep 0074 | R_raw=-1254.97 | len=200 | loss=-0.259
+[Pendulum-v1] Ep 0075 | R_raw=-1210.75 | len=200 | loss=-0.141
+[Pendulum-v1] Ep 0076 | R_raw=-1405.54 | len=200 | loss=-0.118
+[Pendulum-v1] Ep 0077 | R_raw=-1640.53 | len=200 | loss=-0.045
+[Pendulum-v1] Ep 0078 | R_raw=-1195.20 | len=200 | loss=-0.163
+[Pendulum-v1] Ep 0079 | R_raw=-1085.03 | len=200 | loss=-0.424
+[Pendulum-v1] Ep 0080 | R_raw=-1307.62 | len=200 | loss=-0.154
+[Pendulum-v1] Ep 0081 | R_raw=-1284.55 | len=200 | loss=-0.183
+[Pendulum-v1] Ep 0082 | R_raw=-1380.40 | len=200 | loss=-0.108
+[Pendulum-v1] Ep 0083 | R_raw=-1096.61 | len=200 | loss=0.096
+[Pendulum-v1] Ep 0084 | R_raw=-1463.83 | len=200 | loss=-0.090
+[Pendulum-v1] Ep 0085 | R_raw=-1231.86 | len=200 | loss=-0.229
+[Pendulum-v1] Ep 0086 | R_raw=-1177.35 | len=200 | loss=-0.117
+[Pendulum-v1] Ep 0087 | R_raw=-1103.88 | len=200 | loss=-0.077
+[Pendulum-v1] Ep 0088 | R_raw=-1336.75 | len=200 | loss=-0.160
+[Pendulum-v1] Ep 0089 | R_raw=-1254.05 | len=200 | loss=0.031
+[Pendulum-v1] Ep 0090 | R_raw=-1263.44 | len=200 | loss=-0.192
+[Pendulum-v1] Ep 0091 | R_raw=-1189.81 | len=200 | loss=-0.033
+[Pendulum-v1] Ep 0092 | R_raw=-1342.66 | len=200 | loss=-0.037
+[Pendulum-v1] Ep 0093 | R_raw=-1181.41 | len=200 | loss=-0.184
+[Pendulum-v1] Ep 0094 | R_raw=-1171.47 | len=200 | loss=-0.087
+[Pendulum-v1] Ep 0095 | R_raw=-1211.83 | len=200 | loss=0.030
+[Pendulum-v1] Ep 0096 | R_raw=-960.11 | len=200 | loss=-0.065
+[Pendulum-v1] Ep 0097 | R_raw=-1052.59 | len=200 | loss=-0.020
+[Pendulum-v1] Ep 0098 | R_raw=-1236.52 | len=200 | loss=-0.098
+[Pendulum-v1] Ep 0099 | R_raw=-1039.16 | len=200 | loss=-0.087
+[Pendulum-v1] Ep 0100 | R_raw=-1233.24 | len=200 | loss=0.033
+[Pendulum-v1] Ep 0101 | R_raw=-1162.91 | len=200 | loss=0.081
+[Pendulum-v1] Ep 0102 | R_raw=-1043.58 | len=200 | loss=0.021
+[Pendulum-v1] Ep 0103 | R_raw=-921.29 | len=200 | loss=-0.000
+[Pendulum-v1] Ep 0104 | R_raw=-1215.26 | len=200 | loss=0.068
+[Pendulum-v1] Ep 0105 | R_raw=-1011.14 | len=200 | loss=-0.083
+[Pendulum-v1] Ep 0106 | R_raw=-1532.71 | len=200 | loss=0.029
+[Pendulum-v1] Ep 0107 | R_raw=-1515.25 | len=200 | loss=-0.034
+[Pendulum-v1] Ep 0108 | R_raw=-1168.53 | len=200 | loss=-0.039
+[Pendulum-v1] Ep 0109 | R_raw=-1226.70 | len=200 | loss=-0.090
+[Pendulum-v1] Ep 0110 | R_raw=-1224.88 | len=200 | loss=-0.025
+[Pendulum-v1] Ep 0111 | R_raw=-1202.93 | len=200 | loss=-0.082
+[Pendulum-v1] Ep 0112 | R_raw=-1357.99 | len=200 | loss=-0.150
+[Pendulum-v1] Ep 0113 | R_raw=-1167.04 | len=200 | loss=-0.100
+[Pendulum-v1] Ep 0114 | R_raw=-1209.18 | len=200 | loss=-0.102
+[Pendulum-v1] Ep 0115 | R_raw=-1244.83 | len=200 | loss=-0.006
+[Pendulum-v1] Ep 0116 | R_raw=-1353.42 | len=200 | loss=-0.043
+[Pendulum-v1] Ep 0117 | R_raw=-1151.66 | len=200 | loss=-0.148
+[Pendulum-v1] Ep 0118 | R_raw=-1395.21 | len=200 | loss=-0.196
+[Pendulum-v1] Ep 0119 | R_raw=-1263.80 | len=200 | loss=-0.110
+[Pendulum-v1] Ep 0120 | R_raw=-1296.36 | len=200 | loss=-0.256
+[Pendulum-v1] Ep 0121 | R_raw=-1318.53 | len=200 | loss=-0.029
+[Pendulum-v1] Ep 0122 | R_raw=-1094.36 | len=200 | loss=-0.186
+[Pendulum-v1] Ep 0123 | R_raw=-1256.65 | len=200 | loss=-0.324
+[Pendulum-v1] Ep 0124 | R_raw=-1252.60 | len=200 | loss=0.057
+[Pendulum-v1] Ep 0125 | R_raw=-1266.29 | len=200 | loss=0.164
+[Pendulum-v1] Ep 0126 | R_raw=-1325.83 | len=200 | loss=-0.080
+[Pendulum-v1] Ep 0127 | R_raw=-1458.62 | len=200 | loss=-0.108
+[Pendulum-v1] Ep 0128 | R_raw=-1315.54 | len=200 | loss=-0.031
+[Pendulum-v1] Ep 0129 | R_raw=-1365.78 | len=200 | loss=-0.073
+[Pendulum-v1] Ep 0130 | R_raw=-1367.15 | len=200 | loss=-0.007
+[Pendulum-v1] Ep 0131 | R_raw=-1328.71 | len=200 | loss=0.001
+[Pendulum-v1] Ep 0132 | R_raw=-1216.04 | len=200 | loss=-0.334
+[Pendulum-v1] Ep 0133 | R_raw=-1180.90 | len=200 | loss=-0.153
+[Pendulum-v1] Ep 0134 | R_raw=-1486.17 | len=200 | loss=-0.080
+[Pendulum-v1] Ep 0135 | R_raw=-1178.90 | len=200 | loss=0.105
+[Pendulum-v1] Ep 0136 | R_raw=-1719.68 | len=200 | loss=0.020
+[Pendulum-v1] Ep 0137 | R_raw=-1127.38 | len=200 | loss=-0.284
+[Pendulum-v1] Ep 0138 | R_raw=-1261.11 | len=200 | loss=-0.037
+[Pendulum-v1] Ep 0139 | R_raw=-1339.00 | len=200 | loss=-0.164
+[Pendulum-v1] Ep 0140 | R_raw=-1201.05 | len=200 | loss=0.033
+[Pendulum-v1] Ep 0141 | R_raw=-1337.22 | len=200 | loss=-0.226
+[Pendulum-v1] Ep 0142 | R_raw=-1620.38 | len=200 | loss=-0.065
+[Pendulum-v1] Ep 0143 | R_raw=-1171.92 | len=200 | loss=-0.000
+[Pendulum-v1] Ep 0144 | R_raw=-1558.55 | len=200 | loss=-0.034
+[Pendulum-v1] Ep 0145 | R_raw=-1359.72 | len=200 | loss=0.017
+[Pendulum-v1] Ep 0146 | R_raw=-1508.64 | len=200 | loss=0.049
+[Pendulum-v1] Ep 0147 | R_raw=-1500.84 | len=200 | loss=-0.148
+[Pendulum-v1] Ep 0148 | R_raw=-1286.86 | len=200 | loss=-0.015
+[Pendulum-v1] Ep 0149 | R_raw=-1367.48 | len=200 | loss=-0.084
+[Pendulum-v1] Ep 0150 | R_raw=-1421.14 | len=200 | loss=-0.011
+[Pendulum-v1] Ep 0151 | R_raw=-1119.01 | len=200 | loss=-0.160
+[Pendulum-v1] Ep 0152 | R_raw=-1276.73 | len=200 | loss=-0.181
+[Pendulum-v1] Ep 0153 | R_raw=-1054.41 | len=200 | loss=0.048
+[Pendulum-v1] Ep 0154 | R_raw=-1302.80 | len=200 | loss=0.042
+[Pendulum-v1] Ep 0155 | R_raw=-1658.71 | len=200 | loss=0.049
+[Pendulum-v1] Ep 0156 | R_raw=-1368.20 | len=200 | loss=0.039
+[Pendulum-v1] Ep 0157 | R_raw=-1360.06 | len=200 | loss=-0.108
+[Pendulum-v1] Ep 0158 | R_raw=-1622.32 | len=200 | loss=-0.099
+[Pendulum-v1] Ep 0159 | R_raw=-1332.88 | len=200 | loss=0.003
+[Pendulum-v1] Ep 0160 | R_raw=-1333.17 | len=200 | loss=0.026
+[Pendulum-v1] Ep 0161 | R_raw=-1350.85 | len=200 | loss=-0.154
+[Pendulum-v1] Ep 0162 | R_raw=-1709.44 | len=200 | loss=-0.036
+[Pendulum-v1] Ep 0163 | R_raw=-1334.34 | len=200 | loss=-0.143
+[Pendulum-v1] Ep 0164 | R_raw=-1328.65 | len=200 | loss=-0.218
+[Pendulum-v1] Ep 0165 | R_raw=-1020.04 | len=200 | loss=-0.370
+[Pendulum-v1] Ep 0166 | R_raw=-1356.82 | len=200 | loss=-0.219
+[Pendulum-v1] Ep 0167 | R_raw=-1571.00 | len=200 | loss=0.006
+[Pendulum-v1] Ep 0168 | R_raw=-1344.98 | len=200 | loss=-0.152
+[Pendulum-v1] Ep 0169 | R_raw=-1368.71 | len=200 | loss=-0.026
+[Pendulum-v1] Ep 0170 | R_raw=-1349.41 | len=200 | loss=-0.216
+[Pendulum-v1] Ep 0171 | R_raw=-1240.68 | len=200 | loss=-0.144
+[Pendulum-v1] Ep 0172 | R_raw=-1379.44 | len=200 | loss=0.049
+[Pendulum-v1] Ep 0173 | R_raw=-1244.19 | len=200 | loss=-0.380
+[Pendulum-v1] Ep 0174 | R_raw=-1319.30 | len=200 | loss=-0.225
+[Pendulum-v1] Ep 0175 | R_raw=-1381.32 | len=200 | loss=-0.176
+[Pendulum-v1] Ep 0176 | R_raw=-1366.93 | len=200 | loss=-0.185
+[Pendulum-v1] Ep 0177 | R_raw=-1195.45 | len=200 | loss=-0.058
+[Pendulum-v1] Ep 0178 | R_raw=-1230.90 | len=200 | loss=-0.202
+[Pendulum-v1] Ep 0179 | R_raw=-1220.42 | len=200 | loss=-0.065
+[Pendulum-v1] Ep 0180 | R_raw=-1348.21 | len=200 | loss=-0.261
+[Pendulum-v1] Ep 0181 | R_raw=-1181.40 | len=200 | loss=-0.445
+[Pendulum-v1] Ep 0182 | R_raw=-1342.49 | len=200 | loss=-0.128
+[Pendulum-v1] Ep 0183 | R_raw=-1316.44 | len=200 | loss=-0.322
+[Pendulum-v1] Ep 0184 | R_raw=-1162.14 | len=200 | loss=-0.354
+[Pendulum-v1] Ep 0185 | R_raw=-1232.36 | len=200 | loss=-0.215
+[Pendulum-v1] Ep 0186 | R_raw=-1334.03 | len=200 | loss=0.032
+[Pendulum-v1] Ep 0187 | R_raw=-1371.39 | len=200 | loss=-0.104
+[Pendulum-v1] Ep 0188 | R_raw=-1216.61 | len=200 | loss=-0.320
+[Pendulum-v1] Ep 0189 | R_raw=-1196.34 | len=200 | loss=-0.290
+[Pendulum-v1] Ep 0190 | R_raw=-1344.04 | len=200 | loss=-0.177
+[Pendulum-v1] Ep 0191 | R_raw=-1640.19 | len=200 | loss=-0.096
+[Pendulum-v1] Ep 0192 | R_raw=-1335.51 | len=200 | loss=-0.254
+[Pendulum-v1] Ep 0193 | R_raw=-1276.33 | len=200 | loss=-0.235
+[Pendulum-v1] Ep 0194 | R_raw=-1296.53 | len=200 | loss=-0.058
+[Pendulum-v1] Ep 0195 | R_raw=-1348.59 | len=200 | loss=-0.021
+[Pendulum-v1] Ep 0196 | R_raw=-1245.62 | len=200 | loss=-0.158
+[Pendulum-v1] Ep 0197 | R_raw=-1153.59 | len=200 | loss=-0.562
+[Pendulum-v1] Ep 0198 | R_raw=-1254.32 | len=200 | loss=-0.219
+[Pendulum-v1] Ep 0199 | R_raw=-1379.52 | len=200 | loss=-0.063
+[Pendulum-v1] Ep 0200 | R_raw=-1349.33 | len=200 | loss=-0.127
+[Pendulum-v1] Ep 0201 | R_raw=-1142.63 | len=200 | loss=-0.288
+[Pendulum-v1] Ep 0202 | R_raw=-1306.68 | len=200 | loss=-0.275
+[Pendulum-v1] Ep 0203 | R_raw=-1240.20 | len=200 | loss=-0.379
+[Pendulum-v1] Ep 0204 | R_raw=-1376.47 | len=200 | loss=-0.392
+[Pendulum-v1] Ep 0205 | R_raw=-1321.11 | len=200 | loss=-0.260
+[Pendulum-v1] Ep 0206 | R_raw=-1352.96 | len=200 | loss=-0.083
+[Pendulum-v1] Ep 0207 | R_raw=-1383.19 | len=200 | loss=0.030
+[Pendulum-v1] Ep 0208 | R_raw=-1301.15 | len=200 | loss=-0.137
+[Pendulum-v1] Ep 0209 | R_raw=-1223.56 | len=200 | loss=-0.171
+[Pendulum-v1] Ep 0210 | R_raw=-1331.03 | len=200 | loss=-0.190
+[Pendulum-v1] Ep 0211 | R_raw=-1194.99 | len=200 | loss=-0.277
+[Pendulum-v1] Ep 0212 | R_raw=-1630.63 | len=200 | loss=0.057
+[Pendulum-v1] Ep 0213 | R_raw=-1370.68 | len=200 | loss=-0.015
+[Pendulum-v1] Ep 0214 | R_raw=-1328.04 | len=200 | loss=-0.027
+[Pendulum-v1] Ep 0215 | R_raw=-1046.91 | len=200 | loss=-0.023
+[Pendulum-v1] Ep 0216 | R_raw=-1121.26 | len=200 | loss=-0.380
+[Pendulum-v1] Ep 0217 | R_raw=-1588.40 | len=200 | loss=-0.019
+[Pendulum-v1] Ep 0218 | R_raw=-1434.77 | len=200 | loss=-0.001
+[Pendulum-v1] Ep 0219 | R_raw=-1221.16 | len=200 | loss=-0.264
+[Pendulum-v1] Ep 0220 | R_raw=-1100.23 | len=200 | loss=-0.118
+[Pendulum-v1] Ep 0221 | R_raw=-1195.47 | len=200 | loss=-0.037
+[Pendulum-v1] Ep 0222 | R_raw=-1343.91 | len=200 | loss=-0.273
+[Pendulum-v1] Ep 0223 | R_raw=-1246.80 | len=200 | loss=-0.392
+[Pendulum-v1] Ep 0224 | R_raw=-1328.05 | len=200 | loss=-0.172
+[Pendulum-v1] Ep 0225 | R_raw=-1284.43 | len=200 | loss=-0.373
+[Pendulum-v1] Ep 0226 | R_raw=-1376.72 | len=200 | loss=-0.044
+[Pendulum-v1] Ep 0227 | R_raw=-1372.69 | len=200 | loss=-0.043
+[Pendulum-v1] Ep 0228 | R_raw=-1256.85 | len=200 | loss=-0.215
+[Pendulum-v1] Ep 0229 | R_raw=-1340.59 | len=200 | loss=-0.403
+[Pendulum-v1] Ep 0230 | R_raw=-1352.66 | len=200 | loss=-0.114
+[Pendulum-v1] Ep 0231 | R_raw=-1232.92 | len=200 | loss=-0.344
+[Pendulum-v1] Ep 0232 | R_raw=-1198.84 | len=200 | loss=-0.408
+[Pendulum-v1] Ep 0233 | R_raw=-1326.12 | len=200 | loss=-0.044
+[Pendulum-v1] Ep 0234 | R_raw=-1336.01 | len=200 | loss=-0.245
+[Pendulum-v1] Ep 0235 | R_raw=-1335.14 | len=200 | loss=-0.061
+[Pendulum-v1] Ep 0236 | R_raw=-1298.98 | len=200 | loss=-0.021
+[Pendulum-v1] Ep 0237 | R_raw=-1382.47 | len=200 | loss=-0.065
+[Pendulum-v1] Ep 0238 | R_raw=-1154.58 | len=200 | loss=-0.366
+[Pendulum-v1] Ep 0239 | R_raw=-1403.16 | len=200 | loss=-0.101
+[Pendulum-v1] Ep 0240 | R_raw=-1251.25 | len=200 | loss=-0.028
+[Pendulum-v1] Ep 0241 | R_raw=-1160.96 | len=200 | loss=-0.215
+[Pendulum-v1] Ep 0242 | R_raw=-1340.70 | len=200 | loss=-0.173
+[Pendulum-v1] Ep 0243 | R_raw=-1585.42 | len=200 | loss=-0.067
+[Pendulum-v1] Ep 0244 | R_raw=-1080.20 | len=200 | loss=-0.308
+[Pendulum-v1] Ep 0245 | R_raw=-1307.79 | len=200 | loss=-0.016
+[Pendulum-v1] Ep 0246 | R_raw=-1358.43 | len=200 | loss=-0.076
+[Pendulum-v1] Ep 0247 | R_raw=-1355.67 | len=200 | loss=-0.142
+[Pendulum-v1] Ep 0248 | R_raw=-1655.41 | len=200 | loss=0.014
+[Pendulum-v1] Ep 0249 | R_raw=-1701.92 | len=200 | loss=-0.098
+[Pendulum-v1] Ep 0250 | R_raw=-1207.45 | len=200 | loss=-0.041
+[Pendulum-v1] Ep 0251 | R_raw=-1551.13 | len=200 | loss=-0.004
+[Pendulum-v1] Ep 0252 | R_raw=-1143.73 | len=200 | loss=-0.244
+[Pendulum-v1] Ep 0253 | R_raw=-1234.42 | len=200 | loss=-0.171
+[Pendulum-v1] Ep 0254 | R_raw=-1523.03 | len=200 | loss=-0.068
+[Pendulum-v1] Ep 0255 | R_raw=-1379.33 | len=200 | loss=-0.030
+[Pendulum-v1] Ep 0256 | R_raw=-1376.68 | len=200 | loss=-0.079
+[Pendulum-v1] Ep 0257 | R_raw=-1274.21 | len=200 | loss=-0.247
+[Pendulum-v1] Ep 0258 | R_raw=-1351.94 | len=200 | loss=-0.132
+[Pendulum-v1] Ep 0259 | R_raw=-1371.65 | len=200 | loss=-0.091
+[Pendulum-v1] Ep 0260 | R_raw=-1254.81 | len=200 | loss=-0.268
+[Pendulum-v1] Ep 0261 | R_raw=-1344.16 | len=200 | loss=-0.118
+[Pendulum-v1] Ep 0262 | R_raw=-1384.70 | len=200 | loss=-0.048
+[Pendulum-v1] Ep 0263 | R_raw=-1334.94 | len=200 | loss=-0.075
+[Pendulum-v1] Ep 0264 | R_raw=-1348.68 | len=200 | loss=-0.062
+[Pendulum-v1] Ep 0265 | R_raw=-1233.73 | len=200 | loss=-0.271
+[Pendulum-v1] Ep 0266 | R_raw=-1241.65 | len=200 | loss=-0.309
+[Pendulum-v1] Ep 0267 | R_raw=-1140.02 | len=200 | loss=-0.342
+[Pendulum-v1] Ep 0268 | R_raw=-1234.65 | len=200 | loss=-0.383
+[Pendulum-v1] Ep 0269 | R_raw=-1338.93 | len=200 | loss=-0.089
+[Pendulum-v1] Ep 0270 | R_raw=-1350.18 | len=200 | loss=-0.150
+[Pendulum-v1] Ep 0271 | R_raw=-1203.33 | len=200 | loss=-0.128
+[Pendulum-v1] Ep 0272 | R_raw=-1180.00 | len=200 | loss=-0.170
+[Pendulum-v1] Ep 0273 | R_raw=-1316.19 | len=200 | loss=-0.167
+[Pendulum-v1] Ep 0274 | R_raw=-1221.08 | len=200 | loss=-0.231
+[Pendulum-v1] Ep 0275 | R_raw=-1390.69 | len=200 | loss=-0.044
+[Pendulum-v1] Ep 0276 | R_raw=-1356.33 | len=200 | loss=-0.122
+[Pendulum-v1] Ep 0277 | R_raw=-1300.57 | len=200 | loss=-0.355
+[Pendulum-v1] Ep 0278 | R_raw=-1200.92 | len=200 | loss=-0.215
+[Pendulum-v1] Ep 0279 | R_raw=-1303.46 | len=200 | loss=-0.103
+[Pendulum-v1] Ep 0280 | R_raw=-1189.45 | len=200 | loss=-0.203
+[Pendulum-v1] Ep 0281 | R_raw=-1227.11 | len=200 | loss=-0.301
+[Pendulum-v1] Ep 0282 | R_raw=-1361.19 | len=200 | loss=-0.121
+[Pendulum-v1] Ep 0283 | R_raw=-1195.48 | len=200 | loss=-0.225
+[Pendulum-v1] Ep 0284 | R_raw=-1392.49 | len=200 | loss=0.005
+[Pendulum-v1] Ep 0285 | R_raw=-1314.25 | len=200 | loss=-0.134
+[Pendulum-v1] Ep 0286 | R_raw=-1335.94 | len=200 | loss=-0.124
+[Pendulum-v1] Ep 0287 | R_raw=-1102.65 | len=200 | loss=0.034
+[Pendulum-v1] Ep 0288 | R_raw=-1255.41 | len=200 | loss=-0.383
+[Pendulum-v1] Ep 0289 | R_raw=-1301.26 | len=200 | loss=-0.036
+[Pendulum-v1] Ep 0290 | R_raw=-1336.06 | len=200 | loss=-0.226
+[Pendulum-v1] Ep 0291 | R_raw=-1158.26 | len=200 | loss=-0.352
+[Pendulum-v1] Ep 0292 | R_raw=-1314.09 | len=200 | loss=-0.156
+[Pendulum-v1] Ep 0293 | R_raw=-1393.13 | len=200 | loss=-0.292
+[Pendulum-v1] Ep 0294 | R_raw=-1307.29 | len=200 | loss=-0.062
+[Pendulum-v1] Ep 0295 | R_raw=-1342.41 | len=200 | loss=0.165
+[Pendulum-v1] Ep 0296 | R_raw=-1368.68 | len=200 | loss=-0.019
+[Pendulum-v1] Ep 0297 | R_raw=-1308.27 | len=200 | loss=-0.229
+[Pendulum-v1] Ep 0298 | R_raw=-1153.40 | len=200 | loss=0.132
+[Pendulum-v1] Ep 0299 | R_raw=-1364.20 | len=200 | loss=0.008
+[Pendulum-v1] Ep 0300 | R_raw=-1109.88 | len=200 | loss=-0.189
+[Pendulum-v1] Ep 0301 | R_raw=-1375.55 | len=200 | loss=0.033
+[Pendulum-v1] Ep 0302 | R_raw=-1207.08 | len=200 | loss=-0.092
+[Pendulum-v1] Ep 0303 | R_raw=-1512.79 | len=200 | loss=-0.036
+[Pendulum-v1] Ep 0304 | R_raw=-1608.78 | len=200 | loss=-0.006
+[Pendulum-v1] Ep 0305 | R_raw=-1345.58 | len=200 | loss=-0.020
+[Pendulum-v1] Ep 0306 | R_raw=-1416.78 | len=200 | loss=-0.124
+[Pendulum-v1] Ep 0307 | R_raw=-1309.87 | len=200 | loss=0.006
+[Pendulum-v1] Ep 0308 | R_raw=-1389.41 | len=200 | loss=-0.037
+[Pendulum-v1] Ep 0309 | R_raw=-1214.29 | len=200 | loss=-0.198
+[Pendulum-v1] Ep 0310 | R_raw=-1379.32 | len=200 | loss=0.066
+[Pendulum-v1] Ep 0311 | R_raw=-1271.21 | len=200 | loss=-0.188
+[Pendulum-v1] Ep 0312 | R_raw=-1230.90 | len=200 | loss=-0.052
+[Pendulum-v1] Ep 0313 | R_raw=-1295.68 | len=200 | loss=0.026
+[Pendulum-v1] Ep 0314 | R_raw=-1310.34 | len=200 | loss=0.031
+[Pendulum-v1] Ep 0315 | R_raw=-1575.99 | len=200 | loss=0.082
+[Pendulum-v1] Ep 0316 | R_raw=-1195.41 | len=200 | loss=-0.072
+[Pendulum-v1] Ep 0317 | R_raw=-1375.70 | len=200 | loss=-0.058
+[Pendulum-v1] Ep 0318 | R_raw=-1345.64 | len=200 | loss=-0.126
+[Pendulum-v1] Ep 0319 | R_raw=-1595.01 | len=200 | loss=0.028
+[Pendulum-v1] Ep 0320 | R_raw=-1258.80 | len=200 | loss=-0.139
+[Pendulum-v1] Ep 0321 | R_raw=-1323.13 | len=200 | loss=-0.001
+[Pendulum-v1] Ep 0322 | R_raw=-1449.33 | len=200 | loss=-0.051
+[Pendulum-v1] Ep 0323 | R_raw=-1209.08 | len=200 | loss=0.059
+[Pendulum-v1] Ep 0324 | R_raw=-1507.35 | len=200 | loss=-0.104
+[Pendulum-v1] Ep 0325 | R_raw=-1504.81 | len=200 | loss=-0.019
+[Pendulum-v1] Ep 0326 | R_raw=-1477.55 | len=200 | loss=0.032
+[Pendulum-v1] Ep 0327 | R_raw=-1349.46 | len=200 | loss=-0.164
+[Pendulum-v1] Ep 0328 | R_raw=-1198.02 | len=200 | loss=-0.043
+[Pendulum-v1] Ep 0329 | R_raw=-1241.10 | len=200 | loss=-0.075
+[Pendulum-v1] Ep 0330 | R_raw=-1501.73 | len=200 | loss=-0.093
+[Pendulum-v1] Ep 0331 | R_raw=-1405.50 | len=200 | loss=0.120
+[Pendulum-v1] Ep 0332 | R_raw=-1558.14 | len=200 | loss=0.051
+[Pendulum-v1] Ep 0333 | R_raw=-1400.81 | len=200 | loss=0.090
+[Pendulum-v1] Ep 0334 | R_raw=-1244.16 | len=200 | loss=-0.119
+[Pendulum-v1] Ep 0335 | R_raw=-1565.13 | len=200 | loss=-0.055
+[Pendulum-v1] Ep 0336 | R_raw=-1560.24 | len=200 | loss=0.027
+[Pendulum-v1] Ep 0337 | R_raw=-1431.97 | len=200 | loss=-0.006
+[Pendulum-v1] Ep 0338 | R_raw=-1355.89 | len=200 | loss=0.087
+[Pendulum-v1] Ep 0339 | R_raw=-1349.62 | len=200 | loss=-0.154
+[Pendulum-v1] Ep 0340 | R_raw=-1566.73 | len=200 | loss=-0.005
+[Pendulum-v1] Ep 0341 | R_raw=-1509.13 | len=200 | loss=0.002
+[Pendulum-v1] Ep 0342 | R_raw=-1364.24 | len=200 | loss=-0.013
+[Pendulum-v1] Ep 0343 | R_raw=-1573.97 | len=200 | loss=-0.002
+[Pendulum-v1] Ep 0344 | R_raw=-1400.86 | len=200 | loss=0.022
+[Pendulum-v1] Ep 0345 | R_raw=-1592.34 | len=200 | loss=-0.079
+[Pendulum-v1] Ep 0346 | R_raw=-1518.19 | len=200 | loss=-0.058
+[Pendulum-v1] Ep 0347 | R_raw=-1366.31 | len=200 | loss=0.080
+[Pendulum-v1] Ep 0348 | R_raw=-1529.21 | len=200 | loss=-0.017
+[Pendulum-v1] Ep 0349 | R_raw=-1355.95 | len=200 | loss=0.102
+[Pendulum-v1] Ep 0350 | R_raw=-1524.49 | len=200 | loss=-0.055
+[Pendulum-v1] Ep 0351 | R_raw=-1411.35 | len=200 | loss=0.106
+[Pendulum-v1] Ep 0352 | R_raw=-1509.40 | len=200 | loss=0.140
+[Pendulum-v1] Ep 0353 | R_raw=-1439.27 | len=200 | loss=0.197
+[Pendulum-v1] Ep 0354 | R_raw=-1371.52 | len=200 | loss=0.089
+[Pendulum-v1] Ep 0355 | R_raw=-1544.85 | len=200 | loss=0.121
+[Pendulum-v1] Ep 0356 | R_raw=-1616.08 | len=200 | loss=-0.005
+[Pendulum-v1] Ep 0357 | R_raw=-1602.95 | len=200 | loss=-0.034
+[Pendulum-v1] Ep 0358 | R_raw=-1567.54 | len=200 | loss=0.128
+[Pendulum-v1] Ep 0359 | R_raw=-1222.40 | len=200 | loss=-0.003
+[Pendulum-v1] Ep 0360 | R_raw=-1605.83 | len=200 | loss=0.103
+[Pendulum-v1] Ep 0361 | R_raw=-1265.15 | len=200 | loss=-0.127
+[Pendulum-v1] Ep 0362 | R_raw=-1620.07 | len=200 | loss=0.107
+[Pendulum-v1] Ep 0363 | R_raw=-1292.97 | len=200 | loss=-0.012
+[Pendulum-v1] Ep 0364 | R_raw=-1622.10 | len=200 | loss=0.026
+[Pendulum-v1] Ep 0365 | R_raw=-1656.23 | len=200 | loss=0.085
+[Pendulum-v1] Ep 0366 | R_raw=-1675.40 | len=200 | loss=-0.104
+[Pendulum-v1] Ep 0367 | R_raw=-1634.49 | len=200 | loss=0.018
+[Pendulum-v1] Ep 0368 | R_raw=-1657.86 | len=200 | loss=0.037
+[Pendulum-v1] Ep 0369 | R_raw=-1501.22 | len=200 | loss=0.115
+[Pendulum-v1] Ep 0370 | R_raw=-1631.82 | len=200 | loss=0.059
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Skogsvätt_Agent> python Skogsvatt_multi_2.py
+[Pendulum-v1] Ep 0001 | R_raw=-958.15 | len=200 | loss=0.045
+[Pendulum-v1] Ep 0002 | R_raw=-884.09 | len=200 | loss=0.058
+[Pendulum-v1] Ep 0003 | R_raw=-1135.45 | len=200 | loss=0.014
+[Pendulum-v1] Ep 0004 | R_raw=-1041.47 | len=200 | loss=0.076
+[Pendulum-v1] Ep 0005 | R_raw=-1111.13 | len=200 | loss=0.058
+[Pendulum-v1] Ep 0006 | R_raw=-909.03 | len=200 | loss=-0.040
+[Pendulum-v1] Ep 0007 | R_raw=-1192.62 | len=200 | loss=0.082
+[Pendulum-v1] Ep 0008 | R_raw=-1080.97 | len=200 | loss=0.106
+[Pendulum-v1] Ep 0009 | R_raw=-1010.02 | len=200 | loss=-0.059
+[Pendulum-v1] Ep 0010 | R_raw=-1136.64 | len=200 | loss=0.090
+[Pendulum-v1] Ep 0011 | R_raw=-765.98 | len=200 | loss=0.066
+[Pendulum-v1] Ep 0012 | R_raw=-965.95 | len=200 | loss=0.038
+[Pendulum-v1] Ep 0013 | R_raw=-864.84 | len=200 | loss=0.004
+[Pendulum-v1] Ep 0014 | R_raw=-1343.32 | len=200 | loss=0.025
+[Pendulum-v1] Ep 0015 | R_raw=-1478.02 | len=200 | loss=0.089
+[Pendulum-v1] Ep 0016 | R_raw=-1110.91 | len=200 | loss=0.039
+[Pendulum-v1] Ep 0017 | R_raw=-883.61 | len=200 | loss=0.038
+[Pendulum-v1] Ep 0018 | R_raw=-1339.94 | len=200 | loss=-0.126
+[Pendulum-v1] Ep 0019 | R_raw=-1659.58 | len=200 | loss=0.032
+[Pendulum-v1] Ep 0020 | R_raw=-1078.63 | len=200 | loss=0.057
+[Pendulum-v1] Ep 0021 | R_raw=-1280.61 | len=200 | loss=0.006
+[Pendulum-v1] Ep 0022 | R_raw=-1072.76 | len=200 | loss=-0.026
+[Pendulum-v1] Ep 0023 | R_raw=-1064.18 | len=200 | loss=-0.041
+[Pendulum-v1] Ep 0024 | R_raw=-1166.88 | len=200 | loss=-0.018
+[Pendulum-v1] Ep 0025 | R_raw=-996.15 | len=200 | loss=0.046
+[Pendulum-v1] Ep 0026 | R_raw=-901.36 | len=200 | loss=-0.019
+[Pendulum-v1] Ep 0027 | R_raw=-886.83 | len=200 | loss=-0.049
+[Pendulum-v1] Ep 0028 | R_raw=-1231.19 | len=200 | loss=-0.013
+[Pendulum-v1] Ep 0029 | R_raw=-1680.88 | len=200 | loss=0.008
+[Pendulum-v1] Ep 0030 | R_raw=-1530.67 | len=200 | loss=0.039
+[Pendulum-v1] Ep 0031 | R_raw=-1745.25 | len=200 | loss=0.025
+[Pendulum-v1] Ep 0032 | R_raw=-1718.33 | len=200 | loss=0.013
+[Pendulum-v1] Ep 0033 | R_raw=-1172.72 | len=200 | loss=-0.032
+[Pendulum-v1] Ep 0034 | R_raw=-1084.70 | len=200 | loss=0.024
+[Pendulum-v1] Ep 0035 | R_raw=-1544.74 | len=200 | loss=0.013
+[Pendulum-v1] Ep 0036 | R_raw=-1474.36 | len=200 | loss=-0.003
+[Pendulum-v1] Ep 0037 | R_raw=-1230.06 | len=200 | loss=-0.002
+[Pendulum-v1] Ep 0038 | R_raw=-1225.58 | len=200 | loss=0.028
+[Pendulum-v1] Ep 0039 | R_raw=-1689.22 | len=200 | loss=-0.008
+[Pendulum-v1] Ep 0040 | R_raw=-1670.50 | len=200 | loss=-0.090
+[Pendulum-v1] Ep 0041 | R_raw=-1711.90 | len=200 | loss=0.010
+[Pendulum-v1] Ep 0042 | R_raw=-1664.75 | len=200 | loss=0.016
+[Pendulum-v1] Ep 0043 | R_raw=-957.64 | len=200 | loss=0.017
+[Pendulum-v1] Ep 0044 | R_raw=-1080.90 | len=200 | loss=-0.018
+[Pendulum-v1] Ep 0045 | R_raw=-1266.99 | len=200 | loss=0.161
+[Pendulum-v1] Ep 0046 | R_raw=-1055.02 | len=200 | loss=0.049
+[Pendulum-v1] Ep 0047 | R_raw=-886.88 | len=200 | loss=0.047
+[Pendulum-v1] Ep 0048 | R_raw=-1143.91 | len=200 | loss=-0.015
+[Pendulum-v1] Ep 0049 | R_raw=-831.22 | len=200 | loss=0.023
+[Pendulum-v1] Ep 0050 | R_raw=-770.07 | len=200 | loss=-0.120
+[Pendulum-v1] Ep 0051 | R_raw=-1414.34 | len=200 | loss=-0.145
+[Pendulum-v1] Ep 0052 | R_raw=-1098.40 | len=200 | loss=0.063
+[Pendulum-v1] Ep 0053 | R_raw=-986.67 | len=200 | loss=0.022
+[Pendulum-v1] Ep 0054 | R_raw=-1163.50 | len=200 | loss=0.013
+[Pendulum-v1] Ep 0055 | R_raw=-1041.96 | len=200 | loss=0.109
+[Pendulum-v1] Ep 0056 | R_raw=-1136.67 | len=200 | loss=-0.131
+[Pendulum-v1] Ep 0057 | R_raw=-1036.19 | len=200 | loss=-0.053
+[Pendulum-v1] Ep 0058 | R_raw=-1238.22 | len=200 | loss=-0.086
+[Pendulum-v1] Ep 0059 | R_raw=-1249.76 | len=200 | loss=-0.100
+[Pendulum-v1] Ep 0060 | R_raw=-1039.93 | len=200 | loss=-0.103
+[Pendulum-v1] Ep 0061 | R_raw=-1225.03 | len=200 | loss=-0.073
+[Pendulum-v1] Ep 0062 | R_raw=-1285.59 | len=200 | loss=-0.122
+[Pendulum-v1] Ep 0063 | R_raw=-1300.16 | len=200 | loss=-0.224
+[Pendulum-v1] Ep 0064 | R_raw=-1376.98 | len=200 | loss=0.014
+[Pendulum-v1] Ep 0065 | R_raw=-1284.36 | len=200 | loss=-0.135
+[Pendulum-v1] Ep 0066 | R_raw=-1337.32 | len=200 | loss=-0.083
+[Pendulum-v1] Ep 0067 | R_raw=-1296.01 | len=200 | loss=-0.050
+[Pendulum-v1] Ep 0068 | R_raw=-1342.63 | len=200 | loss=-0.071
+[Pendulum-v1] Ep 0069 | R_raw=-1199.12 | len=200 | loss=-0.119
+[Pendulum-v1] Ep 0070 | R_raw=-1148.98 | len=200 | loss=0.312
+[Pendulum-v1] Ep 0071 | R_raw=-1305.80 | len=200 | loss=-0.023
+[Pendulum-v1] Ep 0072 | R_raw=-1191.68 | len=200 | loss=0.021
+[Pendulum-v1] Ep 0073 | R_raw=-1205.59 | len=200 | loss=-0.098
+[Pendulum-v1] Ep 0074 | R_raw=-1365.46 | len=200 | loss=-0.142
+[Pendulum-v1] Ep 0075 | R_raw=-865.56 | len=200 | loss=-0.013
+[Pendulum-v1] Ep 0076 | R_raw=-1215.57 | len=200 | loss=-0.069
+[Pendulum-v1] Ep 0077 | R_raw=-969.87 | len=200 | loss=0.020
+[Pendulum-v1] Ep 0078 | R_raw=-870.36 | len=200 | loss=-0.005
+[Pendulum-v1] Ep 0079 | R_raw=-1253.22 | len=200 | loss=-0.015
+[Pendulum-v1] Ep 0080 | R_raw=-1702.59 | len=200 | loss=-0.016
+[Pendulum-v1] Ep 0081 | R_raw=-1102.40 | len=200 | loss=0.098
+[Pendulum-v1] Ep 0082 | R_raw=-1695.12 | len=200 | loss=0.076
+[Pendulum-v1] Ep 0083 | R_raw=-1665.70 | len=200 | loss=0.055
+[Pendulum-v1] Ep 0084 | R_raw=-1324.74 | len=200 | loss=-0.046
+[Pendulum-v1] Ep 0085 | R_raw=-1652.82 | len=200 | loss=-0.031
+[Pendulum-v1] Ep 0086 | R_raw=-1598.09 | len=200 | loss=0.025
+[Pendulum-v1] Ep 0087 | R_raw=-1227.27 | len=200 | loss=0.108
+[Pendulum-v1] Ep 0088 | R_raw=-1589.74 | len=200 | loss=-0.051
+[Pendulum-v1] Ep 0089 | R_raw=-1592.13 | len=200 | loss=0.139
+[Pendulum-v1] Ep 0090 | R_raw=-883.80 | len=200 | loss=0.080
+[Pendulum-v1] Ep 0091 | R_raw=-1092.33 | len=200 | loss=0.035
+[Pendulum-v1] Ep 0092 | R_raw=-1078.53 | len=200 | loss=0.056
+[Pendulum-v1] Ep 0093 | R_raw=-1446.09 | len=200 | loss=-0.083
+[Pendulum-v1] Ep 0094 | R_raw=-1195.25 | len=200 | loss=-0.065
+[Pendulum-v1] Ep 0095 | R_raw=-1385.14 | len=200 | loss=-0.094
+[Pendulum-v1] Ep 0096 | R_raw=-996.67 | len=200 | loss=0.119
+[Pendulum-v1] Ep 0097 | R_raw=-1219.37 | len=200 | loss=-0.009
+[Pendulum-v1] Ep 0098 | R_raw=-1356.95 | len=200 | loss=-0.122
+[Pendulum-v1] Ep 0099 | R_raw=-1240.07 | len=200 | loss=0.089
+[Pendulum-v1] Ep 0100 | R_raw=-1176.18 | len=200 | loss=0.039
+[Pendulum-v1] Ep 0101 | R_raw=-1005.23 | len=200 | loss=0.052
+[Pendulum-v1] Ep 0102 | R_raw=-1175.02 | len=200 | loss=-0.105
+[Pendulum-v1] Ep 0103 | R_raw=-1102.42 | len=200 | loss=-0.077
+[Pendulum-v1] Ep 0104 | R_raw=-888.77 | len=200 | loss=0.112
+[Pendulum-v1] Ep 0105 | R_raw=-1060.70 | len=200 | loss=-0.016
+[Pendulum-v1] Ep 0106 | R_raw=-1183.61 | len=200 | loss=-0.170
+[Pendulum-v1] Ep 0107 | R_raw=-1126.24 | len=200 | loss=-0.188
+[Pendulum-v1] Ep 0108 | R_raw=-1067.87 | len=200 | loss=-0.157
+[Pendulum-v1] Ep 0109 | R_raw=-1134.83 | len=200 | loss=-0.096
+[Pendulum-v1] Ep 0110 | R_raw=-1179.43 | len=200 | loss=-0.150
+[Pendulum-v1] Ep 0111 | R_raw=-1184.37 | len=200 | loss=0.146
+[Pendulum-v1] Ep 0112 | R_raw=-1065.09 | len=200 | loss=-0.211
+[Pendulum-v1] Ep 0113 | R_raw=-1244.23 | len=200 | loss=-0.054
+[Pendulum-v1] Ep 0114 | R_raw=-1239.60 | len=200 | loss=-0.112
+[Pendulum-v1] Ep 0115 | R_raw=-1124.70 | len=200 | loss=0.006
+[Pendulum-v1] Ep 0116 | R_raw=-1363.17 | len=200 | loss=-0.118
+[Pendulum-v1] Ep 0117 | R_raw=-1382.07 | len=200 | loss=-0.023
+[Pendulum-v1] Ep 0118 | R_raw=-1460.71 | len=200 | loss=-0.226
+[Pendulum-v1] Ep 0119 | R_raw=-1393.17 | len=200 | loss=-0.103
+[Pendulum-v1] Ep 0120 | R_raw=-1448.27 | len=200 | loss=0.023
+[Pendulum-v1] Ep 0121 | R_raw=-1421.20 | len=200 | loss=0.006
+[Pendulum-v1] Ep 0122 | R_raw=-1545.65 | len=200 | loss=-0.036
+[Pendulum-v1] Ep 0123 | R_raw=-1374.89 | len=200 | loss=-0.143
+[Pendulum-v1] Ep 0124 | R_raw=-1534.44 | len=200 | loss=-0.056
+[Pendulum-v1] Ep 0125 | R_raw=-1528.25 | len=200 | loss=-0.216
+[Pendulum-v1] Ep 0126 | R_raw=-1412.89 | len=200 | loss=0.113
+[Pendulum-v1] Ep 0127 | R_raw=-1477.19 | len=200 | loss=-0.240
+[Pendulum-v1] Ep 0128 | R_raw=-1518.12 | len=200 | loss=-0.158
+[Pendulum-v1] Ep 0129 | R_raw=-1405.18 | len=200 | loss=-0.210
+[Pendulum-v1] Ep 0130 | R_raw=-1508.07 | len=200 | loss=-0.170
+[Pendulum-v1] Ep 0131 | R_raw=-1138.66 | len=200 | loss=0.130
+[Pendulum-v1] Ep 0132 | R_raw=-1445.58 | len=200 | loss=-0.069
+[Pendulum-v1] Ep 0133 | R_raw=-1502.83 | len=200 | loss=-0.034
+[Pendulum-v1] Ep 0134 | R_raw=-1496.91 | len=200 | loss=-0.208
+[Pendulum-v1] Ep 0135 | R_raw=-1472.25 | len=200 | loss=0.046
+[Pendulum-v1] Ep 0136 | R_raw=-976.84 | len=200 | loss=-0.026
+[Pendulum-v1] Ep 0137 | R_raw=-1558.63 | len=200 | loss=-0.025
+[Pendulum-v1] Ep 0138 | R_raw=-1451.32 | len=200 | loss=-0.233
+[Pendulum-v1] Ep 0139 | R_raw=-1498.09 | len=200 | loss=-0.047
+[Pendulum-v1] Ep 0140 | R_raw=-1502.06 | len=200 | loss=-0.181
+[Pendulum-v1] Ep 0141 | R_raw=-1388.72 | len=200 | loss=-0.042
+[Pendulum-v1] Ep 0142 | R_raw=-1422.41 | len=200 | loss=-0.086
+[Pendulum-v1] Ep 0143 | R_raw=-1402.99 | len=200 | loss=-0.351
+[Pendulum-v1] Ep 0144 | R_raw=-1470.60 | len=200 | loss=-0.290
+[Pendulum-v1] Ep 0145 | R_raw=-1541.28 | len=200 | loss=0.109
+[Pendulum-v1] Ep 0146 | R_raw=-1437.41 | len=200 | loss=-0.069
+[Pendulum-v1] Ep 0147 | R_raw=-1501.76 | len=200 | loss=-0.372
+[Pendulum-v1] Ep 0148 | R_raw=-1564.14 | len=200 | loss=0.109
+[Pendulum-v1] Ep 0149 | R_raw=-1498.54 | len=200 | loss=0.140
+[Pendulum-v1] Ep 0150 | R_raw=-1510.14 | len=200 | loss=0.033
+[Pendulum-v1] Ep 0151 | R_raw=-1422.14 | len=200 | loss=-0.315
+[Pendulum-v1] Ep 0152 | R_raw=-1417.87 | len=200 | loss=0.087
+[Pendulum-v1] Ep 0153 | R_raw=-1092.12 | len=200 | loss=-0.026
+[Pendulum-v1] Ep 0154 | R_raw=-1362.87 | len=200 | loss=-0.097
+[Pendulum-v1] Ep 0155 | R_raw=-1399.75 | len=200 | loss=0.043
+[Pendulum-v1] Ep 0156 | R_raw=-1277.52 | len=200 | loss=-0.127
+[Pendulum-v1] Ep 0157 | R_raw=-1332.26 | len=200 | loss=-0.148
+[Pendulum-v1] Ep 0158 | R_raw=-1160.65 | len=200 | loss=-0.038
+[Pendulum-v1] Ep 0159 | R_raw=-1215.55 | len=200 | loss=0.093
+[Pendulum-v1] Ep 0160 | R_raw=-1150.96 | len=200 | loss=-0.048
+[Pendulum-v1] Ep 0161 | R_raw=-1166.39 | len=200 | loss=0.002
+[Pendulum-v1] Ep 0162 | R_raw=-1147.26 | len=200 | loss=-0.075
+[Pendulum-v1] Ep 0163 | R_raw=-1152.95 | len=200 | loss=-0.202
+[Pendulum-v1] Ep 0164 | R_raw=-1274.83 | len=200 | loss=-0.177
+[Pendulum-v1] Ep 0165 | R_raw=-1138.13 | len=200 | loss=-0.159
+[Pendulum-v1] Ep 0166 | R_raw=-1217.45 | len=200 | loss=0.021
+[Pendulum-v1] Ep 0167 | R_raw=-1193.18 | len=200 | loss=-0.074
+[Pendulum-v1] Ep 0168 | R_raw=-1242.35 | len=200 | loss=0.037
+[Pendulum-v1] Ep 0169 | R_raw=-1307.16 | len=200 | loss=0.042
+[Pendulum-v1] Ep 0170 | R_raw=-1184.37 | len=200 | loss=0.020
+[Pendulum-v1] Ep 0171 | R_raw=-1031.29 | len=200 | loss=0.000
+[Pendulum-v1] Ep 0172 | R_raw=-1185.94 | len=200 | loss=0.126
+[Pendulum-v1] Ep 0173 | R_raw=-1037.51 | len=200 | loss=-0.011
+[Pendulum-v1] Ep 0174 | R_raw=-1176.16 | len=200 | loss=-0.016
+[Pendulum-v1] Ep 0175 | R_raw=-1465.91 | len=200 | loss=-0.080
+[Pendulum-v1] Ep 0176 | R_raw=-1286.33 | len=200 | loss=0.021
+[Pendulum-v1] Ep 0177 | R_raw=-1314.91 | len=200 | loss=0.076
+[Pendulum-v1] Ep 0178 | R_raw=-1397.26 | len=200 | loss=0.217
+[Pendulum-v1] Ep 0179 | R_raw=-1400.37 | len=200 | loss=0.039
+[Pendulum-v1] Ep 0180 | R_raw=-1412.84 | len=200 | loss=0.165
+[Pendulum-v1] Ep 0181 | R_raw=-1489.29 | len=200 | loss=0.183
+[Pendulum-v1] Ep 0182 | R_raw=-1045.39 | len=200 | loss=0.073
+[Pendulum-v1] Ep 0183 | R_raw=-1568.97 | len=200 | loss=0.166
+[Pendulum-v1] Ep 0184 | R_raw=-1556.99 | len=200 | loss=0.053
+[Pendulum-v1] Ep 0185 | R_raw=-1453.00 | len=200 | loss=0.044
+[Pendulum-v1] Ep 0186 | R_raw=-1405.93 | len=200 | loss=0.109
+[Pendulum-v1] Ep 0187 | R_raw=-1315.19 | len=200 | loss=0.074
+[Pendulum-v1] Ep 0188 | R_raw=-1426.22 | len=200 | loss=0.049
+[Pendulum-v1] Ep 0189 | R_raw=-1429.20 | len=200 | loss=-0.044
+[Pendulum-v1] Ep 0190 | R_raw=-1362.11 | len=200 | loss=0.186
+[Pendulum-v1] Ep 0191 | R_raw=-1548.15 | len=200 | loss=-0.032
+[Pendulum-v1] Ep 0192 | R_raw=-1426.05 | len=200 | loss=0.143
+[Pendulum-v1] Ep 0193 | R_raw=-1388.12 | len=200 | loss=0.218
+[Pendulum-v1] Ep 0194 | R_raw=-1615.23 | len=200 | loss=0.099
+[Pendulum-v1] Ep 0195 | R_raw=-1528.40 | len=200 | loss=0.034
+[Pendulum-v1] Ep 0196 | R_raw=-1518.73 | len=200 | loss=0.144
+[Pendulum-v1] Ep 0197 | R_raw=-1024.23 | len=200 | loss=0.081
+[Pendulum-v1] Ep 0198 | R_raw=-1567.02 | len=200 | loss=-0.047
+[Pendulum-v1] Ep 0199 | R_raw=-1561.99 | len=200 | loss=-0.001
+[Pendulum-v1] Ep 0200 | R_raw=-1712.29 | len=200 | loss=0.036
+[Pendulum-v1] Ep 0201 | R_raw=-1701.73 | len=200 | loss=0.023
+[Pendulum-v1] Ep 0202 | R_raw=-1470.91 | len=200 | loss=0.045
+[Pendulum-v1] Ep 0203 | R_raw=-1057.29 | len=200 | loss=-0.038
+[Pendulum-v1] Ep 0204 | R_raw=-1543.44 | len=200 | loss=0.288
+[Pendulum-v1] Ep 0205 | R_raw=-1819.18 | len=200 | loss=-0.053
+[Pendulum-v1] Ep 0206 | R_raw=-1281.67 | len=200 | loss=0.178
+[Pendulum-v1] Ep 0207 | R_raw=-1610.14 | len=200 | loss=0.150
+[Pendulum-v1] Ep 0208 | R_raw=-1650.99 | len=200 | loss=0.104
+[Pendulum-v1] Ep 0209 | R_raw=-1089.45 | len=200 | loss=-0.031
+[Pendulum-v1] Ep 0210 | R_raw=-952.39 | len=200 | loss=0.098
+[Pendulum-v1] Ep 0211 | R_raw=-1538.11 | len=200 | loss=-0.020
+[Pendulum-v1] Ep 0212 | R_raw=-1716.22 | len=200 | loss=0.168
+[Pendulum-v1] Ep 0213 | R_raw=-1814.95 | len=200 | loss=0.022
+[Pendulum-v1] Ep 0214 | R_raw=-1561.73 | len=200 | loss=-0.055
+[Pendulum-v1] Ep 0215 | R_raw=-1725.49 | len=200 | loss=0.008
+[Pendulum-v1] Ep 0216 | R_raw=-1714.19 | len=200 | loss=0.003
+[Pendulum-v1] Ep 0217 | R_raw=-1447.32 | len=200 | loss=0.114
+[Pendulum-v1] Ep 0218 | R_raw=-1539.27 | len=200 | loss=-0.080
+[Pendulum-v1] Ep 0219 | R_raw=-1520.13 | len=200 | loss=-0.065
+[Pendulum-v1] Ep 0220 | R_raw=-1416.44 | len=200 | loss=0.001
+[Pendulum-v1] Ep 0221 | R_raw=-1422.62 | len=200 | loss=-0.004
+[Pendulum-v1] Ep 0222 | R_raw=-1213.79 | len=200 | loss=0.118
+[Pendulum-v1] Ep 0223 | R_raw=-1223.03 | len=200 | loss=-0.001
+[Pendulum-v1] Ep 0224 | R_raw=-1221.46 | len=200 | loss=0.086
+[Pendulum-v1] Ep 0225 | R_raw=-1503.16 | len=200 | loss=-0.057
+[Pendulum-v1] Ep 0226 | R_raw=-1215.85 | len=200 | loss=-0.003
+[Pendulum-v1] Ep 0227 | R_raw=-882.38 | len=200 | loss=-0.039
+[Pendulum-v1] Ep 0228 | R_raw=-971.41 | len=200 | loss=0.133
+[Pendulum-v1] Ep 0229 | R_raw=-1065.04 | len=200 | loss=0.038
+[Pendulum-v1] Ep 0230 | R_raw=-970.57 | len=200 | loss=0.060
+[Pendulum-v1] Ep 0231 | R_raw=-967.61 | len=200 | loss=0.114
+[Pendulum-v1] Ep 0232 | R_raw=-1206.41 | len=200 | loss=0.080
+[Pendulum-v1] Ep 0233 | R_raw=-1146.48 | len=200 | loss=0.203
+[Pendulum-v1] Ep 0234 | R_raw=-978.64 | len=200 | loss=-0.051
+[Pendulum-v1] Ep 0235 | R_raw=-1017.90 | len=200 | loss=0.015
+[Pendulum-v1] Ep 0236 | R_raw=-853.50 | len=200 | loss=-0.102
+[Pendulum-v1] Ep 0237 | R_raw=-1242.87 | len=200 | loss=-0.013
+[Pendulum-v1] Ep 0238 | R_raw=-1303.43 | len=200 | loss=0.044
+[Pendulum-v1] Ep 0239 | R_raw=-1071.43 | len=200 | loss=-0.165
+[Pendulum-v1] Ep 0240 | R_raw=-1329.91 | len=200 | loss=-0.156
+[Pendulum-v1] Ep 0241 | R_raw=-1192.89 | len=200 | loss=-0.052
+[Pendulum-v1] Ep 0242 | R_raw=-982.55 | len=200 | loss=-0.043
+[Pendulum-v1] Ep 0243 | R_raw=-1300.31 | len=200 | loss=-0.086
+[Pendulum-v1] Ep 0244 | R_raw=-1169.67 | len=200 | loss=-0.129
+[Pendulum-v1] Ep 0245 | R_raw=-1264.86 | len=200 | loss=0.058
+[Pendulum-v1] Ep 0246 | R_raw=-1286.36 | len=200 | loss=0.062
+[Pendulum-v1] Ep 0247 | R_raw=-1170.77 | len=200 | loss=-0.005
+[Pendulum-v1] Ep 0248 | R_raw=-1381.29 | len=200 | loss=-0.151
+[Pendulum-v1] Ep 0249 | R_raw=-1127.82 | len=200 | loss=-0.066
+[Pendulum-v1] Ep 0250 | R_raw=-1194.79 | len=200 | loss=0.069
+[Pendulum-v1] Ep 0251 | R_raw=-1203.61 | len=200 | loss=0.070
+[Pendulum-v1] Ep 0252 | R_raw=-1099.89 | len=200 | loss=-0.024
+[Pendulum-v1] Ep 0253 | R_raw=-947.69 | len=200 | loss=0.067
+[Pendulum-v1] Ep 0254 | R_raw=-1090.63 | len=200 | loss=0.057
+[Pendulum-v1] Ep 0255 | R_raw=-1241.92 | len=200 | loss=-0.032
+[Pendulum-v1] Ep 0256 | R_raw=-937.65 | len=200 | loss=0.182
+[Pendulum-v1] Ep 0257 | R_raw=-1179.33 | len=200 | loss=0.033
+[Pendulum-v1] Ep 0258 | R_raw=-1215.93 | len=200 | loss=0.055
+[Pendulum-v1] Ep 0259 | R_raw=-1291.17 | len=200 | loss=-0.044
+[Pendulum-v1] Ep 0260 | R_raw=-1314.82 | len=200 | loss=-0.013
+[Pendulum-v1] Ep 0261 | R_raw=-1058.71 | len=200 | loss=0.059
+[Pendulum-v1] Ep 0262 | R_raw=-1206.39 | len=200 | loss=0.037
+[Pendulum-v1] Ep 0263 | R_raw=-1151.51 | len=200 | loss=0.120
+[Pendulum-v1] Ep 0264 | R_raw=-1376.15 | len=200 | loss=-0.034
+[Pendulum-v1] Ep 0265 | R_raw=-1398.85 | len=200 | loss=-0.028
+[Pendulum-v1] Ep 0266 | R_raw=-1398.79 | len=200 | loss=0.083
+[Pendulum-v1] Ep 0267 | R_raw=-1369.68 | len=200 | loss=0.084
+[Pendulum-v1] Ep 0268 | R_raw=-1424.24 | len=200 | loss=-0.132
+[Pendulum-v1] Ep 0269 | R_raw=-1506.30 | len=200 | loss=0.061
+[Pendulum-v1] Ep 0270 | R_raw=-1375.15 | len=200 | loss=-0.007
+[Pendulum-v1] Ep 0271 | R_raw=-1426.12 | len=200 | loss=0.002
+[Pendulum-v1] Ep 0272 | R_raw=-1500.90 | len=200 | loss=0.050
+[Pendulum-v1] Ep 0273 | R_raw=-1349.15 | len=200 | loss=-0.008
+[Pendulum-v1] Ep 0274 | R_raw=-1496.52 | len=200 | loss=-0.028
+[Pendulum-v1] Ep 0275 | R_raw=-1365.31 | len=200 | loss=-0.079
+[Pendulum-v1] Ep 0276 | R_raw=-1511.90 | len=200 | loss=0.026
+[Pendulum-v1] Ep 0277 | R_raw=-1520.43 | len=200 | loss=0.097
+[Pendulum-v1] Ep 0278 | R_raw=-1379.14 | len=200 | loss=-0.107
+[Pendulum-v1] Ep 0279 | R_raw=-1387.86 | len=200 | loss=-0.080
+[Pendulum-v1] Ep 0280 | R_raw=-1437.05 | len=200 | loss=-0.028
+[Pendulum-v1] Ep 0281 | R_raw=-1337.22 | len=200 | loss=0.095
+[Pendulum-v1] Ep 0282 | R_raw=-1490.94 | len=200 | loss=-0.053
+[Pendulum-v1] Ep 0283 | R_raw=-1407.14 | len=200 | loss=0.056
+[Pendulum-v1] Ep 0284 | R_raw=-1526.20 | len=200 | loss=0.033
+[Pendulum-v1] Ep 0285 | R_raw=-1446.98 | len=200 | loss=-0.048
+[Pendulum-v1] Ep 0286 | R_raw=-1422.97 | len=200 | loss=-0.064
+[Pendulum-v1] Ep 0287 | R_raw=-1259.73 | len=200 | loss=-0.180
+[Pendulum-v1] Ep 0288 | R_raw=-1458.00 | len=200 | loss=0.014
+[Pendulum-v1] Ep 0289 | R_raw=-1522.34 | len=200 | loss=-0.030
+[Pendulum-v1] Ep 0290 | R_raw=-1471.60 | len=200 | loss=0.003
+[Pendulum-v1] Ep 0291 | R_raw=-1469.22 | len=200 | loss=-0.028
+[Pendulum-v1] Ep 0292 | R_raw=-1395.25 | len=200 | loss=-0.150
+[Pendulum-v1] Ep 0293 | R_raw=-1373.01 | len=200 | loss=-0.027
+[Pendulum-v1] Ep 0294 | R_raw=-1353.38 | len=200 | loss=0.277
+[Pendulum-v1] Ep 0295 | R_raw=-1490.72 | len=200 | loss=0.092
+[Pendulum-v1] Ep 0296 | R_raw=-1565.01 | len=200 | loss=-0.056
+[Pendulum-v1] Ep 0297 | R_raw=-1466.66 | len=200 | loss=-0.024
+[Pendulum-v1] Ep 0298 | R_raw=-914.18 | len=200 | loss=0.142
+[Pendulum-v1] Ep 0299 | R_raw=-1187.76 | len=200 | loss=-0.113
+[Pendulum-v1] Ep 0300 | R_raw=-1205.50 | len=200 | loss=0.074
+[Pendulum-v1] Ep 0301 | R_raw=-1349.62 | len=200 | loss=-0.118
+[Pendulum-v1] Ep 0302 | R_raw=-1128.52 | len=200 | loss=-0.121
+[Pendulum-v1] Ep 0303 | R_raw=-892.90 | len=200 | loss=-0.025
+[Pendulum-v1] Ep 0304 | R_raw=-883.15 | len=200 | loss=0.101
+[Pendulum-v1] Ep 0305 | R_raw=-1141.50 | len=200 | loss=-0.060
+[Pendulum-v1] Ep 0306 | R_raw=-961.74 | len=200 | loss=0.214
+[Pendulum-v1] Ep 0307 | R_raw=-748.86 | len=200 | loss=0.069
+[Pendulum-v1] Ep 0308 | R_raw=-1087.75 | len=200 | loss=-0.035
+[Pendulum-v1] Ep 0309 | R_raw=-1199.27 | len=200 | loss=-0.145
+[Pendulum-v1] Ep 0310 | R_raw=-1510.57 | len=200 | loss=-0.078
+[Pendulum-v1] Ep 0311 | R_raw=-1218.78 | len=200 | loss=0.066
+[Pendulum-v1] Ep 0312 | R_raw=-1224.97 | len=200 | loss=-0.004
+[Pendulum-v1] Ep 0313 | R_raw=-1533.16 | len=200 | loss=-0.244
+[Pendulum-v1] Ep 0314 | R_raw=-1369.52 | len=200 | loss=0.096
+[Pendulum-v1] Ep 0315 | R_raw=-1326.03 | len=200 | loss=-0.002
+[Pendulum-v1] Ep 0316 | R_raw=-1313.42 | len=200 | loss=-0.058
+[Pendulum-v1] Ep 0317 | R_raw=-1371.06 | len=200 | loss=-0.062
+[Pendulum-v1] Ep 0318 | R_raw=-1441.81 | len=200 | loss=0.025
+[Pendulum-v1] Ep 0319 | R_raw=-1120.75 | len=200 | loss=-0.016
+[Pendulum-v1] Ep 0320 | R_raw=-1132.76 | len=200 | loss=0.033
+[Pendulum-v1] Ep 0321 | R_raw=-1085.86 | len=200 | loss=-0.132
+[Pendulum-v1] Ep 0322 | R_raw=-1228.27 | len=200 | loss=-0.014
+[Pendulum-v1] Ep 0323 | R_raw=-889.58 | len=200 | loss=0.127
+[Pendulum-v1] Ep 0324 | R_raw=-1176.10 | len=200 | loss=0.093
+[Pendulum-v1] Ep 0325 | R_raw=-1334.68 | len=200 | loss=-0.090
+[Pendulum-v1] Ep 0326 | R_raw=-1056.11 | len=200 | loss=0.010
+[Pendulum-v1] Ep 0327 | R_raw=-1032.51 | len=200 | loss=-0.003
+[Pendulum-v1] Ep 0328 | R_raw=-1135.47 | len=200 | loss=0.054
+[Pendulum-v1] Ep 0329 | R_raw=-963.92 | len=200 | loss=-0.030
+[Pendulum-v1] Ep 0330 | R_raw=-789.36 | len=200 | loss=0.127
+[Pendulum-v1] Ep 0331 | R_raw=-1023.75 | len=200 | loss=-0.005
+[Pendulum-v1] Ep 0332 | R_raw=-1166.87 | len=200 | loss=0.030
+[Pendulum-v1] Ep 0333 | R_raw=-1224.37 | len=200 | loss=-0.075
+[Pendulum-v1] Ep 0334 | R_raw=-1072.46 | len=200 | loss=-0.025
+[Pendulum-v1] Ep 0335 | R_raw=-1183.18 | len=200 | loss=0.098
+[Pendulum-v1] Ep 0336 | R_raw=-927.62 | len=200 | loss=-0.002
+[Pendulum-v1] Ep 0337 | R_raw=-1306.18 | len=200 | loss=-0.015
+[Pendulum-v1] Ep 0338 | R_raw=-1208.46 | len=200 | loss=-0.126
+[Pendulum-v1] Ep 0339 | R_raw=-957.86 | len=200 | loss=-0.113
+[Pendulum-v1] Ep 0340 | R_raw=-1180.66 | len=200 | loss=-0.038
+[Pendulum-v1] Ep 0341 | R_raw=-1222.16 | len=200 | loss=-0.060
+[Pendulum-v1] Ep 0342 | R_raw=-883.56 | len=200 | loss=-0.025
+[Pendulum-v1] Ep 0343 | R_raw=-1099.56 | len=200 | loss=0.129
+[Pendulum-v1] Ep 0344 | R_raw=-1076.42 | len=200 | loss=0.033
+[Pendulum-v1] Ep 0345 | R_raw=-871.38 | len=200 | loss=0.076
+[Pendulum-v1] Ep 0346 | R_raw=-993.49 | len=200 | loss=0.065
+[Pendulum-v1] Ep 0347 | R_raw=-1220.91 | len=200 | loss=-0.013
+[Pendulum-v1] Ep 0348 | R_raw=-1072.03 | len=200 | loss=-0.087
+[Pendulum-v1] Ep 0349 | R_raw=-1081.82 | len=200 | loss=0.049
+[Pendulum-v1] Ep 0350 | R_raw=-1044.70 | len=200 | loss=-0.062
+[Pendulum-v1] Ep 0351 | R_raw=-1173.46 | len=200 | loss=0.068
+[Pendulum-v1] Ep 0352 | R_raw=-931.42 | len=200 | loss=0.046
+[Pendulum-v1] Ep 0353 | R_raw=-1295.30 | len=200 | loss=0.091
+[Pendulum-v1] Ep 0354 | R_raw=-1336.04 | len=200 | loss=-0.082
+[Pendulum-v1] Ep 0355 | R_raw=-1019.35 | len=200 | loss=0.143
+[Pendulum-v1] Ep 0356 | R_raw=-1130.68 | len=200 | loss=0.001
+[Pendulum-v1] Ep 0357 | R_raw=-1112.22 | len=200 | loss=-0.050
+[Pendulum-v1] Ep 0358 | R_raw=-767.11 | len=200 | loss=-0.166
+[Pendulum-v1] Ep 0359 | R_raw=-1235.13 | len=200 | loss=0.114
+[Pendulum-v1] Ep 0360 | R_raw=-1172.35 | len=200 | loss=-0.073
+[Pendulum-v1] Ep 0361 | R_raw=-1305.14 | len=200 | loss=0.030
+[Pendulum-v1] Ep 0362 | R_raw=-1507.47 | len=200 | loss=0.180
+[Pendulum-v1] Ep 0363 | R_raw=-1468.04 | len=200 | loss=0.173
+[Pendulum-v1] Ep 0364 | R_raw=-1408.30 | len=200 | loss=0.149
+[Pendulum-v1] Ep 0365 | R_raw=-1571.32 | len=200 | loss=0.107
+[Pendulum-v1] Ep 0366 | R_raw=-1315.98 | len=200 | loss=0.060
+[Pendulum-v1] Ep 0367 | R_raw=-1686.52 | len=200 | loss=-0.043
+[Pendulum-v1] Ep 0368 | R_raw=-1659.44 | len=200 | loss=0.070
+[Pendulum-v1] Ep 0369 | R_raw=-1617.98 | len=200 | loss=0.061
+[Pendulum-v1] Ep 0370 | R_raw=-1792.77 | len=200 | loss=0.066
+[Pendulum-v1] Ep 0371 | R_raw=-1652.56 | len=200 | loss=0.152
+[Pendulum-v1] Ep 0372 | R_raw=-1621.49 | len=200 | loss=0.114
+[Pendulum-v1] Ep 0373 | R_raw=-1743.95 | len=200 | loss=0.054
+[Pendulum-v1] Ep 0374 | R_raw=-1525.73 | len=200 | loss=0.299
+[Pendulum-v1] Ep 0375 | R_raw=-1708.68 | len=200 | loss=0.141
+[Pendulum-v1] Ep 0376 | R_raw=-1601.25 | len=200 | loss=0.120
+[Pendulum-v1] Ep 0377 | R_raw=-1569.64 | len=200 | loss=0.154
+[Pendulum-v1] Ep 0378 | R_raw=-1656.28 | len=200 | loss=0.066
+[Pendulum-v1] Ep 0379 | R_raw=-1663.22 | len=200 | loss=0.217
+[Pendulum-v1] Ep 0380 | R_raw=-1781.32 | len=200 | loss=0.069
+[Pendulum-v1] Ep 0381 | R_raw=-1768.52 | len=200 | loss=0.034
+[Pendulum-v1] Ep 0382 | R_raw=-1593.94 | len=200 | loss=0.018
+[Pendulum-v1] Ep 0383 | R_raw=-1736.86 | len=200 | loss=0.040
+[Pendulum-v1] Ep 0384 | R_raw=-1590.21 | len=200 | loss=0.069
+[Pendulum-v1] Ep 0385 | R_raw=-1821.54 | len=200 | loss=0.110
+[Pendulum-v1] Ep 0386 | R_raw=-1565.84 | len=200 | loss=0.087
+[Pendulum-v1] Ep 0387 | R_raw=-1538.27 | len=200 | loss=0.048
+[Pendulum-v1] Ep 0388 | R_raw=-1293.11 | len=200 | loss=-0.072
+[Pendulum-v1] Ep 0389 | R_raw=-1421.47 | len=200 | loss=0.096
+[Pendulum-v1] Ep 0390 | R_raw=-1576.89 | len=200 | loss=0.172
+[Pendulum-v1] Ep 0391 | R_raw=-1621.21 | len=200 | loss=0.063
+[Pendulum-v1] Ep 0392 | R_raw=-1610.56 | len=200 | loss=0.087
+[Pendulum-v1] Ep 0393 | R_raw=-1639.71 | len=200 | loss=0.087
+[Pendulum-v1] Ep 0394 | R_raw=-1797.53 | len=200 | loss=0.063
+[Pendulum-v1] Ep 0395 | R_raw=-1723.52 | len=200 | loss=-0.023
+[Pendulum-v1] Ep 0396 | R_raw=-1641.57 | len=200 | loss=0.209
+[Pendulum-v1] Ep 0397 | R_raw=-1731.68 | len=200 | loss=0.130
+[Pendulum-v1] Ep 0398 | R_raw=-1576.89 | len=200 | loss=0.209
+[Pendulum-v1] Ep 0399 | R_raw=-1688.95 | len=200 | loss=0.188
+[Pendulum-v1] Ep 0400 | R_raw=-1675.30 | len=200 | loss=0.134
+[Pendulum-v1] Ep 0401 | R_raw=-1443.79 | len=200 | loss=0.096
+[Pendulum-v1] Ep 0402 | R_raw=-1789.50 | len=200 | loss=0.040
+[Pendulum-v1] Ep 0403 | R_raw=-1540.97 | len=200 | loss=0.086
+[Pendulum-v1] Ep 0404 | R_raw=-1568.29 | len=200 | loss=0.154
+[Pendulum-v1] Ep 0405 | R_raw=-1556.05 | len=200 | loss=0.062
+[Pendulum-v1] Ep 0406 | R_raw=-1816.62 | len=200 | loss=-0.105
+[Pendulum-v1] Ep 0407 | R_raw=-1572.91 | len=200 | loss=0.085
+[Pendulum-v1] Ep 0408 | R_raw=-1339.30 | len=200 | loss=0.124
+[Pendulum-v1] Ep 0409 | R_raw=-1435.30 | len=200 | loss=0.006
+[Pendulum-v1] Ep 0410 | R_raw=-1102.27 | len=200 | loss=-0.036
+[Pendulum-v1] Ep 0411 | R_raw=-1630.44 | len=200 | loss=0.135
+[Pendulum-v1] Ep 0412 | R_raw=-1789.10 | len=200 | loss=-0.052
+[Pendulum-v1] Ep 0413 | R_raw=-1622.32 | len=200 | loss=0.243
+[Pendulum-v1] Ep 0414 | R_raw=-1558.13 | len=200 | loss=0.253
+[Pendulum-v1] Ep 0415 | R_raw=-1444.17 | len=200 | loss=0.053
+[Pendulum-v1] Ep 0416 | R_raw=-1682.05 | len=200 | loss=0.123
+[Pendulum-v1] Ep 0417 | R_raw=-1390.64 | len=200 | loss=0.278
+[Pendulum-v1] Ep 0418 | R_raw=-1537.54 | len=200 | loss=0.159
+[Pendulum-v1] Ep 0419 | R_raw=-1307.44 | len=200 | loss=0.130
+[Pendulum-v1] Ep 0420 | R_raw=-1737.71 | len=200 | loss=0.027
+[Pendulum-v1] Ep 0421 | R_raw=-1717.05 | len=200 | loss=0.091
+[Pendulum-v1] Ep 0422 | R_raw=-1483.07 | len=200 | loss=0.164
+[Pendulum-v1] Ep 0423 | R_raw=-1182.34 | len=200 | loss=-0.064
+[Pendulum-v1] Ep 0424 | R_raw=-1721.06 | len=200 | loss=0.082
+[Pendulum-v1] Ep 0425 | R_raw=-1667.90 | len=200 | loss=0.192
+[Pendulum-v1] Ep 0426 | R_raw=-1699.22 | len=200 | loss=0.117
+[Pendulum-v1] Ep 0427 | R_raw=-1371.94 | len=200 | loss=0.123
+[Pendulum-v1] Ep 0428 | R_raw=-1685.05 | len=200 | loss=-0.032
+[Pendulum-v1] Ep 0429 | R_raw=-1057.31 | len=200 | loss=-0.141
+[Pendulum-v1] Ep 0430 | R_raw=-1441.66 | len=200 | loss=0.023
+[Pendulum-v1] Ep 0431 | R_raw=-984.91 | len=200 | loss=-0.112
+[Pendulum-v1] Ep 0432 | R_raw=-1061.37 | len=200 | loss=0.043
+[Pendulum-v1] Ep 0433 | R_raw=-1183.84 | len=200 | loss=-0.011
+[Pendulum-v1] Ep 0434 | R_raw=-1322.26 | len=200 | loss=0.030
+[Pendulum-v1] Ep 0435 | R_raw=-1305.48 | len=200 | loss=-0.064
+[Pendulum-v1] Ep 0436 | R_raw=-1249.91 | len=200 | loss=-0.145
+[Pendulum-v1] Ep 0437 | R_raw=-1156.57 | len=200 | loss=-0.149
+[Pendulum-v1] Ep 0438 | R_raw=-1014.55 | len=200 | loss=0.012
+[Pendulum-v1] Ep 0439 | R_raw=-1079.52 | len=200 | loss=-0.105
+[Pendulum-v1] Ep 0440 | R_raw=-1059.85 | len=200 | loss=-0.038
+[Pendulum-v1] Ep 0441 | R_raw=-867.94 | len=200 | loss=-0.038
+[Pendulum-v1] Ep 0442 | R_raw=-1526.46 | len=200 | loss=-0.035
+[Pendulum-v1] Ep 0443 | R_raw=-1325.90 | len=200 | loss=0.027
+[Pendulum-v1] Ep 0444 | R_raw=-1492.85 | len=200 | loss=-0.002
+[Pendulum-v1] Ep 0445 | R_raw=-1235.53 | len=200 | loss=-0.032
+[Pendulum-v1] Ep 0446 | R_raw=-1278.74 | len=200 | loss=0.097
+[Pendulum-v1] Ep 0447 | R_raw=-1156.49 | len=200 | loss=0.122
+[Pendulum-v1] Ep 0448 | R_raw=-1241.17 | len=200 | loss=-0.016
+[Pendulum-v1] Ep 0449 | R_raw=-1437.57 | len=200 | loss=0.149
+[Pendulum-v1] Ep 0450 | R_raw=-1725.83 | len=200 | loss=0.110
+[Pendulum-v1] Ep 0451 | R_raw=-1796.23 | len=200 | loss=0.048
+[Pendulum-v1] Ep 0452 | R_raw=-1611.13 | len=200 | loss=0.123
+[Pendulum-v1] Ep 0453 | R_raw=-1704.82 | len=200 | loss=0.061
+[Pendulum-v1] Ep 0454 | R_raw=-1555.60 | len=200 | loss=0.073
+[Pendulum-v1] Ep 0455 | R_raw=-1404.51 | len=200 | loss=0.133
+[Pendulum-v1] Ep 0456 | R_raw=-1679.00 | len=200 | loss=0.108
+[Pendulum-v1] Ep 0457 | R_raw=-1161.35 | len=200 | loss=-0.017
+[Pendulum-v1] Ep 0458 | R_raw=-1508.33 | len=200 | loss=0.150
+[Pendulum-v1] Ep 0459 | R_raw=-920.37 | len=200 | loss=-0.057
+[Pendulum-v1] Ep 0460 | R_raw=-1273.71 | len=200 | loss=0.059
+[Pendulum-v1] Ep 0461 | R_raw=-1664.24 | len=200 | loss=0.038
+[Pendulum-v1] Ep 0462 | R_raw=-1693.99 | len=200 | loss=-0.060
+[Pendulum-v1] Ep 0463 | R_raw=-1628.99 | len=200 | loss=0.035
+[Pendulum-v1] Ep 0464 | R_raw=-1595.10 | len=200 | loss=-0.046
+[Pendulum-v1] Ep 0465 | R_raw=-1529.21 | len=200 | loss=0.038
+[Pendulum-v1] Ep 0466 | R_raw=-1344.18 | len=200 | loss=-0.068
+[Pendulum-v1] Ep 0467 | R_raw=-1622.54 | len=200 | loss=0.018
+[Pendulum-v1] Ep 0468 | R_raw=-1286.86 | len=200 | loss=0.096
+[Pendulum-v1] Ep 0469 | R_raw=-1145.74 | len=200 | loss=-0.059
+[Pendulum-v1] Ep 0470 | R_raw=-1138.54 | len=200 | loss=-0.032
+[Pendulum-v1] Ep 0471 | R_raw=-1166.09 | len=200 | loss=0.037
+[Pendulum-v1] Ep 0472 | R_raw=-1058.10 | len=200 | loss=0.072
+[Pendulum-v1] Ep 0473 | R_raw=-1054.16 | len=200 | loss=-0.024
+[Pendulum-v1] Ep 0474 | R_raw=-965.04 | len=200 | loss=-0.008
+[Pendulum-v1] Ep 0475 | R_raw=-1237.56 | len=200 | loss=-0.013
+[Pendulum-v1] Ep 0476 | R_raw=-1082.30 | len=200 | loss=0.091
+[Pendulum-v1] Ep 0477 | R_raw=-1299.59 | len=200 | loss=-0.111
+[Pendulum-v1] Ep 0478 | R_raw=-1198.28 | len=200 | loss=-0.073
+[Pendulum-v1] Ep 0479 | R_raw=-1231.87 | len=200 | loss=-0.030
+[Pendulum-v1] Ep 0480 | R_raw=-1260.01 | len=200 | loss=0.004
+[Pendulum-v1] Ep 0481 | R_raw=-1330.41 | len=200 | loss=0.023
+[Pendulum-v1] Ep 0482 | R_raw=-1269.10 | len=200 | loss=0.116
+[Pendulum-v1] Ep 0483 | R_raw=-1303.05 | len=200 | loss=0.053
+[Pendulum-v1] Ep 0484 | R_raw=-1507.58 | len=200 | loss=-0.021
+[Pendulum-v1] Ep 0485 | R_raw=-1361.90 | len=200 | loss=-0.044
+[Pendulum-v1] Ep 0486 | R_raw=-1578.13 | len=200 | loss=0.025
+[Pendulum-v1] Ep 0487 | R_raw=-1411.28 | len=200 | loss=-0.035
+[Pendulum-v1] Ep 0488 | R_raw=-1563.81 | len=200 | loss=-0.057
+[Pendulum-v1] Ep 0489 | R_raw=-1592.41 | len=200 | loss=-0.081
+[Pendulum-v1] Ep 0490 | R_raw=-1555.35 | len=200 | loss=-0.042
+[Pendulum-v1] Ep 0491 | R_raw=-1347.99 | len=200 | loss=-0.094
+[Pendulum-v1] Ep 0492 | R_raw=-1610.47 | len=200 | loss=-0.108
+[Pendulum-v1] Ep 0493 | R_raw=-1601.19 | len=200 | loss=0.028
+[Pendulum-v1] Ep 0494 | R_raw=-1663.47 | len=200 | loss=0.067
+[Pendulum-v1] Ep 0495 | R_raw=-1561.00 | len=200 | loss=-0.080
+[Pendulum-v1] Ep 0496 | R_raw=-1427.98 | len=200 | loss=0.034
+[Pendulum-v1] Ep 0497 | R_raw=-1616.51 | len=200 | loss=-0.019
+[Pendulum-v1] Ep 0498 | R_raw=-1419.57 | len=200 | loss=0.098
+[Pendulum-v1] Ep 0499 | R_raw=-1432.91 | len=200 | loss=-0.239
+[Pendulum-v1] Ep 0500 | R_raw=-1361.73 | len=200 | loss=-0.486
+[Pendulum-v1] Ep 0501 | R_raw=-1642.23 | len=200 | loss=-0.025
+[Pendulum-v1] Ep 0502 | R_raw=-1365.55 | len=200 | loss=-0.087
+[Pendulum-v1] Ep 0503 | R_raw=-1352.99 | len=200 | loss=-0.243
+[Pendulum-v1] Ep 0504 | R_raw=-1577.54 | len=200 | loss=-0.114
+[Pendulum-v1] Ep 0505 | R_raw=-1418.54 | len=200 | loss=-0.433
+[Pendulum-v1] Ep 0506 | R_raw=-1585.48 | len=200 | loss=-0.092
+[Pendulum-v1] Ep 0507 | R_raw=-1492.24 | len=200 | loss=-0.331
+[Pendulum-v1] Ep 0508 | R_raw=-1524.09 | len=200 | loss=-0.129
+[Pendulum-v1] Ep 0509 | R_raw=-1471.57 | len=200 | loss=-0.106
+[Pendulum-v1] Ep 0510 | R_raw=-1601.27 | len=200 | loss=-0.017
+[Pendulum-v1] Ep 0511 | R_raw=-1642.27 | len=200 | loss=0.017
+[Pendulum-v1] Ep 0512 | R_raw=-1641.68 | len=200 | loss=0.044
+[Pendulum-v1] Ep 0513 | R_raw=-1639.45 | len=200 | loss=-0.021
+[Pendulum-v1] Ep 0514 | R_raw=-1583.47 | len=200 | loss=-0.178
+[Pendulum-v1] Ep 0515 | R_raw=-1508.14 | len=200 | loss=-0.132
+[Pendulum-v1] Ep 0516 | R_raw=-1496.88 | len=200 | loss=0.078
+[Pendulum-v1] Ep 0517 | R_raw=-1241.82 | len=200 | loss=0.026
+[Pendulum-v1] Ep 0518 | R_raw=-1436.58 | len=200 | loss=-0.123
+[Pendulum-v1] Ep 0519 | R_raw=-1656.16 | len=200 | loss=-0.031
+[Pendulum-v1] Ep 0520 | R_raw=-1408.67 | len=200 | loss=-0.038
+[Pendulum-v1] Ep 0521 | R_raw=-1591.23 | len=200 | loss=-0.157
+[Pendulum-v1] Ep 0522 | R_raw=-1661.29 | len=200 | loss=-0.000
+[Pendulum-v1] Ep 0523 | R_raw=-1426.56 | len=200 | loss=-0.017
+[Pendulum-v1] Ep 0524 | R_raw=-1540.42 | len=200 | loss=-0.117
+[Pendulum-v1] Ep 0525 | R_raw=-1610.26 | len=200 | loss=-0.010
+[Pendulum-v1] Ep 0526 | R_raw=-1626.19 | len=200 | loss=-0.00

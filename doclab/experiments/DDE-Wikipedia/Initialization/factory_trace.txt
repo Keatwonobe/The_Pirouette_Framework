@@ -1,0 +1,226 @@
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📁 Created vault: wiki_vault/
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ✅ Rehydration complete.
+📂 Manifest loaded from dde_wiki_checkpoint_25000.json
+   └─ 25000 datasets, 0 evolution cycles
+   └─ Loaded 3090036 vocab keys.
+   ✅ Loaded 25000 targets with 3090036 vocab words.
+   ⚡ Streaming XML and materializing artifacts...
+   🔎 Scanned 1000 pages... (Generated: 0)
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ✅ Rehydration complete.
+📂 Manifest loaded from dde_wiki_checkpoint_25000.json
+   └─ 25000 datasets, 0 evolution cycles
+   └─ Loaded 3090036 vocab keys.
+   ✅ Loaded 25000 targets with 3090036 vocab words.
+   ⚡ Streaming XML and materializing artifacts...
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ❌ Failed to load checkpoint: 'type' object is not iterable
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ✅ Rehydration complete.
+📂 Manifest loaded from dde_wiki_checkpoint_25000.json
+   └─ 25000 datasets, 0 evolution cycles
+   └─ Loaded 3090036 vocab keys.
+   ✅ Loaded 25000 targets with 3090036 vocab words.
+   ⚡ Streaming XML and materializing artifacts...
+   🔎 Scanned 1000 pages... (Generated: 0)
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ❌ Failed to load checkpoint: 'str' object is not callable
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ✅ Rehydration complete.
+📂 Manifest loaded from dde_wiki_checkpoint_25000.json
+   └─ 25000 datasets, 0 evolution cycles
+   └─ Loaded 3090036 vocab keys.
+   ✅ Loaded 25000 targets with 3090036 vocab words.
+   ⚡ Streaming XML and materializing artifacts...
+Traceback (most recent call last):
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia\wikipedia_factory.py", line 216, in <module>
+    run_factory(args.xml_file, args.checkpoint, args.limit)
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia\wikipedia_factory.py", line 159, in run_factory
+    if event == 'end':
+       ^^^^^^^^^^^^^^
+TypeError: 'str' object does not support the context manager protocol
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ❌ Failed to load checkpoint: 'str' object is not callable
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ✅ Rehydration complete.
+📂 Manifest loaded from dde_wiki_checkpoint_25000.json
+   └─ 25000 datasets, 0 evolution cycles
+   └─ Loaded 3090036 vocab keys.
+   ✅ Loaded 25000 targets with 3090036 vocab words.
+   ⚡ Streaming XML and materializing artifacts...
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ✅ Rehydration complete.
+📂 Manifest loaded from dde_wiki_checkpoint_25000.json
+   └─ 25000 datasets, 0 evolution cycles
+   └─ Loaded 3090036 vocab keys.
+   ✅ Loaded 25000 targets with 3090036 vocab words.
+   ⚡ Streaming XML and materializing artifacts...
+   🔎 Scanned 7000 pages... (Generated: 0)
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ✅ Rehydration complete.
+📂 Manifest loaded from dde_wiki_checkpoint_25000.json
+   └─ 25000 datasets, 0 evolution cycles
+   └─ Loaded 3090036 vocab keys.
+   ✅ Loaded 25000 targets with 3090036 vocab words.
+   ⚡ Streaming XML and materializing artifacts...
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ✅ Rehydration complete.
+📂 Manifest loaded from dde_wiki_checkpoint_25000.json
+   └─ 25000 datasets, 0 evolution cycles
+   └─ Loaded 3090036 vocab keys.
+   ✅ Loaded 25000 targets with 3090036 vocab words.
+   ⚡ Streaming XML and materializing artifacts...
+   🔎 Scanned 1000 pages... (Generated: 0)
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ✅ Rehydration complete.
+📂 Manifest loaded from dde_wiki_checkpoint_25000.json
+   └─ 25000 datasets, 0 evolution cycles
+   └─ Loaded 3090036 vocab keys.
+   ✅ Loaded 25000 targets with 3090036 vocab words.
+   ⚡ Streaming XML and materializing artifacts...
+   🔎 Scanned 1000 pages... (Generated: 0)
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ❌ Failed to load checkpoint: 'str' object is not callable
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ✅ Rehydration complete.
+📂 Manifest loaded from dde_wiki_checkpoint_25000.json
+   └─ 25000 datasets, 0 evolution cycles
+   └─ Loaded 3090036 vocab keys.
+   ✅ Loaded 25000 targets with 3090036 vocab words.
+   ⚡ Streaming XML and materializing artifacts...
+   🔎 Scanned 1000 pages... (Generated: 0)
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ❌ Failed to load checkpoint: 'dict_itemiterator' object does not support the context manager protocol
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ❌ Failed to load checkpoint: 'type' object is not iterable
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ✅ Rehydration complete.
+📂 Manifest loaded from dde_wiki_checkpoint_25000.json
+   └─ 25000 datasets, 0 evolution cycles
+   └─ Loaded 3090036 vocab keys.
+   ✅ Loaded 25000 targets with 3090036 vocab words.
+   ⚡ Streaming XML and materializing artifacts...
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ❌ Failed to load checkpoint: too many values to unpack (expected 2)
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\DDE-Wikipedia> python wikipedia_factory.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml" --checkpoint "dde_wiki_checkpoint_25000.json" --limit 50
+🏭 DDE FACTORY ONLINE
+   XML: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Ingest_Wikipedia\enwiki-20250201-pages-articles-multistream.xml\enwiki-20250201-pages-articles-multistream.xml
+   Checkpoint: dde_wiki_checkpoint_25000.json
+   📖 Loading checkpoint/vocab (this may take a moment)...
+🧬 Minified manifest detected. Rehydrating...
+   ✅ Rehydration complete.
+📂 Manifest loaded from dde_wiki_checkpoint_25000.json
+   └─ 25000 datasets, 0 evolution cycles
+   └─ Loaded 3090036 vocab keys.
+   ✅ Loaded 25000 targets with 3090036 vocab words.
+   ⚡ Streaming XML and materializing artifacts...
+   🔎 Scanned 3000 pages... (Generated: 0)

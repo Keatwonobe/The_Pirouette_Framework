@@ -1,0 +1,2630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLE COMBAT RUNNER // PIROUETTE EDITION</title>
+    <style>
+        :root {
+            --bg: #050505;
+            --term: #33ff33;
+            --dim: #1a801a;
+            --alert: #ff3333;
+            --cyan: #00ffff;
+            --gold: #ffcc00;
+            --ui-border: #333;
+            --font: 'Courier New', Courier, monospace;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg);
+            color: var(--term);
+            font-family: var(--font);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            user-select: none;
+        }
+
+        /* --- LAYOUT --- */
+        #sidebar {
+            width: 400px;
+            height: 100%;
+            border-right: 1px solid var(--ui-border);
+            display: flex;
+            flex-direction: column;
+            background: #080808;
+            z-index: 10;
+        }
+
+        #viewport {
+            flex-grow: 1;
+            height: 100%;
+            background: #101010;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* --- TERMINAL --- */
+        #header {
+            padding: 12px;
+            background: #111;
+            border-bottom: 1px solid #333;
+            font-weight: bold;
+            text-align: center;
+            color: var(--cyan);
+            text-shadow: 0 0 5px var(--cyan);
+        }
+
+        #log {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 15px;
+            font-size: 12px;
+            white-space: pre-wrap;
+            scrollbar-width: thin;
+            scrollbar-color: var(--dim) var(--bg);
+        }
+
+        .entry { 
+            margin-bottom: 4px; 
+            line-height: 1.5; 
+            border-left: 2px solid transparent; 
+            padding-left: 8px; 
+        }
+        .sys { color: #666; font-style: italic; }
+        .cmd { color: #888; border-left: 2px solid var(--dim); }
+        .err { color: var(--alert); }
+        .hit { color: var(--term); font-weight: bold; }
+        .crit { color: var(--gold); text-shadow: 0 0 5px var(--gold); }
+        .info { color: var(--cyan); }
+        .turn-start { 
+            border-left: 2px solid var(--cyan); 
+            background: rgba(0, 255, 255, 0.05);
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        #input-area {
+            border-top: 1px solid var(--ui-border);
+            padding: 10px;
+            background: #000;
+            display: flex;
+            align-items: center;
+        }
+        
+        input {
+            background: transparent;
+            border: none;
+            color: white;
+            font-family: var(--font);
+            font-size: 13px;
+            flex-grow: 1;
+            outline: none;
+            margin-left: 10px;
+        }
+
+        /* --- CANVAS --- */
+        canvas { 
+            display: block; 
+            width: 100%; 
+            height: 100%; 
+            cursor: crosshair;
+        }
+
+        /* --- OVERLAYS --- */
+        #turn-tracker {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 250px;
+            background: rgba(0,0,0,0.9);
+            border: 1px solid var(--dim);
+            padding: 12px;
+            pointer-events: none;
+            font-size: 11px;
+        }
+        
+        .tracker-header {
+            border-bottom: 1px solid #444;
+            margin-bottom: 8px;
+            padding-bottom: 5px;
+            font-weight: bold;
+            color: var(--cyan);
+        }
+        
+        .tracker-row { 
+            display: flex; 
+            justify-content: space-between; 
+            padding: 3px 0;
+            align-items: center;
+        }
+        
+        .tracker-active { 
+            color: var(--cyan); 
+            font-weight: bold; 
+            text-shadow: 0 0 3px var(--cyan);
+            background: rgba(0, 255, 255, 0.1);
+            padding: 3px;
+            border-radius: 2px;
+        }
+        
+        .tracker-dead { 
+            text-decoration: line-through; 
+            color: #555; 
+        }
+
+        .hp-mini {
+            font-size: 9px;
+            color: #888;
+        }
+
+        #round-display {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0,0,0,0.9);
+            border: 1px solid var(--dim);
+            padding: 8px 12px;
+            pointer-events: none;
+            font-weight: bold;
+            color: var(--gold);
+        }
+        
+        #mouse-coords {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0,0,0,0.9);
+            border: 1px solid var(--dim);
+            padding: 8px 12px;
+            pointer-events: none;
+            font-size: 12px;
+            color: var(--term);
+            font-family: var(--font);
+        }
+        
+        #bg-controls {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0,0,0,0.9);
+            border: 1px solid var(--dim);
+            padding: 8px 12px;
+            font-size: 11px;
+            color: var(--dim);
+        }
+        
+        #bg-controls button {
+            background: rgba(0, 255, 0, 0.2);
+            border: 1px solid var(--dim);
+            color: var(--term);
+            padding: 4px 8px;
+            margin: 2px;
+            cursor: pointer;
+            font-family: var(--font);
+            font-size: 10px;
+        }
+        
+        #bg-controls button:hover {
+            background: rgba(0, 255, 0, 0.4);
+        }
+        
+        #bg-controls input[type="file"] {
+            display: none;
+        }
+
+        #drop-zone {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 255, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--term);
+            z-index: 100;
+            display: none;
+            pointer-events: none;
+        }
+
+        .drop-hint {
+            font-size: 14px;
+            margin-top: 10px;
+            color: var(--dim);
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="drop-zone">
+    <div>📁 DROP CHARACTER/CODEX JSON</div>
+    <div class="drop-hint">Supports: initiative/*.json, spells/*.json, items/*.json</div>
+</div>
+
+<div id="sidebar">
+    <div id="header">TLE COMBAT RUNNER v3.0 // PIROUETTE</div>
+    <div id="log"></div>
+    <div id="input-area">
+        <span style="color:var(--term)">>></span>
+        <input type="text" id="cmd" placeholder="Type 'help' for commands..." autocomplete="off">
+    </div>
+</div>
+
+<div id="viewport">
+    <canvas id="gameCanvas"></canvas>
+    <div id="round-display">ROUND: <span id="round-num">0</span></div>
+    <div id="mouse-coords">X: <span id="mouse-x">0</span>, Y: <span id="mouse-y">0</span></div>
+    <div id="turn-tracker">
+        <div class="tracker-header">INITIATIVE QUEUE</div>
+        <div id="tracker-list">-- AWAITING INIT --</div>
+    </div>
+    <div id="bg-controls">
+        <div style="margin-bottom: 4px; color: var(--term);">BATTLEFIELD</div>
+        <button onclick="document.getElementById('bgImageInput').click()">Load Image</button>
+        <button onclick="clearBackgroundImage()">Clear BG</button>
+        <input type="file" id="bgImageInput" accept="image/*">
+        <div id="bg-status" style="margin-top: 4px; font-size: 9px;"></div>
+    </div>
+</div>
+
+<script>
+/**
+ * TLE COMBAT RUNNER - FULL FEATURE WEB EDITION
+ * Integrates all Python systems: spellcasting, dice buy, checks, AI, social, damage channels
+ */
+
+// ============================================================================
+// 1. CORE STATE & LIBRARIES
+// ============================================================================
+
+const STATE = {
+    characters: [],          // All characters loaded
+    turnQueue: [],          // Initiative-sorted IDs
+    turnIndex: 0,
+    round: 0,
+    combatActive: false,
+    inPreflight: false,     // Preflight setup mode
+    awaitingReaction: null, // Player reaction context
+    aiTurnPending: false,   // AI turn waiting for player reaction
+    camera: { x: 0, y: 0, zoom: 1 },
+    backgroundImage: null,  // Background image for battlefield
+    mousePos: { x: 0, y: 0 }, // Mouse position
+    libs: {
+        spells: {},
+        items: {},
+        axes: {},
+        influences: {}
+    }
+};
+
+// ============================================================================
+// 2. UTILITY FUNCTIONS
+// ============================================================================
+
+function rollDice(numDice, numSides) {
+    let total = 0;
+    for (let i = 0; i < numDice; i++) {
+        total += Math.floor(Math.random() * numSides) + 1;
+    }
+    return total;
+}
+
+function parseDiceNotation(notation) {
+    // Parse "2d6+3" format
+    const match = notation.match(/(\d+)d(\d+)(?:([+-])(\d+))?/);
+    if (!match) return 0;
+    
+    const [_, num, sides, op, bonus] = match;
+    let total = rollDice(parseInt(num), parseInt(sides));
+    
+    if (op && bonus) {
+        total = op === '+' ? total + parseInt(bonus) : total - parseInt(bonus);
+    }
+    
+    return total;
+}
+
+function distance3D(pos1, pos2) {
+    const dx = pos1.x - pos2.x;
+    const dy = pos1.y - pos2.y;
+    const dz = (pos1.z || 0) - (pos2.z || 0);
+    return Math.sqrt(dx*dx + dy*dy + dz*dz);
+}
+
+function abilityBonus(character, stat) {
+    const stats = character.stats || {};
+    const val = stats[stat.toLowerCase()] || 10;
+    return Math.floor((val - 10) / 2);
+}
+
+function clamp(val, min, max) {
+    return Math.max(min, Math.min(max, val));
+}
+
+// ============================================================================
+// 3. TERMINAL SYSTEM
+// ============================================================================
+
+const logEl = document.getElementById('log');
+const inputEl = document.getElementById('cmd');
+
+function log(msg, type = "entry") {
+    const div = document.createElement('div');
+    div.className = `entry ${type}`;
+    div.textContent = msg;
+    logEl.appendChild(div);
+    logEl.scrollTop = logEl.scrollHeight;
+}
+
+inputEl.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        const val = inputEl.value.trim();
+        if (val) {
+            // Check if we're awaiting a reaction
+            if (STATE.awaitingReaction) {
+                const handled = handleReactionCommand(val);
+                if (handled && !STATE.awaitingReaction) {
+                    // Reaction complete, continue turn
+                    log(`>> ${val}`, "cmd");
+                    inputEl.value = '';
+                    
+                    // If this was during an AI turn, let AI continue
+                    if (STATE.aiTurnPending) {
+                        STATE.aiTurnPending = false;
+                        setTimeout(() => nextTurn(), 500);
+                    }
+                } else {
+                    log(`>> ${val}`, "cmd");
+                    inputEl.value = '';
+                }
+                return;
+            }
+            
+            log(`>> ${val}`, "cmd");
+            parseCommand(val);
+            inputEl.value = '';
+        }
+    }
+});
+
+// ============================================================================
+// 4. COMMAND PARSER
+// ============================================================================
+
+function parseCommand(raw) {
+    const parts = raw.toLowerCase().split(' ');
+    const verb = parts[0];
+    
+    // Handle preflight commands
+    if (STATE.inPreflight) {
+        const handled = handlePreflightCommand(parts);
+        if (handled) return;
+        
+        // If not handled, check if it's a general command
+        if (verb === 'help' || verb === 'clear') {
+            // Allow these in preflight
+        } else {
+            log("In preflight mode. Type 'start' to begin combat or 'help' for setup commands.", "err");
+            return;
+        }
+    }
+    
+    // Help
+    if (verb === 'help') {
+        if (STATE.inPreflight) {
+            log("═══ PREFLIGHT COMMANDS ═══", "info");
+            log("start / go              Begin combat", "info");
+            log("look                    View all characters", "info");
+            log("ai on/off <idx>         Toggle AI (ranges ok)", "info");
+            log("side <idx> <team>       Set team (ranges ok)", "info");
+            log("hostility <idx> <level> Set hostility (ranges ok)", "info");
+            log("stance <idx> <stance>   Set stance (ranges ok)", "info");
+            log("", "entry");
+            log("Range examples:", "sys");
+            log("  ai off 5-10           Disable AI for chars 5-10", "sys");
+            log("  side 27-31 players    Set chars 27-31 to players", "sys");
+            log("  hostility 1-5 neutral Set chars 1-5 to neutral", "sys");
+            return;
+        }
+        
+        log("═══ COMMANDS ═══", "info");
+        log("SETUP: init, reload, spawn <id>, load", "info");
+        log("COMBAT: attack <target> spend <ep> [buy <ep>]", "info");
+        log("        weapon <target> [spend <ep>] [throw]", "info");
+        log("        cast <spell> <target> [power <ep>]", "info");
+        log("        check <target>.<field>", "info");
+        log("        move <x> <y> [z]", "info");
+        log("        pass, look, end", "info");
+        log("ITEMS: inv, equip <item>, use <item> [on <target>]", "info");
+        log("SOCIAL: talk <target> [stat]", "info");
+        log("GM: side <idx> <team>, ai on/off <idx>", "info");
+        log("    kill <idx>, damage <idx> <amt>", "info");
+        log("    heal <idx> <amt>, sethp <idx> <val>", "info");
+        log("    setep <idx> <val>", "info");
+        log("", "entry");
+        log("Range support: kill 5-10, heal 1-3 50", "sys");
+        log("", "entry");
+        log("CODEX LOADING:", "info");
+        log("  - Place codex.json in same directory as HTML", "sys");
+        log("  - OR drag and drop codex.json file", "sys");
+        log("  - Codex should have 'directories' structure:", "sys");
+        log("    { \"directories\": { \"initiative\": {...}, \"spells\": {...} } }", "sys");
+        return;
+    }
+    
+    // Reload codex
+    if (verb === 'reload') {
+        STATE.characters = [];
+        STATE.turnQueue = [];
+        STATE.combatActive = false;
+        STATE.inPreflight = false;
+        STATE.turnIndex = 0;
+        STATE.round = 0;
+        log("Clearing battlefield...", "sys");
+        autoLoadInitiative();
+        return;
+    }
+    
+    // Setup Phase
+    if (verb === 'init') {
+        if (STATE.characters.length === 0) {
+            log("No characters loaded. Drop JSON files or use 'spawn'.", "err");
+            return;
+        }
+        enterPreflightSetup();
+        return;
+    }
+    
+    if (verb === 'spawn') {
+        const id = parts[1] || 'test_npc';
+        spawnTestCharacter(id);
+        return;
+    }
+    
+    if (verb === 'load') {
+        log("Drag and drop character JSON files to load them.", "sys");
+        return;
+    }
+    
+    if (verb === 'look') {
+        printBattlefield();
+        return;
+    }
+    
+    if (verb === 'clear') {
+        logEl.innerHTML = '';
+        return;
+    }
+    
+    // Combat must be active
+    if (!STATE.combatActive) {
+        log("Combat not active. Type 'init' to begin.", "err");
+        return;
+    }
+    
+    const activeChar = getActiveCharacter();
+    
+    if (verb === 'pass' || verb === 'end') {
+        log(`${activeChar.name} ends turn.`, "sys");
+        nextTurn();
+        return;
+    }
+    
+    if (verb === 'attack') {
+        handleAttackCommand(parts, activeChar);
+        return;
+    }
+    
+    if (verb === 'weapon' || verb === 'wep') {
+        handleWeaponCommand(parts, activeChar);
+        return;
+    }
+    
+    if (verb === 'equip') {
+        handleEquipCommand(parts, activeChar);
+        return;
+    }
+    
+    if (verb === 'inventory' || verb === 'inv') {
+        handleInventoryCommand(parts, activeChar);
+        return;
+    }
+    
+    if (verb === 'cast') {
+        handleCastCommand(parts, activeChar);
+        return;
+    }
+    
+    if (verb === 'check') {
+        handleCheckCommand(parts, activeChar);
+        return;
+    }
+    
+    if (verb === 'move') {
+        handleMoveCommand(parts, activeChar);
+        return;
+    }
+    
+    if (verb === 'talk') {
+        handleTalkCommand(parts, activeChar);
+        return;
+    }
+    
+    if (verb === 'use') {
+        handleUseCommand(parts, activeChar);
+        return;
+    }
+    
+    // GM Commands (also work during combat)
+    if (verb === 'side') {
+        handleSideCommand(parts);
+        return;
+    }
+    
+    if (verb === 'ai') {
+        handleAICommand(parts);
+        return;
+    }
+    
+    if (verb === 'kill') {
+        handleKillCommand(parts);
+        return;
+    }
+    
+    if (verb === 'sethp') {
+        handleSetHPCommand(parts);
+        return;
+    }
+    
+    if (verb === 'setep') {
+        handleSetEPCommand(parts);
+        return;
+    }
+    
+    if (verb === 'heal') {
+        handleHealCommand(parts);
+        return;
+    }
+    
+    if (verb === 'damage') {
+        handleDamageCommand(parts);
+        return;
+    }
+    
+    log("Unknown command. Type 'help' for available commands.", "err");
+}
+
+// ============================================================================
+// 5. CHARACTER MANAGEMENT
+// ============================================================================
+
+function sanitizeCharacter(char) {
+    // Ensure all required fields exist
+    char.pools = char.pools || {};
+    
+    // Calculate HP/EP based on level and pools_profile if present
+    if (char.pools_profile && char.level) {
+        const level = char.level;
+        const profile = char.pools_profile;
+        
+        // Calculate HP from per-level range
+        if (profile.HP_per_level) {
+            const hpPerLevel = Array.isArray(profile.HP_per_level) 
+                ? profile.HP_per_level 
+                : [profile.HP_per_level];
+            const avgHP = hpPerLevel.reduce((a, b) => a + b, 0) / hpPerLevel.length;
+            const totalHP = Math.floor(avgHP * level);
+            
+            char.pools.max_HP = totalHP;
+            if (!char.pools.HP || char.pools.HP <= 10) {
+                char.pools.HP = totalHP;
+            }
+        }
+        
+        // Calculate EP from per-level range
+        if (profile.ENT_per_level) {
+            const epPerLevel = Array.isArray(profile.ENT_per_level) 
+                ? profile.ENT_per_level 
+                : [profile.ENT_per_level];
+            const avgEP = epPerLevel.reduce((a, b) => a + b, 0) / epPerLevel.length;
+            const totalEP = Math.floor(avgEP * level);
+            
+            char.pools.max_EP = totalEP;
+            if (!char.pools.EP || char.pools.EP <= 10) {
+                char.pools.EP = totalEP;
+            }
+        }
+    }
+    
+    // Check for combat.hp and ep.max (NPC format)
+    if (char.combat && char.combat.hp) {
+        char.pools.max_HP = char.combat.hp;
+        if (!char.pools.HP || char.pools.HP <= 10) {
+            char.pools.HP = char.combat.hp;
+        }
+    }
+    
+    if (char.ep && char.ep.max) {
+        char.pools.max_EP = char.ep.max;
+        if (!char.pools.EP || char.pools.EP <= 10) {
+            char.pools.EP = char.ep.max;
+        }
+    }
+    
+    // Default fallbacks
+    char.pools.HP = char.pools.HP ?? 10;
+    char.pools.max_HP = char.pools.max_HP ?? 10;
+    char.pools.EP = char.pools.EP ?? 10;
+    char.pools.max_EP = char.pools.max_EP ?? 10;
+    char.pools.temp_block = char.pools.temp_block ?? 0;
+    
+    // Fix HP > max_HP issue
+    if (char.pools.HP > char.pools.max_HP) {
+        char.pools.max_HP = char.pools.HP;
+    }
+    
+    char.wounds = char.wounds || {
+        cut: 0, pierce: 0, blunt: 0, thermal: 0,
+        cold: 0, lightning: 0, acid: 0, generic: 0
+    };
+    
+    char.position = char.position || { x: 400, y: 300, z: 0 };
+    char.stats = char.stats || { str: 10, dex: 10, con: 10, int: 10, wis: 10, TEP: 10 };
+    char.inventory = char.inventory || [];
+    char.spells = char.spells || [];
+    char.equipped = char.equipped || { weapon: null, armor: null };
+    char.status_effects = char.status_effects || [];
+    char.side = char.side || (char.player ? "players" : "raiders");
+    char.hostility = char.hostility || (char.player ? "friendly" : "hostile");
+    char.ai_enabled = char.ai_enabled ?? !char.player;
+    char.stance = char.stance || "combat";
+    
+    return char;
+}
+
+function spawnTestCharacter(id) {
+    const char = {
+        id: id,
+        name: id.replace(/_/g, ' ').toUpperCase(),
+        player: false,
+        pools: { HP: 15, max_HP: 15, EP: 10, max_EP: 10 },
+        stats: { str: 12, dex: 10, con: 14, int: 8, wis: 10, TEP: 10 },
+        position: { 
+            x: 200 + Math.random() * 400, 
+            y: 200 + Math.random() * 300, 
+            z: 0 
+        },
+        side: "raiders",
+        hostility: "hostile",
+        color: "#ff3333",
+        size: 15
+    };
+    
+    sanitizeCharacter(char);
+    STATE.characters.push(char);
+    log(`Spawned ${char.name} at (${Math.floor(char.position.x)}, ${Math.floor(char.position.y)})`, "sys");
+}
+
+function getActiveCharacter() {
+    if (STATE.turnQueue.length === 0) return STATE.characters[0];
+    return STATE.turnQueue[STATE.turnIndex];
+}
+
+function findCharacterByName(name) {
+    return STATE.characters.find(c => 
+        c.name.toLowerCase().includes(name.toLowerCase()) && c.pools.HP > 0
+    );
+}
+
+function findCharacterByIndex(idx) {
+    idx = parseInt(idx) - 1;
+    if (idx >= 0 && idx < STATE.characters.length) {
+        return STATE.characters[idx];
+    }
+    return null;
+}
+
+// ============================================================================
+// 6. PREFLIGHT & COMBAT INITIALIZATION
+// ============================================================================
+
+function parseIndexRange(token, maxLength) {
+    /**
+     * Parse index ranges like "5", "3-7", "10-15"
+     * Returns array of 0-based indices
+     */
+    const indices = [];
+    
+    if (token.includes('-')) {
+        const [start, end] = token.split('-').map(s => parseInt(s.trim()));
+        if (isNaN(start) || isNaN(end)) return [];
+        
+        const low = Math.min(start, end);
+        const high = Math.max(start, end);
+        
+        for (let i = low; i <= high; i++) {
+            const idx = i - 1; // Convert to 0-based
+            if (idx >= 0 && idx < maxLength) {
+                indices.push(idx);
+            }
+        }
+    } else {
+        const idx = parseInt(token) - 1;
+        if (!isNaN(idx) && idx >= 0 && idx < maxLength) {
+            indices.push(idx);
+        }
+    }
+    
+    return indices;
+}
+
+function parseMultipleIndices(tokens, maxLength) {
+    /**
+     * Parse multiple indices/ranges: ["5", "7-9", "12"]
+     * Returns sorted unique array of 0-based indices
+     */
+    const allIndices = new Set();
+    
+    for (const token of tokens) {
+        const indices = parseIndexRange(token, maxLength);
+        indices.forEach(idx => allIndices.add(idx));
+    }
+    
+    return Array.from(allIndices).sort((a, b) => a - b);
+}
+
+function enterPreflightSetup() {
+    log("", "entry");
+    log("═══════════════════════════════════════", "turn-start");
+    log("  PREFLIGHT SETUP", "turn-start");
+    log("═══════════════════════════════════════", "turn-start");
+    log("Configure battlefield before combat begins.", "sys");
+    log("", "entry");
+    log("Commands:", "info");
+    log("  start / go           - Begin combat", "info");
+    log("  look                 - View all characters", "info");
+    log("  ai on/off <idx>      - Toggle AI (ranges supported)", "info");
+    log("  side <idx> <team>    - Set team (ranges supported)", "info");
+    log("  hostility <idx> <h>  - Set hostility (ranges supported)", "info");
+    log("  stance <idx> <s>     - Set stance (ranges supported)", "info");
+    log("", "entry");
+    log("Range examples: ai off 5-10, side 27-31 players", "sys");
+    log("", "entry");
+    
+    STATE.inPreflight = true;
+}
+
+function handlePreflightCommand(parts) {
+    const verb = parts[0];
+    
+    if (verb === 'start' || verb === 'go' || verb === 'begin') {
+        STATE.inPreflight = false;
+        initializeCombat();
+        return true;
+    }
+    
+    if (verb === 'look') {
+        printBattlefield();
+        return true;
+    }
+    
+    if (verb === 'ai') {
+        // Format: ai on/off <indices...>
+        if (parts.length < 3) {
+            log("Usage: ai on/off <idx or range>", "err");
+            log("Example: ai off 5-10, ai on 3", "sys");
+            return true;
+        }
+        
+        const mode = parts[1].toLowerCase() === 'on';
+        const indexTokens = parts.slice(2);
+        const indices = parseMultipleIndices(indexTokens, STATE.characters.length);
+        
+        if (indices.length === 0) {
+            log("No valid indices found", "err");
+            return true;
+        }
+        
+        indices.forEach(idx => {
+            STATE.characters[idx].ai_enabled = mode;
+            log(`AI ${mode ? 'enabled' : 'disabled'} for ${STATE.characters[idx].name}`, "sys");
+        });
+        
+        return true;
+    }
+    
+    if (verb === 'side') {
+        // Format: side <indices...> <team>
+        if (parts.length < 3) {
+            log("Usage: side <idx or range> <team>", "err");
+            log("Example: side 27-31 players", "sys");
+            return true;
+        }
+        
+        const team = parts[parts.length - 1];
+        const indexTokens = parts.slice(1, -1);
+        const indices = parseMultipleIndices(indexTokens, STATE.characters.length);
+        
+        if (indices.length === 0) {
+            log("No valid indices found", "err");
+            return true;
+        }
+        
+        const validTeams = ['players', 'raiders', 'guards', 'neutral'];
+        if (!validTeams.includes(team)) {
+            log(`Invalid team '${team}'. Valid: ${validTeams.join(', ')}`, "err");
+            return true;
+        }
+        
+        indices.forEach(idx => {
+            const char = STATE.characters[idx];
+            char.side = team;
+            
+            // Update color and hostility defaults
+            const colorMap = {
+                'players': '#00ffff',
+                'raiders': '#ff3333',
+                'guards': '#ffaa00',
+                'neutral': '#888888'
+            };
+            char.color = colorMap[team];
+            
+            // Auto-set hostility
+            if (team === 'players') {
+                char.hostility = 'friendly';
+                char.ai_enabled = false;
+            } else {
+                char.hostility = char.hostility || 'hostile';
+            }
+            
+            log(`Set ${char.name} to side '${team}'`, "sys");
+        });
+        
+        return true;
+    }
+    
+    if (verb === 'hostility') {
+        // Format: hostility <indices...> <level>
+        if (parts.length < 3) {
+            log("Usage: hostility <idx or range> <level>", "err");
+            log("Levels: hostile, neutral, friendly", "sys");
+            return true;
+        }
+        
+        const level = parts[parts.length - 1];
+        const indexTokens = parts.slice(1, -1);
+        const indices = parseMultipleIndices(indexTokens, STATE.characters.length);
+        
+        if (indices.length === 0) {
+            log("No valid indices found", "err");
+            return true;
+        }
+        
+        const validLevels = ['hostile', 'neutral', 'friendly'];
+        if (!validLevels.includes(level)) {
+            log(`Invalid level '${level}'. Valid: ${validLevels.join(', ')}`, "err");
+            return true;
+        }
+        
+        indices.forEach(idx => {
+            STATE.characters[idx].hostility = level;
+            log(`Set ${STATE.characters[idx].name} hostility to '${level}'`, "sys");
+        });
+        
+        return true;
+    }
+    
+    if (verb === 'stance') {
+        // Format: stance <indices...> <stance>
+        if (parts.length < 3) {
+            log("Usage: stance <idx or range> <stance>", "err");
+            log("Stances: combat, conversation, neutral", "sys");
+            return true;
+        }
+        
+        const stance = parts[parts.length - 1];
+        const indexTokens = parts.slice(1, -1);
+        const indices = parseMultipleIndices(indexTokens, STATE.characters.length);
+        
+        if (indices.length === 0) {
+            log("No valid indices found", "err");
+            return true;
+        }
+        
+        const validStances = ['combat', 'conversation', 'neutral'];
+        if (!validStances.includes(stance)) {
+            log(`Invalid stance '${stance}'. Valid: ${validStances.join(', ')}`, "err");
+            return true;
+        }
+        
+        indices.forEach(idx => {
+            STATE.characters[idx].stance = stance;
+            log(`Set ${STATE.characters[idx].name} stance to '${stance}'`, "sys");
+        });
+        
+        return true;
+    }
+    
+    return false;
+}
+
+function initializeCombat() {
+    log("═════════════════════════════════════", "turn-start");
+    log("  INITIALIZING COMBAT", "turn-start");
+    log("═════════════════════════════════════", "turn-start");
+    
+    // Roll initiative for all characters
+    STATE.turnQueue = STATE.characters.map(char => {
+        const tep = char.stats.TEP || 10;
+        const bonus = char.stats.init_bonus || 0;
+        const roll = Math.floor(Math.random() * 6);
+        char.initiative = tep + bonus + roll;
+        return char;
+    }).sort((a, b) => b.initiative - a.initiative);
+    
+    STATE.turnIndex = 0;
+    STATE.round = 1;
+    STATE.combatActive = true;
+    
+    log("Initiative Order:", "info");
+    STATE.turnQueue.forEach((char, i) => {
+        log(`  [${i+1}] ${char.name} (Init: ${char.initiative})`, "info");
+    });
+    
+    updateTracker();
+    startTurn();
+}
+
+function startTurn() {
+    const char = getActiveCharacter();
+    
+    log("", "entry");
+    log("═════════════════════════════════════", "turn-start");
+    log(`  ${char.name}'s TURN`, "turn-start");
+    log(`  HP: ${char.pools.HP}/${char.pools.max_HP} | EP: ${char.pools.EP}/${char.pools.max_EP}`, "turn-start");
+    log("═════════════════════════════════════", "turn-start");
+    
+    updateTracker();
+    
+    // Check if stunned
+    if (char.status_effects.includes('stunned')) {
+        log(`${char.name} is stunned and cannot act!`, "err");
+        nextTurn();
+        return;
+    }
+    
+    // AI turn
+    if (char.ai_enabled && !char.player) {
+        setTimeout(() => aiTakeTurn(char), 500);
+    }
+}
+
+function nextTurn() {
+    STATE.turnIndex++;
+    
+    if (STATE.turnIndex >= STATE.turnQueue.length) {
+        STATE.turnIndex = 0;
+        STATE.round++;
+        document.getElementById('round-num').textContent = STATE.round;
+        log(`\n═══ ROUND ${STATE.round} ═══\n`, "info");
+        
+        // Check victory conditions
+        const aliveSides = new Set(
+            STATE.characters
+                .filter(c => c.pools.HP > 0)
+                .map(c => c.side)
+        );
+        
+        if (aliveSides.size <= 1) {
+            endCombat(aliveSides);
+            return;
+        }
+    }
+    
+    // Skip dead characters
+    if (getActiveCharacter().pools.HP <= 0) {
+        nextTurn();
+        return;
+    }
+    
+    startTurn();
+}
+
+function endCombat(aliveSides) {
+    STATE.combatActive = false;
+    log("\n═════════════════════════════════════", "turn-start");
+    if (aliveSides.has('players')) {
+        log("  ✓ VICTORY! Players win!", "hit");
+    } else if (aliveSides.size === 0) {
+        log("  ☠ DRAW! Everyone died!", "err");
+    } else {
+        log("  ✗ DEFEAT! All players fallen!", "err");
+    }
+    log("═════════════════════════════════════", "turn-start");
+}
+
+// ============================================================================
+// 7. COMBAT COMMANDS
+// ============================================================================
+
+function handleAttackCommand(parts, attacker) {
+    // Format: attack <target> spend <base_ep> [buy <buy_ep>]
+    if (parts.length < 4) {
+        log("Usage: attack <target> spend <base_ep> [buy <buy_ep>]", "err");
+        return;
+    }
+    
+    const targetName = parts[1];
+    const target = findCharacterByName(targetName) || findCharacterByIndex(targetName);
+    
+    if (!target) {
+        log(`Target '${targetName}' not found.`, "err");
+        return;
+    }
+    
+    const spendIdx = parts.indexOf('spend');
+    if (spendIdx === -1) {
+        log("Missing 'spend' keyword.", "err");
+        return;
+    }
+    
+    const baseEP = parseInt(parts[spendIdx + 1]) || 0;
+    let buyEP = 0;
+    
+    const buyIdx = parts.indexOf('buy');
+    if (buyIdx !== -1) {
+        buyEP = parseInt(parts[buyIdx + 1]) || 0;
+    }
+    
+    const totalEP = baseEP + buyEP;
+    
+    if (attacker.pools.EP < totalEP) {
+        log(`Insufficient EP! Need ${totalEP}, have ${attacker.pools.EP}`, "err");
+        return;
+    }
+    
+    attacker.pools.EP -= totalEP;
+    resolveAttack(attacker, target, baseEP, buyEP);
+    
+    // Only advance turn if not awaiting reaction
+    if (!STATE.awaitingReaction) {
+        nextTurn();
+    }
+}
+
+function handleWeaponCommand(parts, attacker) {
+    // Format: weapon <target> [spend <ep>] [buy <ep>] [throw]
+    // Uses equipped weapon or first weapon in inventory
+    if (parts.length < 2) {
+        log("Usage: weapon <target> [spend <ep>] [buy <ep>] [throw]", "err");
+        log("Example: weapon 5 spend 2", "sys");
+        log("         weapon 5 throw spend 3", "sys");
+        return;
+    }
+    
+    const targetName = parts[1];
+    const target = findCharacterByName(targetName) || findCharacterByIndex(targetName);
+    
+    if (!target) {
+        log(`Target '${targetName}' not found.`, "err");
+        return;
+    }
+    
+    // Find weapon
+    let weapon = null;
+    let weaponName = "weapon";
+    const isThrow = parts.includes('throw') || parts.includes('thrown');
+    
+    // Check equipped weapon
+    if (attacker.equipped && attacker.equipped.weapon) {
+        const weaponId = attacker.equipped.weapon;
+        weapon = STATE.libs.items[weaponId];
+        weaponName = weapon ? (weapon.name || weaponId) : weaponId;
+    }
+    
+    // Check inventory for weapons
+    if (!weapon && attacker.inventory) {
+        for (const item of attacker.inventory) {
+            const itemId = typeof item === 'string' ? item : item.item_id;
+            const itemData = STATE.libs.items[itemId];
+            
+            if (itemData && (itemData.type === 'weapon' || itemData.weapon)) {
+                weapon = itemData;
+                weaponName = weapon.name || itemId;
+                break;
+            }
+        }
+    }
+    
+    if (!weapon) {
+        log("No weapon equipped or in inventory!", "err");
+        log("Use 'equip <weapon>' or 'inv' to check items", "sys");
+        return;
+    }
+    
+    // Parse EP spending
+    let baseEP = 0;
+    let buyEP = 0;
+    
+    const spendIdx = parts.indexOf('spend');
+    if (spendIdx !== -1 && parts[spendIdx + 1]) {
+        baseEP = parseInt(parts[spendIdx + 1]) || 0;
+    }
+    
+    const buyIdx = parts.indexOf('buy');
+    if (buyIdx !== -1 && parts[buyIdx + 1]) {
+        buyEP = parseInt(parts[buyIdx + 1]) || 0;
+    }
+    
+    const totalEP = baseEP + buyEP;
+    
+    if (attacker.pools.EP < totalEP) {
+        log(`Insufficient EP! Need ${totalEP}, have ${attacker.pools.EP}`, "err");
+        return;
+    }
+    
+    // Calculate weapon damage
+    let weaponDamage = 0;
+    
+    if (weapon.damage) {
+        if (typeof weapon.damage === 'number') {
+            weaponDamage = weapon.damage;
+        } else if (typeof weapon.damage === 'string') {
+            weaponDamage = parseDiceNotation(weapon.damage);
+        }
+    }
+    
+    // Add weapon base damage bonus from combat stats if present
+    if (weapon.combat && weapon.combat.damage) {
+        weaponDamage += weapon.combat.damage;
+    }
+    
+    const throwVerb = isThrow ? "throws" : "attacks with";
+    log(`${attacker.name} ${throwVerb} ${weaponName} at ${target.name}!`, "hit");
+    
+    if (weaponDamage > 0) {
+        log(`  Weapon damage: ${weaponDamage}`, "info");
+    }
+    
+    // Resolve like normal attack but with weapon damage added
+    attacker.pools.EP -= totalEP;
+    resolveWeaponAttack(attacker, target, baseEP, buyEP, weaponDamage, weaponName);
+    
+    // Remove from inventory if thrown
+    if (isThrow && attacker.inventory) {
+        const itemId = weapon.item_id || Object.keys(STATE.libs.items).find(
+            id => STATE.libs.items[id] === weapon
+        );
+        
+        const invIndex = attacker.inventory.findIndex(item => {
+            const checkId = typeof item === 'string' ? item : item.item_id;
+            return checkId === itemId;
+        });
+        
+        if (invIndex !== -1) {
+            attacker.inventory.splice(invIndex, 1);
+            log(`  ${weaponName} removed from inventory (thrown)`, "sys");
+        }
+    }
+    
+    // Only advance turn if not awaiting reaction
+    if (!STATE.awaitingReaction) {
+        nextTurn();
+    }
+}
+
+function resolveWeaponAttack(attacker, target, baseEP, buyEP, weaponDamage, weaponName) {
+    // Base damage from EP
+    const baseDamage = baseEP;
+    
+    // Dice buy damage
+    let diceDamage = 0;
+    let fizzled = false;
+    
+    if (buyEP > 0) {
+        const diceResult = applyDiceBuy(buyEP);
+        diceDamage = diceResult.damage;
+        fizzled = diceResult.fizzled;
+        log(`  Dice Buy (${buyEP} EP): ${diceResult.detail}`, fizzled ? "err" : "info");
+    }
+    
+    const totalDamage = baseDamage + diceDamage + weaponDamage;
+    log(`  Base: ${baseDamage} | Dice: ${diceDamage} | Weapon: ${weaponDamage} | Total: ${totalDamage}`, "info");
+    
+    // Check if target is a player - trigger reaction prompt
+    if (target.player && totalDamage > 0) {
+        promptPlayerReaction(attacker, target, totalDamage, "physical");
+    } else {
+        // Apply damage directly for NPCs
+        if (totalDamage > 0) {
+            applyDamage(target, totalDamage, "physical");
+        }
+    }
+}
+
+function handleEquipCommand(parts, character) {
+    // Format: equip <item_name or index>
+    if (parts.length < 2) {
+        log("Usage: equip <item_name>", "err");
+        log("Use 'inv' to see your items", "sys");
+        return;
+    }
+    
+    const itemQuery = parts.slice(1).join(' ').toLowerCase();
+    
+    // Search inventory
+    let foundItem = null;
+    let itemId = null;
+    
+    for (const item of character.inventory || []) {
+        const checkId = typeof item === 'string' ? item : item.item_id;
+        const itemData = STATE.libs.items[checkId];
+        
+        if (!itemData) continue;
+        
+        const itemName = (itemData.name || checkId).toLowerCase();
+        
+        if (itemName.includes(itemQuery) || checkId.toLowerCase().includes(itemQuery)) {
+            foundItem = itemData;
+            itemId = checkId;
+            break;
+        }
+    }
+    
+    if (!foundItem) {
+        log(`Item '${itemQuery}' not found in inventory.`, "err");
+        return;
+    }
+    
+    // Determine slot
+    let slot = 'weapon'; // default
+    if (foundItem.type === 'armor' || foundItem.armor) {
+        slot = 'armor';
+    } else if (foundItem.type === 'weapon' || foundItem.weapon) {
+        slot = 'weapon';
+    }
+    
+    character.equipped = character.equipped || {};
+    character.equipped[slot] = itemId;
+    
+    log(`${character.name} equips ${foundItem.name || itemId}`, "sys");
+}
+
+function handleInventoryCommand(parts, character) {
+    // Format: inv
+    log(`═══ ${character.name}'s INVENTORY ═══`, "info");
+    
+    if (!character.inventory || character.inventory.length === 0) {
+        log("  (empty)", "sys");
+        return;
+    }
+    
+    character.inventory.forEach((item, idx) => {
+        const itemId = typeof item === 'string' ? item : item.item_id;
+        const itemData = STATE.libs.items[itemId];
+        
+        if (itemData) {
+            const name = itemData.name || itemId;
+            const type = itemData.type || '?';
+            const equipped = (character.equipped?.weapon === itemId || 
+                            character.equipped?.armor === itemId) ? ' [EQUIPPED]' : '';
+            log(`  [${idx + 1}] ${name} (${type})${equipped}`, "sys");
+        } else {
+            log(`  [${idx + 1}] ${itemId} (unknown)`, "sys");
+        }
+    });
+    
+    log("", "entry");
+    log("Commands: equip <item>, weapon <target> [spend <ep>]", "sys");
+}
+
+function resolveAttack(attacker, target, baseEP, buyEP) {
+    log(`${attacker.name} attacks ${target.name}!`, "hit");
+    
+    // Base damage from EP (1:1 ratio)
+    const baseDamage = baseEP; // Changed from Math.floor(baseEP * 0.5)
+    
+    // Dice buy damage
+    let diceDamage = 0;
+    let fizzled = false;
+    
+    if (buyEP > 0) {
+        const diceResult = applyDiceBuy(buyEP);
+        diceDamage = diceResult.damage;
+        fizzled = diceResult.fizzled;
+        log(`  Dice Buy (${buyEP} EP): ${diceResult.detail}`, fizzled ? "err" : "info");
+    }
+    
+    const totalDamage = baseDamage + diceDamage;
+    log(`  Base: ${baseDamage} | Dice: ${diceDamage} | Total: ${totalDamage}`, "info");
+    
+    // Check if target is a player - trigger reaction prompt
+    if (target.player && totalDamage > 0) {
+        promptPlayerReaction(attacker, target, totalDamage, "physical");
+    } else {
+        // Apply damage directly for NPCs
+        if (totalDamage > 0) {
+            applyDamage(target, totalDamage, "physical");
+        }
+    }
+}
+
+function promptPlayerReaction(attacker, target, incomingDamage, damageType) {
+    log("", "entry");
+    log("!".repeat(60), "crit");
+    log(`  REACTION MOMENT: ${target.name}`, "crit");
+    log("!".repeat(60), "crit");
+    log(`  Attacker: ${attacker.name}`, "info");
+    log(`  Incoming: ${incomingDamage} ${damageType} damage`, "info");
+    log(`  Your HP: ${target.pools.HP}/${target.pools.max_HP}`, "info");
+    log(`  Your EP: ${target.pools.EP}/${target.pools.max_EP}`, "info");
+    log("", "entry");
+    log("Choose your reaction:", "info");
+    log("  1) TAKE IT - Accept full damage", "sys");
+    log("  2) BLOCK - Spend EP to reduce damage (1 EP = -1 DMG, can use dice buy)", "sys");
+    log("  3) DODGE - Risk it! (DEX check vs DC 12)", "sys");
+    log("", "entry");
+    log("Enter: 1, 2, or 3 (or 'block <ep> [buy <ep>]', 'dodge')", "sys");
+    
+    // Update input placeholder
+    inputEl.placeholder = "⚡ REACTION: 1/2/3 or block <ep>/dodge";
+    
+    // Store reaction context
+    STATE.awaitingReaction = {
+        attacker: attacker,
+        target: target,
+        damage: incomingDamage,
+        damageType: damageType
+    };
+}
+
+function handleReactionCommand(input) {
+    if (!STATE.awaitingReaction) return false;
+    
+    const parts = input.toLowerCase().split(' ');
+    const choice = parts[0];
+    const ctx = STATE.awaitingReaction;
+    
+    let finalDamage = ctx.damage;
+    
+    if (choice === '1' || choice === 'take') {
+        log(`${ctx.target.name} takes the hit!`, "sys");
+        applyDamage(ctx.target, finalDamage, ctx.damageType);
+        STATE.awaitingReaction = null;
+        inputEl.placeholder = "Type 'help' for commands...";
+        return true;
+    }
+    
+    if (choice === '2' || choice === 'block') {
+        // Format: block <ep> [buy <ep>]
+        let baseEP = 0;
+        let buyEP = 0;
+        
+        if (parts.length > 1) {
+            baseEP = parseInt(parts[1]) || 0;
+            if (parts.includes('buy') && parts.length > 3) {
+                const buyIdx = parts.indexOf('buy');
+                buyEP = parseInt(parts[buyIdx + 1]) || 0;
+            }
+        } else {
+            // Prompt for amount
+            log("How much EP to spend on block? (Format: block <ep> [buy <ep>])", "sys");
+            log(`Example: block 5, or block 3 buy 2`, "sys");
+            return true; // Stay in reaction mode
+        }
+        
+        const totalEP = baseEP + buyEP;
+        const availableEP = ctx.target.pools.EP;
+        
+        if (totalEP > availableEP) {
+            log(`Insufficient EP! You have ${availableEP}, trying to spend ${totalEP}`, "err");
+            log("Try again with less EP, or choose option 1 or 3", "sys");
+            return true;
+        }
+        
+        if (totalEP <= 0) {
+            log("Must spend at least 1 EP to block!", "err");
+            return true;
+        }
+        
+        // Calculate block value
+        let blockValue = baseEP; // 1:1 EP to damage reduction
+        
+        if (buyEP > 0) {
+            const diceResult = applyDiceBuy(buyEP);
+            log(`  Block Dice Buy: ${diceResult.detail}`, diceResult.fizzled ? "err" : "info");
+            blockValue += diceResult.damage;
+        }
+        
+        log(`${ctx.target.name} BLOCKS with ${blockValue} total!`, "hit");
+        log(`  Base EP: ${baseEP} | Dice: ${buyEP > 0 ? (blockValue - baseEP) : 0}`, "info");
+        
+        finalDamage = Math.max(0, ctx.damage - blockValue);
+        ctx.target.pools.EP -= totalEP;
+        
+        log(`  Damage reduced: ${ctx.damage} → ${finalDamage}`, "hit");
+        
+        if (finalDamage > 0) {
+            applyDamage(ctx.target, finalDamage, ctx.damageType);
+        } else {
+            log(`  ${ctx.target.name} blocks all damage!`, "crit");
+        }
+        
+        STATE.awaitingReaction = null;
+        inputEl.placeholder = "Type 'help' for commands...";
+        return true;
+    }
+    
+    if (choice === '3' || choice === 'dodge') {
+        log(`${ctx.target.name} attempts to DODGE!`, "sys");
+        
+        const dexMod = abilityBonus(ctx.target, 'dex');
+        const d20 = Math.floor(Math.random() * 20) + 1;
+        const total = d20 + dexMod;
+        const dc = 12;
+        
+        log(`  Roll: d20(${d20}) + ${dexMod} (DEX) = ${total} vs DC ${dc}`, "info");
+        
+        if (total >= dc) {
+            log(`  ✓ SUCCESS! ${ctx.target.name} evades completely!`, "crit");
+            finalDamage = 0;
+        } else {
+            log(`  ✗ FAILURE! Taking full damage!`, "err");
+        }
+        
+        if (finalDamage > 0) {
+            applyDamage(ctx.target, finalDamage, ctx.damageType);
+        }
+        
+        STATE.awaitingReaction = null;
+        inputEl.placeholder = "Type 'help' for commands...";
+        return true;
+    }
+    
+    log("Invalid choice. Enter 1, 2, or 3 (or 'block <ep>', 'dodge')", "err");
+    return true;
+}
+
+function applyDiceBuy(epSpent) {
+    // Dice buy table
+    const table = {
+        1: { dice: [1, 3], bonus: -1 },
+        2: { dice: [1, 4], bonus: -1 },
+        3: { dice: [1, 6], bonus: -1 },
+        4: { dice: [2, 3], bonus: -1 },
+        5: { dice: [2, 4], bonus: -1 },
+        6: { dice: [1, 8], bonus: -1 },
+        8: { dice: [2, 6], bonus: -1 },
+        10: { dice: [2, 8], bonus: -1 }
+    };
+    
+    const validCosts = Object.keys(table).map(Number).filter(c => c <= epSpent);
+    if (validCosts.length === 0) {
+        return { damage: 0, fizzled: true, detail: "No valid dice buy" };
+    }
+    
+    const cost = Math.max(...validCosts);
+    const config = table[cost];
+    const [num, sides] = config.dice;
+    const bonus = config.bonus;
+    
+    const rolls = [];
+    for (let i = 0; i < num; i++) {
+        rolls.push(Math.floor(Math.random() * sides) + 1);
+    }
+    
+    const total = rolls.reduce((a, b) => a + b, 0) + bonus;
+    const fizzled = rolls.some(r => r <= 1);
+    
+    const detail = `${num}d${sides}${bonus>=0?'+':''}${bonus} = [${rolls.join(', ')}]${bonus>=0?'+':''}${bonus} = ${total} ${fizzled ? '[FIZZLE]' : ''}`;
+    
+    return {
+        damage: fizzled ? 0 : Math.max(0, total),
+        fizzled: fizzled,
+        detail: detail
+    };
+}
+
+function handleCastCommand(parts, caster) {
+    // Format: cast <spell> <target> [power <ep>]
+    if (parts.length < 3) {
+        log("Usage: cast <spell> <target> [power <ep>]", "err");
+        return;
+    }
+    
+    const spellId = parts[1];
+    const targetName = parts[2];
+    const target = findCharacterByName(targetName) || findCharacterByIndex(targetName);
+    
+    if (!target) {
+        log(`Target '${targetName}' not found.`, "err");
+        return;
+    }
+    
+    // Get spell info
+    const spell = STATE.libs.spells[spellId] || { name: spellId, base_cost: 5 };
+    
+    // Determine damage EP
+    let damageEP = spell.base_cost || 5;
+    const powerIdx = parts.indexOf('power');
+    if (powerIdx !== -1) {
+        damageEP = parseInt(parts[powerIdx + 1]) || damageEP;
+    }
+    
+    // Calculate range cost (1 EP = 5 ft)
+    const dist = distance3D(caster.position, target.position);
+    const rangeEP = Math.ceil(dist / 5);
+    const totalEP = damageEP + rangeEP;
+    
+    log(`${caster.name} casts ${spell.name || spellId} at ${target.name}!`, "hit");
+    log(`  Distance: ${Math.floor(dist)} px (${rangeEP} EP)`, "info");
+    log(`  Power: ${damageEP} EP`, "info");
+    log(`  Total Cost: ${totalEP} EP`, "info");
+    
+    if (caster.pools.EP < totalEP) {
+        log(`Insufficient EP! Need ${totalEP}, have ${caster.pools.EP}`, "err");
+        return;
+    }
+    
+    // Accuracy check: d20 + DEX + INT vs TN
+    const dexMod = abilityBonus(caster, 'dex');
+    const intMod = abilityBonus(caster, 'int');
+    const tn = 8 + Math.floor(damageEP / 2);
+    
+    const d20 = Math.floor(Math.random() * 20) + 1;
+    const total = d20 + dexMod + intMod;
+    
+    log(`  Accuracy: d20(${d20}) + ${dexMod + intMod} = ${total} vs TN ${tn}`, "info");
+    
+    if (total < tn) {
+        log(`  ✗ MISS!`, "err");
+        caster.pools.EP -= totalEP;
+        nextTurn();
+        return;
+    }
+    
+    log(`  ✓ HIT!`, "hit");
+    caster.pools.EP -= totalEP;
+    
+    // Check if target is player - trigger reaction
+    if (target.player && damageEP > 0) {
+        promptPlayerReaction(caster, target, damageEP, "arcane");
+    } else {
+        applyDamage(target, damageEP, "arcane");
+        nextTurn();
+    }
+}
+
+function handleCheckCommand(parts, checker) {
+    // Format: check <target>.<field>
+    if (parts.length < 2 || !parts[1].includes('.')) {
+        log("Usage: check <target>.<field>", "err");
+        log("Example: check 2.mask_identity", "sys");
+        return;
+    }
+    
+    const [targetStr, field] = parts[1].split('.');
+    const target = findCharacterByName(targetStr) || findCharacterByIndex(targetStr);
+    
+    if (!target) {
+        log(`Target '${targetStr}' not found.`, "err");
+        return;
+    }
+    
+    // Default visibility DCs
+    const visibilityDCs = {
+        mask_identity: 18,
+        spellbook: 12,
+        true_name: 20,
+        hidden_weapons: 14,
+        inventory: 10,
+        stats: 12
+    };
+    
+    const dc = target.visibility?.[field] || visibilityDCs[field] || 15;
+    const wisMod = abilityBonus(checker, 'wis');
+    const d20 = Math.floor(Math.random() * 20) + 1;
+    const total = d20 + wisMod;
+    
+    log(`${checker.name} checks ${target.name}'s '${field}'`, "info");
+    log(`  Roll: d20(${d20}) + ${wisMod} (WIS) = ${total} vs DC ${dc}`, "info");
+    
+    if (total >= dc) {
+        log(`  ✓ SUCCESS!`, "hit");
+        const info = getFieldInfo(target, field);
+        if (info !== null) {
+            log(`  ${field}: ${JSON.stringify(info)}`, "info");
+        } else {
+            log(`  Field not found or empty.`, "sys");
+        }
+    } else {
+        log(`  ✗ FAILURE - Information hidden.`, "err");
+    }
+}
+
+function getFieldInfo(character, field) {
+    if (field.includes('.')) {
+        const parts = field.split('.');
+        let data = character;
+        for (const part of parts) {
+            if (data && typeof data === 'object') {
+                data = data[part];
+            } else {
+                return null;
+            }
+        }
+        return data;
+    }
+    
+    // Direct field or aliases
+    if (field === 'spellbook') return character.spells;
+    if (field === 'hidden_weapons') {
+        return character.inventory.filter(item => 
+            typeof item === 'string' && item.includes('weapon')
+        );
+    }
+    
+    return character[field] || null;
+}
+
+function handleMoveCommand(parts, character) {
+    // Format: move <x> <y> [z]
+    if (parts.length < 3) {
+        log("Usage: move <x> <y> [z]", "err");
+        return;
+    }
+    
+    const x = parseFloat(parts[1]);
+    const y = parseFloat(parts[2]);
+    const z = parts[3] ? parseFloat(parts[3]) : character.position.z || 0;
+    
+    character.position = { x, y, z };
+    log(`${character.name} moves to (${x.toFixed(0)}, ${y.toFixed(0)}, ${z.toFixed(0)})`, "sys");
+    nextTurn();
+}
+
+function handleTalkCommand(parts, speaker) {
+    // Format: talk <target> [stat]
+    if (parts.length < 2) {
+        log("Usage: talk <target> [stat]", "err");
+        return;
+    }
+    
+    const targetName = parts[1];
+    const target = findCharacterByName(targetName) || findCharacterByIndex(targetName);
+    
+    if (!target) {
+        log(`Target '${targetName}' not found.`, "err");
+        return;
+    }
+    
+    const stat = parts[2] || 'wis';
+    resolveConversation(speaker, target, stat);
+    nextTurn();
+}
+
+function resolveConversation(speaker, listener, stat) {
+    const atkBonus = abilityBonus(speaker, stat);
+    const defBonus = abilityBonus(listener, stat);
+    const dc = 10 + defBonus;
+    
+    const d20 = Math.floor(Math.random() * 20) + 1;
+    const total = d20 + atkBonus;
+    
+    log(`${speaker.name} speaks with ${listener.name}`, "info");
+    log(`  Roll: d20(${d20}) + ${atkBonus} (${stat.toUpperCase()}) = ${total} vs DC ${dc}`, "info");
+    
+    const success = total >= dc;
+    
+    if (success) {
+        log(`  ✓ SUCCESS!`, "hit");
+        // Shift hostility favorably
+        if (listener.hostility === 'hostile') {
+            listener.hostility = 'neutral';
+            log(`  ${listener.name}: HOSTILE → NEUTRAL`, "info");
+        } else if (listener.hostility === 'neutral') {
+            listener.hostility = 'friendly';
+            log(`  ${listener.name}: NEUTRAL → FRIENDLY`, "info");
+        }
+    } else {
+        log(`  ✗ FAILURE`, "err");
+        // Shift hostility unfavorably
+        if (listener.hostility === 'neutral') {
+            listener.hostility = 'hostile';
+            log(`  ${listener.name}: NEUTRAL → HOSTILE`, "err");
+        } else if (listener.hostility === 'friendly') {
+            listener.hostility = 'neutral';
+            log(`  ${listener.name}: FRIENDLY → NEUTRAL`, "sys");
+        }
+    }
+}
+
+function handleUseCommand(parts, user) {
+    // Format: use <item> [on <target>]
+    if (parts.length < 2) {
+        log("Usage: use <item> [on <target>]", "err");
+        return;
+    }
+    
+    const itemId = parts[1];
+    let target = user;
+    
+    const onIdx = parts.indexOf('on');
+    if (onIdx !== -1 && parts[onIdx + 1]) {
+        const targetName = parts[onIdx + 1];
+        target = findCharacterByName(targetName) || findCharacterByIndex(targetName) || user;
+    }
+    
+    // Check inventory
+    const hasItem = user.inventory.includes(itemId) || 
+                    user.inventory.some(i => i.item_id === itemId);
+    
+    if (!hasItem) {
+        log(`${user.name} does not have '${itemId}' in inventory.`, "err");
+        return;
+    }
+    
+    log(`${user.name} uses ${itemId} on ${target.name}`, "sys");
+    
+    // Simple heal item example
+    if (itemId.includes('potion')) {
+        const healAmount = 10;
+        target.pools.HP = Math.min(target.pools.max_HP, target.pools.HP + healAmount);
+        log(`  ${target.name} heals ${healAmount} HP.`, "hit");
+    }
+    
+    nextTurn();
+}
+
+function handleSideCommand(parts) {
+    // Format: side <idx or range> <team>
+    if (parts.length < 3) {
+        log("Usage: side <idx or range> <team>", "err");
+        log("Example: side 27-31 players, side 5 guards", "sys");
+        return;
+    }
+    
+    const team = parts[parts.length - 1];
+    const indexTokens = parts.slice(1, -1);
+    const indices = parseMultipleIndices(indexTokens, STATE.characters.length);
+    
+    if (indices.length === 0) {
+        log("No valid indices found", "err");
+        return;
+    }
+    
+    const validTeams = ['players', 'raiders', 'guards', 'neutral'];
+    if (!validTeams.includes(team)) {
+        log(`Invalid team '${team}'. Valid: ${validTeams.join(', ')}`, "err");
+        return;
+    }
+    
+    indices.forEach(idx => {
+        const char = STATE.characters[idx];
+        char.side = team;
+        
+        // Update color
+        const colorMap = {
+            'players': '#00ffff',
+            'raiders': '#ff3333',
+            'guards': '#ffaa00',
+            'neutral': '#888888'
+        };
+        char.color = colorMap[team];
+        
+        log(`Set ${char.name} to side '${team}'`, "sys");
+    });
+}
+
+function handleAICommand(parts) {
+    // Format: ai on/off <idx or range>
+    if (parts.length < 3) {
+        log("Usage: ai on/off <idx or range>", "err");
+        log("Example: ai off 5-10, ai on 3", "sys");
+        return;
+    }
+    
+    const mode = parts[1].toLowerCase() === 'on';
+    const indexTokens = parts.slice(2);
+    const indices = parseMultipleIndices(indexTokens, STATE.characters.length);
+    
+    if (indices.length === 0) {
+        log("No valid indices found", "err");
+        return;
+    }
+    
+    indices.forEach(idx => {
+        STATE.characters[idx].ai_enabled = mode;
+        log(`AI ${mode ? 'enabled' : 'disabled'} for ${STATE.characters[idx].name}`, "sys");
+    });
+}
+
+function handleKillCommand(parts) {
+    // Format: kill <idx or range>
+    if (parts.length < 2) {
+        log("Usage: kill <idx or range>", "err");
+        log("Example: kill 5, kill 10-15", "sys");
+        return;
+    }
+    
+    const indexTokens = parts.slice(1);
+    const indices = parseMultipleIndices(indexTokens, STATE.characters.length);
+    
+    if (indices.length === 0) {
+        log("No valid indices found", "err");
+        return;
+    }
+    
+    indices.forEach(idx => {
+        const char = STATE.characters[idx];
+        char.pools.HP = 0;
+        log(`[GM] ${char.name} has been slain!`, "crit");
+    });
+    
+    updateTracker();
+}
+
+function handleSetHPCommand(parts) {
+    // Format: sethp <idx or range> <value>
+    if (parts.length < 3) {
+        log("Usage: sethp <idx or range> <value>", "err");
+        log("Example: sethp 5 50, sethp 10-15 100", "sys");
+        return;
+    }
+    
+    const value = parseInt(parts[parts.length - 1]);
+    if (isNaN(value)) {
+        log("Invalid HP value", "err");
+        return;
+    }
+    
+    const indexTokens = parts.slice(1, -1);
+    const indices = parseMultipleIndices(indexTokens, STATE.characters.length);
+    
+    if (indices.length === 0) {
+        log("No valid indices found", "err");
+        return;
+    }
+    
+    indices.forEach(idx => {
+        const char = STATE.characters[idx];
+        char.pools.HP = clamp(value, 0, char.pools.max_HP);
+        log(`[GM] Set ${char.name} HP to ${char.pools.HP}/${char.pools.max_HP}`, "sys");
+    });
+}
+
+function handleSetEPCommand(parts) {
+    // Format: setep <idx or range> <value>
+    if (parts.length < 3) {
+        log("Usage: setep <idx or range> <value>", "err");
+        log("Example: setep 5 20, setep 10-15 50", "sys");
+        return;
+    }
+    
+    const value = parseInt(parts[parts.length - 1]);
+    if (isNaN(value)) {
+        log("Invalid EP value", "err");
+        return;
+    }
+    
+    const indexTokens = parts.slice(1, -1);
+    const indices = parseMultipleIndices(indexTokens, STATE.characters.length);
+    
+    if (indices.length === 0) {
+        log("No valid indices found", "err");
+        return;
+    }
+    
+    indices.forEach(idx => {
+        const char = STATE.characters[idx];
+        char.pools.EP = clamp(value, 0, char.pools.max_EP);
+        log(`[GM] Set ${char.name} EP to ${char.pools.EP}/${char.pools.max_EP}`, "sys");
+    });
+}
+
+function handleHealCommand(parts) {
+    // Format: heal <idx or range> <amount>
+    if (parts.length < 3) {
+        log("Usage: heal <idx or range> <amount>", "err");
+        log("Example: heal 5 30, heal 1-3 50", "sys");
+        return;
+    }
+    
+    const amount = parseInt(parts[parts.length - 1]);
+    if (isNaN(amount) || amount < 0) {
+        log("Invalid heal amount", "err");
+        return;
+    }
+    
+    const indexTokens = parts.slice(1, -1);
+    const indices = parseMultipleIndices(indexTokens, STATE.characters.length);
+    
+    if (indices.length === 0) {
+        log("No valid indices found", "err");
+        return;
+    }
+    
+    indices.forEach(idx => {
+        const char = STATE.characters[idx];
+        const oldHP = char.pools.HP;
+        char.pools.HP = Math.min(char.pools.max_HP, char.pools.HP + amount);
+        const healed = char.pools.HP - oldHP;
+        log(`[GM] ${char.name} heals ${healed} HP (${char.pools.HP}/${char.pools.max_HP})`, "hit");
+    });
+}
+
+function handleDamageCommand(parts) {
+    // Format: damage <idx or range> <amount>
+    if (parts.length < 3) {
+        log("Usage: damage <idx or range> <amount>", "err");
+        log("Example: damage 5 20, damage 10-15 30", "sys");
+        return;
+    }
+    
+    const amount = parseInt(parts[parts.length - 1]);
+    if (isNaN(amount) || amount < 0) {
+        log("Invalid damage amount", "err");
+        return;
+    }
+    
+    const indexTokens = parts.slice(1, -1);
+    const indices = parseMultipleIndices(indexTokens, STATE.characters.length);
+    
+    if (indices.length === 0) {
+        log("No valid indices found", "err");
+        return;
+    }
+    
+    indices.forEach(idx => {
+        const char = STATE.characters[idx];
+        applyDamage(char, amount, "gm");
+        log(`[GM] ${char.name} takes ${amount} damage`, "err");
+    });
+    
+    updateTracker();
+}
+
+// ============================================================================
+// 8. DAMAGE SYSTEM
+// ============================================================================
+
+function applyDamage(target, amount, damageType) {
+    // Route through wound channels
+    target.wounds[damageType] = (target.wounds[damageType] || 0) + amount;
+    
+    // Apply temp block
+    const blocked = Math.min(target.pools.temp_block, amount);
+    amount -= blocked;
+    target.pools.temp_block -= blocked;
+    
+    if (blocked > 0) {
+        log(`  ${target.name} blocks ${blocked} damage (temp_block)`, "info");
+    }
+    
+    // Apply to HP
+    target.pools.HP = Math.max(0, target.pools.HP - amount);
+    log(`  ${target.name} takes ${amount} ${damageType} damage (${target.pools.HP}/${target.pools.max_HP} HP)`, "hit");
+    
+    if (target.pools.HP <= 0) {
+        log(`  ${target.name} is DEFEATED!`, "crit");
+        updateTracker();
+    }
+}
+
+// ============================================================================
+// 9. AI SYSTEM
+// ============================================================================
+
+function aiTakeTurn(character) {
+    log(`[AI] ${character.name} evaluating...`, "sys");
+    
+    // Find target
+    const enemies = STATE.characters.filter(c => 
+        c !== character && 
+        c.pools.HP > 0 && 
+        c.side !== character.side
+    );
+    
+    if (enemies.length === 0) {
+        log(`[AI] No valid targets. Passing turn.`, "sys");
+        nextTurn();
+        return;
+    }
+    
+    // Choose weakest target
+    const target = enemies.reduce((weakest, c) => 
+        c.pools.HP < weakest.pools.HP ? c : weakest
+    );
+    
+    // Decide action budget
+    const budget = Math.floor(character.pools.EP * 0.6);
+    const baseEP = Math.floor(budget * 0.7);
+    const buyEP = budget - baseEP;
+    
+    if (budget <= 0) {
+        log(`[AI] Insufficient EP. Passing turn.`, "sys");
+        nextTurn();
+        return;
+    }
+    
+    log(`[AI] Attacking ${target.name} (spend ${baseEP}, buy ${buyEP})`, "sys");
+    
+    // Deduct EP first
+    character.pools.EP -= budget;
+    
+    // If target is player, mark that AI turn is pending reaction
+    if (target.player) {
+        STATE.aiTurnPending = true;
+    }
+    
+    // Resolve attack (will trigger reaction if player)
+    resolveAttack(character, target, baseEP, buyEP);
+    
+    // If no reaction needed, continue
+    if (!STATE.awaitingReaction) {
+        setTimeout(() => nextTurn(), 1000);
+    }
+    // Otherwise, wait for player reaction input
+}
+
+// ============================================================================
+// 10. BATTLEFIELD DISPLAY
+// ============================================================================
+
+function printBattlefield() {
+    log("═══ BATTLEFIELD STATE ═══", "info");
+    STATE.characters.forEach((char, i) => {
+        const hp = `${char.pools.HP}/${char.pools.max_HP}`;
+        const ep = `${char.pools.EP}/${char.pools.max_EP}`;
+        const pos = `(${char.position.x.toFixed(0)}, ${char.position.y.toFixed(0)}, ${char.position.z.toFixed(0)})`;
+        log(`[${i+1}] ${char.name} | ${char.side} | HP ${hp} | EP ${ep} | ${pos}`, "info");
+    });
+}
+
+function updateTracker() {
+    const list = document.getElementById('tracker-list');
+    list.innerHTML = '';
+    
+    if (STATE.turnQueue.length === 0) {
+        list.textContent = '-- AWAITING INIT --';
+        return;
+    }
+    
+    STATE.turnQueue.forEach((char, idx) => {
+        const div = document.createElement('div');
+        div.className = 'tracker-row';
+        
+        if (idx === STATE.turnIndex) {
+            div.classList.add('tracker-active');
+        }
+        
+        if (char.pools.HP <= 0) {
+            div.classList.add('tracker-dead');
+        }
+        
+        const hp = `${char.pools.HP}/${char.pools.max_HP}`;
+        div.innerHTML = `
+            <span>${char.name}</span>
+            <span class="hp-mini">${hp}</span>
+        `;
+        
+        list.appendChild(div);
+    });
+}
+
+// ============================================================================
+// 11. CANVAS RENDERER
+// ============================================================================
+
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+
+function resize() {
+    canvas.width = document.getElementById('viewport').offsetWidth;
+    canvas.height = document.getElementById('viewport').offsetHeight;
+}
+window.addEventListener('resize', resize);
+resize();
+
+// Mouse position tracking
+canvas.addEventListener('mousemove', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    STATE.mousePos.x = Math.floor(e.clientX - rect.left);
+    STATE.mousePos.y = Math.floor(e.clientY - rect.top);
+    
+    document.getElementById('mouse-x').textContent = STATE.mousePos.x;
+    document.getElementById('mouse-y').textContent = STATE.mousePos.y;
+});
+
+// Background image handling
+function clearBackgroundImage() {
+    STATE.backgroundImage = null;
+    document.getElementById('bg-status').textContent = '';
+    log("Background image cleared", "sys");
+}
+
+document.getElementById('bgImageInput').addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (file && file.type.startsWith('image/')) {
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            const img = new Image();
+            img.onload = () => {
+                STATE.backgroundImage = img;
+                document.getElementById('bg-status').textContent = `✓ ${file.name}`;
+                log(`Background image loaded: ${file.name}`, "sys");
+            };
+            img.src = event.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
+function draw() {
+    // Background
+    ctx.fillStyle = "#101010";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    // Draw background image if loaded
+    if (STATE.backgroundImage) {
+        ctx.globalAlpha = 0.5; // Semi-transparent so grid/chars are visible
+        ctx.drawImage(STATE.backgroundImage, 0, 0, canvas.width, canvas.height);
+        ctx.globalAlpha = 1.0;
+    }
+    
+    // Grid
+    ctx.strokeStyle = STATE.backgroundImage ? "#444" : "#1a1a1a";
+    ctx.lineWidth = 1;
+    const gridSize = 50;
+    
+    for (let x = 0; x < canvas.width; x += gridSize) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, canvas.height);
+        ctx.stroke();
+    }
+    
+    for (let y = 0; y < canvas.height; y += gridSize) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(canvas.width, y);
+        ctx.stroke();
+    }
+    
+    // Sort by Y for depth
+    const sorted = [...STATE.characters].sort((a, b) => 
+        a.position.y - b.position.y
+    );
+    
+    sorted.forEach(char => {
+        const pos = char.position;
+        const isActive = STATE.combatActive && char === getActiveCharacter();
+        const color = char.color || (char.side === 'players' ? '#00ffff' : '#ff3333');
+        const size = char.size || 15;
+        
+        // Shadow (ground level)
+        ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
+        ctx.beginPath();
+        ctx.ellipse(pos.x, pos.y, size, size/2, 0, 0, Math.PI * 2);
+        ctx.fill();
+        
+        // Altitude line
+        if (pos.z > 0) {
+            ctx.strokeStyle = color;
+            ctx.setLineDash([2, 2]);
+            ctx.beginPath();
+            ctx.moveTo(pos.x, pos.y);
+            ctx.lineTo(pos.x, pos.y - pos.z);
+            ctx.stroke();
+            ctx.setLineDash([]);
+            
+            ctx.fillStyle = "#888";
+            ctx.font = "10px monospace";
+            ctx.fillText(`Z: ${pos.z.toFixed(0)}`, pos.x + 15, pos.y - pos.z/2);
+        }
+        
+        // Character body
+        const drawY = pos.y - pos.z;
+        
+        // Active indicator
+        if (isActive) {
+            ctx.strokeStyle = '#00ffff';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(pos.x, drawY - 20, size * 1.5, 0, Math.PI * 2);
+            ctx.stroke();
+        }
+        
+        // Body rectangle
+        ctx.fillStyle = char.pools.HP > 0 ? color : '#444';
+        ctx.fillRect(pos.x - size, drawY - 40, size * 2, 40);
+        
+        // Name
+        ctx.fillStyle = "white";
+        ctx.font = "11px monospace";
+        ctx.textAlign = "center";
+        ctx.fillText(char.name, pos.x, drawY - 50);
+        
+        // HP bar
+        const barWidth = 30;
+        const barHeight = 3;
+        ctx.fillStyle = "red";
+        ctx.fillRect(pos.x - barWidth/2, drawY - 45, barWidth, barHeight);
+        
+        const hpPct = Math.max(0, char.pools.HP / char.pools.max_HP);
+        ctx.fillStyle = "#0f0";
+        ctx.fillRect(pos.x - barWidth/2, drawY - 45, barWidth * hpPct, barHeight);
+        
+        // EP bar (smaller, below HP)
+        const epBarWidth = 20;
+        ctx.fillStyle = "#333";
+        ctx.fillRect(pos.x - epBarWidth/2, drawY - 41, epBarWidth, 2);
+        
+        const epPct = Math.max(0, char.pools.EP / char.pools.max_EP);
+        ctx.fillStyle = "#00f";
+        ctx.fillRect(pos.x - epBarWidth/2, drawY - 41, epBarWidth * epPct, 2);
+    });
+    
+    requestAnimationFrame(draw);
+}
+
+// ============================================================================
+// 12. FILE LOADING (DRAG & DROP)
+// ============================================================================
+
+const dropZone = document.getElementById('drop-zone');
+
+window.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    dropZone.style.display = 'flex';
+});
+
+window.addEventListener('dragleave', (e) => {
+    e.preventDefault();
+    if (e.target === document.body) {
+        dropZone.style.display = 'none';
+    }
+});
+
+window.addEventListener('drop', (e) => {
+    e.preventDefault();
+    dropZone.style.display = 'none';
+    
+    const files = Array.from(e.dataTransfer.files);
+    files.forEach(file => {
+        if (file.name.endsWith('.json')) {
+            loadJSONFile(file);
+        }
+    });
+});
+
+function loadJSONFile(file) {
+    const reader = new FileReader();
+    reader.onload = (event) => {
+        try {
+            const data = JSON.parse(event.target.result);
+            
+            // Check if this is a full codex with directories structure
+            if (data.directories) {
+                log(`Loading full codex: ${file.name}`, "hit");
+                processCodex(data);
+                log("Codex loaded successfully!", "hit");
+                return;
+            }
+            
+            // Determine file type and load appropriately
+            if (data.id || data.name) {
+                // Character file
+                const char = sanitizeCharacter(data);
+                assignBattlefieldPosition(char);
+                STATE.characters.push(char);
+                log(`Loaded character: ${char.name}`, "sys");
+            } else if (data.spell_id) {
+                // Spell library
+                STATE.libs.spells[data.spell_id] = data;
+                log(`Loaded spell: ${data.spell_id}`, "sys");
+            } else if (data.item_id) {
+                // Item library
+                STATE.libs.items[data.item_id] = data;
+                log(`Loaded item: ${data.item_id}`, "sys");
+            } else if (data.axis_id) {
+                // Axis library
+                STATE.libs.axes[data.axis_id] = data;
+                log(`Loaded axis: ${data.axis_id}`, "sys");
+            } else if (data.influence_id) {
+                // Influence library
+                STATE.libs.influences[data.influence_id] = data;
+                log(`Loaded influence: ${data.influence_id}`, "sys");
+            } else {
+                // Generic merge
+                log(`Loaded generic JSON: ${file.name}`, "sys");
+            }
+        } catch (err) {
+            log(`Error loading ${file.name}: ${err.message}`, "err");
+        }
+    };
+    reader.readAsText(file);
+}
+
+// ============================================================================
+// 13. AUTOMATIC CODEX LOADING
+// ============================================================================
+
+function assignBattlefieldPosition(character) {
+    // Assign position based on side if not already set
+    if (character.position && character.position.x && character.position.y) {
+        // Already has position
+        character.position.z = character.position.z || 0;
+        return;
+    }
+    
+    const side = character.side || 'neutral';
+    const canvasWidth = canvas.width || 1200;
+    const canvasHeight = canvas.height || 800;
+    
+    // Define side zones
+    const zones = {
+        'players': {
+            x: [50, canvasWidth * 0.3],
+            y: [canvasHeight * 0.2, canvasHeight * 0.8]
+        },
+        'raiders': {
+            x: [canvasWidth * 0.7, canvasWidth - 50],
+            y: [canvasHeight * 0.2, canvasHeight * 0.8]
+        },
+        'neutral': {
+            x: [canvasWidth * 0.4, canvasWidth * 0.6],
+            y: [canvasHeight * 0.3, canvasHeight * 0.7]
+        },
+        'guards': {
+            x: [canvasWidth * 0.7, canvasWidth - 50],
+            y: [canvasHeight * 0.2, canvasHeight * 0.8]
+        }
+    };
+    
+    const zone = zones[side] || zones['neutral'];
+    
+    // Random position within zone
+    const x = zone.x[0] + Math.random() * (zone.x[1] - zone.x[0]);
+    const y = zone.y[0] + Math.random() * (zone.y[1] - zone.y[0]);
+    
+    character.position = { x, y, z: 0 };
+    
+    // Assign color based on side if not set
+    if (!character.color) {
+        const colorMap = {
+            'players': '#00ffff',
+            'raiders': '#ff3333',
+            'guards': '#ffaa00',
+            'neutral': '#888888'
+        };
+        character.color = colorMap[side] || '#ffffff';
+    }
+    
+    // Assign size if not set
+    if (!character.size) {
+        character.size = 15;
+    }
+}
+
+async function loadCodexFromPath(codexPath) {
+    log("Attempting to load Codex JSON...", "sys");
+    
+    try {
+        const response = await fetch(codexPath);
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+        
+        const codex = await response.json();
+        log(`✓ Loaded codex from: ${codexPath}`, "hit");
+        
+        return codex;
+    } catch (err) {
+        log(`✗ Could not load codex: ${err.message}`, "err");
+        return null;
+    }
+}
+
+async function autoLoadInitiative() {
+    // Try multiple possible paths for the codex
+    const possiblePaths = [
+        './codex.json',
+        '../codex.json',
+        './initiative/codex.json',
+        '/codex.json'
+    ];
+    
+    log("🔍 Searching for codex.json...", "sys");
+    
+    let codex = null;
+    for (const path of possiblePaths) {
+        codex = await loadCodexFromPath(path);
+        if (codex) break;
+    }
+    
+    if (!codex) {
+        log("No codex found. Using manual load mode.", "sys");
+        log("Drop codex.json or individual character files.", "sys");
+        return false;
+    }
+    
+    // Process codex structure
+    processCodex(codex);
+    return true;
+}
+
+function processCodex(codex) {
+    let loadCount = 0;
+    
+    // Check for initiative directory structure
+    if (codex.directories && codex.directories.initiative) {
+        const initiative = codex.directories.initiative;
+        
+        for (const [filename, charData] of Object.entries(initiative)) {
+            if (typeof charData === 'object' && charData !== null) {
+                const char = sanitizeCharacter(charData);
+                assignBattlefieldPosition(char);
+                STATE.characters.push(char);
+                loadCount++;
+            }
+        }
+        
+        log(`✓ Loaded ${loadCount} characters from initiative`, "hit");
+    }
+    
+    // Load spell library
+    if (codex.directories && codex.directories.spells) {
+        const spells = codex.directories.spells;
+        let spellCount = 0;
+        
+        for (const [filename, spellData] of Object.entries(spells)) {
+            if (typeof spellData === 'object' && spellData.spell_id) {
+                STATE.libs.spells[spellData.spell_id] = spellData;
+                spellCount++;
+            }
+        }
+        
+        if (spellCount > 0) {
+            log(`✓ Loaded ${spellCount} spells`, "sys");
+        }
+    }
+    
+    // Load item library
+    if (codex.directories && codex.directories.items) {
+        const items = codex.directories.items;
+        let itemCount = 0;
+        
+        for (const [filename, itemData] of Object.entries(items)) {
+            if (typeof itemData === 'object' && itemData.item_id) {
+                STATE.libs.items[itemData.item_id] = itemData;
+                itemCount++;
+            }
+        }
+        
+        if (itemCount > 0) {
+            log(`✓ Loaded ${itemCount} items`, "sys");
+        }
+    }
+    
+    // Load axes
+    if (codex.directories && codex.directories.axes) {
+        const axes = codex.directories.axes;
+        let axesCount = 0;
+        
+        for (const [filename, axisData] of Object.entries(axes)) {
+            if (typeof axisData === 'object' && axisData.axis_id) {
+                STATE.libs.axes[axisData.axis_id] = axisData;
+                axesCount++;
+            }
+        }
+        
+        if (axesCount > 0) {
+            log(`✓ Loaded ${axesCount} axes`, "sys");
+        }
+    }
+    
+    // Load influences
+    if (codex.directories && codex.directories.influences) {
+        const influences = codex.directories.influences;
+        let inflCount = 0;
+        
+        for (const [filename, inflData] of Object.entries(influences)) {
+            if (typeof inflData === 'object' && inflData.influence_id) {
+                STATE.libs.influences[inflData.influence_id] = inflData;
+                inflCount++;
+            }
+        }
+        
+        if (inflCount > 0) {
+            log(`✓ Loaded ${inflCount} influences`, "sys");
+        }
+    }
+    
+    // Show loaded characters by side
+    if (loadCount > 0) {
+        log("", "entry");
+        log("═══ BATTLEFIELD ROSTER ═══", "info");
+        
+        const bySide = {};
+        STATE.characters.forEach(char => {
+            const side = char.side || 'unknown';
+            if (!bySide[side]) bySide[side] = [];
+            bySide[side].push(char);
+        });
+        
+        for (const [side, chars] of Object.entries(bySide)) {
+            log(`${side.toUpperCase()}: ${chars.length} combatants`, "info");
+            chars.forEach((char, i) => {
+                const pos = `(${char.position.x.toFixed(0)}, ${char.position.y.toFixed(0)})`;
+                const aiStatus = char.ai_enabled ? 'AI' : 'MANUAL';
+                const idx = STATE.characters.indexOf(char) + 1;
+                log(`  [${idx}] ${char.name} ${pos} [${aiStatus}]`, "sys");
+            });
+        }
+        
+        log("", "entry");
+        log("Type 'init' to enter preflight setup.", "sys");
+    }
+}
+
+// ============================================================================
+// 14. BOOT SEQUENCE
+// ============================================================================
+
+async function boot() {
+    log("═══════════════════════════════════════", "info");
+    log("  TLE COMBAT RUNNER v3.1", "info");
+    log("  Pirouette Framework Integration", "info");
+    log("  Auto-Loading Initiative System", "info");
+    log("═══════════════════════════════════════", "info");
+    log("", "entry");
+    log("Systems Online:", "sys");
+    log("  ✓ Spellcasting (Range-based, TLE-001)", "sys");
+    log("  ✓ Dice Buy (Entropy gambling)", "sys");
+    log("  ✓ Check System (Field visibility DCs)", "sys");
+    log("  ✓ AI Targeting & Budget", "sys");
+    log("  ✓ Social System (Conversation, Hostility)", "sys");
+    log("  ✓ Damage Channels (Wound routing)", "sys");
+    log("  ✓ 3D Positioning (X, Y, Z coords)", "sys");
+    log("  ✓ Auto-Codex Loading", "sys");
+    log("", "entry");
+    
+    // Try to auto-load codex
+    const loaded = await autoLoadInitiative();
+    
+    if (!loaded) {
+        log("Manual mode: Type 'help' for commands.", "sys");
+        log("Drop codex.json or character files to load.", "sys");
+        
+        // Spawn demo characters for testing
+        log("", "entry");
+        log("Spawning demo characters...", "sys");
+        spawnTestCharacter('player_drifter');
+        STATE.characters[0].player = true;
+        STATE.characters[0].side = 'players';
+        STATE.characters[0].ai_enabled = false;
+        STATE.characters[0].color = '#00ffff';
+        assignBattlefieldPosition(STATE.characters[0]);
+        
+        spawnTestCharacter('raider_grunt');
+        assignBattlefieldPosition(STATE.characters[1]);
+        
+        spawnTestCharacter('raider_mage');
+        assignBattlefieldPosition(STATE.characters[2]);
+    }
+}
+
+boot();
+draw();
+
+</script>
+</body>
+</html>

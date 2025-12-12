@@ -1,0 +1,34 @@
+---
+id: INST-AUTH-MAP-007_AUTH-BRIDGE-FOR-CORE-006
+title: Bridge: CORE-006 ↔ DOMA-CLOSURE-KIT under altruism
+version: 7.0
+layer: manifold        # manifold | translator | shepherd
+status: draft          # draft | ratified | quarantined
+origin:
+  atlas_tile: [12, 0]  # (x,y) from dde_glob_atlas
+  atlas_gen: 3         # which autopoietic pass made it
+  emitted_by: dde-pirouette
+  shepherd_context: altruism
+  parents: ["CORE-006_THE_PIROUETTE_LAGRANGIAN"]
+  detected_gap: low_neighbor_density
+resonance:
+  dark_residue: 0.47   # as measured at emit time
+  target_residue: 0.30 # what this module is trying to get us to
+  closure_style: bridge  # core | dome | bridge | lattice
+  temporal_adherence: medium
+  gamma_profile: medium
+context_sources:
+  dictpack_keys: ["pirouette", "closure", "lagrangian"]
+  essentialized_refs:
+    - CORE-006_the_pirouette_lagrangian_essentialized
+    - DOMA-CLOSURE-KIT-001_essentialized
+autopoiesis:
+  emitted_at: 2025-11-05T23:11:00Z
+  debate_round: 0
+  acceptance: pending   # accepted | rejected | pending
+  quota_run: 4
+task:
+  intent: "close conceptual void between CORE-006 and closure kits for public-facing AI synthesis"
+  audience: "api-synthesis"
+  output_min: 400
+---

@@ -1,0 +1,100 @@
+---
+id:           TEN-NRA-1.1
+title:        Network Resonance Analysis, Application & Parameterization
+version:      1.1
+parents:      []                            # Placeholder: To be filled manually
+children:     []                            # Placeholder: To be filled manually
+engrams:
+  - analytic:pattern-analysis
+keywords:     ['actionable', 'analysis', 'application', 'computing', 'data', 'dynamics']
+uncertainty_tag: Medium # Placeholder
+module_type:  applied-analytics-toolkit
+---
+
+{
+    "tenduModuleID": "TEN-NRA-1.1",
+    "moduleName": "Network Resonance Analysis: Application & Parameterization",
+    "version": "1.1",
+    "pirouetteFrameworkOrigin": "TPF Vol 3, Network Resonance Analysis Module + Appendix A v1.1",
+    "primaryPurposeConciseStatement": "Provides operational methods for inferring Pirouette network parameters from real-world network data, computing key resonance metrics, and performing actionable analysis of network phase and flow dynamics.",
+    "parameterInference": {
+        "T_a_node": {
+            "description": "Time-Adherence per node",
+            "recommended_inference": [
+                "Interaction regularity over time (entropy or variance of activity)",
+                "Stability of role or influence (variance in node centrality over time)",
+                "For power grids: phase stability in Hz",
+                "For neural networks: coherence in dominant brainwave band"
+            ],
+            "scaling": "Normalize to [0,1], where 1 = perfect temporal coherence"
+        },
+        "Gamma_edge": {
+            "description": "Gladiator Force per edge",
+            "recommended_inference": [
+                "Social networks: interaction friction (inverse of trust / sentiment strength)",
+                "Organizational networks: process bottleneck or approval friction",
+                "Power grids: line impedance / congestion normalized",
+                "Neural networks: synaptic resistance / inhibition effect"
+            ],
+            "scaling": "Normalize to [0,1], where 1 = maximum resistance / confinement"
+        },
+        "phi_node": {
+            "description": "Node phase",
+            "recommended_inference": [
+                "Dominant opinion cycle (latent variable modeling or embedding phase)",
+                "Content posting cycle phase (Fourier on activity timelines)",
+                "Power grid: phase angle of AC signal",
+                "Neural network: phase of dominant oscillation at node"
+            ],
+            "scaling": "Map to [0, 2π) for phase angle"
+        }
+    },
+    "networkMetrics": {
+        "NRI": {
+            "formula": "NRI = T_a_network * (1 - (#fractures / |V|))",
+            "purpose": "Quantifies overall coherence and integrity of the network."
+        },
+        "CFC": {
+            "formula": "CFC = (1 / |E|) * sum_over_edges( J_flow_ij )",
+            "purpose": "Quantifies the network’s collective flow capacity and efficiency."
+        }
+    },
+    "flowComputation": {
+        "J_flow_ij": "J_flow_ij = T_a_ij * cos(Delta_phi_ij) * (1 - Gamma_ij)"
+    },
+    "eigenmodeAnalysis": {
+        "method": "Compute Laplacian L = D - A, with A_ij = T_a_ij * (1 - Gamma_ij) * cos(Delta_phi_ij). Perform eigendecomposition.",
+        "interpretation": {
+            "lowest_mode": "Global phase coherence of network.",
+            "high_modes": "Localized instability, cluster oscillations, early fracture indicators."
+        },
+        "monitoring_goal": "Track variance and participation of high-k modes to monitor network health."
+    },
+    "parameterSensitivity": {
+        "Gamma_high": "Excessive Gamma drives edge shutdown and lock formation.",
+        "Gamma_low": "Low Gamma with uncoherent Delta_phi can lead to turbulent flow.",
+        "T_a_low": "Low T_a_nodes drive incoherence and early fractures.",
+        "phi_instability": "Rapid phase shifts increase Delta_phi, lowering flow efficiency."
+    },
+    "analysisLoop": {
+        "recommended_pipeline": [
+            "Infer T_a, Gamma, phi per node/edge.",
+            "Compute adjacency A and Laplacian L.",
+            "Compute eigenmodes.",
+            "Compute NRI and CFC.",
+            "Visualize flow field and Delta_phi map.",
+            "Monitor eigenmode participation over time.",
+            "Feed NRI, CFC, and mode variance into Resolvè module evaluation."
+        ]
+    },
+    "ethicsGuidance": {
+        "transparency": "All analysis results must be disclosed to affected communities before action.",
+        "interventionPrinciple": "Interventions should prioritize restoring flow and voluntary coherence, not enforcing lock.",
+        "purposeAlignment": "Analysis must align with the Art, Law, Philosophy, and Ethical vectors of the Pirouette Framework."
+    },
+    "filePath": "./tendu_modules/TEN-NRA-APPLY-1.0.json"
+}
+
+
+### Version Notes
+*1.1* — Initial conversion from JSON definition.

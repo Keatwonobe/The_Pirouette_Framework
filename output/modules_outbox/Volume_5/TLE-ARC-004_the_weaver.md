@@ -1,0 +1,247 @@
+---
+#───────────── The Lost Eternal ──────────────────────
+id: TLE-ARC-004
+title: The Weaver
+version: 1.0-consolidated
+parents: [TLE-000]
+children: []
+engrams:
+ - templates:phantom
+keywords: [character creation, body plan, attributes, TLE]
+uncertainty_tag: Low
+module_type: core-rulebook-consolidated
+---
+Module TLE-ARC-004: The Weaver (Support/Control Archetype)
+This document outlines the level-by-level progression of a "Weaver"—a unique support and control archetype who manipulates the very fabric of being. The Weaver interacts with the Wound Channels of allies and enemies, capable of mending the deepest scars or turning an opponent's own trauma into a devastating weapon. Their power is subtle, terrifying, and deeply tied to the narrative of the world.
+
+Progression Milestones:
+
+Level 1: Total Entropy Pool (TEP) of 35 EP
+
+Level 5: TEP of 95 EP (35 + 4x15)
+
+Level 10: TEP of 170 EP (35 + 9x15)
+
+Level 15: TEP of 245 EP (35 + 14x15)
+
+Level 20: TEP of 335 EP (35 + 19x15)
+
+Level 1: The Empath (35 TEP)
+The Empath is a being attuned to the echoes of the past. They can feel the resonant scars left on others, though their ability to manipulate them is still nascent.
+
+Attribute Investment (21 EP):
+
+Strength: 0 EP
+
+Dexterity: 2 EP
+
+Constitution: 6 EP
+
+Intelligence: 5 EP
+
+Wisdom: 8 EP
+
+Attribute Scores & Modifiers:
+
+STR Score: 0 (Mod +0)
+
+DEX Score: 1 (Mod +0)
+
+CON Score: 3 (Mod +0)
+
+INT Score: 2 (Mod +0)
+
+WIS Score: 4 (Mod +1)
+
+Physical Form & Skills (14 EP):
+
+Humanoid, Standard form: 18 EP (Requires taking 4 EP from Attributes, leaving 17 EP for investment)
+
+Arcane Skill: "The Weaver's Art": 3 EP (Permanent TEP cost)
+
+"The Weaver's Art" Pool: 10 EP
+
+Derived Max HP: 7 HP
+
+Remaining TEP: 0 EP (after reallocating from Attributes)
+
+Level 5: The Stitcher (95 TEP)
+The Stitcher has learned the basics of their craft. They can mend minor wounds and have begun to understand the offensive potential of their art.
+
+Attribute Investment (55 EP):
+
+Strength: 0 EP
+
+Dexterity: 5 EP
+
+Constitution: 15 EP
+
+Intelligence: 15 EP
+
+Wisdom: 20 EP
+
+Attribute Scores & Modifiers:
+
+STR Score: 0 (Mod +0)
+
+DEX Score: 2 (Mod +0)
+
+CON Score: 7 (Mod +1)
+
+INT Score: 7 (Mod +1)
+
+WIS Score: 10 (Mod +2)
+
+Physical Form & Skills (40 EP):
+
+Humanoid, Standard form: 18 EP
+
+Arcane Skill: "The Weaver's Art": 3 EP
+
+"The Weaver's Art" Pool: 9 EP
+
+Feat: Psychic Suture (10 EP): As an action, you can spend EP from your "Weaver's Art" pool to heal an ally's Wound Channel. The EP cost is determined by the GM based on the severity of the wound.
+
+Derived Max HP: 7 HP
+
+Remaining TEP: 0 EP
+
+Level 10: The Mender (170 TEP)
+The Mender is a true master of healing, capable of knitting flesh and soul back together. They have also learned to turn their art outward, weaponizing the pain of their enemies.
+
+Attribute Investment (90 EP):
+
+Strength: 0 EP
+
+Dexterity: 10 EP
+
+Constitution: 20 EP
+
+Intelligence: 25 EP
+
+Wisdom: 35 EP
+
+Attribute Scores & Modifiers:
+
+STR Score: 0 (Mod +0)
+
+DEX Score: 5 (Mod +1)
+
+CON Score: 10 (Mod +2)
+
+INT Score: 12 (Mod +3)
+
+WIS Score: 17 (Mod +4)
+
+Physical Form & Skills (80 EP):
+
+Humanoid, Standard form: 18 EP
+
+Arcane Skill: "The Weaver's Art": 3 EP
+
+"The Weaver's Art" Pool: 39 EP
+
+Feat: Psychic Suture: 10 EP
+
+Feat: Resonant Agony (10 EP): As an action, you can make a contested (d20 + WIS Mod) check against an enemy's (d20 + WIS Mod). On a success, you resonate with one of their Wound Channels. You can then spend EP from your "Weaver's Art" pool to deal an equal amount of psychic damage to them, bypassing physical defenses.
+
+Derived Max HP: 7 HP
+
+Remaining TEP: 0 EP
+
+Level 15: The Fate-Spinner (245 TEP)
+The Fate-Spinner sees the threads of causality that bind all beings. They can not only mend or break these threads but can begin to unravel the very form of their foes.
+
+Attribute Investment (140 EP):
+
+Strength: 0 EP
+
+Dexterity: 10 EP
+
+Constitution: 30 EP
+
+Intelligence: 40 EP
+
+Wisdom: 60 EP
+
+Attribute Scores & Modifiers:
+
+STR Score: 0 (Mod +0)
+
+DEX Score: 5 (Mod +1)
+
+CON Score: 15 (Mod +3)
+
+INT Score: 20 (Mod +5)
+
+WIS Score: 30 (Mod +7)
+
+Physical Form & Skills (105 EP):
+
+Humanoid, Standard form: 18 EP
+
+Arcane Skill: "The Weaver's Art": 3 EP
+
+"The Weaver's Art" Pool: 54 EP
+
+Feats: 30 EP (Psychic Suture, Resonant Agony, and a new one)
+
+Feat: Pattern Unraveling (10 EP): When you successfully use Resonant Agony, you can choose to deal half damage. If you do, you also "unravel" the target's form, temporarily removing an equal amount of EP from one of their invested limbs (your choice). This EP is returned at the end of the encounter.
+
+Derived Max HP: 7 HP
+
+Remaining TEP: 0 EP
+
+Level 20: The Weaver (335 TEP)
+The Weaver is a master of the entropic form. They perceive the world as a tapestry of will and memory, and they possess the needle and thread to re-weave it as they see fit. They are a legendary healer and a terrifying, unseen foe.
+
+Attribute Investment (180 EP):
+
+Strength: 0 EP
+
+Dexterity: 10 EP
+
+Constitution: 40 EP
+
+Intelligence: 60 EP
+
+Wisdom: 70 EP
+
+Attribute Scores & Modifiers:
+
+STR Score: 0 (Mod +0)
+
+DEX Score: 5 (Mod +1)
+
+CON Score: 20 (Mod +5)
+
+INT Score: 30 (Mod +7)
+
+WIS Score: 35 (Mod +8)
+
+Physical Form & Skills (155 EP):
+
+Humanoid, Standard form: 18 EP
+
+Arcane Skill: "The Weaver's Art": 3 EP
+
+"The Weaver's Art" Pool: 94 EP
+
+Feats: 40 EP (Psychic Suture, Resonant Agony, Pattern Unraveling, and a new capstone feat)
+
+Feat: Sever the Thread (10 EP): Once per long rest, when you use Pattern Unraveling, you can choose to make the entropic damage permanent. The target permanently loses the EP from their invested limb. This is a profound and often evil act, scarring the target's very soul.
+
+Derived Max HP: 7 HP
+
+Remaining TEP: 0 EP
+
+Level 20 Summary: Combat Strategy
+The Level 20 Weaver is a master of unconventional warfare, a "scary healer" who wins battles by manipulating the very essence of their allies and enemies.
+
+The Ultimate Support: With a massive "Weaver's Art" pool of 94 EP and their Psychic Suture feat, a Weaver can perform incredible acts of healing. They can mend deep, narrative wounds that are beyond the reach of normal magic, making their allies incredibly resilient.
+
+The Psychic Terror: The Weaver's offensive power is insidious and terrifying. Their primary tactic is to use Resonant Agony, bypassing all physical armor and defenses to inflict pure psychic damage. They don't attack the body; they attack the soul.
+
+The Unraveler: Against a powerful, singular foe, the Weaver is a nightmare. They will use Pattern Unraveling to systematically dismantle their opponent. By temporarily (or permanently, with Sever the Thread) removing the EP invested in an enemy's limbs, they can render a Juggernaut's mighty arm useless or a dragon's fiery breath inert, winning the fight through slow, entropic decay.
+
+Weaknesses: Like the Arcanist, the Weaver is physically fragile with only 7 HP. They must rely on their allies to protect them. Furthermore, their most powerful abilities require them to win a contested Wisdom check, making them less effective against foes with immense willpower or those who lack the complexity to have deep-seated Wound Channels (like a mindless golem). Their power is subtle and requires a keen tactical mind to use effectively.

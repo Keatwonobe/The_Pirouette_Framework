@@ -1,0 +1,313 @@
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent> python sand_agent.py basin_structure.json --eeg-features coherence_features.csv
+
+======================================================================
+SAND AGENT TRAINER
+======================================================================
+
+Basin structure: basin_structure.json
+Output directory: sand_agent_results
+
+Basin Prior Loaded:
+  N basins: 7
+    Basin 0 (navigator): p=0.342
+    Basin 1 (navigator): p=0.206
+    Basin 2 (navigator): p=0.344
+    Basin 3 (sampler): p=0.034
+    Basin 4 (sampler): p=0.023
+    Basin 5 (sampler): p=0.019
+    Basin 6 (sampler): p=0.033
+
+======================================================================
+SAND AGENT LANDSCAPE SAMPLING
+======================================================================
+
+Config:
+  Episodes: 800
+  Episode length: 1000
+  Coherence decay: τ=0.001s
+  Total samples: 800,000
+
+Sampling landscape...
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent> python sand_agent.py basin_structure.json --eeg-features coherence_features.csv
+
+======================================================================
+SAND AGENT TRAINER
+======================================================================
+
+Basin structure: basin_structure.json
+Output directory: sand_agent_results
+
+Basin Prior Loaded:
+  N basins: 7
+    Basin 0 (navigator): p=0.342
+    Basin 1 (navigator): p=0.206
+    Basin 2 (navigator): p=0.344
+    Basin 3 (sampler): p=0.034
+    Basin 4 (sampler): p=0.023
+    Basin 5 (sampler): p=0.019
+    Basin 6 (sampler): p=0.033
+
+======================================================================
+SAND AGENT LANDSCAPE SAMPLING
+======================================================================
+
+Config:
+  Episodes: 800
+  Episode length: 1000
+  Coherence decay: τ=0.001s
+  Total samples: 800,000
+
+Sampling landscape...
+Traceback (most recent call last):
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 493, in <module>
+    main()
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 475, in main
+    agent.train()
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 274, in train
+    episode_log = self.run_episode()
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 249, in run_episode
+    step_data = self.step(basin_id)
+                ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 194, in step
+    self.Gamma = np.clip(self.Gamma, 0, 2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\fromnumeric.py", line 2330, in clip
+    return _wrapfunc(a, 'clip', a_min, a_max, out=out, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\fromnumeric.py", line 54, in _wrapfunc
+    return _wrapit(obj, method, *args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\fromnumeric.py", line 46, in _wrapit
+    result = getattr(arr, method)(*args, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\_methods.py", line 115, in _clip
+    return um.clip(a, min, max, out=out, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: D:\a\1\s\Objects\dictobject.c:2828: bad argument to internal function
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent> python sand_agent.py basin_structure.json --eeg-features coherence_features.csv
+
+======================================================================
+SAND AGENT TRAINER
+======================================================================
+
+Basin structure: basin_structure.json
+Output directory: sand_agent_results
+
+Basin Prior Loaded:
+  N basins: 7
+    Basin 0 (navigator): p=0.342
+    Basin 1 (navigator): p=0.206
+    Basin 2 (navigator): p=0.344
+    Basin 3 (sampler): p=0.034
+    Basin 4 (sampler): p=0.023
+    Basin 5 (sampler): p=0.019
+    Basin 6 (sampler): p=0.033
+
+======================================================================
+SAND AGENT LANDSCAPE SAMPLING
+======================================================================
+
+Config:
+  Episodes: 800
+  Episode length: 1000
+  Coherence decay: τ=0.001s
+  Total samples: 800,000
+
+Sampling landscape...
+Traceback (most recent call last):
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 493, in <module>
+    main()
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 475, in main
+    agent.train()
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 274, in train
+    episode_log = self.run_episode()
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 249, in run_episode
+    step_data = self.step(basin_id)
+                ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 194, in step
+    self.Gamma = np.clip(self.Gamma, 0, 2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\fromnumeric.py", line 2326, in clip
+    elif min is not np._NoValue or max is not np._NoValue:
+                                   ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'bool' object does not support the context manager protocol
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent> python sand_agent.py basin_structure.json --eeg-features coherence_features.csv
+
+======================================================================
+SAND AGENT TRAINER
+======================================================================
+
+Basin structure: basin_structure.json
+Output directory: sand_agent_results
+
+Basin Prior Loaded:
+  N basins: 7
+    Basin 0 (navigator): p=0.342
+    Basin 1 (navigator): p=0.206
+    Basin 2 (navigator): p=0.344
+    Basin 3 (sampler): p=0.034
+    Basin 4 (sampler): p=0.023
+    Basin 5 (sampler): p=0.019
+    Basin 6 (sampler): p=0.033
+
+======================================================================
+SAND AGENT LANDSCAPE SAMPLING
+======================================================================
+
+Config:
+  Episodes: 800
+  Episode length: 1000
+  Coherence decay: τ=0.001s
+  Total samples: 800,000
+
+Sampling landscape...
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent> python sand_agent.py basin_structure.json --eeg-features coherence_features.csv
+
+======================================================================
+SAND AGENT TRAINER
+======================================================================
+
+Basin structure: basin_structure.json
+Output directory: sand_agent_results
+
+Basin Prior Loaded:
+  N basins: 7
+    Basin 0 (navigator): p=0.342
+    Basin 1 (navigator): p=0.206
+    Basin 2 (navigator): p=0.344
+    Basin 3 (sampler): p=0.034
+    Basin 4 (sampler): p=0.023
+    Basin 5 (sampler): p=0.019
+    Basin 6 (sampler): p=0.033
+
+======================================================================
+SAND AGENT LANDSCAPE SAMPLING
+======================================================================
+
+Config:
+  Episodes: 800
+  Episode length: 1000
+  Coherence decay: τ=0.001s
+  Total samples: 800,000
+
+Sampling landscape...
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent> python sand_agent.py basin_structure.json --eeg-features coherence_features.csv
+
+======================================================================
+SAND AGENT TRAINER
+======================================================================
+
+Basin structure: basin_structure.json
+Output directory: sand_agent_results
+
+Basin Prior Loaded:
+  N basins: 7
+    Basin 0 (navigator): p=0.342
+    Basin 1 (navigator): p=0.206
+    Basin 2 (navigator): p=0.344
+    Basin 3 (sampler): p=0.034
+    Basin 4 (sampler): p=0.023
+    Basin 5 (sampler): p=0.019
+    Basin 6 (sampler): p=0.033
+
+======================================================================
+SAND AGENT LANDSCAPE SAMPLING
+======================================================================
+
+Config:
+  Episodes: 800
+  Episode length: 1000
+  Coherence decay: τ=0.001s
+  Total samples: 800,000
+
+Sampling landscape...
+Traceback (most recent call last):
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 493, in <module>
+    main()
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 475, in main
+    agent.train()
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 274, in train
+    episode_log = self.run_episode()
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 249, in run_episode
+    step_data = self.step(basin_id)
+                ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 194, in step
+    self.Gamma = np.clip(self.Gamma, 0, 2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\fromnumeric.py", line 2330, in clip
+    return _wrapfunc(a, 'clip', a_min, a_max, out=out, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\fromnumeric.py", line 54, in _wrapfunc
+    return _wrapit(obj, method, *args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\fromnumeric.py", line 46, in _wrapit
+    result = getattr(arr, method)(*args, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\_methods.py", line 115, in _clip
+    return um.clip(a, min, max, out=out, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 0 argument after * must be an iterable, not int
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent> python sand_agent.py basin_structure.json --eeg-features coherence_features.csv
+
+======================================================================
+SAND AGENT TRAINER
+======================================================================
+
+Basin structure: basin_structure.json
+Output directory: sand_agent_results
+
+Basin Prior Loaded:
+  N basins: 7
+    Basin 0 (navigator): p=0.342
+    Basin 1 (navigator): p=0.206
+    Basin 2 (navigator): p=0.344
+    Basin 3 (sampler): p=0.034
+    Basin 4 (sampler): p=0.023
+    Basin 5 (sampler): p=0.019
+    Basin 6 (sampler): p=0.033
+
+======================================================================
+SAND AGENT LANDSCAPE SAMPLING
+======================================================================
+
+Config:
+  Episodes: 800
+  Episode length: 1000
+  Coherence decay: τ=0.001s
+  Total samples: 800,000
+
+Sampling landscape...
+
+✓ Sampling complete! Total points: 800,000
+Traceback (most recent call last):
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 493, in <module>
+    main()
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 478, in main
+    sand_df = agent.export_landscape(args.output_dir / 'sand_landscape.csv')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 291, in export_landscape
+    df = self.aggregate_landscape()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent\sand_agent.py", line 286, in aggregate_landscape
+    df = pd.DataFrame(self.landscape_samples)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\frame.py", line 851, in __init__
+    arrays, columns, index = nested_data_to_arrays(
+                             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\internals\construction.py", line 520, in nested_data_to_arrays
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\internals\construction.py", line 837, in to_arrays
+    arr, columns = _list_of_dict_to_arrays(data, columns)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\internals\construction.py", line 917, in _list_of_dict_to_arrays
+    pre_cols = lib.fast_unique_multiple_list_gen(gen, sort=sort)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/lib.pyx", line 367, in pandas._libs.lib.fast_unique_multiple_list_gen
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\internals\construction.py", line 915, in <genexpr>
+    gen = (list(x.keys()) for x in data)
+                ^^^^^^
+AttributeError: 'function' object has no attribute 'keys'

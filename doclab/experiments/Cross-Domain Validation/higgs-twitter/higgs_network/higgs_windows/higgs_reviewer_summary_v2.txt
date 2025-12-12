@@ -1,0 +1,17 @@
+Higgs Gamma-aware cascade - reviewer checks (shell-based)
+========================================================
+
+Files analyzed: 20
+Used k_Gamma = 3.36516e-07 (auto)
+Critical window (|alpha+1| min): t=6, alpha=-1.011180, file=higgs_hodge_out_win06.npz
+Closest Theta_shell ~= Theta_c_shell window: t=10, file=higgs_hodge_out_win10.npz
+
+Q1: Theta_shell(t) and Theta_c_shell(t) do NOT exactly coincide with alpha ~= -1 -> CHECK
+    alpha ~= -1 at t=6, Theta_shell ~= Theta_c_shell at t=10
+Q2: Earlier supercritical window found at t=0, alpha=-0.7844 -> PASS
+Q3: Late-time windows with |alpha+1| < 0.05 after t=6: 1 -> CHECK
+
+Notes:
+- This version computes energies on the SAME Gamma-shell used for avalanches.
+- For the original whole-field version, see v1 summary. (There it failed Q1.)
+- To give the reviewer a 'knob', re-run with e.g. --frac 0.3 or --k-gamma 0.6.

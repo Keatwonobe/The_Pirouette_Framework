@@ -1,0 +1,216 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from numba import njit, prange
+import time
+from PIL import Image
+
+# =========================================================
+#  PROTON MICROSCOPE: INFINITY ZOOM & TRACK
+# =========================================================
+
+# --- MISSION CONTROL ---
+OUTPUT_FILENAME = "proton_microscope.gif"
+
+# 1. NAVIGATION
+# Where should we look? (Rough guess is fine, the script will lock on)
+# Top Left Quark approx: (-0.3, 0.4)
+# Bottom Quark approx:   (0.0, -0.6)
+TARGET_HINT = (0.0, -5) 
+
+# 2. OPTICS
+FINAL_ZOOM_WIDTH = 12  # How wide is the final window? (Smaller = Deeper)
+# 0.002 is about 1000x magnification. 
+# Try 0.00001 for "Sub-atomic" views (Float64 precision limit is ~1e-15)
+
+# 3. TIMING
+DIVE_FRAMES = 40          # Frames spent zooming in
+ORBIT_FRAMES = 40         # Frames spent orbiting at the bottom
+DURATION = 150
+
+# --- PHYSICS ENGINE ---
+
+SRC_M_BASE = np.array([-10.0, 10.0, 0.0])
+SRC_L_BASE = np.array([5.0, 5.0, -10.0])
+BREATHING_FREQ = 6.0 
+
+@njit(parallel=True)
+def render_microscope(center_m, center_l, width, res, src_m, src_l, src_amp):
+    """
+    High-precision renderer for deep zoom levels.
+    """
+    half_w = width / 2.0
+    m_vals = np.linspace(center_m - half_w, center_m + half_w, res)
+    l_vals = np.linspace(center_l - half_w, center_l + half_w, res)
+    
+    intensity_map = np.zeros((res, res), dtype=np.float64)
+    
+    k_vec = np.zeros(3)
+    for i in range(3):
+        dist = np.sqrt(src_m[i]**2 + src_l[i]**2)
+        k_vec[i] = (2 * np.pi) / (dist + 1e-9)
+
+    for i in prange(res):
+        y = l_vals[i]
+        for j in range(res):
+            x = m_vals[j]
+            psi_real, psi_imag = 0.0, 0.0
+            
+            for q in range(3):
+                dx = x - src_m[q]
+                dy = y - src_l[q]
+                r = np.sqrt(dx*dx + dy*dy)
+                
+                # Singularitiy Protection for Deep Zoom
+                if r < 1e-12: r = 1e-12
+                
+                phase = k_vec[q] * r
+                amp = (src_amp / r)
+                
+                psi_real += amp * np.cos(phase)
+                psi_imag += amp * np.sin(phase)
+            
+            intensity_map[i, j] = psi_real**2 + psi_imag**2
+            
+    return intensity_map
+
+# --- NAVIGATION SYSTEMS ---
+
+def rotate_coords(m, l, theta):
+    c, s = np.cos(theta), np.sin(theta)
+    return m*c - l*s, m*s + l*c
+
+def drill_down_target(src_m, src_l, hint, final_width):
+    """
+    The '5-frame' recursive locking algorithm.
+    Starts wide, finds max, zooms, repeats.
+    """
+    print(f"--- 🎯 INITIATING TARGET ACQUISITION ---")
+    
+    current_m, current_l = hint
+    current_width = 1.5 # Start with a wide view
+    step = 1
+    
+    # We drill down until our width is close to the target width
+    while current_width > final_width:
+        print(f"  [Depth {step}] Scanning width {current_width:.5f} at ({current_m:.5f}, {current_l:.5f})...")
+        
+        # Low-res scan to find the peak in this layer
+        scan_res = 100 
+        img = render_microscope(current_m, current_l, current_width, scan_res, src_m, src_l, 1.0)
+        
+        # Find local max (The "Bright Object")
+        # Mask edges to avoid getting stuck on the border
+        img[0:5, :] = 0; img[-5:, :] = 0; img[:, 0:5] = 0; img[:, -5:] = 0
+        
+        idx = np.unravel_index(np.argmax(img), img.shape)
+        
+        # Convert index back to coords
+        # (Note: index 0 is top-left, so L decreases, M increases)
+        # But our renderer uses linspace(min, max).
+        # y index maps to L, x index maps to M
+        
+        half_w = current_width / 2.0
+        # Re-calculate exact position of that pixel
+        pixel_l = (current_l - half_w) + idx[0] * (current_width / (scan_res - 1))
+        pixel_m = (current_m - half_w) + idx[1] * (current_width / (scan_res - 1))
+        
+        # Update center
+        current_m, current_l = pixel_m, pixel_l
+        
+        # Zoom in (Decay factor 0.2 means 5x magnification per step)
+        current_width *= 0.2
+        step += 1
+        
+    print(f"✅ LOCK CONFIRMED. Coordinates: ({current_m:.8f}, {current_l:.8f})")
+    
+    # Calculate Polar coordinates for the Orbit Lock
+    r_lock = np.sqrt(current_m**2 + current_l**2)
+    theta_lock = np.arctan2(current_l, current_m)
+    
+    return r_lock, theta_lock
+
+# --- MAIN RENDERER ---
+
+def generate_microscope_gif():
+    # 1. Warmup
+    print("Pre-flight checks...")
+    render_microscope(0,0,1,10, SRC_M_BASE, SRC_L_BASE, 1.0)
+    
+    # 2. Drill Down to find the Quark
+    lock_r, lock_theta_init = drill_down_target(SRC_M_BASE, SRC_L_BASE, TARGET_HINT, FINAL_ZOOM_WIDTH)
+    
+    frames_buffer = []
+    cmap = plt.get_cmap('magma')
+    
+    # 3. Render the Sequence
+    print("Rendering Dive & Orbit sequence...")
+    
+    # Combine frames: Dive + Orbit
+    total_frames = DIVE_FRAMES + ORBIT_FRAMES
+    
+    # Calculate Zoom Curve (Logarithmic descent)
+    # Start width: 1.5, End width: FINAL_ZOOM_WIDTH
+    zoom_levels = np.logspace(np.log10(1.5), np.log10(FINAL_ZOOM_WIDTH), DIVE_FRAMES)
+    
+    for f in range(total_frames):
+        # Global Rotation (The Universe is spinning)
+        sys_theta = 2 * np.pi * (f / total_frames)
+        
+        # Determine Current Zoom Level
+        if f < DIVE_FRAMES:
+            current_width = zoom_levels[f]
+            # During dive, we stick to the lock
+        else:
+            current_width = FINAL_ZOOM_WIDTH
+            # During orbit, we stay at max zoom
+            
+        # Determine Camera Position
+        # The camera tracks the quark's rotation
+        cam_theta = lock_theta_init + sys_theta
+        cam_m = lock_r * np.cos(cam_theta)
+        cam_l = lock_r * np.sin(cam_theta)
+        
+        # Rotate Sources
+        curr_src_m, curr_src_l = rotate_coords(SRC_M_BASE, SRC_L_BASE, sys_theta)
+        
+        # Breathing Effect
+        pulse = 1.0 + 0.1 * np.sin(2 * np.pi * (f / total_frames) * BREATHING_FREQ)
+        
+        # Render
+        # We use a solid resolution of 500x500
+        raw = render_microscope(cam_m, cam_l, current_width, 500, curr_src_m, curr_src_l, pulse)
+        
+        # --- LOCAL NORMALIZATION (The "Overexposure" Fix) ---
+        # Instead of fixed scaling, we scale to the current window's range.
+        # This reveals texture even inside the singularity.
+        v_min, v_max = raw.min(), raw.max()
+        if v_max - v_min < 1e-9:
+            norm = np.zeros_like(raw)
+        else:
+            norm = (raw - v_min) / (v_max - v_min)
+            
+        # Apply Gamma for "Glow"
+        norm = np.power(norm, 0.5)
+        
+        # Colorize
+        rgba = cmap(norm)
+        img_uint8 = (rgba[:, :, :3] * 255).astype(np.uint8)
+        img_uint8 = np.flipud(img_uint8)
+        
+        frames_buffer.append(Image.fromarray(img_uint8))
+        
+        if f % 5 == 0:
+            print(f"  Frame {f}/{total_frames} | Zoom Width: {current_width:.6f}")
+
+    print(f"Saving Microscope Feed to {OUTPUT_FILENAME}...")
+    frames_buffer[0].save(
+        OUTPUT_FILENAME,
+        save_all=True,
+        append_images=frames_buffer[1:],
+        duration=DURATION,
+        loop=0
+    )
+    print("✅ DONE.")
+
+if __name__ == "__main__":
+    generate_microscope_gif()

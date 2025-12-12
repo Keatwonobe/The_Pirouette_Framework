@@ -1,0 +1,1816 @@
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Pirouette_Volume_6\doclab\experiments\Machine_Learning\fractal_mirror_learning> python wendigo.py
+Episode 1: Dissonant run. Score: 32. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 11/21 | CohHead: pred=0.3 loss=1006.275
+    Top-1 scores: [32] | avg=32.00 | dyn_threshold=24
+Episode 2: Dissonant run. Score: 12. (Gold: False)
+    Avg Dark Residue: 0.61 | Vigor/Rigor: 7/5 | CohHead: pred=0.3 loss=137.194
+    Top-2 scores: [32, 12] | avg=22.00 | dyn_threshold=17
+Episode 3: Dissonant run. Score: 9. (Gold: False)
+    Avg Dark Residue: 0.82 | Vigor/Rigor: 2/7 | CohHead: pred=0.3 loss=75.810
+    Top-3 scores: [32, 12, 9] | avg=17.67 | dyn_threshold=13
+Episode 4: Dissonant run. Score: 34. (Gold: False)
+    Avg Dark Residue: 0.34 | Vigor/Rigor: 12/22 | CohHead: pred=0.3 loss=1135.792
+    Top-4 scores: [34, 32, 12, 9] | avg=21.75 | dyn_threshold=16
+Episode 5: Dissonant run. Score: 16. (Gold: False)
+    Avg Dark Residue: 0.44 | Vigor/Rigor: 4/12 | CohHead: pred=0.3 loss=246.329
+    Top-5 scores: [34, 32, 16, 12, 9] | avg=20.60 | dyn_threshold=16
+Episode 6: Dissonant run. Score: 11. (Gold: False)
+    Avg Dark Residue: 0.66 | Vigor/Rigor: 5/6 | CohHead: pred=0.3 loss=114.113
+    Top-6 scores: [34, 32, 16, 12, 11, 9] | avg=19.00 | dyn_threshold=14
+Episode 7: Dissonant run. Score: 25. (Gold: False)
+    Avg Dark Residue: 0.71 | Vigor/Rigor: 3/22 | CohHead: pred=0.3 loss=609.205
+    Top-7 scores: [34, 32, 25, 16, 12, 11, 9] | avg=19.86 | dyn_threshold=15
+Episode 8: Dissonant run. Score: 12. (Gold: False)
+    Avg Dark Residue: 0.56 | Vigor/Rigor: 2/10 | CohHead: pred=0.3 loss=136.316
+    Top-8 scores: [34, 32, 25, 16, 12, 12, 11, 9] | avg=18.88 | dyn_threshold=14
+Episode 9: Dissonant run. Score: 15. (Gold: False)
+    Avg Dark Residue: 0.49 | Vigor/Rigor: 5/10 | CohHead: pred=0.3 loss=215.078
+    Top-9 scores: [34, 32, 25, 16, 15, 12, 12, 11, 9] | avg=18.44 | dyn_threshold=14
+Episode 10: Dissonant run. Score: 11. (Gold: False)
+    Avg Dark Residue: 0.67 | Vigor/Rigor: 4/7 | CohHead: pred=0.4 loss=113.498
+    Top-10 scores: [34, 32, 25, 16, 15, 12, 12, 11, 11, 9] | avg=17.70 | dyn_threshold=13
+Episode 11: Dissonant run. Score: 11. (Gold: False)
+    Avg Dark Residue: 0.62 | Vigor/Rigor: 2/9 | CohHead: pred=0.4 loss=113.494
+    Top-11 scores: [34, 32, 25, 16, 15, 12, 12, 11, 11, 11, 9] | avg=17.09 | dyn_threshold=13
+Episode 12: Dissonant run. Score: 16. (Gold: False)
+    Avg Dark Residue: 0.45 | Vigor/Rigor: 5/11 | CohHead: pred=0.4 loss=244.784
+    Top-12 scores: [34, 32, 25, 16, 16, 15, 12, 12, 11, 11, 11, 9] | avg=17.00 | dyn_threshold=13
+Episode 13: Dissonant run. Score: 11. (Gold: False)
+    Avg Dark Residue: 0.83 | Vigor/Rigor: 1/10 | CohHead: pred=0.4 loss=113.137
+    Top-13 scores: [34, 32, 25, 16, 16, 15, 12, 12, 11, 11, 11, 11, 9] | avg=16.54 | dyn_threshold=12
+Episode 14: Dissonant run. Score: 9. (Gold: False)
+    Avg Dark Residue: 0.76 | Vigor/Rigor: 4/5 | CohHead: pred=0.4 loss=74.241
+    Top-14 scores: [34, 32, 25, 16, 16, 15, 12, 12, 11, 11, 11, 11, 9, 9] | avg=16.00 | dyn_threshold=12
+Episode 15: Dissonant run. Score: 10. (Gold: False)
+    Avg Dark Residue: 0.73 | Vigor/Rigor: 3/7 | CohHead: pred=0.4 loss=92.462
+    Top-15 scores: [34, 32, 25, 16, 16, 15, 12, 12, 11, 11, 11, 11, 10, 9, 9] | avg=15.60 | dyn_threshold=12
+Episode 16: Dissonant run. Score: 17. (Gold: False)
+    Avg Dark Residue: 0.44 | Vigor/Rigor: 6/11 | CohHead: pred=0.4 loss=276.111
+    Top-15 scores: [34, 32, 25, 17, 16, 16, 15, 12, 12, 11, 11, 11, 11, 10, 9] | avg=16.13 | dyn_threshold=12
+Episode 17: Dissonant run. Score: 18. (Gold: False)
+    Avg Dark Residue: 0.55 | Vigor/Rigor: 5/13 | CohHead: pred=0.4 loss=310.031
+    Top-15 scores: [34, 32, 25, 18, 17, 16, 16, 15, 12, 12, 11, 11, 11, 11, 10] | avg=16.73 | dyn_threshold=13
+Episode 18: Dissonant run. Score: 8. (Gold: False)
+    Avg Dark Residue: 0.73 | Vigor/Rigor: 1/7 | CohHead: pred=0.4 loss=57.773
+    Top-15 scores: [34, 32, 25, 18, 17, 16, 16, 15, 12, 12, 11, 11, 11, 11, 10] | avg=16.73 | dyn_threshold=13
+Episode 19: Dissonant run. Score: 36. (Gold: False)
+    Avg Dark Residue: 0.57 | Vigor/Rigor: 13/23 | CohHead: pred=0.4 loss=1266.374
+    Top-15 scores: [36, 34, 32, 25, 18, 17, 16, 16, 15, 12, 12, 11, 11, 11, 11] | avg=18.47 | dyn_threshold=14
+Episode 20: Dissonant run. Score: 13. (Gold: False)
+    Avg Dark Residue: 0.65 | Vigor/Rigor: 5/8 | CohHead: pred=0.4 loss=158.108
+    Top-15 scores: [36, 34, 32, 25, 18, 17, 16, 16, 15, 13, 12, 12, 11, 11, 11] | avg=18.60 | dyn_threshold=14
+Episode 21: Dissonant run. Score: 36. (Gold: False)
+    Avg Dark Residue: 0.35 | Vigor/Rigor: 12/24 | CohHead: pred=0.4 loss=1266.037
+    Top-15 scores: [36, 36, 34, 32, 25, 18, 17, 16, 16, 15, 13, 12, 12, 11, 11] | avg=20.27 | dyn_threshold=15
+Episode 22: Dissonant run. Score: 9. (Gold: False)
+    Avg Dark Residue: 0.72 | Vigor/Rigor: 2/7 | CohHead: pred=0.4 loss=73.308
+    Top-15 scores: [36, 36, 34, 32, 25, 18, 17, 16, 16, 15, 13, 12, 12, 11, 11] | avg=20.27 | dyn_threshold=15
+Episode 23: Dissonant run. Score: 67. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 16/51 | CohHead: pred=0.4 loss=4430.844
+    Top-15 scores: [67, 36, 36, 34, 32, 25, 18, 17, 16, 16, 15, 13, 12, 12, 11] | avg=24.00 | dyn_threshold=18
+Episode 24: Dissonant run. Score: 109. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 33/76 | CohHead: pred=0.5 loss=11783.325
+    Top-15 scores: [109, 67, 36, 36, 34, 32, 25, 18, 17, 16, 16, 15, 13, 12, 12] | avg=30.53 | dyn_threshold=23
+Episode 25: Dissonant run. Score: 103. (Gold: False)
+    Avg Dark Residue: 0.47 | Vigor/Rigor: 47/56 | CohHead: pred=0.5 loss=10512.019
+    Top-15 scores: [109, 103, 67, 36, 36, 34, 32, 25, 18, 17, 16, 16, 15, 13, 12] | avg=36.60 | dyn_threshold=28
+Episode 26: Dissonant run. Score: 140. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 45/95 | CohHead: pred=0.5 loss=19468.314
+    Top-15 scores: [140, 109, 103, 67, 36, 36, 34, 32, 25, 18, 17, 16, 16, 15, 13] | avg=45.13 | dyn_threshold=35
+Episode 27: Dissonant run. Score: 87. (Gold: False)
+    Avg Dark Residue: 0.33 | Vigor/Rigor: 36/51 | CohHead: pred=0.5 loss=7486.005
+    Top-15 scores: [140, 109, 103, 87, 67, 36, 36, 34, 32, 25, 18, 17, 16, 16, 15] | avg=50.07 | dyn_threshold=39
+Episode 28: Dissonant run. Score: 85. (Gold: False)
+    Avg Dark Residue: 0.39 | Vigor/Rigor: 26/59 | CohHead: pred=0.5 loss=7142.371
+    Top-15 scores: [140, 109, 103, 87, 85, 67, 36, 36, 34, 32, 25, 18, 17, 16, 16] | avg=54.73 | dyn_threshold=42
+Episode 29: Dissonant run. Score: 137. (Gold: False)
+    Avg Dark Residue: 0.23 | Vigor/Rigor: 48/89 | CohHead: pred=0.5 loss=18634.938
+    Top-15 scores: [140, 137, 109, 103, 87, 85, 67, 36, 36, 34, 32, 25, 18, 17, 16] | avg=62.80 | dyn_threshold=48
+Episode 30: Dissonant run. Score: 91. (Gold: False)
+    Avg Dark Residue: 0.31 | Vigor/Rigor: 25/66 | CohHead: pred=0.5 loss=8189.899
+    Top-15 scores: [140, 137, 109, 103, 91, 87, 85, 67, 36, 36, 34, 32, 25, 18, 17] | avg=67.80 | dyn_threshold=52
+Episode 31: Dissonant run. Score: 79. (Gold: False)
+    Avg Dark Residue: 0.31 | Vigor/Rigor: 26/53 | CohHead: pred=0.5 loss=6159.780
+    Top-15 scores: [140, 137, 109, 103, 91, 87, 85, 79, 67, 36, 36, 34, 32, 25, 18] | avg=71.93 | dyn_threshold=56
+Episode 32: Dissonant run. Score: 220. (Gold: False)
+    Avg Dark Residue: 0.33 | Vigor/Rigor: 72/148 | CohHead: pred=0.5 loss=48164.535
+    Top-15 scores: [220, 140, 137, 109, 103, 91, 87, 85, 79, 67, 36, 36, 34, 32, 25] | avg=85.40 | dyn_threshold=66
+Episode 33: Dissonant run. Score: 162. (Gold: False)
+    Avg Dark Residue: 0.49 | Vigor/Rigor: 62/100 | CohHead: pred=0.6 loss=26061.309
+    Top-15 scores: [220, 162, 140, 137, 109, 103, 91, 87, 85, 79, 67, 36, 36, 34, 32] | avg=94.53 | dyn_threshold=73
+Episode 34: Dissonant run. Score: 173. (Gold: False)
+    Avg Dark Residue: 0.55 | Vigor/Rigor: 62/111 | CohHead: pred=0.6 loss=29727.271
+    Top-15 scores: [220, 173, 162, 140, 137, 109, 103, 91, 87, 85, 79, 67, 36, 36, 34] | avg=103.93 | dyn_threshold=81
+Episode 35: Dissonant run. Score: 177. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 63/114 | CohHead: pred=0.6 loss=31123.516
+    Top-15 scores: [220, 177, 173, 162, 140, 137, 109, 103, 91, 87, 85, 79, 67, 36, 36] | avg=113.47 | dyn_threshold=88
+Episode 36: Dissonant run. Score: 195. (Gold: False)
+    Avg Dark Residue: 0.27 | Vigor/Rigor: 75/120 | CohHead: pred=0.6 loss=37798.863
+    Top-15 scores: [220, 195, 177, 173, 162, 140, 137, 109, 103, 91, 87, 85, 79, 67, 36] | avg=124.07 | dyn_threshold=96
+Episode 37: Dissonant run. Score: 291. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 114/177 | CohHead: pred=0.6 loss=84318.453
+    Top-15 scores: [291, 220, 195, 177, 173, 162, 140, 137, 109, 103, 91, 87, 85, 79, 67] | avg=141.07 | dyn_threshold=110
+Episode 38: Dissonant run. Score: 124. (Gold: False)
+    Avg Dark Residue: 0.36 | Vigor/Rigor: 42/82 | CohHead: pred=0.6 loss=15224.791
+    Top-15 scores: [291, 220, 195, 177, 173, 162, 140, 137, 124, 109, 103, 91, 87, 85, 79] | avg=144.87 | dyn_threshold=112
+Episode 39: Dissonant run. Score: 272. (Gold: False)
+    Avg Dark Residue: 0.43 | Vigor/Rigor: 87/185 | CohHead: pred=0.7 loss=73632.148
+    Top-15 scores: [291, 272, 220, 195, 177, 173, 162, 140, 137, 124, 109, 103, 91, 87, 85] | avg=157.73 | dyn_threshold=123
+Episode 40: Dissonant run. Score: 151. (Gold: False)
+    Avg Dark Residue: 0.27 | Vigor/Rigor: 51/100 | CohHead: pred=0.6 loss=22610.957
+    Top-15 scores: [291, 272, 220, 195, 177, 173, 162, 151, 140, 137, 124, 109, 103, 91, 87] | avg=162.13 | dyn_threshold=126
+Episode 41: Dissonant run. Score: 238. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 83/155 | CohHead: pred=0.7 loss=56318.621
+    Top-15 scores: [291, 272, 238, 220, 195, 177, 173, 162, 151, 140, 137, 124, 109, 103, 91] | avg=172.20 | dyn_threshold=134
+Episode 42: Dissonant run. Score: 220. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 70/150 | CohHead: pred=0.7 loss=48094.715
+    Top-15 scores: [291, 272, 238, 220, 220, 195, 177, 173, 162, 151, 140, 137, 124, 109, 103] | avg=180.80 | dyn_threshold=141
+Episode 43: Dissonant run. Score: 227. (Gold: False)
+    Avg Dark Residue: 0.46 | Vigor/Rigor: 79/148 | CohHead: pred=0.7 loss=51205.371
+    Top-15 scores: [291, 272, 238, 227, 220, 220, 195, 177, 173, 162, 151, 140, 137, 124, 109] | avg=189.07 | dyn_threshold=147
+Episode 44: Dissonant run. Score: 152. (Gold: False)
+    Avg Dark Residue: 0.61 | Vigor/Rigor: 48/104 | CohHead: pred=0.8 loss=22879.258
+    Top-15 scores: [291, 272, 238, 227, 220, 220, 195, 177, 173, 162, 152, 151, 140, 137, 124] | avg=191.93 | dyn_threshold=149
+Episode 45: Dissonant run. Score: 152. (Gold: False)
+    Avg Dark Residue: 0.61 | Vigor/Rigor: 46/106 | CohHead: pred=0.8 loss=22874.680
+    Top-15 scores: [291, 272, 238, 227, 220, 220, 195, 177, 173, 162, 152, 152, 151, 140, 137] | avg=193.80 | dyn_threshold=151
+Episode 46: Dissonant run. Score: 175. (Gold: False)
+    Avg Dark Residue: 0.57 | Vigor/Rigor: 65/110 | CohHead: pred=0.8 loss=30352.125
+    Top-15 scores: [291, 272, 238, 227, 220, 220, 195, 177, 175, 173, 162, 152, 152, 151, 140] | avg=196.33 | dyn_threshold=153
+Episode 47: Dissonant run. Score: 179. (Gold: False)
+    Avg Dark Residue: 0.58 | Vigor/Rigor: 70/109 | CohHead: pred=0.8 loss=31753.254
+    Top-15 scores: [291, 272, 238, 227, 220, 220, 195, 179, 177, 175, 173, 162, 152, 152, 151] | avg=198.93 | dyn_threshold=155
+Episode 48: Dissonant run. Score: 191. (Gold: False)
+    Avg Dark Residue: 0.50 | Vigor/Rigor: 64/127 | CohHead: pred=0.8 loss=36175.336
+    Top-15 scores: [291, 272, 238, 227, 220, 220, 195, 191, 179, 177, 175, 173, 162, 152, 152] | avg=201.60 | dyn_threshold=157
+Episode 49: Dissonant run. Score: 162. (Gold: False)
+    Avg Dark Residue: 0.58 | Vigor/Rigor: 51/111 | CohHead: pred=0.8 loss=25976.771
+    Top-15 scores: [291, 272, 238, 227, 220, 220, 195, 191, 179, 177, 175, 173, 162, 162, 152] | avg=202.27 | dyn_threshold=157
+Episode 50: Dissonant run. Score: 140. (Gold: False)
+    Avg Dark Residue: 0.63 | Vigor/Rigor: 48/92 | CohHead: pred=0.9 loss=19360.352
+    Top-15 scores: [291, 272, 238, 227, 220, 220, 195, 191, 179, 177, 175, 173, 162, 162, 152] | avg=202.27 | dyn_threshold=157
+Episode 51: Dissonant run. Score: 250. (Gold: False)
+    Avg Dark Residue: 0.43 | Vigor/Rigor: 84/166 | CohHead: pred=0.9 loss=62075.098
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 191, 179, 177, 175, 173, 162, 162] | avg=208.80 | dyn_threshold=162
+Episode 52: Dissonant run. Score: 159. (Gold: False)
+    Avg Dark Residue: 0.57 | Vigor/Rigor: 49/110 | CohHead: pred=0.9 loss=25001.807
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 191, 179, 177, 175, 173, 162, 162] | avg=208.80 | dyn_threshold=162
+Episode 53: Dissonant run. Score: 170. (Gold: False)
+    Avg Dark Residue: 0.55 | Vigor/Rigor: 66/104 | CohHead: pred=0.9 loss=28589.322
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 191, 179, 177, 175, 173, 170, 162] | avg=209.33 | dyn_threshold=163
+Episode 54: Dissonant run. Score: 160. (Gold: False)
+    Avg Dark Residue: 0.59 | Vigor/Rigor: 49/111 | CohHead: pred=0.9 loss=25304.447
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 191, 179, 177, 175, 173, 170, 162] | avg=209.33 | dyn_threshold=163
+Episode 55: Dissonant run. Score: 145. (Gold: False)
+    Avg Dark Residue: 0.64 | Vigor/Rigor: 59/86 | CohHead: pred=1.0 loss=20742.518
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 191, 179, 177, 175, 173, 170, 162] | avg=209.33 | dyn_threshold=163
+Episode 56: Dissonant run. Score: 158. (Gold: False)
+    Avg Dark Residue: 0.58 | Vigor/Rigor: 66/92 | CohHead: pred=1.0 loss=24652.000
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 191, 179, 177, 175, 173, 170, 162] | avg=209.33 | dyn_threshold=163
+Episode 57: Dissonant run. Score: 195. (Gold: False)
+    Avg Dark Residue: 0.50 | Vigor/Rigor: 72/123 | CohHead: pred=1.0 loss=37641.098
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 195, 191, 179, 177, 175, 173, 170] | avg=211.53 | dyn_threshold=164
+Episode 58: Dissonant run. Score: 132. (Gold: False)
+    Avg Dark Residue: 0.69 | Vigor/Rigor: 51/81 | CohHead: pred=1.1 loss=17147.961
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 195, 191, 179, 177, 175, 173, 170] | avg=211.53 | dyn_threshold=164
+Episode 59: Dissonant run. Score: 178. (Gold: False)
+    Avg Dark Residue: 0.55 | Vigor/Rigor: 54/124 | CohHead: pred=1.0 loss=31321.309
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 195, 191, 179, 178, 177, 175, 173] | avg=212.07 | dyn_threshold=165
+Episode 60: Dissonant run. Score: 148. (Gold: False)
+    Avg Dark Residue: 0.64 | Vigor/Rigor: 64/84 | CohHead: pred=1.1 loss=21579.766
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 195, 191, 179, 178, 177, 175, 173] | avg=212.07 | dyn_threshold=165
+Episode 61: Dissonant run. Score: 140. (Gold: False)
+    Avg Dark Residue: 0.65 | Vigor/Rigor: 56/84 | CohHead: pred=1.1 loss=19288.715
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 195, 191, 179, 178, 177, 175, 173] | avg=212.07 | dyn_threshold=165
+Episode 62: Dissonant run. Score: 155. (Gold: False)
+    Avg Dark Residue: 0.61 | Vigor/Rigor: 44/111 | CohHead: pred=1.1 loss=23686.133
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 195, 191, 179, 178, 177, 175, 173] | avg=212.07 | dyn_threshold=165
+Episode 63: Dissonant run. Score: 182. (Gold: False)
+    Avg Dark Residue: 0.54 | Vigor/Rigor: 71/111 | CohHead: pred=1.2 loss=32712.891
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 195, 191, 182, 179, 178, 177, 175] | avg=212.67 | dyn_threshold=165
+Episode 64: Dissonant run. Score: 176. (Gold: False)
+    Avg Dark Residue: 0.57 | Vigor/Rigor: 63/113 | CohHead: pred=1.2 loss=30569.920
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 195, 191, 182, 179, 178, 177, 176] | avg=212.73 | dyn_threshold=165
+Episode 65: Dissonant run. Score: 180. (Gold: False)
+    Avg Dark Residue: 0.53 | Vigor/Rigor: 66/114 | CohHead: pred=1.2 loss=31979.160
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 195, 191, 182, 180, 179, 178, 177] | avg=213.00 | dyn_threshold=166
+Episode 66: Dissonant run. Score: 171. (Gold: False)
+    Avg Dark Residue: 0.57 | Vigor/Rigor: 54/117 | CohHead: pred=1.2 loss=28834.543
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 195, 195, 191, 182, 180, 179, 178, 177] | avg=213.00 | dyn_threshold=166
+Episode 67: Dissonant run. Score: 220. (Gold: False)
+    Avg Dark Residue: 0.40 | Vigor/Rigor: 71/149 | CohHead: pred=1.2 loss=47885.930
+    Top-15 scores: [291, 272, 250, 238, 227, 220, 220, 220, 195, 195, 191, 182, 180, 179, 178] | avg=215.87 | dyn_threshold=168
+Episode 68: Dissonant run. Score: 251. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 86/165 | CohHead: pred=1.2 loss=62393.594
+    Top-15 scores: [291, 272, 251, 250, 238, 227, 220, 220, 220, 195, 195, 191, 182, 180, 179] | avg=220.73 | dyn_threshold=172
+Episode 69: Dissonant run. Score: 161. (Gold: False)
+    Avg Dark Residue: 0.59 | Vigor/Rigor: 72/89 | CohHead: pred=1.3 loss=25497.447
+    Top-15 scores: [291, 272, 251, 250, 238, 227, 220, 220, 220, 195, 195, 191, 182, 180, 179] | avg=220.73 | dyn_threshold=172
+Episode 70: Dissonant run. Score: 172. (Gold: False)
+    Avg Dark Residue: 0.50 | Vigor/Rigor: 61/111 | CohHead: pred=1.3 loss=29143.746
+    Top-15 scores: [291, 272, 251, 250, 238, 227, 220, 220, 220, 195, 195, 191, 182, 180, 179] | avg=220.73 | dyn_threshold=172
+Episode 71: Dissonant run. Score: 200. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 66/134 | CohHead: pred=1.3 loss=39480.555
+    Top-15 scores: [291, 272, 251, 250, 238, 227, 220, 220, 220, 200, 195, 195, 191, 182, 180] | avg=222.13 | dyn_threshold=173
+Episode 72: Dissonant run. Score: 155. (Gold: False)
+    Avg Dark Residue: 0.59 | Vigor/Rigor: 60/95 | CohHead: pred=1.4 loss=23597.949
+    Top-15 scores: [291, 272, 251, 250, 238, 227, 220, 220, 220, 200, 195, 195, 191, 182, 180] | avg=222.13 | dyn_threshold=173
+Episode 73: Dissonant run. Score: 154. (Gold: False)
+    Avg Dark Residue: 0.61 | Vigor/Rigor: 51/103 | CohHead: pred=1.4 loss=23286.910
+    Top-15 scores: [291, 272, 251, 250, 238, 227, 220, 220, 220, 200, 195, 195, 191, 182, 180] | avg=222.13 | dyn_threshold=173
+Episode 74: Dissonant run. Score: 147. (Gold: False)
+    Avg Dark Residue: 0.62 | Vigor/Rigor: 50/97 | CohHead: pred=1.5 loss=21189.494
+    Top-15 scores: [291, 272, 251, 250, 238, 227, 220, 220, 220, 200, 195, 195, 191, 182, 180] | avg=222.13 | dyn_threshold=173
+Episode 75: Dissonant run. Score: 154. (Gold: False)
+    Avg Dark Residue: 0.66 | Vigor/Rigor: 48/106 | CohHead: pred=1.5 loss=23265.303
+    Top-15 scores: [291, 272, 251, 250, 238, 227, 220, 220, 220, 200, 195, 195, 191, 182, 180] | avg=222.13 | dyn_threshold=173
+Episode 76: Dissonant run. Score: 168. (Gold: False)
+    Avg Dark Residue: 0.57 | Vigor/Rigor: 61/107 | CohHead: pred=1.5 loss=27726.904
+    Top-15 scores: [291, 272, 251, 250, 238, 227, 220, 220, 220, 200, 195, 195, 191, 182, 180] | avg=222.13 | dyn_threshold=173
+Episode 77: Dissonant run. Score: 221. (Gold: False)
+    Avg Dark Residue: 0.45 | Vigor/Rigor: 67/154 | CohHead: pred=1.5 loss=48202.820
+    Top-15 scores: [291, 272, 251, 250, 238, 227, 221, 220, 220, 220, 200, 195, 195, 191, 182] | avg=224.87 | dyn_threshold=175
+Episode 78: Dissonant run. Score: 239. (Gold: False)
+    Avg Dark Residue: 0.44 | Vigor/Rigor: 86/153 | CohHead: pred=1.5 loss=56404.828
+    Top-15 scores: [291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 200, 195, 195, 191] | avg=228.67 | dyn_threshold=178
+Episode 79: Dissonant run. Score: 199. (Gold: False)
+    Avg Dark Residue: 0.50 | Vigor/Rigor: 82/117 | CohHead: pred=1.6 loss=38976.211
+    Top-15 scores: [291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 200, 199, 195, 195] | avg=229.20 | dyn_threshold=178
+Episode 80: Dissonant run. Score: 147. (Gold: False)
+    Avg Dark Residue: 0.65 | Vigor/Rigor: 49/98 | CohHead: pred=1.7 loss=21131.367
+    Top-15 scores: [291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 200, 199, 195, 195] | avg=229.20 | dyn_threshold=178
+Episode 81: Dissonant run. Score: 160. (Gold: False)
+    Avg Dark Residue: 0.60 | Vigor/Rigor: 64/96 | CohHead: pred=1.7 loss=25066.801
+    Top-15 scores: [291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 200, 199, 195, 195] | avg=229.20 | dyn_threshold=178
+Episode 82: Dissonant run. Score: 193. (Gold: False)
+    Avg Dark Residue: 0.51 | Vigor/Rigor: 71/122 | CohHead: pred=1.7 loss=36611.469
+    Top-15 scores: [291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 200, 199, 195, 195] | avg=229.20 | dyn_threshold=178
+Episode 83: Dissonant run. Score: 188. (Gold: False)
+    Avg Dark Residue: 0.52 | Vigor/Rigor: 70/118 | CohHead: pred=1.7 loss=34708.242
+    Top-15 scores: [291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 200, 199, 195, 195] | avg=229.20 | dyn_threshold=178
+Episode 84: Dissonant run. Score: 317. (Gold: False)
+    Avg Dark Residue: 0.34 | Vigor/Rigor: 110/207 | CohHead: pred=1.7 loss=99438.023
+    Top-15 scores: [317, 291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 200, 199, 195] | avg=237.33 | dyn_threshold=185
+Episode 85: Dissonant run. Score: 188. (Gold: False)
+    Avg Dark Residue: 0.50 | Vigor/Rigor: 60/128 | CohHead: pred=1.8 loss=34696.152
+    Top-15 scores: [317, 291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 200, 199, 195] | avg=237.33 | dyn_threshold=185
+Episode 86: Dissonant run. Score: 153. (Gold: False)
+    Avg Dark Residue: 0.60 | Vigor/Rigor: 52/101 | CohHead: pred=1.9 loss=22855.215
+    Top-15 scores: [317, 291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 200, 199, 195] | avg=237.33 | dyn_threshold=185
+Episode 87: Dissonant run. Score: 187. (Gold: False)
+    Avg Dark Residue: 0.52 | Vigor/Rigor: 76/111 | CohHead: pred=1.9 loss=34275.492
+    Top-15 scores: [317, 291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 200, 199, 195] | avg=237.33 | dyn_threshold=185
+Episode 88: Dissonant run. Score: 177. (Gold: False)
+    Avg Dark Residue: 0.54 | Vigor/Rigor: 74/103 | CohHead: pred=2.0 loss=30654.717
+    Top-15 scores: [317, 291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 200, 199, 195] | avg=237.33 | dyn_threshold=185
+Episode 89: Dissonant run. Score: 169. (Gold: False)
+    Avg Dark Residue: 0.55 | Vigor/Rigor: 60/109 | CohHead: pred=2.0 loss=27914.938
+    Top-15 scores: [317, 291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 200, 199, 195] | avg=237.33 | dyn_threshold=185
+Episode 90: Dissonant run. Score: 364. (Gold: False)
+    Avg Dark Residue: 0.36 | Vigor/Rigor: 138/226 | CohHead: pred=2.0 loss=131096.000
+    Top-15 scores: [364, 317, 291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 200, 199] | avg=248.60 | dyn_threshold=193
+Episode 91: Dissonant run. Score: 165. (Gold: False)
+    Avg Dark Residue: 0.57 | Vigor/Rigor: 50/115 | CohHead: pred=2.0 loss=26577.068
+    Top-15 scores: [364, 317, 291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 200, 199] | avg=248.60 | dyn_threshold=193
+Episode 92: Dissonant run. Score: 179. (Gold: False)
+    Avg Dark Residue: 0.54 | Vigor/Rigor: 72/107 | CohHead: pred=2.1 loss=31303.736
+    Top-15 scores: [364, 317, 291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 200, 199] | avg=248.60 | dyn_threshold=193
+Episode 93: Dissonant run. Score: 213. (Gold: False)
+    Avg Dark Residue: 0.45 | Vigor/Rigor: 71/142 | CohHead: pred=2.1 loss=44512.289
+    Top-15 scores: [364, 317, 291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 213, 200] | avg=249.53 | dyn_threshold=194
+Episode 94: Dissonant run. Score: 190. (Gold: False)
+    Avg Dark Residue: 0.50 | Vigor/Rigor: 57/133 | CohHead: pred=2.1 loss=35320.281
+    Top-15 scores: [364, 317, 291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 213, 200] | avg=249.53 | dyn_threshold=194
+Episode 95: Dissonant run. Score: 195. (Gold: False)
+    Avg Dark Residue: 0.57 | Vigor/Rigor: 64/131 | CohHead: pred=2.2 loss=37182.898
+    Top-15 scores: [364, 317, 291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 213, 200] | avg=249.53 | dyn_threshold=194
+Episode 96: Dissonant run. Score: 176. (Gold: False)
+    Avg Dark Residue: 0.54 | Vigor/Rigor: 66/110 | CohHead: pred=2.3 loss=30198.861
+    Top-15 scores: [364, 317, 291, 272, 251, 250, 239, 238, 227, 221, 220, 220, 220, 213, 200] | avg=249.53 | dyn_threshold=194
+Episode 97: Dissonant run. Score: 236. (Gold: False)
+    Avg Dark Residue: 0.50 | Vigor/Rigor: 87/149 | CohHead: pred=2.3 loss=54635.352
+    Top-15 scores: [364, 317, 291, 272, 251, 250, 239, 238, 236, 227, 221, 220, 220, 220, 213] | avg=251.93 | dyn_threshold=196
+Episode 98: Dissonant run. Score: 206. (Gold: False)
+    Avg Dark Residue: 0.52 | Vigor/Rigor: 70/136 | CohHead: pred=2.3 loss=41502.453
+    Top-15 scores: [364, 317, 291, 272, 251, 250, 239, 238, 236, 227, 221, 220, 220, 220, 213] | avg=251.93 | dyn_threshold=196
+Episode 99: Dissonant run. Score: 205. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 68/137 | CohHead: pred=2.3 loss=41091.266
+    Top-15 scores: [364, 317, 291, 272, 251, 250, 239, 238, 236, 227, 221, 220, 220, 220, 213] | avg=251.93 | dyn_threshold=196
+Episode 100: Dissonant run. Score: 190. (Gold: False)
+    Avg Dark Residue: 0.50 | Vigor/Rigor: 68/122 | CohHead: pred=2.4 loss=35206.645
+    Top-15 scores: [364, 317, 291, 272, 251, 250, 239, 238, 236, 227, 221, 220, 220, 220, 213] | avg=251.93 | dyn_threshold=196
+Episode 101: Dissonant run. Score: 180. (Gold: False)
+    Avg Dark Residue: 0.57 | Vigor/Rigor: 62/118 | CohHead: pred=2.5 loss=31522.611
+    Top-15 scores: [364, 317, 291, 272, 251, 250, 239, 238, 236, 227, 221, 220, 220, 220, 213] | avg=251.93 | dyn_threshold=196
+Episode 102: Dissonant run. Score: 200. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 64/136 | CohHead: pred=2.5 loss=39039.805
+    Top-15 scores: [364, 317, 291, 272, 251, 250, 239, 238, 236, 227, 221, 220, 220, 220, 213] | avg=251.93 | dyn_threshold=196
+Episode 103: Dissonant run. Score: 201. (Gold: False)
+    Avg Dark Residue: 0.50 | Vigor/Rigor: 73/128 | CohHead: pred=2.6 loss=39397.160
+    Top-15 scores: [364, 317, 291, 272, 251, 250, 239, 238, 236, 227, 221, 220, 220, 220, 213] | avg=251.93 | dyn_threshold=196
+Episode 104: Dissonant run. Score: 252. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 87/165 | CohHead: pred=2.5 loss=62252.199
+    Top-15 scores: [364, 317, 291, 272, 252, 251, 250, 239, 238, 236, 227, 221, 220, 220, 220] | avg=254.53 | dyn_threshold=198
+Episode 105: Dissonant run. Score: 368. (Gold: False)
+    Avg Dark Residue: 0.38 | Vigor/Rigor: 124/244 | CohHead: pred=2.6 loss=133537.188
+    Top-15 scores: [368, 364, 317, 291, 272, 252, 251, 250, 239, 238, 236, 227, 221, 220, 220] | avg=264.40 | dyn_threshold=206
+Episode 106: Dissonant run. Score: 195. (Gold: False)
+    Avg Dark Residue: 0.51 | Vigor/Rigor: 65/130 | CohHead: pred=2.7 loss=37000.578
+    Top-15 scores: [368, 364, 317, 291, 272, 252, 251, 250, 239, 238, 236, 227, 221, 220, 220] | avg=264.40 | dyn_threshold=206
+Episode 107: Dissonant run. Score: 208. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 62/146 | CohHead: pred=2.7 loss=42172.887
+    Top-15 scores: [368, 364, 317, 291, 272, 252, 251, 250, 239, 238, 236, 227, 221, 220, 220] | avg=264.40 | dyn_threshold=206
+Episode 108: Dissonant run. Score: 163. (Gold: False)
+    Avg Dark Residue: 0.62 | Vigor/Rigor: 62/101 | CohHead: pred=2.9 loss=25635.793
+    Top-15 scores: [368, 364, 317, 291, 272, 252, 251, 250, 239, 238, 236, 227, 221, 220, 220] | avg=264.40 | dyn_threshold=206
+Episode 109: Dissonant run. Score: 189. (Gold: False)
+    Avg Dark Residue: 0.51 | Vigor/Rigor: 55/134 | CohHead: pred=2.8 loss=34686.188
+    Top-15 scores: [368, 364, 317, 291, 272, 252, 251, 250, 239, 238, 236, 227, 221, 220, 220] | avg=264.40 | dyn_threshold=206
+Episode 110: Dissonant run. Score: 172. (Gold: False)
+    Avg Dark Residue: 0.55 | Vigor/Rigor: 53/119 | CohHead: pred=2.9 loss=28607.994
+    Top-15 scores: [368, 364, 317, 291, 272, 252, 251, 250, 239, 238, 236, 227, 221, 220, 220] | avg=264.40 | dyn_threshold=206
+Episode 111: Dissonant run. Score: 164. (Gold: False)
+    Avg Dark Residue: 0.57 | Vigor/Rigor: 70/94 | CohHead: pred=3.1 loss=25904.906
+    Top-15 scores: [368, 364, 317, 291, 272, 252, 251, 250, 239, 238, 236, 227, 221, 220, 220] | avg=264.40 | dyn_threshold=206
+Episode 112: Dissonant run. Score: 268. (Gold: False)
+    Avg Dark Residue: 0.39 | Vigor/Rigor: 95/173 | CohHead: pred=3.0 loss=70272.641
+    Top-15 scores: [368, 364, 317, 291, 272, 268, 252, 251, 250, 239, 238, 236, 227, 221, 220] | avg=267.60 | dyn_threshold=208
+Episode 113: Dissonant run. Score: 207. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 66/141 | CohHead: pred=3.0 loss=41622.320
+    Top-15 scores: [368, 364, 317, 291, 272, 268, 252, 251, 250, 239, 238, 236, 227, 221, 220] | avg=267.60 | dyn_threshold=208
+Episode 114: Dissonant run. Score: 153. (Gold: False)
+    Avg Dark Residue: 0.61 | Vigor/Rigor: 57/96 | CohHead: pred=3.3 loss=22439.547
+    Top-15 scores: [368, 364, 317, 291, 272, 268, 252, 251, 250, 239, 238, 236, 227, 221, 220] | avg=267.60 | dyn_threshold=208
+Episode 115: Dissonant run. Score: 160. (Gold: False)
+    Avg Dark Residue: 0.59 | Vigor/Rigor: 53/107 | CohHead: pred=3.3 loss=24587.711
+    Top-15 scores: [368, 364, 317, 291, 272, 268, 252, 251, 250, 239, 238, 236, 227, 221, 220] | avg=267.60 | dyn_threshold=208
+Episode 116: Dissonant run. Score: 164. (Gold: False)
+    Avg Dark Residue: 0.57 | Vigor/Rigor: 51/113 | CohHead: pred=3.3 loss=25855.100
+    Top-15 scores: [368, 364, 317, 291, 272, 268, 252, 251, 250, 239, 238, 236, 227, 221, 220] | avg=267.60 | dyn_threshold=208
+Episode 117: Dissonant run. Score: 380. (Gold: False)
+    Avg Dark Residue: 0.29 | Vigor/Rigor: 138/242 | CohHead: pred=3.2 loss=141999.156
+    Top-15 scores: [380, 368, 364, 317, 291, 272, 268, 252, 251, 250, 239, 238, 236, 227, 221] | avg=278.27 | dyn_threshold=217
+Episode 118: Dissonant run. Score: 281. (Gold: False)
+    Avg Dark Residue: 0.38 | Vigor/Rigor: 82/199 | CohHead: pred=3.2 loss=77188.789
+    Top-15 scores: [380, 368, 364, 317, 291, 281, 272, 268, 252, 251, 250, 239, 238, 236, 227] | avg=282.27 | dyn_threshold=220
+Episode 119: Dissonant run. Score: 188. (Gold: False)
+    Avg Dark Residue: 0.51 | Vigor/Rigor: 67/121 | CohHead: pred=3.5 loss=34081.152
+    Top-15 scores: [380, 368, 364, 317, 291, 281, 272, 268, 252, 251, 250, 239, 238, 236, 227] | avg=282.27 | dyn_threshold=220
+Episode 120: Dissonant run. Score: 225. (Gold: False)
+    Avg Dark Residue: 0.44 | Vigor/Rigor: 77/148 | CohHead: pred=3.4 loss=49118.359
+    Top-15 scores: [380, 368, 364, 317, 291, 281, 272, 268, 252, 251, 250, 239, 238, 236, 227] | avg=282.27 | dyn_threshold=220
+Episode 121: Dissonant run. Score: 292. (Gold: False)
+    Avg Dark Residue: 0.45 | Vigor/Rigor: 105/187 | CohHead: pred=3.6 loss=83210.609
+    Top-15 scores: [380, 368, 364, 317, 292, 291, 281, 272, 268, 252, 251, 250, 239, 238, 236] | avg=286.60 | dyn_threshold=223
+Episode 122: Dissonant run. Score: 181. (Gold: False)
+    Avg Dark Residue: 0.53 | Vigor/Rigor: 68/113 | CohHead: pred=3.7 loss=31459.553
+    Top-15 scores: [380, 368, 364, 317, 292, 291, 281, 272, 268, 252, 251, 250, 239, 238, 236] | avg=286.60 | dyn_threshold=223
+Episode 123: Dissonant run. Score: 184. (Gold: False)
+    Avg Dark Residue: 0.53 | Vigor/Rigor: 63/121 | CohHead: pred=3.7 loss=32525.426
+    Top-15 scores: [380, 368, 364, 317, 292, 291, 281, 272, 268, 252, 251, 250, 239, 238, 236] | avg=286.60 | dyn_threshold=223
+Episode 124: Dissonant run. Score: 210. (Gold: False)
+    Avg Dark Residue: 0.47 | Vigor/Rigor: 79/131 | CohHead: pred=3.8 loss=42555.516
+    Top-15 scores: [380, 368, 364, 317, 292, 291, 281, 272, 268, 252, 251, 250, 239, 238, 236] | avg=286.60 | dyn_threshold=223
+Episode 125: Dissonant run. Score: 158. (Gold: False)
+    Avg Dark Residue: 0.59 | Vigor/Rigor: 49/109 | CohHead: pred=3.9 loss=23779.158
+    Top-15 scores: [380, 368, 364, 317, 292, 291, 281, 272, 268, 252, 251, 250, 239, 238, 236] | avg=286.60 | dyn_threshold=223
+Episode 126: Dissonant run. Score: 189. (Gold: False)
+    Avg Dark Residue: 0.50 | Vigor/Rigor: 72/117 | CohHead: pred=3.9 loss=34271.711
+    Top-15 scores: [380, 368, 364, 317, 292, 291, 281, 272, 268, 252, 251, 250, 239, 238, 236] | avg=286.60 | dyn_threshold=223
+Episode 127: Dissonant run. Score: 295. (Gold: False)
+    Avg Dark Residue: 0.37 | Vigor/Rigor: 98/197 | CohHead: pred=3.9 loss=84804.680
+    Top-15 scores: [380, 368, 364, 317, 295, 292, 291, 281, 272, 268, 252, 251, 250, 239, 238] | avg=290.53 | dyn_threshold=226
+Episode 128: Dissonant run. Score: 275. (Gold: False)
+    Avg Dark Residue: 0.44 | Vigor/Rigor: 101/174 | CohHead: pred=4.1 loss=73446.609
+    Top-15 scores: [380, 368, 364, 317, 295, 292, 291, 281, 275, 272, 268, 252, 251, 250, 239] | avg=293.00 | dyn_threshold=228
+Episode 129: Dissonant run. Score: 242. (Gold: False)
+    Avg Dark Residue: 0.43 | Vigor/Rigor: 84/158 | CohHead: pred=4.1 loss=56652.723
+    Top-15 scores: [380, 368, 364, 317, 295, 292, 291, 281, 275, 272, 268, 252, 251, 250, 242] | avg=293.20 | dyn_threshold=228
+Episode 130: Dissonant run. Score: 202. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 69/133 | CohHead: pred=4.2 loss=39173.402
+    Top-15 scores: [380, 368, 364, 317, 295, 292, 291, 281, 275, 272, 268, 252, 251, 250, 242] | avg=293.20 | dyn_threshold=228
+Episode 131: Dissonant run. Score: 158. (Gold: False)
+    Avg Dark Residue: 0.58 | Vigor/Rigor: 47/111 | CohHead: pred=4.3 loss=23658.891
+    Top-15 scores: [380, 368, 364, 317, 295, 292, 291, 281, 275, 272, 268, 252, 251, 250, 242] | avg=293.20 | dyn_threshold=228
+Episode 132: Dissonant run. Score: 156. (Gold: False)
+    Avg Dark Residue: 0.60 | Vigor/Rigor: 60/96 | CohHead: pred=4.5 loss=22971.779
+    Top-15 scores: [380, 368, 364, 317, 295, 292, 291, 281, 275, 272, 268, 252, 251, 250, 242] | avg=293.20 | dyn_threshold=228
+Episode 133: Dissonant run. Score: 331. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 110/221 | CohHead: pred=4.4 loss=106723.727
+    Top-15 scores: [380, 368, 364, 331, 317, 295, 292, 291, 281, 275, 272, 268, 252, 251, 250] | avg=299.13 | dyn_threshold=233
+Episode 134: Dissonant run. Score: 205. (Gold: False)
+    Avg Dark Residue: 0.47 | Vigor/Rigor: 69/136 | CohHead: pred=4.4 loss=40259.391
+    Top-15 scores: [380, 368, 364, 331, 317, 295, 292, 291, 281, 275, 272, 268, 252, 251, 250] | avg=299.13 | dyn_threshold=233
+Episode 135: Dissonant run. Score: 148. (Gold: False)
+    Avg Dark Residue: 0.62 | Vigor/Rigor: 45/103 | CohHead: pred=4.6 loss=20579.385
+    Top-15 scores: [380, 368, 364, 331, 317, 295, 292, 291, 281, 275, 272, 268, 252, 251, 250] | avg=299.13 | dyn_threshold=233
+Episode 136: Dissonant run. Score: 305. (Gold: False)
+    Avg Dark Residue: 0.42 | Vigor/Rigor: 114/191 | CohHead: pred=4.7 loss=90242.391
+    Top-15 scores: [380, 368, 364, 331, 317, 305, 295, 292, 291, 281, 275, 272, 268, 252, 251] | avg=302.80 | dyn_threshold=236
+Episode 137: Dissonant run. Score: 407. (Gold: False)
+    Avg Dark Residue: 0.28 | Vigor/Rigor: 135/272 | CohHead: pred=4.6 loss=162010.250
+    Top-15 scores: [407, 380, 368, 364, 331, 317, 305, 295, 292, 291, 281, 275, 272, 268, 252] | avg=313.20 | dyn_threshold=244
+Episode 138: Dissonant run. Score: 278. (Gold: False)
+    Avg Dark Residue: 0.49 | Vigor/Rigor: 103/175 | CohHead: pred=4.9 loss=74610.320
+    Top-15 scores: [407, 380, 368, 364, 331, 317, 305, 295, 292, 291, 281, 278, 275, 272, 268] | avg=314.93 | dyn_threshold=245
+Episode 139: Dissonant run. Score: 272. (Gold: False)
+    Avg Dark Residue: 0.39 | Vigor/Rigor: 92/180 | CohHead: pred=4.8 loss=71451.812
+    Top-15 scores: [407, 380, 368, 364, 331, 317, 305, 295, 292, 291, 281, 278, 275, 272, 272] | avg=315.20 | dyn_threshold=245
+Episode 140: Dissonant run. Score: 339. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 125/214 | CohHead: pred=5.1 loss=111570.742
+    Top-15 scores: [407, 380, 368, 364, 339, 331, 317, 305, 295, 292, 291, 281, 278, 275, 272] | avg=319.67 | dyn_threshold=249
+Episode 141: Dissonant run. Score: 202. (Gold: False)
+    Avg Dark Residue: 0.50 | Vigor/Rigor: 71/131 | CohHead: pred=5.1 loss=38812.145
+    Top-15 scores: [407, 380, 368, 364, 339, 331, 317, 305, 295, 292, 291, 281, 278, 275, 272] | avg=319.67 | dyn_threshold=249
+Episode 142: Dissonant run. Score: 308. (Gold: False)
+    Avg Dark Residue: 0.35 | Vigor/Rigor: 100/208 | CohHead: pred=5.0 loss=91857.328
+    Top-15 scores: [407, 380, 368, 364, 339, 331, 317, 308, 305, 295, 292, 291, 281, 278, 275] | avg=322.07 | dyn_threshold=251
+Episode 143: Dissonant run. Score: 189. (Gold: False)
+    Avg Dark Residue: 0.53 | Vigor/Rigor: 65/124 | CohHead: pred=5.3 loss=33779.871
+    Top-15 scores: [407, 380, 368, 364, 339, 331, 317, 308, 305, 295, 292, 291, 281, 278, 275] | avg=322.07 | dyn_threshold=251
+Episode 144: Dissonant run. Score: 181. (Gold: False)
+    Avg Dark Residue: 0.56 | Vigor/Rigor: 66/115 | CohHead: pred=5.5 loss=30838.766
+    Top-15 scores: [407, 380, 368, 364, 339, 331, 317, 308, 305, 295, 292, 291, 281, 278, 275] | avg=322.07 | dyn_threshold=251
+Episode 145: Dissonant run. Score: 227. (Gold: False)
+    Avg Dark Residue: 0.52 | Vigor/Rigor: 88/139 | CohHead: pred=5.6 loss=49047.570
+    Top-15 scores: [407, 380, 368, 364, 339, 331, 317, 308, 305, 295, 292, 291, 281, 278, 275] | avg=322.07 | dyn_threshold=251
+Episode 146: Dissonant run. Score: 305. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 93/212 | CohHead: pred=5.4 loss=89787.852
+    Top-15 scores: [407, 380, 368, 364, 339, 331, 317, 308, 305, 305, 295, 292, 291, 281, 278] | avg=324.07 | dyn_threshold=252
+Episode 147: Dissonant run. Score: 365. (Gold: False)
+    Avg Dark Residue: 0.32 | Vigor/Rigor: 111/254 | CohHead: pred=5.5 loss=129339.078
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 295, 292, 291, 281] | avg=329.87 | dyn_threshold=257
+Episode 148: Dissonant run. Score: 242. (Gold: False)
+    Avg Dark Residue: 0.51 | Vigor/Rigor: 92/150 | CohHead: pred=5.9 loss=55783.953
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 295, 292, 291, 281] | avg=329.87 | dyn_threshold=257
+Episode 149: Dissonant run. Score: 168. (Gold: False)
+    Avg Dark Residue: 0.59 | Vigor/Rigor: 64/104 | CohHead: pred=6.1 loss=26256.791
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 295, 292, 291, 281] | avg=329.87 | dyn_threshold=257
+Episode 150: Dissonant run. Score: 178. (Gold: False)
+    Avg Dark Residue: 0.54 | Vigor/Rigor: 55/123 | CohHead: pred=5.9 loss=29650.080
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 295, 292, 291, 281] | avg=329.87 | dyn_threshold=257
+Episode 151: Dissonant run. Score: 168. (Gold: False)
+    Avg Dark Residue: 0.58 | Vigor/Rigor: 59/109 | CohHead: pred=6.2 loss=26222.064
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 295, 292, 291, 281] | avg=329.87 | dyn_threshold=257
+Episode 152: Dissonant run. Score: 216. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 85/131 | CohHead: pred=6.2 loss=44043.379
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 295, 292, 291, 281] | avg=329.87 | dyn_threshold=257
+Episode 153: Dissonant run. Score: 205. (Gold: False)
+    Avg Dark Residue: 0.50 | Vigor/Rigor: 63/142 | CohHead: pred=6.1 loss=39584.867
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 295, 292, 291, 281] | avg=329.87 | dyn_threshold=257
+Episode 154: Dissonant run. Score: 217. (Gold: False)
+    Avg Dark Residue: 0.53 | Vigor/Rigor: 77/140 | CohHead: pred=6.5 loss=44370.391
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 295, 292, 291, 281] | avg=329.87 | dyn_threshold=257
+Episode 155: Dissonant run. Score: 184. (Gold: False)
+    Avg Dark Residue: 0.54 | Vigor/Rigor: 64/120 | CohHead: pred=6.5 loss=31541.594
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 295, 292, 291, 281] | avg=329.87 | dyn_threshold=257
+Episode 156: Dissonant run. Score: 230. (Gold: False)
+    Avg Dark Residue: 0.45 | Vigor/Rigor: 74/156 | CohHead: pred=6.4 loss=50040.918
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 295, 292, 291, 281] | avg=329.87 | dyn_threshold=257
+Episode 157: Dissonant run. Score: 173. (Gold: False)
+    Avg Dark Residue: 0.56 | Vigor/Rigor: 60/113 | CohHead: pred=6.7 loss=27684.754
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 295, 292, 291, 281] | avg=329.87 | dyn_threshold=257
+Episode 158: Dissonant run. Score: 257. (Gold: False)
+    Avg Dark Residue: 0.52 | Vigor/Rigor: 89/168 | CohHead: pred=6.9 loss=62592.418
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 295, 292, 291, 281] | avg=329.87 | dyn_threshold=257
+Episode 159: Dissonant run. Score: 174. (Gold: False)
+    Avg Dark Residue: 0.55 | Vigor/Rigor: 59/115 | CohHead: pred=6.9 loss=27961.162
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 295, 292, 291, 281] | avg=329.87 | dyn_threshold=257
+Episode 160: Dissonant run. Score: 301. (Gold: False)
+    Avg Dark Residue: 0.45 | Vigor/Rigor: 104/197 | CohHead: pred=7.0 loss=86477.656
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 301, 295, 292, 291] | avg=331.20 | dyn_threshold=258
+Episode 161: Dissonant run. Score: 287. (Gold: False)
+    Avg Dark Residue: 0.45 | Vigor/Rigor: 93/194 | CohHead: pred=7.1 loss=78427.141
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 301, 295, 292, 291] | avg=331.20 | dyn_threshold=258
+Episode 162: Dissonant run. Score: 255. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 87/168 | CohHead: pred=7.1 loss=61533.051
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 301, 295, 292, 291] | avg=331.20 | dyn_threshold=258
+Episode 163: Dissonant run. Score: 253. (Gold: False)
+    Avg Dark Residue: 0.42 | Vigor/Rigor: 88/165 | CohHead: pred=7.2 loss=60474.754
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 301, 295, 292, 291] | avg=331.20 | dyn_threshold=258
+Episode 164: Dissonant run. Score: 212. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 91/121 | CohHead: pred=7.6 loss=41818.004
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 301, 295, 292, 291] | avg=331.20 | dyn_threshold=258
+Episode 165: Dissonant run. Score: 274. (Gold: False)
+    Avg Dark Residue: 0.47 | Vigor/Rigor: 97/177 | CohHead: pred=7.7 loss=71007.078
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 301, 295, 292, 291] | avg=331.20 | dyn_threshold=258
+Episode 166: Dissonant run. Score: 238. (Gold: False)
+    Avg Dark Residue: 0.44 | Vigor/Rigor: 79/159 | CohHead: pred=7.5 loss=53174.992
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 301, 295, 292, 291] | avg=331.20 | dyn_threshold=258
+Episode 167: Dissonant run. Score: 257. (Gold: False)
+    Avg Dark Residue: 0.49 | Vigor/Rigor: 76/181 | CohHead: pred=7.7 loss=62192.512
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 301, 295, 292, 291] | avg=331.20 | dyn_threshold=258
+Episode 168: Dissonant run. Score: 205. (Gold: False)
+    Avg Dark Residue: 0.52 | Vigor/Rigor: 75/130 | CohHead: pred=8.0 loss=38847.023
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 301, 295, 292, 291] | avg=331.20 | dyn_threshold=258
+Episode 169: Dissonant run. Score: 279. (Gold: False)
+    Avg Dark Residue: 0.46 | Vigor/Rigor: 111/168 | CohHead: pred=8.3 loss=73358.352
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 301, 295, 292, 291] | avg=331.20 | dyn_threshold=258
+Episode 170: Dissonant run. Score: 230. (Gold: False)
+    Avg Dark Residue: 0.53 | Vigor/Rigor: 81/149 | CohHead: pred=8.3 loss=49190.531
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 301, 295, 292, 291] | avg=331.20 | dyn_threshold=258
+Episode 171: Dissonant run. Score: 283. (Gold: False)
+    Avg Dark Residue: 0.40 | Vigor/Rigor: 81/202 | CohHead: pred=8.0 loss=75692.469
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 301, 295, 292, 291] | avg=331.20 | dyn_threshold=258
+Episode 172: Dissonant run. Score: 216. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 81/135 | CohHead: pred=8.5 loss=43102.281
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 301, 295, 292, 291] | avg=331.20 | dyn_threshold=258
+Episode 173: Dissonant run. Score: 208. (Gold: False)
+    Avg Dark Residue: 0.50 | Vigor/Rigor: 67/141 | CohHead: pred=8.5 loss=39860.211
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 301, 295, 292, 291] | avg=331.20 | dyn_threshold=258
+Episode 174: Dissonant run. Score: 203. (Gold: False)
+    Avg Dark Residue: 0.52 | Vigor/Rigor: 76/127 | CohHead: pred=8.9 loss=37737.027
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 317, 308, 305, 305, 301, 295, 292, 291] | avg=331.20 | dyn_threshold=258
+Episode 175: Dissonant run. Score: 329. (Gold: False)
+    Avg Dark Residue: 0.40 | Vigor/Rigor: 121/208 | CohHead: pred=9.0 loss=102501.117
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 329, 317, 308, 305, 305, 301, 295, 292] | avg=333.73 | dyn_threshold=260
+Episode 176: Dissonant run. Score: 205. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 72/133 | CohHead: pred=8.9 loss=38492.109
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 329, 317, 308, 305, 305, 301, 295, 292] | avg=333.73 | dyn_threshold=260
+Episode 177: Dissonant run. Score: 187. (Gold: False)
+    Avg Dark Residue: 0.53 | Vigor/Rigor: 69/118 | CohHead: pred=9.3 loss=31641.404
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 329, 317, 308, 305, 305, 301, 295, 292] | avg=333.73 | dyn_threshold=260
+Episode 178: Dissonant run. Score: 197. (Gold: False)
+    Avg Dark Residue: 0.50 | Vigor/Rigor: 61/136 | CohHead: pred=9.1 loss=35357.207
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 329, 317, 308, 305, 305, 301, 295, 292] | avg=333.73 | dyn_threshold=260
+Episode 179: Dissonant run. Score: 330. (Gold: False)
+    Avg Dark Residue: 0.35 | Vigor/Rigor: 117/213 | CohHead: pred=9.3 loss=102931.781
+    Top-15 scores: [407, 380, 368, 365, 364, 339, 331, 330, 329, 317, 308, 305, 305, 301, 295] | avg=336.27 | dyn_threshold=262
+Episode 180: Dissonant run. Score: 391. (Gold: False)
+    Avg Dark Residue: 0.36 | Vigor/Rigor: 148/243 | CohHead: pred=9.8 loss=145409.391
+    Top-15 scores: [407, 391, 380, 368, 365, 364, 339, 331, 330, 329, 317, 308, 305, 305, 301] | avg=342.67 | dyn_threshold=267
+Episode 181: Dissonant run. Score: 272. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 91/181 | CohHead: pred=9.8 loss=68808.148
+    Top-15 scores: [407, 391, 380, 368, 365, 364, 339, 331, 330, 329, 317, 308, 305, 305, 301] | avg=342.67 | dyn_threshold=267
+Episode 182: Dissonant run. Score: 401. (Gold: False)
+    Avg Dark Residue: 0.35 | Vigor/Rigor: 137/264 | CohHead: pred=10.0 loss=152999.109
+    Top-15 scores: [407, 401, 391, 380, 368, 365, 364, 339, 331, 330, 329, 317, 308, 305, 305] | avg=349.33 | dyn_threshold=272
+Episode 183: Dissonant run. Score: 256. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 102/154 | CohHead: pred=10.4 loss=60404.461
+    Top-15 scores: [407, 401, 391, 380, 368, 365, 364, 339, 331, 330, 329, 317, 308, 305, 305] | avg=349.33 | dyn_threshold=272
+Episode 184: Dissonant run. Score: 328. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 116/212 | CohHead: pred=10.4 loss=101002.961
+    Top-15 scores: [407, 401, 391, 380, 368, 365, 364, 339, 331, 330, 329, 328, 317, 308, 305] | avg=350.87 | dyn_threshold=273
+Episode 185: Dissonant run. Score: 326. (Gold: False)
+    Avg Dark Residue: 0.40 | Vigor/Rigor: 111/215 | CohHead: pred=10.5 loss=99679.906
+    Top-15 scores: [407, 401, 391, 380, 368, 365, 364, 339, 331, 330, 329, 328, 326, 317, 308] | avg=352.27 | dyn_threshold=274
+Episode 186: Dissonant run. Score: 403. (Gold: False)
+    Avg Dark Residue: 0.34 | Vigor/Rigor: 145/258 | CohHead: pred=10.8 loss=153959.594
+    Top-15 scores: [407, 403, 401, 391, 380, 368, 365, 364, 339, 331, 330, 329, 328, 326, 317] | avg=358.60 | dyn_threshold=279
+Episode 187: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.15 | Vigor/Rigor: 172/328 | CohHead: pred=10.6 loss=239739.578
+    Top-15 scores: [500, 407, 403, 401, 391, 380, 368, 365, 364, 339, 331, 330, 329, 328, 326] | avg=370.80 | dyn_threshold=289
+    [GW] best=500 (DR=0.15) | window=1
+Episode 188: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.26 | Vigor/Rigor: 186/314 | CohHead: pred=11.4 loss=238973.938
+    Top-15 scores: [500, 500, 407, 403, 401, 391, 380, 368, 365, 364, 339, 331, 330, 329, 328] | avg=382.40 | dyn_threshold=298
+    [GW] best=500 (DR=0.15) | window=1
+Episode 189: Dissonant run. Score: 459. (Gold: False)
+    Avg Dark Residue: 0.37 | Vigor/Rigor: 154/305 | CohHead: pred=11.7 loss=200281.516
+    Top-15 scores: [500, 500, 459, 407, 403, 401, 391, 380, 368, 365, 364, 339, 331, 330, 329] | avg=391.13 | dyn_threshold=305
+    [GW] best=500 (DR=0.15) | window=1
+Episode 190: Dissonant run. Score: 377. (Gold: False)
+    Avg Dark Residue: 0.43 | Vigor/Rigor: 140/237 | CohHead: pred=12.0 loss=133415.234
+    Top-15 scores: [500, 500, 459, 407, 403, 401, 391, 380, 377, 368, 365, 364, 339, 331, 330] | avg=394.33 | dyn_threshold=307
+    [GW] best=500 (DR=0.15) | window=1
+Episode 191: Dissonant run. Score: 333. (Gold: False)
+    Avg Dark Residue: 0.44 | Vigor/Rigor: 113/220 | CohHead: pred=11.9 loss=103258.961
+    Top-15 scores: [500, 500, 459, 407, 403, 401, 391, 380, 377, 368, 365, 364, 339, 333, 331] | avg=394.53 | dyn_threshold=307
+    [GW] best=500 (DR=0.15) | window=1
+Episode 192: Dissonant run. Score: 341. (Gold: False)
+    Avg Dark Residue: 0.39 | Vigor/Rigor: 106/235 | CohHead: pred=11.8 loss=108529.406
+    Top-15 scores: [500, 500, 459, 407, 403, 401, 391, 380, 377, 368, 365, 364, 341, 339, 333] | avg=395.20 | dyn_threshold=308
+    [GW] best=500 (DR=0.15) | window=1
+Episode 193: Dissonant run. Score: 261. (Gold: False)
+    Avg Dark Residue: 0.47 | Vigor/Rigor: 91/170 | CohHead: pred=12.2 loss=62016.539
+    Top-15 scores: [500, 500, 459, 407, 403, 401, 391, 380, 377, 368, 365, 364, 341, 339, 333] | avg=395.20 | dyn_threshold=308
+    [GW] best=500 (DR=0.15) | window=1
+Episode 194: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.22 | Vigor/Rigor: 191/309 | CohHead: pred=12.6 loss=237786.328
+    Top-15 scores: [500, 500, 500, 459, 407, 403, 401, 391, 380, 377, 368, 365, 364, 341, 339] | avg=406.33 | dyn_threshold=316
+    [GW] best=500 (DR=0.15) | window=1
+Episode 195: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 182/318 | CohHead: pred=12.4 loss=238026.297
+    Top-15 scores: [500, 500, 500, 500, 459, 407, 403, 401, 391, 380, 377, 368, 365, 364, 341] | avg=417.07 | dyn_threshold=325
+    [GW] best=500 (DR=0.15) | window=2
+Episode 196: Coherent run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.20 | Vigor/Rigor: 169/331 | CohHead: pred=12.7 loss=237664.484
+    Top-15 scores: [500, 500, 500, 500, 500, 459, 407, 403, 401, 391, 380, 377, 368, 365, 364] | avg=427.67 | dyn_threshold=333
+    [GW] best=500 (DR=0.15) | window=2
+Episode 197: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 189/311 | CohHead: pred=12.8 loss=237563.781
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 459, 407, 403, 401, 391, 380, 377, 368, 365] | avg=436.73 | dyn_threshold=340
+    [GW] best=500 (DR=0.15) | window=3
+Episode 198: Dissonant run. Score: 444. (Gold: False)
+    Avg Dark Residue: 0.35 | Vigor/Rigor: 157/287 | CohHead: pred=13.8 loss=185320.078
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 459, 444, 407, 403, 401, 391, 380, 377, 368] | avg=442.00 | dyn_threshold=344
+    [GW] best=500 (DR=0.15) | window=3
+Episode 199: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 206/294 | CohHead: pred=13.6 loss=236830.031
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 459, 444, 407, 403, 401, 391, 380, 377] | avg=450.80 | dyn_threshold=351
+    [GW] best=500 (DR=0.15) | window=4
+Episode 200: Dissonant run. Score: 457. (Gold: False)
+    Avg Dark Residue: 0.36 | Vigor/Rigor: 155/302 | CohHead: pred=14.3 loss=196206.312
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 459, 457, 444, 407, 403, 401, 391, 380] | avg=456.13 | dyn_threshold=355
+    [GW] best=500 (DR=0.15) | window=4
+Episode 201: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 178/322 | CohHead: pred=13.7 loss=236698.344
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 459, 457, 444, 407, 403, 401, 391] | avg=464.13 | dyn_threshold=362
+    [GW] best=500 (DR=0.15) | window=5
+Episode 202: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 171/329 | CohHead: pred=13.9 loss=236554.766
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 459, 457, 444, 407, 403, 401] | avg=471.40 | dyn_threshold=367
+    [GW] best=500 (DR=0.15) | window=6
+Episode 203: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 159/341 | CohHead: pred=13.8 loss=236609.000
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 459, 457, 444, 407, 403] | avg=478.00 | dyn_threshold=372
+    [GW] best=500 (DR=0.15) | window=7
+Episode 204: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 185/315 | CohHead: pred=14.5 loss=235982.125
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 459, 457, 444, 407] | avg=484.47 | dyn_threshold=377
+    [GW] best=500 (DR=0.15) | window=8
+Episode 205: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 173/327 | CohHead: pred=14.8 loss=235669.656
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 459, 457, 444] | avg=490.67 | dyn_threshold=382
+    [GW] best=500 (DR=0.15) | window=9
+Episode 206: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 207/293 | CohHead: pred=15.5 loss=235054.047
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 459, 457] | avg=494.40 | dyn_threshold=385
+    [GW] best=500 (DR=0.15) | window=10
+Episode 207: Dissonant run. Score: 265. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 99/166 | CohHead: pred=15.9 loss=62164.066
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 459, 457] | avg=494.40 | dyn_threshold=385
+    [GW] best=500 (DR=0.15) | window=10
+Episode 208: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 173/327 | CohHead: pred=15.5 loss=234973.750
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 459] | avg=497.27 | dyn_threshold=387
+    [GW] best=500 (DR=0.15) | window=11
+Episode 209: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 184/316 | CohHead: pred=15.9 loss=234617.781
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=12
+Episode 210: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 184/316 | CohHead: pred=16.1 loss=234394.625
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=13
+Episode 211: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 165/335 | CohHead: pred=16.2 loss=234330.656
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=14
+Episode 212: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 178/322 | CohHead: pred=16.7 loss=233892.438
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=15
+Episode 213: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 193/307 | CohHead: pred=17.2 loss=233421.031
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=16
+Episode 214: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 165/335 | CohHead: pred=17.0 loss=233581.359
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=17
+Episode 215: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 197/303 | CohHead: pred=17.8 loss=232809.188
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=18
+Episode 216: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 184/316 | CohHead: pred=18.1 loss=232562.094
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=19
+Episode 217: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 189/311 | CohHead: pred=18.6 loss=232064.719
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=20
+Episode 218: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 175/325 | CohHead: pred=18.6 loss=232090.859
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=21
+Episode 219: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 159/341 | CohHead: pred=18.6 loss=232067.766
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=22
+Episode 220: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 165/335 | CohHead: pred=19.1 loss=231526.312
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 221: Dissonant run. Score: 343. (Gold: False)
+    Avg Dark Residue: 0.40 | Vigor/Rigor: 111/232 | CohHead: pred=19.8 loss=104661.039
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 222: Dissonant run. Score: 422. (Gold: False)
+    Avg Dark Residue: 0.37 | Vigor/Rigor: 141/281 | CohHead: pred=20.8 loss=161257.906
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 223: Dissonant run. Score: 348. (Gold: False)
+    Avg Dark Residue: 0.40 | Vigor/Rigor: 141/207 | CohHead: pred=21.2 loss=107015.320
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 224: Dissonant run. Score: 242. (Gold: False)
+    Avg Dark Residue: 0.49 | Vigor/Rigor: 71/171 | CohHead: pred=20.1 loss=49354.641
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 225: Dissonant run. Score: 268. (Gold: False)
+    Avg Dark Residue: 0.48 | Vigor/Rigor: 96/172 | CohHead: pred=21.2 loss=61056.512
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 226: Dissonant run. Score: 369. (Gold: False)
+    Avg Dark Residue: 0.39 | Vigor/Rigor: 131/238 | CohHead: pred=21.7 loss=120791.336
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 227: Dissonant run. Score: 433. (Gold: False)
+    Avg Dark Residue: 0.36 | Vigor/Rigor: 154/279 | CohHead: pred=22.5 loss=168761.688
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 228: Dissonant run. Score: 312. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 110/202 | CohHead: pred=21.9 loss=84338.484
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 229: Dissonant run. Score: 449. (Gold: False)
+    Avg Dark Residue: 0.36 | Vigor/Rigor: 165/284 | CohHead: pred=23.4 loss=181393.453
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 230: Dissonant run. Score: 423. (Gold: False)
+    Avg Dark Residue: 0.37 | Vigor/Rigor: 154/269 | CohHead: pred=23.5 loss=159868.359
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 231: Dissonant run. Score: 288. (Gold: False)
+    Avg Dark Residue: 0.45 | Vigor/Rigor: 86/202 | CohHead: pred=22.3 loss=70734.781
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 232: Dissonant run. Score: 485. (Gold: False)
+    Avg Dark Residue: 0.36 | Vigor/Rigor: 189/296 | CohHead: pred=25.0 loss=211885.547
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 233: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.22 | Vigor/Rigor: 173/327 | CohHead: pred=23.9 loss=226994.500
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 234: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.34 | Vigor/Rigor: 176/324 | CohHead: pred=25.3 loss=225670.578
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 235: Dissonant run. Score: 420. (Gold: False)
+    Avg Dark Residue: 0.39 | Vigor/Rigor: 149/271 | CohHead: pred=25.2 loss=156151.219
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=23
+Episode 236: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.18 | Vigor/Rigor: 162/338 | CohHead: pred=24.3 loss=226607.875
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=24
+Episode 237: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.33 | Vigor/Rigor: 167/333 | CohHead: pred=26.1 loss=224944.438
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=24
+Episode 238: Dissonant run. Score: 444. (Gold: False)
+    Avg Dark Residue: 0.36 | Vigor/Rigor: 154/290 | CohHead: pred=26.2 loss=174855.922
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=24
+Episode 239: Dissonant run. Score: 444. (Gold: False)
+    Avg Dark Residue: 0.33 | Vigor/Rigor: 151/293 | CohHead: pred=26.2 loss=174863.281
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=24
+Episode 240: Dissonant run. Score: 361. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 126/235 | CohHead: pred=26.4 loss=112204.898
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=24
+Episode 241: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.24 | Vigor/Rigor: 168/332 | CohHead: pred=26.7 loss=224342.297
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=24
+Episode 242: Dissonant run. Score: 434. (Gold: False)
+    Avg Dark Residue: 0.37 | Vigor/Rigor: 145/289 | CohHead: pred=27.5 loss=165570.906
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=24
+Episode 243: Dissonant run. Score: 342. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 125/217 | CohHead: pred=27.4 loss=99193.719
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=24
+Episode 244: Dissonant run. Score: 198. (Gold: False)
+    Avg Dark Residue: 0.60 | Vigor/Rigor: 68/130 | CohHead: pred=27.5 loss=29195.174
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=24
+Episode 245: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 189/311 | CohHead: pred=27.7 loss=223412.031
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=25
+Episode 246: Dissonant run. Score: 494. (Gold: False)
+    Avg Dark Residue: 0.36 | Vigor/Rigor: 193/301 | CohHead: pred=30.4 loss=215267.422
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=25
+Episode 247: Coherent run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.21 | Vigor/Rigor: 178/322 | CohHead: pred=28.9 loss=222303.984
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=25
+Episode 248: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.23 | Vigor/Rigor: 186/314 | CohHead: pred=29.7 loss=221512.625
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=25
+Episode 249: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.16 | Vigor/Rigor: 159/341 | CohHead: pred=28.6 loss=222544.484
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=26
+Episode 250: Dissonant run. Score: 476. (Gold: False)
+    Avg Dark Residue: 0.35 | Vigor/Rigor: 177/299 | CohHead: pred=31.4 loss=198024.266
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=26
+Episode 251: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.18 | Vigor/Rigor: 186/314 | CohHead: pred=30.3 loss=221011.578
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=27
+Episode 252: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.18 | Vigor/Rigor: 172/328 | CohHead: pred=30.4 loss=220901.641
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=28
+Episode 253: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.30 | Vigor/Rigor: 181/319 | CohHead: pred=32.4 loss=219080.625
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=28
+Episode 254: Dissonant run. Score: 391. (Gold: False)
+    Avg Dark Residue: 0.38 | Vigor/Rigor: 120/271 | CohHead: pred=31.2 loss=129753.125
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=28
+Episode 255: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.17 | Vigor/Rigor: 166/334 | CohHead: pred=31.3 loss=220082.391
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=29
+Episode 256: Coherent run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.20 | Vigor/Rigor: 166/334 | CohHead: pred=32.1 loss=219337.641
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=29
+Episode 257: Dissonant run. Score: 405. (Gold: False)
+    Avg Dark Residue: 0.35 | Vigor/Rigor: 136/269 | CohHead: pred=32.8 loss=138869.703
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=29
+Episode 258: Dissonant run. Score: 481. (Gold: False)
+    Avg Dark Residue: 0.35 | Vigor/Rigor: 171/310 | CohHead: pred=34.7 loss=199539.406
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=29
+Episode 259: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.22 | Vigor/Rigor: 188/312 | CohHead: pred=34.3 loss=217307.859
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=29
+Episode 260: Dissonant run. Score: 428. (Gold: False)
+    Avg Dark Residue: 0.37 | Vigor/Rigor: 129/299 | CohHead: pred=34.2 loss=155446.656
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=29
+Episode 261: Dissonant run. Score: 386. (Gold: False)
+    Avg Dark Residue: 0.40 | Vigor/Rigor: 137/249 | CohHead: pred=35.1 loss=123461.406
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=29
+Episode 262: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.19 | Vigor/Rigor: 177/323 | CohHead: pred=34.8 loss=216835.094
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=30
+Episode 263: Dissonant run. Score: 488. (Gold: False)
+    Avg Dark Residue: 0.36 | Vigor/Rigor: 179/309 | CohHead: pred=37.5 loss=203412.969
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=30
+Episode 264: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.17 | Vigor/Rigor: 170/330 | CohHead: pred=35.3 loss=216394.719
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=31
+Episode 265: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.15 | Vigor/Rigor: 168/332 | CohHead: pred=35.4 loss=216257.891
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=32
+Episode 266: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.17 | Vigor/Rigor: 195/305 | CohHead: pred=36.9 loss=214884.359
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=33
+Episode 267: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 163/337 | CohHead: pred=35.9 loss=215808.188
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=34
+Episode 268: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.18 | Vigor/Rigor: 183/317 | CohHead: pred=37.6 loss=214229.844
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=35
+Episode 269: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.18 | Vigor/Rigor: 196/304 | CohHead: pred=38.6 loss=213372.328
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=36
+Episode 270: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.18 | Vigor/Rigor: 171/329 | CohHead: pred=38.2 loss=213693.766
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=37
+Episode 271: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 178/322 | CohHead: pred=38.3 loss=213632.234
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=38
+Episode 272: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.16 | Vigor/Rigor: 170/330 | CohHead: pred=38.9 loss=213094.828
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=39
+Episode 273: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.16 | Vigor/Rigor: 160/340 | CohHead: pred=38.9 loss=213028.750
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=40
+Episode 274: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 185/315 | CohHead: pred=39.3 loss=212658.781
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=41
+Episode 275: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.15 | Vigor/Rigor: 154/346 | CohHead: pred=39.5 loss=212466.734
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=42
+Episode 276: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.25 | Vigor/Rigor: 144/356 | CohHead: pred=41.2 loss=210961.500
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=42
+Episode 277: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.19 | Vigor/Rigor: 171/329 | CohHead: pred=41.8 loss=210420.453
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=43
+Episode 278: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 188/312 | CohHead: pred=41.7 loss=210473.062
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=44
+Episode 279: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.17 | Vigor/Rigor: 149/351 | CohHead: pred=41.6 loss=210574.609
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=45
+Episode 280: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.16 | Vigor/Rigor: 149/351 | CohHead: pred=42.0 loss=210214.719
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=46
+Episode 281: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 179/321 | CohHead: pred=43.2 loss=209095.312
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=47
+Episode 282: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 170/330 | CohHead: pred=43.0 loss=209270.000
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 283: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 169/331 | CohHead: pred=43.2 loss=209133.656
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 284: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.20 | Vigor/Rigor: 146/354 | CohHead: pred=44.5 loss=207946.375
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 285: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 178/322 | CohHead: pred=44.9 loss=207605.297
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 286: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 176/324 | CohHead: pred=45.1 loss=207362.969
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 287: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.19 | Vigor/Rigor: 171/329 | CohHead: pred=47.0 loss=205684.250
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 288: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.19 | Vigor/Rigor: 167/333 | CohHead: pred=47.2 loss=205471.438
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 289: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.18 | Vigor/Rigor: 176/324 | CohHead: pred=48.1 loss=204725.344
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 290: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 184/316 | CohHead: pred=48.3 loss=204500.203
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 291: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.19 | Vigor/Rigor: 181/319 | CohHead: pred=49.6 loss=203320.188
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 292: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.24 | Vigor/Rigor: 168/332 | CohHead: pred=50.4 loss=202625.531
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 293: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 159/341 | CohHead: pred=47.8 loss=204982.453
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 294: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 180/320 | CohHead: pred=50.3 loss=202731.188
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 295: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 177/323 | CohHead: pred=50.7 loss=202331.641
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 296: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.15 | Vigor/Rigor: 185/315 | CohHead: pred=51.8 loss=201353.141
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 297: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.19 | Vigor/Rigor: 165/335 | CohHead: pred=52.2 loss=201020.328
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 298: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 187/313 | CohHead: pred=52.8 loss=200505.969
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 299: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 170/330 | CohHead: pred=52.6 loss=200686.250
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 300: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 177/323 | CohHead: pred=53.2 loss=200154.656
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 301: Coherent run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.21 | Vigor/Rigor: 174/326 | CohHead: pred=55.5 loss=198127.297
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 302: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 180/320 | CohHead: pred=54.7 loss=198784.375
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 303: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 163/337 | CohHead: pred=54.6 loss=198898.438
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 304: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.16 | Vigor/Rigor: 182/318 | CohHead: pred=56.7 loss=197083.969
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 305: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.15 | Vigor/Rigor: 181/319 | CohHead: pred=56.9 loss=196825.719
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 306: Dissonant run. Score: 477. (Gold: False)
+    Avg Dark Residue: 0.30 | Vigor/Rigor: 158/319 | CohHead: pred=59.1 loss=175143.219
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 307: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.26 | Vigor/Rigor: 177/323 | CohHead: pred=60.2 loss=193983.844
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 308: Dissonant run. Score: 328. (Gold: False)
+    Avg Dark Residue: 0.42 | Vigor/Rigor: 115/213 | CohHead: pred=58.4 loss=73001.469
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 309: Dissonant run. Score: 481. (Gold: False)
+    Avg Dark Residue: 0.36 | Vigor/Rigor: 156/325 | CohHead: pred=62.3 loss=175792.281
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 310: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 158/342 | CohHead: pred=57.3 loss=196493.156
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 311: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 192/308 | CohHead: pred=60.2 loss=193989.328
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 312: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.23 | Vigor/Rigor: 184/316 | CohHead: pred=63.0 loss=191501.984
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 313: Coherent run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.21 | Vigor/Rigor: 179/321 | CohHead: pred=63.0 loss=191512.938
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 314: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.18 | Vigor/Rigor: 179/321 | CohHead: pred=62.9 loss=191599.578
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 315: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.19 | Vigor/Rigor: 199/301 | CohHead: pred=64.9 loss=189837.031
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 316: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.08 | Vigor/Rigor: 183/317 | CohHead: pred=62.2 loss=192246.703
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 317: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 189/311 | CohHead: pred=63.5 loss=191068.875
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 318: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.18 | Vigor/Rigor: 182/318 | CohHead: pred=65.6 loss=189255.875
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 319: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.19 | Vigor/Rigor: 177/323 | CohHead: pred=66.4 loss=188614.578
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 320: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.15 | Vigor/Rigor: 185/315 | CohHead: pred=66.5 loss=188511.969
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 321: Coherent run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.21 | Vigor/Rigor: 166/334 | CohHead: pred=67.5 loss=187666.031
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 322: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 171/329 | CohHead: pred=66.2 loss=188763.203
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 323: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.27 | Vigor/Rigor: 182/318 | CohHead: pred=71.1 loss=184508.531
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 324: Dissonant run. Score: 424. (Gold: False)
+    Avg Dark Residue: 0.37 | Vigor/Rigor: 145/279 | CohHead: pred=70.7 loss=125260.500
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 325: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 179/321 | CohHead: pred=68.2 loss=186983.312
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 326: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 171/329 | CohHead: pred=68.9 loss=186442.453
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 327: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 160/340 | CohHead: pred=68.1 loss=187108.922
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 328: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.15 | Vigor/Rigor: 182/318 | CohHead: pred=71.4 loss=184279.453
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 329: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 191/309 | CohHead: pred=71.3 loss=184365.672
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 330: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 181/319 | CohHead: pred=72.4 loss=183382.750
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 331: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 160/340 | CohHead: pred=70.9 loss=184669.688
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 332: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.08 | Vigor/Rigor: 177/323 | CohHead: pred=72.0 loss=183729.234
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 333: Dissonant run. Score: 416. (Gold: False)
+    Avg Dark Residue: 0.37 | Vigor/Rigor: 158/258 | CohHead: pred=77.8 loss=114822.969
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 334: Dissonant run. Score: 321. (Gold: False)
+    Avg Dark Residue: 0.40 | Vigor/Rigor: 107/214 | CohHead: pred=73.3 loss=61690.574
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 335: Dissonant run. Score: 345. (Gold: False)
+    Avg Dark Residue: 0.37 | Vigor/Rigor: 128/217 | CohHead: pred=75.5 loss=72954.789
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 336: Dissonant run. Score: 296. (Gold: False)
+    Avg Dark Residue: 0.42 | Vigor/Rigor: 97/199 | CohHead: pred=73.7 loss=49696.039
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 337: Dissonant run. Score: 402. (Gold: False)
+    Avg Dark Residue: 0.34 | Vigor/Rigor: 146/256 | CohHead: pred=78.3 loss=105158.945
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 338: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 167/333 | CohHead: pred=75.7 loss=180542.656
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 339: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 168/332 | CohHead: pred=76.8 loss=179590.141
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 340: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 168/332 | CohHead: pred=76.5 loss=179921.469
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 341: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.08 | Vigor/Rigor: 181/319 | CohHead: pred=77.9 loss=178677.000
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 342: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.24 | Vigor/Rigor: 180/320 | CohHead: pred=83.2 loss=174313.234
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 343: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 201/299 | CohHead: pred=81.0 loss=176156.578
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 344: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 175/325 | CohHead: pred=79.8 loss=177124.516
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 345: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 172/328 | CohHead: pred=80.3 loss=176736.906
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 346: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 185/315 | CohHead: pred=81.9 loss=175354.969
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 347: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 187/313 | CohHead: pred=82.8 loss=174618.672
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 348: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 189/311 | CohHead: pred=83.4 loss=174159.484
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 349: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 173/327 | CohHead: pred=82.9 loss=174547.906
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 350: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 183/317 | CohHead: pred=85.6 loss=172340.984
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 351: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 185/315 | CohHead: pred=85.5 loss=172383.422
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 352: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 161/339 | CohHead: pred=84.5 loss=173251.766
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 353: Dissonant run. Score: 485. (Gold: False)
+    Avg Dark Residue: 0.36 | Vigor/Rigor: 182/303 | CohHead: pred=95.0 loss=152687.516
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 354: Dissonant run. Score: 408. (Gold: False)
+    Avg Dark Residue: 0.40 | Vigor/Rigor: 153/255 | CohHead: pred=93.0 loss=99735.453
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 355: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.16 | Vigor/Rigor: 177/323 | CohHead: pred=89.9 loss=168825.281
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 356: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.18 | Vigor/Rigor: 158/342 | CohHead: pred=89.9 loss=168822.047
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 357: Dissonant run. Score: 348. (Gold: False)
+    Avg Dark Residue: 0.39 | Vigor/Rigor: 127/221 | CohHead: pred=91.1 loss=66343.773
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 358: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 178/322 | CohHead: pred=90.5 loss=168305.062
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 359: Dissonant run. Score: 290. (Gold: False)
+    Avg Dark Residue: 0.44 | Vigor/Rigor: 113/177 | CohHead: pred=91.8 loss=39561.098
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 360: Dissonant run. Score: 202. (Gold: False)
+    Avg Dark Residue: 0.32 | Vigor/Rigor: 67/135 | CohHead: pred=80.8 loss=14833.686
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 361: Dissonant run. Score: 460. (Gold: False)
+    Avg Dark Residue: 0.35 | Vigor/Rigor: 153/307 | CohHead: pred=97.4 loss=131949.016
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 362: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 176/324 | CohHead: pred=93.9 loss=165490.297
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 363: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 177/323 | CohHead: pred=93.3 loss=165935.203
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 364: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 167/333 | CohHead: pred=93.1 loss=166132.906
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 365: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.19 | Vigor/Rigor: 153/347 | CohHead: pred=96.0 loss=163827.203
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 366: Dissonant run. Score: 334. (Gold: False)
+    Avg Dark Residue: 0.39 | Vigor/Rigor: 121/213 | CohHead: pred=96.3 loss=56814.145
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 367: Dissonant run. Score: 405. (Gold: False)
+    Avg Dark Residue: 0.36 | Vigor/Rigor: 145/260 | CohHead: pred=99.9 loss=93507.922
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 368: Dissonant run. Score: 288. (Gold: False)
+    Avg Dark Residue: 0.42 | Vigor/Rigor: 88/200 | CohHead: pred=93.6 loss=38034.762
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 369: Dissonant run. Score: 281. (Gold: False)
+    Avg Dark Residue: 0.44 | Vigor/Rigor: 117/164 | CohHead: pred=99.4 loss=33198.645
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 370: Dissonant run. Score: 318. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 107/211 | CohHead: pred=97.4 loss=48927.840
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 371: Dissonant run. Score: 347. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 116/231 | CohHead: pred=99.8 loss=61434.996
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 372: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 167/333 | CohHead: pred=98.2 loss=161930.719
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 373: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 176/324 | CohHead: pred=101.0 loss=159763.375
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 374: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 158/342 | CohHead: pred=99.4 loss=161032.172
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 375: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 170/330 | CohHead: pred=101.4 loss=159410.453
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 376: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 184/316 | CohHead: pred=103.9 loss=157495.984
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 377: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.19 | Vigor/Rigor: 186/314 | CohHead: pred=107.3 loss=154844.750
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 378: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 184/316 | CohHead: pred=105.6 loss=156138.047
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 379: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.22 | Vigor/Rigor: 175/325 | CohHead: pred=109.0 loss=153538.609
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 380: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.15 | Vigor/Rigor: 188/312 | CohHead: pred=108.0 loss=154283.438
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 381: Dissonant run. Score: 355. (Gold: False)
+    Avg Dark Residue: 0.38 | Vigor/Rigor: 123/232 | CohHead: pred=106.8 loss=61952.879
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 382: Dissonant run. Score: 436. (Gold: False)
+    Avg Dark Residue: 0.34 | Vigor/Rigor: 152/284 | CohHead: pred=111.9 loss=105553.461
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 383: Dissonant run. Score: 318. (Gold: False)
+    Avg Dark Residue: 0.42 | Vigor/Rigor: 124/194 | CohHead: pred=109.9 loss=43613.074
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 384: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 174/326 | CohHead: pred=108.8 loss=153613.375
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 385: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 190/310 | CohHead: pred=111.2 loss=151775.484
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 386: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.17 | Vigor/Rigor: 178/322 | CohHead: pred=112.5 loss=150754.797
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 387: Dissonant run. Score: 342. (Gold: False)
+    Avg Dark Residue: 0.42 | Vigor/Rigor: 121/221 | CohHead: pred=112.8 loss=52883.246
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 388: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 174/326 | CohHead: pred=111.0 loss=151952.688
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 389: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 185/315 | CohHead: pred=114.2 loss=149424.812
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 390: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 171/329 | CohHead: pred=112.2 loss=150985.328
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 391: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 187/313 | CohHead: pred=114.0 loss=149617.141
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 392: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.08 | Vigor/Rigor: 169/331 | CohHead: pred=112.7 loss=150610.266
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 393: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 174/326 | CohHead: pred=114.2 loss=149487.953
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 394: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 168/332 | CohHead: pred=116.8 loss=147506.469
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 395: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.17 | Vigor/Rigor: 176/324 | CohHead: pred=119.7 loss=145295.938
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 396: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.17 | Vigor/Rigor: 170/330 | CohHead: pred=120.0 loss=145051.906
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 397: Dissonant run. Score: 433. (Gold: False)
+    Avg Dark Residue: 0.43 | Vigor/Rigor: 158/275 | CohHead: pred=128.8 loss=93088.047
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 398: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 188/312 | CohHead: pred=120.3 loss=144830.516
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 399: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.16 | Vigor/Rigor: 175/325 | CohHead: pred=122.9 loss=142884.422
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 400: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.23 | Vigor/Rigor: 173/327 | CohHead: pred=126.7 loss=140043.859
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 401: Dissonant run. Score: 380. (Gold: False)
+    Avg Dark Residue: 0.41 | Vigor/Rigor: 138/242 | CohHead: pred=127.5 loss=64181.973
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 402: Dissonant run. Score: 486. (Gold: False)
+    Avg Dark Residue: 0.38 | Vigor/Rigor: 167/319 | CohHead: pred=134.5 loss=124251.234
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 403: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.18 | Vigor/Rigor: 177/323 | CohHead: pred=127.6 loss=139373.000
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 404: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 154/346 | CohHead: pred=123.6 loss=142359.469
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 405: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.17 | Vigor/Rigor: 184/316 | CohHead: pred=129.8 loss=137708.938
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 406: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 185/315 | CohHead: pred=126.6 loss=140075.422
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 407: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.15 | Vigor/Rigor: 180/320 | CohHead: pred=129.9 loss=137664.000
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 408: Dissonant run. Score: 482. (Gold: False)
+    Avg Dark Residue: 0.40 | Vigor/Rigor: 162/320 | CohHead: pred=140.1 loss=117563.812
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 409: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.16 | Vigor/Rigor: 191/309 | CohHead: pred=133.8 loss=134819.844
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 410: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 187/313 | CohHead: pred=132.3 loss=135889.344
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 411: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.18 | Vigor/Rigor: 189/311 | CohHead: pred=136.5 loss=132828.078
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 412: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.26 | Vigor/Rigor: 169/331 | CohHead: pred=138.7 loss=131212.500
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 413: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 186/314 | CohHead: pred=133.9 loss=134702.984
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 414: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 178/322 | CohHead: pred=133.5 loss=135024.938
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 415: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 152/348 | CohHead: pred=133.4 loss=135061.547
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 416: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 173/327 | CohHead: pred=135.6 loss=133447.031
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 417: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 167/333 | CohHead: pred=135.4 loss=133607.875
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 418: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 163/337 | CohHead: pred=135.0 loss=133939.047
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 419: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 174/326 | CohHead: pred=139.0 loss=131016.867
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 420: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 175/325 | CohHead: pred=138.7 loss=131228.828
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 421: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.26 | Vigor/Rigor: 155/345 | CohHead: pred=145.9 loss=126123.305
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 422: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 178/322 | CohHead: pred=142.0 loss=128882.406
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 423: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.25 | Vigor/Rigor: 167/333 | CohHead: pred=149.2 loss=123804.336
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 424: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.26 | Vigor/Rigor: 175/325 | CohHead: pred=151.9 loss=121896.062
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 425: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.26 | Vigor/Rigor: 171/329 | CohHead: pred=152.0 loss=121823.219
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 426: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.16 | Vigor/Rigor: 165/335 | CohHead: pred=147.1 loss=125215.375
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 427: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 178/322 | CohHead: pred=146.9 loss=125415.234
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 428: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.15 | Vigor/Rigor: 161/339 | CohHead: pred=148.0 loss=124596.891
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 429: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 167/333 | CohHead: pred=146.8 loss=125435.727
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 430: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 190/310 | CohHead: pred=151.3 loss=122331.320
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 431: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 172/328 | CohHead: pred=149.0 loss=123901.273
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 432: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 175/325 | CohHead: pred=150.2 loss=123032.328
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 433: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 186/314 | CohHead: pred=152.7 loss=121287.672
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 434: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.17 | Vigor/Rigor: 177/323 | CohHead: pred=157.1 loss=118258.891
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 435: Dissonant run. Score: 362. (Gold: False)
+    Avg Dark Residue: 0.45 | Vigor/Rigor: 124/238 | CohHead: pred=159.6 loss=41360.789
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 436: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.38 | Vigor/Rigor: 176/324 | CohHead: pred=171.5 loss=108602.031
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 437: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.30 | Vigor/Rigor: 186/314 | CohHead: pred=169.5 loss=109930.047
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 438: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 155/345 | CohHead: pred=155.2 loss=119593.930
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 439: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 172/328 | CohHead: pred=157.8 loss=117782.938
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 440: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 185/315 | CohHead: pred=161.1 loss=115573.977
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 441: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 173/327 | CohHead: pred=160.5 loss=115951.180
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 442: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 173/327 | CohHead: pred=162.3 loss=114738.789
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 443: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 160/340 | CohHead: pred=159.9 loss=116329.875
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 444: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 172/328 | CohHead: pred=162.4 loss=114652.031
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 445: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 173/327 | CohHead: pred=163.0 loss=114278.641
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 446: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 177/323 | CohHead: pred=164.6 loss=113177.977
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 447: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 175/325 | CohHead: pred=165.4 loss=112674.211
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 448: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 192/308 | CohHead: pred=172.2 loss=108143.086
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 449: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.16 | Vigor/Rigor: 195/305 | CohHead: pred=174.8 loss=106433.984
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 450: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 187/313 | CohHead: pred=170.7 loss=109150.180
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 451: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 187/313 | CohHead: pred=171.8 loss=108436.391
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 452: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 191/309 | CohHead: pred=176.4 loss=105395.258
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 453: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 168/332 | CohHead: pred=171.8 loss=108398.164
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 454: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.27 | Vigor/Rigor: 169/331 | CohHead: pred=183.8 loss=100714.570
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 455: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.18 | Vigor/Rigor: 189/311 | CohHead: pred=181.9 loss=101866.945
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 456: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.18 | Vigor/Rigor: 183/317 | CohHead: pred=182.2 loss=101695.859
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 457: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.15 | Vigor/Rigor: 166/334 | CohHead: pred=178.5 loss=104073.523
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 458: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 189/311 | CohHead: pred=179.9 loss=103133.891
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 459: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 169/331 | CohHead: pred=178.5 loss=104025.539
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 460: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 183/317 | CohHead: pred=180.2 loss=102937.148
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 461: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 198/302 | CohHead: pred=183.6 loss=100810.594
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 462: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 184/316 | CohHead: pred=182.3 loss=101618.648
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 463: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 170/330 | CohHead: pred=182.2 loss=101685.312
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 464: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.16 | Vigor/Rigor: 187/313 | CohHead: pred=190.0 loss=96784.445
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 465: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 190/310 | CohHead: pred=189.1 loss=97361.523
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 466: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 182/318 | CohHead: pred=189.0 loss=97387.859
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 467: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 190/310 | CohHead: pred=189.5 loss=97070.961
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 468: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 167/333 | CohHead: pred=186.4 loss=99007.867
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 469: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 172/328 | CohHead: pred=188.9 loss=97467.820
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 470: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 190/310 | CohHead: pred=194.6 loss=93955.555
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 471: Dissonant run. Score: 500. (Gold: False)
+    Avg Dark Residue: 0.27 | Vigor/Rigor: 187/313 | CohHead: pred=205.9 loss=87162.883
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 472: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 161/339 | CohHead: pred=189.5 loss=97058.148
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 473: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 180/320 | CohHead: pred=194.8 loss=93806.562
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 474: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 195/305 | CohHead: pred=198.0 loss=91851.594
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 475: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 178/322 | CohHead: pred=198.3 loss=91686.117
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 476: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 187/313 | CohHead: pred=200.0 loss=90673.359
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 477: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 179/321 | CohHead: pred=202.2 loss=89382.680
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 478: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.17 | Vigor/Rigor: 175/325 | CohHead: pred=204.2 loss=88163.070
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 479: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.19 | Vigor/Rigor: 193/307 | CohHead: pred=210.7 loss=84341.625
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 480: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 182/318 | CohHead: pred=202.7 loss=89043.414
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 481: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 177/323 | CohHead: pred=204.0 loss=88253.180
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 482: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 174/326 | CohHead: pred=206.3 loss=86942.664
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 483: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 195/305 | CohHead: pred=209.3 loss=85168.070
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 484: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.16 | Vigor/Rigor: 189/311 | CohHead: pred=213.4 loss=82821.945
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 485: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 152/348 | CohHead: pred=201.5 loss=89727.688
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 486: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 172/328 | CohHead: pred=208.4 loss=85686.055
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 487: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 169/331 | CohHead: pred=209.6 loss=84990.508
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 488: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.11 | Vigor/Rigor: 182/318 | CohHead: pred=212.4 loss=83368.945
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 489: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 183/317 | CohHead: pred=214.3 loss=82282.031
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 490: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 166/334 | CohHead: pred=210.1 loss=84672.383
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 491: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.12 | Vigor/Rigor: 168/332 | CohHead: pred=213.8 loss=82561.766
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 492: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 184/316 | CohHead: pred=220.2 loss=78953.250
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 493: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.14 | Vigor/Rigor: 189/311 | CohHead: pred=222.1 loss=77854.727
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 494: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.17 | Vigor/Rigor: 178/322 | CohHead: pred=223.1 loss=77332.367
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 495: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 180/320 | CohHead: pred=221.8 loss=78009.031
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 496: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.13 | Vigor/Rigor: 185/315 | CohHead: pred=223.6 loss=77008.078
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 497: Dissonant run. Score: 427. (Gold: False)
+    Avg Dark Residue: 0.37 | Vigor/Rigor: 141/286 | CohHead: pred=229.6 loss=39409.605
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 498: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 160/340 | CohHead: pred=218.3 loss=79994.133
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 499: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.10 | Vigor/Rigor: 157/343 | CohHead: pred=219.1 loss=79539.492
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Episode 500: Coherent run. Score: 500. (Gold: True)
+    Avg Dark Residue: 0.09 | Vigor/Rigor: 163/337 | CohHead: pred=220.9 loss=78495.305
+    Top-15 scores: [500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500] | avg=500.00 | dyn_threshold=390
+    [GW] best=500 (DR=0.15) | window=48
+Training complete.

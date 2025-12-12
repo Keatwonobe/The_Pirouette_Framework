@@ -1,0 +1,593 @@
+
+News
+Bulbapedia
+Forums
+Discord
+More
+Editors
+Account
+Search Bulbapedia
+Pokémon Legends: Z-A has been officially released worldwide! Bulbapedia is currently being updated with the new information.
+
+Please remember to follow the unreleased materials policy, manual of style, and code of conduct at all times.
+Check the Bulbagarden home page for up-to-date Pokémon news, and discuss it on the forums or in the Bulbagarden Discord server.
+MissingNo.
+MissingNo.
+けつばん Ketsuban
+
+The five forms of MissingNo. (from top to bottom, left to right: Red and Blue Normal, Ghost, Aerodactyl, Kabutops, Yellow Normal)	
+Type	Category
+ Bird  Normal 
+Red/Blue
+
+ Normal  999 
+Yellow	??? Pokémon
+Hexadecimal identifier	Exp. at Lv. 100
+1F, 20, 32, 34, 38, 3D, 3E, 3F, 43, 44, 45, 4F, 50, 51, 56, 57, 5E, 5F, 73, 79, 7A, 7F, 86, 87, 89, 8C, 92, 9C, 9F, A0, A1, A2, AC, AE, AF, B5, B6, B7, B8	345420
+16136684
+Varies
+Pokédex
+National
+#000	Johto
+#—	Hoenn
+#—	Sinnoh
+#—	Unova (BW)
+#—	Unova (B2W2)
+#—
+Games found in
+Red, Blue, and Yellow
+Special stat for Mew glitch	Time Capsule exploit Pokémon
+31, 32, 50, 52, 56, 61, 62, 63, 67, 68, 69, 79, 80, 81, 86, 87, 94, 95, 115, 121, 122, 127, 134, 135, 137, 140, 146, 156, 159, 160, 161, 162, 172, 174, 175, 181, 182, 183, 184	Scizor, Shuckle, Heracross, Sneasel, Teddiursa, Ursaring, Slugma, Magcargo, Swinub, Piloswine, Corsola, Remoraid, Octillery, Delibird, Mantine, Skarmory, Houndour, Houndoom, Kingdra, Phanpy, Donphan, Porygon2, Stantler, Smeargle, Tyrogue, Hitmontop, Smoochum, Elekid, Magby, Miltank, Blissey, Raikou, Entei, Suicune, Larvitar, Pupitar*, Tyranitar*, Lugia*, Ho-Oh
+Height	Weight
+3'3"RGB
+10'0"RBY	22.0RGB lbs.
+3507.2RBY lbs.
+Hybrid of	Catch rate
+N/A	29 RB, 0 Y
+EV yield
+HP
+?	Atk
+?	Def
+?	Sp.Atk
+?	Sp.Def
+?	Speed
+?	Exp.
+?
+MissingNo. (Japanese: けつばん Ketsuban, lit. "missing number"), as it is displayed in-game due to the ten-character limit in Western Generation I games, is a dual-type Bird/Normal glitch Pokémon in Pokémon Red and Blue, and a dual-type Normal/randomly named glitch type (which often has '9' in it) glitch Pokémon in Pokémon Yellow. It is arguably the best known glitch Pokémon, closely followed by 'M (00), and it is the easiest glitch Pokémon to find in the localizations. It has five distinct forms, but the most frequent forms (the Red/Blue and Yellow normal forms) share 36 index numbers each.
+
+In later generations, other glitch Pokémon are sometimes referred to as "a MissingNo.", such as ??????????, ?, and -----. Despite this, the name "MissingNo." is a misnomer in this case; they have little relation to the one found in Pokémon Red and Blue or Yellow.
+
+MissingNo.'s cry is generally the game's equivalent of a "blank" cry: a Nidoran♂ (base 00)'s cry with a pitch of 0 and no echo. This is because the cries of these Pokémon are undefined in the data structure. A few MissingNo. have different cries (specifically 0x43, 0x45, 0x4F, 0x51, 0x5E, 0x5F, 0x7F, and 0xB5). The fact that these cries are valid and not garbage data (i.e. unrelated data read in the wrong way, as is the case with most of MissingNo.'s properties) supports the view that MissingNo. may have originally been a Pokémon that was deleted from the games. (See this section for further details).
+
+The Pokédex entries of MissingNo. and all glitch Pokémon with a Pokédex number of 0 will only appear upon capture if the player has not encountered Cubone, but as with all glitch Pokédex entries, they normally remain inaccessible through the actual Pokédex. An exception to this rule is in Red and Green, where MissingNo. can be "registered" in the Pokédex if the player enables the 'seen' flag for #152 through select glitches and memory corruption. If MissingNo.'s Pokédex data is viewed, Rhydon's cry will be heard, followed by MissingNo.'s (blank) entry and a series of glitchy sounds.
+
+No MissingNo. can evolve or learn any moves through leveling up.
+
+If the RB MissingNo. is traded to Generation II, it will hold a Carbos.
+
+
+Contents
+1	Forms
+1.1	Red and Blue normal form
+1.2	Yellow normal form
+1.3	Fossil and ghost MissingNo.
+1.3.1	Kabutops Fossil form
+1.3.2	Aerodactyl Fossil form
+1.3.3	Ghost form
+2	Glitches caused
+3	Trading MissingNo.
+4	In Pokémon Stadium
+5	MissingNo. as deleted Pokémon
+6	Official Nintendo statement
+7	Game data
+7.1	Pokédex entry
+7.1.1	In Red/Blue
+7.1.2	In Yellow
+7.2	Game locations
+7.3	Base stats
+7.3.1	In Red/Blue
+7.3.2	In Yellow
+7.4	Type effectiveness
+7.4.1	In Red/Blue
+7.4.2	In Yellow
+7.5	Learnset
+7.5.1	By leveling up
+7.5.1.1	Normal Red and Blue form
+7.5.1.2	Kabutops Fossil, Aerodactyl Fossil and Ghost forms
+7.5.1.3	Normal Yellow form
+7.5.2	By TM/HM
+7.5.2.1	Normal Red and Blue form
+7.5.2.2	Kabutops Fossil, Aerodactyl Fossil and Ghost forms
+7.5.2.3	Normal Yellow form
+7.6	Evolution
+8	Sprites
+8.1	In Red/Green
+8.2	In Red/Blue
+8.3	Kabutops Fossil, Aerodactyl Fossil and Ghost forms
+8.4	In Yellow
+9	Trivia
+9.1	Name origin
+10	References
+11	External links
+
+
+Forms
+Red and Blue normal form
+
+MissingNo.'s Red and Blue normal form is a dual-type Bird/Normal glitch Pokémon. It has a sprite that is a strange block of glitched pixels in a backward-L shape. Due to the larger number of characters that can be used to make it appear, it is the most common form. Normal form is exclusive to Pokémon Red and Blue.
+
+This form appears through the old man glitch if the character in the third, fifth, or seventh slot of the player's name is the end-name marker, G, H, J, M, S, T, :, ], a, b, c, m, o, p, or v.
+This form appears through the Mew glitch with a Special stat of 31, 32, 50, 52, 56, 61, 62, 63, 67, 68, 69, 79, 80, 81, 86, 87, 94, 95, 115, 121, 122, 127, 134, 135, 137, 140, 146, 156, 159, 160, 161, 162, 172, 174, 175 or 181.
+This form can be obtained through the Time Capsule exploit if the traded Pokémon is Scizor, Shuckle, Heracross, Sneasel, Teddiursa, Ursaring, Slugma, Magcargo, Swinub, Piloswine, Corsola, Remoraid, Octillery, Delibird, Mantine, Skarmory, Houndour, Houndoom, Kingdra, Phanpy, Donphan, Porygon2, Stantler, Smeargle, Tyrogue, Hitmontop, Smoochum, Elekid, Magby, Miltank, Blissey, Raikou, Entei, Suicune, Larvitar, or Ho-Oh.
+Yellow normal form
+
+MissingNo.'s Yellow normal form is a dual-type Normal and randomly named glitch type (often containing '9') glitch Pokémon. This form uses the palette of Pikachu, and so appears as yellow and red glitched boxes. They also cause glitches that MissingNo. in Red and Blue do not. If caught, they will cause graphical glitches, possibly rendering the player invisible and making duplicates of the player, and all other on-screen characters walk in random locations on the screen after battle. These forms do not appear through the old man glitch, as it was removed in Yellow. It is likely that the game will freeze or get stuck when attempting to battle Yellow MissingNo.'s normal form due to an invalid sprite pointer; 0x0600. This is also what causes the walking characters effect.
+
+This form appears through the Mew glitch with a Special stat of 31, 32, 56, 61, 62, 63, 67, 68, 69, 86, 87, 94, 95, 115, 121, 122, 127, 134, 135, 137, 140, 146, 156, 159, 160, 161, 162, 172, 174, 175 or 181.
+This form can be obtained through the Time Capsule exploit if the traded Pokémon is Scizor, Shuckle, Heracross, Sneasel, Teddiursa, Ursaring, Slugma, Magcargo, Swinub, Piloswine, Corsola, Remoraid, Octillery, Delibird, Mantine, Skarmory, Houndour, Houndoom, Kingdra, Phanpy, Donphan, Porygon2, Stantler, Smeargle, Tyrogue, Hitmontop, Smoochum, Elekid, Magby, Miltank, Blissey, Raikou, Entei, Suicune, Larvitar, or Ho-Oh.
+Encountering this MissingNo. form is not safe, as it usually causes the game to freeze or get stuck.
+
+Fossil and ghost MissingNo.
+The Fossil and ghost MissingNo. (otherwise known as 'special MissingNo.') are three unique forms of MissingNo. that share their sprites with the Kabutops Fossil and Aerodactyl Fossil from the Pewter Museum of Science, as well as the ghosts of Pokémon Tower. This is because the game actually uses their index numbers to get their front sprites. These Pokémon have no constant base stats, experience types or starting moves; instead they take this data from the last Pokémon in the party other than another special MissingNo. If an enemy Trainer sends out a special MissingNo. the aforementioned data is taken from the previous Pokémon they sent out (the user's Pokémon in battle does not count here).
+
+The Fossil and ghost MissingNo. exist in Yellow and have the same sprites as in Red and Blue. They also work the same way. Since the sprites are valid, these MissingNo. can be encountered instead of Yellow's normal MissingNo. and will never freeze the game on the opponent's side.
+
+Kabutops Fossil form
+Main article: MissingNo./B6
+
+MissingNo.'s Kabutops Fossil form uses the sprite of the Kabutops Fossil found in the Pewter Museum of Science. It is index number 182 (hex:B6).
+
+This form appears through the old man glitch if w is the character in the third, fifth, or seventh slot of the player's chosen name.
+This form appears through the Mew glitch with a Special stat of 182.
+This form can be obtained through the Time Capsule exploit if the traded Pokémon is Pupitar.
+Aerodactyl Fossil form
+Main article: MissingNo./B7
+
+MissingNo.'s Aerodactyl Fossil form uses the sprite of the Aerodactyl Fossil found in the Pewter Museum of Science. It is index number 183 (hex:B7).
+
+This form appears through the old man glitch if x is the character in the third, fifth, or seventh slot of the player's chosen name.
+This form appears through the Mew glitch with a Special stat of 183.
+This form can be obtained through the Time Capsule exploit if the traded Pokémon is Tyranitar.
+Ghost form
+
+MissingNo.'s Ghost form uses the sprite of the ghosts found in Pokémon Tower if the player does not have the Silph Scope. It is index number 184 (hex:B8)
+
+In the Japanese versions, this form is not actually a MissingNo. In these versions, rather than being named 'けつばん' (ketsuban) it is named "Ghost" (Japanese: ゴースト). This is unused, because all Pokémon Tower ghosts including the deceased Marowak use the hiragana ゆうれい ('yuurei') instead, which can mean the same thing but may specifically refer to the Japanese interpretation of ghosts in folklore.
+
+This form appears through the old man glitch if y is the character in the third, fifth, or seventh slot of the player's chosen name.
+This form appears through the Mew glitch with a Special stat of 184.
+This form appears through evolving .PKMNRB or Z ゥY at level 224.
+This form can be obtained through the Time Capsule exploit if the traded Pokémon is Lugia.
+Glitches caused
+
+Examples of corrupted Hall of Fame entries
+
+Example of multiple walking players on the screen
+MissingNo.'s appearance in-battle allows the item duplication glitch, which increases the number of items in the 6th Bag slot by 128 unless the number of items in the slot already exceeds 128. This happens because the bit that records MissingNo.'s Pokédex entry as "seen" is the same as the first bit of the 6th Bag slot's quantity.
+
+Encountering MissingNo. has been known to interfere with the save game data in various ways, such as adversely affecting the Hall of Fame data. The Hall of Fame is corrupted because of its proximity to a buffer used to store decompressed sprite data, which is too small to properly hold MissingNo.'s garbage sprite data.
+
+When a Trainer battles with MissingNo. in their party, both the Trainer sprite and their Pokémon's sprites will be scrambled, and all other sprites will be reversed. Viewing the stats screen of a non-glitch Pokémon will remove the effects.
+
+In Pokémon Yellow, capturing MissingNo. will commonly cause multiple player sprites, and sometimes other NPC's, to walk around the screen. If the NPC is aligned to the grid, it is possible to talk to them. Doing so may display text from the area, or may cause glitch text. Collision with those NPC's is buggy, but the game does handle it.
+
+In Pokémon Yellow, if MissingNo. is captured at a level above 1, it will instantly downlevel to 1 upon gaining any experience, and will stay on level 1 unless given Rare Candy. After this happens, MissingNo. will have seemingly infinite health, and, when damaged, the third digit of its health would, instead of going down through numbers, scroll through letters, numbers, and glitch symbols, and its HP bar will wrap across the screen.
+
+In Pokémon Yellow, when MissingNo. is encountered, if the game doesn't crash, it will sometimes play a very long cry before the text "A wild MISSINGNO appeared!" is displayed.
+
+Trading MissingNo.
+MissingNo. can be traded from Red and Blue into Pokémon Yellow, but cannot be traded forward through the Time Capsule into Pokémon Gold, Silver, and Crystal. In Yellow, MissingNo. levels down to level 1 if it gains any experience, and cannot grow any higher due to a glitched experience type. In Yellow, the only way to keep using a MissingNo. at a different level in battle is to use a Game Link Cable to battle between two games.
+
+In the trade center, MissingNo., due to its index number, appears as many different Generation II Pokémon from the perspective of Pokémon Gold, Silver, and Crystal. (The full list of the Generation II Pokémon MissingNo. can appear as is documented on the List of Pokémon by index number in Generation I.) If the player tries to trade MissingNo., a message will appear stating "Your <name> appears abnormal." and the trade will automatically be cancelled.
+
+In the Nintendo 3DS Virtual Console versions, if the player has MissingNo. in Box 1 when they attempt to transfer it to Pokémon Bank via Poké Transporter, one of the following error messages will appear. All Pokémon in Box 1 that are recognized as valid by Poké Transporter will be transported, but glitch Pokémon (such as MissingNo.) will not.
+
+Attention!
+There is at least one Pokémon in the Box that cannot be sent.
+
+A problem has been detected with one of the Pokémon. Sorry. The problematic Pokémon cannot be sent.
+
+Any Pokémon that could not be transported have been removed from the Transport Box.
+
+
+In Pokémon Stadium
+
+MissingNo. as a substitute doll in Pokémon Stadium
+
+MissingNo. viewed in the Gallery in Pokémon Stadium
+When viewed in Pokémon Stadium, MissingNo. will appear as a substitute doll (as will various other glitch Pokémon). It cannot be used in battle, but can be brought into the Gallery mode, in which the photo-taking itself works normally (aside from the doll lacking the usual animations), but any photos taken of it will disappear upon reaching the screen for picking which ones to add to the Album.
+
+When viewed in Pokémon Stadium 2, MissingNo. (and other glitch Pokémon) will show up as a Ditto with Transform. If the game is saved via Stadium 2, it will then become a Ditto permanently.
+
+MissingNo. as deleted Pokémon
+The name "MissingNo." is used for the invalid Pokémon with index numbers in between valid Pokémon and is a shortened form of "missing number", derived from its Japanese name, けつばん (Ketsuban). The fact that Rhydon, the Pokémon with index number 01 was the first Pokémon ever made[1][2] led to speculation that the index numbers of Pokémon in Generation I represent the order that they were programmed into the game, with MissingNo. being deleted entries.
+
+Supporting this theory was the fact that of the 39 MissingNo., nine of them have unique cries that do not consist of all 00 values.[3] These cries are located in a table in between real Pokémon cries, suggesting that they were not garbage data (unrelated data interpreted in the wrong way, as is the case with most of MissingNo.'s properties).
+
+The cry values are as follows:
+
+Hex	Dec	Base cry	Pitch	Length
+0x43	67	0	128	16
+0x45	69	29	244	64
+0x4F	79	34	255	64
+0x51	81	14	224	96
+0x5E	94	15	64	192
+0x5F	95	15	32	192
+0x7F	127	17	32	16
+0x89	137	15	64	128
+0xB5	181	29	0	128
+(Video of the cries)
+
+These theories were finally confirmed in 2020, with the Nintendo data leak of that year. Among the game material leaked was the source code for the Japanese version of Pokémon Blue, which contained many internal development assets, such as map sources, moveset lists, cry data, and the back sprites for every Pokémon in the game in Generation I order, including previously-unseen sprites occupying the same index numbers populated by MissingNo. in the released games.[4] Some of these sprites match the design and index number of Pokémon previously only shown on Satoshi Tajiri's biographical manga, while most of the others correspond to Pokémon that had never been seen before.
+
+Official Nintendo statement
+Nintendo has an official description of MissingNo. listed in their Customer Service troubleshooting section:
+
+"MissingNO is a programming quirk, and not a real part of the game. When you get this, your game can perform strangely, and the graphics will often become scrambled. The MissingNO Pokémon is most often found after you perform the Fight Safari Zone Pokémon trick.
+
+To fix the scrambled graphics, try releasing the MissingNo Pokémon. If the problem persists, the only solution is to re-start your game. This means erasing your current game and starting a brand new one."[5]
+
+Nintendo's statement is incorrect on the method for fixing graphical issues; releasing MissingNo. does not fix the graphics and the player certainly does not need to erase their game to perform any fixes. The correct way to fix the graphics is to simply view the Pokédex data or stat page of any non-glitch Pokémon (or any hybrid glitch Pokémon). The statement may have been deliberately worded to discourage players from performing the item duplication glitch.
+
+The title of the statement also refers to MissingNo. as "Pokémon 000" in reference to its Pokédex number.
+
+
+Game data
+Pokédex entry
+In Red/Blue
+
+MissingNo.'s Pokédex data in Japanese Blue
+
+MissingNo.'s Pokédex data in Pokémon Red and Blue
+Generation I			Kanto
+#000
+Blue (Japanese)	コメント さくせいちゅう
+Red	   
+Blue
+Yellow
+
+
+In Yellow
+
+MissingNo.'s Pokédex data in Pokémon Yellow
+Game locations
+Generation I	
+Red	Blue	
+Old man glitch, Mew glitch, Time Capsule exploit
+Yellow	
+Mew glitch, Time Capsule exploit
+
+
+Base stats
+In Red/Blue
+For the 36 normal MissingNo.:
+
+Stat	Range
+At Lv. 50	At Lv. 100
+HP:33	
+93 - 139	176 - 269
+Attack:136	
+141 - 187	277 - 370
+Defense:0	
+5 - 51	5 - 98
+Speed:29	
+34 - 80	63 - 156
+Special:6	
+11 - 57	17 - 110
+Total:204	(210 on other generations' scale)
+Minimum stats are calculated with 0 EVs and IVs of 0.
+Maximum stats are calculated with 63001 EVs and IVs of 15.
+Total on other generations' scale counts this Pokémon's Special stat as both Special Attack and Special Defense.
+
+
+In Yellow
+For the 36 normal MissingNo.:
+
+Stat	Range
+At Lv. 50	At Lv. 100
+HP:178	
+238 - 284	466 - 559
+Attack:19	
+24 - 70	43 - 136
+Defense:11	
+16 - 62	27 - 120
+Speed:0	
+5 - 51	5 - 98
+Special:23	
+28 - 74	51 - 144
+Total:231	(254 on other generations' scale)
+Minimum stats are calculated with 0 EVs and IVs of 0.
+Maximum stats are calculated with 63001 EVs and IVs of 15.
+Total on other generations' scale counts this Pokémon's Special stat as both Special Attack and Special Defense.
+
+
+Type effectiveness
+In Red/Blue
+Under normal battle conditions in Generation I, this Pokémon is:	
+Damaged
+normally by:	
+Normal	1×
+Flying	1×
+Poison	1×
+Ground	1×
+Rock	1×
+Bug	1×
+Fire	1×
+Water	1×
+Grass	1×
+Electric	1×
+Psychic	1×
+Ice	1×
+Dragon	1×
+Weak to:	
+Fighting	2×
+Immune to:	
+Ghost	0×
+Resistant to:	
+None
+Notes:
+As its primary type is one of the glitch types, which do not have any weaknesses or resistances, this glitch Pokémon has the same weaknesses and resistances as a pure  Normal-type  Pokémon.
+In Yellow
+Under normal battle conditions in Generation I, this Pokémon is:	
+Damaged
+normally by:	
+Normal	1×
+Flying	1×
+Poison	1×
+Ground	1×
+Rock	1×
+Bug	1×
+Fire	1×
+Water	1×
+Grass	1×
+Electric	1×
+Psychic	1×
+Ice	1×
+Dragon	1×
+Weak to:	
+Fighting	2×
+Immune to:	
+Ghost	0×
+Resistant to:	
+None
+Notes:
+As its secondary type is one of the glitch types, which do not have any weaknesses or resistances, this glitch Pokémon has the same weaknesses and resistances as a pure  Normal-type  Pokémon.
+Learnset
+By leveling up
+Normal Red and Blue form
+Generation I	
+Other generations:
+None
+ Level 	 Move 	 Type 	 Power 	 Accuracy 	 PP 
+1	Water Gun	Water	40	100%	25
+1	Water Gun	Water	40	100%	25
+1	Sky Attack	Flying	140	90%	5
+Bold indicates a move that gets STAB when used by MissingNo.
+Italic indicates a move that gets STAB only when used by an Evolution of MissingNo.
+Click on the generation numbers at the top to see level-up moves from other generations
+Kabutops Fossil, Aerodactyl Fossil and Ghost forms
+The starting moves of the Kabutops Fossil, Aerodactyl Fossil and Ghost forms are the same as the Pokémon whose data was accessed last.
+
+Normal Yellow form
+Generation I	
+Other generations:
+None
+ Level 	 Move 	 Type 	 Power 	 Accuracy 	 PP 
+1	Pay Day	Normal	40	100%	20
+1	Bind	Normal	15	75%	20
+1	Water Gun	Water	40	100%	25
+Bold indicates a move that gets STAB when used by MissingNo.
+Italic indicates a move that gets STAB only when used by an Evolution of MissingNo.
+Click on the generation numbers at the top to see level-up moves from other generations
+By TM/HM
+Normal Red and Blue form
+Generation I	
+Other generations:
+None
+ TM 	 Move 	 Type 	 Power 	 Accuracy 	 PP 
+	TM01	Mega Punch	Normal	80	85%	20
+	TM02	Razor Wind	Normal	80	75%	10
+	TM03	Swords Dance	Normal	—	—%	30
+	TM05	Mega Kick	Normal	120	75%	5
+	TM06	Toxic	Poison	—	85%	10
+	TM09	Take Down	Normal	90	85%	20
+	TM10	Double-Edge	Normal	100	100%	15
+	TM11	BubbleBeam	Water	65	100%	20
+	TM13	Ice Beam	Ice	95	100%	10
+	TM14	Blizzard	Ice	120	90%	5
+	TM17	Submission	Fighting	80	80%	25
+	TM19	Seismic Toss	Fighting	—	100%	20
+	TM20	Rage	Normal	20	100%	20
+	TM25	Thunder	Electric	120	70%	10
+	TM26	Earthquake	Ground	100	100%	10
+	TM27	Fissure	Ground	—	30%	5
+	TM29	Psychic	Psychic	90	100%	10
+	TM30	Teleport	Psychic	—	—%	20
+	TM43	Sky Attack	Flying	140	90%	5
+	TM44	Rest	Psychic	—	—%	10
+	TM45	Thunder Wave	Electric	—	100%	20
+	TM49	Tri Attack	Normal	80	100%	10
+	TM50	Substitute	Normal	—	—%	10
+	HM01	Cut	Normal	50	95%	30
+	HM02	Fly	Flying	70	95%	15
+Bold indicates a move that gets STAB when used by MissingNo.
+Italic indicates a move that gets STAB only when used by an Evolution of MissingNo.
+Kabutops Fossil, Aerodactyl Fossil and Ghost forms
+The TM/HM learnset of the Kabutops Fossil, Aerodactyl Fossil and Ghost forms are the same as the Pokémon at the bottom of the party other than another MissingNo. of one of these three kinds.
+
+Normal Yellow form
+Generation I	
+Other generations:
+None
+ TM 	 Move 	 Type 	 Power 	 Accuracy 	 PP 
+This Pokémon learns no moves by TM.
+Bold indicates a move that gets STAB when used by MissingNo.
+Italic indicates a move that gets STAB only when used by an Evolution of MissingNo.
+Evolution
+36 index numbers
+
+RB
+MissingNo.
+ Bird  Normal 
+↔
+
+36 index numbers
+
+Yellow
+MissingNo.
+ Normal  999 
+
+
+182
+
+Kabutops Fossil
+MissingNo.
+ Bird  Normal 
+
+
+183
+
+Aerodactyl Fossil
+MissingNo.
+ Bird  Normal 
+
+
+184
+
+Ghost
+MissingNo.
+ Bird  Normal 
+
+
+
+Unevolved
+Z ゥ
+ Normal 
+Rare Candy
+Level 224
+
+
+→	
+
+First Evolution
+MissingNo.
+ ??? 
+
+
+This MissingNo. is hex B8, the Ghost form.
+Sprites
+In Red/Green
+Front sprite	Back sprite	Menu sprite
+		
+In Red/Blue
+Front sprite	Back sprite	Menu sprite
+		
+Kabutops Fossil, Aerodactyl Fossil and Ghost forms
+Front sprite	Back sprite	Menu sprite
+		
+Front sprite	Back sprite	Menu sprite
+		
+Front sprite	Back sprite	Menu sprite
+		
+The backsprites of the Kabutops Fossil, Aerodactyl Fossil and Ghost forms are the same as the Pokémon whose data was accessed last.
+
+In Yellow
+Front sprite	Back sprite	Menu sprite
+		
+Trivia
+
+The now-deleted fan art by TOKIYA
+The Pokémon Yellow normal form MissingNo. have 0 base speed. This ties with various Generation I glitch Pokémon for the lowest base Speed stat.
+In the Spanish versions of Pokémon Red and Blue, viewing the stat screen of any Pokémon in the player's party changes MissingNo.'s sprite.[6]
+In its normal form, MissingNo. has the same learnset as 'M (00), except that 'M (00) cannot learn Substitute via TM50 and MissingNo. cannot learn Pound.
+Normal form MissingNo.'s stats in Red and Blue are actually determined by the parties of several Bikers, read as base stats.[7]
+Despite the Red and Blue normal form MissingNo. having Water Gun twice in its set of moves known at level 1, it cannot learn Water Gun via TM12.
+The same does not hold true for Sky Attack, its other level 1 move, as it can also learn it via TM43.
+Likewise, despite the Yellow normal form MissingNo. having both Pay Day and Water Gun as part of its level 1 moves, it cannot learn either move via TM, as it can't learn any TMs at all.
+MissingNo. is the only glitch Pokémon in Generation I whose English name is entirely composed of typographical characters. Although other glitch Pokémon such as Trainer and C may appear to be entirely composed of typographical characters, they contain illegible characters which change depending on the current tileset loaded into memory.
+In the Generation IV games, there is a sprite () that contains text that reads 欠番けつばん, MissingNo.'s Japanese name in kanji. However, unlike the Generation I placeholder text "MissingNo.", it exists only to substitute blank tile data, not blank species data. This means that the game will display this if a sprite is referenced that does not exist or cannot be accessed.
+MissingNo. is referred to as "Pokémon 000" on Nintendo's consumer support website, referencing its Pokédex number.
+The only Pokémon to legitimately have the number 000 in any Pokédex listing is Victini, whose number in the Unova Pokédex is 000.
+In August 2016, TCG artist TOKIYA posted (now-deleted) fan art of MissingNo.'s Ghost form, Aerodactyl and Kabutops fossil appearances, and default sprite in Pokémon Red and Green on her Twitter;[8] MissingNo. is therefore the only known glitch Pokémon to have an intentional depiction by a franchise artist.
+MissingNo. was alluded to throughout an April 1, 2024 episode of Beyond the Pokédex about Magmar.[9]
+After Maple captures an unseen Pokémon in Cinnabar Island at the beginning of the episode, the episode is then continuously interrupted with glitchy visuals, possibly referencing the scrambled graphics that can occur after encountering MissingNo. as well as other glitch Pokémon. Additionally, these interruptions notably occur after either of the hosts mention the phrase "missing number" and the move Water Gun, a move in MissingNo.'s starting learnset.
+Spruce asks Maple if she happened to be "surfing up the east coast of Cinnabar Island" when she captured the Pokémon, likely referencing the old man glitch, which is the most well-known method of encountering MissingNo.
+Maple suggests "turning [the camera] off and on again" and "blowing air into the bottom of the cartridge" to fix the interruptions. After neither method works, both hosts elect to "erase the whole file and start from the beginning", restarting the episode after the file deletion screen from Red and Blue is shown. This aligns with Nintendo's official statement on MissingNo., where erasing the save file is incorrectly presented as the only solution if releasing it does not correct the scrambled graphics.
+MissingNo.'s sprite is in the public domain in most countries, as it was generated by the game's code and has no human authorship, making it ineligible for copyright in all countries besides the United Kingdom and Hong Kong.
+Name origin
+MissingNo.'s English and Japanese names are both derived from "missing number".
+
+References
+ 開発スタッフインタビュー／キャラクターが決まるまで - Nintendo of Japan
+ GlitterBerri's Game Translations » Creating the Pokémon
+ Missing Number - IIMarck.us
+ The Cutting Room Floor - Pokémon Red and Blue/Missingno.
+ Nintendo - Customer Service
+ Change the sprite of MissingNo with view the stats of any Pokémon in your team
+ Smogon - The Smog Issue #27
+ Art by TOKIYA on Twitter (Archive)
+ Magmar | Beyond the Pokédex - Entry #126 - YouTube
+External links
+Article on Wikipedia
+Glitch Pokémon
+Red/Blue	'M (00) • MissingNo. • ▶ A • a • ゥ (C1) • ゥ .4 • h POKé
+PokéWTrainer • PkMn (C5) • ゥL ゥM 4 • ♀Pゥ ゥゥT • ゥU? • ◣ゥ 8 • PC4SH
+P • PkMn ◣ n • Trainer • ▼ W G d • OPkMn4X • PkMn PkMn T • 4B 8 4 8
+ゥ ' • M p'u ゥ • Aゥ G • Pゥ ゥ ゥ • 4 h • Glitch (D7) • PkMnaPkMnゥ ♂ fPkMnk
+PkMnRPkMn " • B (DA) • Glitch (DB) • Glitch (DC) • 7PkMn 'v • -PkMn • .PkMn
+/PkMn ▼PkMn • 'v • …… • ゥ (E3) • Glitch (E4) • C • - -
+Pゥ 4$ • X C • c • A (EA) • Glitch (EB) • Glitch (EC) • hゥ
+.g • ゥ$'M • ゥ$ (F0) • 94 • ゥ l (F2) • ゥ l (F3) • ゥ$ (F4)
+ゥ (F5) • G'Mp • 'Ng'Mp • 'Ng ゥ$ • 94 h • Glitch (FA) • 'M 'N g • O
+ゥ$ 6ゥ • 'M (FE) • 'M (FF)
+Yellow	3TrainerPoké $ • MissingNo. • 4 4 • 4 4 Hy • ♀ . • pPkMnp' ' • ゥ ( Z4
+X ゥ- xゥ, • 4. . • ァ7g • u • g g • ァ / g J 1 • Glitch (CA)
+. pゥ • .8 • ゥ. B • PkMn pゥぁ ゥぇ (CE) • 4, ゥァ (CF) • ゥ' • B ァ h
+PkMn ? A • ゥゥ) • ゥ (D4) • 'ゥ. • PkMn pゥぁ ゥぇ (D6) • B (D7) • PkMn (D8)
+ゥ (D9) • ] • ゥ' B • PkMn (DC) • 4, ゥァ (DD) • 8 (DE) • p ID
+8 P ァ • 'r 'r 4 • (h4to89 • 4 89 4 • 8B 4 8 • Z ゥ • 9
+ゥHIゥ. • 4(h4hi?$ • 4HI? • 'r ゥ • $ Pゥ. 4( • ?/ • 4(h4?
+ゥ► ゥ▼ ゥ • h 4Pゥ ゥ... • . ゥ ( .I' . • ' B' ゥ • ゥ ゥェ ゥ ▷ • ゥ $ A (F3) • ♂ p ゥ
+▼ pゥ • ゥ $ A (F6) • PkMn (F7) • ゥ 4- 4 • $ • ゥ▾ ゥ♂ • F q ,
+ゥ$ 4MN ゥ • × 'rゥ. 4- • ゥ/ 4ァ 4, • Q ◣
+Generation II	????? (00GS • FCGS • FEGS • FFGS • 00C • FCC • FEC • FFC)
+Glitch Egg • Glitch Unown
+Generation III	- • ?????????? • ? • Bad Egg
+Generation IV	----- • Bad Egg • Generation IV hybrid
+Generation V	----- • Bad Egg • Glitch Unown
+Generation VI	Bad Egg • Generation VI 724+ glitch Pokémon
+Generation VII	Bad Egg • Generation VII 804+ glitch Pokémon
+
+
+	This glitch Pokémon article is part of Project GlitchDex, a Bulbapedia project that aims to write comprehensive articles on glitches in the Pokémon games.
+Categories: Bird-type glitch PokémonNormal-type glitch Pokémon999-type glitch PokémonGlitch PokémonPokémon in the Kanto PokédexGlitches
+Navigation menuPage actions
+Article
+Discussion
+View source
+History
+Tools
+In other languages
+https://creativecommons.org/licenses/by-nc-sa/2.5/Powered by MediaWiki
+This page was last edited on 24 November 2025, at 01:12.Content is available under Attribution-NonCommercial-ShareAlike 2.5. (see Copyrights for details) Privacy policyAbout BulbapediaDisclaimersMobile view
+Information from your device can be used to personalize your ad experience.
+
+Do not sell or share my personal information.
+Terms of Content Use
+A Raptive Partner Site
+
+
+
+Sponsored By Obviously
+Obviously | The Leading Full-Service Influencer Seeding Agency
+🎁 Influencer gifting that actually moves product! Go from the warehouse to Wishlist by seeding 1,000+ creators this Holiday Season.
+Learn more
+
+Sponsored By Obviously
+Obviously | The Leading Full-Service Influencer Seeding Agency
+🎁 Influencer gifting that actually moves product! Go from the warehouse to Wishlist by seeding 1,000+ creators this Holiday Season.
+Learn more
+
+
+
+

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLE ENGINE // PROTOCOL: SILENCE</title>
+    <style>
+        :root {
+            --bg-color: #050505;
+            --term-green: #33ff33;
+            --term-dim: #1a801a;
+            --term-alert: #ff3333;
+            --term-highlight: #ccffcc;
+            --ui-border: #333;
+            --font-stack: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--term-green);
+            font-family: var(--font-stack);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+        }
+
+        /* --- LAYOUT --- */
+        #terminal-panel {
+            width: 40%;
+            height: 100%;
+            border-right: 1px solid var(--ui-border);
+            display: flex;
+            flex-direction: column;
+            background: #000;
+            position: relative;
+            z-index: 10;
+        }
+
+        #visual-panel {
+            width: 60%;
+            height: 100%;
+            background: #111;
+            position: relative;
+        }
+
+        /* --- TERMINAL UI --- */
+        #output-area {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 20px;
+            white-space: pre-wrap;
+            scrollbar-width: none;
+        }
+        #output-area::-webkit-scrollbar { display: none; }
+
+        .line { margin-bottom: 8px; line-height: 1.5; font-size: 14px; }
+        .system { color: #666; font-style: italic; }
+        .narrative { color: var(--term-highlight); }
+        .combat { color: #ffaa00; }
+        .alert { color: var(--term-alert); text-shadow: 0 0 5px #800000; }
+        .command-echo { color: #444; margin-top: 10px; border-top: 1px dashed #222; font-size: 5px; }
+        .typing::after { content: "█"; animation: blink 1s step-end infinite; }
+
+        #input-line {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid var(--ui-border);
+            padding: 15px;
+            background: #0a0a0a;
+        }
+
+        #prompt { margin-right: 10px; font-weight: bold; color: var(--term-green); }
+        
+        input[type="text"] {
+            background: transparent;
+            border: none;
+            color: white;
+            font-family: var(--font-stack);
+            font-size: 16px;
+            flex-grow: 1;
+            outline: none;
+        }
+
+        /* --- VISUALS --- */
+        #mapCanvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        #hud-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            pointer-events: none;
+            font-size: 12px;
+            color: rgba(255,255,255,0.7);
+        }
+
+        .stat-box {
+            background: rgba(0,0,0,0.8);
+            border: 1px solid var(--term-dim);
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 200px;
+        }
+
+        /* --- EFFECTS --- */
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+        
+        /* CRT Scanline Overlay */
+        .scanlines {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+            background-size: 100% 4px;
+            pointer-events: none;
+            z-index: 999;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="scanlines"></div>
+
+<div id="terminal-panel">
+    <div id="output-area"></div>
+    <div id="input-line">
+        <span id="prompt">USER@TLE-CORE></span>
+        <input type="text" id="cmd-input" autocomplete="off" autofocus placeholder="Type 'help' for commands...">
+    </div>
+</div>
+
+<div id="visual-panel">
+    <canvas id="mapCanvas"></canvas>
+    <div id="hud-overlay">
+        <div class="stat-box" id="hud-player">
+            <div><strong>// STATUS: ANOMALY-01</strong></div>
+            <div>HP (Coherence): <span id="disp-hp">--</span></div>
+            <div>EP (Entropy): <span id="disp-ep">--</span></div>
+            <div>POS: <span id="disp-pos">--</span></div>
+        </div>
+        <div class="stat-box" id="hud-target" style="display:none; border-color: var(--term-alert);">
+            <div><strong>// TARGET LOCK</strong></div>
+            <div id="target-name">--</div>
+            <div id="target-hp">--</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    /* * ════════════════════════════════════════════════════════════════════
+     * TLE ENGINE V1.0 // "Protocol Runner"
+     * ════════════════════════════════════════════════════════════════════
+     */
+
+    // --- 1. DATA MANIFEST (The Codex) ---
+    const CODEX = {
+        adventure: {
+            title: "The Silence Between Frames",
+            start_node: "zone_entrance",
+            nodes: {
+                "zone_entrance": {
+                    id: "zone_entrance",
+                    name: "The Glitch Horizon",
+                    desc: "You stand at the edge of the Weeping Repository. The forest behind you is organic; the world ahead is wireframe and silent. A 'Drifter' corpse lies at the threshold.",
+                    type: "exploration",
+                    map_type: "organic_split",
+                    enemies: [],
+                    exits: { "east": "zone_hallway" }
+                },
+                "zone_hallway": {
+                    id: "zone_hallway",
+                    name: "The White Hall",
+                    desc: "Infinite white marble. Frictionless floor. Two entities made of static block the path.",
+                    type: "combat",
+                    map_type: "corridor_clean",
+                    enemies: ["margin_walker", "margin_walker"],
+                    exits: { "west": "zone_entrance", "north": "zone_archive" }
+                },
+                "zone_archive": {
+                    id: "zone_archive",
+                    name: "Archive of Erased Pasts",
+                    desc: "Shelves stretch into a white void. A massive construct scans the books.",
+                    type: "boss",
+                    map_type: "arena_grid",
+                    enemies: ["the_proofreader"],
+                    exits: { "south": "zone_hallway" }
+                }
+            }
+        },
+        bestiary: {
+            "margin_walker": { 
+                name: "Margin Walker", hp: 22, max_hp: 22, ac: 13, 
+                stats: { str: 10, dex: 16 },
+                attacks: [{name: "Static Shank", hit: 5, dmg: "1d6+3"}],
+                color: "#ff0055", size: 15, z_reach: 5
+            },
+            "the_proofreader": { 
+                name: "The Proofreader", hp: 45, max_hp: 45, ac: 15, 
+                stats: { str: 18, dex: 8 },
+                attacks: [{name: "Gavel Strike", hit: 6, dmg: "1d10+4"}],
+                color: "#ffffff", size: 30, z_reach: 10
+            }
+        },
+        player: {
+            hp: 30, max_hp: 30,
+            ep: 20, max_ep: 20, // Entropy Pool
+            ac: 14,
+            stats: { phys: 12, prec: 16, logic: 14, emp: 10 },
+            pos: { x: 0, y: 0, z: 0 }, // 3D Coordinates
+            inventory: ["Unfinished Sentence (Dagger)", "Vial of Raw Glitch"]
+        }
+    };
+
+    // --- 2. ENGINE STATE ---
+    const STATE = {
+        currentNode: null,
+        combat: {
+            active: false,
+            round: 0,
+            turnOrder: [],
+            currentTurnIndex: 0
+        },
+        entities: [], // Array of active entities (enemies + player)
+        logs: []
+    };
+
+    // --- 3. TERMINAL I/O ---
+    const output = document.getElementById('output-area');
+    const input = document.getElementById('cmd-input');
+
+    input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            const cmd = input.value.trim();
+            if (cmd) {
+                print(`> ${cmd}`, "command-echo");
+                parseCommand(cmd);
+                input.value = '';
+            }
+        }
+    });
+
+    function print(text, type="line") {
+        const div = document.createElement('div');
+        div.className = `line ${type}`;
+        div.textContent = text;
+        output.appendChild(div);
+        output.scrollTop = output.scrollHeight;
+        return div; // Return for typing effect usage
+    }
+
+    function typeWriter(text, type="narrative") {
+        const div = document.createElement('div');
+        div.className = `line ${type} typing`;
+        output.appendChild(div);
+        let i = 0;
+        const speed = 10;
+        function tick() {
+            if (i < text.length) {
+                div.textContent += text.charAt(i);
+                i++;
+                output.scrollTop = output.scrollHeight;
+                requestAnimationFrame(tick);
+            } else {
+                div.classList.remove('typing');
+            }
+        }
+        tick();
+    }
+
+    // --- 4. GAME LOGIC ---
+
+    function initGame() {
+        print("/// TLE_KERNEL_V1.0.4 BOOT SEQUENCE...", "system");
+        print("/// LOADING CODEX... OK.", "system");
+        setTimeout(() => {
+            loadNode(CODEX.adventure.start_node);
+        }, 1000);
+        
+        // Start Canvas Loop
+        requestAnimationFrame(renderLoop);
+    }
+
+    function loadNode(nodeId) {
+        const node = CODEX.adventure.nodes[nodeId];
+        STATE.currentNode = node;
+        
+        // Reset Player Pos relative to new room (centerish)
+        CODEX.player.pos = { x: 400, y: 300, z: 0 };
+
+        // Spawn Enemies
+        STATE.entities = [];
+        if (node.enemies.length > 0) {
+            node.enemies.forEach((enemyId, index) => {
+                const template = CODEX.bestiary[enemyId];
+                // Clone enemy data
+                const inst = JSON.parse(JSON.stringify(template));
+                inst.id = `enemy_${index}`;
+                // Random position
+                inst.pos = { 
+                    x: 600 + (Math.random() * 200), 
+                    y: 200 + (Math.random() * 400), 
+                    z: 0 
+                };
+                STATE.entities.push(inst);
+            });
+            print(`WARNING: ${STATE.entities.length} HOSTILES DETECTED.`, "alert");
+        }
+
+        typeWriter(node.name + "\n" + node.desc);
+        updateHUD();
+    }
+
+    function parseCommand(raw) {
+        const cmd = raw.toLowerCase().split(' ');
+        const verb = cmd[0];
+
+        // MOVEMENT
+        if (['north', 'south', 'east', 'west', 'n', 's', 'e', 'w'].includes(verb) || (verb === 'go' && cmd[1])) {
+            handleMove(verb === 'go' ? cmd[1] : verb);
+            return;
+        }
+
+        // FLYING (Z-AXIS)
+        if (verb === 'fly' || verb === 'ascend') {
+            if (CODEX.player.ep >= 1) {
+                CODEX.player.pos.z += 10;
+                CODEX.player.ep -= 1;
+                print(`Gravity defied. Altitude: ${CODEX.player.pos.z}ft. (Cost 1 EP)`, "system");
+            } else {
+                print("Insufficient Entropy to defy physics.", "alert");
+            }
+            updateHUD();
+            return;
+        }
+        if (verb === 'land' || verb === 'descend') {
+            CODEX.player.pos.z = Math.max(0, CODEX.player.pos.z - 10);
+            print(`Descending. Altitude: ${CODEX.player.pos.z}ft.`, "system");
+            updateHUD();
+            return;
+        }
+
+        // COMBAT
+        if (verb === 'attack') {
+            handleCombatAction("attack", cmd[1]); // target name
+            return;
+        }
+        if (verb === 'scan') {
+            print(`SCANNING AREA...`, "system");
+            STATE.entities.forEach(e => {
+                print(`TARGET: ${e.name} | HP: ${e.hp} | POS: [${Math.floor(e.pos.x)}, ${Math.floor(e.pos.y)}, ${e.pos.z}]`, "combat");
+            });
+            return;
+        }
+
+        // SYSTEM
+        if (verb === 'help') {
+            print("COMMANDS: GO [DIR], FLY/LAND, ATTACK [TARGET], SCAN, STATUS, INVENTORY");
+            return;
+        }
+        if (verb === 'status') {
+            print(`HP: ${CODEX.player.hp} | EP: ${CODEX.player.ep} | ALT: ${CODEX.player.pos.z}`, "narrative");
+            return;
+        }
+
+        print("Command not recognized. Syntax error in reality.");
+    }
+
+    function handleMove(dir) {
+        // Simple room transition logic or coordinate shift
+        const step = 50;
+        if (dir.startsWith('n')) CODEX.player.pos.y -= step;
+        if (dir.startsWith('s')) CODEX.player.pos.y += step;
+        if (dir.startsWith('e')) CODEX.player.pos.x += step;
+        if (dir.startsWith('w')) CODEX.player.pos.x -= step;
+
+        print(`Moved ${dir}. Pos: ${CODEX.player.pos.x}, ${CODEX.player.pos.y}`);
+        
+        // Check Exits (Simplified check)
+        const node = STATE.currentNode;
+        if (dir.startsWith('e') && CODEX.player.pos.x > 750 && node.exits.east) {
+            loadNode(node.exits.east);
+        }
+        if (dir.startsWith('w') && CODEX.player.pos.x < 50 && node.exits.west) {
+            loadNode(node.exits.west);
+        }
+    }
+
+    function handleCombatAction(action, targetName) {
+        if (STATE.entities.length === 0) {
+            print("No targets in range.");
+            return;
+        }
+
+        // Simple targeting: defaulting to first enemy or matching name
+        let target = STATE.entities[0];
+        
+        // Roll to hit
+        const d20 = Math.floor(Math.random() * 20) + 1;
+        const bonus = Math.floor((CODEX.player.stats.prec - 10) / 2); // D&D style mod
+        const total = d20 + bonus;
+
+        print(`Attacking ${target.name}... rolled ${d20} + ${bonus} = ${total}`);
+
+        if (total >= target.ac) {
+            const dmg = Math.floor(Math.random() * 6) + 3; // Dagger dmg
+            target.hp -= dmg;
+            print(`HIT! Dealt ${dmg} damage.`, "term-green");
+            if (target.hp <= 0) {
+                print(`${target.name} is deleted from existence.`, "narrative");
+                STATE.entities = STATE.entities.filter(e => e !== target);
+            }
+        } else {
+            print("MISS. Your attack passed through the geometry.", "alert");
+        }
+
+        // Enemy Retaliation (Auto-turn for now)
+        setTimeout(enemyTurn, 1000);
+    }
+
+    function enemyTurn() {
+        if (STATE.entities.length === 0) return;
+
+        STATE.entities.forEach(enemy => {
+            print(`${enemy.name} moves to engage...`, "combat");
+            
+            // Check Reach (Z-axis check)
+            const altDiff = Math.abs(enemy.pos.z - CODEX.player.pos.z);
+            if (altDiff > (enemy.z_reach || 5)) {
+                print(`${enemy.name} cannot reach you at this altitude!`, "narrative");
+                return;
+            }
+
+            // Attack Logic
+            const attack = enemy.attacks[0];
+            const d20 = Math.floor(Math.random() * 20) + 1;
+            const hit = d20 + attack.hit;
+            
+            if (hit >= CODEX.player.ac) {
+                // Parse "1d6+3" simply
+                const dmg = Math.floor(Math.random() * 6) + 3;
+                CODEX.player.hp -= dmg;
+                print(`${enemy.name} hits you with ${attack.name} for ${dmg} damage!`, "alert");
+            } else {
+                print(`${enemy.name} misses you.`);
+            }
+        });
+        updateHUD();
+    }
+
+    function updateHUD() {
+        document.getElementById('disp-hp').textContent = CODEX.player.hp;
+        document.getElementById('disp-ep').textContent = CODEX.player.ep;
+        document.getElementById('disp-pos').textContent = `[${CODEX.player.pos.x}, ${CODEX.player.pos.y}, ${CODEX.player.pos.z}]`;
+    }
+
+    // --- 5. VISUALIZER (Canvas) ---
+    const canvas = document.getElementById('mapCanvas');
+    const ctx = canvas.getContext('2d');
+    
+    function resizeCanvas() {
+        canvas.width = document.getElementById('visual-panel').offsetWidth;
+        canvas.height = document.getElementById('visual-panel').offsetHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function renderLoop() {
+        // Clear
+        ctx.fillStyle = "#111";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Draw Map Grid (Perspective Mockup)
+        drawGrid();
+
+        // Draw Entities
+        STATE.entities.forEach(ent => drawEntity(ent));
+
+        // Draw Player
+        drawPlayer();
+
+        requestAnimationFrame(renderLoop);
+    }
+
+    function drawGrid() {
+        ctx.strokeStyle = "#222";
+        ctx.lineWidth = 1;
+        
+        // Floor Grid
+        for (let x = 0; x < canvas.width; x += 50) {
+            ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke();
+        }
+        for (let y = 0; y < canvas.height; y += 50) {
+            ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke();
+        }
+    }
+
+    function drawEntity(ent) {
+        ctx.save();
+        // Shadow (Ground level)
+        ctx.fillStyle = "rgba(0,0,0,0.5)";
+        ctx.beginPath();
+        ctx.ellipse(ent.pos.x, ent.pos.y, 15, 8, 0, 0, Math.PI*2);
+        ctx.fill();
+
+        // Entity Body (floating based on Z?)
+        // Enemies generally grounded in this version
+        ctx.fillStyle = ent.color || "#f00";
+        
+        // Glitch Effect (Jitter)
+        const dx = (Math.random() - 0.5) * 4;
+        const dy = (Math.random() - 0.5) * 4;
+        
+        ctx.translate(ent.pos.x + dx, ent.pos.y + dy - ent.pos.z); // Z pushes up
+        
+        // Draw Shape
+        ctx.fillRect(-10, -30, 20, 30);
+        
+        // Health Bar
+        ctx.fillStyle = "red";
+        ctx.fillRect(-15, -45, 30, 4);
+        ctx.fillStyle = "#0f0";
+        const hpPct = Math.max(0, ent.hp / ent.max_hp);
+        ctx.fillRect(-15, -45, 30 * hpPct, 4);
+
+        ctx.restore();
+    }
+
+    function drawPlayer() {
+        const p = CODEX.player.pos;
+        ctx.save();
+        
+        // Shadow (stays on ground y)
+        ctx.fillStyle = "rgba(50, 255, 50, 0.3)";
+        ctx.beginPath();
+        ctx.ellipse(p.x, p.y, 20, 10, 0, 0, Math.PI*2);
+        ctx.fill();
+
+        // Connector line if flying
+        if (p.z > 0) {
+            ctx.strokeStyle = "rgba(50, 255, 50, 0.5)";
+            ctx.setLineDash([5, 5]);
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(p.x, p.y - p.z);
+            ctx.stroke();
+            ctx.setLineDash([]);
+        }
+
+        // Player Icon (Triangle)
+        ctx.translate(p.x, p.y - p.z);
+        ctx.fillStyle = "#33ff33";
+        ctx.beginPath();
+        ctx.moveTo(0, -15);
+        ctx.lineTo(10, 10);
+        ctx.lineTo(-10, 10);
+        ctx.fill();
+
+        ctx.restore();
+    }
+
+    // Start
+    initGame();
+
+</script>
+</body>
+</html>

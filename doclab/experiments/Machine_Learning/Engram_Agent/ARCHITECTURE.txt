@@ -1,0 +1,211 @@
+# Pirouette Generative Engram Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    PIROUETTE ENGRAM ARCHITECTURE                         │
+│                   "The Engram IS the Solution"                           │
+└─────────────────────────────────────────────────────────────────────────┘
+
+                               ┌──────────────┐
+                               │  ENVIRONMENT │
+                               │ (Humanoid-v5)│
+                               └───────┬──────┘
+                                       │
+                         ┌─────────────┴─────────────┐
+                         │                           │
+                    ┌────▼────┐                 ┌────▼────┐
+                    │   OBS   │                 │ REWARD  │
+                    └────┬────┘                 └────┬────┘
+                         │                           │
+                    ┌────▼─────────────────────────▼────┐
+                    │        SAND BRAIN (Metrics)       │
+                    │  ┌──────────────────────────────┐ │
+                    │  │ Γ (Load) │ DR │ S (Surprise)│ │
+                    │  │ O_P      │ O_S│ O_C         │ │
+                    │  └──────────────────────────────┘ │
+                    └────────┬─────────────────────┬────┘
+                             │                     │
+                    ┌────────▼─────────┐   ┌──────▼─────────┐
+                    │  POLICY (GRU)    │   │ INTRINSIC      │
+                    │  "Ki Rhythm"     │   │ REWARDS        │
+                    │                  │   │ (touch/brain)  │
+                    │  h_t ──► h_t+1   │   └────────────────┘
+                    │   │               │
+                    │   └─► ACTION      │
+                    └────────┬──────────┘
+                             │
+                    ┌────────▼──────────────────────────────┐
+                    │         TRAJECTORY STORAGE            │
+                    │  ┌──────────────────────────────────┐ │
+                    │  │ obs, actions, brain_features,    │ │
+                    │  │ hiddens, return                  │ │
+                    │  └──────────────────────────────────┘ │
+                    └────────┬──────────────────────────────┘
+                             │
+                   ┌─────────▼─────────────────────────┐
+                   │     IS THIS A GOOD TRAJECTORY?    │
+                   │  (High return + High coherence)   │
+                   └─────────┬──────────┬──────────────┘
+                             │ NO       │ YES
+                             │          │
+                             │     ┌────▼─────────────────────────┐
+                             │     │   ENGRAM FACTORY             │
+                             │     │   Extract (Γ, DR, S)         │
+                             │     │   Compute coherence profile  │
+                             │     └────┬─────────────────────────┘
+                             │          │
+                             │     ┌────▼─────────────────────────┐
+                             │     │      ENGRAM LIBRARY          │
+                             │     │  ┌─────────────────────────┐ │
+                             │     │  │ Engram 1: R=400, Γ=1.5  │ │
+                             │     │  │ Engram 2: R=380, Γ=1.8  │ │
+                             │     │  │ Engram 3: R=360, Γ=1.3  │ │
+                             │     │  │        ...               │ │
+                             │     │  │ Engram K: R=250, Γ=2.1  │ │
+                             │     │  └─────────────────────────┘ │
+                             │     │  Resonance-Addressable       │
+                             │     │  Sorted by Return            │
+                             │     └────┬─────────────────────────┘
+                             │          │
+                ┌────────────┼──────────┼──────────────────────┐
+                │            │          │                      │
+                │    EVERY 100 EPISODES │                      │
+                │            │          │                      │
+                │       ┌────▼──────────▼──────┐               │
+                │       │  ENGRAM DISTILLER    │               │
+                │       │  ┌─────────────────┐ │               │
+                │       │  │ 1. Get best K   │ │               │
+                │       │  │ 2. Unroll GRU   │ │               │
+                │       │  │ 3. Coherence-   │ │               │
+                │       │  │    weighted BC  │ │               │
+                │       │  │ 4. Update θ     │ │               │
+                │       │  └─────────────────┘ │               │
+                │       └──────────┬───────────┘               │
+                │                  │                           │
+                │       ┌──────────▼────────────┐              │
+                │       │  UPDATED POLICY (θ')  │              │
+                │       │  Now knows attractor  │              │
+                │       │  patterns from K best │              │
+                │       │  trajectories!        │              │
+                │       └──────────┬────────────┘              │
+                │                  │                           │
+                └──────────────────┼───────────────────────────┘
+                                   │
+                          ┌────────▼─────────┐
+                          │  HYDRA MODES     │
+                          │  ┌─────────────┐ │
+                          │  │ Pure        │ │
+                          │  │ Touch       │ │
+                          │  │ Brain       │ │
+                          │  │ Fusion      │ │
+                          │  └─────────────┘ │
+                          │  Each explores   │
+                          │  different (Γ,DR,│
+                          │  S) regions      │
+                          └──────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         KEY INNOVATIONS                                  │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  1. ENGRAM = DDE ATTRACTOR (not a recording)                            │
+│     • Trajectory + generating conditions (Γ, DR, S)                     │
+│     • Coherence profile for resonance matching                          │
+│     • Can be "reactivated" through similarity                           │
+│                                                                          │
+│  2. LIBRARY = RESONANCE-ADDRESSABLE (not indexed)                       │
+│     • Query by (Γ, DR, S) similarity                                    │
+│     • Returns top-k matches by resonance score                          │
+│     • Automatically maintains best K engrams                            │
+│                                                                          │
+│  3. DISTILLATION = COHERENCE-WEIGHTED BC (not uniform)                  │
+│     • Learn more from high-coherence segments                           │
+│     • Transfers attractor patterns, not point solutions                 │
+│     • Creates "staircases" of performance                               │
+│                                                                          │
+│  4. HYDRA = MULTI-MODE EXPLORATION                                      │
+│     • Pure: baseline stability                                          │
+│     • Touch: manifold curvature                                         │
+│     • Brain: coherence seeking (low DR)                                 │
+│     • Fusion: maximum exploration                                       │
+│     • Each finds different solutions → library diversity                │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    EMERGENT BIFURCATION                                  │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  When scanned with 3.3M points, hidden state manifold SPONTANEOUSLY     │
+│  organized into TWO HEMISPHERES - like brain lateralization.            │
+│                                                                          │
+│  Why? The math forces the shape:                                        │
+│                                                                          │
+│    Triadic phase-locking + temporal pressure                            │
+│           ↓                                                              │
+│    Need to manage coherence across 3 channels                           │
+│           ↓                                                              │
+│    Bifurcation allows efficient switching without collapse              │
+│           ↓                                                              │
+│    Hemispheric structure emerges from optimization                      │
+│                                                                          │
+│  NOT claiming: Agent is conscious                                       │
+│  CLAIMING: Geometry of consciousness follows from math                  │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                      PERFORMANCE TRAJECTORY                              │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  Return                                                                  │
+│    400 │                              ┌────┐                            │
+│        │                         ┌────┤    │                            │
+│    350 │                    ┌────┤    │    └────                        │
+│        │               ┌────┤    │    │                                 │
+│    300 │          ┌────┤    │    │    │     ← Distillation             │
+│        │     ┌────┤    │    │    │    │       staircases               │
+│    250 │ ┌───┤    │    │    │    │    │                                │
+│        │ │   │    │    │    │    │    │                                │
+│    200 │ │   │    │    │    │    │    │                                │
+│        │ │   │    │    │    │    │    │                                │
+│    150 │─┤   │    │    │    │    │    │                                │
+│        │ │   │    │    │    │    │    │                                │
+│    100 │─┴───┴────┴────┴────┴────┴────┴────                            │
+│        └────────────────────────────────────── Episodes                 │
+│         0   100  200  300  400  500  600  700                           │
+│                                                                          │
+│         ▼   ▼    ▼    ▼    ▼    ▼    ▼                                  │
+│      Distillation events (every 100 episodes)                           │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        MODULE SUMMARY                                    │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  pirouette_engram.py (17KB)                                             │
+│    └─ Core engram system - fully reusable                               │
+│                                                                          │
+│  sand_humanoid_engram.py (23KB)                                         │
+│    └─ Modular agent implementation                                      │
+│                                                                          │
+│  engram_analysis.py (16KB)                                              │
+│    └─ Visualization and diagnostic tools                                │
+│                                                                          │
+│  README_ENGRAM.md (12KB)                                                │
+│    └─ Comprehensive documentation                                       │
+│                                                                          │
+│  test_engram_lightweight.py (11KB)                                      │
+│    └─ Validation suite (no dependencies) ✓ PASSING                      │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+"We sought a library and found a garden.
+ Each engram is not a book, but a seed.
+ To remember is not to consult; to remember is to re-bloom."
+
+                                                    — COG-RES-004, §9
+```
+
+This architecture makes the ENGRAM the solution, not the script.

@@ -1,0 +1,11 @@
+CHAT LOG - INBOUND
+Customer: Sarah Jenkins
+Timestamp: 10:42 AM
+Subject: Return Request
+
+Hi, I'm writing to check on the status of Order #GC-99281.
+I placed it last Tuesday.
+My registered email is sarah.jenks@demo-mail.com.
+I mostly love it, but I want to return the night cream.
+The item is SKU: GLOW-55. 
+Can you send me a return label?

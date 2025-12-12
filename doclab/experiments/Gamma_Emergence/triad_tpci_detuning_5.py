@@ -165,7 +165,8 @@ def process_file(eeg_path, ev_path, out_path, existing_results, args):
             print(f"  -> Processing triad {triad_tuple} at load {L}...") # <-- MODIFIED: Added progress indicator
             
             idx = np.where(loads == L)[0]
-            if len(idx) < 5:
+            if len(idx) < 2:
+                print(f"     .. skipping load {L} (only {len(idx)} epochs)")
                 continue
             
             # <-- MODIFIED: Load only the data needed for this condition from disk
@@ -235,6 +236,8 @@ def main():
     ap.add_argument("--eeg-path", required=True, help="Path to the EEG file (.bdf, .set, .edf)")
     ap.add_argument("--events-path", required=True, help="Path to the corresponding events.tsv file")
     ap.add_argument("--outdir", required=True, help="Output directory for JSON result file")
+    ap.add_argument("--min-epochs", type=int, default=2, help="Minimum epochs per load/triad to compute TPCI (default 2)")
+
     
     # --- All other arguments from original script remain the same ---
     ap.add_argument("--roi", nargs="*", default=None, help="ROI channels (e.g., O1 O2 Oz POz)")

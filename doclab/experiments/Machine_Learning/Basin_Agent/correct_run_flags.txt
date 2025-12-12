@@ -1,0 +1,173 @@
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent> python basin_extractor.py "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Gamma_Emergence\derivatives\pirouette_gamma" --output-dir . --eps 0.6 --min-samples 100
+
+======================================================================
+COHERENCE BASIN EXTRACTOR
+======================================================================
+
+Manifold directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Gamma_Emergence\derivatives\pirouette_gamma
+Output directory: .
+Load condition: high
+DBSCAN parameters: eps=0.6, min_samples=100
+Loading 11 manifold files...
+  ✓ Loaded manifold (NB)
+  ✓ Loaded manifold (NB)
+  ✓ Loaded manifold (NB)
+  ✓ Loaded manifold (NB)
+  ✓ Loaded manifold (NB)
+  ✓ Loaded manifold (NB)
+  ✓ Loaded manifold (NB)
+  ✓ Loaded manifold (NB)
+  ✓ Loaded manifold (NB)
+  ✓ Loaded manifold (NB)
+  ✓ Loaded manifold (NB)
+
+Successfully loaded 11 manifolds.
+
+Extracted 70074 coherence points from 11 subjects.
+
+======================================================================
+BASIN IDENTIFICATION
+======================================================================
+
+Running DBSCAN (eps=0.6, min_samples=100)...
+  ✓ Found 7 basins
+  ✓ Noise points: 64913 (92.6%)
+
+Computing basin metrics...
+
+  Basin 0:
+    Points: 1765
+    Coherence: 0.019 ± 0.010
+    Temporal span: 0.55s
+    Freq bandwidth: 3.01 Hz
+    Transition rate: 0.337
+
+  Basin 1:
+    Points: 1061
+    Coherence: 0.008 ± 0.005
+    Temporal span: 0.33s
+    Freq bandwidth: 4.22 Hz
+    Transition rate: 0.342
+
+  Basin 2:
+    Points: 1775
+    Coherence: 0.033 ± 0.008
+    Temporal span: 0.51s
+    Freq bandwidth: 3.09 Hz
+    Transition rate: 0.349
+
+  Basin 3:
+    Points: 173
+    Coherence: 0.031 ± 0.007
+    Temporal span: 0.20s
+    Freq bandwidth: 1.43 Hz
+    Transition rate: 0.312
+
+  Basin 4:
+    Points: 117
+    Coherence: 0.052 ± 0.006
+    Temporal span: 0.29s
+    Freq bandwidth: 1.13 Hz
+    Transition rate: 0.333
+
+  Basin 5:
+    Points: 100
+    Coherence: 0.043 ± 0.005
+    Temporal span: 0.23s
+    Freq bandwidth: 1.21 Hz
+    Transition rate: 0.380
+
+  Basin 6:
+    Points: 170
+    Coherence: 0.027 ± 0.005
+    Temporal span: 0.23s
+    Freq bandwidth: 1.41 Hz
+    Transition rate: 0.406
+
+======================================================================
+STRATEGY CLASSIFICATION
+======================================================================
+
+  Basin 0 → NAVIGATOR
+    Temporal persistence: 0.55s
+    Transition rate: 0.337
+    Coherence: 0.019
+
+  Basin 1 → NAVIGATOR
+    Temporal persistence: 0.33s
+    Transition rate: 0.342
+    Coherence: 0.008
+
+  Basin 2 → NAVIGATOR
+    Temporal persistence: 0.51s
+    Transition rate: 0.349
+    Coherence: 0.033
+
+  Basin 3 → SAMPLER
+    Temporal persistence: 0.20s
+    Transition rate: 0.312
+    Coherence: 0.031
+
+  Basin 4 → SAMPLER
+    Temporal persistence: 0.29s
+    Transition rate: 0.333
+    Coherence: 0.052
+
+  Basin 5 → SAMPLER
+    Temporal persistence: 0.23s
+    Transition rate: 0.380
+    Coherence: 0.043
+
+  Basin 6 → SAMPLER
+    Temporal persistence: 0.23s
+    Transition rate: 0.406
+    Coherence: 0.027
+
+======================================================================
+BUILDING POPULATION LANDSCAPE
+======================================================================
+
+Gridding 70074 points onto 50³ grid...
+  ✓ Landscape grid shape: (50, 50, 50)
+  ✓ Mean coherence: 0.007
+  ✓ Coherence range: [0.002, 0.037]
+
+======================================================================
+EXPORTING BASIN STRUCTURE
+======================================================================
+
+✓ Basin structure saved to: basin_structure.json
+
+======================================================================
+GENERATING VISUALIZATIONS
+======================================================================
+
+1. Basin distribution (PCA projection)...
+  ✓ Saved: basin_pca.png
+
+2. Subject-strategy composition...
+  ✓ Saved: subject_strategies.png
+
+3. Coherence potential landscape...
+  ✓ Saved: landscape_2d.png
+
+4. Basin metrics comparison...
+  ✓ Saved: basin_metrics.png
+
+✓ All visualizations complete!
+
+✓ Feature dataframe saved to: coherence_features.csv
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================
+
+Results saved to: .
+
+Generated files:
+  - basin_structure.json (for sand agent)
+  - coherence_features.csv (full dataset)
+  - basin_pca.png
+  - subject_strategies.png
+  - landscape_2d.png
+  - basin_metrics.png

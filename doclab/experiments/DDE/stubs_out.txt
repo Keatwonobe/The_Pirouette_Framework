@@ -1,0 +1,173 @@
+---
+id: CLOSURE-ENTH-001_AUTH-BRIDGE
+title: Idea Manifold Bridge near (0,0)
+version: 0.1-dde
+domain: INST-AUTH-MAP
+status: draft
+parents: ['CLOSURE-ENTH-001']
+created_at: 2025-11-05T08:51:59.914245
+origin_tile: (0,0)
+score: 0.1000
+engram:
+  - inst:auth-map-001
+  - dde:auto-emitted
+  - origin:(0,0)
+---
+## Purpose
+Automatic bridge module emitted by DDE-Pirouette's idea-manifold survey
+to reduce local dark residue and increase neighbor coherence.
+
+## Context
+This tile scored high on dark residue or low neighbor density relative to the atlas.
+Existing module here: CLOSURE-ENTH-001
+
+## Task
+Describe the missing connective tissue between this module and its immediate neighbors.
+Specify:
+- Γ/Ki deltas to be resolved
+- expected temporal adherence (Tₐ)
+- closure style (core, dome, or lattice-bridging)
+- validation path for this bridge
+
+## Notes
+This stub was generated for API content streams; safe to expand.
+
+
+---
+id: CORE-014_THE_FRACTAL_BRIDGE_AUTH-BRIDGE
+title: Idea Manifold Bridge near (20,0)
+version: 0.1-dde
+domain: INST-AUTH-MAP
+status: draft
+parents: ['CORE-014_THE_FRACTAL_BRIDGE']
+created_at: 2025-11-05T08:51:59.914245
+origin_tile: (20,0)
+score: 0.1000
+engram:
+  - inst:auth-map-001
+  - dde:auto-emitted
+  - origin:(20,0)
+---
+## Purpose
+Automatic bridge module emitted by DDE-Pirouette's idea-manifold survey
+to reduce local dark residue and increase neighbor coherence.
+
+## Context
+This tile scored high on dark residue or low neighbor density relative to the atlas.
+Existing module here: CORE-014_THE_FRACTAL_BRIDGE
+
+## Task
+Describe the missing connective tissue between this module and its immediate neighbors.
+Specify:
+- Γ/Ki deltas to be resolved
+- expected temporal adherence (Tₐ)
+- closure style (core, dome, or lattice-bridging)
+- validation path for this bridge
+
+## Notes
+This stub was generated for API content streams; safe to expand.
+
+
+---
+id: XXP-006_KI_IN_PULSARS_AUTH-BRIDGE
+title: Idea Manifold Bridge near (0,19)
+version: 0.1-dde
+domain: INST-AUTH-MAP
+status: draft
+parents: ['XXP-006_KI_IN_PULSARS']
+created_at: 2025-11-05T08:51:59.914245
+origin_tile: (0,19)
+score: 0.1000
+engram:
+  - inst:auth-map-001
+  - dde:auto-emitted
+  - origin:(0,19)
+---
+## Purpose
+Automatic bridge module emitted by DDE-Pirouette's idea-manifold survey
+to reduce local dark residue and increase neighbor coherence.
+
+## Context
+This tile scored high on dark residue or low neighbor density relative to the atlas.
+Existing module here: XXP-006_KI_IN_PULSARS
+
+## Task
+Describe the missing connective tissue between this module and its immediate neighbors.
+Specify:
+- Γ/Ki deltas to be resolved
+- expected temporal adherence (Tₐ)
+- closure style (core, dome, or lattice-bridging)
+- validation path for this bridge
+
+## Notes
+This stub was generated for API content streams; safe to expand.
+
+
+---
+id: XXP-005_FINDING_KI_IN_TEXT_AUTH-BRIDGE
+title: Idea Manifold Bridge near (20,18)
+version: 0.1-dde
+domain: INST-AUTH-MAP
+status: draft
+parents: ['XXP-005_FINDING_KI_IN_TEXT']
+created_at: 2025-11-05T08:51:59.914245
+origin_tile: (20,18)
+score: 0.0500
+engram:
+  - inst:auth-map-001
+  - dde:auto-emitted
+  - origin:(20,18)
+---
+## Purpose
+Automatic bridge module emitted by DDE-Pirouette's idea-manifold survey
+to reduce local dark residue and increase neighbor coherence.
+
+## Context
+This tile scored high on dark residue or low neighbor density relative to the atlas.
+Existing module here: XXP-005_FINDING_KI_IN_TEXT
+
+## Task
+Describe the missing connective tissue between this module and its immediate neighbors.
+Specify:
+- Γ/Ki deltas to be resolved
+- expected temporal adherence (Tₐ)
+- closure style (core, dome, or lattice-bridging)
+- validation path for this bridge
+
+## Notes
+This stub was generated for API content streams; safe to expand.
+
+
+---
+id: XXP-QED-EXP_TIME_FIRST_QED_AUTH-BRIDGE
+title: Idea Manifold Bridge near (19,19)
+version: 0.1-dde
+domain: INST-AUTH-MAP
+status: draft
+parents: ['XXP-QED-EXP_TIME_FIRST_QED']
+created_at: 2025-11-05T08:51:59.914245
+origin_tile: (19,19)
+score: 0.0500
+engram:
+  - inst:auth-map-001
+  - dde:auto-emitted
+  - origin:(19,19)
+---
+## Purpose
+Automatic bridge module emitted by DDE-Pirouette's idea-manifold survey
+to reduce local dark residue and increase neighbor coherence.
+
+## Context
+This tile scored high on dark residue or low neighbor density relative to the atlas.
+Existing module here: XXP-QED-EXP_TIME_FIRST_QED
+
+## Task
+Describe the missing connective tissue between this module and its immediate neighbors.
+Specify:
+- Γ/Ki deltas to be resolved
+- expected temporal adherence (Tₐ)
+- closure style (core, dome, or lattice-bridging)
+- validation path for this bridge
+
+## Notes
+This stub was generated for API content streams; safe to expand.

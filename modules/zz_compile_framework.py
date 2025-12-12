@@ -57,7 +57,7 @@ def main():
     print(f"Script location identified: {script_dir}")
     
     # Define the output file path relative to the script's directory
-    output_filename = "pirouette_version_6.md"
+    output_filename = "pirouette_version_7.md"
     output_filepath = os.path.join(script_dir, output_filename)
     
     # --- FILE DISCOVERY ---

@@ -1,0 +1,186 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                    UNIVERSAL AGENT ASSISTANT ARCHITECTURE                     ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                          AGENT'S BROWSER INTERFACE                            │
+├────────────────────┬─────────────────────────┬─────────────────────────────────┤
+│                    │                         │                                 │
+│  KNOWLEDGE STREAM  │    AGENT BUDDY CHAT     │   X-RAY TRANSPARENCY PANEL     │
+│  ┌──────────────┐  │   ┌───────────────────┐ │   ┌──────────────────────────┐ │
+│  │ 🔥 Fraud     │  │   │ Agent: How do I   │ │   │ LAYER 1: Agent Profile  │ │
+│  │    Alert (3) │  │   │ handle fraud?     │ │   │ • Name: Alex Chen        │ │
+│  ├──────────────┤  │   ├───────────────────┤ │   │ • Focus: Confidence      │ │
+│  │ 🔍 Password  │  │   │ AI: Here's what   │ │   ├──────────────────────────┤ │
+│  │    Reset     │  │   │ to say: "I've     │ │   │ LAYER 2: Client Context  │ │
+│  ├──────────────┤  │   │ secured your..."  │ │   │ • Brand: NeoBank         │ │
+│  │ Order Status │  │   └───────────────────┘ │   │ • Tone: Professional     │ │
+│  └──────────────┘  │   [Type question...]    │   ├──────────────────────────┤ │
+│                    │                         │   │ LAYER 3: Live Context    │ │
+│  Auto-triggered    │   Conversational        │   │ • Transcript: "fraud..." │ │
+│  by keywords       │   context maintained    │   ├──────────────────────────┤ │
+│                    │                         │   │ LAYER 4: Available SOPs  │ │
+│                    │                         │   │ • Fraud Alert: 1,2,3...  │ │
+│                    │                         │   └──────────────────────────┘ │
+└────────────────────┴─────────────────────────┴─────────────────────────────────┘
+                                     │
+                                     │ HTTP(S)
+                                     ▼
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                        UNIFIED APPLICATION SERVER                             │
+│                        (universal_agent_app.py)                              │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                               │
+│  ┌─────────────────────┐  ┌──────────────────────┐  ┌────────────────────┐  │
+│  │ File Server Thread  │  │ Speech Recognition   │  │  Main UI Thread    │  │
+│  │ (Port 8765)         │  │ Background Thread    │  │  (Streamlit)       │  │
+│  │                     │  │                      │  │                    │  │
+│  │ Serves KB files     │  │ Listens via virtual  │  │ Renders interface  │  │
+│  │ (.html, .md)        │  │ audio cable          │  │ Manages state      │  │
+│  │                     │  │                      │  │ Handles requests   │  │
+│  └─────────────────────┘  └──────────────────────┘  └────────────────────┘  │
+│           │                         │                         │              │
+│           │                    Queue-based                    │              │
+│           │                  communication                    │              │
+│           └─────────────────────────┴─────────────────────────┘              │
+│                                     │                                        │
+│  ┌──────────────────────────────────▼──────────────────────────────────┐    │
+│  │                    CONTEXT ASSEMBLY ENGINE                          │    │
+│  │                                                                      │    │
+│  │  build_pilot_document_components()                                  │    │
+│  │  ┌────────────┐  ┌────────────┐  ┌────────────┐  ┌──────────────┐  │    │
+│  │  │   Layer 1  │→ │   Layer 2  │→ │   Layer 3  │→ │   Layer 4    │  │    │
+│  │  │   Agent    │  │   Client   │  │    Live    │  │     SOPs     │  │    │
+│  │  └────────────┘  └────────────┘  └────────────┘  └──────────────┘  │    │
+│  │                                     │                                │    │
+│  │                                     ▼                                │    │
+│  │                    ┌────────────────────────────────┐               │    │
+│  │                    │   AI Prompt Generator          │               │    │
+│  │                    │   (Structured Prompt)          │               │    │
+│  │                    └────────────────────────────────┘               │    │
+│  └──────────────────────────────────────────────────────────────────────    │
+│                                     │                                        │
+└─────────────────────────────────────┼────────────────────────────────────────┘
+                                      │ API Call
+                                      ▼
+                    ┌──────────────────────────────────┐
+                    │   GOOGLE GEMINI AI               │
+                    │   (gemini-1.5-flash)             │
+                    │                                  │
+                    │   Generates:                     │
+                    │   • Script (what to say)         │
+                    │   • Verify (data to confirm)     │
+                    │   • Next Steps (guidance)        │
+                    │   • Upsell (opportunities)       │
+                    └──────────────────────────────────┘
+                                      │
+                                      │ Response
+                                      ▼
+                    ┌──────────────────────────────────┐
+                    │   Display to Agent               │
+                    │   • In Agent Buddy Chat          │
+                    │   • Components in X-Ray Panel    │
+                    └──────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                          KNOWLEDGE BASE LAYER                                 │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                               │
+│  Knowledge_Base/                                                              │
+│  ├── NeoBank/                         ← Client-specific folders              │
+│  │   ├── Fraud_Alert_Protocol.md      ← Markdown source                      │
+│  │   ├── Fraud_Alert_Protocol.html    ← Styled HTML for display             │
+│  │   ├── Password_Reset_Guide.md                                            │
+│  │   └── Password_Reset_Guide.html                                          │
+│  └── GlowCosmetics/                                                          │
+│      ├── Order_Status_Tracking.md                                           │
+│      ├── Order_Status_Tracking.html                                         │
+│      └── Returns_Exchange_Policy.md                                         │
+│                                                                               │
+│  ┌─────────────────────────────────────────────────────────────────┐        │
+│  │ SEARCH ALGORITHM:                                                │        │
+│  │ 1. Extract keywords from query (remove stopwords)                │        │
+│  │ 2. Score each file:                                              │        │
+│  │    • Content match: +1 point                                     │        │
+│  │    • Filename match: +3 points (higher relevance)                │        │
+│  │ 3. Sort by score, return top 5                                   │        │
+│  │ 4. Track frequency for trending issues                           │        │
+│  └─────────────────────────────────────────────────────────────────┘        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                           DATA FLOW EXAMPLE                                   │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                               │
+│  1. Agent asks: "Customer reporting fraud charges"                            │
+│                      │                                                        │
+│                      ▼                                                        │
+│  2. Context Assembly:                                                         │
+│     • Load agent profile: "Alex Chen (L1, new hire)"                         │
+│     • Load client config: "NeoBank (Professional tone)"                      │
+│     • Include agent question                                                 │
+│     • Fetch SOPs: "Fraud Alert procedure"                                    │
+│                      │                                                        │
+│                      ▼                                                        │
+│  3. Search Knowledge Base:                                                    │
+│     • Keywords: ["customer", "fraud", "charges"]                             │
+│     • Finds: "Fraud_Alert_Protocol.md" (score: 9)                           │
+│     • Adds to Knowledge Stream with 🔥 indicator                             │
+│                      │                                                        │
+│                      ▼                                                        │
+│  4. Generate AI Response:                                                     │
+│     • Combines all 4 layers into prompt                                      │
+│     • Sends to Gemini API                                                    │
+│     • Receives structured guidance                                           │
+│                      │                                                        │
+│                      ▼                                                        │
+│  5. Display to Agent:                                                         │
+│     • Script: "I've secured your account right now..."                       │
+│     • Verify: [Last 3 transactions]                                          │
+│     • Next: "Issue provisional credit"                                       │
+│     • X-Ray: Shows all 4 component layers                                    │
+│                                                                               │
+│  Total latency: ~2-3 seconds                                                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                         SECURITY & DEPLOYMENT                                 │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                               │
+│  DEMO SETUP (Current):                                                        │
+│  • Runs on localhost (127.0.0.1)                                             │
+│  • No network exposure                                                        │
+│  • Knowledge base = local files                                              │
+│  • No authentication required                                                │
+│                                                                               │
+│  PRODUCTION SETUP (Recommended):                                              │
+│  • Deploy behind Azure AD authentication                                      │
+│  • Knowledge Base → SharePoint/OneDrive                                      │
+│  • Permissions managed via Microsoft 365                                     │
+│  • HTTPS with proper SSL certificates                                        │
+│  • Audit logging for all queries                                             │
+│  • Load balancer for multiple instances                                      │
+│                                                                               │
+│  DEPLOYMENT OPTIONS:                                                          │
+│  1. Individual Agent PCs (desktop app)                                       │
+│  2. Central Server + Browser Access                                          │
+│  3. Docker Container (cloud deployment)                                      │
+│                                                                               │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                            KEY BENEFITS                                       ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║                                                                               ║
+║  ✅ TRANSPARENT AI: X-Ray shows exactly how decisions are made               ║
+║  ✅ CONTEXT-AWARE: Adapts to agent skill level and client brand              ║
+║  ✅ REAL-TIME: Knowledge surfaces automatically during calls                 ║
+║  ✅ PRACTICAL: Works with existing KB, integrates with your systems          ║
+║  ✅ SECURE: Ready for enterprise auth and compliance requirements            ║
+║  ✅ SCALABLE: Single agent PC to enterprise-wide deployment                  ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝

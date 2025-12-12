@@ -1,3 +1,11 @@
 
 # Automatically added by sync script for large files
 *.csv
+
+# Automatically added by sync script for large files
+*.gif
+*.ply
+*.u8
+*.json
+*.db
+*.fits

@@ -1,0 +1,231 @@
+---
+#───────────── The Lost Eternal ──────────────────────
+id: TLE-ARC-003
+title: The Phantom
+version: 1.0-consolidated
+parents: [TLE-000]
+children: []
+engrams:
+ - templates:phantom
+keywords: [character creation, body plan, attributes, TLE]
+uncertainty_tag: Low
+module_type: core-rulebook-consolidated
+---
+Module TLE-ARC-003: The Phantom (Rogue Archetype)
+This document outlines the level-by-level progression of a "Phantom"—a rogue archetype who masters the arts of stealth, skill, and precision. The Phantom is a balanced combatant who invests in Dexterity, Intelligence, and Wisdom, forgoing overwhelming power for tactical superiority and the ability to strike where the enemy is weakest.
+
+Progression Milestones:
+
+Level 1: Total Entropy Pool (TEP) of 35 EP
+
+Level 5: TEP of 95 EP (35 + 4x15)
+
+Level 10: TEP of 170 EP (35 + 9x15)
+
+Level 15: TEP of 245 EP (35 + 14x15)
+
+Level 20: TEP of 335 EP (35 + 19x15)
+
+Level 1: The Urchin (35 TEP)
+The Urchin is a survivor, relying on their wits and quick feet. Their Entropy is invested in a balanced, adaptable foundation.
+
+Attribute Investment (17 EP):
+
+Strength: 2 EP
+
+Dexterity: 6 EP
+
+Constitution: 3 EP
+
+Intelligence: 4 EP
+
+Wisdom: 2 EP
+
+Attribute Scores & Modifiers:
+
+STR Score: 1 (Mod +0)
+
+DEX Score: 3 (Mod +0)
+
+CON Score: 1 (Mod +0)
+
+INT Score: 2 (Mod +0)
+
+WIS Score: 1 (Mod +0)
+
+Physical Form (18 EP):
+
+Humanoid, Standard template (18 EP)
+
+Derived Max HP: 7 HP (1 from Torso + 6 from Limbs)
+
+Remaining TEP: 0 EP
+
+Level 5: The Cutpurse (95 TEP)
+The Cutpurse has honed their skills in the shadows. They've begun to invest in specialized abilities and have a clear focus on Dexterity and awareness.
+
+Attribute Investment (57 EP):
+
+Strength: 5 EP
+
+Dexterity: 20 EP
+
+Constitution: 10 EP
+
+Intelligence: 12 EP
+
+Wisdom: 10 EP
+
+Attribute Scores & Modifiers:
+
+STR Score: 2 (Mod +0)
+
+DEX Score: 10 (Mod +2)
+
+CON Score: 5 (Mod +1)
+
+INT Score: 6 (Mod +1)
+
+WIS Score: 5 (Mod +1)
+
+Physical Form & Feats (38 EP):
+
+Humanoid, Standard form: 18 EP
+
+Feat: Entropic Stride (10 EP): Enhances movement efficiency.
+
+Skill Pool: "Subterfuge": 10 EP (A dedicated pool for stealth, lockpicking, etc.)
+
+Derived Max HP: 7 HP
+
+Remaining TEP: 0 EP
+
+Level 10: The Infiltrator (170 TEP)
+The Infiltrator is a master of their craft, able to bypass defenses both physical and social. Their investment in mental attributes now rivals their physical prowess.
+
+Attribute Investment (110 EP):
+
+Strength: 10 EP
+
+Dexterity: 40 EP
+
+Constitution: 15 EP
+
+Intelligence: 25 EP
+
+Wisdom: 20 EP
+
+Attribute Scores & Modifiers:
+
+STR Score: 5 (Mod +1)
+
+DEX Score: 20 (Mod +5)
+
+CON Score: 7 (Mod +1)
+
+INT Score: 12 (Mod +3)
+
+WIS Score: 10 (Mod +2)
+
+Physical Form & Feats (60 EP):
+
+Humanoid, Standard form: 18 EP
+
+Feat: Entropic Stride: 10 EP
+
+Feat: Wound Channel Analyst (10 EP): You can spend an action and make an Intelligence check to identify a target's Wound Channels (narrative weaknesses). On a success, your next attack against that target that exploits the wound deals bonus damage equal to your INT modifier.
+
+Skill Pool: "Subterfuge": 22 EP
+
+Derived Max HP: 7 HP
+
+Remaining TEP: 0 EP
+
+Level 15: The Assassin (245 TEP)
+The Assassin is a predator who dictates the terms of engagement. They are a blur of motion, a whisper in the dark, and a flash of steel.
+
+Attribute Investment (165 EP):
+
+Strength: 10 EP
+
+Dexterity: 65 EP
+
+Constitution: 20 EP
+
+Intelligence: 40 EP
+
+Wisdom: 30 EP
+
+Attribute Scores & Modifiers:
+
+STR Score: 5 (Mod +1)
+
+DEX Score: 32 (Mod +8)
+
+CON Score: 10 (Mod +2)
+
+INT Score: 20 (Mod +5)
+
+WIS Score: 15 (Mod +3)
+
+Physical Form & Feats (80 EP):
+
+Humanoid, Standard form: 18 EP
+
+Feats: 20 EP (Entropic Stride, Wound Channel Analyst)
+
+Skill Pool: "Subterfuge": 42 EP
+
+Derived Max HP: 7 HP
+
+Remaining TEP: 0 EP
+
+Level 20: The Phantom (335 TEP)
+The Phantom is a ghost, a rumor, a legend. They move through the world unseen, their will a subtle but irresistible force. They have achieved a perfect balance of physical grace, tactical genius, and intuitive insight.
+
+Attribute Investment (225 EP):
+
+Strength: 10 EP
+
+Dexterity: 90 EP
+
+Constitution: 25 EP
+
+Intelligence: 60 EP
+
+Wisdom: 40 EP
+
+Attribute Scores & Modifiers:
+
+STR Score: 5 (Mod +1)
+
+DEX Score: 45 (Mod +11)
+
+CON Score: 12 (Mod +3)
+
+INT Score: 30 (Mod +7)
+
+WIS Score: 20 (Mod +5)
+
+Physical Form & Feats (110 EP):
+
+Humanoid, Standard form: 18 EP
+
+Feats: 20 EP (Entropic Stride, Wound Channel Analyst)
+
+Skill Pool: "Subterfuge": 72 EP
+
+Derived Max HP: 7 HP
+
+Remaining TEP: 0 EP
+
+Level 20 Summary: Combat Strategy
+The Level 20 Phantom is a master of tactical combat, excelling at control, precision, and exploiting enemy weaknesses.
+
+Supreme Skill: The Phantom's greatest asset is their versatility. With an enormous "Subterfuge" pool of 72 EP and high mental modifiers, they can overcome almost any non-combat challenge, from impossible locks to tense negotiations. Their +11 DEX Modifier makes them incredibly accurate and difficult to hit.
+
+The Analyst's Strike: A Phantom's core combat loop is to first observe, then strike. Using their Wound Channel Analyst feat, they use their +7 INT Modifier to identify an enemy's narrative or physical weakness. Their next attack is a precision strike, often from stealth, that can cripple or eliminate a key target in a single blow.
+
+Master of the Battlefield: Unlike the Juggernaut who plows through obstacles, or the Arcanist who reshapes the field with raw power, the Phantom uses the environment as it is. Their high DEX and WIS allow them to move unseen, create diversions, and use social stealth (TLE-009) to turn enemies against each other. They win by outthinking and outmaneuvering their opponents.
+
+Weaknesses: While not as fragile as the Arcanist, the Phantom is not a front-line brawler. With only 7 HP and a low STR, they cannot withstand sustained, direct assault. Their strategy relies on avoiding fair fights, controlling the engagement, and ensuring that by the time the enemy knows they are there, the battle is already over.

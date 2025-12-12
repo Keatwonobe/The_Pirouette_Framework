@@ -1,0 +1,1610 @@
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Basin_Agent> python sand_humanoid_hybrid_3.py --basin-json basin_structure.json
+Using device: cuda
+FIT-in-a-Box models will be saved in: ./fractal_intelligence_transfer_models/
+
+=== Hydra Humanoid Orchestrator ===
+Modes: ['pure', 'touch', 'brain', 'fusion']
+Device: cuda
+
+
+Basin Prior Loaded:
+  N basins: 7
+    Basin 0 (navigator): p=0.342
+    Basin 1 (navigator): p=0.206
+    Basin 2 (navigator): p=0.344
+    Basin 3 (sampler): p=0.034
+    Basin 4 (sampler): p=0.023
+    Basin 5 (sampler): p=0.019
+    Basin 6 (sampler): p=0.033
+
+Basin Prior Loaded:
+  N basins: 7
+    Basin 0 (navigator): p=0.342
+    Basin 1 (navigator): p=0.206
+    Basin 2 (navigator): p=0.344
+    Basin 3 (sampler): p=0.034
+    Basin 4 (sampler): p=0.023
+    Basin 5 (sampler): p=0.019
+    Basin 6 (sampler): p=0.033
+
+Basin Prior Loaded:
+  N basins: 7
+    Basin 0 (navigator): p=0.342
+    Basin 1 (navigator): p=0.206
+    Basin 2 (navigator): p=0.344
+    Basin 3 (sampler): p=0.034
+    Basin 4 (sampler): p=0.023
+    Basin 5 (sampler): p=0.019
+    Basin 6 (sampler): p=0.033
+
+Basin Prior Loaded:
+  N basins: 7
+    Basin 0 (navigator): p=0.342
+    Basin 1 (navigator): p=0.206
+    Basin 2 (navigator): p=0.344
+    Basin 3 (sampler): p=0.034
+    Basin 4 (sampler): p=0.023
+    Basin 5 (sampler): p=0.019
+    Basin 6 (sampler): p=0.033
+   ↳ [Hydra] New global plateau: 146.2 (mode=pure)
+[pure  ] Ep 0001 | EnvRet:   146.2 | Loss:    -3.302 | DR: 1.000 | Γ: 1.665
+[touch ] Ep 0002 | EnvRet:   114.6 | Loss:    -3.548 | DR: 0.886 | Γ: 1.624
+[brain ] Ep 0003 | EnvRet:    89.7 | Loss:     0.967 | DR: 0.928 | Γ: 1.731
+[fusion] Ep 0004 | EnvRet:   101.8 | Loss:     5.009 | DR: 0.889 | Γ: 1.575
+[pure  ] Ep 0005 | EnvRet:   143.3 | Loss:    -1.444 | DR: 0.926 | Γ: 1.455
+   ↳ [Hydra] New global plateau: 149.1 (mode=touch)
+[touch ] Ep 0006 | EnvRet:   149.1 | Loss:    -6.598 | DR: 1.000 | Γ: 1.751
+   ↳ [Hydra] New global plateau: 227.3 (mode=brain)
+[brain ] Ep 0007 | EnvRet:   227.3 | Loss:   -38.017 | DR: 0.836 | Γ: 1.619
+[fusion] Ep 0008 | EnvRet:    90.5 | Loss:   -13.442 | DR: 0.951 | Γ: 2.000
+[pure  ] Ep 0009 | EnvRet:   124.9 | Loss:   -34.481 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0010 | EnvRet:   190.1 | Loss:   -26.979 | DR: 0.950 | Γ: 1.562
+[brain ] Ep 0011 | EnvRet:   150.4 | Loss:   -14.228 | DR: 0.947 | Γ: 1.473
+[fusion] Ep 0012 | EnvRet:    95.7 | Loss:   -22.206 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0013 | EnvRet:    87.6 | Loss:     6.024 | DR: 0.963 | Γ: 2.000
+[touch ] Ep 0014 | EnvRet:   146.4 | Loss:    -0.061 | DR: 0.919 | Γ: 2.000
+   ↳ [Hydra] New global plateau: 243.4 (mode=brain)
+[brain ] Ep 0015 | EnvRet:   243.4 | Loss:     1.648 | DR: 0.976 | Γ: 2.000
+[fusion] Ep 0016 | EnvRet:   163.0 | Loss:   -24.826 | DR: 0.805 | Γ: 2.000
+[pure  ] Ep 0017 | EnvRet:   126.5 | Loss:   -42.285 | DR: 0.934 | Γ: 2.000
+[touch ] Ep 0018 | EnvRet:   144.4 | Loss:   -26.627 | DR: 0.861 | Γ: 2.000
+[brain ] Ep 0019 | EnvRet:   193.5 | Loss:   -37.219 | DR: 1.000 | Γ: 1.464
+[fusion] Ep 0020 | EnvRet:   180.3 | Loss:   -51.611 | DR: 1.000 | Γ: 1.756
+[pure  ] Ep 0021 | EnvRet:    99.5 | Loss:   -10.686 | DR: 0.920 | Γ: 1.535
+   ↳ [Hydra] New global plateau: 246.5 (mode=touch)
+[touch ] Ep 0022 | EnvRet:   246.5 | Loss:   -23.617 | DR: 1.000 | Γ: 1.590
+[brain ] Ep 0023 | EnvRet:    99.2 | Loss:   -22.435 | DR: 1.000 | Γ: 1.665
+[fusion] Ep 0024 | EnvRet:   179.6 | Loss:   -93.061 | DR: 0.986 | Γ: 1.771
+[pure  ] Ep 0025 | EnvRet:    95.4 | Loss:   -16.681 | DR: 1.000 | Γ: 1.685
+[touch ] Ep 0026 | EnvRet:   177.4 | Loss:   -46.856 | DR: 0.946 | Γ: 1.509
+[brain ] Ep 0027 | EnvRet:   188.0 | Loss:   -67.081 | DR: 1.000 | Γ: 1.442
+[fusion] Ep 0028 | EnvRet:    95.6 | Loss:   -51.300 | DR: 1.000 | Γ: 1.717
+[pure  ] Ep 0029 | EnvRet:   194.5 | Loss:   -72.599 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0030 | EnvRet:   112.6 | Loss:   -43.245 | DR: 0.896 | Γ: 1.768
+[brain ] Ep 0031 | EnvRet:    95.3 | Loss:   -24.157 | DR: 0.906 | Γ: 1.511
+[fusion] Ep 0032 | EnvRet:   199.9 | Loss:   -81.302 | DR: 1.000 | Γ: 1.666
+[pure  ] Ep 0033 | EnvRet:   135.5 | Loss:   -18.971 | DR: 0.917 | Γ: 1.725
+[touch ] Ep 0034 | EnvRet:    98.2 | Loss:   -19.657 | DR: 0.970 | Γ: 1.581
+[brain ] Ep 0035 | EnvRet:   106.5 | Loss:   -35.030 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0036 | EnvRet:   111.7 | Loss:   -47.108 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0037 | EnvRet:   159.2 | Loss:   -64.566 | DR: 0.928 | Γ: 2.000
+[touch ] Ep 0038 | EnvRet:   111.3 | Loss:   -20.877 | DR: 0.991 | Γ: 1.485
+[brain ] Ep 0039 | EnvRet:    97.2 | Loss:   -23.965 | DR: 0.927 | Γ: 1.670
+   ↳ [Hydra] New global plateau: 261.6 (mode=fusion)
+[fusion] Ep 0040 | EnvRet:   261.6 | Loss:   -46.152 | DR: 0.891 | Γ: 2.000
+[pure  ] Ep 0041 | EnvRet:   179.8 | Loss:   -55.390 | DR: 0.985 | Γ: 2.000
+[touch ] Ep 0042 | EnvRet:   144.1 | Loss:   -32.871 | DR: 0.913 | Γ: 1.757
+[brain ] Ep 0043 | EnvRet:   135.1 | Loss:   -23.875 | DR: 1.000 | Γ: 1.688
+[fusion] Ep 0044 | EnvRet:   115.9 | Loss:   -95.677 | DR: 0.759 | Γ: 1.713
+[pure  ] Ep 0045 | EnvRet:   107.3 | Loss:   -60.025 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0046 | EnvRet:   121.4 | Loss:   -63.660 | DR: 1.000 | Γ: 1.454
+[brain ] Ep 0047 | EnvRet:   146.1 | Loss:   -63.458 | DR: 1.000 | Γ: 1.456
+[fusion] Ep 0048 | EnvRet:   138.3 | Loss:   -41.947 | DR: 0.857 | Γ: 1.632
+[pure  ] Ep 0049 | EnvRet:   127.5 | Loss:   -45.730 | DR: 1.000 | Γ: 1.477
+[touch ] Ep 0050 | EnvRet:   133.0 | Loss:   -49.721 | DR: 0.926 | Γ: 2.000
+[brain ] Ep 0051 | EnvRet:   162.6 | Loss:   -94.903 | DR: 0.974 | Γ: 2.000
+[fusion] Ep 0052 | EnvRet:   113.9 | Loss:   -72.169 | DR: 1.000 | Γ: 1.501
+[pure  ] Ep 0053 | EnvRet:   140.0 | Loss:   -61.990 | DR: 0.911 | Γ: 1.602
+[touch ] Ep 0054 | EnvRet:   172.6 | Loss:   -77.689 | DR: 1.000 | Γ: 1.535
+[brain ] Ep 0055 | EnvRet:   118.1 | Loss:   -82.464 | DR: 1.000 | Γ: 1.636
+[fusion] Ep 0056 | EnvRet:   118.6 | Loss:   -52.241 | DR: 0.904 | Γ: 1.698
+[pure  ] Ep 0057 | EnvRet:    95.8 | Loss:   -26.557 | DR: 1.000 | Γ: 1.545
+[touch ] Ep 0058 | EnvRet:   180.7 | Loss:   -69.470 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0059 | EnvRet:   159.9 | Loss:   -54.017 | DR: 0.981 | Γ: 1.668
+[fusion] Ep 0060 | EnvRet:   137.2 | Loss:   -55.549 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0061 | EnvRet:   186.4 | Loss:   -39.758 | DR: 0.768 | Γ: 1.601
+[touch ] Ep 0062 | EnvRet:   107.1 | Loss:   -35.108 | DR: 0.908 | Γ: 1.423
+[brain ] Ep 0063 | EnvRet:   164.8 | Loss:  -123.630 | DR: 1.000 | Γ: 1.394
+[fusion] Ep 0064 | EnvRet:   140.7 | Loss:   -49.694 | DR: 0.938 | Γ: 2.000
+[pure  ] Ep 0065 | EnvRet:   134.2 | Loss:   -29.863 | DR: 0.919 | Γ: 1.597
+[touch ] Ep 0066 | EnvRet:   104.0 | Loss:   -29.007 | DR: 0.963 | Γ: 2.000
+[brain ] Ep 0067 | EnvRet:   124.8 | Loss:   -85.370 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0068 | EnvRet:   144.0 | Loss:   -23.183 | DR: 0.974 | Γ: 1.657
+[pure  ] Ep 0069 | EnvRet:   149.9 | Loss:   -36.111 | DR: 1.000 | Γ: 1.613
+[touch ] Ep 0070 | EnvRet:   109.2 | Loss:   -43.621 | DR: 1.000 | Γ: 1.423
+[brain ] Ep 0071 | EnvRet:    95.8 | Loss:   -70.706 | DR: 0.934 | Γ: 1.302
+[fusion] Ep 0072 | EnvRet:   201.6 | Loss:   -95.681 | DR: 0.768 | Γ: 1.487
+[pure  ] Ep 0073 | EnvRet:   138.7 | Loss:   -96.183 | DR: 0.841 | Γ: 2.000
+[touch ] Ep 0074 | EnvRet:   107.7 | Loss:   -27.135 | DR: 0.920 | Γ: 1.682
+[brain ] Ep 0075 | EnvRet:   125.6 | Loss:   -66.703 | DR: 0.993 | Γ: 2.000
+[fusion] Ep 0076 | EnvRet:   138.5 | Loss:   -68.002 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0077 | EnvRet:   152.0 | Loss:   -37.765 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0078 | EnvRet:   110.1 | Loss:   -62.975 | DR: 0.975 | Γ: 1.697
+[brain ] Ep 0079 | EnvRet:   152.2 | Loss:   -42.438 | DR: 1.000 | Γ: 1.402
+[fusion] Ep 0080 | EnvRet:    95.0 | Loss:   -29.784 | DR: 0.924 | Γ: 1.599
+[pure  ] Ep 0081 | EnvRet:   185.5 | Loss:   -81.648 | DR: 1.000 | Γ: 1.618
+[touch ] Ep 0082 | EnvRet:   115.5 | Loss:   -64.434 | DR: 1.000 | Γ: 1.670
+[brain ] Ep 0083 | EnvRet:   110.9 | Loss:   -63.030 | DR: 1.000 | Γ: 1.543
+[fusion] Ep 0084 | EnvRet:   135.7 | Loss:   -71.790 | DR: 0.951 | Γ: 2.000
+[pure  ] Ep 0085 | EnvRet:    90.2 | Loss:   -16.734 | DR: 0.950 | Γ: 1.522
+[touch ] Ep 0086 | EnvRet:   122.0 | Loss:   -43.629 | DR: 1.000 | Γ: 1.602
+[brain ] Ep 0087 | EnvRet:   110.6 | Loss:   -33.477 | DR: 0.883 | Γ: 2.000
+[fusion] Ep 0088 | EnvRet:   152.0 | Loss:   -41.741 | DR: 0.974 | Γ: 1.613
+[pure  ] Ep 0089 | EnvRet:   104.7 | Loss:   -27.890 | DR: 0.986 | Γ: 1.728
+[touch ] Ep 0090 | EnvRet:   182.4 | Loss:   -74.839 | DR: 1.000 | Γ: 2.000
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=261.6)
+[brain ] Ep 0091 | EnvRet:   101.3 | Loss:  -101.018 | DR: 0.976 | Γ: 1.495
+[fusion] Ep 0092 | EnvRet:   210.1 | Loss:   -37.171 | DR: 1.000 | Γ: 1.607
+[pure  ] Ep 0093 | EnvRet:    96.2 | Loss:   -79.154 | DR: 0.952 | Γ: 2.000
+[touch ] Ep 0094 | EnvRet:   210.7 | Loss:   -79.103 | DR: 0.866 | Γ: 1.535
+[brain ] Ep 0095 | EnvRet:   133.4 | Loss:   -44.957 | DR: 0.845 | Γ: 1.596
+[fusion] Ep 0096 | EnvRet:   148.0 | Loss:   -90.678 | DR: 0.986 | Γ: 2.000
+[pure  ] Ep 0097 | EnvRet:   146.6 | Loss:   -56.773 | DR: 0.964 | Γ: 2.000
+[touch ] Ep 0098 | EnvRet:   180.0 | Loss:   -57.161 | DR: 0.832 | Γ: 1.541
+[brain ] Ep 0099 | EnvRet:   163.5 | Loss:  -128.292 | DR: 0.877 | Γ: 1.615
+[fusion] Ep 0100 | EnvRet:   130.7 | Loss:   -45.455 | DR: 0.934 | Γ: 1.475
+[pure  ] Ep 0101 | EnvRet:   180.0 | Loss:   -46.130 | DR: 0.871 | Γ: 2.000
+[touch ] Ep 0102 | EnvRet:   137.8 | Loss:   -61.238 | DR: 0.993 | Γ: 2.000
+[brain ] Ep 0103 | EnvRet:   110.1 | Loss:   -18.825 | DR: 1.000 | Γ: 1.586
+[fusion] Ep 0104 | EnvRet:   144.9 | Loss:   -98.773 | DR: 0.988 | Γ: 1.646
+[pure  ] Ep 0105 | EnvRet:   143.5 | Loss:   -67.956 | DR: 0.897 | Γ: 2.000
+[touch ] Ep 0106 | EnvRet:   139.3 | Loss:   -26.907 | DR: 1.000 | Γ: 1.503
+[brain ] Ep 0107 | EnvRet:   100.7 | Loss:   -57.995 | DR: 1.000 | Γ: 1.580
+[fusion] Ep 0108 | EnvRet:   110.4 | Loss:   -62.286 | DR: 0.879 | Γ: 1.602
+[pure  ] Ep 0109 | EnvRet:   155.1 | Loss:   -33.667 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0110 | EnvRet:   132.0 | Loss:   -85.954 | DR: 1.000 | Γ: 1.510
+[brain ] Ep 0111 | EnvRet:   148.2 | Loss:   -81.855 | DR: 0.914 | Γ: 2.000
+[fusion] Ep 0112 | EnvRet:   169.6 | Loss:    -4.782 | DR: 0.878 | Γ: 2.000
+[pure  ] Ep 0113 | EnvRet:   204.3 | Loss:  -118.596 | DR: 0.841 | Γ: 1.480
+[touch ] Ep 0114 | EnvRet:   167.7 | Loss:   -43.514 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0115 | EnvRet:   124.7 | Loss:   -56.335 | DR: 0.844 | Γ: 2.000
+[fusion] Ep 0116 | EnvRet:   154.6 | Loss:   -69.447 | DR: 1.000 | Γ: 1.679
+[pure  ] Ep 0117 | EnvRet:   117.7 | Loss:   -42.754 | DR: 0.940 | Γ: 2.000
+[touch ] Ep 0118 | EnvRet:   102.3 | Loss:   -35.544 | DR: 0.917 | Γ: 1.544
+[brain ] Ep 0119 | EnvRet:   143.5 | Loss:  -113.216 | DR: 0.862 | Γ: 1.647
+[fusion] Ep 0120 | EnvRet:   192.0 | Loss:   -31.076 | DR: 0.971 | Γ: 2.000
+[pure  ] Ep 0121 | EnvRet:   116.9 | Loss:   -39.836 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0122 | EnvRet:   101.3 | Loss:   -31.755 | DR: 0.821 | Γ: 2.000
+[brain ] Ep 0123 | EnvRet:   144.4 | Loss:   -95.903 | DR: 0.857 | Γ: 1.578
+[fusion] Ep 0124 | EnvRet:   120.1 | Loss:   -43.576 | DR: 0.949 | Γ: 1.713
+[pure  ] Ep 0125 | EnvRet:   144.0 | Loss:   -90.971 | DR: 0.901 | Γ: 1.343
+[touch ] Ep 0126 | EnvRet:   150.6 | Loss:   -25.272 | DR: 0.934 | Γ: 1.701
+[brain ] Ep 0127 | EnvRet:    90.2 | Loss:   -12.727 | DR: 1.000 | Γ: 1.651
+[fusion] Ep 0128 | EnvRet:   115.8 | Loss:   -59.830 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0129 | EnvRet:   169.6 | Loss:  -124.250 | DR: 0.853 | Γ: 1.536
+[touch ] Ep 0130 | EnvRet:   180.7 | Loss:   -84.734 | DR: 1.000 | Γ: 1.493
+[brain ] Ep 0131 | EnvRet:    84.5 | Loss:    -7.403 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0132 | EnvRet:   189.3 | Loss:   -95.859 | DR: 0.843 | Γ: 1.538
+[pure  ] Ep 0133 | EnvRet:   103.1 | Loss:   -46.272 | DR: 1.000 | Γ: 1.706
+[touch ] Ep 0134 | EnvRet:   157.3 | Loss:   -13.942 | DR: 0.971 | Γ: 1.474
+[brain ] Ep 0135 | EnvRet:   146.3 | Loss:   -36.403 | DR: 0.827 | Γ: 2.000
+[fusion] Ep 0136 | EnvRet:   154.7 | Loss:   -99.237 | DR: 1.000 | Γ: 1.637
+[pure  ] Ep 0137 | EnvRet:    98.4 | Loss:   -52.992 | DR: 1.000 | Γ: 1.502
+[touch ] Ep 0138 | EnvRet:   150.7 | Loss:   -37.481 | DR: 0.923 | Γ: 2.000
+[brain ] Ep 0139 | EnvRet:   174.5 | Loss:   -54.914 | DR: 0.899 | Γ: 1.435
+[fusion] Ep 0140 | EnvRet:   168.4 | Loss:   -76.192 | DR: 0.890 | Γ: 2.000
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=261.6)
+[pure  ] Ep 0141 | EnvRet:   164.5 | Loss:   -56.480 | DR: 0.821 | Γ: 2.000
+[touch ] Ep 0142 | EnvRet:   169.4 | Loss:  -105.650 | DR: 0.954 | Γ: 2.000
+[brain ] Ep 0143 | EnvRet:   166.2 | Loss:     0.059 | DR: 0.963 | Γ: 1.682
+[fusion] Ep 0144 | EnvRet:   127.6 | Loss:  -102.578 | DR: 0.936 | Γ: 1.612
+[pure  ] Ep 0145 | EnvRet:   173.1 | Loss:   -36.021 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0146 | EnvRet:   132.7 | Loss:  -114.556 | DR: 0.881 | Γ: 2.000
+[brain ] Ep 0147 | EnvRet:   174.7 | Loss:   -29.537 | DR: 0.902 | Γ: 2.000
+[fusion] Ep 0148 | EnvRet:   109.6 | Loss:   -27.006 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0149 | EnvRet:   147.4 | Loss:   -80.498 | DR: 0.914 | Γ: 2.000
+[touch ] Ep 0150 | EnvRet:   101.5 | Loss:   -58.099 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0151 | EnvRet:   100.5 | Loss:   -24.876 | DR: 0.955 | Γ: 1.508
+[fusion] Ep 0152 | EnvRet:   132.8 | Loss:   -61.514 | DR: 0.896 | Γ: 1.819
+[pure  ] Ep 0153 | EnvRet:   204.1 | Loss:  -113.685 | DR: 0.954 | Γ: 2.000
+[touch ] Ep 0154 | EnvRet:   139.4 | Loss:  -116.465 | DR: 0.816 | Γ: 1.437
+[brain ] Ep 0155 | EnvRet:    96.0 | Loss:   -70.948 | DR: 0.751 | Γ: 1.513
+[fusion] Ep 0156 | EnvRet:   160.6 | Loss:   -78.963 | DR: 1.000 | Γ: 1.547
+[pure  ] Ep 0157 | EnvRet:   159.3 | Loss:  -101.632 | DR: 0.827 | Γ: 2.000
+[touch ] Ep 0158 | EnvRet:   142.5 | Loss:   -81.362 | DR: 0.991 | Γ: 2.000
+[brain ] Ep 0159 | EnvRet:   159.9 | Loss:   -37.186 | DR: 0.868 | Γ: 1.759
+[fusion] Ep 0160 | EnvRet:   116.5 | Loss:   -73.276 | DR: 0.877 | Γ: 2.000
+[pure  ] Ep 0161 | EnvRet:    89.9 | Loss:   -35.036 | DR: 0.929 | Γ: 2.000
+[touch ] Ep 0162 | EnvRet:   101.9 | Loss:   -42.699 | DR: 1.000 | Γ: 1.497
+[brain ] Ep 0163 | EnvRet:   150.2 | Loss:   -72.951 | DR: 0.918 | Γ: 1.680
+[fusion] Ep 0164 | EnvRet:   222.0 | Loss:   -45.797 | DR: 0.897 | Γ: 1.716
+[pure  ] Ep 0165 | EnvRet:    83.5 | Loss:   -43.408 | DR: 0.925 | Γ: 1.702
+[touch ] Ep 0166 | EnvRet:   129.2 | Loss:   -33.086 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0167 | EnvRet:   175.5 | Loss:   -86.482 | DR: 0.935 | Γ: 1.611
+[fusion] Ep 0168 | EnvRet:    99.0 | Loss:   -20.493 | DR: 0.894 | Γ: 1.540
+[pure  ] Ep 0169 | EnvRet:   157.7 | Loss:   -59.650 | DR: 0.934 | Γ: 1.560
+[touch ] Ep 0170 | EnvRet:   162.4 | Loss:   -85.357 | DR: 0.752 | Γ: 2.000
+[brain ] Ep 0171 | EnvRet:   140.1 | Loss:   -61.571 | DR: 0.998 | Γ: 1.538
+[fusion] Ep 0172 | EnvRet:   132.3 | Loss:   -50.889 | DR: 0.979 | Γ: 2.000
+[pure  ] Ep 0173 | EnvRet:   123.2 | Loss:   -75.350 | DR: 0.967 | Γ: 1.565
+[touch ] Ep 0174 | EnvRet:   119.4 | Loss:   -43.597 | DR: 1.000 | Γ: 1.548
+[brain ] Ep 0175 | EnvRet:    90.3 | Loss:   -16.450 | DR: 1.000 | Γ: 1.715
+[fusion] Ep 0176 | EnvRet:    90.9 | Loss:   -12.931 | DR: 1.000 | Γ: 1.654
+[pure  ] Ep 0177 | EnvRet:   118.0 | Loss:   -36.821 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0178 | EnvRet:   137.1 | Loss:   -46.350 | DR: 1.000 | Γ: 1.591
+[brain ] Ep 0179 | EnvRet:   105.5 | Loss:   -73.672 | DR: 0.884 | Γ: 2.000
+[fusion] Ep 0180 | EnvRet:   164.8 | Loss:   -52.893 | DR: 1.000 | Γ: 1.667
+[pure  ] Ep 0181 | EnvRet:   123.8 | Loss:   -89.526 | DR: 1.000 | Γ: 1.490
+[touch ] Ep 0182 | EnvRet:   151.0 | Loss:   -62.039 | DR: 0.972 | Γ: 1.530
+[brain ] Ep 0183 | EnvRet:   144.2 | Loss:   -43.830 | DR: 0.928 | Γ: 1.756
+[fusion] Ep 0184 | EnvRet:   117.5 | Loss:   -40.958 | DR: 0.949 | Γ: 1.801
+[pure  ] Ep 0185 | EnvRet:   167.8 | Loss:   -17.096 | DR: 0.898 | Γ: 1.637
+[touch ] Ep 0186 | EnvRet:   183.8 | Loss:   -61.309 | DR: 0.975 | Γ: 1.598
+[brain ] Ep 0187 | EnvRet:   144.5 | Loss:   -77.769 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0188 | EnvRet:   191.9 | Loss:   -78.193 | DR: 0.994 | Γ: 1.661
+[pure  ] Ep 0189 | EnvRet:   123.6 | Loss:   -81.500 | DR: 0.864 | Γ: 1.406
+   ↳ [Hydra] New global plateau: 282.4 (mode=touch)
+[touch ] Ep 0190 | EnvRet:   282.4 | Loss:   -72.933 | DR: 0.973 | Γ: 1.606
+[brain ] Ep 0191 | EnvRet:   134.9 | Loss:  -112.154 | DR: 0.865 | Γ: 1.502
+[fusion] Ep 0192 | EnvRet:   172.0 | Loss:  -103.702 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0193 | EnvRet:   177.9 | Loss:  -171.835 | DR: 0.960 | Γ: 2.000
+[touch ] Ep 0194 | EnvRet:   180.5 | Loss:   -88.524 | DR: 0.881 | Γ: 1.657
+[brain ] Ep 0195 | EnvRet:   128.9 | Loss:   -43.219 | DR: 0.861 | Γ: 2.000
+[fusion] Ep 0196 | EnvRet:   133.3 | Loss:   -99.548 | DR: 0.964 | Γ: 1.631
+[pure  ] Ep 0197 | EnvRet:    89.5 | Loss:   -79.137 | DR: 0.942 | Γ: 1.712
+[touch ] Ep 0198 | EnvRet:   101.9 | Loss:  -121.658 | DR: 0.936 | Γ: 2.000
+[brain ] Ep 0199 | EnvRet:   169.7 | Loss:  -126.439 | DR: 1.000 | Γ: 1.522
+[fusion] Ep 0200 | EnvRet:   144.6 | Loss:   -12.285 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0201 | EnvRet:   212.6 | Loss:   -22.320 | DR: 0.802 | Γ: 2.000
+[touch ] Ep 0202 | EnvRet:    96.1 | Loss:   -21.218 | DR: 0.828 | Γ: 2.000
+[brain ] Ep 0203 | EnvRet:   104.2 | Loss:   -47.181 | DR: 0.967 | Γ: 2.000
+[fusion] Ep 0204 | EnvRet:   161.1 | Loss:  -158.551 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0205 | EnvRet:   153.4 | Loss:  -141.436 | DR: 0.994 | Γ: 2.000
+[touch ] Ep 0206 | EnvRet:   153.4 | Loss:   -53.574 | DR: 0.958 | Γ: 1.468
+[brain ] Ep 0207 | EnvRet:    95.5 | Loss:   -63.491 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0208 | EnvRet:   107.5 | Loss:  -145.178 | DR: 0.784 | Γ: 1.579
+[pure  ] Ep 0209 | EnvRet:   169.8 | Loss:  -188.787 | DR: 0.838 | Γ: 1.653
+[touch ] Ep 0210 | EnvRet:   193.8 | Loss:   -73.897 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0211 | EnvRet:   145.1 | Loss:   -56.594 | DR: 0.941 | Γ: 1.469
+[fusion] Ep 0212 | EnvRet:   118.0 | Loss:   -38.489 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0213 | EnvRet:   100.4 | Loss:   -91.754 | DR: 0.975 | Γ: 1.578
+[touch ] Ep 0214 | EnvRet:   128.7 | Loss:   -97.476 | DR: 0.985 | Γ: 1.625
+[brain ] Ep 0215 | EnvRet:   154.3 | Loss:  -152.043 | DR: 0.913 | Γ: 1.593
+[fusion] Ep 0216 | EnvRet:   154.4 | Loss:   -56.044 | DR: 0.884 | Γ: 1.566
+[pure  ] Ep 0217 | EnvRet:   103.9 | Loss:  -120.575 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0218 | EnvRet:   143.2 | Loss:  -155.880 | DR: 0.894 | Γ: 1.441
+[brain ] Ep 0219 | EnvRet:   137.1 | Loss:  -114.333 | DR: 0.889 | Γ: 2.000
+[fusion] Ep 0220 | EnvRet:   189.7 | Loss:  -149.562 | DR: 0.871 | Γ: 1.552
+[pure  ] Ep 0221 | EnvRet:   202.5 | Loss:   -62.027 | DR: 1.000 | Γ: 1.580
+[touch ] Ep 0222 | EnvRet:   177.0 | Loss:  -185.029 | DR: 0.954 | Γ: 1.617
+[brain ] Ep 0223 | EnvRet:   185.5 | Loss:  -180.906 | DR: 0.978 | Γ: 2.000
+[fusion] Ep 0224 | EnvRet:   144.5 | Loss:   -37.885 | DR: 0.992 | Γ: 1.627
+[pure  ] Ep 0225 | EnvRet:   118.0 | Loss:  -101.494 | DR: 1.000 | Γ: 1.582
+[touch ] Ep 0226 | EnvRet:   145.4 | Loss:  -129.018 | DR: 0.990 | Γ: 2.000
+[brain ] Ep 0227 | EnvRet:   155.9 | Loss:  -120.300 | DR: 1.000 | Γ: 1.458
+[fusion] Ep 0228 | EnvRet:   105.4 | Loss:   -67.863 | DR: 0.992 | Γ: 2.000
+[pure  ] Ep 0229 | EnvRet:   158.2 | Loss:  -106.250 | DR: 0.832 | Γ: 2.000
+[touch ] Ep 0230 | EnvRet:   119.7 | Loss:   -45.648 | DR: 0.988 | Γ: 1.668
+[brain ] Ep 0231 | EnvRet:   155.6 | Loss:   -16.272 | DR: 0.974 | Γ: 1.480
+[fusion] Ep 0232 | EnvRet:   143.9 | Loss:  -150.803 | DR: 0.937 | Γ: 1.527
+[pure  ] Ep 0233 | EnvRet:   130.8 | Loss:  -123.812 | DR: 0.974 | Γ: 1.429
+[touch ] Ep 0234 | EnvRet:   119.9 | Loss:  -125.603 | DR: 1.000 | Γ: 1.684
+[brain ] Ep 0235 | EnvRet:   125.0 | Loss:  -112.427 | DR: 0.989 | Γ: 2.000
+[fusion] Ep 0236 | EnvRet:   102.1 | Loss:  -125.414 | DR: 0.979 | Γ: 2.000
+[pure  ] Ep 0237 | EnvRet:   151.2 | Loss:  -134.692 | DR: 1.000 | Γ: 1.432
+[touch ] Ep 0238 | EnvRet:   131.0 | Loss:   -79.568 | DR: 0.995 | Γ: 1.624
+[brain ] Ep 0239 | EnvRet:   100.5 | Loss:   -68.577 | DR: 1.000 | Γ: 1.549
+[fusion] Ep 0240 | EnvRet:   101.1 | Loss:   -71.596 | DR: 0.907 | Γ: 1.539
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[pure  ] Ep 0241 | EnvRet:   166.6 | Loss:  -182.869 | DR: 0.907 | Γ: 1.671
+[touch ] Ep 0242 | EnvRet:   138.1 | Loss:  -128.020 | DR: 0.818 | Γ: 1.548
+[brain ] Ep 0243 | EnvRet:   146.5 | Loss:   -29.191 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0244 | EnvRet:   257.3 | Loss:  -227.824 | DR: 0.875 | Γ: 2.000
+[pure  ] Ep 0245 | EnvRet:   182.2 | Loss:   -60.198 | DR: 0.961 | Γ: 2.000
+[touch ] Ep 0246 | EnvRet:   116.0 | Loss:  -110.840 | DR: 1.000 | Γ: 1.611
+[brain ] Ep 0247 | EnvRet:    94.9 | Loss:   -34.681 | DR: 1.000 | Γ: 1.451
+[fusion] Ep 0248 | EnvRet:    98.9 | Loss:  -104.527 | DR: 0.804 | Γ: 1.601
+[pure  ] Ep 0249 | EnvRet:   110.7 | Loss:   -51.195 | DR: 0.941 | Γ: 1.799
+[touch ] Ep 0250 | EnvRet:   157.7 | Loss:  -164.279 | DR: 0.969 | Γ: 2.000
+[brain ] Ep 0251 | EnvRet:   181.3 | Loss:  -161.689 | DR: 1.000 | Γ: 1.674
+[fusion] Ep 0252 | EnvRet:   158.6 | Loss:  -143.666 | DR: 0.961 | Γ: 1.441
+[pure  ] Ep 0253 | EnvRet:   105.1 | Loss:   -97.304 | DR: 0.849 | Γ: 1.626
+[touch ] Ep 0254 | EnvRet:   108.3 | Loss:   -66.928 | DR: 0.767 | Γ: 1.589
+[brain ] Ep 0255 | EnvRet:   112.7 | Loss:  -105.901 | DR: 0.943 | Γ: 1.618
+[fusion] Ep 0256 | EnvRet:    96.4 | Loss:   -41.280 | DR: 0.895 | Γ: 2.000
+[pure  ] Ep 0257 | EnvRet:   207.1 | Loss:  -224.151 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0258 | EnvRet:   198.4 | Loss:  -182.765 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0259 | EnvRet:    84.0 | Loss:   -22.540 | DR: 0.951 | Γ: 1.447
+[fusion] Ep 0260 | EnvRet:   161.8 | Loss:   -57.180 | DR: 1.000 | Γ: 1.385
+[pure  ] Ep 0261 | EnvRet:   133.0 | Loss:  -147.547 | DR: 0.875 | Γ: 2.000
+[touch ] Ep 0262 | EnvRet:   165.5 | Loss:  -139.923 | DR: 0.909 | Γ: 1.511
+[brain ] Ep 0263 | EnvRet:   168.5 | Loss:  -122.166 | DR: 1.000 | Γ: 1.560
+[fusion] Ep 0264 | EnvRet:   171.7 | Loss:   -94.283 | DR: 1.000 | Γ: 1.724
+[pure  ] Ep 0265 | EnvRet:   158.4 | Loss:  -162.305 | DR: 0.928 | Γ: 2.000
+[touch ] Ep 0266 | EnvRet:   200.1 | Loss:    -2.275 | DR: 0.966 | Γ: 1.585
+[brain ] Ep 0267 | EnvRet:   164.7 | Loss:  -110.803 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0268 | EnvRet:   153.2 | Loss:  -189.718 | DR: 1.000 | Γ: 1.364
+[pure  ] Ep 0269 | EnvRet:   139.1 | Loss:  -180.868 | DR: 0.880 | Γ: 1.592
+[touch ] Ep 0270 | EnvRet:   111.2 | Loss:   -80.682 | DR: 1.000 | Γ: 1.559
+[brain ] Ep 0271 | EnvRet:   158.4 | Loss:   -62.741 | DR: 1.000 | Γ: 1.637
+[fusion] Ep 0272 | EnvRet:   151.4 | Loss:  -108.006 | DR: 0.968 | Γ: 1.615
+[pure  ] Ep 0273 | EnvRet:   159.0 | Loss:  -165.543 | DR: 0.877 | Γ: 2.000
+[touch ] Ep 0274 | EnvRet:   172.4 | Loss:   -69.272 | DR: 0.973 | Γ: 1.478
+[brain ] Ep 0275 | EnvRet:   134.5 | Loss:  -118.304 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0276 | EnvRet:   216.9 | Loss:  -112.696 | DR: 0.904 | Γ: 1.789
+[pure  ] Ep 0277 | EnvRet:   154.0 | Loss:   -71.784 | DR: 0.879 | Γ: 1.316
+[touch ] Ep 0278 | EnvRet:   197.1 | Loss:   -43.599 | DR: 0.975 | Γ: 1.588
+[brain ] Ep 0279 | EnvRet:    94.4 | Loss:   -56.666 | DR: 1.000 | Γ: 1.544
+[fusion] Ep 0280 | EnvRet:   173.7 | Loss:  -110.150 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0281 | EnvRet:   114.4 | Loss:  -102.310 | DR: 0.916 | Γ: 1.462
+[touch ] Ep 0282 | EnvRet:   106.1 | Loss:   -74.916 | DR: 0.882 | Γ: 2.000
+[brain ] Ep 0283 | EnvRet:   101.4 | Loss:   -51.342 | DR: 0.946 | Γ: 1.698
+[fusion] Ep 0284 | EnvRet:   176.7 | Loss:  -176.619 | DR: 0.818 | Γ: 1.656
+[pure  ] Ep 0285 | EnvRet:   109.3 | Loss:  -130.387 | DR: 1.000 | Γ: 1.514
+[touch ] Ep 0286 | EnvRet:   126.2 | Loss:   -92.042 | DR: 0.859 | Γ: 1.614
+[brain ] Ep 0287 | EnvRet:   141.2 | Loss:   -92.260 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0288 | EnvRet:   126.4 | Loss:   -60.350 | DR: 1.000 | Γ: 1.610
+[pure  ] Ep 0289 | EnvRet:   118.1 | Loss:   -59.963 | DR: 1.000 | Γ: 1.532
+[touch ] Ep 0290 | EnvRet:   142.8 | Loss:  -155.265 | DR: 1.000 | Γ: 1.541
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[brain ] Ep 0291 | EnvRet:   129.7 | Loss:   -83.708 | DR: 0.835 | Γ: 2.000
+[fusion] Ep 0292 | EnvRet:   150.6 | Loss:  -155.244 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0293 | EnvRet:   152.3 | Loss:  -117.249 | DR: 1.000 | Γ: 1.539
+[touch ] Ep 0294 | EnvRet:    94.7 | Loss:  -115.344 | DR: 0.755 | Γ: 2.000
+[brain ] Ep 0295 | EnvRet:   158.3 | Loss:  -177.401 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0296 | EnvRet:   155.6 | Loss:   -79.071 | DR: 0.998 | Γ: 2.000
+[pure  ] Ep 0297 | EnvRet:   190.3 | Loss:  -223.032 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0298 | EnvRet:   168.0 | Loss:   -31.197 | DR: 1.000 | Γ: 1.766
+[brain ] Ep 0299 | EnvRet:   126.5 | Loss:  -116.499 | DR: 0.862 | Γ: 1.663
+[fusion] Ep 0300 | EnvRet:   106.4 | Loss:   -85.165 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0301 | EnvRet:   223.0 | Loss:  -171.258 | DR: 0.971 | Γ: 1.782
+[touch ] Ep 0302 | EnvRet:   121.2 | Loss:  -105.357 | DR: 0.963 | Γ: 1.565
+[brain ] Ep 0303 | EnvRet:   107.4 | Loss:   -40.916 | DR: 1.000 | Γ: 1.698
+[fusion] Ep 0304 | EnvRet:   119.1 | Loss:   -69.270 | DR: 1.000 | Γ: 1.600
+[pure  ] Ep 0305 | EnvRet:   144.2 | Loss:   -83.406 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0306 | EnvRet:    89.3 | Loss:   -31.539 | DR: 0.977 | Γ: 2.000
+[brain ] Ep 0307 | EnvRet:   136.7 | Loss:   -32.133 | DR: 0.742 | Γ: 1.501
+[fusion] Ep 0308 | EnvRet:    98.6 | Loss:  -117.342 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0309 | EnvRet:    94.6 | Loss:   -71.173 | DR: 0.937 | Γ: 1.610
+[touch ] Ep 0310 | EnvRet:   149.8 | Loss:  -112.210 | DR: 0.958 | Γ: 2.000
+[brain ] Ep 0311 | EnvRet:    84.4 | Loss:    -1.819 | DR: 1.000 | Γ: 1.553
+[fusion] Ep 0312 | EnvRet:   127.5 | Loss:   -46.171 | DR: 0.997 | Γ: 2.000
+[pure  ] Ep 0313 | EnvRet:   134.2 | Loss:  -105.359 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0314 | EnvRet:   153.7 | Loss:   -37.156 | DR: 0.901 | Γ: 1.778
+[brain ] Ep 0315 | EnvRet:    96.8 | Loss:   -58.991 | DR: 0.895 | Γ: 2.000
+[fusion] Ep 0316 | EnvRet:   134.2 | Loss:   -72.876 | DR: 0.962 | Γ: 2.000
+[pure  ] Ep 0317 | EnvRet:   131.9 | Loss:   -57.723 | DR: 0.998 | Γ: 1.464
+[touch ] Ep 0318 | EnvRet:   125.4 | Loss:   -21.251 | DR: 1.000 | Γ: 1.728
+[brain ] Ep 0319 | EnvRet:   132.1 | Loss:  -114.381 | DR: 1.000 | Γ: 1.601
+[fusion] Ep 0320 | EnvRet:   143.8 | Loss:  -128.828 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0321 | EnvRet:   154.0 | Loss:  -121.186 | DR: 0.847 | Γ: 1.465
+[touch ] Ep 0322 | EnvRet:   170.3 | Loss:  -144.673 | DR: 0.911 | Γ: 1.683
+[brain ] Ep 0323 | EnvRet:   160.9 | Loss:   -90.040 | DR: 0.953 | Γ: 2.000
+[fusion] Ep 0324 | EnvRet:   104.2 | Loss:  -114.499 | DR: 1.000 | Γ: 1.613
+[pure  ] Ep 0325 | EnvRet:   112.9 | Loss:   -88.702 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0326 | EnvRet:   162.0 | Loss:  -129.590 | DR: 0.950 | Γ: 1.427
+[brain ] Ep 0327 | EnvRet:   142.0 | Loss:  -106.257 | DR: 0.946 | Γ: 1.594
+[fusion] Ep 0328 | EnvRet:   110.6 | Loss:  -102.819 | DR: 1.000 | Γ: 1.497
+[pure  ] Ep 0329 | EnvRet:   188.4 | Loss:   -96.486 | DR: 1.000 | Γ: 1.597
+[touch ] Ep 0330 | EnvRet:   150.6 | Loss:  -153.758 | DR: 0.951 | Γ: 1.624
+[brain ] Ep 0331 | EnvRet:   142.5 | Loss:  -164.096 | DR: 1.000 | Γ: 1.710
+[fusion] Ep 0332 | EnvRet:   151.5 | Loss:   -51.557 | DR: 0.830 | Γ: 1.714
+[pure  ] Ep 0333 | EnvRet:   156.9 | Loss:   -63.379 | DR: 0.998 | Γ: 1.302
+[touch ] Ep 0334 | EnvRet:   200.0 | Loss:  -166.261 | DR: 0.977 | Γ: 1.662
+[brain ] Ep 0335 | EnvRet:   199.7 | Loss:   -79.474 | DR: 1.000 | Γ: 1.551
+[fusion] Ep 0336 | EnvRet:   183.2 | Loss:  -103.672 | DR: 0.981 | Γ: 1.346
+[pure  ] Ep 0337 | EnvRet:   195.1 | Loss:   -84.849 | DR: 0.783 | Γ: 1.425
+[touch ] Ep 0338 | EnvRet:   131.0 | Loss:   -46.787 | DR: 1.000 | Γ: 1.593
+[brain ] Ep 0339 | EnvRet:   148.7 | Loss:  -119.247 | DR: 0.935 | Γ: 1.429
+[fusion] Ep 0340 | EnvRet:   132.1 | Loss:  -104.758 | DR: 1.000 | Γ: 1.623
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[pure  ] Ep 0341 | EnvRet:   181.0 | Loss:   -99.448 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0342 | EnvRet:   132.8 | Loss:   -98.234 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0343 | EnvRet:   143.4 | Loss:  -158.288 | DR: 0.972 | Γ: 1.558
+[fusion] Ep 0344 | EnvRet:   106.0 | Loss:   -57.857 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0345 | EnvRet:   137.0 | Loss:   -93.524 | DR: 1.000 | Γ: 1.434
+[touch ] Ep 0346 | EnvRet:   134.3 | Loss:  -137.896 | DR: 0.974 | Γ: 2.000
+[brain ] Ep 0347 | EnvRet:   151.8 | Loss:   -67.284 | DR: 0.881 | Γ: 1.653
+[fusion] Ep 0348 | EnvRet:   140.6 | Loss:  -131.740 | DR: 0.995 | Γ: 2.000
+[pure  ] Ep 0349 | EnvRet:   166.9 | Loss:   -48.008 | DR: 0.958 | Γ: 1.549
+[touch ] Ep 0350 | EnvRet:   161.8 | Loss:  -113.624 | DR: 1.000 | Γ: 1.552
+[brain ] Ep 0351 | EnvRet:   145.6 | Loss:   -57.912 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0352 | EnvRet:   105.7 | Loss:   -77.972 | DR: 0.929 | Γ: 1.596
+[pure  ] Ep 0353 | EnvRet:   104.9 | Loss:   -86.661 | DR: 0.868 | Γ: 2.000
+[touch ] Ep 0354 | EnvRet:   123.6 | Loss:   -81.513 | DR: 0.987 | Γ: 1.668
+[brain ] Ep 0355 | EnvRet:   171.9 | Loss:   -57.085 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0356 | EnvRet:   153.2 | Loss:  -111.782 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0357 | EnvRet:   138.9 | Loss:   -86.352 | DR: 0.978 | Γ: 2.000
+[touch ] Ep 0358 | EnvRet:   115.4 | Loss:  -140.248 | DR: 0.944 | Γ: 1.468
+[brain ] Ep 0359 | EnvRet:   159.6 | Loss:     4.575 | DR: 0.834 | Γ: 1.553
+[fusion] Ep 0360 | EnvRet:   116.9 | Loss:   -83.683 | DR: 0.777 | Γ: 2.000
+[pure  ] Ep 0361 | EnvRet:   116.8 | Loss:   -70.638 | DR: 0.789 | Γ: 1.544
+[touch ] Ep 0362 | EnvRet:   104.7 | Loss:   -72.116 | DR: 1.000 | Γ: 1.511
+[brain ] Ep 0363 | EnvRet:    93.7 | Loss:   -43.037 | DR: 0.926 | Γ: 1.401
+[fusion] Ep 0364 | EnvRet:   175.2 | Loss:  -100.698 | DR: 0.905 | Γ: 2.000
+[pure  ] Ep 0365 | EnvRet:    95.0 | Loss:   -27.794 | DR: 1.000 | Γ: 1.340
+[touch ] Ep 0366 | EnvRet:   100.2 | Loss:   -76.928 | DR: 0.863 | Γ: 1.506
+[brain ] Ep 0367 | EnvRet:   150.3 | Loss:   -77.898 | DR: 1.000 | Γ: 1.658
+[fusion] Ep 0368 | EnvRet:   123.0 | Loss:   -58.267 | DR: 0.983 | Γ: 1.423
+[pure  ] Ep 0369 | EnvRet:   132.4 | Loss:   -32.750 | DR: 0.812 | Γ: 1.764
+[touch ] Ep 0370 | EnvRet:   145.9 | Loss:    29.836 | DR: 0.861 | Γ: 1.524
+[brain ] Ep 0371 | EnvRet:   141.7 | Loss:   -85.493 | DR: 1.000 | Γ: 1.518
+[fusion] Ep 0372 | EnvRet:    95.6 | Loss:   -79.824 | DR: 0.968 | Γ: 1.498
+[pure  ] Ep 0373 | EnvRet:   124.1 | Loss:  -123.025 | DR: 1.000 | Γ: 1.542
+[touch ] Ep 0374 | EnvRet:   185.0 | Loss:   -88.945 | DR: 0.943 | Γ: 1.686
+[brain ] Ep 0375 | EnvRet:   152.5 | Loss:  -146.139 | DR: 0.881 | Γ: 1.715
+[fusion] Ep 0376 | EnvRet:   193.7 | Loss:  -200.427 | DR: 1.000 | Γ: 1.716
+[pure  ] Ep 0377 | EnvRet:   187.4 | Loss:   -46.939 | DR: 0.989 | Γ: 2.000
+[touch ] Ep 0378 | EnvRet:   169.6 | Loss:   -81.362 | DR: 0.888 | Γ: 1.713
+[brain ] Ep 0379 | EnvRet:   108.6 | Loss:   -70.753 | DR: 0.977 | Γ: 2.000
+[fusion] Ep 0380 | EnvRet:   152.4 | Loss:   -81.216 | DR: 0.845 | Γ: 1.492
+[pure  ] Ep 0381 | EnvRet:   120.4 | Loss:   -78.433 | DR: 0.989 | Γ: 1.446
+[touch ] Ep 0382 | EnvRet:   170.4 | Loss:  -155.751 | DR: 1.000 | Γ: 1.652
+[brain ] Ep 0383 | EnvRet:   114.7 | Loss:  -112.106 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0384 | EnvRet:   138.3 | Loss:  -104.896 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0385 | EnvRet:   167.1 | Loss:   -82.948 | DR: 1.000 | Γ: 1.750
+[touch ] Ep 0386 | EnvRet:   123.1 | Loss:  -116.412 | DR: 0.980 | Γ: 2.000
+[brain ] Ep 0387 | EnvRet:    95.3 | Loss:   -63.793 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0388 | EnvRet:   120.2 | Loss:  -110.759 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0389 | EnvRet:   106.5 | Loss:   -43.872 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0390 | EnvRet:   132.3 | Loss:  -125.476 | DR: 0.819 | Γ: 1.491
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[brain ] Ep 0391 | EnvRet:   200.8 | Loss:   -51.047 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0392 | EnvRet:   124.0 | Loss:  -104.645 | DR: 0.965 | Γ: 1.641
+[pure  ] Ep 0393 | EnvRet:   110.9 | Loss:   -41.801 | DR: 1.000 | Γ: 1.533
+[touch ] Ep 0394 | EnvRet:   123.6 | Loss:  -142.184 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0395 | EnvRet:   217.2 | Loss:   -92.975 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0396 | EnvRet:   100.4 | Loss:   -33.830 | DR: 1.000 | Γ: 1.850
+[pure  ] Ep 0397 | EnvRet:   115.2 | Loss:  -109.744 | DR: 0.929 | Γ: 2.000
+[touch ] Ep 0398 | EnvRet:   110.6 | Loss:   -61.659 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0399 | EnvRet:   184.8 | Loss:   -70.585 | DR: 0.994 | Γ: 1.671
+[fusion] Ep 0400 | EnvRet:   142.3 | Loss:  -117.309 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0401 | EnvRet:   164.5 | Loss:   -76.574 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0402 | EnvRet:   115.0 | Loss:   -72.096 | DR: 1.000 | Γ: 1.599
+[brain ] Ep 0403 | EnvRet:   134.5 | Loss:   -64.628 | DR: 0.951 | Γ: 2.000
+[fusion] Ep 0404 | EnvRet:   139.2 | Loss:  -129.230 | DR: 0.927 | Γ: 1.589
+[pure  ] Ep 0405 | EnvRet:   166.2 | Loss:  -134.738 | DR: 0.887 | Γ: 1.543
+[touch ] Ep 0406 | EnvRet:   146.5 | Loss:  -106.784 | DR: 1.000 | Γ: 1.552
+[brain ] Ep 0407 | EnvRet:   113.1 | Loss:   -51.926 | DR: 0.979 | Γ: 1.689
+[fusion] Ep 0408 | EnvRet:   141.1 | Loss:   -82.272 | DR: 0.905 | Γ: 1.499
+[pure  ] Ep 0409 | EnvRet:   149.4 | Loss:  -112.792 | DR: 0.964 | Γ: 2.000
+[touch ] Ep 0410 | EnvRet:   145.9 | Loss:   -42.611 | DR: 0.953 | Γ: 2.000
+[brain ] Ep 0411 | EnvRet:    99.2 | Loss:   -84.944 | DR: 0.997 | Γ: 1.549
+[fusion] Ep 0412 | EnvRet:    97.3 | Loss:   -61.179 | DR: 0.930 | Γ: 1.652
+[pure  ] Ep 0413 | EnvRet:   148.7 | Loss:  -143.838 | DR: 0.870 | Γ: 1.549
+[touch ] Ep 0414 | EnvRet:   138.7 | Loss:  -157.581 | DR: 0.928 | Γ: 2.000
+[brain ] Ep 0415 | EnvRet:   110.9 | Loss:  -110.307 | DR: 0.932 | Γ: 2.000
+[fusion] Ep 0416 | EnvRet:   147.0 | Loss:  -100.880 | DR: 0.940 | Γ: 1.504
+[pure  ] Ep 0417 | EnvRet:   101.4 | Loss:   -41.660 | DR: 0.952 | Γ: 1.798
+[touch ] Ep 0418 | EnvRet:   110.9 | Loss:  -126.985 | DR: 1.000 | Γ: 1.635
+[brain ] Ep 0419 | EnvRet:   148.5 | Loss:  -128.017 | DR: 1.000 | Γ: 1.414
+[fusion] Ep 0420 | EnvRet:   103.2 | Loss:   -67.558 | DR: 0.938 | Γ: 1.483
+[pure  ] Ep 0421 | EnvRet:   118.7 | Loss:   -69.674 | DR: 1.000 | Γ: 1.454
+[touch ] Ep 0422 | EnvRet:   136.4 | Loss:   -41.961 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0423 | EnvRet:   161.6 | Loss:   -32.201 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0424 | EnvRet:   172.2 | Loss:   -34.536 | DR: 0.980 | Γ: 1.487
+[pure  ] Ep 0425 | EnvRet:   118.7 | Loss:  -136.358 | DR: 0.715 | Γ: 1.865
+[touch ] Ep 0426 | EnvRet:   128.3 | Loss:   -64.594 | DR: 0.981 | Γ: 1.680
+[brain ] Ep 0427 | EnvRet:   125.3 | Loss:   -82.143 | DR: 0.971 | Γ: 1.561
+[fusion] Ep 0428 | EnvRet:   160.6 | Loss:   -71.858 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0429 | EnvRet:   120.4 | Loss:   -24.502 | DR: 0.944 | Γ: 1.458
+[touch ] Ep 0430 | EnvRet:   151.8 | Loss:  -158.377 | DR: 0.827 | Γ: 1.628
+[brain ] Ep 0431 | EnvRet:    90.2 | Loss:   -30.412 | DR: 1.000 | Γ: 1.612
+[fusion] Ep 0432 | EnvRet:   131.1 | Loss:  -141.271 | DR: 0.927 | Γ: 2.000
+[pure  ] Ep 0433 | EnvRet:   134.5 | Loss:  -110.825 | DR: 0.872 | Γ: 1.330
+[touch ] Ep 0434 | EnvRet:   146.0 | Loss:   -77.754 | DR: 0.969 | Γ: 2.000
+[brain ] Ep 0435 | EnvRet:   166.6 | Loss:  -116.584 | DR: 1.000 | Γ: 1.550
+[fusion] Ep 0436 | EnvRet:   163.5 | Loss:  -124.780 | DR: 1.000 | Γ: 1.464
+[pure  ] Ep 0437 | EnvRet:   177.4 | Loss:   -59.779 | DR: 0.949 | Γ: 1.640
+[touch ] Ep 0438 | EnvRet:    95.5 | Loss:   -38.900 | DR: 1.000 | Γ: 1.635
+[brain ] Ep 0439 | EnvRet:   112.6 | Loss:   -55.713 | DR: 0.982 | Γ: 2.000
+[fusion] Ep 0440 | EnvRet:    93.8 | Loss:   -71.358 | DR: 0.957 | Γ: 1.504
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[pure  ] Ep 0441 | EnvRet:   184.7 | Loss:  -134.082 | DR: 0.956 | Γ: 1.667
+[touch ] Ep 0442 | EnvRet:   212.6 | Loss:  -130.669 | DR: 1.000 | Γ: 1.592
+[brain ] Ep 0443 | EnvRet:   104.7 | Loss:   -42.864 | DR: 0.992 | Γ: 2.000
+[fusion] Ep 0444 | EnvRet:   238.9 | Loss:   -59.340 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0445 | EnvRet:   154.2 | Loss:   -51.255 | DR: 0.955 | Γ: 2.000
+[touch ] Ep 0446 | EnvRet:   131.5 | Loss:   -84.868 | DR: 0.862 | Γ: 2.000
+[brain ] Ep 0447 | EnvRet:   158.8 | Loss:  -145.989 | DR: 1.000 | Γ: 1.630
+[fusion] Ep 0448 | EnvRet:    91.1 | Loss:   -28.403 | DR: 0.969 | Γ: 2.000
+[pure  ] Ep 0449 | EnvRet:    90.0 | Loss:   -66.278 | DR: 0.889 | Γ: 2.000
+[touch ] Ep 0450 | EnvRet:    84.5 | Loss:    -1.852 | DR: 0.970 | Γ: 1.646
+[brain ] Ep 0451 | EnvRet:   151.7 | Loss:   -87.022 | DR: 0.987 | Γ: 1.442
+[fusion] Ep 0452 | EnvRet:   139.2 | Loss:  -125.927 | DR: 1.000 | Γ: 1.771
+[pure  ] Ep 0453 | EnvRet:   123.1 | Loss:   -97.220 | DR: 1.000 | Γ: 1.702
+[touch ] Ep 0454 | EnvRet:   169.1 | Loss:   -61.210 | DR: 1.000 | Γ: 1.569
+[brain ] Ep 0455 | EnvRet:   119.7 | Loss:   -26.144 | DR: 0.984 | Γ: 1.743
+[fusion] Ep 0456 | EnvRet:   112.3 | Loss:   -94.635 | DR: 0.960 | Γ: 1.673
+[pure  ] Ep 0457 | EnvRet:   128.3 | Loss:   -38.188 | DR: 0.745 | Γ: 1.663
+[touch ] Ep 0458 | EnvRet:   203.5 | Loss:  -139.658 | DR: 1.000 | Γ: 1.715
+[brain ] Ep 0459 | EnvRet:   148.4 | Loss:  -136.272 | DR: 0.837 | Γ: 1.671
+[fusion] Ep 0460 | EnvRet:   158.6 | Loss:  -134.334 | DR: 1.000 | Γ: 1.404
+[pure  ] Ep 0461 | EnvRet:   219.4 | Loss:  -158.279 | DR: 0.854 | Γ: 1.544
+[touch ] Ep 0462 | EnvRet:   115.6 | Loss:   -87.838 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0463 | EnvRet:   122.4 | Loss:   -95.945 | DR: 0.979 | Γ: 1.643
+[fusion] Ep 0464 | EnvRet:   198.9 | Loss:   -18.424 | DR: 1.000 | Γ: 1.617
+[pure  ] Ep 0465 | EnvRet:   155.9 | Loss:  -119.911 | DR: 0.850 | Γ: 1.544
+[touch ] Ep 0466 | EnvRet:   125.4 | Loss:  -122.472 | DR: 0.869 | Γ: 1.636
+[brain ] Ep 0467 | EnvRet:   140.3 | Loss:   -46.766 | DR: 1.000 | Γ: 1.360
+[fusion] Ep 0468 | EnvRet:   131.0 | Loss:  -147.925 | DR: 0.994 | Γ: 1.561
+[pure  ] Ep 0469 | EnvRet:   167.3 | Loss:  -120.710 | DR: 0.940 | Γ: 1.512
+[touch ] Ep 0470 | EnvRet:   157.8 | Loss:   -94.918 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0471 | EnvRet:   109.5 | Loss:  -119.833 | DR: 1.000 | Γ: 1.789
+[fusion] Ep 0472 | EnvRet:   114.2 | Loss:   -65.094 | DR: 0.951 | Γ: 2.000
+[pure  ] Ep 0473 | EnvRet:   141.6 | Loss:   -97.994 | DR: 0.958 | Γ: 2.000
+[touch ] Ep 0474 | EnvRet:   139.0 | Loss:  -164.073 | DR: 0.883 | Γ: 1.620
+[brain ] Ep 0475 | EnvRet:   108.4 | Loss:   -85.394 | DR: 1.000 | Γ: 1.641
+[fusion] Ep 0476 | EnvRet:    95.2 | Loss:  -102.431 | DR: 0.893 | Γ: 2.000
+[pure  ] Ep 0477 | EnvRet:   201.0 | Loss:  -100.222 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0478 | EnvRet:   159.5 | Loss:   -77.181 | DR: 0.898 | Γ: 1.677
+[brain ] Ep 0479 | EnvRet:   175.8 | Loss:  -134.924 | DR: 0.990 | Γ: 2.000
+[fusion] Ep 0480 | EnvRet:    89.9 | Loss:   -89.696 | DR: 0.832 | Γ: 1.676
+[pure  ] Ep 0481 | EnvRet:   158.0 | Loss:  -147.674 | DR: 0.650 | Γ: 2.000
+[touch ] Ep 0482 | EnvRet:   152.0 | Loss:   -22.698 | DR: 0.870 | Γ: 2.000
+[brain ] Ep 0483 | EnvRet:   178.0 | Loss:   -47.862 | DR: 0.885 | Γ: 2.000
+[fusion] Ep 0484 | EnvRet:   156.2 | Loss:   -46.687 | DR: 0.796 | Γ: 2.000
+[pure  ] Ep 0485 | EnvRet:   161.9 | Loss:  -104.360 | DR: 0.995 | Γ: 1.342
+[touch ] Ep 0486 | EnvRet:   116.3 | Loss:   -79.825 | DR: 1.000 | Γ: 1.493
+[brain ] Ep 0487 | EnvRet:   145.5 | Loss:  -177.683 | DR: 0.925 | Γ: 1.598
+[fusion] Ep 0488 | EnvRet:    97.7 | Loss:   -49.948 | DR: 0.867 | Γ: 1.594
+[pure  ] Ep 0489 | EnvRet:   132.8 | Loss:   -92.959 | DR: 1.000 | Γ: 1.615
+[touch ] Ep 0490 | EnvRet:   115.2 | Loss:  -112.121 | DR: 1.000 | Γ: 2.000
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[brain ] Ep 0491 | EnvRet:   161.8 | Loss:  -155.544 | DR: 0.883 | Γ: 1.547
+[fusion] Ep 0492 | EnvRet:   156.3 | Loss:  -176.824 | DR: 0.972 | Γ: 2.000
+[pure  ] Ep 0493 | EnvRet:    93.8 | Loss:   -66.677 | DR: 0.903 | Γ: 1.607
+[touch ] Ep 0494 | EnvRet:   122.8 | Loss:   -57.509 | DR: 0.933 | Γ: 1.484
+[brain ] Ep 0495 | EnvRet:   106.2 | Loss:  -130.656 | DR: 1.000 | Γ: 1.497
+[fusion] Ep 0496 | EnvRet:   170.2 | Loss:   -29.042 | DR: 0.943 | Γ: 2.000
+[pure  ] Ep 0497 | EnvRet:   157.3 | Loss:   -83.989 | DR: 0.967 | Γ: 1.599
+[touch ] Ep 0498 | EnvRet:   116.4 | Loss:  -110.493 | DR: 1.000 | Γ: 1.558
+[brain ] Ep 0499 | EnvRet:   118.6 | Loss:  -112.571 | DR: 0.854 | Γ: 2.000
+[fusion] Ep 0500 | EnvRet:   121.8 | Loss:   -32.628 | DR: 0.826 | Γ: 1.560
+[pure  ] Ep 0501 | EnvRet:    94.8 | Loss:   -88.261 | DR: 1.000 | Γ: 1.527
+[touch ] Ep 0502 | EnvRet:   106.7 | Loss:   -53.037 | DR: 0.843 | Γ: 1.585
+[brain ] Ep 0503 | EnvRet:   136.0 | Loss:   -88.268 | DR: 0.961 | Γ: 1.376
+[fusion] Ep 0504 | EnvRet:   111.9 | Loss:   -29.750 | DR: 0.887 | Γ: 2.000
+[pure  ] Ep 0505 | EnvRet:   136.6 | Loss:  -133.483 | DR: 0.842 | Γ: 1.558
+[touch ] Ep 0506 | EnvRet:   163.0 | Loss:   -40.190 | DR: 0.854 | Γ: 1.582
+[brain ] Ep 0507 | EnvRet:   250.5 | Loss:  -113.871 | DR: 0.949 | Γ: 2.000
+[fusion] Ep 0508 | EnvRet:   139.3 | Loss:   -35.498 | DR: 0.636 | Γ: 1.518
+[pure  ] Ep 0509 | EnvRet:   142.9 | Loss:   -81.532 | DR: 0.980 | Γ: 1.362
+[touch ] Ep 0510 | EnvRet:    98.9 | Loss:   -15.813 | DR: 0.982 | Γ: 1.765
+[brain ] Ep 0511 | EnvRet:   143.0 | Loss:  -117.017 | DR: 0.896 | Γ: 1.874
+[fusion] Ep 0512 | EnvRet:   176.0 | Loss:  -180.960 | DR: 0.842 | Γ: 1.678
+[pure  ] Ep 0513 | EnvRet:   203.7 | Loss:  -113.197 | DR: 0.971 | Γ: 2.000
+[touch ] Ep 0514 | EnvRet:   152.9 | Loss:  -119.688 | DR: 1.000 | Γ: 1.624
+[brain ] Ep 0515 | EnvRet:   142.8 | Loss:  -141.366 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0516 | EnvRet:   157.8 | Loss:  -147.387 | DR: 0.868 | Γ: 1.323
+[pure  ] Ep 0517 | EnvRet:   165.4 | Loss:   -76.051 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0518 | EnvRet:   199.6 | Loss:   -94.928 | DR: 1.000 | Γ: 1.471
+[brain ] Ep 0519 | EnvRet:   123.3 | Loss:   -44.943 | DR: 0.973 | Γ: 2.000
+[fusion] Ep 0520 | EnvRet:   141.5 | Loss:  -108.502 | DR: 1.000 | Γ: 1.356
+[pure  ] Ep 0521 | EnvRet:   168.8 | Loss:  -123.842 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0522 | EnvRet:   102.1 | Loss:   -61.800 | DR: 1.000 | Γ: 1.531
+[brain ] Ep 0523 | EnvRet:   161.0 | Loss:     7.593 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0524 | EnvRet:   159.1 | Loss:   -14.867 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0525 | EnvRet:   152.1 | Loss:  -116.651 | DR: 0.868 | Γ: 1.622
+[touch ] Ep 0526 | EnvRet:   131.3 | Loss:   -67.185 | DR: 1.000 | Γ: 1.507
+[brain ] Ep 0527 | EnvRet:   131.6 | Loss:  -116.834 | DR: 0.962 | Γ: 2.000
+[fusion] Ep 0528 | EnvRet:   150.9 | Loss:  -161.829 | DR: 0.889 | Γ: 2.000
+[pure  ] Ep 0529 | EnvRet:   213.1 | Loss:  -240.528 | DR: 0.827 | Γ: 1.423
+[touch ] Ep 0530 | EnvRet:   127.0 | Loss:  -141.984 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0531 | EnvRet:    89.8 | Loss:   -61.100 | DR: 0.951 | Γ: 1.612
+[fusion] Ep 0532 | EnvRet:   137.2 | Loss:   -45.014 | DR: 0.893 | Γ: 1.607
+[pure  ] Ep 0533 | EnvRet:    96.6 | Loss:   -66.449 | DR: 0.939 | Γ: 1.421
+[touch ] Ep 0534 | EnvRet:    94.8 | Loss:   -87.481 | DR: 0.830 | Γ: 1.663
+[brain ] Ep 0535 | EnvRet:    94.3 | Loss:   -36.870 | DR: 1.000 | Γ: 1.517
+[fusion] Ep 0536 | EnvRet:   128.4 | Loss:  -140.251 | DR: 1.000 | Γ: 1.656
+[pure  ] Ep 0537 | EnvRet:   132.4 | Loss:   -71.240 | DR: 1.000 | Γ: 1.660
+[touch ] Ep 0538 | EnvRet:   279.9 | Loss:   -75.778 | DR: 0.985 | Γ: 1.513
+[brain ] Ep 0539 | EnvRet:    97.1 | Loss:   -29.835 | DR: 0.927 | Γ: 1.601
+[fusion] Ep 0540 | EnvRet:   137.9 | Loss:   -72.787 | DR: 0.979 | Γ: 1.572
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[pure  ] Ep 0541 | EnvRet:   115.6 | Loss:   -48.047 | DR: 0.899 | Γ: 1.592
+[touch ] Ep 0542 | EnvRet:   100.0 | Loss:   -48.700 | DR: 0.909 | Γ: 1.759
+[brain ] Ep 0543 | EnvRet:   194.2 | Loss:  -138.815 | DR: 1.000 | Γ: 1.676
+[fusion] Ep 0544 | EnvRet:   105.7 | Loss:   -61.327 | DR: 1.000 | Γ: 1.681
+[pure  ] Ep 0545 | EnvRet:   157.2 | Loss:  -153.887 | DR: 0.828 | Γ: 1.525
+[touch ] Ep 0546 | EnvRet:   100.6 | Loss:   -47.076 | DR: 0.948 | Γ: 1.758
+[brain ] Ep 0547 | EnvRet:   141.5 | Loss:  -114.888 | DR: 1.000 | Γ: 1.538
+[fusion] Ep 0548 | EnvRet:   158.1 | Loss:   -72.893 | DR: 0.921 | Γ: 1.652
+[pure  ] Ep 0549 | EnvRet:   145.8 | Loss:  -131.423 | DR: 0.977 | Γ: 2.000
+[touch ] Ep 0550 | EnvRet:   123.4 | Loss:   -62.834 | DR: 0.969 | Γ: 1.697
+[brain ] Ep 0551 | EnvRet:    84.6 | Loss:   -32.420 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0552 | EnvRet:   146.0 | Loss:   -54.758 | DR: 1.000 | Γ: 1.413
+[pure  ] Ep 0553 | EnvRet:   118.7 | Loss:  -112.614 | DR: 0.927 | Γ: 1.636
+[touch ] Ep 0554 | EnvRet:   131.8 | Loss:  -150.106 | DR: 1.000 | Γ: 1.566
+[brain ] Ep 0555 | EnvRet:   231.4 | Loss:  -108.062 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0556 | EnvRet:   143.5 | Loss:  -135.953 | DR: 0.973 | Γ: 2.000
+[pure  ] Ep 0557 | EnvRet:   154.7 | Loss:     3.425 | DR: 1.000 | Γ: 1.508
+[touch ] Ep 0558 | EnvRet:   120.9 | Loss:   -69.421 | DR: 1.000 | Γ: 1.640
+[brain ] Ep 0559 | EnvRet:   166.9 | Loss:  -166.133 | DR: 0.952 | Γ: 1.623
+[fusion] Ep 0560 | EnvRet:   123.7 | Loss:  -111.655 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0561 | EnvRet:   151.9 | Loss:  -120.871 | DR: 0.845 | Γ: 2.000
+[touch ] Ep 0562 | EnvRet:   130.7 | Loss:  -132.533 | DR: 0.967 | Γ: 1.731
+[brain ] Ep 0563 | EnvRet:   139.6 | Loss:  -201.608 | DR: 1.000 | Γ: 1.683
+[fusion] Ep 0564 | EnvRet:   152.3 | Loss:  -111.217 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0565 | EnvRet:    95.7 | Loss:  -105.374 | DR: 0.824 | Γ: 2.000
+[touch ] Ep 0566 | EnvRet:   169.2 | Loss:   -21.751 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0567 | EnvRet:   165.4 | Loss:  -119.949 | DR: 0.979 | Γ: 1.496
+[fusion] Ep 0568 | EnvRet:   159.2 | Loss:   -64.663 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0569 | EnvRet:   137.9 | Loss:  -128.714 | DR: 0.927 | Γ: 2.000
+[touch ] Ep 0570 | EnvRet:   193.6 | Loss:  -158.618 | DR: 0.855 | Γ: 2.000
+[brain ] Ep 0571 | EnvRet:   177.1 | Loss:  -195.140 | DR: 1.000 | Γ: 1.399
+[fusion] Ep 0572 | EnvRet:   104.9 | Loss:  -146.169 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0573 | EnvRet:   214.5 | Loss:   -50.758 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0574 | EnvRet:    99.7 | Loss:   -65.220 | DR: 0.857 | Γ: 1.819
+[brain ] Ep 0575 | EnvRet:   167.8 | Loss:  -190.959 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0576 | EnvRet:   211.3 | Loss:  -124.524 | DR: 0.862 | Γ: 1.694
+[pure  ] Ep 0577 | EnvRet:   130.4 | Loss:   -88.014 | DR: 0.887 | Γ: 1.601
+[touch ] Ep 0578 | EnvRet:   132.1 | Loss:  -165.554 | DR: 0.869 | Γ: 2.000
+[brain ] Ep 0579 | EnvRet:   114.9 | Loss:   -76.509 | DR: 0.820 | Γ: 2.000
+[fusion] Ep 0580 | EnvRet:   124.0 | Loss:   -88.938 | DR: 1.000 | Γ: 1.555
+[pure  ] Ep 0581 | EnvRet:   214.0 | Loss:   -32.658 | DR: 1.000 | Γ: 1.605
+[touch ] Ep 0582 | EnvRet:   198.6 | Loss:  -139.930 | DR: 0.973 | Γ: 2.000
+[brain ] Ep 0583 | EnvRet:   190.9 | Loss:  -102.789 | DR: 0.976 | Γ: 1.604
+[fusion] Ep 0584 | EnvRet:   156.6 | Loss:  -104.909 | DR: 0.914 | Γ: 2.000
+[pure  ] Ep 0585 | EnvRet:   131.3 | Loss:   -69.666 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0586 | EnvRet:   105.8 | Loss:   -48.956 | DR: 0.904 | Γ: 1.593
+[brain ] Ep 0587 | EnvRet:   149.1 | Loss:  -123.573 | DR: 0.899 | Γ: 2.000
+[fusion] Ep 0588 | EnvRet:   121.5 | Loss:  -125.255 | DR: 1.000 | Γ: 1.574
+[pure  ] Ep 0589 | EnvRet:    98.6 | Loss:  -126.962 | DR: 0.989 | Γ: 2.000
+[touch ] Ep 0590 | EnvRet:   135.0 | Loss:   -63.797 | DR: 0.737 | Γ: 2.000
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[brain ] Ep 0591 | EnvRet:   128.1 | Loss:  -115.900 | DR: 1.000 | Γ: 1.618
+[fusion] Ep 0592 | EnvRet:   161.4 | Loss:   -55.623 | DR: 0.647 | Γ: 1.551
+[pure  ] Ep 0593 | EnvRet:   142.0 | Loss:  -109.561 | DR: 0.996 | Γ: 1.560
+[touch ] Ep 0594 | EnvRet:   112.9 | Loss:   -93.595 | DR: 1.000 | Γ: 1.543
+[brain ] Ep 0595 | EnvRet:    93.9 | Loss:   -59.842 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0596 | EnvRet:   182.8 | Loss:   -98.377 | DR: 0.970 | Γ: 1.356
+[pure  ] Ep 0597 | EnvRet:   100.0 | Loss:   -46.516 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0598 | EnvRet:   122.1 | Loss:  -179.968 | DR: 0.859 | Γ: 1.825
+[brain ] Ep 0599 | EnvRet:   170.9 | Loss:   -71.774 | DR: 0.998 | Γ: 1.645
+[fusion] Ep 0600 | EnvRet:   125.2 | Loss:   -93.634 | DR: 0.995 | Γ: 1.590
+[pure  ] Ep 0601 | EnvRet:   148.3 | Loss:   -81.806 | DR: 0.875 | Γ: 1.676
+[touch ] Ep 0602 | EnvRet:   172.9 | Loss:   -93.809 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0603 | EnvRet:   144.7 | Loss:  -112.699 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0604 | EnvRet:   170.4 | Loss:  -156.740 | DR: 0.890 | Γ: 1.410
+[pure  ] Ep 0605 | EnvRet:   150.3 | Loss:  -162.107 | DR: 0.807 | Γ: 1.560
+[touch ] Ep 0606 | EnvRet:   126.4 | Loss:   -52.755 | DR: 0.970 | Γ: 2.000
+[brain ] Ep 0607 | EnvRet:   139.2 | Loss:   -98.974 | DR: 0.964 | Γ: 2.000
+[fusion] Ep 0608 | EnvRet:   146.2 | Loss:  -116.758 | DR: 1.000 | Γ: 1.460
+[pure  ] Ep 0609 | EnvRet:   228.0 | Loss:  -190.705 | DR: 0.873 | Γ: 1.564
+[touch ] Ep 0610 | EnvRet:   159.0 | Loss:   -49.263 | DR: 1.000 | Γ: 1.746
+[brain ] Ep 0611 | EnvRet:   200.4 | Loss:  -110.148 | DR: 1.000 | Γ: 1.655
+[fusion] Ep 0612 | EnvRet:   140.8 | Loss:  -142.199 | DR: 0.917 | Γ: 1.531
+[pure  ] Ep 0613 | EnvRet:   168.6 | Loss:   -75.543 | DR: 0.904 | Γ: 1.704
+[touch ] Ep 0614 | EnvRet:   180.1 | Loss:   -83.700 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0615 | EnvRet:   156.9 | Loss:  -119.556 | DR: 0.971 | Γ: 2.000
+[fusion] Ep 0616 | EnvRet:   212.3 | Loss:   -99.851 | DR: 0.760 | Γ: 1.327
+[pure  ] Ep 0617 | EnvRet:   102.3 | Loss:   -50.219 | DR: 1.000 | Γ: 1.625
+[touch ] Ep 0618 | EnvRet:   161.9 | Loss:   -20.621 | DR: 1.000 | Γ: 1.643
+[brain ] Ep 0619 | EnvRet:   120.7 | Loss:  -134.056 | DR: 0.961 | Γ: 2.000
+[fusion] Ep 0620 | EnvRet:   125.9 | Loss:   -42.843 | DR: 1.000 | Γ: 1.494
+[pure  ] Ep 0621 | EnvRet:    98.9 | Loss:   -67.755 | DR: 1.000 | Γ: 1.726
+[touch ] Ep 0622 | EnvRet:   145.8 | Loss:  -113.540 | DR: 0.926 | Γ: 1.489
+[brain ] Ep 0623 | EnvRet:   197.8 | Loss:  -145.768 | DR: 0.843 | Γ: 1.726
+[fusion] Ep 0624 | EnvRet:   134.5 | Loss:  -108.465 | DR: 1.000 | Γ: 1.629
+[pure  ] Ep 0625 | EnvRet:   127.7 | Loss:   -48.315 | DR: 0.890 | Γ: 1.725
+[touch ] Ep 0626 | EnvRet:   184.2 | Loss:  -103.757 | DR: 0.921 | Γ: 2.000
+[brain ] Ep 0627 | EnvRet:   112.9 | Loss:   -50.610 | DR: 1.000 | Γ: 1.503
+[fusion] Ep 0628 | EnvRet:   123.0 | Loss:  -116.196 | DR: 0.838 | Γ: 2.000
+[pure  ] Ep 0629 | EnvRet:   138.7 | Loss:  -137.485 | DR: 0.870 | Γ: 1.590
+[touch ] Ep 0630 | EnvRet:   152.8 | Loss:   -44.151 | DR: 0.914 | Γ: 1.561
+[brain ] Ep 0631 | EnvRet:   135.6 | Loss:   -47.491 | DR: 0.983 | Γ: 1.630
+[fusion] Ep 0632 | EnvRet:   171.4 | Loss:   -95.000 | DR: 0.900 | Γ: 1.507
+[pure  ] Ep 0633 | EnvRet:    89.8 | Loss:   -69.617 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0634 | EnvRet:   118.5 | Loss:   -33.718 | DR: 0.922 | Γ: 1.687
+[brain ] Ep 0635 | EnvRet:   120.7 | Loss:   -83.082 | DR: 0.888 | Γ: 1.612
+[fusion] Ep 0636 | EnvRet:   120.2 | Loss:   -60.576 | DR: 0.895 | Γ: 2.000
+[pure  ] Ep 0637 | EnvRet:   125.9 | Loss:   -87.176 | DR: 1.000 | Γ: 1.411
+[touch ] Ep 0638 | EnvRet:   173.5 | Loss:  -195.237 | DR: 0.963 | Γ: 1.492
+[brain ] Ep 0639 | EnvRet:   211.4 | Loss:   -80.330 | DR: 1.000 | Γ: 1.629
+[fusion] Ep 0640 | EnvRet:   121.4 | Loss:  -125.138 | DR: 0.980 | Γ: 2.000
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[pure  ] Ep 0641 | EnvRet:   111.1 | Loss:  -101.177 | DR: 1.000 | Γ: 1.606
+[touch ] Ep 0642 | EnvRet:   136.5 | Loss:   -54.120 | DR: 0.975 | Γ: 1.725
+[brain ] Ep 0643 | EnvRet:   128.6 | Loss:  -102.791 | DR: 0.914 | Γ: 1.417
+[fusion] Ep 0644 | EnvRet:   194.8 | Loss:  -123.786 | DR: 1.000 | Γ: 1.568
+[pure  ] Ep 0645 | EnvRet:   110.9 | Loss:  -120.444 | DR: 0.901 | Γ: 1.730
+[touch ] Ep 0646 | EnvRet:   143.1 | Loss:   -79.443 | DR: 1.000 | Γ: 1.514
+[brain ] Ep 0647 | EnvRet:   118.6 | Loss:   -39.599 | DR: 1.000 | Γ: 1.382
+[fusion] Ep 0648 | EnvRet:   148.8 | Loss:  -110.917 | DR: 0.884 | Γ: 1.746
+[pure  ] Ep 0649 | EnvRet:   115.1 | Loss:   -50.592 | DR: 0.829 | Γ: 1.654
+[touch ] Ep 0650 | EnvRet:   113.3 | Loss:  -111.517 | DR: 1.000 | Γ: 1.562
+[brain ] Ep 0651 | EnvRet:    90.5 | Loss:  -100.392 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0652 | EnvRet:   139.7 | Loss:   -71.605 | DR: 0.932 | Γ: 1.607
+[pure  ] Ep 0653 | EnvRet:   171.2 | Loss:   -98.728 | DR: 1.000 | Γ: 1.433
+[touch ] Ep 0654 | EnvRet:   162.1 | Loss:  -138.688 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0655 | EnvRet:   160.1 | Loss:   -84.967 | DR: 0.880 | Γ: 2.000
+[fusion] Ep 0656 | EnvRet:   237.0 | Loss:  -181.562 | DR: 1.000 | Γ: 1.673
+[pure  ] Ep 0657 | EnvRet:   153.2 | Loss:   -57.091 | DR: 0.927 | Γ: 2.000
+[touch ] Ep 0658 | EnvRet:   105.5 | Loss:   -85.170 | DR: 0.968 | Γ: 1.580
+[brain ] Ep 0659 | EnvRet:   131.6 | Loss:   -30.365 | DR: 0.940 | Γ: 2.000
+[fusion] Ep 0660 | EnvRet:   112.3 | Loss:   -77.696 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0661 | EnvRet:    88.9 | Loss:   -46.030 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0662 | EnvRet:   175.0 | Loss:  -161.615 | DR: 0.962 | Γ: 1.687
+[brain ] Ep 0663 | EnvRet:   161.7 | Loss:  -116.122 | DR: 0.887 | Γ: 1.590
+[fusion] Ep 0664 | EnvRet:   180.2 | Loss:   -75.367 | DR: 0.921 | Γ: 2.000
+[pure  ] Ep 0665 | EnvRet:   146.4 | Loss:   -86.126 | DR: 0.894 | Γ: 1.599
+[touch ] Ep 0666 | EnvRet:   179.3 | Loss:  -113.390 | DR: 1.000 | Γ: 1.497
+[brain ] Ep 0667 | EnvRet:   203.7 | Loss:   -46.664 | DR: 0.862 | Γ: 1.531
+[fusion] Ep 0668 | EnvRet:   220.4 | Loss:   -94.693 | DR: 0.873 | Γ: 2.000
+[pure  ] Ep 0669 | EnvRet:   173.0 | Loss:   -97.295 | DR: 0.934 | Γ: 1.495
+[touch ] Ep 0670 | EnvRet:   132.1 | Loss:   -93.510 | DR: 0.929 | Γ: 2.000
+[brain ] Ep 0671 | EnvRet:   104.6 | Loss:   -36.941 | DR: 1.000 | Γ: 1.842
+[fusion] Ep 0672 | EnvRet:   187.0 | Loss:  -113.723 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0673 | EnvRet:   104.5 | Loss:   -46.455 | DR: 0.901 | Γ: 2.000
+[touch ] Ep 0674 | EnvRet:   177.0 | Loss:  -103.759 | DR: 0.983 | Γ: 1.327
+[brain ] Ep 0675 | EnvRet:   118.3 | Loss:   -58.071 | DR: 0.962 | Γ: 1.702
+[fusion] Ep 0676 | EnvRet:   189.8 | Loss:   -70.387 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0677 | EnvRet:   137.0 | Loss:   -28.093 | DR: 0.916 | Γ: 1.552
+[touch ] Ep 0678 | EnvRet:    85.0 | Loss:   -38.720 | DR: 0.915 | Γ: 1.566
+[brain ] Ep 0679 | EnvRet:   135.8 | Loss:   -75.170 | DR: 0.844 | Γ: 1.514
+[fusion] Ep 0680 | EnvRet:   143.8 | Loss:   -50.236 | DR: 0.988 | Γ: 2.000
+[pure  ] Ep 0681 | EnvRet:   100.9 | Loss:  -112.554 | DR: 0.882 | Γ: 1.696
+[touch ] Ep 0682 | EnvRet:   116.4 | Loss:   -53.607 | DR: 0.947 | Γ: 1.626
+[brain ] Ep 0683 | EnvRet:    96.4 | Loss:   -53.849 | DR: 1.000 | Γ: 1.615
+[fusion] Ep 0684 | EnvRet:   119.3 | Loss:  -113.206 | DR: 0.927 | Γ: 1.513
+[pure  ] Ep 0685 | EnvRet:   186.2 | Loss:  -176.248 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0686 | EnvRet:   120.9 | Loss:   -76.806 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0687 | EnvRet:   181.4 | Loss:  -170.947 | DR: 0.925 | Γ: 2.000
+[fusion] Ep 0688 | EnvRet:   102.9 | Loss:   -49.806 | DR: 1.000 | Γ: 1.568
+[pure  ] Ep 0689 | EnvRet:   153.4 | Loss:   -79.256 | DR: 1.000 | Γ: 1.631
+[touch ] Ep 0690 | EnvRet:   167.1 | Loss:   -51.960 | DR: 0.927 | Γ: 1.571
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[brain ] Ep 0691 | EnvRet:   204.3 | Loss:  -185.938 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0692 | EnvRet:   117.7 | Loss:   -81.805 | DR: 0.965 | Γ: 2.000
+[pure  ] Ep 0693 | EnvRet:   136.8 | Loss:  -119.397 | DR: 0.958 | Γ: 2.000
+[touch ] Ep 0694 | EnvRet:   110.4 | Loss:   -39.004 | DR: 0.755 | Γ: 1.524
+[brain ] Ep 0695 | EnvRet:   136.3 | Loss:   -78.756 | DR: 0.809 | Γ: 1.682
+[fusion] Ep 0696 | EnvRet:   160.7 | Loss:   -52.768 | DR: 0.955 | Γ: 2.000
+[pure  ] Ep 0697 | EnvRet:   202.2 | Loss:   -64.475 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0698 | EnvRet:   153.6 | Loss:   -73.838 | DR: 0.893 | Γ: 2.000
+[brain ] Ep 0699 | EnvRet:   139.3 | Loss:   -89.688 | DR: 0.983 | Γ: 1.532
+[fusion] Ep 0700 | EnvRet:   118.1 | Loss:  -105.430 | DR: 1.000 | Γ: 1.492
+[pure  ] Ep 0701 | EnvRet:    96.0 | Loss:   -28.282 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0702 | EnvRet:   151.7 | Loss:    -2.447 | DR: 0.961 | Γ: 2.000
+[brain ] Ep 0703 | EnvRet:   176.1 | Loss:  -110.325 | DR: 0.867 | Γ: 2.000
+[fusion] Ep 0704 | EnvRet:   168.3 | Loss:  -129.688 | DR: 0.936 | Γ: 1.623
+[pure  ] Ep 0705 | EnvRet:   126.2 | Loss:  -116.080 | DR: 1.000 | Γ: 1.762
+[touch ] Ep 0706 | EnvRet:   129.5 | Loss:   -52.869 | DR: 0.963 | Γ: 2.000
+[brain ] Ep 0707 | EnvRet:   145.0 | Loss:  -155.893 | DR: 0.935 | Γ: 1.452
+[fusion] Ep 0708 | EnvRet:   137.6 | Loss:   -74.426 | DR: 0.897 | Γ: 2.000
+[pure  ] Ep 0709 | EnvRet:    95.8 | Loss:   -65.346 | DR: 0.994 | Γ: 1.560
+[touch ] Ep 0710 | EnvRet:   183.4 | Loss:   -77.933 | DR: 0.978 | Γ: 2.000
+[brain ] Ep 0711 | EnvRet:   114.1 | Loss:   -71.398 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0712 | EnvRet:   160.3 | Loss:   -23.062 | DR: 0.986 | Γ: 1.719
+[pure  ] Ep 0713 | EnvRet:   132.5 | Loss:  -101.541 | DR: 0.856 | Γ: 1.691
+[touch ] Ep 0714 | EnvRet:   121.3 | Loss:   -39.123 | DR: 0.916 | Γ: 1.675
+[brain ] Ep 0715 | EnvRet:   134.1 | Loss:  -108.246 | DR: 0.929 | Γ: 1.755
+[fusion] Ep 0716 | EnvRet:   144.6 | Loss:   -79.818 | DR: 0.737 | Γ: 1.528
+[pure  ] Ep 0717 | EnvRet:   103.2 | Loss:   -88.033 | DR: 0.996 | Γ: 1.540
+[touch ] Ep 0718 | EnvRet:   102.9 | Loss:  -104.985 | DR: 0.923 | Γ: 1.708
+[brain ] Ep 0719 | EnvRet:   105.6 | Loss:   -47.047 | DR: 1.000 | Γ: 1.507
+[fusion] Ep 0720 | EnvRet:    94.7 | Loss:   -82.112 | DR: 0.884 | Γ: 2.000
+[pure  ] Ep 0721 | EnvRet:   157.4 | Loss:   -17.984 | DR: 0.989 | Γ: 1.543
+[touch ] Ep 0722 | EnvRet:   157.3 | Loss:   -68.621 | DR: 0.929 | Γ: 1.450
+[brain ] Ep 0723 | EnvRet:   142.6 | Loss:   -78.569 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0724 | EnvRet:   171.3 | Loss:  -137.602 | DR: 1.000 | Γ: 1.666
+[pure  ] Ep 0725 | EnvRet:   105.6 | Loss:   -56.539 | DR: 0.770 | Γ: 1.649
+[touch ] Ep 0726 | EnvRet:   120.5 | Loss:   -76.567 | DR: 0.996 | Γ: 2.000
+[brain ] Ep 0727 | EnvRet:   184.9 | Loss:   -94.679 | DR: 0.846 | Γ: 1.555
+[fusion] Ep 0728 | EnvRet:    94.5 | Loss:   -72.283 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0729 | EnvRet:   113.7 | Loss:  -120.051 | DR: 1.000 | Γ: 1.704
+[touch ] Ep 0730 | EnvRet:   134.5 | Loss:   -90.453 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0731 | EnvRet:   115.4 | Loss:  -111.972 | DR: 1.000 | Γ: 1.455
+[fusion] Ep 0732 | EnvRet:   135.6 | Loss:  -127.145 | DR: 0.892 | Γ: 2.000
+[pure  ] Ep 0733 | EnvRet:   150.2 | Loss:   -58.797 | DR: 0.885 | Γ: 1.463
+[touch ] Ep 0734 | EnvRet:   151.1 | Loss:   -79.864 | DR: 0.960 | Γ: 1.739
+[brain ] Ep 0735 | EnvRet:   137.5 | Loss:  -109.371 | DR: 0.936 | Γ: 2.000
+[fusion] Ep 0736 | EnvRet:   124.0 | Loss:  -112.941 | DR: 0.932 | Γ: 1.812
+[pure  ] Ep 0737 | EnvRet:   177.3 | Loss:  -171.346 | DR: 0.967 | Γ: 1.557
+[touch ] Ep 0738 | EnvRet:   225.4 | Loss:   -98.824 | DR: 0.956 | Γ: 1.588
+[brain ] Ep 0739 | EnvRet:   131.7 | Loss:  -105.226 | DR: 0.900 | Γ: 1.378
+[fusion] Ep 0740 | EnvRet:    95.0 | Loss:   -80.020 | DR: 0.993 | Γ: 1.463
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[pure  ] Ep 0741 | EnvRet:   137.1 | Loss:   -35.397 | DR: 0.965 | Γ: 2.000
+[touch ] Ep 0742 | EnvRet:   168.9 | Loss:  -158.290 | DR: 1.000 | Γ: 1.679
+[brain ] Ep 0743 | EnvRet:   124.4 | Loss:   -57.105 | DR: 1.000 | Γ: 1.545
+[fusion] Ep 0744 | EnvRet:   188.8 | Loss:   -94.969 | DR: 1.000 | Γ: 1.547
+[pure  ] Ep 0745 | EnvRet:   157.3 | Loss:  -102.384 | DR: 0.922 | Γ: 1.729
+[touch ] Ep 0746 | EnvRet:    95.9 | Loss:   -59.394 | DR: 1.000 | Γ: 1.746
+[brain ] Ep 0747 | EnvRet:   182.4 | Loss:  -179.904 | DR: 0.926 | Γ: 1.584
+[fusion] Ep 0748 | EnvRet:   157.7 | Loss:   -68.222 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0749 | EnvRet:   109.6 | Loss:   -44.037 | DR: 0.990 | Γ: 2.000
+[touch ] Ep 0750 | EnvRet:   107.8 | Loss:   -86.056 | DR: 0.988 | Γ: 2.000
+[brain ] Ep 0751 | EnvRet:   109.9 | Loss:   -87.684 | DR: 1.000 | Γ: 1.441
+[fusion] Ep 0752 | EnvRet:   101.3 | Loss:   -81.989 | DR: 0.958 | Γ: 2.000
+[pure  ] Ep 0753 | EnvRet:   116.7 | Loss:   -77.264 | DR: 1.000 | Γ: 1.802
+[touch ] Ep 0754 | EnvRet:   134.9 | Loss:  -112.482 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0755 | EnvRet:   109.6 | Loss:   -32.383 | DR: 1.000 | Γ: 1.618
+[fusion] Ep 0756 | EnvRet:   115.9 | Loss:  -100.368 | DR: 0.899 | Γ: 2.000
+[pure  ] Ep 0757 | EnvRet:   158.0 | Loss:   -79.979 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0758 | EnvRet:   148.6 | Loss:  -122.620 | DR: 0.859 | Γ: 1.487
+[brain ] Ep 0759 | EnvRet:   119.5 | Loss:    23.095 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0760 | EnvRet:   118.4 | Loss:  -125.744 | DR: 1.000 | Γ: 1.500
+[pure  ] Ep 0761 | EnvRet:   149.4 | Loss:   -67.378 | DR: 1.000 | Γ: 1.708
+[touch ] Ep 0762 | EnvRet:   110.3 | Loss:   -59.026 | DR: 0.962 | Γ: 1.684
+[brain ] Ep 0763 | EnvRet:   150.7 | Loss:  -186.516 | DR: 0.987 | Γ: 2.000
+[fusion] Ep 0764 | EnvRet:   169.7 | Loss:   -45.359 | DR: 0.972 | Γ: 1.663
+[pure  ] Ep 0765 | EnvRet:   179.5 | Loss:   -66.247 | DR: 0.977 | Γ: 1.677
+[touch ] Ep 0766 | EnvRet:   122.9 | Loss:  -134.459 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0767 | EnvRet:   138.5 | Loss:   -39.469 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0768 | EnvRet:   190.4 | Loss:  -143.974 | DR: 1.000 | Γ: 1.616
+[pure  ] Ep 0769 | EnvRet:    99.0 | Loss:   -68.532 | DR: 1.000 | Γ: 1.449
+[touch ] Ep 0770 | EnvRet:   218.9 | Loss:  -175.970 | DR: 0.922 | Γ: 1.585
+[brain ] Ep 0771 | EnvRet:    95.6 | Loss:   -34.962 | DR: 0.883 | Γ: 1.585
+[fusion] Ep 0772 | EnvRet:    95.9 | Loss:   -42.906 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0773 | EnvRet:   164.8 | Loss:     3.683 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0774 | EnvRet:   118.0 | Loss:   -35.002 | DR: 0.922 | Γ: 1.808
+[brain ] Ep 0775 | EnvRet:   158.9 | Loss:  -175.249 | DR: 0.934 | Γ: 2.000
+[fusion] Ep 0776 | EnvRet:   175.4 | Loss:  -150.694 | DR: 0.777 | Γ: 1.674
+[pure  ] Ep 0777 | EnvRet:   128.1 | Loss:  -107.330 | DR: 1.000 | Γ: 1.550
+[touch ] Ep 0778 | EnvRet:   122.7 | Loss:   -98.181 | DR: 0.965 | Γ: 1.555
+[brain ] Ep 0779 | EnvRet:   124.9 | Loss:   -66.678 | DR: 0.944 | Γ: 1.661
+[fusion] Ep 0780 | EnvRet:   138.8 | Loss:   -37.354 | DR: 0.922 | Γ: 1.544
+[pure  ] Ep 0781 | EnvRet:   161.7 | Loss:   -74.789 | DR: 1.000 | Γ: 1.655
+[touch ] Ep 0782 | EnvRet:   107.7 | Loss:  -117.567 | DR: 0.919 | Γ: 2.000
+[brain ] Ep 0783 | EnvRet:   134.7 | Loss:  -170.375 | DR: 1.000 | Γ: 1.432
+[fusion] Ep 0784 | EnvRet:   105.4 | Loss:   -29.774 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0785 | EnvRet:   165.3 | Loss:   -75.870 | DR: 0.905 | Γ: 1.909
+[touch ] Ep 0786 | EnvRet:   126.5 | Loss:   -41.487 | DR: 0.909 | Γ: 2.000
+[brain ] Ep 0787 | EnvRet:   107.1 | Loss:   -86.637 | DR: 0.870 | Γ: 1.607
+[fusion] Ep 0788 | EnvRet:   195.4 | Loss:  -164.202 | DR: 0.992 | Γ: 1.751
+[pure  ] Ep 0789 | EnvRet:   194.1 | Loss:   -81.745 | DR: 0.959 | Γ: 1.495
+[touch ] Ep 0790 | EnvRet:   100.0 | Loss:   -47.695 | DR: 0.869 | Γ: 1.467
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[brain ] Ep 0791 | EnvRet:   173.2 | Loss:  -130.137 | DR: 0.999 | Γ: 1.551
+[fusion] Ep 0792 | EnvRet:    95.7 | Loss:   -21.625 | DR: 1.000 | Γ: 1.597
+[pure  ] Ep 0793 | EnvRet:   160.5 | Loss:  -105.177 | DR: 0.802 | Γ: 2.000
+[touch ] Ep 0794 | EnvRet:    99.7 | Loss:   -68.662 | DR: 0.937 | Γ: 2.000
+[brain ] Ep 0795 | EnvRet:   134.0 | Loss:   -47.479 | DR: 0.858 | Γ: 2.000
+[fusion] Ep 0796 | EnvRet:   142.5 | Loss:   -40.886 | DR: 0.984 | Γ: 1.768
+[pure  ] Ep 0797 | EnvRet:   122.7 | Loss:   -61.423 | DR: 1.000 | Γ: 1.646
+[touch ] Ep 0798 | EnvRet:   121.1 | Loss:   -35.882 | DR: 0.954 | Γ: 1.564
+[brain ] Ep 0799 | EnvRet:   170.5 | Loss:  -145.576 | DR: 0.931 | Γ: 1.343
+[fusion] Ep 0800 | EnvRet:   149.1 | Loss:   -81.379 | DR: 1.000 | Γ: 1.621
+[pure  ] Ep 0801 | EnvRet:   116.0 | Loss:   -19.207 | DR: 0.915 | Γ: 1.617
+[touch ] Ep 0802 | EnvRet:   135.4 | Loss:  -129.236 | DR: 1.000 | Γ: 1.699
+[brain ] Ep 0803 | EnvRet:    98.9 | Loss:   -63.774 | DR: 1.000 | Γ: 1.724
+[fusion] Ep 0804 | EnvRet:   171.0 | Loss:  -108.923 | DR: 0.962 | Γ: 1.539
+[pure  ] Ep 0805 | EnvRet:   150.7 | Loss:   -72.803 | DR: 0.986 | Γ: 2.000
+[touch ] Ep 0806 | EnvRet:   183.5 | Loss:  -108.003 | DR: 0.879 | Γ: 1.568
+[brain ] Ep 0807 | EnvRet:   128.4 | Loss:  -116.311 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0808 | EnvRet:   103.5 | Loss:   -83.840 | DR: 0.889 | Γ: 1.571
+[pure  ] Ep 0809 | EnvRet:   158.5 | Loss:  -154.686 | DR: 0.918 | Γ: 1.567
+[touch ] Ep 0810 | EnvRet:   115.6 | Loss:  -106.670 | DR: 0.920 | Γ: 2.000
+[brain ] Ep 0811 | EnvRet:   129.2 | Loss:   -41.271 | DR: 0.930 | Γ: 2.000
+[fusion] Ep 0812 | EnvRet:   238.7 | Loss:    24.824 | DR: 0.944 | Γ: 1.400
+[pure  ] Ep 0813 | EnvRet:   166.7 | Loss:  -136.668 | DR: 0.974 | Γ: 1.402
+[touch ] Ep 0814 | EnvRet:   153.8 | Loss:   -39.940 | DR: 1.000 | Γ: 1.547
+[brain ] Ep 0815 | EnvRet:   110.6 | Loss:  -100.477 | DR: 0.956 | Γ: 1.572
+[fusion] Ep 0816 | EnvRet:   155.8 | Loss:  -112.788 | DR: 0.886 | Γ: 1.541
+[pure  ] Ep 0817 | EnvRet:   121.7 | Loss:  -111.925 | DR: 0.969 | Γ: 1.776
+[touch ] Ep 0818 | EnvRet:   131.8 | Loss:   -84.332 | DR: 0.871 | Γ: 1.768
+[brain ] Ep 0819 | EnvRet:   157.6 | Loss:  -117.038 | DR: 0.819 | Γ: 2.000
+[fusion] Ep 0820 | EnvRet:   142.1 | Loss:   -65.586 | DR: 0.830 | Γ: 1.468
+[pure  ] Ep 0821 | EnvRet:   229.5 | Loss:   -48.339 | DR: 0.948 | Γ: 2.000
+[touch ] Ep 0822 | EnvRet:    94.7 | Loss:   -93.162 | DR: 0.757 | Γ: 1.634
+[brain ] Ep 0823 | EnvRet:   106.8 | Loss:   -57.281 | DR: 0.848 | Γ: 1.451
+[fusion] Ep 0824 | EnvRet:   117.8 | Loss:   -37.182 | DR: 0.937 | Γ: 1.607
+[pure  ] Ep 0825 | EnvRet:   133.5 | Loss:   -25.503 | DR: 0.877 | Γ: 1.623
+[touch ] Ep 0826 | EnvRet:   166.0 | Loss:   -56.886 | DR: 1.000 | Γ: 1.664
+[brain ] Ep 0827 | EnvRet:   121.7 | Loss:  -143.724 | DR: 0.953 | Γ: 1.603
+[fusion] Ep 0828 | EnvRet:   128.8 | Loss:  -135.113 | DR: 0.801 | Γ: 2.000
+[pure  ] Ep 0829 | EnvRet:   134.0 | Loss:   -75.801 | DR: 0.995 | Γ: 1.556
+[touch ] Ep 0830 | EnvRet:   137.7 | Loss:  -118.753 | DR: 0.927 | Γ: 2.000
+[brain ] Ep 0831 | EnvRet:   108.5 | Loss:   -89.042 | DR: 1.000 | Γ: 1.742
+[fusion] Ep 0832 | EnvRet:   224.7 | Loss:   -43.239 | DR: 0.966 | Γ: 1.494
+[pure  ] Ep 0833 | EnvRet:   126.6 | Loss:   -81.143 | DR: 0.964 | Γ: 2.000
+[touch ] Ep 0834 | EnvRet:   112.5 | Loss:   -95.452 | DR: 0.978 | Γ: 1.519
+[brain ] Ep 0835 | EnvRet:   162.1 | Loss:  -175.748 | DR: 0.900 | Γ: 1.644
+[fusion] Ep 0836 | EnvRet:   187.4 | Loss:  -202.825 | DR: 1.000 | Γ: 1.711
+[pure  ] Ep 0837 | EnvRet:   121.6 | Loss:   -65.667 | DR: 0.968 | Γ: 1.550
+[touch ] Ep 0838 | EnvRet:   124.0 | Loss:  -120.638 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0839 | EnvRet:   187.6 | Loss:   -64.166 | DR: 1.000 | Γ: 1.722
+[fusion] Ep 0840 | EnvRet:   168.5 | Loss:   -95.810 | DR: 0.917 | Γ: 2.000
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[pure  ] Ep 0841 | EnvRet:   169.5 | Loss:  -104.941 | DR: 0.938 | Γ: 1.648
+[touch ] Ep 0842 | EnvRet:   110.3 | Loss:   -56.274 | DR: 0.938 | Γ: 2.000
+[brain ] Ep 0843 | EnvRet:   121.2 | Loss:  -133.411 | DR: 0.873 | Γ: 1.626
+[fusion] Ep 0844 | EnvRet:   101.4 | Loss:  -102.377 | DR: 0.891 | Γ: 1.527
+[pure  ] Ep 0845 | EnvRet:   196.7 | Loss:  -158.434 | DR: 0.966 | Γ: 1.421
+[touch ] Ep 0846 | EnvRet:   116.2 | Loss:   -95.785 | DR: 0.985 | Γ: 1.413
+[brain ] Ep 0847 | EnvRet:   164.8 | Loss:  -128.493 | DR: 0.938 | Γ: 1.665
+[fusion] Ep 0848 | EnvRet:    93.4 | Loss:  -111.286 | DR: 0.877 | Γ: 2.000
+[pure  ] Ep 0849 | EnvRet:   113.4 | Loss:   -30.104 | DR: 0.937 | Γ: 1.488
+[touch ] Ep 0850 | EnvRet:   160.1 | Loss:  -136.488 | DR: 0.976 | Γ: 1.602
+[brain ] Ep 0851 | EnvRet:   136.3 | Loss:  -152.789 | DR: 0.908 | Γ: 2.000
+[fusion] Ep 0852 | EnvRet:   104.6 | Loss:   -64.672 | DR: 1.000 | Γ: 1.476
+[pure  ] Ep 0853 | EnvRet:   122.4 | Loss:   -73.799 | DR: 0.972 | Γ: 2.000
+[touch ] Ep 0854 | EnvRet:    89.8 | Loss:   -62.322 | DR: 0.985 | Γ: 1.545
+[brain ] Ep 0855 | EnvRet:   160.8 | Loss:  -181.924 | DR: 0.863 | Γ: 2.000
+[fusion] Ep 0856 | EnvRet:   118.9 | Loss:   -66.314 | DR: 1.000 | Γ: 1.583
+[pure  ] Ep 0857 | EnvRet:    84.6 | Loss:    -7.181 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0858 | EnvRet:   221.6 | Loss:  -103.408 | DR: 0.949 | Γ: 2.000
+[brain ] Ep 0859 | EnvRet:   150.3 | Loss:  -157.408 | DR: 0.826 | Γ: 1.654
+[fusion] Ep 0860 | EnvRet:   185.3 | Loss:  -146.080 | DR: 0.866 | Γ: 1.565
+[pure  ] Ep 0861 | EnvRet:   192.4 | Loss:   -95.027 | DR: 0.870 | Γ: 2.000
+[touch ] Ep 0862 | EnvRet:   178.2 | Loss:  -137.062 | DR: 0.917 | Γ: 1.463
+[brain ] Ep 0863 | EnvRet:   135.7 | Loss:  -120.270 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0864 | EnvRet:   141.9 | Loss:   -89.958 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0865 | EnvRet:   138.5 | Loss:   -39.827 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0866 | EnvRet:   154.0 | Loss:  -124.899 | DR: 0.951 | Γ: 1.632
+[brain ] Ep 0867 | EnvRet:   108.2 | Loss:   -75.060 | DR: 1.000 | Γ: 1.610
+[fusion] Ep 0868 | EnvRet:   103.6 | Loss:  -124.998 | DR: 0.941 | Γ: 1.695
+[pure  ] Ep 0869 | EnvRet:   185.8 | Loss:   -85.401 | DR: 0.897 | Γ: 1.584
+[touch ] Ep 0870 | EnvRet:   121.8 | Loss:   -55.422 | DR: 0.971 | Γ: 1.735
+[brain ] Ep 0871 | EnvRet:   173.7 | Loss:   -60.171 | DR: 0.966 | Γ: 1.446
+[fusion] Ep 0872 | EnvRet:   175.5 | Loss:  -126.278 | DR: 1.000 | Γ: 1.711
+[pure  ] Ep 0873 | EnvRet:   166.4 | Loss:  -112.100 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 0874 | EnvRet:   137.8 | Loss:  -109.545 | DR: 0.872 | Γ: 1.459
+[brain ] Ep 0875 | EnvRet:   113.5 | Loss:  -108.822 | DR: 0.876 | Γ: 1.338
+[fusion] Ep 0876 | EnvRet:   133.4 | Loss:  -111.735 | DR: 0.956 | Γ: 1.656
+[pure  ] Ep 0877 | EnvRet:   143.8 | Loss:  -119.622 | DR: 0.850 | Γ: 2.000
+[touch ] Ep 0878 | EnvRet:   127.9 | Loss:   -73.022 | DR: 1.000 | Γ: 1.672
+[brain ] Ep 0879 | EnvRet:   127.3 | Loss:   -77.051 | DR: 1.000 | Γ: 1.640
+[fusion] Ep 0880 | EnvRet:   196.8 | Loss:   -97.081 | DR: 1.000 | Γ: 1.634
+[pure  ] Ep 0881 | EnvRet:   158.7 | Loss:  -106.140 | DR: 0.836 | Γ: 1.560
+[touch ] Ep 0882 | EnvRet:   145.2 | Loss:  -101.547 | DR: 0.942 | Γ: 2.000
+[brain ] Ep 0883 | EnvRet:   182.3 | Loss:   -43.076 | DR: 0.860 | Γ: 1.685
+[fusion] Ep 0884 | EnvRet:   170.2 | Loss:  -150.150 | DR: 1.000 | Γ: 1.614
+[pure  ] Ep 0885 | EnvRet:   232.3 | Loss:   -39.313 | DR: 1.000 | Γ: 1.584
+[touch ] Ep 0886 | EnvRet:   114.2 | Loss:  -110.056 | DR: 0.779 | Γ: 2.000
+[brain ] Ep 0887 | EnvRet:   108.8 | Loss:   -34.683 | DR: 0.937 | Γ: 1.750
+[fusion] Ep 0888 | EnvRet:   150.5 | Loss:   -60.084 | DR: 0.911 | Γ: 1.434
+[pure  ] Ep 0889 | EnvRet:   169.3 | Loss:  -187.844 | DR: 1.000 | Γ: 1.611
+[touch ] Ep 0890 | EnvRet:   148.9 | Loss:   -55.355 | DR: 0.964 | Γ: 1.534
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[brain ] Ep 0891 | EnvRet:    84.1 | Loss:   -26.071 | DR: 0.951 | Γ: 2.000
+[fusion] Ep 0892 | EnvRet:   199.4 | Loss:  -146.200 | DR: 0.862 | Γ: 1.617
+[pure  ] Ep 0893 | EnvRet:   123.9 | Loss:   -43.328 | DR: 0.959 | Γ: 1.636
+[touch ] Ep 0894 | EnvRet:   171.4 | Loss:  -124.207 | DR: 1.000 | Γ: 1.700
+[brain ] Ep 0895 | EnvRet:   134.2 | Loss:   -39.020 | DR: 0.998 | Γ: 1.573
+[fusion] Ep 0896 | EnvRet:   106.3 | Loss:   -58.227 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0897 | EnvRet:   143.6 | Loss:  -106.476 | DR: 0.880 | Γ: 1.609
+[touch ] Ep 0898 | EnvRet:   140.6 | Loss:   -99.082 | DR: 1.000 | Γ: 1.776
+[brain ] Ep 0899 | EnvRet:   146.9 | Loss:   -54.595 | DR: 0.845 | Γ: 1.666
+[fusion] Ep 0900 | EnvRet:   168.2 | Loss:   -27.284 | DR: 0.904 | Γ: 1.559
+[pure  ] Ep 0901 | EnvRet:   164.9 | Loss:  -141.274 | DR: 0.852 | Γ: 2.000
+[touch ] Ep 0902 | EnvRet:   130.4 | Loss:  -155.452 | DR: 0.990 | Γ: 1.478
+[brain ] Ep 0903 | EnvRet:   125.4 | Loss:   -59.581 | DR: 1.000 | Γ: 1.666
+[fusion] Ep 0904 | EnvRet:   167.8 | Loss:  -104.802 | DR: 0.934 | Γ: 1.675
+[pure  ] Ep 0905 | EnvRet:   132.2 | Loss:   -66.023 | DR: 1.000 | Γ: 1.378
+[touch ] Ep 0906 | EnvRet:   127.6 | Loss:   -61.983 | DR: 0.853 | Γ: 1.559
+[brain ] Ep 0907 | EnvRet:   181.3 | Loss:  -116.016 | DR: 0.839 | Γ: 1.597
+[fusion] Ep 0908 | EnvRet:   116.4 | Loss:   -86.317 | DR: 0.915 | Γ: 1.561
+[pure  ] Ep 0909 | EnvRet:   184.7 | Loss:   -93.147 | DR: 0.921 | Γ: 1.330
+[touch ] Ep 0910 | EnvRet:   195.6 | Loss:  -134.250 | DR: 0.952 | Γ: 1.606
+[brain ] Ep 0911 | EnvRet:   105.5 | Loss:   -28.077 | DR: 0.881 | Γ: 2.000
+[fusion] Ep 0912 | EnvRet:   132.2 | Loss:   -93.315 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0913 | EnvRet:   134.1 | Loss:   -69.928 | DR: 0.915 | Γ: 2.000
+[touch ] Ep 0914 | EnvRet:    89.7 | Loss:   -55.814 | DR: 1.000 | Γ: 1.464
+[brain ] Ep 0915 | EnvRet:    95.4 | Loss:   -51.142 | DR: 0.918 | Γ: 2.000
+[fusion] Ep 0916 | EnvRet:    95.4 | Loss:   -25.407 | DR: 0.888 | Γ: 2.000
+[pure  ] Ep 0917 | EnvRet:   150.9 | Loss:  -151.250 | DR: 1.000 | Γ: 1.635
+[touch ] Ep 0918 | EnvRet:   163.5 | Loss:   -41.170 | DR: 0.963 | Γ: 1.433
+[brain ] Ep 0919 | EnvRet:   146.1 | Loss:   -36.347 | DR: 1.000 | Γ: 1.528
+[fusion] Ep 0920 | EnvRet:   162.8 | Loss:  -167.927 | DR: 0.948 | Γ: 1.558
+[pure  ] Ep 0921 | EnvRet:   153.8 | Loss:   -60.076 | DR: 0.998 | Γ: 1.687
+[touch ] Ep 0922 | EnvRet:   159.7 | Loss:    -1.122 | DR: 1.000 | Γ: 1.441
+[brain ] Ep 0923 | EnvRet:   158.0 | Loss:   -93.911 | DR: 0.868 | Γ: 1.430
+[fusion] Ep 0924 | EnvRet:   104.1 | Loss:  -104.708 | DR: 0.825 | Γ: 1.449
+[pure  ] Ep 0925 | EnvRet:   115.1 | Loss:   -98.292 | DR: 0.910 | Γ: 1.540
+[touch ] Ep 0926 | EnvRet:   131.6 | Loss:   -85.714 | DR: 1.000 | Γ: 1.807
+[brain ] Ep 0927 | EnvRet:   163.6 | Loss:  -157.612 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0928 | EnvRet:   182.5 | Loss:   -21.308 | DR: 0.942 | Γ: 2.000
+[pure  ] Ep 0929 | EnvRet:   146.8 | Loss:   -46.483 | DR: 0.778 | Γ: 1.561
+[touch ] Ep 0930 | EnvRet:   187.1 | Loss:  -126.127 | DR: 0.914 | Γ: 1.658
+[brain ] Ep 0931 | EnvRet:   130.8 | Loss:   -89.980 | DR: 1.000 | Γ: 1.753
+[fusion] Ep 0932 | EnvRet:   207.7 | Loss:   -95.509 | DR: 1.000 | Γ: 1.688
+[pure  ] Ep 0933 | EnvRet:    89.9 | Loss:   -67.789 | DR: 1.000 | Γ: 1.564
+[touch ] Ep 0934 | EnvRet:   106.9 | Loss:   -71.005 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0935 | EnvRet:   148.1 | Loss:  -105.163 | DR: 0.784 | Γ: 1.584
+[fusion] Ep 0936 | EnvRet:   149.1 | Loss:  -133.264 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0937 | EnvRet:   168.9 | Loss:  -111.679 | DR: 0.803 | Γ: 1.414
+[touch ] Ep 0938 | EnvRet:   157.1 | Loss:   -91.692 | DR: 1.000 | Γ: 1.448
+[brain ] Ep 0939 | EnvRet:   194.0 | Loss:  -167.894 | DR: 0.865 | Γ: 1.500
+[fusion] Ep 0940 | EnvRet:   123.4 | Loss:  -123.975 | DR: 0.873 | Γ: 1.585
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[pure  ] Ep 0941 | EnvRet:   165.6 | Loss:   -60.813 | DR: 1.000 | Γ: 1.464
+[touch ] Ep 0942 | EnvRet:   181.4 | Loss:   -87.996 | DR: 0.966 | Γ: 1.534
+[brain ] Ep 0943 | EnvRet:   138.1 | Loss:   -91.355 | DR: 1.000 | Γ: 1.642
+[fusion] Ep 0944 | EnvRet:   128.4 | Loss:   -69.983 | DR: 0.917 | Γ: 1.556
+[pure  ] Ep 0945 | EnvRet:   222.4 | Loss:   -91.618 | DR: 1.000 | Γ: 1.462
+[touch ] Ep 0946 | EnvRet:    94.7 | Loss:   -34.077 | DR: 1.000 | Γ: 1.801
+[brain ] Ep 0947 | EnvRet:   162.6 | Loss:   -88.492 | DR: 0.930 | Γ: 1.500
+[fusion] Ep 0948 | EnvRet:   115.4 | Loss:   -87.204 | DR: 0.805 | Γ: 2.000
+[pure  ] Ep 0949 | EnvRet:   101.7 | Loss:   -81.326 | DR: 0.952 | Γ: 2.000
+[touch ] Ep 0950 | EnvRet:   153.8 | Loss:  -118.912 | DR: 1.000 | Γ: 1.695
+[brain ] Ep 0951 | EnvRet:   136.9 | Loss:  -125.772 | DR: 0.951 | Γ: 1.443
+[fusion] Ep 0952 | EnvRet:   118.1 | Loss:   -14.075 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0953 | EnvRet:   125.5 | Loss:   -93.488 | DR: 0.873 | Γ: 1.457
+[touch ] Ep 0954 | EnvRet:   247.3 | Loss:  -148.648 | DR: 0.838 | Γ: 1.494
+[brain ] Ep 0955 | EnvRet:   101.5 | Loss:   -43.573 | DR: 0.897 | Γ: 1.433
+[fusion] Ep 0956 | EnvRet:   199.8 | Loss:  -194.834 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 0957 | EnvRet:   151.5 | Loss:  -129.913 | DR: 1.000 | Γ: 1.500
+[touch ] Ep 0958 | EnvRet:    84.9 | Loss:   -55.273 | DR: 0.976 | Γ: 1.572
+[brain ] Ep 0959 | EnvRet:   128.7 | Loss:   -73.800 | DR: 0.954 | Γ: 1.399
+[fusion] Ep 0960 | EnvRet:   168.4 | Loss:  -166.631 | DR: 0.827 | Γ: 2.000
+[pure  ] Ep 0961 | EnvRet:   132.5 | Loss:  -119.256 | DR: 0.908 | Γ: 2.000
+[touch ] Ep 0962 | EnvRet:   192.0 | Loss:   -62.937 | DR: 0.897 | Γ: 1.532
+[brain ] Ep 0963 | EnvRet:   138.7 | Loss:  -122.047 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0964 | EnvRet:   239.2 | Loss:   -77.257 | DR: 0.906 | Γ: 1.572
+[pure  ] Ep 0965 | EnvRet:   124.8 | Loss:   -69.233 | DR: 0.986 | Γ: 2.000
+[touch ] Ep 0966 | EnvRet:   100.6 | Loss:   -52.451 | DR: 0.978 | Γ: 1.783
+[brain ] Ep 0967 | EnvRet:   130.6 | Loss:  -142.841 | DR: 0.817 | Γ: 1.659
+[fusion] Ep 0968 | EnvRet:   146.5 | Loss:   -56.906 | DR: 1.000 | Γ: 1.545
+[pure  ] Ep 0969 | EnvRet:    90.3 | Loss:   -26.190 | DR: 0.718 | Γ: 2.000
+[touch ] Ep 0970 | EnvRet:   100.8 | Loss:   -50.801 | DR: 0.887 | Γ: 1.583
+[brain ] Ep 0971 | EnvRet:   194.8 | Loss:   -85.216 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 0972 | EnvRet:   157.7 | Loss:   -74.701 | DR: 0.832 | Γ: 1.650
+[pure  ] Ep 0973 | EnvRet:   150.7 | Loss:   -76.100 | DR: 0.996 | Γ: 1.722
+[touch ] Ep 0974 | EnvRet:   144.3 | Loss:   -80.555 | DR: 0.993 | Γ: 1.557
+[brain ] Ep 0975 | EnvRet:   158.0 | Loss:  -106.288 | DR: 0.854 | Γ: 2.000
+[fusion] Ep 0976 | EnvRet:   108.8 | Loss:   -65.541 | DR: 0.856 | Γ: 1.607
+[pure  ] Ep 0977 | EnvRet:   102.3 | Loss:   -18.772 | DR: 1.000 | Γ: 1.605
+[touch ] Ep 0978 | EnvRet:    99.7 | Loss:  -120.777 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0979 | EnvRet:   115.5 | Loss:   -30.871 | DR: 1.000 | Γ: 1.763
+[fusion] Ep 0980 | EnvRet:   137.9 | Loss:   -43.650 | DR: 1.000 | Γ: 1.359
+[pure  ] Ep 0981 | EnvRet:   163.6 | Loss:   -84.599 | DR: 0.833 | Γ: 1.604
+[touch ] Ep 0982 | EnvRet:   193.5 | Loss:   -98.870 | DR: 1.000 | Γ: 1.386
+[brain ] Ep 0983 | EnvRet:   145.4 | Loss:   -18.390 | DR: 1.000 | Γ: 1.541
+[fusion] Ep 0984 | EnvRet:   162.7 | Loss:  -133.122 | DR: 0.999 | Γ: 1.573
+[pure  ] Ep 0985 | EnvRet:   166.1 | Loss:  -145.549 | DR: 0.896 | Γ: 1.637
+[touch ] Ep 0986 | EnvRet:   162.1 | Loss:   -88.550 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 0987 | EnvRet:   147.6 | Loss:  -126.617 | DR: 0.918 | Γ: 2.000
+[fusion] Ep 0988 | EnvRet:   139.7 | Loss:  -145.238 | DR: 0.904 | Γ: 1.667
+[pure  ] Ep 0989 | EnvRet:   173.1 | Loss:  -173.682 | DR: 1.000 | Γ: 1.608
+[touch ] Ep 0990 | EnvRet:   138.1 | Loss:  -132.287 | DR: 0.829 | Γ: 1.668
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[brain ] Ep 0991 | EnvRet:   100.5 | Loss:   -31.539 | DR: 0.925 | Γ: 2.000
+[fusion] Ep 0992 | EnvRet:   146.9 | Loss:   -38.916 | DR: 1.000 | Γ: 1.777
+[pure  ] Ep 0993 | EnvRet:   236.0 | Loss:  -178.985 | DR: 0.997 | Γ: 1.647
+[touch ] Ep 0994 | EnvRet:   109.7 | Loss:   -31.822 | DR: 0.878 | Γ: 1.579
+[brain ] Ep 0995 | EnvRet:   146.1 | Loss:  -111.678 | DR: 1.000 | Γ: 1.413
+[fusion] Ep 0996 | EnvRet:   126.3 | Loss:  -116.448 | DR: 1.000 | Γ: 1.609
+[pure  ] Ep 0997 | EnvRet:   132.0 | Loss:   -43.325 | DR: 0.841 | Γ: 1.530
+[touch ] Ep 0998 | EnvRet:   176.0 | Loss:  -104.185 | DR: 0.979 | Γ: 1.519
+[brain ] Ep 0999 | EnvRet:   116.7 | Loss:   -41.390 | DR: 0.920 | Γ: 1.603
+[fusion] Ep 1000 | EnvRet:   109.7 | Loss:  -149.503 | DR: 0.921 | Γ: 1.635
+[pure  ] Ep 1001 | EnvRet:   162.6 | Loss:  -118.603 | DR: 0.871 | Γ: 1.559
+[touch ] Ep 1002 | EnvRet:   267.5 | Loss:   -20.957 | DR: 1.000 | Γ: 1.434
+[brain ] Ep 1003 | EnvRet:   127.8 | Loss:   -55.571 | DR: 0.895 | Γ: 2.000
+[fusion] Ep 1004 | EnvRet:   122.6 | Loss:  -113.406 | DR: 0.921 | Γ: 1.385
+[pure  ] Ep 1005 | EnvRet:    91.8 | Loss:   -45.167 | DR: 0.892 | Γ: 1.562
+[touch ] Ep 1006 | EnvRet:   149.4 | Loss:   -12.753 | DR: 1.000 | Γ: 1.532
+[brain ] Ep 1007 | EnvRet:   141.3 | Loss:  -100.350 | DR: 1.000 | Γ: 1.496
+[fusion] Ep 1008 | EnvRet:   121.8 | Loss:   -37.670 | DR: 0.855 | Γ: 2.000
+[pure  ] Ep 1009 | EnvRet:   165.6 | Loss:  -108.406 | DR: 1.000 | Γ: 1.377
+[touch ] Ep 1010 | EnvRet:   116.8 | Loss:  -133.991 | DR: 0.878 | Γ: 1.664
+[brain ] Ep 1011 | EnvRet:   162.8 | Loss:  -168.159 | DR: 0.968 | Γ: 2.000
+[fusion] Ep 1012 | EnvRet:   151.9 | Loss:   -36.259 | DR: 0.780 | Γ: 2.000
+[pure  ] Ep 1013 | EnvRet:   156.7 | Loss:  -102.107 | DR: 0.978 | Γ: 2.000
+[touch ] Ep 1014 | EnvRet:   130.1 | Loss:  -131.251 | DR: 0.958 | Γ: 2.000
+[brain ] Ep 1015 | EnvRet:   188.4 | Loss:     3.840 | DR: 0.918 | Γ: 1.703
+[fusion] Ep 1016 | EnvRet:   156.4 | Loss:  -110.676 | DR: 1.000 | Γ: 1.628
+[pure  ] Ep 1017 | EnvRet:   127.2 | Loss:   -84.981 | DR: 0.763 | Γ: 2.000
+[touch ] Ep 1018 | EnvRet:   172.3 | Loss:  -120.617 | DR: 0.960 | Γ: 2.000
+[brain ] Ep 1019 | EnvRet:   175.5 | Loss:  -158.765 | DR: 0.909 | Γ: 1.513
+[fusion] Ep 1020 | EnvRet:   114.6 | Loss:  -101.366 | DR: 1.000 | Γ: 1.593
+[pure  ] Ep 1021 | EnvRet:    91.3 | Loss:   -47.713 | DR: 0.996 | Γ: 1.657
+[touch ] Ep 1022 | EnvRet:   142.7 | Loss:   -71.631 | DR: 0.985 | Γ: 1.533
+[brain ] Ep 1023 | EnvRet:   209.9 | Loss:   -88.929 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1024 | EnvRet:   137.8 | Loss:   -65.032 | DR: 0.984 | Γ: 1.688
+[pure  ] Ep 1025 | EnvRet:   144.1 | Loss:   -84.416 | DR: 0.985 | Γ: 2.000
+[touch ] Ep 1026 | EnvRet:   108.6 | Loss:   -73.029 | DR: 0.949 | Γ: 1.493
+[brain ] Ep 1027 | EnvRet:   115.7 | Loss:   -69.492 | DR: 0.917 | Γ: 2.000
+[fusion] Ep 1028 | EnvRet:    96.4 | Loss:  -100.093 | DR: 0.990 | Γ: 2.000
+[pure  ] Ep 1029 | EnvRet:   146.1 | Loss:  -117.866 | DR: 0.923 | Γ: 2.000
+[touch ] Ep 1030 | EnvRet:   154.8 | Loss:   -57.913 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 1031 | EnvRet:   101.5 | Loss:   -49.184 | DR: 0.897 | Γ: 1.584
+[fusion] Ep 1032 | EnvRet:   206.6 | Loss:  -208.956 | DR: 0.882 | Γ: 2.000
+[pure  ] Ep 1033 | EnvRet:    84.6 | Loss:   -48.831 | DR: 0.864 | Γ: 1.654
+[touch ] Ep 1034 | EnvRet:   142.6 | Loss:   -12.446 | DR: 0.853 | Γ: 2.000
+[brain ] Ep 1035 | EnvRet:   160.8 | Loss:  -110.592 | DR: 0.899 | Γ: 2.000
+[fusion] Ep 1036 | EnvRet:   162.3 | Loss:   -68.321 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1037 | EnvRet:   133.8 | Loss:  -114.600 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1038 | EnvRet:   174.4 | Loss:  -116.153 | DR: 0.819 | Γ: 2.000
+[brain ] Ep 1039 | EnvRet:   177.0 | Loss:   -70.215 | DR: 0.929 | Γ: 1.480
+[fusion] Ep 1040 | EnvRet:   146.0 | Loss:   -95.456 | DR: 1.000 | Γ: 1.744
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[pure  ] Ep 1041 | EnvRet:   104.1 | Loss:   -99.188 | DR: 0.874 | Γ: 1.504
+[touch ] Ep 1042 | EnvRet:   160.9 | Loss:   -66.394 | DR: 0.936 | Γ: 2.000
+[brain ] Ep 1043 | EnvRet:   117.0 | Loss:   -67.575 | DR: 0.920 | Γ: 1.814
+[fusion] Ep 1044 | EnvRet:   129.7 | Loss:   -97.138 | DR: 0.919 | Γ: 1.561
+[pure  ] Ep 1045 | EnvRet:   134.8 | Loss:  -108.006 | DR: 0.963 | Γ: 2.000
+[touch ] Ep 1046 | EnvRet:   138.4 | Loss:    -5.127 | DR: 0.982 | Γ: 1.497
+[brain ] Ep 1047 | EnvRet:   150.0 | Loss:  -110.467 | DR: 0.855 | Γ: 1.651
+[fusion] Ep 1048 | EnvRet:   153.2 | Loss:   -95.179 | DR: 0.983 | Γ: 1.702
+[pure  ] Ep 1049 | EnvRet:    89.4 | Loss:   -26.175 | DR: 0.924 | Γ: 1.557
+[touch ] Ep 1050 | EnvRet:   117.1 | Loss:   -40.819 | DR: 0.983 | Γ: 1.593
+[brain ] Ep 1051 | EnvRet:    85.4 | Loss:   -29.300 | DR: 0.850 | Γ: 1.769
+[fusion] Ep 1052 | EnvRet:   107.2 | Loss:   -85.158 | DR: 0.854 | Γ: 2.000
+[pure  ] Ep 1053 | EnvRet:   125.8 | Loss:   -93.799 | DR: 0.856 | Γ: 1.480
+[touch ] Ep 1054 | EnvRet:   108.3 | Loss:  -148.469 | DR: 0.900 | Γ: 2.000
+[brain ] Ep 1055 | EnvRet:   149.3 | Loss:  -116.679 | DR: 1.000 | Γ: 1.623
+[fusion] Ep 1056 | EnvRet:    90.2 | Loss:   -21.314 | DR: 1.000 | Γ: 1.678
+[pure  ] Ep 1057 | EnvRet:   126.8 | Loss:   -89.237 | DR: 0.812 | Γ: 1.558
+[touch ] Ep 1058 | EnvRet:   135.7 | Loss:   -61.889 | DR: 0.821 | Γ: 2.000
+[brain ] Ep 1059 | EnvRet:   149.4 | Loss:   -98.949 | DR: 1.000 | Γ: 1.671
+[fusion] Ep 1060 | EnvRet:    99.7 | Loss:   -89.349 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1061 | EnvRet:   151.5 | Loss:   -42.539 | DR: 0.780 | Γ: 1.733
+[touch ] Ep 1062 | EnvRet:   141.9 | Loss:   -93.999 | DR: 0.916 | Γ: 2.000
+[brain ] Ep 1063 | EnvRet:   130.1 | Loss:   -67.132 | DR: 0.993 | Γ: 1.389
+[fusion] Ep 1064 | EnvRet:   177.0 | Loss:  -114.904 | DR: 0.835 | Γ: 1.616
+[pure  ] Ep 1065 | EnvRet:   123.8 | Loss:  -150.984 | DR: 0.939 | Γ: 2.000
+[touch ] Ep 1066 | EnvRet:   100.4 | Loss:   -93.035 | DR: 1.000 | Γ: 1.600
+[brain ] Ep 1067 | EnvRet:   136.7 | Loss:  -100.297 | DR: 0.820 | Γ: 2.000
+[fusion] Ep 1068 | EnvRet:   147.6 | Loss:  -101.700 | DR: 1.000 | Γ: 1.700
+[pure  ] Ep 1069 | EnvRet:   128.0 | Loss:  -137.646 | DR: 1.000 | Γ: 1.610
+[touch ] Ep 1070 | EnvRet:    95.7 | Loss:   -43.304 | DR: 0.969 | Γ: 2.000
+[brain ] Ep 1071 | EnvRet:   162.8 | Loss:    -9.130 | DR: 1.000 | Γ: 1.642
+[fusion] Ep 1072 | EnvRet:   122.0 | Loss:  -104.397 | DR: 0.849 | Γ: 2.000
+[pure  ] Ep 1073 | EnvRet:   156.2 | Loss:  -160.438 | DR: 0.987 | Γ: 2.000
+[touch ] Ep 1074 | EnvRet:   136.3 | Loss:  -104.776 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 1075 | EnvRet:   101.2 | Loss:   -82.160 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1076 | EnvRet:   156.8 | Loss:  -100.762 | DR: 0.936 | Γ: 2.000
+[pure  ] Ep 1077 | EnvRet:   153.8 | Loss:  -144.428 | DR: 0.997 | Γ: 2.000
+[touch ] Ep 1078 | EnvRet:   105.4 | Loss:   -77.089 | DR: 0.965 | Γ: 1.698
+[brain ] Ep 1079 | EnvRet:   116.2 | Loss:   -62.351 | DR: 0.964 | Γ: 2.000
+[fusion] Ep 1080 | EnvRet:   140.0 | Loss:   -86.527 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1081 | EnvRet:   112.7 | Loss:   -65.203 | DR: 0.886 | Γ: 2.000
+[touch ] Ep 1082 | EnvRet:   106.1 | Loss:  -119.373 | DR: 0.950 | Γ: 2.000
+[brain ] Ep 1083 | EnvRet:   120.5 | Loss:  -104.955 | DR: 1.000 | Γ: 1.430
+[fusion] Ep 1084 | EnvRet:   120.5 | Loss:   -39.794 | DR: 1.000 | Γ: 1.696
+[pure  ] Ep 1085 | EnvRet:   158.7 | Loss:  -102.308 | DR: 0.980 | Γ: 2.000
+[touch ] Ep 1086 | EnvRet:   194.1 | Loss:  -165.872 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 1087 | EnvRet:   158.2 | Loss:  -135.384 | DR: 1.000 | Γ: 1.739
+[fusion] Ep 1088 | EnvRet:   111.1 | Loss:   -87.433 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1089 | EnvRet:   140.1 | Loss:  -110.632 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1090 | EnvRet:   142.5 | Loss:   -90.613 | DR: 0.824 | Γ: 2.000
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=282.4)
+[brain ] Ep 1091 | EnvRet:   149.0 | Loss:  -108.566 | DR: 0.933 | Γ: 2.000
+[fusion] Ep 1092 | EnvRet:   110.5 | Loss:   -65.799 | DR: 1.000 | Γ: 1.549
+[pure  ] Ep 1093 | EnvRet:   194.0 | Loss:    -2.557 | DR: 1.000 | Γ: 1.676
+[touch ] Ep 1094 | EnvRet:   152.6 | Loss:   -77.069 | DR: 0.950 | Γ: 1.595
+[brain ] Ep 1095 | EnvRet:   134.3 | Loss:  -101.661 | DR: 1.000 | Γ: 1.731
+[fusion] Ep 1096 | EnvRet:   162.8 | Loss:   -76.188 | DR: 0.792 | Γ: 1.548
+[pure  ] Ep 1097 | EnvRet:   145.4 | Loss:   -36.142 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1098 | EnvRet:   117.1 | Loss:  -115.189 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 1099 | EnvRet:   228.5 | Loss:  -108.504 | DR: 0.867 | Γ: 1.502
+[fusion] Ep 1100 | EnvRet:   139.1 | Loss:  -114.675 | DR: 0.871 | Γ: 1.499
+[pure  ] Ep 1101 | EnvRet:   122.7 | Loss:   -41.201 | DR: 0.733 | Γ: 1.583
+[touch ] Ep 1102 | EnvRet:   157.7 | Loss:  -128.319 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 1103 | EnvRet:   188.5 | Loss:   -81.180 | DR: 0.826 | Γ: 1.861
+[fusion] Ep 1104 | EnvRet:   171.3 | Loss:   -73.008 | DR: 1.000 | Γ: 1.462
+[pure  ] Ep 1105 | EnvRet:   152.0 | Loss:  -189.022 | DR: 0.930 | Γ: 1.711
+[touch ] Ep 1106 | EnvRet:   147.0 | Loss:  -141.169 | DR: 0.926 | Γ: 1.591
+[brain ] Ep 1107 | EnvRet:   206.2 | Loss:   -89.996 | DR: 1.000 | Γ: 1.564
+[fusion] Ep 1108 | EnvRet:   146.9 | Loss:  -139.482 | DR: 0.979 | Γ: 1.557
+[pure  ] Ep 1109 | EnvRet:    95.3 | Loss:   -42.505 | DR: 0.972 | Γ: 1.524
+[touch ] Ep 1110 | EnvRet:   231.0 | Loss:  -119.441 | DR: 0.997 | Γ: 2.000
+[brain ] Ep 1111 | EnvRet:   123.6 | Loss:  -122.898 | DR: 0.834 | Γ: 1.508
+[fusion] Ep 1112 | EnvRet:   110.3 | Loss:   -51.464 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1113 | EnvRet:   102.9 | Loss:   -35.024 | DR: 0.948 | Γ: 1.532
+[touch ] Ep 1114 | EnvRet:   177.8 | Loss:  -186.903 | DR: 1.000 | Γ: 1.469
+[brain ] Ep 1115 | EnvRet:   100.1 | Loss:   -23.137 | DR: 0.877 | Γ: 1.639
+[fusion] Ep 1116 | EnvRet:   131.2 | Loss:   -75.995 | DR: 1.000 | Γ: 1.577
+[pure  ] Ep 1117 | EnvRet:   162.9 | Loss:  -139.785 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1118 | EnvRet:   176.3 | Loss:  -114.500 | DR: 1.000 | Γ: 1.746
+[brain ] Ep 1119 | EnvRet:   282.1 | Loss:  -104.558 | DR: 1.000 | Γ: 1.617
+[fusion] Ep 1120 | EnvRet:   149.1 | Loss:   -44.708 | DR: 1.000 | Γ: 1.625
+[pure  ] Ep 1121 | EnvRet:    95.3 | Loss:   -53.145 | DR: 1.000 | Γ: 1.451
+[touch ] Ep 1122 | EnvRet:   104.5 | Loss:  -122.223 | DR: 0.967 | Γ: 1.567
+[brain ] Ep 1123 | EnvRet:   202.7 | Loss:   -96.952 | DR: 1.000 | Γ: 1.820
+[fusion] Ep 1124 | EnvRet:   116.3 | Loss:   -37.693 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1125 | EnvRet:   153.5 | Loss:  -135.196 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1126 | EnvRet:   118.3 | Loss:  -108.891 | DR: 0.989 | Γ: 2.000
+[brain ] Ep 1127 | EnvRet:   177.7 | Loss:   -69.305 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1128 | EnvRet:    95.3 | Loss:   -26.636 | DR: 0.955 | Γ: 1.377
+[pure  ] Ep 1129 | EnvRet:   104.3 | Loss:   -44.594 | DR: 0.798 | Γ: 2.000
+[touch ] Ep 1130 | EnvRet:   112.0 | Loss:   -90.976 | DR: 1.000 | Γ: 1.493
+   ↳ [Hydra] New global plateau: 298.5 (mode=brain)
+[brain ] Ep 1131 | EnvRet:   298.5 | Loss:   -62.999 | DR: 1.000 | Γ: 1.837
+[fusion] Ep 1132 | EnvRet:   175.7 | Loss:   -37.410 | DR: 1.000 | Γ: 1.588
+[pure  ] Ep 1133 | EnvRet:    96.5 | Loss:   -79.353 | DR: 0.963 | Γ: 1.590
+[touch ] Ep 1134 | EnvRet:   214.5 | Loss:  -131.079 | DR: 0.973 | Γ: 1.550
+[brain ] Ep 1135 | EnvRet:   121.3 | Loss:  -188.994 | DR: 0.935 | Γ: 1.684
+[fusion] Ep 1136 | EnvRet:   181.5 | Loss:  -120.972 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1137 | EnvRet:   131.2 | Loss:  -117.448 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1138 | EnvRet:   151.7 | Loss:  -155.808 | DR: 1.000 | Γ: 1.495
+[brain ] Ep 1139 | EnvRet:   100.9 | Loss:   -78.493 | DR: 1.000 | Γ: 1.614
+[fusion] Ep 1140 | EnvRet:   123.8 | Loss:  -103.405 | DR: 0.979 | Γ: 1.627
+[pure  ] Ep 1141 | EnvRet:   210.9 | Loss:   -78.579 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1142 | EnvRet:   176.6 | Loss:  -104.731 | DR: 0.996 | Γ: 1.687
+[brain ] Ep 1143 | EnvRet:   127.8 | Loss:   -53.679 | DR: 0.973 | Γ: 1.696
+[fusion] Ep 1144 | EnvRet:   176.4 | Loss:   -40.377 | DR: 1.000 | Γ: 1.636
+[pure  ] Ep 1145 | EnvRet:    84.3 | Loss:     5.983 | DR: 0.983 | Γ: 1.478
+[touch ] Ep 1146 | EnvRet:   150.6 | Loss:  -117.734 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 1147 | EnvRet:   165.7 | Loss:   -18.019 | DR: 0.900 | Γ: 1.709
+[fusion] Ep 1148 | EnvRet:   135.9 | Loss:  -104.041 | DR: 1.000 | Γ: 1.531
+[pure  ] Ep 1149 | EnvRet:   140.9 | Loss:  -166.296 | DR: 0.962 | Γ: 1.642
+[touch ] Ep 1150 | EnvRet:    96.1 | Loss:   -24.604 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 1151 | EnvRet:   147.5 | Loss:   -98.160 | DR: 0.937 | Γ: 1.428
+[fusion] Ep 1152 | EnvRet:    94.7 | Loss:   -25.683 | DR: 0.977 | Γ: 1.564
+[pure  ] Ep 1153 | EnvRet:    91.7 | Loss:   -51.484 | DR: 0.795 | Γ: 2.000
+[touch ] Ep 1154 | EnvRet:   105.7 | Loss:   -81.239 | DR: 1.000 | Γ: 1.395
+[brain ] Ep 1155 | EnvRet:   154.4 | Loss:   -66.724 | DR: 1.000 | Γ: 1.690
+[fusion] Ep 1156 | EnvRet:   128.2 | Loss:   -70.085 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1157 | EnvRet:   117.0 | Loss:  -161.754 | DR: 0.882 | Γ: 1.489
+[touch ] Ep 1158 | EnvRet:   148.3 | Loss:   -73.182 | DR: 1.000 | Γ: 1.744
+[brain ] Ep 1159 | EnvRet:   201.0 | Loss:  -181.360 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1160 | EnvRet:   140.6 | Loss:  -167.399 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1161 | EnvRet:   148.1 | Loss:  -137.641 | DR: 0.942 | Γ: 2.000
+[touch ] Ep 1162 | EnvRet:   159.7 | Loss:  -139.089 | DR: 0.969 | Γ: 1.657
+[brain ] Ep 1163 | EnvRet:   112.5 | Loss:  -113.197 | DR: 1.000 | Γ: 1.483
+[fusion] Ep 1164 | EnvRet:   137.8 | Loss:  -211.374 | DR: 0.954 | Γ: 2.000
+[pure  ] Ep 1165 | EnvRet:   111.4 | Loss:  -100.488 | DR: 0.932 | Γ: 2.000
+[touch ] Ep 1166 | EnvRet:   125.9 | Loss:   -48.018 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 1167 | EnvRet:   118.5 | Loss:  -134.052 | DR: 0.868 | Γ: 1.507
+[fusion] Ep 1168 | EnvRet:   157.2 | Loss:   -91.545 | DR: 0.903 | Γ: 1.617
+[pure  ] Ep 1169 | EnvRet:   134.7 | Loss:  -164.668 | DR: 0.965 | Γ: 2.000
+[touch ] Ep 1170 | EnvRet:   141.8 | Loss:  -140.273 | DR: 0.750 | Γ: 1.702
+[brain ] Ep 1171 | EnvRet:   111.8 | Loss:  -158.641 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1172 | EnvRet:   131.2 | Loss:   -71.107 | DR: 1.000 | Γ: 1.498
+[pure  ] Ep 1173 | EnvRet:   149.0 | Loss:  -196.363 | DR: 1.000 | Γ: 1.670
+[touch ] Ep 1174 | EnvRet:   170.8 | Loss:  -218.099 | DR: 0.805 | Γ: 1.630
+[brain ] Ep 1175 | EnvRet:   120.0 | Loss:   -96.795 | DR: 0.974 | Γ: 2.000
+[fusion] Ep 1176 | EnvRet:   105.7 | Loss:   -48.754 | DR: 1.000 | Γ: 1.503
+[pure  ] Ep 1177 | EnvRet:   150.5 | Loss:  -125.031 | DR: 0.971 | Γ: 2.000
+[touch ] Ep 1178 | EnvRet:   108.0 | Loss:   -77.845 | DR: 0.790 | Γ: 1.529
+[brain ] Ep 1179 | EnvRet:   116.9 | Loss:  -174.740 | DR: 0.943 | Γ: 2.000
+[fusion] Ep 1180 | EnvRet:   149.9 | Loss:   -98.489 | DR: 0.908 | Γ: 2.000
+[pure  ] Ep 1181 | EnvRet:   145.6 | Loss:  -167.384 | DR: 0.963 | Γ: 1.535
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=298.5)
+[touch ] Ep 1182 | EnvRet:   186.6 | Loss:  -207.859 | DR: 0.924 | Γ: 2.000
+[brain ] Ep 1183 | EnvRet:   166.8 | Loss:  -213.319 | DR: 0.907 | Γ: 2.000
+[fusion] Ep 1184 | EnvRet:   149.1 | Loss:  -147.257 | DR: 1.000 | Γ: 1.440
+[pure  ] Ep 1185 | EnvRet:   202.0 | Loss:  -194.809 | DR: 0.871 | Γ: 1.691
+[touch ] Ep 1186 | EnvRet:   157.8 | Loss:  -131.747 | DR: 0.976 | Γ: 1.413
+[brain ] Ep 1187 | EnvRet:   183.8 | Loss:   -97.426 | DR: 0.862 | Γ: 2.000
+[fusion] Ep 1188 | EnvRet:   172.4 | Loss:   -22.671 | DR: 0.997 | Γ: 1.566
+[pure  ] Ep 1189 | EnvRet:   156.3 | Loss:   -54.354 | DR: 0.918 | Γ: 1.856
+[touch ] Ep 1190 | EnvRet:   159.2 | Loss:  -216.175 | DR: 0.824 | Γ: 2.000
+[brain ] Ep 1191 | EnvRet:   122.7 | Loss:   -91.588 | DR: 0.807 | Γ: 2.000
+[fusion] Ep 1192 | EnvRet:   121.1 | Loss:  -155.658 | DR: 0.848 | Γ: 1.774
+[pure  ] Ep 1193 | EnvRet:   118.1 | Loss:   -39.919 | DR: 0.995 | Γ: 1.419
+[touch ] Ep 1194 | EnvRet:   145.6 | Loss:  -150.636 | DR: 0.941 | Γ: 1.578
+[brain ] Ep 1195 | EnvRet:   131.6 | Loss:  -183.071 | DR: 0.912 | Γ: 2.000
+[fusion] Ep 1196 | EnvRet:   138.7 | Loss:  -140.701 | DR: 0.837 | Γ: 1.453
+[pure  ] Ep 1197 | EnvRet:   149.8 | Loss:  -126.230 | DR: 1.000 | Γ: 1.743
+[touch ] Ep 1198 | EnvRet:   156.2 | Loss:  -198.833 | DR: 0.900 | Γ: 2.000
+[brain ] Ep 1199 | EnvRet:   165.0 | Loss:  -255.126 | DR: 1.000 | Γ: 1.708
+[fusion] Ep 1200 | EnvRet:   135.3 | Loss:   -82.045 | DR: 1.000 | Γ: 1.419
+[pure  ] Ep 1201 | EnvRet:   149.3 | Loss:   -53.435 | DR: 1.000 | Γ: 1.575
+[touch ] Ep 1202 | EnvRet:   107.9 | Loss:   -39.279 | DR: 1.000 | Γ: 1.660
+[brain ] Ep 1203 | EnvRet:   107.2 | Loss:  -109.710 | DR: 1.000 | Γ: 1.471
+[fusion] Ep 1204 | EnvRet:    89.8 | Loss:  -133.864 | DR: 0.965 | Γ: 1.704
+[pure  ] Ep 1205 | EnvRet:   107.2 | Loss:   -53.700 | DR: 0.849 | Γ: 1.597
+[touch ] Ep 1206 | EnvRet:   159.4 | Loss:   -58.504 | DR: 0.965 | Γ: 1.644
+[brain ] Ep 1207 | EnvRet:   127.6 | Loss:  -126.105 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1208 | EnvRet:   158.4 | Loss:   -89.094 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1209 | EnvRet:   121.4 | Loss:  -127.236 | DR: 0.954 | Γ: 1.411
+[touch ] Ep 1210 | EnvRet:   117.2 | Loss:   -92.063 | DR: 0.929 | Γ: 2.000
+[brain ] Ep 1211 | EnvRet:   110.8 | Loss:  -171.402 | DR: 1.000 | Γ: 1.423
+[fusion] Ep 1212 | EnvRet:   121.0 | Loss:   -49.095 | DR: 0.841 | Γ: 1.748
+[pure  ] Ep 1213 | EnvRet:   106.0 | Loss:   -74.686 | DR: 0.934 | Γ: 1.702
+[touch ] Ep 1214 | EnvRet:    94.5 | Loss:   -48.479 | DR: 0.935 | Γ: 1.685
+[brain ] Ep 1215 | EnvRet:   106.4 | Loss:   -24.638 | DR: 0.765 | Γ: 2.000
+[fusion] Ep 1216 | EnvRet:   218.6 | Loss:  -181.729 | DR: 0.980 | Γ: 1.593
+[pure  ] Ep 1217 | EnvRet:   128.5 | Loss:  -172.708 | DR: 0.708 | Γ: 1.687
+[touch ] Ep 1218 | EnvRet:   105.9 | Loss:  -101.753 | DR: 1.000 | Γ: 1.724
+[brain ] Ep 1219 | EnvRet:   145.7 | Loss:  -158.190 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1220 | EnvRet:   217.1 | Loss:  -125.791 | DR: 1.000 | Γ: 1.522
+[pure  ] Ep 1221 | EnvRet:   105.8 | Loss:   -78.660 | DR: 1.000 | Γ: 1.658
+[touch ] Ep 1222 | EnvRet:   102.8 | Loss:   -42.696 | DR: 0.802 | Γ: 2.000
+[brain ] Ep 1223 | EnvRet:   120.6 | Loss:  -179.607 | DR: 1.000 | Γ: 1.673
+[fusion] Ep 1224 | EnvRet:   152.4 | Loss:  -144.884 | DR: 1.000 | Γ: 1.494
+[pure  ] Ep 1225 | EnvRet:   105.9 | Loss:   -94.501 | DR: 1.000 | Γ: 1.516
+[touch ] Ep 1226 | EnvRet:    89.7 | Loss:   -47.292 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 1227 | EnvRet:   138.7 | Loss:  -213.253 | DR: 0.942 | Γ: 1.496
+[fusion] Ep 1228 | EnvRet:   182.4 | Loss:  -238.658 | DR: 1.000 | Γ: 1.394
+[pure  ] Ep 1229 | EnvRet:   132.2 | Loss:   -53.066 | DR: 1.000 | Γ: 1.583
+[touch ] Ep 1230 | EnvRet:   121.7 | Loss:  -148.861 | DR: 1.000 | Γ: 1.541
+[brain ] Ep 1231 | EnvRet:   114.3 | Loss:  -139.350 | DR: 0.995 | Γ: 1.622
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=298.5)
+[fusion] Ep 1232 | EnvRet:   170.6 | Loss:  -128.548 | DR: 0.982 | Γ: 1.793
+[pure  ] Ep 1233 | EnvRet:   135.4 | Loss:  -126.031 | DR: 1.000 | Γ: 1.693
+[touch ] Ep 1234 | EnvRet:    90.6 | Loss:   -71.625 | DR: 0.852 | Γ: 1.531
+[brain ] Ep 1235 | EnvRet:   116.9 | Loss:  -142.746 | DR: 0.916 | Γ: 2.000
+[fusion] Ep 1236 | EnvRet:    99.4 | Loss:   -48.777 | DR: 0.990 | Γ: 1.522
+[pure  ] Ep 1237 | EnvRet:   144.7 | Loss:   -89.527 | DR: 0.917 | Γ: 2.000
+[touch ] Ep 1238 | EnvRet:   196.6 | Loss:  -280.907 | DR: 1.000 | Γ: 1.510
+[brain ] Ep 1239 | EnvRet:   150.6 | Loss:  -139.919 | DR: 0.983 | Γ: 1.434
+[fusion] Ep 1240 | EnvRet:   177.4 | Loss:   -34.026 | DR: 1.000 | Γ: 1.719
+[pure  ] Ep 1241 | EnvRet:   101.1 | Loss:   -83.630 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1242 | EnvRet:   169.2 | Loss:  -136.986 | DR: 0.950 | Γ: 1.725
+[brain ] Ep 1243 | EnvRet:   144.9 | Loss:   -49.114 | DR: 0.707 | Γ: 1.659
+[fusion] Ep 1244 | EnvRet:    94.0 | Loss:   -45.426 | DR: 0.825 | Γ: 1.604
+[pure  ] Ep 1245 | EnvRet:   133.8 | Loss:  -123.353 | DR: 0.897 | Γ: 1.510
+[touch ] Ep 1246 | EnvRet:   160.9 | Loss:  -121.723 | DR: 1.000 | Γ: 1.521
+[brain ] Ep 1247 | EnvRet:   125.4 | Loss:  -144.466 | DR: 1.000 | Γ: 1.577
+[fusion] Ep 1248 | EnvRet:   127.2 | Loss:  -138.486 | DR: 1.000 | Γ: 1.496
+[pure  ] Ep 1249 | EnvRet:   150.4 | Loss:  -223.635 | DR: 0.883 | Γ: 2.000
+[touch ] Ep 1250 | EnvRet:   108.3 | Loss:   -86.489 | DR: 0.810 | Γ: 2.000
+[brain ] Ep 1251 | EnvRet:   113.8 | Loss:   -50.945 | DR: 0.961 | Γ: 1.582
+[fusion] Ep 1252 | EnvRet:    90.7 | Loss:   -76.755 | DR: 0.762 | Γ: 1.389
+[pure  ] Ep 1253 | EnvRet:    84.0 | Loss:   -26.089 | DR: 0.968 | Γ: 2.000
+[touch ] Ep 1254 | EnvRet:   145.9 | Loss:  -117.463 | DR: 0.907 | Γ: 1.497
+[brain ] Ep 1255 | EnvRet:   161.6 | Loss:  -229.211 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1256 | EnvRet:   167.7 | Loss:   -41.707 | DR: 0.995 | Γ: 1.729
+[pure  ] Ep 1257 | EnvRet:    85.3 | Loss:   -32.136 | DR: 1.000 | Γ: 1.705
+[touch ] Ep 1258 | EnvRet:   219.7 | Loss:  -206.430 | DR: 1.000 | Γ: 1.549
+[brain ] Ep 1259 | EnvRet:   138.7 | Loss:  -159.492 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1260 | EnvRet:   105.1 | Loss:   -61.962 | DR: 0.976 | Γ: 1.710
+[pure  ] Ep 1261 | EnvRet:   100.4 | Loss:   -49.747 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1262 | EnvRet:   156.2 | Loss:   -54.765 | DR: 0.857 | Γ: 1.438
+[brain ] Ep 1263 | EnvRet:   125.7 | Loss:  -220.400 | DR: 0.951 | Γ: 1.764
+[fusion] Ep 1264 | EnvRet:    84.5 | Loss:  -139.514 | DR: 0.984 | Γ: 2.000
+[pure  ] Ep 1265 | EnvRet:   157.7 | Loss:  -187.033 | DR: 1.000 | Γ: 1.622
+[touch ] Ep 1266 | EnvRet:   132.9 | Loss:  -119.891 | DR: 0.973 | Γ: 1.699
+[brain ] Ep 1267 | EnvRet:   173.3 | Loss:  -116.432 | DR: 0.916 | Γ: 2.000
+[fusion] Ep 1268 | EnvRet:   106.0 | Loss:  -111.992 | DR: 0.918 | Γ: 1.548
+[pure  ] Ep 1269 | EnvRet:   238.3 | Loss:   -15.416 | DR: 0.958 | Γ: 2.000
+[touch ] Ep 1270 | EnvRet:   145.9 | Loss:  -231.560 | DR: 0.980 | Γ: 1.782
+[brain ] Ep 1271 | EnvRet:   138.5 | Loss:  -153.337 | DR: 1.000 | Γ: 1.383
+[fusion] Ep 1272 | EnvRet:   144.3 | Loss:  -107.993 | DR: 0.966 | Γ: 1.610
+[pure  ] Ep 1273 | EnvRet:   145.0 | Loss:   -68.878 | DR: 1.000 | Γ: 1.694
+[touch ] Ep 1274 | EnvRet:   161.6 | Loss:  -160.442 | DR: 0.718 | Γ: 2.000
+[brain ] Ep 1275 | EnvRet:   128.8 | Loss:  -216.368 | DR: 1.000 | Γ: 1.702
+[fusion] Ep 1276 | EnvRet:   212.1 | Loss:   -57.026 | DR: 0.892 | Γ: 1.620
+[pure  ] Ep 1277 | EnvRet:   136.0 | Loss:  -177.224 | DR: 1.000 | Γ: 1.581
+[touch ] Ep 1278 | EnvRet:   110.3 | Loss:  -166.768 | DR: 1.000 | Γ: 1.491
+[brain ] Ep 1279 | EnvRet:   124.6 | Loss:   -41.571 | DR: 0.989 | Γ: 2.000
+[fusion] Ep 1280 | EnvRet:   105.5 | Loss:   -93.258 | DR: 0.956 | Γ: 1.621
+[pure  ] Ep 1281 | EnvRet:   111.5 | Loss:  -128.808 | DR: 0.889 | Γ: 1.403
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=298.5)
+[touch ] Ep 1282 | EnvRet:   126.2 | Loss:   -66.875 | DR: 1.000 | Γ: 1.368
+[brain ] Ep 1283 | EnvRet:   217.3 | Loss:  -129.298 | DR: 0.883 | Γ: 1.395
+[fusion] Ep 1284 | EnvRet:   117.3 | Loss:  -149.935 | DR: 0.964 | Γ: 2.000
+[pure  ] Ep 1285 | EnvRet:   146.7 | Loss:  -172.254 | DR: 1.000 | Γ: 1.570
+[touch ] Ep 1286 | EnvRet:   157.5 | Loss:  -239.949 | DR: 0.737 | Γ: 1.555
+[brain ] Ep 1287 | EnvRet:   145.7 | Loss:  -198.996 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1288 | EnvRet:   148.6 | Loss:  -152.147 | DR: 1.000 | Γ: 1.664
+[pure  ] Ep 1289 | EnvRet:   121.4 | Loss:  -114.099 | DR: 0.783 | Γ: 1.605
+[touch ] Ep 1290 | EnvRet:   168.8 | Loss:  -256.297 | DR: 0.934 | Γ: 2.000
+[brain ] Ep 1291 | EnvRet:   145.6 | Loss:   -71.965 | DR: 0.990 | Γ: 1.649
+[fusion] Ep 1292 | EnvRet:   117.4 | Loss:   -72.611 | DR: 0.917 | Γ: 1.438
+[pure  ] Ep 1293 | EnvRet:   142.4 | Loss:  -144.375 | DR: 1.000 | Γ: 1.824
+[touch ] Ep 1294 | EnvRet:   145.9 | Loss:  -148.209 | DR: 0.870 | Γ: 2.000
+[brain ] Ep 1295 | EnvRet:   194.6 | Loss:  -244.679 | DR: 0.868 | Γ: 1.634
+[fusion] Ep 1296 | EnvRet:   134.5 | Loss:  -181.617 | DR: 0.892 | Γ: 1.646
+[pure  ] Ep 1297 | EnvRet:   115.4 | Loss:   -78.327 | DR: 1.000 | Γ: 1.611
+[touch ] Ep 1298 | EnvRet:   162.9 | Loss:  -175.728 | DR: 0.913 | Γ: 1.625
+[brain ] Ep 1299 | EnvRet:   109.4 | Loss:   -58.783 | DR: 1.000 | Γ: 1.565
+[fusion] Ep 1300 | EnvRet:   155.0 | Loss:  -249.033 | DR: 0.970 | Γ: 1.667
+[pure  ] Ep 1301 | EnvRet:   119.9 | Loss:   -94.057 | DR: 1.000 | Γ: 1.626
+[touch ] Ep 1302 | EnvRet:   112.8 | Loss:  -102.299 | DR: 0.808 | Γ: 1.761
+[brain ] Ep 1303 | EnvRet:   111.3 | Loss:  -130.460 | DR: 0.865 | Γ: 1.648
+[fusion] Ep 1304 | EnvRet:   177.9 | Loss:  -152.130 | DR: 1.000 | Γ: 1.469
+[pure  ] Ep 1305 | EnvRet:   100.0 | Loss:   -32.218 | DR: 0.999 | Γ: 2.000
+[touch ] Ep 1306 | EnvRet:   120.7 | Loss:  -143.747 | DR: 0.975 | Γ: 2.000
+[brain ] Ep 1307 | EnvRet:   162.5 | Loss:  -100.568 | DR: 0.839 | Γ: 1.709
+[fusion] Ep 1308 | EnvRet:   145.1 | Loss:   -44.505 | DR: 0.938 | Γ: 1.698
+[pure  ] Ep 1309 | EnvRet:   127.1 | Loss:    -7.550 | DR: 1.000 | Γ: 1.475
+[touch ] Ep 1310 | EnvRet:   102.6 | Loss:   -57.384 | DR: 0.864 | Γ: 1.407
+[brain ] Ep 1311 | EnvRet:   169.4 | Loss:   -59.163 | DR: 0.916 | Γ: 1.576
+[fusion] Ep 1312 | EnvRet:   100.7 | Loss:   -93.341 | DR: 1.000 | Γ: 1.583
+[pure  ] Ep 1313 | EnvRet:   116.8 | Loss:   -18.334 | DR: 0.809 | Γ: 2.000
+[touch ] Ep 1314 | EnvRet:   181.0 | Loss:  -226.931 | DR: 0.870 | Γ: 2.000
+[brain ] Ep 1315 | EnvRet:   160.4 | Loss:  -215.571 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1316 | EnvRet:   123.5 | Loss:  -139.779 | DR: 0.998 | Γ: 1.795
+[pure  ] Ep 1317 | EnvRet:   119.7 | Loss:  -183.041 | DR: 0.843 | Γ: 1.648
+[touch ] Ep 1318 | EnvRet:   143.5 | Loss:  -193.224 | DR: 0.859 | Γ: 1.706
+[brain ] Ep 1319 | EnvRet:   134.0 | Loss:   -78.193 | DR: 0.960 | Γ: 1.538
+[fusion] Ep 1320 | EnvRet:   118.0 | Loss:  -135.712 | DR: 1.000 | Γ: 1.435
+[pure  ] Ep 1321 | EnvRet:   102.5 | Loss:  -108.279 | DR: 0.911 | Γ: 1.404
+[touch ] Ep 1322 | EnvRet:   152.0 | Loss:  -215.286 | DR: 0.988 | Γ: 2.000
+[brain ] Ep 1323 | EnvRet:   138.8 | Loss:  -114.086 | DR: 0.800 | Γ: 2.000
+[fusion] Ep 1324 | EnvRet:   122.2 | Loss:   -61.951 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1325 | EnvRet:   124.0 | Loss:  -121.420 | DR: 0.950 | Γ: 1.542
+[touch ] Ep 1326 | EnvRet:   123.4 | Loss:   -53.334 | DR: 0.801 | Γ: 1.611
+[brain ] Ep 1327 | EnvRet:   118.4 | Loss:  -119.546 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1328 | EnvRet:   121.3 | Loss:  -127.910 | DR: 0.999 | Γ: 1.559
+[pure  ] Ep 1329 | EnvRet:   158.1 | Loss:  -196.104 | DR: 1.000 | Γ: 1.666
+[touch ] Ep 1330 | EnvRet:   117.1 | Loss:  -114.031 | DR: 0.986 | Γ: 2.000
+[brain ] Ep 1331 | EnvRet:   101.7 | Loss:  -121.060 | DR: 0.958 | Γ: 1.856
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=298.5)
+[fusion] Ep 1332 | EnvRet:   157.4 | Loss:  -142.899 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1333 | EnvRet:   168.9 | Loss:  -139.370 | DR: 1.000 | Γ: 1.472
+[touch ] Ep 1334 | EnvRet:    98.5 | Loss:  -100.701 | DR: 0.969 | Γ: 2.000
+[brain ] Ep 1335 | EnvRet:   145.5 | Loss:  -119.464 | DR: 0.815 | Γ: 2.000
+[fusion] Ep 1336 | EnvRet:   167.2 | Loss:  -149.515 | DR: 1.000 | Γ: 1.583
+[pure  ] Ep 1337 | EnvRet:   105.5 | Loss:  -108.872 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1338 | EnvRet:   152.3 | Loss:  -142.058 | DR: 0.956 | Γ: 1.622
+[brain ] Ep 1339 | EnvRet:   183.7 | Loss:   -49.079 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1340 | EnvRet:   128.1 | Loss:  -163.610 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1341 | EnvRet:   160.9 | Loss:   -42.787 | DR: 0.968 | Γ: 2.000
+[touch ] Ep 1342 | EnvRet:   149.4 | Loss:   -80.653 | DR: 1.000 | Γ: 1.588
+[brain ] Ep 1343 | EnvRet:   100.2 | Loss:   -45.375 | DR: 1.000 | Γ: 1.534
+[fusion] Ep 1344 | EnvRet:   121.7 | Loss:  -138.479 | DR: 0.932 | Γ: 1.673
+[pure  ] Ep 1345 | EnvRet:   140.0 | Loss:   -68.621 | DR: 0.894 | Γ: 2.000
+[touch ] Ep 1346 | EnvRet:   198.6 | Loss:  -183.954 | DR: 0.906 | Γ: 1.626
+[brain ] Ep 1347 | EnvRet:   105.3 | Loss:   -60.376 | DR: 0.889 | Γ: 1.409
+[fusion] Ep 1348 | EnvRet:   120.3 | Loss:  -169.301 | DR: 0.937 | Γ: 2.000
+[pure  ] Ep 1349 | EnvRet:    89.3 | Loss:   -63.027 | DR: 1.000 | Γ: 1.400
+[touch ] Ep 1350 | EnvRet:   229.1 | Loss:  -320.091 | DR: 0.828 | Γ: 1.465
+[brain ] Ep 1351 | EnvRet:   132.1 | Loss:  -151.820 | DR: 0.956 | Γ: 1.490
+[fusion] Ep 1352 | EnvRet:    89.9 | Loss:   -47.862 | DR: 0.802 | Γ: 1.610
+[pure  ] Ep 1353 | EnvRet:   117.0 | Loss:   -93.718 | DR: 1.000 | Γ: 1.504
+[touch ] Ep 1354 | EnvRet:   134.0 | Loss:  -100.844 | DR: 0.798 | Γ: 1.731
+[brain ] Ep 1355 | EnvRet:   138.5 | Loss:  -205.313 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1356 | EnvRet:    94.8 | Loss:   -50.818 | DR: 0.907 | Γ: 1.542
+[pure  ] Ep 1357 | EnvRet:   119.2 | Loss:  -121.197 | DR: 0.999 | Γ: 1.434
+[touch ] Ep 1358 | EnvRet:   130.8 | Loss:   -43.573 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 1359 | EnvRet:   177.8 | Loss:   -85.680 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1360 | EnvRet:   157.8 | Loss:   -92.748 | DR: 0.941 | Γ: 1.685
+[pure  ] Ep 1361 | EnvRet:    89.4 | Loss:   -94.793 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1362 | EnvRet:   121.9 | Loss:  -175.581 | DR: 0.944 | Γ: 2.000
+[brain ] Ep 1363 | EnvRet:   117.1 | Loss:  -164.149 | DR: 0.957 | Γ: 2.000
+[fusion] Ep 1364 | EnvRet:   140.6 | Loss:   -52.953 | DR: 1.000 | Γ: 1.614
+[pure  ] Ep 1365 | EnvRet:   175.1 | Loss:  -192.967 | DR: 0.850 | Γ: 1.664
+[touch ] Ep 1366 | EnvRet:   222.6 | Loss:  -187.582 | DR: 1.000 | Γ: 1.507
+[brain ] Ep 1367 | EnvRet:   136.4 | Loss:   -28.847 | DR: 0.932 | Γ: 1.590
+[fusion] Ep 1368 | EnvRet:   135.7 | Loss:  -141.648 | DR: 0.824 | Γ: 1.636
+[pure  ] Ep 1369 | EnvRet:   121.1 | Loss:   -87.474 | DR: 0.725 | Γ: 1.673
+[touch ] Ep 1370 | EnvRet:   106.5 | Loss:  -158.588 | DR: 0.943 | Γ: 2.000
+[brain ] Ep 1371 | EnvRet:   109.6 | Loss:   -97.432 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1372 | EnvRet:   170.4 | Loss:  -227.550 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1373 | EnvRet:   114.4 | Loss:  -130.236 | DR: 0.948 | Γ: 2.000
+[touch ] Ep 1374 | EnvRet:   135.4 | Loss:   -79.733 | DR: 0.921 | Γ: 1.650
+[brain ] Ep 1375 | EnvRet:   279.4 | Loss:   -61.825 | DR: 1.000 | Γ: 1.638
+[fusion] Ep 1376 | EnvRet:   194.2 | Loss:   -79.683 | DR: 0.971 | Γ: 1.375
+[pure  ] Ep 1377 | EnvRet:   143.5 | Loss:  -183.593 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1378 | EnvRet:   138.4 | Loss:   -75.311 | DR: 1.000 | Γ: 1.480
+[brain ] Ep 1379 | EnvRet:   124.4 | Loss:   -80.862 | DR: 0.917 | Γ: 1.370
+[fusion] Ep 1380 | EnvRet:   105.3 | Loss:   -92.649 | DR: 1.000 | Γ: 1.811
+[pure  ] Ep 1381 | EnvRet:   167.2 | Loss:   -37.578 | DR: 0.950 | Γ: 2.000
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=298.5)
+[touch ] Ep 1382 | EnvRet:   130.3 | Loss:  -204.820 | DR: 1.000 | Γ: 1.813
+[brain ] Ep 1383 | EnvRet:   115.3 | Loss:  -115.991 | DR: 0.975 | Γ: 1.620
+[fusion] Ep 1384 | EnvRet:   178.5 | Loss:  -105.034 | DR: 0.980 | Γ: 2.000
+[pure  ] Ep 1385 | EnvRet:   101.8 | Loss:   -91.833 | DR: 0.986 | Γ: 1.676
+[touch ] Ep 1386 | EnvRet:    95.0 | Loss:   -52.811 | DR: 1.000 | Γ: 1.653
+[brain ] Ep 1387 | EnvRet:    99.9 | Loss:   -86.751 | DR: 0.868 | Γ: 1.588
+[fusion] Ep 1388 | EnvRet:   100.8 | Loss:  -144.248 | DR: 0.992 | Γ: 2.000
+[pure  ] Ep 1389 | EnvRet:   110.5 | Loss:  -155.694 | DR: 0.980 | Γ: 2.000
+[touch ] Ep 1390 | EnvRet:   151.0 | Loss:  -251.927 | DR: 0.810 | Γ: 1.665
+[brain ] Ep 1391 | EnvRet:   125.0 | Loss:  -121.448 | DR: 0.865 | Γ: 1.594
+[fusion] Ep 1392 | EnvRet:   162.3 | Loss:  -147.492 | DR: 1.000 | Γ: 1.718
+[pure  ] Ep 1393 | EnvRet:   217.8 | Loss:  -272.555 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1394 | EnvRet:   141.6 | Loss:  -190.548 | DR: 0.867 | Γ: 1.563
+[brain ] Ep 1395 | EnvRet:   183.9 | Loss:  -212.672 | DR: 0.999 | Γ: 1.616
+[fusion] Ep 1396 | EnvRet:   132.1 | Loss:   -68.200 | DR: 0.986 | Γ: 2.000
+[pure  ] Ep 1397 | EnvRet:   147.5 | Loss:  -120.763 | DR: 0.881 | Γ: 2.000
+[touch ] Ep 1398 | EnvRet:   187.0 | Loss:  -198.372 | DR: 0.997 | Γ: 2.000
+[brain ] Ep 1399 | EnvRet:   179.9 | Loss:  -169.402 | DR: 0.941 | Γ: 1.688
+[fusion] Ep 1400 | EnvRet:   145.3 | Loss:  -104.817 | DR: 1.000 | Γ: 1.434
+[pure  ] Ep 1401 | EnvRet:   163.2 | Loss:  -133.865 | DR: 0.922 | Γ: 1.632
+[touch ] Ep 1402 | EnvRet:   181.3 | Loss:  -146.647 | DR: 0.932 | Γ: 1.455
+[brain ] Ep 1403 | EnvRet:   129.9 | Loss:  -177.443 | DR: 1.000 | Γ: 1.581
+[fusion] Ep 1404 | EnvRet:   164.9 | Loss:   -30.424 | DR: 0.785 | Γ: 1.841
+[pure  ] Ep 1405 | EnvRet:   206.4 | Loss:   -98.288 | DR: 1.000 | Γ: 1.470
+[touch ] Ep 1406 | EnvRet:    89.7 | Loss:  -120.465 | DR: 0.940 | Γ: 1.474
+[brain ] Ep 1407 | EnvRet:   239.7 | Loss:  -116.211 | DR: 1.000 | Γ: 1.644
+[fusion] Ep 1408 | EnvRet:   194.3 | Loss:  -219.654 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1409 | EnvRet:   145.5 | Loss:  -248.312 | DR: 0.950 | Γ: 1.758
+[touch ] Ep 1410 | EnvRet:   109.9 | Loss:  -102.063 | DR: 0.946 | Γ: 1.592
+[brain ] Ep 1411 | EnvRet:   132.4 | Loss:  -120.489 | DR: 1.000 | Γ: 1.826
+[fusion] Ep 1412 | EnvRet:    89.7 | Loss:   -77.286 | DR: 0.976 | Γ: 1.544
+[pure  ] Ep 1413 | EnvRet:    95.0 | Loss:  -109.110 | DR: 1.000 | Γ: 1.566
+[touch ] Ep 1414 | EnvRet:   175.1 | Loss:  -172.882 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 1415 | EnvRet:   199.1 | Loss:   -54.262 | DR: 0.986 | Γ: 1.735
+[fusion] Ep 1416 | EnvRet:   109.7 | Loss:   -71.336 | DR: 0.849 | Γ: 1.720
+[pure  ] Ep 1417 | EnvRet:   120.9 | Loss:  -172.725 | DR: 0.898 | Γ: 1.481
+[touch ] Ep 1418 | EnvRet:   155.7 | Loss:   -88.095 | DR: 1.000 | Γ: 2.000
+[brain ] Ep 1419 | EnvRet:   154.5 | Loss:  -110.024 | DR: 0.902 | Γ: 1.807
+[fusion] Ep 1420 | EnvRet:   192.1 | Loss:  -223.094 | DR: 0.961 | Γ: 1.459
+[pure  ] Ep 1421 | EnvRet:   189.4 | Loss:    -8.980 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1422 | EnvRet:   170.1 | Loss:  -111.787 | DR: 0.830 | Γ: 2.000
+[brain ] Ep 1423 | EnvRet:   109.1 | Loss:  -129.502 | DR: 1.000 | Γ: 1.520
+[fusion] Ep 1424 | EnvRet:   130.9 | Loss:  -204.618 | DR: 0.986 | Γ: 1.696
+[pure  ] Ep 1425 | EnvRet:   176.9 | Loss:   -29.940 | DR: 1.000 | Γ: 1.515
+[touch ] Ep 1426 | EnvRet:   228.1 | Loss:   -59.299 | DR: 0.896 | Γ: 2.000
+[brain ] Ep 1427 | EnvRet:   144.5 | Loss:  -172.873 | DR: 0.925 | Γ: 2.000
+[fusion] Ep 1428 | EnvRet:    94.0 | Loss:   -45.446 | DR: 0.979 | Γ: 1.721
+[pure  ] Ep 1429 | EnvRet:   120.7 | Loss:   -56.400 | DR: 0.946 | Γ: 1.623
+[touch ] Ep 1430 | EnvRet:   154.7 | Loss:  -212.683 | DR: 0.914 | Γ: 2.000
+[brain ] Ep 1431 | EnvRet:   216.3 | Loss:  -339.169 | DR: 1.000 | Γ: 1.662
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=298.5)
+[fusion] Ep 1432 | EnvRet:   156.9 | Loss:  -199.945 | DR: 0.950 | Γ: 1.586
+[pure  ] Ep 1433 | EnvRet:   101.7 | Loss:   -66.577 | DR: 1.000 | Γ: 1.534
+[touch ] Ep 1434 | EnvRet:   126.6 | Loss:   -69.559 | DR: 1.000 | Γ: 1.611
+[brain ] Ep 1435 | EnvRet:   142.4 | Loss:   -92.241 | DR: 1.000 | Γ: 1.649
+[fusion] Ep 1436 | EnvRet:   119.1 | Loss:  -233.068 | DR: 0.837 | Γ: 2.000
+[pure  ] Ep 1437 | EnvRet:   129.2 | Loss:  -114.246 | DR: 1.000 | Γ: 1.809
+[touch ] Ep 1438 | EnvRet:   132.6 | Loss:   -79.387 | DR: 0.899 | Γ: 1.494
+[brain ] Ep 1439 | EnvRet:   169.5 | Loss:   -84.632 | DR: 1.000 | Γ: 1.677
+[fusion] Ep 1440 | EnvRet:   140.9 | Loss:   -23.748 | DR: 1.000 | Γ: 1.350
+[pure  ] Ep 1441 | EnvRet:   152.1 | Loss:  -104.159 | DR: 1.000 | Γ: 1.506
+[touch ] Ep 1442 | EnvRet:   105.6 | Loss:  -118.736 | DR: 1.000 | Γ: 1.423
+[brain ] Ep 1443 | EnvRet:   125.6 | Loss:   -73.691 | DR: 0.942 | Γ: 1.609
+[fusion] Ep 1444 | EnvRet:   115.4 | Loss:   -79.066 | DR: 0.836 | Γ: 1.669
+[pure  ] Ep 1445 | EnvRet:   168.6 | Loss:  -135.632 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1446 | EnvRet:    90.9 | Loss:   -54.511 | DR: 1.000 | Γ: 1.601
+[brain ] Ep 1447 | EnvRet:   162.0 | Loss:  -236.174 | DR: 0.886 | Γ: 2.000
+[fusion] Ep 1448 | EnvRet:   117.3 | Loss:  -150.887 | DR: 1.000 | Γ: 1.601
+[pure  ] Ep 1449 | EnvRet:   112.3 | Loss:  -104.174 | DR: 0.737 | Γ: 1.736
+[touch ] Ep 1450 | EnvRet:   109.4 | Loss:  -118.220 | DR: 0.959 | Γ: 1.505
+[brain ] Ep 1451 | EnvRet:   125.8 | Loss:  -137.118 | DR: 1.000 | Γ: 2.000
+[fusion] Ep 1452 | EnvRet:   131.0 | Loss:  -172.002 | DR: 0.995 | Γ: 1.633
+[pure  ] Ep 1453 | EnvRet:   126.7 | Loss:  -119.598 | DR: 0.862 | Γ: 1.597
+[touch ] Ep 1454 | EnvRet:   142.5 | Loss:  -166.208 | DR: 1.000 | Γ: 1.567
+[brain ] Ep 1455 | EnvRet:    96.0 | Loss:   -77.903 | DR: 0.783 | Γ: 1.488
+[fusion] Ep 1456 | EnvRet:   152.8 | Loss:  -135.421 | DR: 0.972 | Γ: 1.528
+[pure  ] Ep 1457 | EnvRet:   111.1 | Loss:  -124.712 | DR: 1.000 | Γ: 1.684
+[touch ] Ep 1458 | EnvRet:   181.4 | Loss:  -226.679 | DR: 0.929 | Γ: 1.531
+[brain ] Ep 1459 | EnvRet:   172.1 | Loss:  -103.860 | DR: 0.918 | Γ: 1.591
+[fusion] Ep 1460 | EnvRet:   135.2 | Loss:  -104.139 | DR: 0.821 | Γ: 2.000
+[pure  ] Ep 1461 | EnvRet:   226.2 | Loss:  -251.534 | DR: 1.000 | Γ: 1.516
+[touch ] Ep 1462 | EnvRet:   142.0 | Loss:  -183.029 | DR: 0.896 | Γ: 1.523
+[brain ] Ep 1463 | EnvRet:   132.3 | Loss:   -56.659 | DR: 0.907 | Γ: 2.000
+[fusion] Ep 1464 | EnvRet:   233.1 | Loss:  -209.448 | DR: 1.000 | Γ: 1.575
+[pure  ] Ep 1465 | EnvRet:   168.8 | Loss:  -185.994 | DR: 0.791 | Γ: 2.000
+[touch ] Ep 1466 | EnvRet:   148.8 | Loss:  -133.292 | DR: 1.000 | Γ: 1.648
+[brain ] Ep 1467 | EnvRet:   166.2 | Loss:  -113.591 | DR: 0.861 | Γ: 2.000
+[fusion] Ep 1468 | EnvRet:   119.1 | Loss:   -81.215 | DR: 0.925 | Γ: 1.576
+[pure  ] Ep 1469 | EnvRet:   151.4 | Loss:  -120.525 | DR: 1.000 | Γ: 2.000
+[touch ] Ep 1470 | EnvRet:   135.0 | Loss:  -140.801 | DR: 0.914 | Γ: 1.789
+[brain ] Ep 1471 | EnvRet:   173.7 | Loss:  -127.200 | DR: 1.000 | Γ: 1.508
+[fusion] Ep 1472 | EnvRet:   129.4 | Loss:  -182.034 | DR: 1.000 | Γ: 1.521
+[pure  ] Ep 1473 | EnvRet:   101.0 | Loss:   -51.431 | DR: 0.932 | Γ: 1.481
+[touch ] Ep 1474 | EnvRet:   166.4 | Loss:  -127.866 | DR: 0.923 | Γ: 1.466
+[brain ] Ep 1475 | EnvRet:   158.1 | Loss:  -136.787 | DR: 0.922 | Γ: 2.000
+[fusion] Ep 1476 | EnvRet:   128.6 | Loss:   -11.630 | DR: 0.901 | Γ: 1.577
+[pure  ] Ep 1477 | EnvRet:   130.0 | Loss:  -118.051 | DR: 0.948 | Γ: 1.687
+[touch ] Ep 1478 | EnvRet:   149.5 | Loss:  -152.013 | DR: 0.984 | Γ: 2.000
+[brain ] Ep 1479 | EnvRet:   105.1 | Loss:  -126.997 | DR: 0.909 | Γ: 1.647
+[fusion] Ep 1480 | EnvRet:   109.5 | Loss:   -76.851 | DR: 0.976 | Γ: 2.000
+[pure  ] Ep 1481 | EnvRet:   141.2 | Loss:  -210.541 | DR: 1.000 | Γ: 1.598
+   ↳ [Hydra] Ratchet: no improvement for 50 eps.
+   ↳ Reverting all heads to best_state (Return=298.5)
+[touch ] Ep 1482 | EnvRet:   151.1 | Loss:  -178.862 | DR: 0.904 | Γ: 1.729
+[brain ] Ep 1483 | EnvRet:   116.2 | Loss:  -141.957 | DR: 0.935 | Γ: 2.000
+[fusion] Ep 1484 | EnvRet:   165.1 | Loss:  -147.052 | DR: 1.000 | Γ: 1.557
+[pure  ] Ep 1485 | EnvRet:   187.9 | Loss:  -185.936 | DR: 1.000 | Γ: 1.594
+[touch ] Ep 1486 | EnvRet:   154.7 | Loss:  -212.337 | DR: 0.867 | Γ: 1.622
+[brain ] Ep 1487 | EnvRet:   151.3 | Loss:   -99.328 | DR: 0.990 | Γ: 1.616
+[fusion] Ep 1488 | EnvRet:   185.2 | Loss:  -227.842 | DR: 1.000 | Γ: 2.000
+[pure  ] Ep 1489 | EnvRet:   104.9 | Loss:   -54.919 | DR: 0.955 | Γ: 1.580
+[touch ] Ep 1490 | EnvRet:   193.9 | Loss:  -148.651 | DR: 0.944 | Γ: 1.589
+[brain ] Ep 1491 | EnvRet:   142.5 | Loss:  -196.475 | DR: 0.873 | Γ: 1.560
+[fusion] Ep 1492 | EnvRet:   140.4 | Loss:  -182.091 | DR: 1.000 | Γ: 1.604
+[pure  ] Ep 1493 | EnvRet:   152.8 | Loss:  -132.620 | DR: 1.000 | Γ: 1.464
+[touch ] Ep 1494 | EnvRet:   109.5 | Loss:  -135.690 | DR: 0.983 | Γ: 1.472
+[brain ] Ep 1495 | EnvRet:   175.7 | Loss:  -158.030 | DR: 0.826 | Γ: 1.692
+[fusion] Ep 1496 | EnvRet:   202.2 | Loss:  -280.324 | DR: 0.895 | Γ: 1.574
+[pure  ] Ep 1497 | EnvRet:   162.3 | Loss:  -148.712 | DR: 1.000 | Γ: 1.517
+[touch ] Ep 1498 | EnvRet:   162.8 | Loss:  -113.380 | DR: 0.999 | Γ: 1.567
+[brain ] Ep 1499 | EnvRet:   204.2 | Loss:   -45.582 | DR: 0.984 | Γ: 1.521
+[fusion] Ep 1500 | EnvRet:   115.8 | Loss:  -101.602 | DR: 0.878 | Γ: 2.000

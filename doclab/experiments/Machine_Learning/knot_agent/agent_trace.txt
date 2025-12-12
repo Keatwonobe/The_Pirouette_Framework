@@ -1,0 +1,2087 @@
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent> python bilateral_hemisphere_agent_4.py
+Left Hemisphere initializing 30 Numpy workers (5-Run Validation Mode)...
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+    exitcode = _main(fd, parent_sentinel)
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    prepare(preparation_data)
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+    main_content = runpy.run_path(main_path,
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    main_content = runpy.run_path(main_path,
+  File "<frozen runpy>", line 291, in run_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 291, in run_path
+    main_content = runpy.run_path(main_path,
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 88, in _run_code
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+    import torch
+  File "<frozen runpy>", line 291, in run_path
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+  File "<frozen runpy>", line 98, in _run_module_code
+    import torch
+  File "<frozen runpy>", line 88, in _run_code
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    _load_dll_libraries()
+    _load_dll_libraries()
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    raise err
+    raise err
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+    _load_dll_libraries()
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    prepare(preparation_data)
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    prepare(preparation_data)
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    main_content = runpy.run_path(main_path,
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    main_content = runpy.run_path(main_path,
+    import torch
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    raise err
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    _load_dll_libraries()
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 1, in <module>
+    import gymnasium as gym
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\__init__.py", line 5, in <module>
+    from gymnasium.core import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\core.py", line 8, in <module>
+    import numpy as np
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py", line 467, in <module>
+    from . import lib
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\lib\__init__.py", line 18, in <module>
+    from . import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\lib\_arraypad_impl.py", line 8, in <module>
+    from numpy.lib._index_tricks_impl import ndindex
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\lib\_index_tricks_impl.py", line 8, in <module>
+    import numpy.matrixlib as matrixlib
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\matrixlib\__init__.py", line 4, in <module>
+    from . import defmatrix
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\matrixlib\defmatrix.py", line 13, in <module>
+    from numpy.linalg import matrix_power
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\linalg\__init__.py", line 87, in <module>
+    from . import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\linalg\_linalg.py", line 99, in <module>
+    from numpy.linalg import _umath_linalg
+ImportError: DLL load failed while importing _umath_linalg: The paging file is too small for this operation to complete.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    exitcode = _main(fd, parent_sentinel)
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    prepare(preparation_data)
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    _fixup_main_from_path(data['init_main_from_path'])
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    main_content = runpy.run_path(main_path,
+    main_content = runpy.run_path(main_path,
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 88, in _run_code
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "<frozen runpy>", line 88, in _run_code
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    _load_dll_libraries()
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    prepare(preparation_data)
+    exitcode = _main(fd, parent_sentinel)
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+Traceback (most recent call last):
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    _fixup_main_from_path(data['init_main_from_path'])
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+    exitcode = _main(fd, parent_sentinel)
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 88, in _run_code
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 1, in <module>
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+    import gymnasium as gym
+Traceback (most recent call last):
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    prepare(preparation_data)
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\__init__.py", line 5, in <module>
+    import torch
+    import gymnasium as gym
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\__init__.py", line 5, in <module>
+    exitcode = _main(fd, parent_sentinel)
+    from gymnasium.core import (
+    _fixup_main_from_path(data['init_main_from_path'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\core.py", line 11, in <module>
+    _load_dll_libraries()
+    from gymnasium.core import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    from gymnasium import spaces
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\core.py", line 11, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\spaces\__init__.py", line 18, in <module>
+    prepare(preparation_data)
+    raise err
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    from gymnasium.spaces.multi_binary import MultiBinary
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn_engines_precompiled64_9.dll" or one of its dependencies.
+    from gymnasium import spaces
+    main_content = runpy.run_path(main_path,
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\spaces\__init__.py", line 14, in <module>
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+    from gymnasium.spaces.box import Box
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\spaces\box.py", line 11, in <module>
+  File "<frozen runpy>", line 98, in _run_module_code
+    main_content = runpy.run_path(main_path,
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    from gymnasium.spaces.space import Space
+  File "<frozen importlib._bootstrap_external>", line 1130, in get_data
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\spaces\space.py", line 10, in <module>
+  File "<frozen runpy>", line 98, in _run_module_code
+MemoryError
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+  File "<frozen runpy>", line 88, in _run_code
+    from gymnasium.utils import seeding
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\utils\seeding.py", line 45, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    RNG = RandomNumberGenerator = np.random.Generator
+    import torch
+    raise err
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn64_9.dll" or one of its dependencies.
+Traceback (most recent call last):
+                                  ^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py", line 734, in __getattr__
+  File "<string>", line 1, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    import numpy.random as random
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn_adv64_9.dll" or one of its dependencies.
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\random\__init__.py", line 180, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    from . import _bounded_integers, _common, _pickle
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\random\_pickle.py", line 1, in <module>
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    from ._generator import Generator
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+  File "numpy/random/_generator.pyx", line 25, in init numpy.random._generator
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+ImportError: DLL load failed while importing _mt19937: The paging file is too small for this operation to complete.
+    raise err
+OSError: [WinError 1114] A dynamic link library (DLL) initialization routine failed. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\shm.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 1, in <module>
+    import gymnasium as gym
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\__init__.py", line 13, in <module>
+    from gymnasium.envs.registration import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\__init__.py", line 5, in <module>
+    from gymnasium.envs.registration import make, pprint_registry, register, registry, spec
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\registration.py", line 23, in <module>
+    from gymnasium.vector import AutoresetMode
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\vector\__init__.py", line 3, in <module>
+    from gymnasium.vector import utils
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\vector\utils\__init__.py", line 9, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1114] A dynamic link library (DLL) initialization routine failed. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\shm.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn_adv64_9.dll" or one of its dependencies.
+    from gymnasium.vector.utils.space_utils import (
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1131, in get_data
+MemoryError
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn_adv64_9.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\curand64_10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 1, in <module>
+    import gymnasium as gym
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\__init__.py", line 5, in <module>
+    from gymnasium.core import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\core.py", line 8, in <module>
+    import numpy as np
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py", line 125, in <module>
+    from numpy.__config__ import show_config
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\__init__.py", line 99, in <module>
+    from . import (
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1131, in get_data
+MemoryError
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1114] A dynamic link library (DLL) initialization routine failed. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\shm.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\__init__.py", line 22, in <module>
+    from . import multiarray
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\multiarray.py", line 11, in <module>
+    from . import _multiarray_umath, overrides
+ImportError: DLL load failed while importing _multiarray_umath: The paging file is too small for this operation to complete.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py", line 125, in <module>
+    from numpy.__config__ import show_config
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\__init__.py", line 48, in <module>
+    raise ImportError(msg) from exc
+ImportError:
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.11 from "C:\Users\keatw\AppData\Local\Programs\Python\Python311\python.exe"
+  * The NumPy version is: "2.3.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: DLL load failed while importing _multiarray_umath: The paging file is too small for this operation to complete.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 1, in <module>
+    import gymnasium as gym
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\__init__.py", line 5, in <module>
+    from gymnasium.core import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\core.py", line 8, in <module>
+    import numpy as np
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py", line 130, in <module>
+    raise ImportError(msg) from e
+ImportError: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+    prepare(preparation_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    main_content = runpy.run_path(main_path,
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    main_content = runpy.run_path(main_path,
+  File "<frozen runpy>", line 291, in run_path
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    import torch
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 291, in run_path
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+  File "<frozen runpy>", line 88, in _run_code
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    raise err
+    _load_dll_libraries()
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 1, in <module>
+    import gymnasium as gym
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\__init__.py", line 5, in <module>
+    from gymnasium.core import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\core.py", line 11, in <module>
+    from gymnasium import spaces
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\spaces\__init__.py", line 14, in <module>
+    from gymnasium.spaces.box import Box
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\spaces\box.py", line 11, in <module>
+    from gymnasium.spaces.space import Space
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\spaces\space.py", line 10, in <module>
+    from gymnasium.utils import seeding
+Traceback (most recent call last):
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\utils\seeding.py", line 45, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    RNG = RandomNumberGenerator = np.random.Generator
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+                                  ^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py", line 734, in __getattr__
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    import numpy.random as random
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\random\__init__.py", line 180, in <module>
+    prepare(preparation_data)
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+    from . import _bounded_integers, _common, _pickle
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\random\_pickle.py", line 7, in <module>
+  File "<frozen runpy>", line 291, in run_path
+    main_content = runpy.run_path(main_path,
+  File "<frozen runpy>", line 98, in _run_module_code
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 88, in _run_code
+    from .mtrand import RandomState
+  File "<frozen runpy>", line 98, in _run_module_code
+ImportError: DLL load failed while importing mtrand: The paging file is too small for this operation to complete.
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 1, in <module>
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import gymnasium as gym
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\__init__.py", line 5, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    from gymnasium.core import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\core.py", line 11, in <module>
+    _load_dll_libraries()
+    from gymnasium import spaces
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\spaces\__init__.py", line 20, in <module>
+    from gymnasium.spaces.oneof import OneOf
+    raise err
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn_engines_runtime_compiled64_9.dll" or one of its dependencies.
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1131, in get_data
+MemoryError
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1114] A dynamic link library (DLL) initialization routine failed. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\shm.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\torch_python.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1114] A dynamic link library (DLL) initialization routine failed. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn_engines_precompiled64_9.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1114] A dynamic link library (DLL) initialization routine failed. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\shm.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1114] A dynamic link library (DLL) initialization routine failed. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\shm.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1114] A dynamic link library (DLL) initialization routine failed. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\shm.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    main_content = runpy.run_path(main_path,
+Traceback (most recent call last):
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "<frozen runpy>", line 98, in _run_module_code
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    import torch
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+    _load_dll_libraries()
+    main_content = runpy.run_path(main_path,
+Traceback (most recent call last):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+    raise err
+  File "<frozen runpy>", line 98, in _run_module_code
+    exitcode = _main(fd, parent_sentinel)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 88, in _run_code
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn_heuristic64_9.dll" or one of its dependencies.
+  File "<frozen runpy>", line 88, in _run_code
+  File "<string>", line 1, in <module>
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    prepare(preparation_data)
+    import torch
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+  File "<string>", line 1, in <module>
+  File "<string>", line 1, in <module>
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    main_content = runpy.run_path(main_path,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    _load_dll_libraries()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    exitcode = _main(fd, parent_sentinel)
+    raise err
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+  File "<frozen runpy>", line 291, in run_path
+    prepare(preparation_data)
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn_heuristic64_9.dll" or one of its dependencies.
+  File "<frozen runpy>", line 98, in _run_module_code
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    raise err
+  File "<frozen runpy>", line 88, in _run_code
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\nvrtc64_120_0.alt.dll" or one of its dependencies.
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    _fixup_main_from_path(data['init_main_from_path'])
+    main_content = runpy.run_path(main_path,
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    import torch
+    prepare(preparation_data)
+  File "<frozen runpy>", line 291, in run_path
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    main_content = runpy.run_path(main_path,
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "<frozen runpy>", line 98, in _run_module_code
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 88, in _run_code
+  File "<frozen runpy>", line 291, in run_path
+    _load_dll_libraries()
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+  File "<frozen runpy>", line 98, in _run_module_code
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+  File "<frozen runpy>", line 88, in _run_code
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    raise err
+    import torch
+    main_content = runpy.run_path(main_path,
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\nvrtc64_120_0.alt.dll" or one of its dependencies.
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    _load_dll_libraries()
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+  File "<frozen runpy>", line 88, in _run_code
+    _load_dll_libraries()
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 1, in <module>
+Traceback (most recent call last):
+    raise err
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+  File "<string>", line 1, in <module>
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    import gymnasium as gym
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\__init__.py", line 5, in <module>
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+    from gymnasium.core import (
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\core.py", line 11, in <module>
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    from gymnasium import spaces
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\spaces\__init__.py", line 25, in <module>
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    from gymnasium.spaces.utils import flatdim, flatten, flatten_space, unflatten
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1131, in get_data
+MemoryError
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn_adv64_9.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\__init__.py", line 22, in <module>
+    from . import multiarray
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\multiarray.py", line 11, in <module>
+    from . import _multiarray_umath, overrides
+ImportError: DLL load failed while importing _multiarray_umath: The paging file is too small for this operation to complete.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py", line 125, in <module>
+    from numpy.__config__ import show_config
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\__init__.py", line 48, in <module>
+    raise ImportError(msg) from exc
+ImportError:
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.11 from "C:\Users\keatw\AppData\Local\Programs\Python\Python311\python.exe"
+  * The NumPy version is: "2.3.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: DLL load failed while importing _multiarray_umath: The paging file is too small for this operation to complete.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 1, in <module>
+    import gymnasium as gym
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\__init__.py", line 5, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from gymnasium.core import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\core.py", line 8, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<string>", line 1, in <module>
+    import numpy as np
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py", line 130, in <module>
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    exitcode = _main(fd, parent_sentinel)
+    exitcode = _main(fd, parent_sentinel)
+    prepare(preparation_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    raise ImportError(msg) from e
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+ImportError: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    prepare(preparation_data)
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+    _fixup_main_from_path(data['init_main_from_path'])
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 1, in <module>
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+    main_content = runpy.run_path(main_path,
+    import gymnasium as gym
+  File "<frozen runpy>", line 98, in _run_module_code
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\__init__.py", line 13, in <module>
+  File "<frozen runpy>", line 88, in _run_code
+  File "<frozen runpy>", line 291, in run_path
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+  File "<frozen runpy>", line 98, in _run_module_code
+    from gymnasium.envs.registration import (
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\__init__.py", line 5, in <module>
+    import torch
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 2126, in <module>
+    from gymnasium.envs.registration import make, pprint_registry, register, registry, spec
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\registration.py", line 29, in <module>
+    import gymnasium as gym
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\__init__.py", line 5, in <module>
+    import importlib.metadata as metadata
+    from gymnasium.core import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\core.py", line 8, in <module>
+    from torch import _VF as _VF, functional as functional  # usort: skip
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\importlib\metadata\__init__.py", line 8, in <module>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\functional.py", line 8, in <module>
+    import numpy as np
+    import torch.nn.functional as F
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py", line 467, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\__init__.py", line 8, in <module>
+    from torch.nn.modules import *  # usort: skip # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\__init__.py", line 1, in <module>
+    from . import lib
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\lib\__init__.py", line 18, in <module>
+    from .module import Module  # usort: skip
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 17, in <module>
+    from . import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\lib\_arraypad_impl.py", line 8, in <module>
+    from torch.utils._python_dispatch import is_traceable_wrapper_subclass
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\__init__.py", line 8, in <module>
+    from numpy.lib._index_tricks_impl import ndindex
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\lib\_index_tricks_impl.py", line 14, in <module>
+    from torch.utils import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\__init__.py", line 1, in <module>
+    from torch.utils.data.dataloader import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\dataloader.py", line 22, in <module>
+    from numpy.lib._function_base_impl import diff
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+    import torch.utils.data.graph_settings
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\graph_settings.py", line 8, in <module>
+    from torch.utils.data.datapipes.iter.sharding import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\datapipes\__init__.py", line 1, in <module>
+    from torch.utils.data.datapipes import dataframe as dataframe, iter as iter, map as map
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\datapipes\dataframe\__init__.py", line 1, in <module>
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_code
+    from torch.utils.data.datapipes.dataframe.dataframes import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\datapipes\dataframe\dataframes.py", line 4, in <module>
+  File "<frozen importlib._bootstrap_external>", line 1131, in get_data
+MemoryError
+    from torch.utils.data.datapipes._decorator import functional_datapipe
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\datapipes\_decorator.py", line 7, in <module>
+    from torch.utils.data.datapipes.datapipe import IterDataPipe, MapDataPipe
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\datapipes\datapipe.py", line 17, in <module>
+    dill = import_dill()
+           ^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\_import_utils.py", line 37, in import_dill
+    import dill
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\dill\__init__.py", line 26, in <module>
+    from ._dill import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\dill\_dill.py", line 167, in <module>
+    import zipfile
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1069, in get_code
+  File "<frozen importlib._bootstrap_external>", line 729, in _compile_bytecode
+MemoryError
+    from _pyio import open as _open
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1131, in get_data
+MemoryError
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+Traceback (most recent call last):
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    exitcode = _main(fd, parent_sentinel)
+    import torch
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 2169, in <module>
+    from torch import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\hub.py", line 19, in <module>
+    from urllib.request import Request, urlopen
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 88, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+    import http.client
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1398, in <module>
+    import ssl
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 100, in <module>
+    import _ssl             # if we can't import it, let the error propagate
+    ^^^^^^^^^^^
+MemoryError
+
+>>> CYCLE 1/50 <<<
+--- Left Hemisphere (Evolution): 20 gens ---
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<string>", line 1, in <module>
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    exitcode = _main(fd, parent_sentinel)
+    import torch
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    prepare(preparation_data)
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    _fixup_main_from_path(data['init_main_from_path'])
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn_engines_precompiled64_9.dll" or one of its dependencies.
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn_engines_precompiled64_9.dll" or one of its dependencies.
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+Traceback (most recent call last):
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\__init__.py", line 22, in <module>
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    from . import multiarray
+  File "<frozen runpy>", line 291, in run_path
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\multiarray.py", line 11, in <module>
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    from . import _multiarray_umath, overrides
+ImportError: DLL load failed while importing _multiarray_umath: The paging file is too small for this operation to complete.
+
+    import torch
+The above exception was the direct cause of the following exception:
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+
+Traceback (most recent call last):
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py", line 125, in <module>
+Traceback (most recent call last):
+    _load_dll_libraries()
+  File "<string>", line 1, in <module>
+    from numpy.__config__ import show_config
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    raise err
+    exitcode = _main(fd, parent_sentinel)
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\shm.dll" or one of its dependencies.
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    from numpy._core._multiarray_umath import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\__init__.py", line 48, in <module>
+    prepare(preparation_data)
+    raise ImportError(msg) from exc
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+ImportError:
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.11 from "C:\Users\keatw\AppData\Local\Programs\Python\Python311\python.exe"
+  * The NumPy version is: "2.3.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: DLL load failed while importing _multiarray_umath: The paging file is too small for this operation to complete.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+    exitcode = _main(fd, parent_sentinel)
+  File "<frozen runpy>", line 98, in _run_module_code
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+Traceback (most recent call last):
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\__init__.py", line 22, in <module>
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    from . import multiarray
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\multiarray.py", line 11, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+    from . import _multiarray_umath, overrides
+  File "<frozen runpy>", line 88, in _run_code
+    raise err
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 1, in <module>
+ImportError: DLL load failed while importing _multiarray_umath: The paging file is too small for this operation to complete.
+
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn_engines_runtime_compiled64_9.dll" or one of its dependencies.
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+    import gymnasium as gym
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py", line 125, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\__init__.py", line 5, in <module>
+    from numpy.__config__ import show_config
+    from gymnasium.core import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\core.py", line 8, in <module>
+    import numpy as np
+    from numpy._core._multiarray_umath import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py", line 130, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\_core\__init__.py", line 48, in <module>
+    raise ImportError(msg) from exc
+    raise ImportError(msg) from e
+ImportError:
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.11 from "C:\Users\keatw\AppData\Local\Programs\Python\Python311\python.exe"
+  * The NumPy version is: "2.3.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: DLL load failed while importing _multiarray_umath: The paging file is too small for this operation to complete.
+ImportError: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 1, in <module>
+    import gymnasium as gym
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\__init__.py", line 5, in <module>
+    from gymnasium.core import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\core.py", line 8, in <module>
+    import numpy as np
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py", line 130, in <module>
+    raise ImportError(msg) from e
+ImportError: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+Traceback (most recent call last):
+    main_content = runpy.run_path(main_path,
+  File "<string>", line 1, in <module>
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 2240, in <module>
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    from torch import quantization as quantization  # usort: skip
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\quantization\__init__.py", line 2, in <module>
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1114] A dynamic link library (DLL) initialization routine failed. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\shm.dll" or one of its dependencies.
+    from .fake_quantize import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\quantization\fake_quantize.py", line 10, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn_adv64_9.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    from torch.ao.quantization.fake_quantize import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\ao\quantization\__init__.py", line 12, in <module>
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 1, in <module>
+    import gymnasium as gym
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\__init__.py", line 5, in <module>
+    from gymnasium.core import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\core.py", line 8, in <module>
+    import numpy as np
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py", line 467, in <module>
+    from . import lib
+Traceback (most recent call last):
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\lib\__init__.py", line 18, in <module>
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    from . import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\lib\_arraypad_impl.py", line 8, in <module>
+Exception in thread Thread-1 (_handle_workers):
+    exitcode = _main(fd, parent_sentinel)
+Traceback (most recent call last):
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    from numpy.lib._index_tricks_impl import ndindex
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\lib\_index_tricks_impl.py", line 14, in <module>
+    self.run()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    from numpy.lib._function_base_impl import diff
+    self._target(*self._args, **self._kwargs)
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\pool.py", line 516, in _handle_workers
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    cls._maintain_pool(ctx, Process, processes, pool, inqueue,
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\pool.py", line 340, in _maintain_pool
+    prepare(preparation_data)
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1131, in get_data
+MemoryError
+    Pool._repopulate_pool_static(ctx, Process, processes, pool,
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\pool.py", line 329, in _repopulate_pool_static
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    w.start()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\context.py", line 336, in _Popen
+    return Popen(process_obj)
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\popen_spawn_win32.py", line 75, in __init__
+    hp, ht, pid, tid = _winapi.CreateProcess(
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+                       ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 1455] The paging file is too small for this operation to complete
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\torch.dll" or one of its dependencies.
+    from .pt2e._numeric_debugger import (  # noqa: F401
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\ao\quantization\pt2e\_numeric_debugger.py", line 9, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn_engines_precompiled64_9.dll" or one of its dependencies.
+    from torch.ao.quantization.pt2e.graph_utils import bfs_trace_with_node_process
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\ao\quantization\pt2e\graph_utils.py", line 9, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] The paging file is too small for this operation to complete. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+    from torch.export import ExportedProgram
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\export\__init__.py", line 17, in <module>
+    from torch.fx.passes.infra.pass_base import PassResult
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\fx\passes\__init__.py", line 1, in <module>
+    from . import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\fx\passes\graph_drawer.py", line 13, in <module>
+    from torch.fx.passes.shape_prop import TensorMetadata
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\fx\passes\shape_prop.py", line 10, in <module>
+    from torch._subclasses.meta_utils import is_sparse_any
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\_subclasses\__init__.py", line 2, in <module>
+    from torch._subclasses.fake_tensor import (
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\_subclasses\fake_tensor.py", line 26, in <module>
+    from torch._logging import dtrace_structured
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1138, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1078, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1504, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1476, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1627, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 119, in _path_join
+MemoryError
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1114] A dynamic link library (DLL) initialization routine failed. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\cudnn_engines_runtime_compiled64_9.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1114] A dynamic link library (DLL) initialization routine failed. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\shm.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\knot_agent\bilateral_hemisphere_agent_4.py", line 3, in <module>
+    import torch
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 270, in <module>
+    _load_dll_libraries()
+  File "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\__init__.py", line 253, in _load_dll_libraries
+    raise err
+OSError: [WinError 1114] A dynamic link library (DLL) initialization routine failed. Error loading "C:\Users\keatw\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\lib\shm.dll" or one of its dependencies.

@@ -1,0 +1,394 @@
+Flightradar24 - Flight Tracker
+Find flights, airports and more
+
+Log in
+
+
+
+View
+Map
+
+
+
+
+
+Settings
+
+Weather
+
+Filters
+
+Widgets
+
+Playback
+Most tracked flights
+1.
+VCV3788
+V03788
+A346
+2,046
+St. Petersburg
+LED
+–
+Varadero
+VRA
+2.
+AWQ109
+QZ109
+A320
+647
+Penang
+PEN
+–
+Medan
+KNO
+3.
+QFA11
+QF11
+A388
+577
+Sydney
+SYD
+–
+Los Angeles
+LAX
+4.
+AAL167
+AA167
+B789
+557
+New York
+JFK
+–
+Tokyo
+HND
+5.
+GIA186
+GA186
+B738
+502
+Jakarta
+CGK
+–
+Medan
+KNO
+6.
+WON1247
+IW1247
+AT76
+492
+Gunung Sitoli
+GNS
+–
+Medan
+KNO
+7.
+BLKCAT5
+Q4
+486
+N/A
+–
+N/A
+8.
+LNI139
+JT139
+B739
+468
+Penang
+PEN
+–
+Medan
+KNO
+9.
+N/A
+B737
+421
+N/A
+–
+N/A
+10.
+PKCAA
+C700
+420
+Medan
+KNO
+–
+N/A
+Airport disruptions
+
+Chicago
+ORD
+-8°C
+250°
+4 kts
+4.6
+5.0
+
+Miami
+MIA
+22°C
+340°
+4 kts
+4.6
+4.0
+
+Medan
+KNO
+29°C
+10°
+8 kts
+5.0
+3.2
+
+Makassar
+UPG
+32°C
+310°
+10 kts
+3.3
+4.7
+
+Kathmandu
+KTM
+19°C
+220°
+4 kts
+4.3
+1.5
+
+San Juan
+SJU
+24°C
+N/A
+2.9
+2.6
+
+Oakland
+OAK
+6°C
+N/A
+1.4
+3.8
+
+Phoenix
+PHX
+14°C
+N/A
+2.1
+3.1
+
+Atlanta
+ATL
+6°C
+330°
+14 kts
+5.0
+0.0
+
+Fort Myers
+RSW
+21°C
+60°
+6 kts
+5.0
+0.0
+Disruption map
+Bookmarks
+Aircraft
+Flights
+Airports
+Locations
+Create a free Flightradar24 account to add one bookmark or upgrade to a Silver (10), Gold (25) or Business (60) subscription to add a higher number of items.
+
+7-day free trial | Learn more
+
+Add bookmark
+Flightradar24 - Flight Tracker
+on
+Flightradar24 - Flight Tracker
+
+Unlock 60+ premium features
+Join over 1 million subscribers and enjoy longer flight history, 3D view, aviation weather and much more.
+Try free for 7 days | Learn more
+Discover how Flightradar24 works
+Learn how flight data is collected. From ADS-B to satellite tracking tech.
+Sign up for our aviation newsletter
+Get top aviation stories & more. Delivered weekly to your inbox.
+Watch Flightradar24 on YouTube
+Explore live streams & flight events. Subscribe to Flightradar24’s channel.
+Explore the world’s longest flights
+Ultra-long routes topping the list. Flight times, aircraft and distance.
+B2B: Explore our flight data API
+Live and past flights–worldwide. Build with the Flightradar24 API.
+All about Flightradar24 filters
+Sort flights by type, airline & more. Learn how to use the filters tool.
+Ads help keep Flightradar24 free
+
+Upgrade now to go ad free
+
+Flightradar24 - Flight Tracker
+Find flights, airports and more
+
+Log in
+
+
+
+View
+Map
+
+
+
+
+
+Settings
+
+Weather
+
+Filters
+
+Widgets
+
+Playback
+SAS657
+SK657
+CRJ9
+
+
+SAS
+Operated by CityJet
+Logo
+
+
+
+
+
+
+Want to view more aviation photos?
+Visit JetPhotos today to access more than 6 million high-quality photos of all types of aircraft.
+
+
+© Jonas Eickholt
+CPH
+Copenhagen
+CET (UTC +01:00)
+
+STR
+Stuttgart
+CET (UTC +01:00)
+
+Scheduled
+8:05 AM
+Scheduled
+9:40 AM
+Actual
+8:11 AM
+estimated
+9:25 AM
+150 km, 00:14 ago
+657 km, in 00:59
+
+More SK657 information
+
+Aircraft type (CRJ9)
+
+Mitsubishi CRJ-900LR
+Registration
+
+EI-HSE
+
+COUNTRY OF REG.
+
+SERIAL NUMBER (MSN)
+
+AGE
+
+AIRCRAFT CATEGORY
+
+Passenger
+
+Recent EI-HSE flights
+
+Barometric alt.
+
+28,725 ft
+
+Vertical speed
+
+GPS altitude
+
+Track
+
+199°
+
+Speed & Altitude graph
+
+Ground speed
+
+468 kts
+
+TRUE AIRSPEED
+
+INDICATED AIRSPEED
+
+MACH
+
+Wind
+
+N/A
+
+Temperature
+
+fir/uir
+
+Data source - ADS-B
+
+ICAO 24-BIT ADDRESS
+
+4caf14
+
+SQUAWK
+
+latitude
+
+54.40425
+
+longitude
+
+11.64051
+
+
+Travelers
+
+
+3D view
+
+Route
+
+Follow
+
+Share
+
+More
+Flightradar24 - Flight Tracker
+on
+Flightradar24 - Flight Tracker
+
+
+Unlock 60+ premium features
+Join over 1 million subscribers and enjoy longer flight history, 3D view, aviation weather and much more.
+Try free for 7 days | Learn more
+Discover how Flightradar24 works
+Learn how flight data is collected. From ADS-B to satellite tracking tech.
+Sign up for our aviation newsletter
+Get top aviation stories & more. Delivered weekly to your inbox.
+Watch Flightradar24 on YouTube
+Explore live streams & flight events. Subscribe to Flightradar24’s channel.
+Explore the world’s longest flights
+Ultra-long routes topping the list. Flight times, aircraft and distance.
+B2B: Explore our flight data API
+Live and past flights–worldwide. Build with the Flightradar24 API.
+All about Flightradar24 filters
+Sort flights by type, airline & more. Learn how to use the filters tool.
+Ads help keep Flightradar24 free
+
+Upgrade now to go ad free

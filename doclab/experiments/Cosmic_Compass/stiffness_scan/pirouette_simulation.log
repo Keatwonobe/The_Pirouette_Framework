@@ -1,0 +1,307 @@
+2025-11-26 21:25:16,593 [INFO] Loading checkpoint: pirouette_checkpoint.pkl
+2025-11-26 21:25:16,609 [INFO] Resuming: 300/625 completed, 0 failed
+2025-11-26 21:25:16,609 [INFO] ============================================================
+2025-11-26 21:25:16,609 [INFO] PIROUETTE FIELD VALIDATION (L=16^4)
+2025-11-26 21:25:16,609 [INFO] Config: Therm=1000, Meas=100, Grid=25x25
+2025-11-26 21:25:16,609 [INFO] Batch size: 5, Max memory: 75%
+2025-11-26 21:25:16,609 [INFO] ============================================================
+2025-11-26 21:25:16,609 [INFO] Work queue: 325 points remaining
+2025-11-26 21:25:16,609 [INFO] 
+--- Batch 1/65 ---
+2025-11-26 21:26:04,216 [INFO] Checkpoint saved: 305/625 complete
+2025-11-26 21:26:04,216 [INFO] Progress: 305/625 (48.8%) | Failed: 0 | Elapsed: 0.01h
+2025-11-26 21:26:04,728 [INFO] 
+--- Batch 2/65 ---
+2025-11-26 21:26:34,124 [INFO] Loading checkpoint: pirouette_checkpoint.pkl
+2025-11-26 21:26:34,124 [INFO] Resuming: 305/625 completed, 0 failed
+2025-11-26 21:26:34,124 [INFO] ============================================================
+2025-11-26 21:26:34,124 [INFO] PIROUETTE FIELD VALIDATION (L=16^4)
+2025-11-26 21:26:34,124 [INFO] Config: Therm=1000, Meas=100, Grid=25x25
+2025-11-26 21:26:34,124 [INFO] Batch size: 5, Max memory: 75%
+2025-11-26 21:26:34,124 [INFO] ============================================================
+2025-11-26 21:26:34,124 [INFO] Work queue: 320 points remaining
+2025-11-26 21:26:34,124 [INFO] 
+--- Batch 1/64 ---
+2025-11-26 21:27:23,203 [INFO] Checkpoint saved: 310/625 complete
+2025-11-26 21:27:23,203 [INFO] Progress: 310/625 (49.6%) | Failed: 0 | Elapsed: 0.01h
+2025-11-26 21:27:23,721 [INFO] 
+--- Batch 2/64 ---
+2025-11-26 21:27:55,077 [WARNING] Interrupt received. Saving state...
+2025-11-26 21:27:55,079 [INFO] Checkpoint saved: 310/625 complete
+2025-11-26 21:28:01,671 [INFO] Loading checkpoint: pirouette_checkpoint.pkl
+2025-11-26 21:28:01,671 [INFO] Resuming: 310/625 completed, 0 failed
+2025-11-26 21:28:01,671 [INFO] ============================================================
+2025-11-26 21:28:01,671 [INFO] PIROUETTE FIELD VALIDATION (L=16^4)
+2025-11-26 21:28:01,671 [INFO] Config: Therm=1000, Meas=100, Grid=25x25
+2025-11-26 21:28:01,671 [INFO] Batch size: 5, Max memory: 75%
+2025-11-26 21:28:01,671 [INFO] ============================================================
+2025-11-26 21:28:01,671 [INFO] Work queue: 315 points remaining
+2025-11-26 21:28:01,671 [INFO] 
+--- Batch 1/63 ---
+2025-11-26 21:28:49,046 [INFO] Checkpoint saved: 315/625 complete
+2025-11-26 21:28:49,046 [INFO] Progress: 315/625 (50.4%) | Failed: 0 | Elapsed: 0.01h
+2025-11-26 21:28:49,566 [INFO] 
+--- Batch 2/63 ---
+2025-11-26 21:29:15,345 [INFO] Loading checkpoint: pirouette_checkpoint.pkl
+2025-11-26 21:29:15,351 [INFO] Resuming: 315/625 completed, 0 failed
+2025-11-26 21:29:15,352 [INFO] ============================================================
+2025-11-26 21:29:15,352 [INFO] PIROUETTE FIELD VALIDATION (L=16^4)
+2025-11-26 21:29:15,352 [INFO] Config: Therm=1000, Meas=100, Grid=25x25
+2025-11-26 21:29:15,352 [INFO] Batch size: 5, Max memory: 75%
+2025-11-26 21:29:15,352 [INFO] ============================================================
+2025-11-26 21:29:15,352 [INFO] Work queue: 310 points remaining
+2025-11-26 21:29:15,352 [INFO] 
+--- Batch 1/62 ---
+2025-11-26 21:31:06,811 [INFO] Loading checkpoint: pirouette_checkpoint.pkl
+2025-11-26 21:31:06,827 [INFO] Resuming: 315/625 completed, 0 failed
+2025-11-26 21:31:06,827 [INFO] ============================================================
+2025-11-26 21:31:06,827 [INFO] PIROUETTE FIELD VALIDATION (L=16^4)
+2025-11-26 21:31:06,827 [INFO] Config: Therm=1000, Meas=100, Grid=25x25
+2025-11-26 21:31:06,827 [INFO] Batch size: 5, Max memory: 75%
+2025-11-26 21:31:06,827 [INFO] ============================================================
+2025-11-26 21:31:06,827 [INFO] Work queue: 310 points remaining
+2025-11-26 21:31:06,827 [INFO] 
+--- Batch 1/62 ---
+2025-11-26 21:31:06,827 [INFO] Processing point (12,15): m²=-0.600, λ=3.500
+2025-11-26 21:31:16,139 [INFO]   → ξ = 0.4605 (from 100 measurements)
+2025-11-26 21:31:16,265 [INFO] Processing point (12,16): m²=-0.600, λ=3.667
+2025-11-26 21:31:25,600 [INFO]   → ξ = 0.4592 (from 100 measurements)
+2025-11-26 21:31:25,717 [INFO] Processing point (12,17): m²=-0.600, λ=3.833
+2025-11-26 21:31:35,045 [INFO]   → ξ = 0.4591 (from 100 measurements)
+2025-11-26 21:31:35,164 [INFO] Processing point (12,18): m²=-0.600, λ=4.000
+2025-11-26 21:31:44,432 [INFO]   → ξ = 0.4619 (from 100 measurements)
+2025-11-26 21:31:44,555 [INFO] Processing point (12,19): m²=-0.600, λ=4.167
+2025-11-26 21:31:53,844 [INFO]   → ξ = 0.4602 (from 100 measurements)
+2025-11-26 21:31:53,969 [INFO] Checkpoint saved: 320/625 complete
+2025-11-26 21:31:53,969 [INFO] Progress: 320/625 (51.2%) | Failed: 0 | Elapsed: 0.01h
+2025-11-26 21:31:54,477 [INFO] 
+--- Batch 2/62 ---
+2025-11-26 21:31:54,484 [INFO] Processing point (12,20): m²=-0.600, λ=4.333
+2025-11-26 21:32:03,842 [INFO]   → ξ = 0.4595 (from 100 measurements)
+2025-11-26 21:32:03,968 [INFO] Processing point (12,21): m²=-0.600, λ=4.500
+2025-11-26 21:32:13,357 [INFO]   → ξ = 0.4573 (from 100 measurements)
+2025-11-26 21:32:13,485 [INFO] Processing point (12,22): m²=-0.600, λ=4.667
+2025-11-26 21:32:19,780 [WARNING] Correlation fit failed: 'dict_itemiterator' object does not support the context manager protocol
+2025-11-26 21:32:22,873 [INFO]   → ξ = 0.4590 (from 99 measurements)
+2025-11-26 21:32:23,003 [INFO] Processing point (12,23): m²=-0.600, λ=4.833
+2025-11-26 21:32:32,401 [INFO]   → ξ = 0.4584 (from 100 measurements)
+2025-11-26 21:32:32,516 [INFO] Processing point (12,24): m²=-0.600, λ=5.000
+2025-11-26 21:32:41,874 [INFO]   → ξ = 0.4568 (from 100 measurements)
+2025-11-26 21:32:42,003 [INFO] Checkpoint saved: 325/625 complete
+2025-11-26 21:32:42,003 [INFO] Progress: 325/625 (52.0%) | Failed: 0 | Elapsed: 0.03h
+2025-11-26 21:32:42,521 [INFO] 
+--- Batch 3/62 ---
+2025-11-26 21:32:42,521 [INFO] Processing point (13,0): m²=-0.550, λ=1.000
+2025-11-26 21:32:51,858 [INFO]   → ξ = 0.4687 (from 100 measurements)
+2025-11-26 21:32:51,973 [INFO] Processing point (13,1): m²=-0.550, λ=1.167
+2025-11-26 21:57:09,029 [INFO] Loading checkpoint: pirouette_checkpoint.pkl
+2025-11-26 21:57:09,045 [INFO] Resuming: 325/625 completed, 0 failed
+2025-11-26 21:57:09,045 [INFO] ============================================================
+2025-11-26 21:57:09,045 [INFO] PIROUETTE FIELD VALIDATION (L=16^4)
+2025-11-26 21:57:09,045 [INFO] Config: Therm=1000, Meas=100, Grid=25x25
+2025-11-26 21:57:09,045 [INFO] Batch size: 5, Max memory: 75%
+2025-11-26 21:57:09,045 [INFO] ============================================================
+2025-11-26 21:57:09,045 [INFO] Work queue: 300 points remaining
+2025-11-26 21:57:09,045 [INFO] 
+--- Batch 1/60 ---
+2025-11-26 21:57:09,045 [INFO] Processing point (13,0): m²=-0.550, λ=1.000
+2025-11-26 21:57:18,498 [INFO]   → ξ = 0.4716 (from 100 measurements)
+2025-11-26 21:57:18,624 [INFO] Processing point (13,1): m²=-0.550, λ=1.167
+2025-11-26 21:57:28,062 [INFO]   → ξ = 0.4662 (from 100 measurements)
+2025-11-26 21:57:28,187 [INFO] Processing point (13,2): m²=-0.550, λ=1.333
+2025-11-26 21:57:37,593 [INFO]   → ξ = 0.4676 (from 100 measurements)
+2025-11-26 21:57:37,726 [INFO] Processing point (13,3): m²=-0.550, λ=1.500
+2025-11-26 21:57:47,092 [INFO]   → ξ = 0.4664 (from 100 measurements)
+2025-11-26 21:57:47,220 [INFO] Processing point (13,4): m²=-0.550, λ=1.667
+2025-11-26 21:57:56,640 [INFO]   → ξ = 0.4668 (from 100 measurements)
+2025-11-26 21:57:56,766 [INFO] Checkpoint saved: 330/625 complete
+2025-11-26 21:57:56,766 [INFO] Progress: 330/625 (52.8%) | Failed: 0 | Elapsed: 0.01h
+2025-11-26 21:57:57,282 [INFO] 
+--- Batch 2/60 ---
+2025-11-26 21:57:57,282 [INFO] Processing point (13,5): m²=-0.550, λ=1.833
+2025-11-26 21:58:06,608 [INFO]   → ξ = 0.4648 (from 100 measurements)
+2025-11-26 21:58:06,725 [INFO] Processing point (13,6): m²=-0.550, λ=2.000
+2025-11-26 21:58:16,170 [INFO]   → ξ = 0.4650 (from 100 measurements)
+2025-11-26 21:58:16,296 [INFO] Processing point (13,7): m²=-0.550, λ=2.167
+2025-11-26 21:58:25,701 [INFO]   → ξ = 0.4647 (from 100 measurements)
+2025-11-26 21:58:25,827 [INFO] Processing point (13,8): m²=-0.550, λ=2.333
+2025-11-26 21:58:35,189 [INFO]   → ξ = 0.4631 (from 100 measurements)
+2025-11-26 21:58:35,310 [INFO] Processing point (13,9): m²=-0.550, λ=2.500
+2025-11-26 21:58:44,686 [INFO]   → ξ = 0.4635 (from 100 measurements)
+2025-11-26 21:58:44,801 [INFO] Checkpoint saved: 335/625 complete
+2025-11-26 21:58:44,801 [INFO] Progress: 335/625 (53.6%) | Failed: 0 | Elapsed: 0.03h
+2025-11-26 21:58:45,315 [INFO] 
+--- Batch 3/60 ---
+2025-11-26 21:58:45,315 [INFO] Processing point (13,10): m²=-0.550, λ=2.667
+2025-11-26 21:58:54,655 [INFO]   → ξ = 0.4615 (from 100 measurements)
+2025-11-26 21:58:54,792 [INFO] Processing point (13,11): m²=-0.550, λ=2.833
+2025-11-26 21:59:04,139 [INFO]   → ξ = 0.4625 (from 100 measurements)
+2025-11-26 21:59:04,257 [INFO] Processing point (13,12): m²=-0.550, λ=3.000
+2025-11-26 21:59:13,561 [INFO]   → ξ = 0.4631 (from 100 measurements)
+2025-11-26 21:59:13,692 [INFO] Processing point (13,13): m²=-0.550, λ=3.167
+2025-11-26 21:59:22,999 [INFO]   → ξ = 0.4610 (from 100 measurements)
+2025-11-26 21:59:23,122 [INFO] Processing point (13,14): m²=-0.550, λ=3.333
+2025-11-26 21:59:32,435 [INFO]   → ξ = 0.4614 (from 100 measurements)
+2025-11-26 21:59:32,564 [INFO] Checkpoint saved: 340/625 complete
+2025-11-26 21:59:32,564 [INFO] Progress: 340/625 (54.4%) | Failed: 0 | Elapsed: 0.04h
+2025-11-26 21:59:33,077 [INFO] 
+--- Batch 4/60 ---
+2025-11-26 21:59:33,077 [INFO] Processing point (13,15): m²=-0.550, λ=3.500
+2025-11-26 21:59:42,421 [INFO]   → ξ = 0.4585 (from 100 measurements)
+2025-11-26 21:59:42,556 [INFO] Processing point (13,16): m²=-0.550, λ=3.667
+2025-11-26 21:59:51,858 [INFO]   → ξ = 0.4616 (from 100 measurements)
+2025-11-26 21:59:51,979 [INFO] Processing point (13,17): m²=-0.550, λ=3.833
+2025-11-26 22:00:01,311 [INFO]   → ξ = 0.4621 (from 100 measurements)
+2025-11-26 22:00:01,428 [INFO] Processing point (13,18): m²=-0.550, λ=4.000
+2025-11-26 22:00:10,748 [INFO]   → ξ = 0.4597 (from 100 measurements)
+2025-11-26 22:00:10,878 [INFO] Processing point (13,19): m²=-0.550, λ=4.167
+2025-11-26 22:00:20,249 [INFO]   → ξ = 0.4590 (from 100 measurements)
+2025-11-26 22:00:20,366 [INFO] Checkpoint saved: 345/625 complete
+2025-11-26 22:00:20,366 [INFO] Progress: 345/625 (55.2%) | Failed: 0 | Elapsed: 0.05h
+2025-11-26 22:00:20,885 [INFO] 
+--- Batch 5/60 ---
+2025-11-26 22:00:20,892 [INFO] Processing point (13,20): m²=-0.550, λ=4.333
+2025-11-26 22:00:30,217 [INFO]   → ξ = 0.4582 (from 100 measurements)
+2025-11-26 22:00:30,345 [INFO] Processing point (13,21): m²=-0.550, λ=4.500
+2025-11-26 22:00:39,686 [INFO]   → ξ = 0.4570 (from 100 measurements)
+2025-11-26 22:00:39,812 [INFO] Processing point (13,22): m²=-0.550, λ=4.667
+2025-11-26 22:00:49,109 [INFO]   → ξ = 0.4579 (from 100 measurements)
+2025-11-26 22:00:49,223 [INFO] Processing point (13,23): m²=-0.550, λ=4.833
+2025-11-26 22:00:58,546 [INFO]   → ξ = 0.4562 (from 100 measurements)
+2025-11-26 22:00:58,661 [INFO] Processing point (13,24): m²=-0.550, λ=5.000
+2025-11-26 22:01:07,999 [INFO]   → ξ = 0.4587 (from 100 measurements)
+2025-11-26 22:01:08,126 [INFO] Checkpoint saved: 350/625 complete
+2025-11-26 22:01:08,126 [INFO] Progress: 350/625 (56.0%) | Failed: 0 | Elapsed: 0.07h
+2025-11-26 22:01:08,644 [INFO] 
+--- Batch 6/60 ---
+2025-11-26 22:01:08,644 [INFO] Processing point (14,0): m²=-0.500, λ=1.000
+2025-11-26 22:01:17,936 [INFO]   → ξ = 0.4693 (from 100 measurements)
+2025-11-26 22:01:18,063 [INFO] Processing point (14,1): m²=-0.500, λ=1.167
+2025-11-26 22:01:27,374 [INFO]   → ξ = 0.4683 (from 100 measurements)
+2025-11-26 22:01:27,492 [INFO] Processing point (14,2): m²=-0.500, λ=1.333
+2025-11-26 22:01:36,795 [INFO]   → ξ = 0.4679 (from 100 measurements)
+2025-11-26 22:01:36,924 [INFO] Processing point (14,3): m²=-0.500, λ=1.500
+2025-11-26 22:01:46,248 [INFO]   → ξ = 0.4681 (from 100 measurements)
+2025-11-26 22:01:46,373 [INFO] Processing point (14,4): m²=-0.500, λ=1.667
+2025-11-26 22:01:55,624 [INFO]   → ξ = 0.4658 (from 100 measurements)
+2025-11-26 22:01:55,754 [INFO] Checkpoint saved: 355/625 complete
+2025-11-26 22:01:55,755 [INFO] Progress: 355/625 (56.8%) | Failed: 0 | Elapsed: 0.08h
+2025-11-26 22:01:56,266 [INFO] 
+--- Batch 7/60 ---
+2025-11-26 22:01:56,266 [INFO] Processing point (14,5): m²=-0.500, λ=1.833
+2025-11-26 22:02:05,562 [INFO]   → ξ = 0.4642 (from 100 measurements)
+2025-11-26 22:02:05,692 [INFO] Processing point (14,6): m²=-0.500, λ=2.000
+2025-11-26 22:02:14,998 [INFO]   → ξ = 0.4648 (from 100 measurements)
+2025-11-26 22:02:15,125 [INFO] Processing point (14,7): m²=-0.500, λ=2.167
+2025-11-26 22:02:24,467 [INFO]   → ξ = 0.4650 (from 100 measurements)
+2025-11-26 22:02:24,596 [INFO] Processing point (14,8): m²=-0.500, λ=2.333
+2025-11-26 22:02:33,967 [INFO]   → ξ = 0.4656 (from 100 measurements)
+2025-11-26 22:02:34,093 [INFO] Processing point (14,9): m²=-0.500, λ=2.500
+2025-11-26 22:02:43,389 [INFO]   → ξ = 0.4652 (from 100 measurements)
+2025-11-26 22:02:43,516 [INFO] Checkpoint saved: 360/625 complete
+2025-11-26 22:02:43,516 [INFO] Progress: 360/625 (57.6%) | Failed: 0 | Elapsed: 0.09h
+2025-11-26 22:02:44,027 [INFO] 
+--- Batch 8/60 ---
+2025-11-26 22:02:44,030 [INFO] Processing point (14,10): m²=-0.500, λ=2.667
+2025-11-26 22:02:53,381 [INFO]   → ξ = 0.4620 (from 100 measurements)
+2025-11-26 22:02:53,499 [INFO] Processing point (14,11): m²=-0.500, λ=2.833
+2025-11-26 22:03:02,937 [INFO]   → ξ = 0.4600 (from 100 measurements)
+2025-11-26 22:03:03,061 [INFO] Processing point (14,12): m²=-0.500, λ=3.000
+2025-11-26 22:03:12,577 [INFO]   → ξ = 0.4628 (from 100 measurements)
+2025-11-26 22:03:12,694 [INFO] Processing point (14,13): m²=-0.500, λ=3.167
+2025-11-26 22:03:22,171 [INFO]   → ξ = 0.4611 (from 100 measurements)
+2025-11-26 22:03:22,290 [INFO] Processing point (14,14): m²=-0.500, λ=3.333
+2025-11-26 22:03:31,717 [INFO]   → ξ = 0.4611 (from 100 measurements)
+2025-11-26 22:03:31,844 [INFO] Checkpoint saved: 365/625 complete
+2025-11-26 22:03:31,844 [INFO] Progress: 365/625 (58.4%) | Failed: 0 | Elapsed: 0.11h
+2025-11-26 22:03:32,362 [INFO] 
+--- Batch 9/60 ---
+2025-11-26 22:03:32,362 [INFO] Processing point (14,15): m²=-0.500, λ=3.500
+2025-11-26 22:03:41,764 [INFO]   → ξ = 0.4613 (from 100 measurements)
+2025-11-26 22:03:41,895 [INFO] Processing point (14,16): m²=-0.500, λ=3.667
+2025-11-26 22:03:51,311 [INFO]   → ξ = 0.4616 (from 100 measurements)
+2025-11-26 22:03:51,437 [INFO] Processing point (14,17): m²=-0.500, λ=3.833
+2025-11-26 22:04:00,904 [INFO]   → ξ = 0.4602 (from 100 measurements)
+2025-11-26 22:04:01,028 [INFO] Processing point (14,18): m²=-0.500, λ=4.000
+2025-11-26 22:04:10,467 [INFO]   → ξ = 0.4590 (from 100 measurements)
+2025-11-26 22:04:10,593 [INFO] Processing point (14,19): m²=-0.500, λ=4.167
+2025-11-26 22:04:19,998 [INFO]   → ξ = 0.4578 (from 100 measurements)
+2025-11-26 22:04:20,127 [INFO] Checkpoint saved: 370/625 complete
+2025-11-26 22:04:20,127 [INFO] Progress: 370/625 (59.2%) | Failed: 0 | Elapsed: 0.12h
+2025-11-26 22:04:20,646 [INFO] 
+--- Batch 10/60 ---
+2025-11-26 22:04:20,653 [INFO] Processing point (14,20): m²=-0.500, λ=4.333
+2025-11-26 22:04:28,390 [INFO] Loading checkpoint: pirouette_checkpoint.pkl
+2025-11-26 22:04:28,390 [INFO] Resuming: 370/625 completed, 0 failed
+2025-11-26 22:04:28,390 [INFO] ============================================================
+2025-11-26 22:04:28,390 [INFO] PIROUETTE FIELD VALIDATION (L=16^4)
+2025-11-26 22:04:28,390 [INFO] Config: Therm=1000, Meas=100, Grid=25x25
+2025-11-26 22:04:28,390 [INFO] Batch size: 5, Max memory: 75%
+2025-11-26 22:04:28,390 [INFO] ============================================================
+2025-11-26 22:04:28,390 [INFO] Work queue: 255 points remaining
+2025-11-26 22:04:28,390 [INFO] 
+--- Batch 1/51 ---
+2025-11-26 22:04:28,390 [INFO] Processing point (14,20): m²=-0.500, λ=4.333
+2025-11-26 22:04:37,749 [INFO]   → ξ = 0.4573 (from 100 measurements)
+2025-11-26 22:04:37,874 [INFO] Processing point (14,21): m²=-0.500, λ=4.500
+2025-11-26 22:04:47,296 [INFO]   → ξ = 0.4584 (from 100 measurements)
+2025-11-26 22:04:47,424 [INFO] Processing point (14,22): m²=-0.500, λ=4.667
+2025-11-26 22:04:56,768 [INFO]   → ξ = 0.4574 (from 100 measurements)
+2025-11-26 22:04:56,890 [INFO] Processing point (14,23): m²=-0.500, λ=4.833
+2025-11-26 22:05:06,246 [INFO]   → ξ = 0.4584 (from 100 measurements)
+2025-11-26 22:05:06,362 [INFO] Processing point (14,24): m²=-0.500, λ=5.000
+2025-11-26 22:05:15,718 [INFO]   → ξ = 0.4574 (from 100 measurements)
+2025-11-26 22:05:15,838 [INFO] Checkpoint saved: 375/625 complete
+2025-11-26 22:05:15,838 [INFO] Progress: 375/625 (60.0%) | Failed: 0 | Elapsed: 0.01h
+2025-11-26 22:05:16,350 [INFO] 
+--- Batch 2/51 ---
+2025-11-26 22:05:16,358 [INFO] Processing point (15,0): m²=-0.450, λ=1.000
+2025-11-26 22:05:25,656 [INFO]   → ξ = 0.4682 (from 100 measurements)
+2025-11-26 22:05:25,780 [INFO] Processing point (15,1): m²=-0.450, λ=1.167
+2025-11-26 22:05:35,356 [INFO]   → ξ = 0.4677 (from 100 measurements)
+2025-11-26 22:05:35,476 [INFO] Processing point (15,2): m²=-0.450, λ=1.333
+2025-11-26 22:05:45,050 [INFO]   → ξ = 0.4664 (from 100 measurements)
+2025-11-26 22:05:45,173 [INFO] Processing point (15,3): m²=-0.450, λ=1.500
+2025-11-26 22:05:54,565 [INFO]   → ξ = 0.4661 (from 100 measurements)
+2025-11-26 22:05:54,694 [INFO] Processing point (15,4): m²=-0.450, λ=1.667
+2025-11-26 22:06:04,468 [INFO]   → ξ = 0.4677 (from 100 measurements)
+2025-11-26 22:06:04,586 [INFO] Checkpoint saved: 380/625 complete
+2025-11-26 22:06:04,586 [INFO] Progress: 380/625 (60.8%) | Failed: 0 | Elapsed: 0.03h
+2025-11-26 22:06:05,097 [INFO] 
+--- Batch 3/51 ---
+2025-11-26 22:06:05,097 [INFO] Processing point (15,5): m²=-0.450, λ=1.833
+2025-11-26 22:06:14,736 [INFO]   → ξ = 0.4681 (from 100 measurements)
+2025-11-26 22:06:14,865 [INFO] Processing point (15,6): m²=-0.450, λ=2.000
+2025-11-26 22:06:24,483 [INFO]   → ξ = 0.4632 (from 100 measurements)
+2025-11-26 22:06:24,600 [INFO] Processing point (15,7): m²=-0.450, λ=2.167
+2025-11-26 22:06:34,389 [INFO]   → ξ = 0.4633 (from 100 measurements)
+2025-11-26 22:06:34,515 [INFO] Processing point (15,8): m²=-0.450, λ=2.333
+2025-11-26 22:08:06,748 [INFO] Loading checkpoint: pirouette_checkpoint.pkl
+2025-11-26 22:08:06,748 [INFO] Resuming: 380/625 completed, 0 failed
+2025-11-26 22:08:06,748 [INFO] ============================================================
+2025-11-26 22:08:06,748 [INFO] PIROUETTE FIELD VALIDATION (L=16^4)
+2025-11-26 22:08:06,748 [INFO] Config: Therm=1000, Meas=100, Grid=25x25
+2025-11-26 22:08:06,748 [INFO] Batch size: 5, Max memory: 75%
+2025-11-26 22:08:06,748 [INFO] ============================================================
+2025-11-26 22:08:06,748 [INFO] Work queue: 245 points remaining
+2025-11-26 22:08:06,748 [INFO] 
+--- Batch 1/49 ---
+2025-11-26 22:08:06,748 [INFO] Processing point (15,5): m²=-0.450, λ=1.833
+2025-11-26 22:08:16,109 [INFO]   → ξ = 0.4653 (from 100 measurements)
+2025-11-26 22:08:16,234 [INFO] Processing point (15,6): m²=-0.450, λ=2.000
+2025-11-26 22:08:25,514 [INFO]   → ξ = 0.4664 (from 100 measurements)
+2025-11-26 22:08:25,629 [INFO] Processing point (15,7): m²=-0.450, λ=2.167
+2025-11-26 22:08:34,967 [INFO]   → ξ = 0.4628 (from 100 measurements)
+2025-11-26 22:08:35,093 [INFO] Processing point (15,8): m²=-0.450, λ=2.333
+2025-11-26 22:08:44,543 [INFO]   → ξ = 0.4621 (from 100 measurements)
+2025-11-26 22:08:44,660 [INFO] Processing point (15,9): m²=-0.450, λ=2.500
+2025-11-26 22:08:54,444 [INFO]   → ξ = 0.4610 (from 100 measurements)
+2025-11-26 22:08:54,568 [INFO] Checkpoint saved: 385/625 complete
+2025-11-26 22:08:54,568 [INFO] Progress: 385/625 (61.6%) | Failed: 0 | Elapsed: 0.01h
+2025-11-26 22:08:55,080 [INFO] 
+--- Batch 2/49 ---
+2025-11-26 22:08:55,082 [INFO] Processing point (15,10): m²=-0.450, λ=2.667
+2025-11-26 22:09:05,088 [INFO]   → ξ = 0.4623 (from 100 measurements)
+2025-11-26 22:09:05,210 [INFO] Processing point (15,11): m²=-0.450, λ=2.833
+2025-11-26 22:09:15,271 [INFO]   → ξ = 0.4628 (from 100 measurements)
+2025-11-26 22:09:15,392 [INFO] Processing point (15,12): m²=-0.450, λ=3.000

@@ -1,0 +1,273 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    UNIVERSAL AGENT - VISUAL GUIDE                            ║
+║                         How It Should Look                                   ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                         BROWSER: http://localhost:8501                        │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                               │
+│  ┌────────────────────┐  🌐 Universal Agent | NeoBank      [Session: LIVE]  │
+│  │   SIDEBAR          │  Connected • Agent: Jordan Smith • Professional...   │
+│  │                    │  ──────────────────────────────────────────────────  │
+│  │ ⚙️ Agent Console   │                                                       │
+│  │                    │  ┌──────────────────┬────────────────┬─────────────┐ │
+│  │ 👤 Logged In As    │  │ 📚 Knowledge     │ 💬 Agent       │ 🔬 Pilot    │ │
+│  │ [Jordan Smith ▼]   │  │    Stream        │    Buddy Chat  │    Doc X-Ray│ │
+│  │ Role: L3 Specialist│  ├──────────────────┼────────────────┼─────────────┤ │
+│  │ Focus: Compliance  │  │                  │                │             │ │
+│  │ ─────────────────  │  │ 🔥 Fraud Alert   │ You: How do I  │ ▶ Layer 1:  │ │
+│  │ 🏢 Active Campaign │  │    Protocol (2)  │ handle fraud?  │   Agent     │ │
+│  │ [NeoBank       ▼]  │  │ ┌──────────────┐ │                │   Profile   │ │
+│  │ Industry: Banking  │  │ │ Click to open│ │ AI: Here's...  │ {           │ │
+│  │ ─────────────────  │  │ └──────────────┘ │ [typing...]    │   "name":   │ │
+│  │ 🎤 Live            │  │                  │                │   "Jordan"  │ │
+│  │    Transcription   │  │ 🔍 Password      │ ┌────────────┐ │ }           │ │
+│  │ ⚫ IDLE             │  │    Reset         │ │ Send       │ │             │ │
+│  │ [🔴 Start Listen]  │  │                  │ └────────────┘ │ ▶ Layer 2:  │ │
+│  │ ─────────────────  │  │ Waiting for      │                │   Client    │ │
+│  │ 🔎 Manual KB       │  │ triggers...      │ Chat history   │             │ │
+│  │    Search          │  │                  │ preserved ✓    │ ▶ Layer 3:  │ │
+│  │ [fraud        ]    │  │                  │                │   Live      │ │
+│  │ [Search]           │  │                  │                │             │ │
+│  │ ─────────────────  │  │                  │                │ ▶ Layer 4:  │ │
+│  │ [🗑️ Clear Stream]  │  │                  │                │   SOPs      │ │
+│  │ [📄 Clear Chat]    │  │                  │                │             │ │
+│  └────────────────────┘  └──────────────────┴────────────────┴─────────────┘ │
+│                                                                               │
+│  ───────────────────────────────────────────────────────────────────────────│
+│  🌐 Universal Agent System | KB: ✅ 4 articles | Server: http://localhost... │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                          CONSOLE OUTPUT (What You See)                        ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+$ streamlit run universal_agent_app.py
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.100:8501
+
+📁 Knowledge Base server running on http://localhost:8765
+
+[When you search for "fraud":]
+🔍 Searching NeoBank for keywords: ['fraud']
+  ✓ Found: Fraud_Alert_Protocol.md (score: 9)
+  ✓ Found: Password_Reset_Guide.md (score: 1)
+  → Returning 2 results
+
+[When you click an article:]
+127.0.0.1 - - [24/Nov/2025 10:30:15] "GET /NeoBank/Fraud_Alert_Protocol.html HTTP/1.1" 200 -
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                  WHAT HAPPENS WHEN YOU SEARCH                                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+1. You type "fraud" in sidebar search box
+2. Click [Search] button
+3. Console shows: "🔍 Searching NeoBank for keywords: ['fraud']"
+4. Results appear INSTANTLY in Knowledge Stream:
+
+   ┌──────────────────────────────────┐
+   │ 🔥 Fraud Alert Protocol (Manual) │  ← Clickable link
+   ├──────────────────────────────────┤
+   │ Password Reset Guide (Manual)    │  ← Also found (mentions fraud)
+   └──────────────────────────────────┘
+
+5. Click "Fraud Alert Protocol"
+6. NEW TAB opens showing: Beautifully styled HTML article
+   (NOT a download, NOT plain markdown)
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                 WHAT HAPPENS WHEN YOU USE AGENT BUDDY                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+1. You type in Agent Buddy: "how do I handle fraud?"
+2. Click send or press Enter
+3. Spinner appears: "🤔 Thinking..."
+4. Console shows: API call to Gemini
+5. Response appears in chat:
+
+   ┌─────────────────────────────────────────────┐
+   │ You: how do I handle fraud?                 │
+   ├─────────────────────────────────────────────┤
+   │ AI:                                         │
+   │                                             │
+   │ ### 📋 SCRIPT (What to Say Right Now)       │
+   │ "I've secured your account right now to     │
+   │ prevent any further unauthorized charges."  │
+   │                                             │
+   │ ### ✅ VERIFY (Data Points to Confirm)      │
+   │ • Date of Birth                             │
+   │ • Last 3 transactions                       │
+   │                                             │
+   │ ### 💡 NEXT STEPS (Guidance)                │
+   │ 1. Issue provisional credit                 │
+   │ 2. Trigger new card issuance                │
+   │                                             │
+   │ ### 🎯 UPSELL/OPPORTUNITY                   │
+   │ Offer expedited card shipping (free)        │
+   └─────────────────────────────────────────────┘
+
+6. X-Ray panel (right) populates with layers:
+
+   ▶ Layer 1: Agent Profile
+   {
+     "name": "Jordan Smith",
+     "focus_area": "Compliance Adherence"
+   }
+
+   ▶ Layer 2: Client Context
+   {
+     "name": "NeoBank",
+     "rules": "NEVER read card numbers aloud"
+   }
+
+   ... and so on
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    ARTICLE VIEW (When You Click Link)                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+NEW TAB: http://localhost:8765/NeoBank/Fraud_Alert_Protocol.html
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                        Fraud Alert Response Protocol                          │
+│ ══════════════════════════════════════════════════════════════════════════   │
+│                                                                               │
+│ Overview                                                                      │
+│ ─────────                                                                     │
+│ When a customer reports suspicious activity or potential fraud, immediate     │
+│ action is required to protect their account.                                  │
+│                                                                               │
+│ Key Steps                                                                     │
+│ ─────────                                                                     │
+│                                                                               │
+│ 1. Immediate Account Protection                                              │
+│ • Freeze the card immediately in the system (Code: FRAU-LOCK)                │
+│ • Reassure the customer: "I've secured your account right now..."            │
+│                                                                               │
+│ 2. Transaction Verification                                                  │
+│ Ask the customer to verify their last 3 transactions:                        │
+│ • "Can you confirm if you made a purchase at [Merchant]..."                  │
+│                                                                               │
+│ ... [continues with beautiful formatting, colors, styling]                   │
+│                                                                               │
+│ ───────────────────────────────────────────────────────────────────────────  │
+│ Last Updated: 2024-11-20 | Category: Security & Fraud                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+✅ Clean, professional, easy to read
+✅ NOT a markdown download
+✅ NOT plain text in browser
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                        FOOTER STATUS INDICATORS                               ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+GOOD (Everything working):
+🌐 Universal Agent System | KB: ✅ 4 articles | Server: http://localhost:8765 (🟢 Connected)
+
+BAD (KB folder missing):
+🌐 Universal Agent System | KB: ❌ Client folder missing | Server: http://localhost:8765 (🟢 Connected)
+
+BAD (Server not started):
+🌐 Universal Agent System | KB: ✅ 4 articles | Server: http://localhost:8765 (🔴 Starting...)
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                   TYPICAL USER WORKFLOW (Real Usage)                          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+SCENARIO: Agent receives call about fraud
+
+1. Agent hears "fraud charges" on call
+   ↓
+2. Agent types in sidebar search: "fraud"
+   ↓
+3. "Fraud Alert Protocol" appears instantly
+   ↓
+4. Agent clicks link → Article opens in new tab
+   ↓
+5. Agent follows steps in article
+   ↓
+6. Agent has question: Types in Agent Buddy
+   "Customer asking for immediate refund, what do I say?"
+   ↓
+7. AI generates script based on:
+   - Agent's skill level (new hire = more guidance)
+   - Client rules (NeoBank = mention security)
+   - Current situation (fraud case)
+   - Available procedures (SOP for provisional credit)
+   ↓
+8. Agent reads script to customer
+   ↓
+9. Call resolved successfully!
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         KEYBOARD SHORTCUTS                                    ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Ctrl + K        : Focus search box
+Enter           : Submit search / send chat message
+Ctrl + R        : Refresh app (if stuck)
+Ctrl + Shift + R: Hard refresh browser
+Esc             : Close modals/expandos
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                      MOBILE VIEW (Responsive!)                                ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Streamlit is mobile-responsive, so agents can even use tablets:
+
+┌───────────────────┐
+│ ☰ Menu            │  ← Sidebar becomes hamburger menu
+│                   │
+│ 🌐 Universal Agent│
+│ Connected         │
+│                   │
+│ ┌───────────────┐ │
+│ │ Knowledge     │ │  ← Stacks vertically
+│ │ Stream        │ │
+│ └───────────────┘ │
+│                   │
+│ ┌───────────────┐ │
+│ │ Agent Buddy   │ │
+│ │ Chat          │ │
+│ └───────────────┘ │
+│                   │
+│ ┌───────────────┐ │
+│ │ X-Ray Panel   │ │
+│ └───────────────┘ │
+└───────────────────┘
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                        SUCCESS INDICATORS                                     ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+✅ Search shows results immediately after clicking Search
+✅ Article links open styled HTML (not download)
+✅ Agent Buddy responds in 2-3 seconds
+✅ X-Ray panel populates after AI response
+✅ Footer shows: "KB: ✅ X articles" 
+✅ Footer shows: "Server: ... (🟢 Connected)"
+✅ Console shows: "🔍 Searching..." messages
+✅ Console shows: "✓ Found: ..." messages
+✅ No red error messages in console
+✅ No "404 model not found" errors
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    IF YOU SEE THIS, IT'S WORKING! 🎉                          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+

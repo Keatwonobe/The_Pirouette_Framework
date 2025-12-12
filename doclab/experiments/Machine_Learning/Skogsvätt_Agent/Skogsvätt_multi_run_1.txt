@@ -1,0 +1,602 @@
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Skogsvätt_Agent> python Skogsvatt_multi.py
+[Pendulum-v1] Ep 0001 | R=-1295.38 | len=200 | loss=-0.015
+[Pendulum-v1] Ep 0002 | R=-1232.49 | len=200 | loss=-0.010
+[Pendulum-v1] Ep 0003 | R=-878.90 | len=200 | loss=-0.026
+[Pendulum-v1] Ep 0004 | R=-1090.62 | len=200 | loss=0.099
+[Pendulum-v1] Ep 0005 | R=-1349.28 | len=200 | loss=0.032
+[Pendulum-v1] Ep 0006 | R=-1173.64 | len=200 | loss=0.029
+[Pendulum-v1] Ep 0007 | R=-1382.43 | len=200 | loss=0.024
+[Pendulum-v1] Ep 0008 | R=-1710.83 | len=200 | loss=0.024
+[Pendulum-v1] Ep 0009 | R=-1084.88 | len=200 | loss=0.050
+[Pendulum-v1] Ep 0010 | R=-1337.60 | len=200 | loss=0.059
+[Pendulum-v1] Ep 0011 | R=-1641.64 | len=200 | loss=-0.034
+[Pendulum-v1] Ep 0012 | R=-1658.94 | len=200 | loss=0.016
+[Pendulum-v1] Ep 0013 | R=-1040.94 | len=200 | loss=0.015
+[Pendulum-v1] Ep 0014 | R=-1600.70 | len=200 | loss=-0.021
+[Pendulum-v1] Ep 0015 | R=-1429.57 | len=200 | loss=0.050
+[Pendulum-v1] Ep 0016 | R=-1709.40 | len=200 | loss=0.006
+[Pendulum-v1] Ep 0017 | R=-1124.73 | len=200 | loss=-0.027
+[Pendulum-v1] Ep 0018 | R=-1442.37 | len=200 | loss=-0.112
+[Pendulum-v1] Ep 0019 | R=-1352.22 | len=200 | loss=-0.044
+[Pendulum-v1] Ep 0020 | R=-1423.38 | len=200 | loss=0.018
+[Pendulum-v1] Ep 0021 | R=-1770.23 | len=200 | loss=0.030
+[Pendulum-v1] Ep 0022 | R=-1356.83 | len=200 | loss=-0.028
+[Pendulum-v1] Ep 0023 | R=-1374.36 | len=200 | loss=-0.160
+[Pendulum-v1] Ep 0024 | R=-1138.94 | len=200 | loss=-0.007
+[Pendulum-v1] Ep 0025 | R=-1370.69 | len=200 | loss=0.025
+[Pendulum-v1] Ep 0026 | R=-1373.32 | len=200 | loss=-0.152
+[Pendulum-v1] Ep 0027 | R=-1452.90 | len=200 | loss=0.118
+[Pendulum-v1] Ep 0028 | R=-1378.09 | len=200 | loss=-0.083
+[Pendulum-v1] Ep 0029 | R=-1372.18 | len=200 | loss=-0.139
+[Pendulum-v1] Ep 0030 | R=-898.38 | len=200 | loss=0.059
+[Pendulum-v1] Ep 0031 | R=-1322.98 | len=200 | loss=-0.240
+[Pendulum-v1] Ep 0032 | R=-1180.24 | len=200 | loss=-0.214
+[Pendulum-v1] Ep 0033 | R=-1435.83 | len=200 | loss=-0.025
+[Pendulum-v1] Ep 0034 | R=-1364.03 | len=200 | loss=-0.198
+[Pendulum-v1] Ep 0035 | R=-1409.49 | len=200 | loss=-0.214
+[Pendulum-v1] Ep 0036 | R=-1409.86 | len=200 | loss=0.086
+[Pendulum-v1] Ep 0037 | R=-1389.69 | len=200 | loss=-0.041
+[Pendulum-v1] Ep 0038 | R=-1491.26 | len=200 | loss=-0.109
+[Pendulum-v1] Ep 0039 | R=-1513.40 | len=200 | loss=-0.207
+[Pendulum-v1] Ep 0040 | R=-1399.07 | len=200 | loss=-0.081
+[Pendulum-v1] Ep 0041 | R=-1483.92 | len=200 | loss=-0.295
+[Pendulum-v1] Ep 0042 | R=-1431.07 | len=200 | loss=-0.034
+[Pendulum-v1] Ep 0043 | R=-1376.06 | len=200 | loss=-0.177
+[Pendulum-v1] Ep 0044 | R=-1352.93 | len=200 | loss=-0.048
+[Pendulum-v1] Ep 0045 | R=-1392.10 | len=200 | loss=-0.035
+[Pendulum-v1] Ep 0046 | R=-1390.60 | len=200 | loss=-0.032
+[Pendulum-v1] Ep 0047 | R=-1440.46 | len=200 | loss=-0.164
+[Pendulum-v1] Ep 0048 | R=-1415.14 | len=200 | loss=-0.007
+[Pendulum-v1] Ep 0049 | R=-1336.03 | len=200 | loss=-0.048
+[Pendulum-v1] Ep 0050 | R=-1437.46 | len=200 | loss=0.156
+[Pendulum-v1] Ep 0051 | R=-1387.94 | len=200 | loss=0.022
+[Pendulum-v1] Ep 0052 | R=-1491.04 | len=200 | loss=0.024
+[Pendulum-v1] Ep 0053 | R=-1543.02 | len=200 | loss=-0.156
+[Pendulum-v1] Ep 0054 | R=-1565.36 | len=200 | loss=0.057
+[Pendulum-v1] Ep 0055 | R=-1452.04 | len=200 | loss=-0.069
+[Pendulum-v1] Ep 0056 | R=-1498.99 | len=200 | loss=-0.081
+[Pendulum-v1] Ep 0057 | R=-1537.63 | len=200 | loss=0.017
+[Pendulum-v1] Ep 0058 | R=-1513.34 | len=200 | loss=-0.054
+[Pendulum-v1] Ep 0059 | R=-1365.87 | len=200 | loss=0.028
+[Pendulum-v1] Ep 0060 | R=-1522.50 | len=200 | loss=-0.175
+[Pendulum-v1] Ep 0061 | R=-1361.62 | len=200 | loss=0.027
+[Pendulum-v1] Ep 0062 | R=-1428.45 | len=200 | loss=-0.166
+[Pendulum-v1] Ep 0063 | R=-1343.05 | len=200 | loss=0.012
+[Pendulum-v1] Ep 0064 | R=-1309.28 | len=200 | loss=-0.061
+[Pendulum-v1] Ep 0065 | R=-1542.32 | len=200 | loss=-0.028
+[Pendulum-v1] Ep 0066 | R=-1514.21 | len=200 | loss=0.078
+[Pendulum-v1] Ep 0067 | R=-1412.61 | len=200 | loss=-0.161
+[Pendulum-v1] Ep 0068 | R=-1368.05 | len=200 | loss=-0.101
+[Pendulum-v1] Ep 0069 | R=-1405.27 | len=200 | loss=-0.044
+[Pendulum-v1] Ep 0070 | R=-1400.45 | len=200 | loss=-0.047
+[Pendulum-v1] Ep 0071 | R=-1482.63 | len=200 | loss=-0.021
+[Pendulum-v1] Ep 0072 | R=-1200.91 | len=200 | loss=-0.014
+[Pendulum-v1] Ep 0073 | R=-1342.18 | len=200 | loss=-0.159
+[Pendulum-v1] Ep 0074 | R=-1469.77 | len=200 | loss=-0.314
+[Pendulum-v1] Ep 0075 | R=-1528.16 | len=200 | loss=-0.080
+[Pendulum-v1] Ep 0076 | R=-1375.10 | len=200 | loss=-0.237
+[Pendulum-v1] Ep 0077 | R=-1264.60 | len=200 | loss=-0.151
+[Pendulum-v1] Ep 0078 | R=-1464.98 | len=200 | loss=-0.328
+[Pendulum-v1] Ep 0079 | R=-1415.67 | len=200 | loss=-0.313
+[Pendulum-v1] Ep 0080 | R=-1372.72 | len=200 | loss=-0.205
+[Pendulum-v1] Ep 0081 | R=-1465.78 | len=200 | loss=-0.191
+[Pendulum-v1] Ep 0082 | R=-1550.09 | len=200 | loss=-0.072
+[Pendulum-v1] Ep 0083 | R=-1561.67 | len=200 | loss=0.076
+[Pendulum-v1] Ep 0084 | R=-1563.41 | len=200 | loss=-0.010
+[Pendulum-v1] Ep 0085 | R=-1451.59 | len=200 | loss=-0.378
+[Pendulum-v1] Ep 0086 | R=-1555.35 | len=200 | loss=0.038
+[Pendulum-v1] Ep 0087 | R=-1588.40 | len=200 | loss=-0.160
+[Pendulum-v1] Ep 0088 | R=-1454.44 | len=200 | loss=-0.263
+[Pendulum-v1] Ep 0089 | R=-1590.50 | len=200 | loss=0.074
+[Pendulum-v1] Ep 0090 | R=-1525.87 | len=200 | loss=-0.333
+[Pendulum-v1] Ep 0091 | R=-1399.76 | len=200 | loss=-0.234
+[Pendulum-v1] Ep 0092 | R=-1575.66 | len=200 | loss=0.077
+[Pendulum-v1] Ep 0093 | R=-1634.62 | len=200 | loss=-0.041
+[Pendulum-v1] Ep 0094 | R=-1510.84 | len=200 | loss=-0.125
+[Pendulum-v1] Ep 0095 | R=-1381.67 | len=200 | loss=-0.166
+[Pendulum-v1] Ep 0096 | R=-1570.63 | len=200 | loss=-0.185
+[Pendulum-v1] Ep 0097 | R=-1539.64 | len=200 | loss=-0.055
+[Pendulum-v1] Ep 0098 | R=-1541.06 | len=200 | loss=-0.081
+[Pendulum-v1] Ep 0099 | R=-1501.05 | len=200 | loss=-0.147
+[Pendulum-v1] Ep 0100 | R=-1497.02 | len=200 | loss=-0.019
+[Pendulum-v1] Ep 0101 | R=-1525.77 | len=200 | loss=-0.196
+[Pendulum-v1] Ep 0102 | R=-1519.75 | len=200 | loss=-0.236
+[Pendulum-v1] Ep 0103 | R=-1597.40 | len=200 | loss=-0.152
+[Pendulum-v1] Ep 0104 | R=-1474.89 | len=200 | loss=-0.270
+[Pendulum-v1] Ep 0105 | R=-1580.48 | len=200 | loss=-0.034
+[Pendulum-v1] Ep 0106 | R=-1492.52 | len=200 | loss=-0.373
+[Pendulum-v1] Ep 0107 | R=-1564.68 | len=200 | loss=-0.125
+[Pendulum-v1] Ep 0108 | R=-1449.10 | len=200 | loss=-0.313
+[Pendulum-v1] Ep 0109 | R=-1552.72 | len=200 | loss=-0.022
+[Pendulum-v1] Ep 0110 | R=-1597.62 | len=200 | loss=-0.015
+[Pendulum-v1] Ep 0111 | R=-1635.99 | len=200 | loss=-0.008
+[Pendulum-v1] Ep 0112 | R=-1663.38 | len=200 | loss=0.088
+[Pendulum-v1] Ep 0113 | R=-1579.79 | len=200 | loss=-0.030
+[Pendulum-v1] Ep 0114 | R=-1587.14 | len=200 | loss=0.078
+[Pendulum-v1] Ep 0115 | R=-1648.33 | len=200 | loss=-0.023
+[Pendulum-v1] Ep 0116 | R=-1665.44 | len=200 | loss=-0.062
+[Pendulum-v1] Ep 0117 | R=-1492.16 | len=200 | loss=-0.156
+[Pendulum-v1] Ep 0118 | R=-1543.43 | len=200 | loss=-0.187
+[Pendulum-v1] Ep 0119 | R=-1478.38 | len=200 | loss=-0.164
+[Pendulum-v1] Ep 0120 | R=-1539.48 | len=200 | loss=-0.041
+[Pendulum-v1] Ep 0121 | R=-1482.62 | len=200 | loss=-0.159
+[Pendulum-v1] Ep 0122 | R=-1553.40 | len=200 | loss=-0.240
+[Pendulum-v1] Ep 0123 | R=-1622.16 | len=200 | loss=-0.002
+[Pendulum-v1] Ep 0124 | R=-1542.88 | len=200 | loss=-0.006
+[Pendulum-v1] Ep 0125 | R=-1532.25 | len=200 | loss=0.037
+[Pendulum-v1] Ep 0126 | R=-1562.25 | len=200 | loss=0.004
+[Pendulum-v1] Ep 0127 | R=-1421.50 | len=200 | loss=-0.019
+[Pendulum-v1] Ep 0128 | R=-1439.10 | len=200 | loss=-0.262
+[Pendulum-v1] Ep 0129 | R=-1320.19 | len=200 | loss=-0.195
+[Pendulum-v1] Ep 0130 | R=-1411.31 | len=200 | loss=-0.103
+[Pendulum-v1] Ep 0131 | R=-1372.44 | len=200 | loss=-0.154
+[Pendulum-v1] Ep 0132 | R=-1123.46 | len=200 | loss=-0.010
+[Pendulum-v1] Ep 0133 | R=-1213.79 | len=200 | loss=-0.066
+[Pendulum-v1] Ep 0134 | R=-1571.06 | len=200 | loss=0.007
+[Pendulum-v1] Ep 0135 | R=-1378.20 | len=200 | loss=-0.072
+[Pendulum-v1] Ep 0136 | R=-1561.81 | len=200 | loss=-0.031
+[Pendulum-v1] Ep 0137 | R=-1780.55 | len=200 | loss=0.096
+[Pendulum-v1] Ep 0138 | R=-1445.23 | len=200 | loss=0.115
+[Pendulum-v1] Ep 0139 | R=-1480.76 | len=200 | loss=-0.064
+[Pendulum-v1] Ep 0140 | R=-1591.38 | len=200 | loss=-0.043
+[Pendulum-v1] Ep 0141 | R=-1171.14 | len=200 | loss=0.015
+[Pendulum-v1] Ep 0142 | R=-1452.78 | len=200 | loss=0.108
+[Pendulum-v1] Ep 0143 | R=-1511.65 | len=200 | loss=0.170
+[Pendulum-v1] Ep 0144 | R=-1564.82 | len=200 | loss=0.092
+[Pendulum-v1] Ep 0145 | R=-1530.83 | len=200 | loss=0.179
+[Pendulum-v1] Ep 0146 | R=-1707.07 | len=200 | loss=0.069
+[Pendulum-v1] Ep 0147 | R=-1548.94 | len=200 | loss=0.145
+[Pendulum-v1] Ep 0148 | R=-1402.39 | len=200 | loss=-0.064
+[Pendulum-v1] Ep 0149 | R=-1502.56 | len=200 | loss=0.161
+[Pendulum-v1] Ep 0150 | R=-1514.38 | len=200 | loss=0.126
+[Pendulum-v1] Ep 0151 | R=-1484.69 | len=200 | loss=0.091
+[Pendulum-v1] Ep 0152 | R=-1356.39 | len=200 | loss=0.065
+[Pendulum-v1] Ep 0153 | R=-1465.58 | len=200 | loss=0.086
+[Pendulum-v1] Ep 0154 | R=-1734.63 | len=200 | loss=0.064
+[Pendulum-v1] Ep 0155 | R=-1354.51 | len=200 | loss=0.053
+[Pendulum-v1] Ep 0156 | R=-1701.32 | len=200 | loss=-0.095
+[Pendulum-v1] Ep 0157 | R=-1252.14 | len=200 | loss=0.068
+[Pendulum-v1] Ep 0158 | R=-1577.18 | len=200 | loss=0.013
+[Pendulum-v1] Ep 0159 | R=-1540.01 | len=200 | loss=-0.009
+[Pendulum-v1] Ep 0160 | R=-1298.89 | len=200 | loss=0.062
+[Pendulum-v1] Ep 0161 | R=-1202.73 | len=200 | loss=-0.115
+[Pendulum-v1] Ep 0162 | R=-1282.74 | len=200 | loss=0.016
+[Pendulum-v1] Ep 0163 | R=-1485.99 | len=200 | loss=-0.039
+[Pendulum-v1] Ep 0164 | R=-1565.64 | len=200 | loss=0.121
+[Pendulum-v1] Ep 0165 | R=-1207.66 | len=200 | loss=-0.110
+[Pendulum-v1] Ep 0166 | R=-1622.73 | len=200 | loss=-0.104
+[Pendulum-v1] Ep 0167 | R=-1246.78 | len=200 | loss=0.092
+[Pendulum-v1] Ep 0168 | R=-1114.23 | len=200 | loss=-0.079
+[Pendulum-v1] Ep 0169 | R=-1667.03 | len=200 | loss=-0.032
+[Pendulum-v1] Ep 0170 | R=-1287.26 | len=200 | loss=-0.071
+[Pendulum-v1] Ep 0171 | R=-1343.21 | len=200 | loss=0.091
+[Pendulum-v1] Ep 0172 | R=-1084.75 | len=200 | loss=-0.160
+[Pendulum-v1] Ep 0173 | R=-1218.57 | len=200 | loss=-0.092
+[Pendulum-v1] Ep 0174 | R=-1406.50 | len=200 | loss=0.030
+[Pendulum-v1] Ep 0175 | R=-1326.63 | len=200 | loss=0.032
+[Pendulum-v1] Ep 0176 | R=-1596.36 | len=200 | loss=-0.207
+[Pendulum-v1] Ep 0177 | R=-1487.66 | len=200 | loss=0.058
+[Pendulum-v1] Ep 0178 | R=-1322.37 | len=200 | loss=-0.110
+[Pendulum-v1] Ep 0179 | R=-1498.71 | len=200 | loss=-0.105
+[Pendulum-v1] Ep 0180 | R=-1198.62 | len=200 | loss=0.012
+[Pendulum-v1] Ep 0181 | R=-1244.19 | len=200 | loss=-0.126
+[Pendulum-v1] Ep 0182 | R=-1032.91 | len=200 | loss=0.009
+[Pendulum-v1] Ep 0183 | R=-1173.98 | len=200 | loss=0.111
+[Pendulum-v1] Ep 0184 | R=-1099.01 | len=200 | loss=0.095
+[Pendulum-v1] Ep 0185 | R=-1511.54 | len=200 | loss=-0.112
+[Pendulum-v1] Ep 0186 | R=-1205.13 | len=200 | loss=0.165
+[Pendulum-v1] Ep 0187 | R=-1298.92 | len=200 | loss=-0.155
+[Pendulum-v1] Ep 0188 | R=-1249.46 | len=200 | loss=0.102
+[Pendulum-v1] Ep 0189 | R=-1536.39 | len=200 | loss=-0.013
+[Pendulum-v1] Ep 0190 | R=-1527.59 | len=200 | loss=0.111
+[Pendulum-v1] Ep 0191 | R=-1539.60 | len=200 | loss=-0.124
+[Pendulum-v1] Ep 0192 | R=-1168.58 | len=200 | loss=0.019
+[Pendulum-v1] Ep 0193 | R=-1357.77 | len=200 | loss=-0.022
+[Pendulum-v1] Ep 0194 | R=-1185.31 | len=200 | loss=-0.232
+[Pendulum-v1] Ep 0195 | R=-1441.05 | len=200 | loss=-0.039
+[Pendulum-v1] Ep 0196 | R=-1538.12 | len=200 | loss=0.019
+[Pendulum-v1] Ep 0197 | R=-1494.47 | len=200 | loss=-0.123
+[Pendulum-v1] Ep 0198 | R=-1475.62 | len=200 | loss=0.087
+[Pendulum-v1] Ep 0199 | R=-1410.76 | len=200 | loss=0.028
+[Pendulum-v1] Ep 0200 | R=-1295.75 | len=200 | loss=-0.045
+[Pendulum-v1] Ep 0201 | R=-1434.99 | len=200 | loss=0.067
+[Pendulum-v1] Ep 0202 | R=-1308.78 | len=200 | loss=-0.074
+[Pendulum-v1] Ep 0203 | R=-1292.56 | len=200 | loss=0.012
+[Pendulum-v1] Ep 0204 | R=-1527.32 | len=200 | loss=0.113
+[Pendulum-v1] Ep 0205 | R=-1509.09 | len=200 | loss=-0.064
+[Pendulum-v1] Ep 0206 | R=-1346.33 | len=200 | loss=0.089
+[Pendulum-v1] Ep 0207 | R=-1403.90 | len=200 | loss=-0.025
+[Pendulum-v1] Ep 0208 | R=-1389.03 | len=200 | loss=-0.103
+[Pendulum-v1] Ep 0209 | R=-1318.55 | len=200 | loss=0.019
+[Pendulum-v1] Ep 0210 | R=-1127.75 | len=200 | loss=0.007
+[Pendulum-v1] Ep 0211 | R=-1286.83 | len=200 | loss=0.087
+[Pendulum-v1] Ep 0212 | R=-1167.82 | len=200 | loss=0.218
+[Pendulum-v1] Ep 0213 | R=-1172.36 | len=200 | loss=0.038
+[Pendulum-v1] Ep 0214 | R=-1258.36 | len=200 | loss=0.048
+[Pendulum-v1] Ep 0215 | R=-1232.06 | len=200 | loss=-0.098
+[Pendulum-v1] Ep 0216 | R=-1161.65 | len=200 | loss=0.130
+[Pendulum-v1] Ep 0217 | R=-1029.27 | len=200 | loss=0.012
+[Pendulum-v1] Ep 0218 | R=-1191.66 | len=200 | loss=0.023
+[Pendulum-v1] Ep 0219 | R=-1190.32 | len=200 | loss=0.126
+[Pendulum-v1] Ep 0220 | R=-1190.81 | len=200 | loss=-0.035
+[Pendulum-v1] Ep 0221 | R=-1380.95 | len=200 | loss=0.130
+[Pendulum-v1] Ep 0222 | R=-1273.27 | len=200 | loss=0.014
+[Pendulum-v1] Ep 0223 | R=-1486.10 | len=200 | loss=0.144
+[Pendulum-v1] Ep 0224 | R=-1629.39 | len=200 | loss=-0.043
+[Pendulum-v1] Ep 0225 | R=-1009.32 | len=200 | loss=-0.117
+[Pendulum-v1] Ep 0226 | R=-1487.71 | len=200 | loss=-0.000
+[Pendulum-v1] Ep 0227 | R=-1717.87 | len=200 | loss=0.132
+[Pendulum-v1] Ep 0228 | R=-1496.88 | len=200 | loss=-0.007
+[Pendulum-v1] Ep 0229 | R=-1392.88 | len=200 | loss=0.065
+[Pendulum-v1] Ep 0230 | R=-1640.75 | len=200 | loss=0.069
+[Pendulum-v1] Ep 0231 | R=-1769.07 | len=200 | loss=-0.020
+[Pendulum-v1] Ep 0232 | R=-1659.23 | len=200 | loss=0.012
+[Pendulum-v1] Ep 0233 | R=-1666.23 | len=200 | loss=0.079
+[Pendulum-v1] Ep 0234 | R=-1664.21 | len=200 | loss=0.016
+[Pendulum-v1] Ep 0235 | R=-1548.08 | len=200 | loss=0.157
+[Pendulum-v1] Ep 0236 | R=-1605.30 | len=200 | loss=0.007
+[Pendulum-v1] Ep 0237 | R=-1205.94 | len=200 | loss=0.006
+[Pendulum-v1] Ep 0238 | R=-1371.39 | len=200 | loss=0.052
+[Pendulum-v1] Ep 0239 | R=-1355.11 | len=200 | loss=-0.037
+[Pendulum-v1] Ep 0240 | R=-1681.96 | len=200 | loss=0.088
+[Pendulum-v1] Ep 0241 | R=-1751.04 | len=200 | loss=0.027
+[Pendulum-v1] Ep 0242 | R=-1482.84 | len=200 | loss=0.045
+[Pendulum-v1] Ep 0243 | R=-1663.83 | len=200 | loss=0.083
+[Pendulum-v1] Ep 0244 | R=-1659.61 | len=200 | loss=0.137
+[Pendulum-v1] Ep 0245 | R=-1512.34 | len=200 | loss=0.156
+[Pendulum-v1] Ep 0246 | R=-1451.21 | len=200 | loss=0.080
+[Pendulum-v1] Ep 0247 | R=-1504.45 | len=200 | loss=0.190
+[Pendulum-v1] Ep 0248 | R=-1383.02 | len=200 | loss=0.131
+[Pendulum-v1] Ep 0249 | R=-1709.81 | len=200 | loss=0.015
+[Pendulum-v1] Ep 0250 | R=-1397.58 | len=200 | loss=0.129
+[Pendulum-v1] Ep 0251 | R=-1667.16 | len=200 | loss=-0.071
+[Pendulum-v1] Ep 0252 | R=-1503.00 | len=200 | loss=0.122
+[Pendulum-v1] Ep 0253 | R=-1493.47 | len=200 | loss=0.076
+[Pendulum-v1] Ep 0254 | R=-1697.74 | len=200 | loss=0.088
+[Pendulum-v1] Ep 0255 | R=-1602.79 | len=200 | loss=0.112
+[Pendulum-v1] Ep 0256 | R=-1720.13 | len=200 | loss=0.006
+[Pendulum-v1] Ep 0257 | R=-1574.99 | len=200 | loss=0.208
+[Pendulum-v1] Ep 0258 | R=-1669.57 | len=200 | loss=0.037
+[Pendulum-v1] Ep 0259 | R=-1650.21 | len=200 | loss=-0.010
+[Pendulum-v1] Ep 0260 | R=-1607.64 | len=200 | loss=0.061
+[Pendulum-v1] Ep 0261 | R=-1605.46 | len=200 | loss=-0.065
+[Pendulum-v1] Ep 0262 | R=-1608.88 | len=200 | loss=0.026
+[Pendulum-v1] Ep 0263 | R=-1451.14 | len=200 | loss=0.093
+[Pendulum-v1] Ep 0264 | R=-1577.64 | len=200 | loss=-0.053
+[Pendulum-v1] Ep 0265 | R=-1485.53 | len=200 | loss=0.133
+[Pendulum-v1] Ep 0266 | R=-1585.84 | len=200 | loss=0.033
+[Pendulum-v1] Ep 0267 | R=-1582.47 | len=200 | loss=-0.022
+[Pendulum-v1] Ep 0268 | R=-1618.63 | len=200 | loss=0.084
+[Pendulum-v1] Ep 0269 | R=-1510.85 | len=200 | loss=0.142
+[Pendulum-v1] Ep 0270 | R=-1636.83 | len=200 | loss=0.060
+[Pendulum-v1] Ep 0271 | R=-1495.01 | len=200 | loss=-0.037
+[Pendulum-v1] Ep 0272 | R=-1502.51 | len=200 | loss=0.172
+[Pendulum-v1] Ep 0273 | R=-1577.46 | len=200 | loss=0.057
+[Pendulum-v1] Ep 0274 | R=-1367.89 | len=200 | loss=0.056
+[Pendulum-v1] Ep 0275 | R=-1710.38 | len=200 | loss=0.327
+[Pendulum-v1] Ep 0276 | R=-1476.89 | len=200 | loss=0.087
+[Pendulum-v1] Ep 0277 | R=-1673.27 | len=200 | loss=-0.028
+[Pendulum-v1] Ep 0278 | R=-1537.83 | len=200 | loss=-0.072
+[Pendulum-v1] Ep 0279 | R=-1718.99 | len=200 | loss=0.262
+[Pendulum-v1] Ep 0280 | R=-1539.11 | len=200 | loss=0.057
+[Pendulum-v1] Ep 0281 | R=-1452.87 | len=200 | loss=0.129
+[Pendulum-v1] Ep 0282 | R=-1520.62 | len=200 | loss=-0.055
+[Pendulum-v1] Ep 0283 | R=-1519.70 | len=200 | loss=0.021
+[Pendulum-v1] Ep 0284 | R=-1662.21 | len=200 | loss=0.111
+[Pendulum-v1] Ep 0285 | R=-1391.04 | len=200 | loss=-0.055
+[Pendulum-v1] Ep 0286 | R=-1418.82 | len=200 | loss=-0.023
+[Pendulum-v1] Ep 0287 | R=-1628.63 | len=200 | loss=0.084
+[Pendulum-v1] Ep 0288 | R=-1749.40 | len=200 | loss=-0.108
+[Pendulum-v1] Ep 0289 | R=-1721.25 | len=200 | loss=-0.017
+[Pendulum-v1] Ep 0290 | R=-1334.38 | len=200 | loss=0.014
+[Pendulum-v1] Ep 0291 | R=-1254.34 | len=200 | loss=-0.055
+[Pendulum-v1] Ep 0292 | R=-1357.27 | len=200 | loss=0.142
+[Pendulum-v1] Ep 0293 | R=-1578.56 | len=200 | loss=-0.037
+[Pendulum-v1] Ep 0294 | R=-1359.68 | len=200 | loss=0.069
+[Pendulum-v1] Ep 0295 | R=-1240.75 | len=200 | loss=-0.071
+[Pendulum-v1] Ep 0296 | R=-1470.70 | len=200 | loss=-0.047
+[Pendulum-v1] Ep 0297 | R=-1596.99 | len=200 | loss=-0.007
+[Pendulum-v1] Ep 0298 | R=-1448.71 | len=200 | loss=-0.137
+[Pendulum-v1] Ep 0299 | R=-1367.07 | len=200 | loss=0.125
+[Pendulum-v1] Ep 0300 | R=-1624.67 | len=200 | loss=-0.047
+PS C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\Pirouette_Volume_7\doclab\experiments\Machine_Learning\Skogsvätt_Agent> python Skogsvatt_multi.py
+[CartPole-v1] Ep 0001 | R=   9.00 | len=  9 | loss=-0.022
+[CartPole-v1] Ep 0002 | R=  35.00 | len= 35 | loss=0.038
+[CartPole-v1] Ep 0003 | R=  13.00 | len= 13 | loss=0.007
+[CartPole-v1] Ep 0004 | R=  12.00 | len= 12 | loss=-0.061
+[CartPole-v1] Ep 0005 | R=  20.00 | len= 20 | loss=0.002
+[CartPole-v1] Ep 0006 | R=  31.00 | len= 31 | loss=0.035
+[CartPole-v1] Ep 0007 | R=  18.00 | len= 18 | loss=0.015
+[CartPole-v1] Ep 0008 | R=  38.00 | len= 38 | loss=-0.107
+[CartPole-v1] Ep 0009 | R=  86.00 | len= 86 | loss=-0.026
+[CartPole-v1] Ep 0010 | R=  55.00 | len= 55 | loss=0.021
+[CartPole-v1] Ep 0011 | R=  24.00 | len= 24 | loss=-0.010
+[CartPole-v1] Ep 0012 | R=  12.00 | len= 12 | loss=0.032
+[CartPole-v1] Ep 0013 | R=  45.00 | len= 45 | loss=-0.023
+[CartPole-v1] Ep 0014 | R=  19.00 | len= 19 | loss=-0.046
+[CartPole-v1] Ep 0015 | R=  42.00 | len= 42 | loss=0.070
+[CartPole-v1] Ep 0016 | R=  34.00 | len= 34 | loss=-0.010
+[CartPole-v1] Ep 0017 | R=  19.00 | len= 19 | loss=-0.022
+[CartPole-v1] Ep 0018 | R=  19.00 | len= 19 | loss=-0.043
+[CartPole-v1] Ep 0019 | R=  33.00 | len= 33 | loss=-0.045
+[CartPole-v1] Ep 0020 | R= 101.00 | len=101 | loss=0.061
+[CartPole-v1] Ep 0021 | R=  28.00 | len= 28 | loss=-0.011
+[CartPole-v1] Ep 0022 | R=  40.00 | len= 40 | loss=-0.064
+[CartPole-v1] Ep 0023 | R=  38.00 | len= 38 | loss=-0.007
+[CartPole-v1] Ep 0024 | R=  40.00 | len= 40 | loss=-0.028
+[CartPole-v1] Ep 0025 | R=  32.00 | len= 32 | loss=0.033
+[CartPole-v1] Ep 0026 | R=  65.00 | len= 65 | loss=0.006
+[CartPole-v1] Ep 0027 | R=  46.00 | len= 46 | loss=0.058
+[CartPole-v1] Ep 0028 | R= 120.00 | len=120 | loss=-0.036
+[CartPole-v1] Ep 0029 | R= 106.00 | len=106 | loss=0.011
+[CartPole-v1] Ep 0030 | R=  96.00 | len= 96 | loss=0.035
+[CartPole-v1] Ep 0031 | R=  54.00 | len= 54 | loss=-0.008
+[CartPole-v1] Ep 0032 | R=  99.00 | len= 99 | loss=0.014
+[CartPole-v1] Ep 0033 | R=  12.00 | len= 12 | loss=0.190
+[CartPole-v1] Ep 0034 | R=  44.00 | len= 44 | loss=-0.031
+[CartPole-v1] Ep 0035 | R=  36.00 | len= 36 | loss=-0.027
+[CartPole-v1] Ep 0036 | R=  26.00 | len= 26 | loss=-0.017
+[CartPole-v1] Ep 0037 | R=  23.00 | len= 23 | loss=0.049
+[CartPole-v1] Ep 0038 | R=  24.00 | len= 24 | loss=0.028
+[CartPole-v1] Ep 0039 | R=  39.00 | len= 39 | loss=0.051
+[CartPole-v1] Ep 0040 | R=  67.00 | len= 67 | loss=0.044
+[CartPole-v1] Ep 0041 | R=  48.00 | len= 48 | loss=0.008
+[CartPole-v1] Ep 0042 | R=  20.00 | len= 20 | loss=0.002
+[CartPole-v1] Ep 0043 | R=  37.00 | len= 37 | loss=-0.004
+[CartPole-v1] Ep 0044 | R=  65.00 | len= 65 | loss=0.031
+[CartPole-v1] Ep 0045 | R=  52.00 | len= 52 | loss=0.001
+[CartPole-v1] Ep 0046 | R= 112.00 | len=112 | loss=0.025
+[CartPole-v1] Ep 0047 | R=  22.00 | len= 22 | loss=-0.191
+[CartPole-v1] Ep 0048 | R=  50.00 | len= 50 | loss=-0.046
+[CartPole-v1] Ep 0049 | R=  70.00 | len= 70 | loss=-0.031
+[CartPole-v1] Ep 0050 | R=  43.00 | len= 43 | loss=0.118
+[CartPole-v1] Ep 0051 | R=  41.00 | len= 41 | loss=-0.016
+[CartPole-v1] Ep 0052 | R=  95.00 | len= 95 | loss=-0.048
+[CartPole-v1] Ep 0053 | R=  95.00 | len= 95 | loss=-0.026
+[CartPole-v1] Ep 0054 | R=  51.00 | len= 51 | loss=0.009
+[CartPole-v1] Ep 0055 | R=  66.00 | len= 66 | loss=-0.080
+[CartPole-v1] Ep 0056 | R= 121.00 | len=121 | loss=0.016
+[CartPole-v1] Ep 0057 | R= 105.00 | len=105 | loss=-0.006
+[CartPole-v1] Ep 0058 | R=  93.00 | len= 93 | loss=0.008
+[CartPole-v1] Ep 0059 | R=  85.00 | len= 85 | loss=0.046
+[CartPole-v1] Ep 0060 | R= 237.00 | len=237 | loss=0.033
+[CartPole-v1] Ep 0061 | R=  44.00 | len= 44 | loss=-0.114
+[CartPole-v1] Ep 0062 | R=  28.00 | len= 28 | loss=0.040
+[CartPole-v1] Ep 0063 | R= 148.00 | len=148 | loss=0.022
+[CartPole-v1] Ep 0064 | R= 126.00 | len=126 | loss=-0.028
+[CartPole-v1] Ep 0065 | R= 125.00 | len=125 | loss=0.008
+[CartPole-v1] Ep 0066 | R= 179.00 | len=179 | loss=0.010
+[CartPole-v1] Ep 0067 | R= 122.00 | len=122 | loss=0.006
+[CartPole-v1] Ep 0068 | R= 165.00 | len=165 | loss=-0.031
+[CartPole-v1] Ep 0069 | R= 138.00 | len=138 | loss=0.002
+[CartPole-v1] Ep 0070 | R=  41.00 | len= 41 | loss=0.029
+[CartPole-v1] Ep 0071 | R= 196.00 | len=196 | loss=0.010
+[CartPole-v1] Ep 0072 | R= 120.00 | len=120 | loss=0.016
+[CartPole-v1] Ep 0073 | R= 114.00 | len=114 | loss=-0.048
+[CartPole-v1] Ep 0074 | R= 145.00 | len=145 | loss=0.013
+[CartPole-v1] Ep 0075 | R=  39.00 | len= 39 | loss=-0.040
+[CartPole-v1] Ep 0076 | R= 311.00 | len=311 | loss=-0.017
+[CartPole-v1] Ep 0077 | R= 107.00 | len=107 | loss=-0.005
+[CartPole-v1] Ep 0078 | R= 144.00 | len=144 | loss=0.005
+[CartPole-v1] Ep 0079 | R= 104.00 | len=104 | loss=-0.022
+[CartPole-v1] Ep 0080 | R= 163.00 | len=163 | loss=0.007
+[CartPole-v1] Ep 0081 | R= 155.00 | len=155 | loss=-0.063
+[CartPole-v1] Ep 0082 | R= 136.00 | len=136 | loss=-0.007
+[CartPole-v1] Ep 0083 | R= 178.00 | len=178 | loss=-0.001
+[CartPole-v1] Ep 0084 | R= 311.00 | len=311 | loss=-0.008
+[CartPole-v1] Ep 0085 | R= 124.00 | len=124 | loss=-0.014
+[CartPole-v1] Ep 0086 | R= 159.00 | len=159 | loss=-0.011
+[CartPole-v1] Ep 0087 | R= 222.00 | len=222 | loss=0.018
+[CartPole-v1] Ep 0088 | R= 177.00 | len=177 | loss=-0.025
+[CartPole-v1] Ep 0089 | R= 202.00 | len=202 | loss=-0.001
+[CartPole-v1] Ep 0090 | R= 306.00 | len=306 | loss=-0.022
+[CartPole-v1] Ep 0091 | R= 221.00 | len=221 | loss=-0.006
+[CartPole-v1] Ep 0092 | R= 282.00 | len=282 | loss=-0.019
+[CartPole-v1] Ep 0093 | R= 500.00 | len=500 | loss=0.016
+[CartPole-v1] Ep 0094 | R= 379.00 | len=379 | loss=-0.027
+[CartPole-v1] Ep 0095 | R= 428.00 | len=428 | loss=-0.009
+[CartPole-v1] Ep 0096 | R= 209.00 | len=209 | loss=-0.019
+[CartPole-v1] Ep 0097 | R= 253.00 | len=253 | loss=0.021
+[CartPole-v1] Ep 0098 | R= 139.00 | len=139 | loss=-0.136
+[CartPole-v1] Ep 0099 | R= 441.00 | len=441 | loss=0.014
+[CartPole-v1] Ep 0100 | R= 320.00 | len=320 | loss=0.021
+[CartPole-v1] Ep 0101 | R= 500.00 | len=500 | loss=-0.002
+[CartPole-v1] Ep 0102 | R= 500.00 | len=500 | loss=-0.023
+[CartPole-v1] Ep 0103 | R= 489.00 | len=489 | loss=0.002
+[CartPole-v1] Ep 0104 | R= 329.00 | len=329 | loss=-0.006
+[CartPole-v1] Ep 0105 | R= 397.00 | len=397 | loss=0.012
+[CartPole-v1] Ep 0106 | R= 500.00 | len=500 | loss=0.007
+[CartPole-v1] Ep 0107 | R= 500.00 | len=500 | loss=-0.004
+[CartPole-v1] Ep 0108 | R= 500.00 | len=500 | loss=-0.006
+[CartPole-v1] Ep 0109 | R= 500.00 | len=500 | loss=0.025
+[CartPole-v1] Ep 0110 | R= 500.00 | len=500 | loss=-0.033
+[CartPole-v1] Ep 0111 | R= 500.00 | len=500 | loss=-0.005
+[CartPole-v1] Ep 0112 | R= 500.00 | len=500 | loss=0.008
+[CartPole-v1] Ep 0113 | R= 100.00 | len=100 | loss=-0.028
+[CartPole-v1] Ep 0114 | R= 500.00 | len=500 | loss=-0.018
+[CartPole-v1] Ep 0115 | R= 500.00 | len=500 | loss=-0.035
+[CartPole-v1] Ep 0116 | R= 333.00 | len=333 | loss=-0.029
+[CartPole-v1] Ep 0117 | R= 333.00 | len=333 | loss=-0.056
+[CartPole-v1] Ep 0118 | R= 234.00 | len=234 | loss=-0.023
+[CartPole-v1] Ep 0119 | R= 500.00 | len=500 | loss=-0.012
+[CartPole-v1] Ep 0120 | R= 500.00 | len=500 | loss=-0.010
+[CartPole-v1] Ep 0121 | R= 500.00 | len=500 | loss=-0.012
+[CartPole-v1] Ep 0122 | R= 108.00 | len=108 | loss=0.056
+[CartPole-v1] Ep 0123 | R= 500.00 | len=500 | loss=0.019
+[CartPole-v1] Ep 0124 | R= 333.00 | len=333 | loss=-0.053
+[CartPole-v1] Ep 0125 | R= 400.00 | len=400 | loss=-0.006
+[CartPole-v1] Ep 0126 | R= 500.00 | len=500 | loss=0.028
+[CartPole-v1] Ep 0127 | R= 122.00 | len=122 | loss=-0.010
+[CartPole-v1] Ep 0128 | R= 500.00 | len=500 | loss=-0.000
+[CartPole-v1] Ep 0129 | R= 500.00 | len=500 | loss=-0.012
+[CartPole-v1] Ep 0130 | R= 500.00 | len=500 | loss=-0.021
+[CartPole-v1] Ep 0131 | R= 500.00 | len=500 | loss=-0.008
+[CartPole-v1] Ep 0132 | R= 500.00 | len=500 | loss=0.002
+[CartPole-v1] Ep 0133 | R= 500.00 | len=500 | loss=0.002
+[CartPole-v1] Ep 0134 | R= 437.00 | len=437 | loss=-0.003
+[CartPole-v1] Ep 0135 | R= 314.00 | len=314 | loss=-0.021
+[CartPole-v1] Ep 0136 | R= 255.00 | len=255 | loss=-0.082
+[CartPole-v1] Ep 0137 | R= 460.00 | len=460 | loss=0.007
+[CartPole-v1] Ep 0138 | R= 190.00 | len=190 | loss=-0.018
+[CartPole-v1] Ep 0139 | R= 500.00 | len=500 | loss=0.040
+[CartPole-v1] Ep 0140 | R= 168.00 | len=168 | loss=-0.019
+[CartPole-v1] Ep 0141 | R= 500.00 | len=500 | loss=0.022
+[CartPole-v1] Ep 0142 | R= 208.00 | len=208 | loss=-0.032
+[CartPole-v1] Ep 0143 | R= 429.00 | len=429 | loss=-0.021
+[CartPole-v1] Ep 0144 | R= 351.00 | len=351 | loss=0.023
+[CartPole-v1] Ep 0145 | R= 500.00 | len=500 | loss=-0.015
+[CartPole-v1] Ep 0146 | R= 500.00 | len=500 | loss=0.000
+[CartPole-v1] Ep 0147 | R= 500.00 | len=500 | loss=0.003
+[CartPole-v1] Ep 0148 | R= 500.00 | len=500 | loss=0.010
+[CartPole-v1] Ep 0149 | R= 500.00 | len=500 | loss=-0.020
+[CartPole-v1] Ep 0150 | R= 500.00 | len=500 | loss=-0.018
+[CartPole-v1] Ep 0151 | R= 500.00 | len=500 | loss=0.004
+[CartPole-v1] Ep 0152 | R= 173.00 | len=173 | loss=-0.049
+[CartPole-v1] Ep 0153 | R= 500.00 | len=500 | loss=0.008
+[CartPole-v1] Ep 0154 | R= 500.00 | len=500 | loss=-0.038
+[CartPole-v1] Ep 0155 | R= 500.00 | len=500 | loss=0.020
+[CartPole-v1] Ep 0156 | R= 500.00 | len=500 | loss=-0.026
+[CartPole-v1] Ep 0157 | R= 500.00 | len=500 | loss=-0.012
+[CartPole-v1] Ep 0158 | R= 500.00 | len=500 | loss=0.003
+[CartPole-v1] Ep 0159 | R= 500.00 | len=500 | loss=-0.001
+[CartPole-v1] Ep 0160 | R= 500.00 | len=500 | loss=0.004
+[CartPole-v1] Ep 0161 | R= 500.00 | len=500 | loss=-0.021
+[CartPole-v1] Ep 0162 | R= 500.00 | len=500 | loss=0.008
+[CartPole-v1] Ep 0163 | R= 500.00 | len=500 | loss=0.001
+[CartPole-v1] Ep 0164 | R= 500.00 | len=500 | loss=0.011
+[CartPole-v1] Ep 0165 | R= 500.00 | len=500 | loss=-0.011
+[CartPole-v1] Ep 0166 | R= 500.00 | len=500 | loss=-0.001
+[CartPole-v1] Ep 0167 | R= 500.00 | len=500 | loss=0.000
+[CartPole-v1] Ep 0168 | R= 500.00 | len=500 | loss=0.020
+[CartPole-v1] Ep 0169 | R= 251.00 | len=251 | loss=0.006
+[CartPole-v1] Ep 0170 | R= 500.00 | len=500 | loss=-0.029
+[CartPole-v1] Ep 0171 | R= 500.00 | len=500 | loss=0.009
+[CartPole-v1] Ep 0172 | R= 209.00 | len=209 | loss=0.017
+[CartPole-v1] Ep 0173 | R= 500.00 | len=500 | loss=0.020
+[CartPole-v1] Ep 0174 | R= 342.00 | len=342 | loss=-0.004
+[CartPole-v1] Ep 0175 | R= 500.00 | len=500 | loss=0.012
+[CartPole-v1] Ep 0176 | R= 500.00 | len=500 | loss=-0.005
+[CartPole-v1] Ep 0177 | R= 500.00 | len=500 | loss=0.022
+[CartPole-v1] Ep 0178 | R= 500.00 | len=500 | loss=0.010
+[CartPole-v1] Ep 0179 | R= 449.00 | len=449 | loss=0.007
+[CartPole-v1] Ep 0180 | R= 500.00 | len=500 | loss=-0.011
+[CartPole-v1] Ep 0181 | R= 500.00 | len=500 | loss=-0.012
+[CartPole-v1] Ep 0182 | R= 500.00 | len=500 | loss=0.003
+[CartPole-v1] Ep 0183 | R= 500.00 | len=500 | loss=0.013
+[CartPole-v1] Ep 0184 | R= 500.00 | len=500 | loss=-0.013
+[CartPole-v1] Ep 0185 | R= 500.00 | len=500 | loss=0.007
+[CartPole-v1] Ep 0186 | R= 500.00 | len=500 | loss=0.017
+[CartPole-v1] Ep 0187 | R= 500.00 | len=500 | loss=-0.013
+[CartPole-v1] Ep 0188 | R= 500.00 | len=500 | loss=0.016
+[CartPole-v1] Ep 0189 | R= 500.00 | len=500 | loss=0.033
+[CartPole-v1] Ep 0190 | R= 500.00 | len=500 | loss=-0.022
+[CartPole-v1] Ep 0191 | R= 500.00 | len=500 | loss=0.014
+[CartPole-v1] Ep 0192 | R= 500.00 | len=500 | loss=-0.031
+[CartPole-v1] Ep 0193 | R= 500.00 | len=500 | loss=-0.013
+[CartPole-v1] Ep 0194 | R= 350.00 | len=350 | loss=-0.016
+[CartPole-v1] Ep 0195 | R= 500.00 | len=500 | loss=-0.021
+[CartPole-v1] Ep 0196 | R= 500.00 | len=500 | loss=0.010
+[CartPole-v1] Ep 0197 | R= 500.00 | len=500 | loss=-0.006
+[CartPole-v1] Ep 0198 | R= 500.00 | len=500 | loss=-0.033
+[CartPole-v1] Ep 0199 | R= 500.00 | len=500 | loss=-0.012
+[CartPole-v1] Ep 0200 | R= 500.00 | len=500 | loss=-0.002
+[CartPole-v1] Ep 0201 | R= 500.00 | len=500 | loss=0.018
+[CartPole-v1] Ep 0202 | R= 104.00 | len=104 | loss=0.013
+[CartPole-v1] Ep 0203 | R= 343.00 | len=343 | loss=0.008
+[CartPole-v1] Ep 0204 | R= 486.00 | len=486 | loss=0.003
+[CartPole-v1] Ep 0205 | R= 278.00 | len=278 | loss=-0.008
+[CartPole-v1] Ep 0206 | R= 406.00 | len=406 | loss=0.004
+[CartPole-v1] Ep 0207 | R= 432.00 | len=432 | loss=-0.007
+[CartPole-v1] Ep 0208 | R= 391.00 | len=391 | loss=0.029
+[CartPole-v1] Ep 0209 | R= 206.00 | len=206 | loss=0.018
+[CartPole-v1] Ep 0210 | R= 245.00 | len=245 | loss=0.025
+[CartPole-v1] Ep 0211 | R= 142.00 | len=142 | loss=-0.035
+[CartPole-v1] Ep 0212 | R= 256.00 | len=256 | loss=-0.004
+[CartPole-v1] Ep 0213 | R= 133.00 | len=133 | loss=-0.023
+[CartPole-v1] Ep 0214 | R= 320.00 | len=320 | loss=-0.009
+[CartPole-v1] Ep 0215 | R= 170.00 | len=170 | loss=-0.057
+[CartPole-v1] Ep 0216 | R= 243.00 | len=243 | loss=-0.010
+[CartPole-v1] Ep 0217 | R= 186.00 | len=186 | loss=0.024
+[CartPole-v1] Ep 0218 | R= 233.00 | len=233 | loss=0.034
+[CartPole-v1] Ep 0219 | R= 138.00 | len=138 | loss=-0.024
+[CartPole-v1] Ep 0220 | R= 138.00 | len=138 | loss=0.001
+[CartPole-v1] Ep 0221 | R= 141.00 | len=141 | loss=-0.011
+[CartPole-v1] Ep 0222 | R= 162.00 | len=162 | loss=-0.039
+[CartPole-v1] Ep 0223 | R= 237.00 | len=237 | loss=0.034
+[CartPole-v1] Ep 0224 | R= 165.00 | len=165 | loss=0.002
+[CartPole-v1] Ep 0225 | R= 156.00 | len=156 | loss=-0.013
+[CartPole-v1] Ep 0226 | R= 211.00 | len=211 | loss=-0.029
+[CartPole-v1] Ep 0227 | R= 181.00 | len=181 | loss=0.000
+[CartPole-v1] Ep 0228 | R= 303.00 | len=303 | loss=0.016
+[CartPole-v1] Ep 0229 | R= 244.00 | len=244 | loss=0.044
+[CartPole-v1] Ep 0230 | R= 278.00 | len=278 | loss=0.005
+[CartPole-v1] Ep 0231 | R= 211.00 | len=211 | loss=-0.048
+[CartPole-v1] Ep 0232 | R= 214.00 | len=214 | loss=-0.015
+[CartPole-v1] Ep 0233 | R= 133.00 | len=133 | loss=-0.070
+[CartPole-v1] Ep 0234 | R= 199.00 | len=199 | loss=-0.001
+[CartPole-v1] Ep 0235 | R= 165.00 | len=165 | loss=-0.015
+[CartPole-v1] Ep 0236 | R= 172.00 | len=172 | loss=0.020
+[CartPole-v1] Ep 0237 | R= 199.00 | len=199 | loss=0.027
+[CartPole-v1] Ep 0238 | R= 130.00 | len=130 | loss=-0.012
+[CartPole-v1] Ep 0239 | R= 134.00 | len=134 | loss=-0.018
+[CartPole-v1] Ep 0240 | R= 126.00 | len=126 | loss=-0.019
+[CartPole-v1] Ep 0241 | R= 119.00 | len=119 | loss=-0.040
+[CartPole-v1] Ep 0242 | R= 142.00 | len=142 | loss=0.031
+[CartPole-v1] Ep 0243 | R= 117.00 | len=117 | loss=0.018
+[CartPole-v1] Ep 0244 | R= 129.00 | len=129 | loss=-0.052
+[CartPole-v1] Ep 0245 | R= 124.00 | len=124 | loss=-0.036
+[CartPole-v1] Ep 0246 | R= 109.00 | len=109 | loss=-0.002
+[CartPole-v1] Ep 0247 | R= 125.00 | len=125 | loss=-0.016
+[CartPole-v1] Ep 0248 | R= 139.00 | len=139 | loss=0.002
+[CartPole-v1] Ep 0249 | R= 127.00 | len=127 | loss=0.014
+[CartPole-v1] Ep 0250 | R= 139.00 | len=139 | loss=-0.049
+[CartPole-v1] Ep 0251 | R= 178.00 | len=178 | loss=0.037
+[CartPole-v1] Ep 0252 | R= 194.00 | len=194 | loss=0.022
+[CartPole-v1] Ep 0253 | R= 182.00 | len=182 | loss=0.002
+[CartPole-v1] Ep 0254 | R= 226.00 | len=226 | loss=0.028
+[CartPole-v1] Ep 0255 | R= 226.00 | len=226 | loss=-0.025
+[CartPole-v1] Ep 0256 | R= 229.00 | len=229 | loss=-0.007
+[CartPole-v1] Ep 0257 | R= 227.00 | len=227 | loss=-0.004
+[CartPole-v1] Ep 0258 | R= 239.00 | len=239 | loss=0.001
+[CartPole-v1] Ep 0259 | R= 227.00 | len=227 | loss=0.007
+[CartPole-v1] Ep 0260 | R= 219.00 | len=219 | loss=0.012
+[CartPole-v1] Ep 0261 | R= 248.00 | len=248 | loss=0.011
+[CartPole-v1] Ep 0262 | R= 190.00 | len=190 | loss=-0.008
+[CartPole-v1] Ep 0263 | R= 220.00 | len=220 | loss=-0.023
+[CartPole-v1] Ep 0264 | R= 178.00 | len=178 | loss=-0.043
+[CartPole-v1] Ep 0265 | R= 198.00 | len=198 | loss=-0.016
+[CartPole-v1] Ep 0266 | R= 194.00 | len=194 | loss=-0.009
+[CartPole-v1] Ep 0267 | R= 277.00 | len=277 | loss=0.027
+[CartPole-v1] Ep 0268 | R= 182.00 | len=182 | loss=-0.016
+[CartPole-v1] Ep 0269 | R= 166.00 | len=166 | loss=-0.033
+[CartPole-v1] Ep 0270 | R= 230.00 | len=230 | loss=-0.011
+[CartPole-v1] Ep 0271 | R= 233.00 | len=233 | loss=-0.002
+[CartPole-v1] Ep 0272 | R= 190.00 | len=190 | loss=-0.013
+[CartPole-v1] Ep 0273 | R= 242.00 | len=242 | loss=-0.013
+[CartPole-v1] Ep 0274 | R= 194.00 | len=194 | loss=-0.002
+[CartPole-v1] Ep 0275 | R= 222.00 | len=222 | loss=-0.034
+[CartPole-v1] Ep 0276 | R= 241.00 | len=241 | loss=-0.014
+[CartPole-v1] Ep 0277 | R= 196.00 | len=196 | loss=-0.053
+[CartPole-v1] Ep 0278 | R= 223.00 | len=223 | loss=-0.003
+[CartPole-v1] Ep 0279 | R= 213.00 | len=213 | loss=-0.006
+[CartPole-v1] Ep 0280 | R= 278.00 | len=278 | loss=-0.028
+[CartPole-v1] Ep 0281 | R= 198.00 | len=198 | loss=0.009
+[CartPole-v1] Ep 0282 | R= 209.00 | len=209 | loss=0.001
+[CartPole-v1] Ep 0283 | R= 202.00 | len=202 | loss=-0.042
+[CartPole-v1] Ep 0284 | R= 181.00 | len=181 | loss=0.012
+[CartPole-v1] Ep 0285 | R= 174.00 | len=174 | loss=-0.027
+[CartPole-v1] Ep 0286 | R= 171.00 | len=171 | loss=-0.026
+[CartPole-v1] Ep 0287 | R= 153.00 | len=153 | loss=0.003
+[CartPole-v1] Ep 0288 | R= 169.00 | len=169 | loss=-0.005
+[CartPole-v1] Ep 0289 | R= 189.00 | len=189 | loss=-0.002
+[CartPole-v1] Ep 0290 | R= 144.00 | len=144 | loss=0.025
+[CartPole-v1] Ep 0291 | R= 140.00 | len=140 | loss=0.031
+[CartPole-v1] Ep 0292 | R= 127.00 | len=127 | loss=-0.046
+[CartPole-v1] Ep 0293 | R= 185.00 | len=185 | loss=0.011
+[CartPole-v1] Ep 0294 | R= 152.00 | len=152 | loss=0.051
+[CartPole-v1] Ep 0295 | R= 111.00 | len=111 | loss=-0.007
+[CartPole-v1] Ep 0296 | R= 158.00 | len=158 | loss=-0.008
+[CartPole-v1] Ep 0297 | R= 112.00 | len=112 | loss=-0.005
+[CartPole-v1] Ep 0298 | R=  97.00 | len= 97 | loss=0.066
+[CartPole-v1] Ep 0299 | R=  89.00 | len= 89 | loss=-0.005
+[CartPole-v1] Ep 0300 | R=  65.00 | len= 65 | loss=0.003

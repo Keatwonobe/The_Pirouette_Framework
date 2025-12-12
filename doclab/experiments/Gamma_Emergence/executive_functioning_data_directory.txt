@@ -1,0 +1,2359 @@
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                derivatives
+d-----        10/20/2025  10:12 AM                helical_out
+dar--l        10/15/2025   1:25 PM                sourcedata
+dar--l        10/15/2025   1:25 PM                sub-1
+dar--l        10/15/2025   1:25 PM                sub-10
+dar--l        10/15/2025   1:25 PM                sub-11
+dar--l        10/15/2025   1:25 PM                sub-12
+dar--l        10/15/2025   1:25 PM                sub-13
+dar--l        10/15/2025   1:25 PM                sub-14
+dar--l        10/15/2025   1:25 PM                sub-15
+dar--l        10/15/2025   1:25 PM                sub-16
+dar--l        10/15/2025   1:25 PM                sub-17
+dar--l        10/15/2025   1:25 PM                sub-18
+dar--l        10/15/2025   1:25 PM                sub-19
+dar--l        10/15/2025   1:25 PM                sub-2
+dar--l        10/15/2025   1:25 PM                sub-20
+dar--l        10/15/2025   1:25 PM                sub-21
+dar--l        10/15/2025   1:25 PM                sub-22
+dar--l        10/15/2025   1:25 PM                sub-23
+dar--l        10/15/2025   1:25 PM                sub-24
+dar--l        10/15/2025   1:25 PM                sub-3
+dar--l        10/15/2025   1:25 PM                sub-4
+dar--l        10/15/2025   1:25 PM                sub-5
+dar--l        10/15/2025   1:25 PM                sub-6
+dar--l        10/15/2025   1:25 PM                sub-7
+dar--l        10/15/2025   1:25 PM                sub-8
+dar--l        10/15/2025   1:25 PM                sub-9
+-a----        10/15/2025   3:33 AM             36 CHANGES
+-a----        10/15/2025   3:33 AM            344 dataset_description.json
+-a----        10/15/2025   3:33 AM             79 participants.json
+-a----        10/15/2025   3:33 AM            174 participants.tsv
+-a----        10/15/2025   3:33 AM           4017 README
+-a----        10/15/2025   2:08 AM          23221 sub-001_task-GRADON_run-1_beh.tsv
+-a----        10/15/2025   2:08 AM          22896 sub-001_task-GRADON_run-2_beh.tsv
+-a----        10/15/2025   2:08 AM          22896 sub-001_task-GRADON_run-3_beh.tsv
+-a----        10/15/2025   3:33 AM           3270 task-LG_events.json
+-a----        10/15/2025   3:33 AM           2145 task-NB_events.json
+-a----        10/15/2025   3:33 AM           1934 task-SART_events.json
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\derivatives
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                pirouette_gamma
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\helical_out
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/20/2025  10:35 AM                checkpoints
+d-----        10/20/2025  10:34 AM                results
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\helical_ou
+    t\checkpoints
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/20/2025  10:20 AM             25 sub-1_ses-1_task-LG_progress.json
+-a----        10/20/2025  10:20 AM             25 sub-1_ses-1_task-SART_progress.json
+-a----        10/20/2025  10:35 AM             26 sub-1_ses-2_task-LG_progress.json
+-a----        10/20/2025  10:20 AM             25 sub-1_ses-2_task-SART_progress.json
+-a----        10/20/2025  10:37 AM             26 sub-2_ses-1_task-LG_progress.json
+-a----        10/20/2025  10:21 AM             25 sub-2_ses-1_task-SART_progress.json
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\helical_out\results
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/20/2025  10:26 AM            236 errors.log
+-a----        10/20/2025  10:35 AM         193019 event_log.csv
+-a----        10/20/2025  10:37 AM        3217540 helical_epochs.csv
+-a----        10/20/2025  10:37 AM         389077 helical_summary.csv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sourcedata
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                rawdata
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sourcedata\rawdata
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/19/2025   8:15 PM                LG
+dar--l        10/15/2025   1:25 PM                NB
+dar--l        10/15/2025   1:25 PM                SART
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sourcedata\rawdata\LG
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:33 AM          10351 LG_event_codes.xlsx
+-a----        10/15/2025   3:33 AM       75246336 sub-10_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM       69455616 sub-10_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM       66710016 sub-11_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM       66460416 sub-11_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM       27023616 sub-12_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM      212476416 sub-12_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM       77792256 sub-13_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM       75495936 sub-13_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM       43447296 sub-14_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM       68706816 sub-14_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM       63415296 sub-15_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM      509600256 sub-15_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM       65462016 sub-16_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM       62416896 sub-16_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM       77619456 sub-17_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM       60619776 sub-17_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM       69705216 sub-18_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:33 AM       66710016 sub-18_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:34 AM      522779136 sub-19_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:34 AM       74135552 sub-19_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:34 AM       32365056 sub-1_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:34 AM       65262336 sub-1_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:34 AM       77312256 sub-20_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:34 AM      507603456 sub-20_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:34 AM      506804736 sub-21_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:34 AM      503609856 sub-21_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:34 AM       34811136 sub-22_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:34 AM       65412096 sub-22_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:34 AM       67309056 sub-23_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:34 AM      508801536 sub-23_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:34 AM       76943616 sub-24_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:34 AM       94864896 sub-24_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:35 AM       79954176 sub-2_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:35 AM       65961216 sub-2_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:35 AM      527571456 sub-3_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:35 AM       79293440 sub-3_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:35 AM       67608576 sub-4_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:35 AM       66110976 sub-4_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:35 AM       71901696 sub-5_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:35 AM       66160896 sub-5_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:35 AM      511597056 sub-6_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:35 AM       65861376 sub-6_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:35 AM       77005056 sub-7_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:35 AM       61967616 sub-7_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:35 AM      554727936 sub-8_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:35 AM       66759936 sub-8_ses-2_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM      504408576 sub-9_ses-1_LG_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       63365376 sub-9_ses-2_LG_BDFdata_Testdata-Deci.bdf
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sourcedata\rawdata\NB
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:36 AM          10171 NB_event_codes.xlsx
+-a----        10/15/2025   3:36 AM       23629056 sub-10_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23828736 sub-10_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23179776 sub-10_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23229696 sub-10_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23179776 sub-10_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23928576 sub-10_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23728896 sub-11_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       31418272 sub-11_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.set
+-a----        10/15/2025   3:36 AM       23429376 sub-11_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23479296 sub-11_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       24078336 sub-11_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23579136 sub-11_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       27832576 sub-12_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM      186118656 sub-12_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       18487552 sub-12_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       21133056 sub-12_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       22231296 sub-12_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       24078336 sub-12_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23479296 sub-13_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23629056 sub-13_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23179776 sub-13_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       27123456 sub-13_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       24078336 sub-13_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23030016 sub-13_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       22680576 sub-14_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       22530816 sub-14_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       22580736 sub-14_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       22930176 sub-14_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       24178176 sub-14_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23129856 sub-14_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       26125056 sub-15_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23030016 sub-15_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23030016 sub-15_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       24078336 sub-15_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23229696 sub-15_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       22980096 sub-15_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:36 AM       23629056 sub-16_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23828736 sub-16_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23279616 sub-16_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23529216 sub-16_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23329536 sub-16_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23229696 sub-16_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       28836096 sub-17_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       29696256 sub-17_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       29266176 sub-17_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       24327936 sub-17_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23778816 sub-17_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23878656 sub-17_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       31616256 sub-18_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       24128256 sub-18_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23179776 sub-18_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23129856 sub-18_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23678976 sub-18_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23129856 sub-18_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM      184521216 sub-19_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM      185719296 sub-19_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM      186917376 sub-19_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       26200832 sub-19_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       26481152 sub-19_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       26088704 sub-19_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23878656 sub-1_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       25026816 sub-1_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23129856 sub-1_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       22930176 sub-1_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23079936 sub-1_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       24228096 sub-1_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       28897536 sub-20_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       27545856 sub-20_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       30064896 sub-20_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       22680576 sub-20_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23828736 sub-20_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM       23429376 sub-20_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM      219664896 sub-21_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:37 AM      184121856 sub-21_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM      187316736 sub-21_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM      187316736 sub-21_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM      185319936 sub-21_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM      184121856 sub-21_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       23529216 sub-22_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       22930176 sub-22_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       24577536 sub-22_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       23379456 sub-22_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       23079936 sub-22_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       23030016 sub-22_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       26724096 sub-23_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       25326336 sub-23_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       23928576 sub-23_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       24128256 sub-23_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       24228096 sub-23_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       23329536 sub-23_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       22231296 sub-24_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       22630656 sub-24_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       27123456 sub-24_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       23179776 sub-24_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       23429376 sub-24_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       22580736 sub-24_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       30617856 sub-2_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       29819136 sub-2_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       28160256 sub-2_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       23429376 sub-2_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       24477696 sub-2_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       23878656 sub-2_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM      187316736 sub-3_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM      186917376 sub-3_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM      184521216 sub-3_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       26481152 sub-3_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       26369024 sub-3_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       27209984 sub-3_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       23229696 sub-4_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:38 AM       23279616 sub-4_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       22880256 sub-4_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       23529216 sub-4_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       23379456 sub-4_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       23030016 sub-4_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       24178176 sub-5_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       23928576 sub-5_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       27073536 sub-5_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       24527616 sub-5_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       23479296 sub-5_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       22680576 sub-5_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM      190910976 sub-6_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM      185719296 sub-6_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM      187316736 sub-6_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       23728896 sub-6_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       23479296 sub-6_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       22980096 sub-6_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       28221696 sub-7_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM      185719296 sub-7_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       29266176 sub-7_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       23379456 sub-7_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       22930176 sub-7_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       22880256 sub-7_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM      183722496 sub-8_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM      183722496 sub-8_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM      186917376 sub-8_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       25476096 sub-8_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       25376256 sub-8_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:39 AM       24078336 sub-8_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM      186917376 sub-9_ses-1_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM      186118656 sub-9_ses-1_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM      186518016 sub-9_ses-1_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       23229696 sub-9_ses-2_task-NB_run-1_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       22930176 sub-9_ses-2_task-NB_run-2_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       23329536 sub-9_ses-2_task-NB_run-3_BDFdata_Testdata-Deci.bdf
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sourcedata
+    \rawdata\SART
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:40 AM          10120 SART_event_codes.xlsx
+-a----        10/15/2025   3:40 AM       18686976 sub-10_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       19286016 sub-10_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       18587136 sub-11_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       18187776 sub-11_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM        6756096 sub-12_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       21083136 sub-12_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       20084736 sub-13_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       19934976 sub-13_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       21482496 sub-14_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       20833536 sub-14_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       18936576 sub-15_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       17888256 sub-15_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       18287616 sub-16_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       18237696 sub-16_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       23245056 sub-17_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       18487296 sub-17_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       26006232 sub-18_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       17189376 sub-18_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM      141390336 sub-19_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       20370176 sub-19_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       19385856 sub-1_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       18637056 sub-1_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       21463296 sub-20_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       18087936 sub-20_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM      149776896 sub-21_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM      145783296 sub-21_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM      151773696 sub-22_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM      163754496 sub-22_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:40 AM       21732096 sub-23_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM      147380736 sub-23_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM       34861056 sub-24_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM       19685376 sub-24_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM       24105216 sub-2_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM       18487296 sub-2_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM      150176256 sub-3_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM       26088704 sub-3_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM       18087936 sub-4_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM       18886656 sub-4_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM       20334336 sub-5_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM       21282816 sub-5_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM      149377536 sub-6_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM       18936576 sub-6_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM       21893376 sub-7_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM       18537216 sub-7_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM      146582016 sub-8_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM       21232896 sub-8_ses-2_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM      146182656 sub-9_ses-1_SART_BDFdata_Testdata-Deci.bdf
+-a----        10/15/2025   3:41 AM       17938176 sub-9_ses-2_SART_BDFdata_Testdata-Deci.bdf
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-1\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-1\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:41 AM            702 sub-1_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:41 AM            479 sub-1_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:41 AM       44935272 sub-1_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:41 AM          32489 sub-1_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:41 AM            702 sub-1_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:41 AM            479 sub-1_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:41 AM       33126544 sub-1_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:41 AM          12043 sub-1_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:41 AM            702 sub-1_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:41 AM            479 sub-1_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:41 AM       34668528 sub-1_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:41 AM          11498 sub-1_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:41 AM            702 sub-1_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:41 AM            479 sub-1_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:41 AM       32112360 sub-1_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:41 AM          12005 sub-1_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:41 AM            702 sub-1_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:41 AM            481 sub-1_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:41 AM       27182272 sub-1_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:41 AM          19331 sub-1_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-1\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-1\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:41 AM            702 sub-1_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:41 AM            480 sub-1_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:41 AM       90026336 sub-1_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:41 AM          66043 sub-1_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:41 AM            702 sub-1_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:41 AM            479 sub-1_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:41 AM       31827536 sub-1_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:41 AM          11287 sub-1_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:41 AM            702 sub-1_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:41 AM            479 sub-1_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:41 AM       32037312 sub-1_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:41 AM          11660 sub-1_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:41 AM            702 sub-1_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:41 AM            479 sub-1_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:42 AM       33599904 sub-1_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:42 AM          12123 sub-1_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-1_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:42 AM            481 sub-1_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:42 AM       26181952 sub-1_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:42 AM          19872 sub-1_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-10
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-10\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-10\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:42 AM            702 sub-10_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:42 AM            480 sub-10_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:42 AM      103542808 sub-10_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:42 AM          66432 sub-10_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-10_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:42 AM            479 sub-10_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:42 AM       32792192 sub-10_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:42 AM          12242 sub-10_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-10_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:42 AM            479 sub-10_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:42 AM       33046784 sub-10_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:42 AM          11465 sub-10_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-10_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:42 AM            479 sub-10_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:42 AM       32158672 sub-10_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:42 AM          10971 sub-10_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-10_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:42 AM            481 sub-10_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:42 AM       26246128 sub-10_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:42 AM          19695 sub-10_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-10\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-10\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:42 AM            702 sub-10_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:42 AM            480 sub-10_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:42 AM       95703096 sub-10_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:42 AM          66112 sub-10_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-10_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:42 AM            479 sub-10_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:42 AM       32236336 sub-10_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:42 AM          11443 sub-10_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-10_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:42 AM            479 sub-10_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:42 AM       32154592 sub-10_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:42 AM          10767 sub-10_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-10_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:42 AM            479 sub-10_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:42 AM       33164272 sub-10_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:42 AM          10597 sub-10_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-10_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:42 AM            481 sub-10_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:42 AM       27055728 sub-10_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:42 AM          19673 sub-10_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-11
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-11\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-11\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:42 AM            702 sub-11_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:42 AM            480 sub-11_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:42 AM       91981912 sub-11_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:42 AM          65779 sub-11_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-11_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:42 AM            479 sub-11_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:42 AM       32915696 sub-11_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:42 AM          11679 sub-11_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-11_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:42 AM            479 sub-11_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:42 AM       32519032 sub-11_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:42 AM          12119 sub-11_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-11_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:42 AM            481 sub-11_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:42 AM       26115768 sub-11_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:42 AM          19986 sub-11_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-11\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-11\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:42 AM            702 sub-11_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:42 AM            480 sub-11_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:42 AM       91648048 sub-11_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:42 AM          66041 sub-11_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-11_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:42 AM            479 sub-11_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:42 AM       32580496 sub-11_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:42 AM          11810 sub-11_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-11_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:42 AM            479 sub-11_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:42 AM       33386064 sub-11_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:42 AM          11545 sub-11_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-11_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:42 AM            479 sub-11_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:42 AM       32709544 sub-11_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:42 AM          11503 sub-11_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-11_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:42 AM            481 sub-11_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:42 AM       25574576 sub-11_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:42 AM          19889 sub-11_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-12
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-12\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-12\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:42 AM            702 sub-12_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:42 AM            479 sub-12_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:42 AM       37600008 sub-12_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:42 AM          25876 sub-12_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:42 AM            798 sub-12_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:42 AM            505 sub-12_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:42 AM       38404584 sub-12_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:42 AM          11188 sub-12_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:42 AM            702 sub-12_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:42 AM            480 sub-12_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:43 AM      252773928 sub-12_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:43 AM          12336 sub-12_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:43 AM            798 sub-12_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:43 AM            505 sub-12_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:43 AM       25697656 sub-12_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:43 AM           7231 sub-12_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-12_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:43 AM            481 sub-12_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:43 AM        9852584 sub-12_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:43 AM           7193 sub-12_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-12\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-12\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:43 AM            702 sub-12_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:43 AM            480 sub-12_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:43 AM      288671936 sub-12_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:43 AM          26200 sub-12_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-12_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:43 AM            479 sub-12_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:43 AM       29388528 sub-12_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:43 AM          10945 sub-12_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-12_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:43 AM            479 sub-12_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:43 AM       30863136 sub-12_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:43 AM          10374 sub-12_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-12_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:43 AM            479 sub-12_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:43 AM       33365784 sub-12_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:43 AM          10535 sub-12_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-12_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:43 AM            481 sub-12_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:43 AM       29540192 sub-12_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:43 AM          22247 sub-12_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-13
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-13\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-13\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:43 AM            702 sub-13_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:43 AM            480 sub-13_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:43 AM      106989624 sub-13_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:43 AM          66570 sub-13_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-13_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:43 AM            479 sub-13_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:43 AM       32576416 sub-13_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:43 AM          11602 sub-13_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-13_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:43 AM            479 sub-13_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:43 AM       32782568 sub-13_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:43 AM          11788 sub-13_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-13_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:43 AM            479 sub-13_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:43 AM       32157992 sub-13_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:43 AM          10951 sub-13_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-13_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:43 AM            481 sub-13_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:43 AM       28135632 sub-13_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:43 AM          19632 sub-13_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-13\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-13\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:43 AM            702 sub-13_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:43 AM            480 sub-13_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:43 AM      103880760 sub-13_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:43 AM          66259 sub-13_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-13_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:43 AM            479 sub-13_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:43 AM       37516848 sub-13_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:43 AM          11974 sub-13_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-13_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:43 AM            479 sub-13_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:43 AM       33388784 sub-13_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:43 AM          11705 sub-13_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-13_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:43 AM            479 sub-13_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:43 AM       31962040 sub-13_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:43 AM          11284 sub-13_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-13_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:43 AM            481 sub-13_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:43 AM       27934256 sub-13_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:43 AM          19652 sub-13_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-14
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-14\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-14\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:43 AM            702 sub-14_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:43 AM            479 sub-14_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:43 AM       60096360 sub-14_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:43 AM          41750 sub-14_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-14_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:43 AM            479 sub-14_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:43 AM       31494392 sub-14_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:43 AM          11553 sub-14_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-14_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:43 AM            479 sub-14_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:43 AM       31288920 sub-14_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:43 AM          11406 sub-14_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-14_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:43 AM            479 sub-14_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:43 AM       31341544 sub-14_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:43 AM          10670 sub-14_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-14_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:43 AM            481 sub-14_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:43 AM       30031576 sub-14_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:43 AM          19873 sub-14_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-14\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-14\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:43 AM            702 sub-14_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:43 AM            480 sub-14_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:43 AM       94687176 sub-14_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:43 AM          65957 sub-14_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:43 AM            702 sub-14_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:43 AM            479 sub-14_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:43 AM       31826872 sub-14_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:43 AM          11280 sub-14_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-14_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:44 AM            479 sub-14_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:44 AM       33521232 sub-14_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:44 AM          11572 sub-14_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-14_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:44 AM            479 sub-14_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:44 AM       32088368 sub-14_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:44 AM          10852 sub-14_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-14_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:44 AM            481 sub-14_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:44 AM       29146608 sub-14_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:44 AM          19448 sub-14_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-15
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-15\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-15\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:44 AM            702 sub-15_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:44 AM            480 sub-15_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:44 AM       87525336 sub-15_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:44 AM          65942 sub-15_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-15_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:44 AM            479 sub-15_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:44 AM       36163808 sub-15_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:44 AM          11976 sub-15_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-15_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:44 AM            479 sub-15_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:44 AM       31959320 sub-15_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:44 AM          11153 sub-15_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-15_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:44 AM            479 sub-15_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:44 AM       31957960 sub-15_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:44 AM          11082 sub-15_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-15_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:44 AM            481 sub-15_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:44 AM       26586640 sub-15_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:44 AM          19829 sub-15_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-15\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-15\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:44 AM            702 sub-15_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:44 AM            481 sub-15_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:44 AM       23249263 sub-15_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:44 AM          67444 sub-15_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-15_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:44 AM            479 sub-15_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:44 AM       33400344 sub-15_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:44 AM          12287 sub-15_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-15_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:44 AM            479 sub-15_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:44 AM       32230336 sub-15_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:44 AM          11192 sub-15_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-15_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:44 AM            479 sub-15_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:44 AM       31902616 sub-15_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:44 AM          11694 sub-15_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-15_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:44 AM            481 sub-15_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:44 AM       25172328 sub-15_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:44 AM          20069 sub-15_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-16
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-16\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-16\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:44 AM            702 sub-16_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:44 AM            480 sub-16_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:44 AM       90295688 sub-16_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:44 AM          65972 sub-16_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-16_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:44 AM            479 sub-16_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:44 AM       23254121 sub-16_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:44 AM          11928 sub-16_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-16_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:44 AM            479 sub-16_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:44 AM       23482299 sub-16_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:44 AM          11306 sub-16_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-16_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:44 AM            479 sub-16_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:44 AM       23396398 sub-16_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:44 AM          11875 sub-16_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-16_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:44 AM            481 sub-16_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:44 AM       25708224 sub-16_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:44 AM          19857 sub-16_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-16\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-16\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:44 AM            702 sub-16_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:44 AM            480 sub-16_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:44 AM       86173832 sub-16_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:44 AM          65940 sub-16_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-16_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:44 AM            479 sub-16_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:44 AM       32652160 sub-16_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:44 AM          12008 sub-16_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-16_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:44 AM            479 sub-16_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:44 AM       32374344 sub-16_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:44 AM          11643 sub-16_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-16_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:44 AM            479 sub-16_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:44 AM       32248696 sub-16_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:44 AM          12111 sub-16_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:44 AM            702 sub-16_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:44 AM            481 sub-16_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:44 AM       25642664 sub-16_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:44 AM          19968 sub-16_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-17
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-17\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-17\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:44 AM            910 sub-17_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:44 AM            507 sub-17_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:44 AM      106455792 sub-17_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:44 AM          65968 sub-17_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:44 AM            910 sub-17_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:44 AM            506 sub-17_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:44 AM       39723992 sub-17_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:44 AM          11978 sub-17_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:44 AM            910 sub-17_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:44 AM            506 sub-17_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:44 AM       40881128 sub-17_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:44 AM          11811 sub-17_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:44 AM            910 sub-17_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:44 AM            506 sub-17_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:44 AM       40288280 sub-17_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:44 AM          11171 sub-17_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:44 AM            910 sub-17_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:44 AM            508 sub-17_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:45 AM       32333832 sub-17_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:45 AM          20147 sub-17_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-17\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-17\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:45 AM            702 sub-17_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:45 AM            480 sub-17_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:45 AM       83740744 sub-17_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:45 AM          65829 sub-17_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:45 AM            702 sub-17_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:45 AM            479 sub-17_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:45 AM       33730104 sub-17_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:45 AM          11841 sub-17_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:45 AM            702 sub-17_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:45 AM            479 sub-17_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:45 AM       32975120 sub-17_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:45 AM          11296 sub-17_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:45 AM            702 sub-17_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:45 AM            479 sub-17_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:45 AM       33117768 sub-17_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:45 AM          11671 sub-17_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:45 AM            702 sub-17_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:45 AM            481 sub-17_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:45 AM       25973688 sub-17_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:45 AM          19580 sub-17_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-18
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-18\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-18\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:45 AM            702 sub-18_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:45 AM            480 sub-18_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:45 AM       96040960 sub-18_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:45 AM          66207 sub-18_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:45 AM            702 sub-18_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:45 AM            479 sub-18_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:45 AM       43606208 sub-18_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:45 AM          12495 sub-18_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:45 AM            702 sub-18_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:45 AM            479 sub-18_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:45 AM       33460448 sub-18_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:45 AM          11903 sub-18_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:45 AM            702 sub-18_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:45 AM            479 sub-18_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:45 AM       32168872 sub-18_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:45 AM          11498 sub-18_ses-1_task-NB_run-3_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-18\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-18\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:45 AM            702 sub-18_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:45 AM            480 sub-18_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:45 AM       91986024 sub-18_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:45 AM          66033 sub-18_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:45 AM            702 sub-18_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:45 AM            479 sub-18_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:45 AM       32106728 sub-18_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:45 AM          11763 sub-18_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:45 AM            702 sub-18_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:45 AM            479 sub-18_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:45 AM       32852872 sub-18_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:45 AM          11924 sub-18_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:45 AM            702 sub-18_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:45 AM            479 sub-18_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:45 AM       32099248 sub-18_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:45 AM          11393 sub-18_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:45 AM            702 sub-18_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:45 AM            481 sub-18_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:45 AM       24227432 sub-18_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:45 AM          20091 sub-18_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-19
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-19\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-19\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:45 AM            702 sub-19_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:45 AM            481 sub-19_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:45 AM      709433416 sub-19_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:45 AM          67465 sub-19_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:45 AM            702 sub-19_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:45 AM            480 sub-19_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:46 AM      250607840 sub-19_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:46 AM          12152 sub-19_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:46 AM            702 sub-19_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:46 AM            480 sub-19_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:46 AM      252225096 sub-19_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:46 AM          11915 sub-19_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:46 AM            702 sub-19_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:46 AM            480 sub-19_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:46 AM      253843712 sub-19_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:46 AM          11742 sub-19_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:46 AM            702 sub-19_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:46 AM            482 sub-19_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:46 AM      192373008 sub-19_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:46 AM          20512 sub-19_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-19\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-19\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:46 AM            814 sub-19_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:46 AM            506 sub-19_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:46 AM      101871696 sub-19_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:46 AM          65997 sub-19_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:46 AM            814 sub-19_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:46 AM            505 sub-19_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:46 AM       36204776 sub-19_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:46 AM          11764 sub-19_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:46 AM            814 sub-19_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:46 AM            505 sub-19_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:46 AM       36579576 sub-19_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:46 AM          11563 sub-19_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:46 AM            814 sub-19_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:46 AM            505 sub-19_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:46 AM       36047104 sub-19_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:46 AM          11452 sub-19_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:46 AM            814 sub-19_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:46 AM            507 sub-19_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:46 AM       28479128 sub-19_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:46 AM          19737 sub-19_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-2\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-2\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:46 AM            910 sub-2_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:46 AM            507 sub-2_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:47 AM      109608160 sub-2_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:47 AM          66078 sub-2_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:47 AM            910 sub-2_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:47 AM            506 sub-2_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:47 AM       42130352 sub-2_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:47 AM          12024 sub-2_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:47 AM            910 sub-2_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:47 AM            506 sub-2_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:47 AM       41041104 sub-2_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:47 AM          11493 sub-2_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:47 AM            910 sub-2_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:47 AM            506 sub-2_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:47 AM       38792776 sub-2_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:47 AM          11011 sub-2_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:47 AM            910 sub-2_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:47 AM            508 sub-2_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:47 AM       33483384 sub-2_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:47 AM          19475 sub-2_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-2\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-2\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:47 AM            702 sub-2_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:47 AM            480 sub-2_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:47 AM       90972456 sub-2_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:47 AM          66005 sub-2_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:47 AM            702 sub-2_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:47 AM            479 sub-2_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:47 AM       32525456 sub-2_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:47 AM          12430 sub-2_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:47 AM            702 sub-2_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:47 AM            479 sub-2_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:47 AM       33922184 sub-2_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:47 AM          11346 sub-2_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:47 AM            702 sub-2_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:47 AM            479 sub-2_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:47 AM       33100296 sub-2_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:47 AM          10783 sub-2_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:47 AM            702 sub-2_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:47 AM            481 sub-2_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:47 AM       25983408 sub-2_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:47 AM          20113 sub-2_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-20
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-20\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-20\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:47 AM            910 sub-20_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:47 AM            507 sub-20_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:47 AM      106041152 sub-20_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:47 AM          65971 sub-20_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:47 AM            910 sub-20_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:47 AM            506 sub-20_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:47 AM       39812376 sub-20_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:47 AM          12243 sub-20_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:47 AM            910 sub-20_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:47 AM            506 sub-20_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:47 AM       37988328 sub-20_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:47 AM          12248 sub-20_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:47 AM            910 sub-20_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:47 AM            506 sub-20_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:47 AM       41370632 sub-20_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:47 AM          11404 sub-20_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:47 AM            910 sub-20_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:47 AM            508 sub-20_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:47 AM       29927632 sub-20_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:47 AM          19974 sub-20_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-20\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-20\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:47 AM            702 sub-20_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:47 AM            481 sub-20_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:48 AM      688887848 sub-20_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:48 AM          67446 sub-20_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:48 AM            702 sub-20_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:48 AM            479 sub-20_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:48 AM       31498472 sub-20_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:48 AM          11740 sub-20_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:48 AM            702 sub-20_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:48 AM            479 sub-20_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:48 AM       33052224 sub-20_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:48 AM          11756 sub-20_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:48 AM            702 sub-20_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:48 AM            479 sub-20_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:48 AM       32506112 sub-20_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:48 AM          11471 sub-20_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:48 AM            702 sub-20_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:48 AM            481 sub-20_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:48 AM       25442552 sub-20_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:48 AM          20048 sub-20_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-21
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-21\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-21\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:48 AM            702 sub-21_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:48 AM            481 sub-21_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:49 AM      687806504 sub-21_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:49 AM          67446 sub-21_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:49 AM            702 sub-21_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:49 AM            480 sub-21_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:49 AM      298190376 sub-21_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:49 AM          12460 sub-21_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:49 AM            702 sub-21_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:49 AM            480 sub-21_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:49 AM      250066488 sub-21_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:49 AM          12125 sub-21_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:49 AM            702 sub-21_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:49 AM            480 sub-21_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:49 AM      254386424 sub-21_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:49 AM          11856 sub-21_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:49 AM            702 sub-21_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:49 AM            482 sub-21_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:50 AM      203722408 sub-21_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:50 AM          20333 sub-21_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-21\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-21\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:50 AM            702 sub-21_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:50 AM            481 sub-21_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:50 AM      683481144 sub-21_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:50 AM          67448 sub-21_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:50 AM            702 sub-21_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:50 AM            480 sub-21_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:50 AM      254392544 sub-21_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:50 AM          12154 sub-21_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:50 AM            702 sub-21_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:50 AM            480 sub-21_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:50 AM      251685104 sub-21_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:50 AM          11938 sub-21_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:50 AM            702 sub-21_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:50 AM            480 sub-21_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:50 AM      250053568 sub-21_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:50 AM          11449 sub-21_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:50 AM            702 sub-21_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:50 AM            482 sub-21_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:50 AM      198319184 sub-21_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:50 AM          20499 sub-21_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-22
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-22\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-22\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:51 AM            702 sub-22_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:51 AM            479 sub-22_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:51 AM       48252616 sub-22_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:51 AM          32653 sub-22_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:51 AM            702 sub-22_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:51 AM            479 sub-22_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:51 AM       32648760 sub-22_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:51 AM          11862 sub-22_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:51 AM            702 sub-22_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:51 AM            479 sub-22_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:51 AM       31828232 sub-22_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:51 AM          11349 sub-22_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:51 AM            702 sub-22_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:51 AM            479 sub-22_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:51 AM       34054424 sub-22_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:51 AM          11218 sub-22_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:51 AM            702 sub-22_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:51 AM            482 sub-22_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:51 AM      206423680 sub-22_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:51 AM          20189 sub-22_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-22\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-22\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:51 AM            702 sub-22_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:51 AM            480 sub-22_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:51 AM       90228768 sub-22_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:51 AM          66028 sub-22_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:51 AM            702 sub-22_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:51 AM            479 sub-22_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:51 AM       32441248 sub-22_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:51 AM          11605 sub-22_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:51 AM            702 sub-22_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:51 AM            479 sub-22_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:51 AM       32038464 sub-22_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:51 AM          11733 sub-22_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:51 AM            702 sub-22_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:51 AM            479 sub-22_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:51 AM       31952520 sub-22_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:51 AM          10815 sub-22_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:51 AM            702 sub-22_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:51 AM            482 sub-22_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:51 AM      222641024 sub-22_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:51 AM          20044 sub-22_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-23
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-23\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-23\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:51 AM            702 sub-23_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:51 AM            480 sub-23_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:51 AM       92796984 sub-23_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:51 AM          66177 sub-23_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:51 AM            702 sub-23_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:51 AM            479 sub-23_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:51 AM       36983656 sub-23_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:51 AM          12433 sub-23_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:51 AM            702 sub-23_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:51 AM            479 sub-23_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:51 AM       35066824 sub-23_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:51 AM          11144 sub-23_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:51 AM            702 sub-23_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:51 AM            479 sub-23_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:51 AM       33167672 sub-23_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:51 AM          10773 sub-23_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:51 AM            702 sub-23_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:51 AM            481 sub-23_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:51 AM       30370792 sub-23_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:51 AM          19997 sub-23_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-23\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-23\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:51 AM            702 sub-23_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:51 AM            481 sub-23_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:52 AM      690509864 sub-23_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:52 AM          67416 sub-23_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:52 AM            702 sub-23_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:52 AM            479 sub-23_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:52 AM       33467248 sub-23_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:52 AM          12231 sub-23_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:52 AM            702 sub-23_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:52 AM            479 sub-23_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:52 AM       33588816 sub-23_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:52 AM          11547 sub-23_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:52 AM            702 sub-23_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:52 AM            479 sub-23_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:52 AM       32363464 sub-23_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:52 AM          11082 sub-23_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:52 AM            702 sub-23_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:52 AM            482 sub-23_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:52 AM      200485904 sub-23_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:52 AM          20694 sub-23_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-24
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-24\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-24\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:52 AM            702 sub-24_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:52 AM            480 sub-24_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:52 AM      105842048 sub-24_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:52 AM          66363 sub-24_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:52 AM            702 sub-24_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:52 AM            479 sub-24_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:52 AM       30888176 sub-24_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:52 AM          11605 sub-24_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:52 AM            702 sub-24_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:52 AM            479 sub-24_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:52 AM       31423408 sub-24_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:52 AM          11366 sub-24_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:52 AM            702 sub-24_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:52 AM            479 sub-24_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:52 AM       37503928 sub-24_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:52 AM          11272 sub-24_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:52 AM            702 sub-24_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:52 AM            481 sub-24_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:52 AM       48522448 sub-24_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:52 AM          39719 sub-24_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-24\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-24\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:52 AM            702 sub-24_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:52 AM            480 sub-24_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:52 AM      130097656 sub-24_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:52 AM          66247 sub-24_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:52 AM            702 sub-24_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:52 AM            479 sub-24_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:52 AM       32181112 sub-24_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:52 AM          12071 sub-24_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:52 AM            702 sub-24_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:52 AM            479 sub-24_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:52 AM       32513592 sub-24_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:52 AM          11840 sub-24_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:52 AM            702 sub-24_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:52 AM            479 sub-24_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:52 AM       31350488 sub-24_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:52 AM          11059 sub-24_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:52 AM            702 sub-24_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:52 AM            481 sub-24_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:52 AM       27560392 sub-24_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:52 AM          17840 sub-24_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-3
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-3\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-3\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:52 AM            702 sub-3_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:52 AM            481 sub-3_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:53 AM      715921872 sub-3_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:53 AM          67561 sub-3_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:53 AM            702 sub-3_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:53 AM            480 sub-3_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:53 AM      254392072 sub-3_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:53 AM          12118 sub-3_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:53 AM            702 sub-3_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:53 AM            480 sub-3_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:53 AM      253832360 sub-3_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:53 AM          11150 sub-3_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:53 AM            702 sub-3_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:53 AM            480 sub-3_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:53 AM      250579488 sub-3_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:53 AM          10689 sub-3_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:53 AM            702 sub-3_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:53 AM            482 sub-3_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:53 AM      204269904 sub-3_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:53 AM          20707 sub-3_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-3\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-3\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:53 AM            814 sub-3_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:53 AM            506 sub-3_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:53 AM      108842304 sub-3_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:53 AM          66108 sub-3_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:53 AM            814 sub-3_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:53 AM            505 sub-3_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:53 AM       36582296 sub-3_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:53 AM          11719 sub-3_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:53 AM            814 sub-3_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:53 AM            505 sub-3_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:53 AM       36417928 sub-3_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:53 AM          11051 sub-3_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:53 AM            814 sub-3_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:53 AM            505 sub-3_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:53 AM       37540184 sub-3_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:53 AM          10378 sub-3_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:53 AM            814 sub-3_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:53 AM            507 sub-3_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:53 AM       36210944 sub-3_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:53 AM          19854 sub-3_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-4
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-4\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-4\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:53 AM            702 sub-4_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:53 AM            480 sub-4_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:53 AM       93202424 sub-4_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:53 AM          66113 sub-4_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:53 AM            702 sub-4_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:53 AM            479 sub-4_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:53 AM       32248800 sub-4_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:53 AM          12111 sub-4_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:53 AM            702 sub-4_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:53 AM            479 sub-4_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:53 AM       32299960 sub-4_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:54 AM          11290 sub-4_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:54 AM            702 sub-4_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:54 AM            479 sub-4_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:54 AM       31751128 sub-4_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:54 AM          10872 sub-4_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:54 AM            702 sub-4_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:54 AM            481 sub-4_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:54 AM       25438432 sub-4_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:54 AM          19848 sub-4_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-4\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-4\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:54 AM            702 sub-4_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:54 AM            480 sub-4_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:54 AM       90846328 sub-4_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:54 AM          46951 sub-4_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:54 AM            702 sub-4_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:54 AM            479 sub-4_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:54 AM       32620216 sub-4_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:54 AM          10424 sub-4_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:54 AM            702 sub-4_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:54 AM            479 sub-4_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:54 AM       32388344 sub-4_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:54 AM           8862 sub-4_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:54 AM            702 sub-4_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:54 AM            479 sub-4_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:54 AM       31952680 sub-4_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:54 AM          10815 sub-4_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:54 AM            702 sub-4_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:54 AM            481 sub-4_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:54 AM       26500408 sub-4_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:54 AM          19128 sub-4_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-5
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-5\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-5\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:54 AM            702 sub-5_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:54 AM            480 sub-5_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:54 AM       99012232 sub-5_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:54 AM          66184 sub-5_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:54 AM            702 sub-5_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:54 AM            479 sub-5_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:54 AM       33529392 sub-5_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:54 AM          11975 sub-5_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:54 AM            702 sub-5_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:54 AM            479 sub-5_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:54 AM       33165632 sub-5_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:54 AM          10663 sub-5_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:54 AM            702 sub-5_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:54 AM            479 sub-5_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:54 AM       37413224 sub-5_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:54 AM          10249 sub-5_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:54 AM            702 sub-5_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:54 AM            481 sub-5_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:54 AM       28475016 sub-5_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:54 AM          19706 sub-5_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-5\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-5\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:54 AM            702 sub-5_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:54 AM            480 sub-5_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:54 AM       91240672 sub-5_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:54 AM          66170 sub-5_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:54 AM            702 sub-5_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:54 AM            479 sub-5_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:54 AM       33999760 sub-5_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:54 AM          11856 sub-5_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:54 AM            702 sub-5_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:54 AM            479 sub-5_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:54 AM       32568256 sub-5_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:54 AM          11207 sub-5_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:54 AM            702 sub-5_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:54 AM            479 sub-5_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:54 AM       31477392 sub-5_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:54 AM          10679 sub-5_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:54 AM            702 sub-5_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:54 AM            481 sub-5_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:54 AM       29760488 sub-5_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:54 AM          19814 sub-5_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-6
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-6\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-6\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:54 AM            702 sub-6_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:54 AM            481 sub-6_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:55 AM      694294744 sub-6_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:55 AM          67502 sub-6_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:55 AM            702 sub-6_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:55 AM            480 sub-6_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:55 AM      259252472 sub-6_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:55 AM          11846 sub-6_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:55 AM            702 sub-6_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:55 AM            480 sub-6_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:55 AM      252245496 sub-6_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:55 AM          12961 sub-6_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:55 AM            702 sub-6_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:55 AM            480 sub-6_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:55 AM      254416344 sub-6_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:55 AM          13384 sub-6_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:55 AM            702 sub-6_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:55 AM            482 sub-6_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:55 AM      203183040 sub-6_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:55 AM          20422 sub-6_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-6\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-6\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:55 AM            702 sub-6_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:55 AM            480 sub-6_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:55 AM       90837048 sub-6_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:55 AM          66144 sub-6_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:55 AM            702 sub-6_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:55 AM            479 sub-6_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:55 AM       32926576 sub-6_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:55 AM          12217 sub-6_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:55 AM            702 sub-6_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:55 AM            479 sub-6_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:55 AM       32582536 sub-6_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:55 AM          11919 sub-6_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:55 AM            702 sub-6_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:55 AM            479 sub-6_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:55 AM       31918256 sub-6_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:55 AM          12468 sub-6_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:55 AM            702 sub-6_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:55 AM            481 sub-6_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:55 AM       26586600 sub-6_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:55 AM          19817 sub-6_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-7
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-7\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-7\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:56 AM            910 sub-7_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:56 AM            507 sub-7_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:56 AM      105625688 sub-7_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:56 AM          65878 sub-7_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:56 AM            910 sub-7_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:56 AM            506 sub-7_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:56 AM       38887752 sub-7_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:56 AM          11637 sub-7_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:56 AM            702 sub-7_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:56 AM            480 sub-7_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:56 AM      252245496 sub-7_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:56 AM          12961 sub-7_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:56 AM            910 sub-7_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:56 AM            506 sub-7_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:56 AM       40301880 sub-7_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:56 AM          11873 sub-7_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:56 AM            910 sub-7_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:56 AM            508 sub-7_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:56 AM       30503616 sub-7_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:56 AM          19784 sub-7_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-7\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-7\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:56 AM            702 sub-7_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:56 AM            480 sub-7_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:56 AM       85564832 sub-7_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:56 AM          65790 sub-7_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:56 AM            702 sub-7_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:56 AM            479 sub-7_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:56 AM       32452808 sub-7_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:56 AM          12182 sub-7_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:56 AM            702 sub-7_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:56 AM            479 sub-7_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:56 AM       31829592 sub-7_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:56 AM          11414 sub-7_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:56 AM            702 sub-7_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:56 AM            479 sub-7_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:56 AM       31760648 sub-7_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:56 AM          11351 sub-7_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:56 AM            702 sub-7_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:56 AM            481 sub-7_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:56 AM       26042672 sub-7_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:56 AM          19719 sub-7_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-8
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-8\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-8\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:56 AM            702 sub-8_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:56 AM            481 sub-8_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:56 AM      752687168 sub-8_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:56 AM          67624 sub-8_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:56 AM            702 sub-8_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:56 AM            480 sub-8_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:57 AM      249514936 sub-8_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:57 AM          11562 sub-8_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:57 AM            702 sub-8_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:57 AM            480 sub-8_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:57 AM      249512216 sub-8_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:57 AM          11418 sub-8_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:57 AM            702 sub-8_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:57 AM            480 sub-8_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:57 AM      253823992 sub-8_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:57 AM          10729 sub-8_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:57 AM            702 sub-8_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:57 AM            482 sub-8_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:57 AM      199399776 sub-8_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:57 AM          20452 sub-8_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-8\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-8\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:57 AM            702 sub-8_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:57 AM            480 sub-8_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:57 AM       92053552 sub-8_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:57 AM          66154 sub-8_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:57 AM            702 sub-8_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:57 AM            479 sub-8_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:57 AM       35285216 sub-8_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:57 AM          11945 sub-8_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:57 AM            702 sub-8_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:57 AM            479 sub-8_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:57 AM       35133728 sub-8_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:57 AM          11091 sub-8_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:57 AM            702 sub-8_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:57 AM            479 sub-8_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:57 AM       33364984 sub-8_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:57 AM          10502 sub-8_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:57 AM            702 sub-8_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:57 AM            481 sub-8_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:57 AM       29690120 sub-8_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:57 AM          19619 sub-8_ses-2_task-SART_events.tsv
+
+
+    Directory: C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-9
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                ses-1
+dar--l        10/15/2025   1:25 PM                ses-2
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-9\ses-1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-9\ses-1\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:57 AM            702 sub-9_ses-1_task-LG_channels.tsv
+-a----        10/15/2025   3:57 AM            481 sub-9_ses-1_task-LG_eeg.json
+-a----        10/15/2025   3:58 AM      684562456 sub-9_ses-1_task-LG_eeg.set
+-a----        10/15/2025   3:58 AM          67390 sub-9_ses-1_task-LG_events.tsv
+-a----        10/15/2025   3:58 AM            702 sub-9_ses-1_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:58 AM            480 sub-9_ses-1_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:58 AM      253864112 sub-9_ses-1_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:58 AM          12782 sub-9_ses-1_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:58 AM            702 sub-9_ses-1_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:58 AM            480 sub-9_ses-1_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:58 AM      252773928 sub-9_ses-1_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:58 AM          12336 sub-9_ses-1_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:58 AM            702 sub-9_ses-1_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:58 AM            480 sub-9_ses-1_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:58 AM      253294200 sub-9_ses-1_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:58 AM          11277 sub-9_ses-1_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:58 AM            702 sub-9_ses-1_task-SART_channels.tsv
+-a----        10/15/2025   3:58 AM            482 sub-9_ses-1_task-SART_eeg.json
+-a----        10/15/2025   3:58 AM      198858960 sub-9_ses-1_task-SART_eeg.set
+-a----        10/15/2025   3:58 AM          20402 sub-9_ses-1_task-SART_events.tsv
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-9\ses-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        10/15/2025   1:25 PM                eeg
+
+
+    Directory:
+    C:\Users\keatw\OneDrive\Documents\Doclab\Big_Datasets\target\paper\Executive_Functioning_Data\sub-9\ses-2\eeg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2025   3:58 AM            702 sub-9_ses-2_task-LG_channels.tsv
+-a----        10/15/2025   3:58 AM            480 sub-9_ses-2_task-LG_eeg.json
+-a----        10/15/2025   3:58 AM       87457896 sub-9_ses-2_task-LG_eeg.set
+-a----        10/15/2025   3:58 AM          65949 sub-9_ses-2_task-LG_events.tsv
+-a----        10/15/2025   3:58 AM            702 sub-9_ses-2_task-NB_run-1_channels.tsv
+-a----        10/15/2025   3:58 AM            479 sub-9_ses-2_task-NB_run-1_eeg.json
+-a----        10/15/2025   3:58 AM       32237976 sub-9_ses-2_task-NB_run-1_eeg.set
+-a----        10/15/2025   3:58 AM          11564 sub-9_ses-2_task-NB_run-1_events.tsv
+-a----        10/15/2025   3:58 AM            702 sub-9_ses-2_task-NB_run-2_channels.tsv
+-a----        10/15/2025   3:58 AM            479 sub-9_ses-2_task-NB_run-2_eeg.json
+-a----        10/15/2025   3:58 AM       31839424 sub-9_ses-2_task-NB_run-2_eeg.set
+-a----        10/15/2025   3:58 AM          11894 sub-9_ses-2_task-NB_run-2_events.tsv
+-a----        10/15/2025   3:58 AM            702 sub-9_ses-2_task-NB_run-3_channels.tsv
+-a----        10/15/2025   3:58 AM            479 sub-9_ses-2_task-NB_run-3_eeg.json
+-a----        10/15/2025   3:58 AM       32364224 sub-9_ses-2_task-NB_run-3_eeg.set
+-a----        10/15/2025   3:58 AM          11117 sub-9_ses-2_task-NB_run-3_events.tsv
+-a----        10/15/2025   3:58 AM            702 sub-9_ses-2_task-SART_channels.tsv
+-a----        10/15/2025   3:58 AM            481 sub-9_ses-2_task-SART_eeg.json
+-a----        10/15/2025   3:58 AM       25242624 sub-9_ses-2_task-SART_eeg.set
+-a----        10/15/2025   3:58 AM          20235 sub-9_ses-2_task-SART_events.tsv
+

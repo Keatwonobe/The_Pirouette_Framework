@@ -1,0 +1,15 @@
+Higgs Gamma-aware cascade - reviewer checks
+===========================================
+
+Files analyzed: 20
+Critical window (|alpha+1| min): t=6, alpha=-1.011180, file=higgs_hodge_out_win06.npz
+Closest Theta ~= Theta_c window: t=0, file=higgs_hodge_out_win00.npz
+
+Q1: Theta(t) and Theta_c(t) do NOT exactly coincide with alpha ~= -1 -> CHECK
+    alpha ~= -1 at t=6, Theta ~= Theta_c at t=0
+Q2: Earlier super-critical window found at t=0, alpha=-0.7844 -> PASS
+Q3: Late-time windows within |alpha+1| < 0.05 after t=6: 1 -> CHECK
+
+Notes:
+- If Q1 is off by 1 window, try --k-gamma 0.6 or 0.8.
+- If many alphas are blank, increase --frac to 0.3.

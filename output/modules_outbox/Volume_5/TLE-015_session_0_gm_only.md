@@ -1,0 +1,86 @@
+---
+#───────────── The Lost Eternal ──────────────────────
+id: TLE-015
+title: Session 0, for GMs
+version: 1.0-consolidated
+parents: [TLE-000]
+children: []
+engrams:
+ - system:character-creation
+ - mechanic:freeform-creation-system
+ - templates:body-plans
+keywords: [character creation, body plan, attributes, TLE]
+uncertainty_tag: Low
+module_type: core-rulebook-consolidated
+---
+This guide provides the framework for running the first session of "The Lost Eternal," covering character creation, the party's arrival in the bottom realm, and their introduction to the core survival mechanics of the world.
+
+Session 0: The Condemnation
+The campaign begins before the first die is rolled. Character creation is an intense, in-character process where each player must answer two questions that define their starting point:
+
+The Accusation: What crime were you accused of by the Skazan Order? (This can be anything from high treason to petty heresy).
+
+The Truth: Were you actually guilty?
+
+This process immediately grounds the characters in the world and provides rich roleplaying hooks.
+
+The Spectacle
+The game begins in media res. Describe the scene: the characters are prisoners, paraded before a town square. A Skazan lieutenant performs a grand, cruel ritual. Describe the flash of entropic energy as they are torn from their plane, and the final, heart-wrenching detail: a curse of forgetfulness that erases them from the memories of their loved ones, sometimes performed right in front of the family for maximum effect.
+
+Session 1: The Arrival
+Systraeslakia, The Weeping Statue
+The players arrive cold, wet, and disoriented on a massive, rocky island hundreds of feet in the air. This is Systraeslakia, a weathered statue caught in a perpetual torrent of water that falls from countless cave openings above. The roar of the water is deafening, making conversation difficult and forcing the party to rely on non-verbal cooperation.
+
+The Challenge: The statue is slick and treacherous. Any attempt to climb it is futile. The goal here is to establish the environment's hostility and encourage the party to work together.
+
+The Panorama: From the edge of the statue, they can see the vast panorama of the starting area: the August Jag, an endless sea of wheat, with distant mountains on the horizon.
+
+High Tide: Other survivors are present, all nervously moving away from the center of the statue. A deep gurgling sound signals "high tide." A massive surge of water washes over the statue, sending the party plunging into the churning lake below. A Skazan enchantment prevents them from taking damage, but the experience is terrifying.
+
+The Shore and the Choice
+The party must make their way to the shore. As night falls, they face their first major decision:
+
+Huddle on the beach with the other nervous survivors.
+
+Venture into the whispering, golden fields of the August Jag.
+
+The First Night: Wheat-Wolves
+Regardless of their choice, the first night brings the first threat. A pack of wheat-wolves (large, golden-furred pack hunters with glowing red eyes) emerges from the fields.
+
+The Encounter: The pack size is 1.5 times the number of players, rounded up. The party can choose to fight or use the stealth mechanics to let them pass. A failed stealth check initiates combat.
+
+New Mechanic: Trophies, Residue & The Sculptor's Art
+The Scavenger
+The day after the wolf encounter, the party comes across the aftermath of another fight. They witness a grizzled Scavenger taking trophies (claws, teeth, pelts) from the corpses of the unlucky. This is how you introduce the core economic loop of the game.
+
+§1 · Trophies & Residue
+
+The Principle: Defeated creatures do not carry gold; their value lies in the Residue of their entropic potential, which is stored in their physical remains (trophies). Players must harvest these trophies to gain power.
+
+The Conversion Race: Residue is inert and useless until it is transmuted. This transmutation can be done by a skilled individual as a 1 hour ritual for up to 15 EP at a time. If multiple characters attempt to transmute the same pool of Residue, the first to complete the ritual gains the full TEP reward. This encourages a tense, competitive dynamic.
+
+The Unseen Threat: Unclaimed corpses still radiate Residue. This can attract dangerous scavengers or other entropic creatures. Disposing of bodies after a fight is a crucial, tactical decision.
+t-
+§2 · The Sculptor's Art
+
+The Profession: A Sculptor is a master artisan who has learned to transmute Residue into usable TEP for others. They are found in all major settlements.
+
+The Cost: A Sculptor's service is not free. The cost to transmute a pool of Residue for another person is 3 EP: 1 EP from the Sculptor's own pool (representing their effort) and 2 EP from the transmuted total (the "tax" or cost of the service).
+
+The Artisan-Warrior: The "Professional Aptitude (Sculptor)" feat allows a character to become a Sculptor. Their professional skill pool can be used to perform transmutations and, like any other profession, can be weaponized in combat.
+
+First Contact: Glints
+The Scavenger is hostile and proves to be a tough opponent, quickly overwhelming the party. Before a killing blow is struck, an arrow whistles through the air and strikes the Scavenger, who flees.
+
+The party's savior is Glints, a sharp-eyed archer. She is a friendly survivor who offers to guide them to the nearest city, The Endeavor.
+
+The First City: The Endeavor
+The Endeavor is a colossal walking city, a marvel of arcane engineering that stalks the plains on six massive, geared legs.
+
+Population: Approx. 5,800 residents living in a honeycomb of corridors.
+
+Leadership: Run by Enrio Poltock, a shrewd and observant old man who takes an interest in all newcomers.
+
+Services: The city offers a bustling hunter's guild, various shops (maps, simple weapons, arcane scrolls), and, most importantly, the services of Sculptors. Players can also purchase information about the Skazan Order or even hire guides to help them navigate the treacherous world.
+
+Session one likely concludes here, with the party safe for the moment, introduced to the core mechanics, and presented with their first set of choices for their adventure.

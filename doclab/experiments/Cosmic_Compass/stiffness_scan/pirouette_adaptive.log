@@ -1,0 +1,666 @@
+2025-11-26 22:31:13,202 [INFO] ======================================================================
+2025-11-26 22:31:13,202 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:31:13,202 [INFO] ======================================================================
+2025-11-26 22:31:13,202 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:31:13,202 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:31:13,202 [INFO] ======================================================================
+2025-11-26 22:31:13,202 [INFO] 
+=== PHASE 1: COARSE GRID ===
+2025-11-26 22:31:13,211 [INFO] Initializing 15x15 coarse grid...
+2025-11-26 22:31:13,212 [INFO] Created 225 coarse cells with 225 points
+2025-11-26 22:31:13,213 [INFO] 
+Processing 225 coarse grid points...
+2025-11-26 22:31:13,215 [INFO] Processing: m^2=-1.1600, lambda=1.1333
+2025-11-26 22:31:22,892 [INFO]   => xi = 0.4699
+2025-11-26 22:31:23,015 [INFO] Processing: m^2=-1.1600, lambda=1.4000
+2025-11-26 22:31:32,781 [INFO]   => xi = 0.4680
+2025-11-26 22:31:32,905 [INFO] Processing: m^2=-1.1600, lambda=1.6667
+2025-11-26 22:31:42,655 [INFO]   => xi = 0.4701
+2025-11-26 22:31:42,772 [INFO] Processing: m^2=-1.1600, lambda=1.9333
+2025-11-26 22:31:53,265 [INFO] ======================================================================
+2025-11-26 22:31:53,265 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:31:53,265 [INFO] ======================================================================
+2025-11-26 22:31:53,265 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:31:53,265 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:31:53,265 [INFO] ======================================================================
+2025-11-26 22:31:53,265 [INFO] 
+=== PHASE 1: COARSE GRID ===
+2025-11-26 22:31:53,265 [INFO] Initializing 15x15 coarse grid...
+2025-11-26 22:31:53,265 [INFO] Created 225 coarse cells with 225 points
+2025-11-26 22:31:53,271 [INFO] 
+Processing 225 coarse grid points...
+2025-11-26 22:31:53,271 [INFO] Processing: m^2=-1.1600, lambda=1.1333
+2025-11-26 22:32:03,093 [INFO]   => xi = 0.4758
+2025-11-26 22:32:03,211 [INFO] Processing: m^2=-1.1600, lambda=1.4000
+2025-11-26 22:32:13,041 [INFO]   => xi = 0.4689
+2025-11-26 22:32:13,161 [INFO] Processing: m^2=-1.1600, lambda=1.6667
+2025-11-26 22:32:23,052 [INFO]   => xi = 0.4652
+2025-11-26 22:32:23,171 [INFO] Processing: m^2=-1.1600, lambda=1.9333
+2025-11-26 22:32:33,021 [INFO]   => xi = 0.4699
+2025-11-26 22:32:33,147 [INFO] Processing: m^2=-1.1600, lambda=2.2000
+2025-11-26 22:32:42,985 [INFO]   => xi = 0.4707
+2025-11-26 22:32:43,110 [INFO] Checkpoint saved: 5 points complete
+2025-11-26 22:32:43,111 [INFO] Progress: 5/225
+2025-11-26 22:32:43,116 [INFO] Processing: m^2=-1.1600, lambda=2.4667
+2025-11-26 22:32:52,984 [INFO]   => xi = 0.4684
+2025-11-26 22:32:53,110 [INFO] Processing: m^2=-1.1600, lambda=2.7333
+2025-11-26 22:33:03,024 [INFO]   => xi = 0.4659
+2025-11-26 22:33:03,148 [INFO] Processing: m^2=-1.1600, lambda=3.0000
+2025-11-26 22:33:18,720 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:33:18,728 [INFO] Resumed: 5 points completed
+2025-11-26 22:33:18,728 [INFO] ======================================================================
+2025-11-26 22:33:18,728 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:33:18,728 [INFO] ======================================================================
+2025-11-26 22:33:18,728 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:33:18,728 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:33:18,728 [INFO] ======================================================================
+2025-11-26 22:33:18,735 [INFO] 
+Processing 220 coarse grid points...
+2025-11-26 22:33:18,737 [INFO] Processing: m^2=-1.1600, lambda=2.4667
+2025-11-26 22:33:29,023 [INFO]   => xi = 0.4685
+2025-11-26 22:33:29,145 [INFO] Processing: m^2=-1.1600, lambda=2.7333
+2025-11-26 22:33:39,428 [INFO]   => xi = 0.4666
+2025-11-26 22:33:39,548 [INFO] Processing: m^2=-1.1600, lambda=3.0000
+2025-11-26 22:33:49,929 [INFO]   => xi = 0.4667
+2025-11-26 22:33:50,048 [INFO] Processing: m^2=-1.1600, lambda=3.2667
+2025-11-26 22:34:00,389 [INFO]   => xi = 0.4676
+2025-11-26 22:34:00,516 [INFO] Processing: m^2=-1.1600, lambda=3.5333
+2025-11-26 22:34:10,910 [INFO]   => xi = 0.4693
+2025-11-26 22:34:11,036 [INFO] Checkpoint saved: 10 points complete
+2025-11-26 22:34:11,036 [INFO] Progress: 10/225
+2025-11-26 22:34:11,040 [INFO] Processing: m^2=-1.1600, lambda=3.8000
+2025-11-26 22:34:21,408 [INFO]   => xi = 0.4670
+2025-11-26 22:34:21,532 [INFO] Processing: m^2=-1.1600, lambda=4.0667
+2025-11-26 22:34:31,890 [INFO]   => xi = 0.4661
+2025-11-26 22:34:32,008 [INFO] Processing: m^2=-1.1600, lambda=4.3333
+2025-11-26 22:34:42,363 [INFO]   => xi = 0.4653
+2025-11-26 22:34:42,488 [INFO] Processing: m^2=-1.1600, lambda=4.6000
+2025-11-26 22:34:52,838 [INFO]   => xi = 0.4654
+2025-11-26 22:34:52,959 [INFO] Processing: m^2=-1.1600, lambda=4.8667
+2025-11-26 22:35:03,358 [INFO]   => xi = 0.4638
+2025-11-26 22:35:03,478 [INFO] Progress: 15/225
+2025-11-26 22:35:03,485 [INFO] Processing: m^2=-1.0800, lambda=1.1333
+2025-11-26 22:35:13,733 [INFO]   => xi = 0.4687
+2025-11-26 22:35:13,858 [INFO] Processing: m^2=-1.0800, lambda=1.4000
+2025-11-26 22:35:24,123 [INFO]   => xi = 0.4745
+2025-11-26 22:35:24,242 [INFO] Processing: m^2=-1.0800, lambda=1.6667
+2025-11-26 22:35:34,490 [INFO]   => xi = 0.4679
+2025-11-26 22:35:34,609 [INFO] Processing: m^2=-1.0800, lambda=1.9333
+2025-11-26 22:35:44,871 [INFO]   => xi = 0.4729
+2025-11-26 22:35:44,988 [INFO] Processing: m^2=-1.0800, lambda=2.2000
+2025-11-26 22:35:55,248 [INFO]   => xi = 0.4695
+2025-11-26 22:35:55,365 [INFO] Progress: 20/225
+2025-11-26 22:35:55,371 [INFO] Processing: m^2=-1.0800, lambda=2.4667
+2025-11-26 22:36:05,708 [INFO]   => xi = 0.4687
+2025-11-26 22:36:05,832 [INFO] Processing: m^2=-1.0800, lambda=2.7333
+2025-11-26 22:36:16,858 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:36:16,868 [INFO] Resumed: 10 points completed
+2025-11-26 22:36:16,868 [INFO] ======================================================================
+2025-11-26 22:36:16,868 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:36:16,868 [INFO] ======================================================================
+2025-11-26 22:36:16,868 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:36:16,868 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:36:16,868 [INFO] ======================================================================
+2025-11-26 22:36:16,874 [INFO] 
+Processing 215 coarse grid points...
+2025-11-26 22:36:16,874 [INFO] Processing: m^2=-1.1600, lambda=3.8000
+2025-11-26 22:36:27,216 [INFO]   => xi = 0.4675
+2025-11-26 22:36:27,338 [INFO] Checkpoint saved: 11 points complete
+2025-11-26 22:36:27,338 [INFO] Progress: 11/225
+2025-11-26 22:36:27,338 [INFO] Processing: m^2=-1.1600, lambda=4.0667
+2025-11-26 22:36:37,632 [INFO]   => xi = 0.4663
+2025-11-26 22:36:37,752 [INFO] Progress: 12/225
+2025-11-26 22:36:37,759 [INFO] Processing: m^2=-1.1600, lambda=4.3333
+2025-11-26 22:36:48,057 [INFO]   => xi = 0.4651
+2025-11-26 22:36:48,176 [INFO] Progress: 13/225
+2025-11-26 22:36:48,177 [INFO] Processing: m^2=-1.1600, lambda=4.6000
+2025-11-26 22:36:58,532 [INFO]   => xi = 0.4670
+2025-11-26 22:36:58,649 [INFO] Progress: 14/225
+2025-11-26 22:36:58,649 [INFO] Processing: m^2=-1.1600, lambda=4.8667
+2025-11-26 22:37:08,987 [INFO]   => xi = 0.4655
+2025-11-26 22:37:09,111 [INFO] Progress: 15/225
+2025-11-26 22:37:09,119 [INFO] Processing: m^2=-1.0800, lambda=1.1333
+2025-11-26 22:37:19,357 [INFO]   => xi = 0.4664
+2025-11-26 22:37:19,478 [INFO] Checkpoint saved: 16 points complete
+2025-11-26 22:37:19,478 [INFO] Progress: 16/225
+2025-11-26 22:37:19,487 [INFO] Processing: m^2=-1.0800, lambda=1.4000
+2025-11-26 22:37:29,696 [INFO]   => xi = 0.4744
+2025-11-26 22:37:29,812 [INFO] Progress: 17/225
+2025-11-26 22:37:29,817 [INFO] Processing: m^2=-1.0800, lambda=1.6667
+2025-11-26 22:37:40,007 [INFO]   => xi = 0.4683
+2025-11-26 22:37:40,123 [INFO] Progress: 18/225
+2025-11-26 22:37:40,127 [INFO] Processing: m^2=-1.0800, lambda=1.9333
+2025-11-26 22:37:50,313 [INFO]   => xi = 0.4671
+2025-11-26 22:37:50,427 [INFO] Progress: 19/225
+2025-11-26 22:37:50,435 [INFO] Processing: m^2=-1.0800, lambda=2.2000
+2025-11-26 22:38:00,677 [INFO]   => xi = 0.4710
+2025-11-26 22:38:00,798 [INFO] Progress: 20/225
+2025-11-26 22:38:00,805 [INFO] Processing: m^2=-1.0800, lambda=2.4667
+2025-11-26 22:38:11,114 [INFO]   => xi = 0.4686
+2025-11-26 22:38:11,233 [INFO] Checkpoint saved: 21 points complete
+2025-11-26 22:38:11,233 [INFO] Progress: 21/225
+2025-11-26 22:38:11,237 [INFO] Processing: m^2=-1.0800, lambda=2.7333
+2025-11-26 22:38:21,577 [INFO]   => xi = 0.4687
+2025-11-26 22:38:21,700 [INFO] Progress: 22/225
+2025-11-26 22:38:21,707 [INFO] Processing: m^2=-1.0800, lambda=3.0000
+2025-11-26 22:39:33,967 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:39:33,967 [INFO] Resumed: 21 points completed
+2025-11-26 22:39:33,967 [INFO] ======================================================================
+2025-11-26 22:39:33,967 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:39:33,967 [INFO] ======================================================================
+2025-11-26 22:39:33,967 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:39:33,967 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:39:33,967 [INFO] ======================================================================
+2025-11-26 22:39:33,977 [INFO] 
+Processing 204 coarse grid points...
+2025-11-26 22:39:33,977 [INFO] Processing: m^2=-1.0800, lambda=2.7333
+2025-11-26 22:39:44,227 [INFO]   => xi = 0.4681
+2025-11-26 22:39:44,347 [INFO] Checkpoint saved: 22 points complete
+2025-11-26 22:39:44,347 [INFO] Progress: 22/225
+2025-11-26 22:39:44,353 [INFO] Processing: m^2=-1.0800, lambda=3.0000
+2025-11-26 22:39:54,707 [INFO]   => xi = 0.4700
+2025-11-26 22:39:54,823 [INFO] Progress: 23/225
+2025-11-26 22:39:54,826 [INFO] Processing: m^2=-1.0800, lambda=3.2667
+2025-11-26 22:40:05,218 [INFO]   => xi = 0.4631
+2025-11-26 22:40:05,335 [INFO] Progress: 24/225
+2025-11-26 22:40:05,337 [INFO] Processing: m^2=-1.0800, lambda=3.5333
+2025-11-26 22:40:15,696 [INFO]   => xi = 0.4651
+2025-11-26 22:40:15,814 [INFO] Progress: 25/225
+2025-11-26 22:40:15,816 [INFO] Processing: m^2=-1.0800, lambda=3.8000
+2025-11-26 22:40:26,193 [INFO]   => xi = 0.4649
+2025-11-26 22:40:26,308 [INFO] Progress: 26/225
+2025-11-26 22:40:26,308 [INFO] Processing: m^2=-1.0800, lambda=4.0667
+2025-11-26 22:40:36,676 [INFO]   => xi = 0.4629
+2025-11-26 22:40:36,797 [INFO] Checkpoint saved: 27 points complete
+2025-11-26 22:40:36,797 [INFO] Progress: 27/225
+2025-11-26 22:40:36,797 [INFO] Processing: m^2=-1.0800, lambda=4.3333
+2025-11-26 22:40:47,133 [INFO]   => xi = 0.4632
+2025-11-26 22:40:47,248 [INFO] Progress: 28/225
+2025-11-26 22:40:47,251 [INFO] Processing: m^2=-1.0800, lambda=4.6000
+2025-11-26 22:40:57,611 [INFO]   => xi = 0.4635
+2025-11-26 22:40:57,727 [INFO] Progress: 29/225
+2025-11-26 22:40:57,727 [INFO] Processing: m^2=-1.0800, lambda=4.8667
+2025-11-26 22:41:08,150 [INFO]   => xi = 0.4643
+2025-11-26 22:41:08,268 [INFO] Progress: 30/225
+2025-11-26 22:41:08,274 [INFO] Processing: m^2=-1.0000, lambda=1.1333
+2025-11-26 22:41:18,537 [INFO]   => xi = 0.4727
+2025-11-26 22:41:18,657 [INFO] Progress: 31/225
+2025-11-26 22:41:18,663 [INFO] Processing: m^2=-1.0000, lambda=1.4000
+2025-11-26 22:41:28,170 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:41:28,176 [INFO] Resumed: 27 points completed
+2025-11-26 22:41:28,176 [INFO] ======================================================================
+2025-11-26 22:41:28,176 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:41:28,176 [INFO] ======================================================================
+2025-11-26 22:41:28,176 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:41:28,176 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:41:28,176 [INFO] ======================================================================
+2025-11-26 22:41:28,182 [INFO] 
+Processing 198 coarse grid points...
+2025-11-26 22:41:28,182 [INFO] Processing: m^2=-1.0800, lambda=4.3333
+2025-11-26 22:41:38,466 [INFO]   => xi = 0.4636
+2025-11-26 22:41:38,590 [INFO] Checkpoint saved: 28 points complete
+2025-11-26 22:41:38,590 [INFO] Progress: 28/225
+2025-11-26 22:41:38,590 [INFO] Processing: m^2=-1.0800, lambda=4.6000
+2025-11-26 22:41:48,891 [INFO]   => xi = 0.4623
+2025-11-26 22:41:49,009 [INFO] Progress: 29/225
+2025-11-26 22:41:49,015 [INFO] Processing: m^2=-1.0800, lambda=4.8667
+2025-11-26 22:41:59,401 [INFO]   => xi = 0.4625
+2025-11-26 22:41:59,528 [INFO] Progress: 30/225
+2025-11-26 22:41:59,531 [INFO] Processing: m^2=-1.0000, lambda=1.1333
+2025-11-26 22:42:09,836 [INFO]   => xi = 0.4691
+2025-11-26 22:42:09,953 [INFO] Progress: 31/225
+2025-11-26 22:42:09,956 [INFO] Processing: m^2=-1.0000, lambda=1.4000
+2025-11-26 22:42:20,323 [INFO]   => xi = 0.4702
+2025-11-26 22:42:20,443 [INFO] Progress: 32/225
+2025-11-26 22:42:20,446 [INFO] Processing: m^2=-1.0000, lambda=1.6667
+2025-11-26 22:42:30,756 [INFO]   => xi = 0.4672
+2025-11-26 22:42:30,876 [INFO] Checkpoint saved: 33 points complete
+2025-11-26 22:42:30,876 [INFO] Progress: 33/225
+2025-11-26 22:42:30,881 [INFO] Processing: m^2=-1.0000, lambda=1.9333
+2025-11-26 22:42:43,176 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:42:43,176 [INFO] Resumed: 33 points completed
+2025-11-26 22:42:43,176 [INFO] ======================================================================
+2025-11-26 22:42:43,176 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:42:43,176 [INFO] ======================================================================
+2025-11-26 22:42:43,176 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:42:43,176 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:42:43,176 [INFO] ======================================================================
+2025-11-26 22:42:43,186 [INFO] 
+Processing 192 coarse grid points...
+2025-11-26 22:42:43,189 [INFO] Processing: m^2=-1.0000, lambda=1.9333
+2025-11-26 22:42:53,476 [INFO]   => xi = 0.4692
+2025-11-26 22:42:53,599 [INFO] Checkpoint saved: 34 points complete
+2025-11-26 22:42:53,599 [INFO] Progress: 34/225
+2025-11-26 22:42:53,599 [INFO] Processing: m^2=-1.0000, lambda=2.2000
+2025-11-26 22:43:03,962 [INFO]   => xi = 0.4660
+2025-11-26 22:43:04,079 [INFO] Progress: 35/225
+2025-11-26 22:43:04,079 [INFO] Processing: m^2=-1.0000, lambda=2.4667
+2025-11-26 22:43:14,476 [INFO]   => xi = 0.4699
+2025-11-26 22:43:14,596 [INFO] Progress: 36/225
+2025-11-26 22:43:14,598 [INFO] Processing: m^2=-1.0000, lambda=2.7333
+2025-11-26 22:43:25,084 [INFO]   => xi = 0.4650
+2025-11-26 22:43:25,201 [INFO] Progress: 37/225
+2025-11-26 22:43:25,206 [INFO] Processing: m^2=-1.0000, lambda=3.0000
+2025-11-26 22:43:35,579 [INFO]   => xi = 0.4669
+2025-11-26 22:43:35,695 [INFO] Progress: 38/225
+2025-11-26 22:43:35,698 [INFO] Processing: m^2=-1.0000, lambda=3.2667
+2025-11-26 22:43:45,956 [INFO]   => xi = 0.4669
+2025-11-26 22:43:46,076 [INFO] Checkpoint saved: 39 points complete
+2025-11-26 22:43:46,076 [INFO] Progress: 39/225
+2025-11-26 22:43:46,076 [INFO] Processing: m^2=-1.0000, lambda=3.5333
+2025-11-26 22:43:56,368 [INFO]   => xi = 0.4656
+2025-11-26 22:43:56,492 [INFO] Progress: 40/225
+2025-11-26 22:43:56,496 [INFO] Processing: m^2=-1.0000, lambda=3.8000
+2025-11-26 22:44:06,972 [INFO]   => xi = 0.4646
+2025-11-26 22:44:07,089 [INFO] Progress: 41/225
+2025-11-26 22:44:07,089 [INFO] Processing: m^2=-1.0000, lambda=4.0667
+2025-11-26 22:44:17,493 [INFO]   => xi = 0.4652
+2025-11-26 22:44:17,609 [INFO] Progress: 42/225
+2025-11-26 22:44:17,614 [INFO] Processing: m^2=-1.0000, lambda=4.3333
+2025-11-26 22:44:34,145 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:44:34,161 [INFO] Resumed: 39 points completed
+2025-11-26 22:44:34,161 [INFO] ======================================================================
+2025-11-26 22:44:34,161 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:44:34,161 [INFO] ======================================================================
+2025-11-26 22:44:34,161 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:44:34,161 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:44:34,161 [INFO] ======================================================================
+2025-11-26 22:44:34,162 [INFO] 
+Processing 186 coarse grid points...
+2025-11-26 22:44:34,165 [INFO] Processing: m^2=-1.0000, lambda=3.5333
+2025-11-26 22:44:44,530 [INFO]   => xi = 0.4647
+2025-11-26 22:44:44,653 [INFO] Checkpoint saved: 40 points complete
+2025-11-26 22:44:44,653 [INFO] Progress: 40/225
+2025-11-26 22:44:44,656 [INFO] Processing: m^2=-1.0000, lambda=3.8000
+2025-11-26 22:44:54,976 [INFO]   => xi = 0.4655
+2025-11-26 22:44:55,092 [INFO] Progress: 41/225
+2025-11-26 22:44:55,098 [INFO] Processing: m^2=-1.0000, lambda=4.0667
+2025-11-26 22:45:05,307 [INFO]   => xi = 0.4654
+2025-11-26 22:45:05,422 [INFO] Progress: 42/225
+2025-11-26 22:45:05,426 [INFO] Processing: m^2=-1.0000, lambda=4.3333
+2025-11-26 22:45:20,815 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:45:20,825 [INFO] Resumed: 40 points completed
+2025-11-26 22:45:20,825 [INFO] ======================================================================
+2025-11-26 22:45:20,825 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:45:20,825 [INFO] ======================================================================
+2025-11-26 22:45:20,825 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:45:20,825 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:45:20,825 [INFO] ======================================================================
+2025-11-26 22:45:20,825 [INFO] 
+Processing 185 coarse grid points...
+2025-11-26 22:45:20,829 [INFO] Processing: m^2=-1.0000, lambda=3.8000
+2025-11-26 22:45:28,731 [ERROR] Lattice update error: No active exception to reraise
+2025-11-26 22:45:28,731 [ERROR]   => Failed: RuntimeError: No active exception to reraise
+2025-11-26 22:45:28,855 [INFO] Checkpoint saved: 41 points complete
+2025-11-26 22:45:28,855 [INFO] Progress: 41/225
+2025-11-26 22:45:28,855 [INFO] Processing: m^2=-1.0000, lambda=4.0667
+2025-11-26 22:45:44,189 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:45:44,195 [INFO] Resumed: 41 points completed
+2025-11-26 22:45:44,195 [INFO] ======================================================================
+2025-11-26 22:45:44,195 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:45:44,195 [INFO] ======================================================================
+2025-11-26 22:45:44,195 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:45:44,195 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:45:44,195 [INFO] ======================================================================
+2025-11-26 22:45:44,197 [INFO] 
+Processing 184 coarse grid points...
+2025-11-26 22:45:44,198 [INFO] Processing: m^2=-1.0000, lambda=4.0667
+2025-11-26 22:45:49,956 [ERROR] Lattice update error: unsupported operand type(s) for %=: 'dict_itemiterator' and 'int'
+2025-11-26 22:45:49,956 [ERROR]   => Failed: TypeError: unsupported operand type(s) for %=: 'dict_itemiterator' and 'int'
+2025-11-26 22:45:50,079 [INFO] Checkpoint saved: 42 points complete
+2025-11-26 22:45:50,080 [INFO] Progress: 42/225
+2025-11-26 22:45:50,083 [INFO] Processing: m^2=-1.0000, lambda=4.3333
+2025-11-26 22:45:57,548 [ERROR] Lattice update error: unsupported operand type(s) for %=: 'dict_itemiterator' and 'int'
+2025-11-26 22:45:57,549 [ERROR]   => Failed: TypeError: unsupported operand type(s) for %=: 'dict_itemiterator' and 'int'
+2025-11-26 22:45:57,664 [INFO] Progress: 43/225
+2025-11-26 22:45:57,665 [INFO] Processing: m^2=-1.0000, lambda=4.6000
+2025-11-26 22:46:13,065 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:46:13,069 [INFO] Resumed: 42 points completed
+2025-11-26 22:46:13,069 [INFO] ======================================================================
+2025-11-26 22:46:13,069 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:46:13,069 [INFO] ======================================================================
+2025-11-26 22:46:13,069 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:46:13,069 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:46:13,069 [INFO] ======================================================================
+2025-11-26 22:46:13,069 [INFO] 
+Processing 183 coarse grid points...
+2025-11-26 22:46:13,075 [INFO] Processing: m^2=-1.0000, lambda=4.3333
+2025-11-26 22:46:23,255 [INFO]   => xi = 0.4645
+2025-11-26 22:46:23,378 [INFO] Checkpoint saved: 43 points complete
+2025-11-26 22:46:23,378 [INFO] Progress: 43/225
+2025-11-26 22:46:23,385 [INFO] Processing: m^2=-1.0000, lambda=4.6000
+2025-11-26 22:46:33,630 [INFO]   => xi = 0.4623
+2025-11-26 22:46:33,749 [INFO] Progress: 44/225
+2025-11-26 22:46:33,755 [INFO] Processing: m^2=-1.0000, lambda=4.8667
+2025-11-26 22:46:43,833 [INFO]   => xi = 0.4635
+2025-11-26 22:46:43,948 [INFO] Progress: 45/225
+2025-11-26 22:46:43,953 [INFO] Processing: m^2=-0.9200, lambda=1.1333
+2025-11-26 22:46:53,975 [INFO]   => xi = 0.4746
+2025-11-26 22:46:54,091 [INFO] Progress: 46/225
+2025-11-26 22:46:54,097 [INFO] Processing: m^2=-0.9200, lambda=1.4000
+2025-11-26 22:47:09,193 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:47:09,196 [INFO] Resumed: 43 points completed
+2025-11-26 22:47:09,196 [INFO] ======================================================================
+2025-11-26 22:47:09,196 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:47:09,196 [INFO] ======================================================================
+2025-11-26 22:47:09,196 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:47:09,196 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:47:09,196 [INFO] ======================================================================
+2025-11-26 22:47:09,196 [INFO] 
+Processing 182 coarse grid points...
+2025-11-26 22:47:09,196 [INFO] Processing: m^2=-1.0000, lambda=4.6000
+2025-11-26 22:47:18,070 [ERROR] Lattice update error: No active exception to reraise
+2025-11-26 22:47:18,070 [ERROR]   => Failed: RuntimeError: No active exception to reraise
+2025-11-26 22:47:18,194 [INFO] Checkpoint saved: 44 points complete
+2025-11-26 22:47:18,194 [INFO] Progress: 44/225
+2025-11-26 22:47:18,196 [INFO] Processing: m^2=-1.0000, lambda=4.8667
+2025-11-26 22:47:33,977 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:47:33,983 [INFO] Resumed: 44 points completed
+2025-11-26 22:47:33,983 [INFO] ======================================================================
+2025-11-26 22:47:33,983 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:47:33,983 [INFO] ======================================================================
+2025-11-26 22:47:33,983 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:47:33,983 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:47:33,983 [INFO] ======================================================================
+2025-11-26 22:47:33,985 [INFO] 
+Processing 181 coarse grid points...
+2025-11-26 22:47:33,985 [INFO] Processing: m^2=-1.0000, lambda=4.8667
+2025-11-26 22:47:43,970 [INFO]   => xi = 0.4645
+2025-11-26 22:47:44,095 [INFO] Checkpoint saved: 45 points complete
+2025-11-26 22:47:44,095 [INFO] Progress: 45/225
+2025-11-26 22:47:44,095 [INFO] Processing: m^2=-0.9200, lambda=1.1333
+2025-11-26 22:47:46,290 [ERROR] Lattice update error: 'cell' object cannot be interpreted as an integer
+2025-11-26 22:47:46,291 [ERROR]   => Failed: TypeError: 'cell' object cannot be interpreted as an integer
+2025-11-26 22:47:46,406 [INFO] Progress: 46/225
+2025-11-26 22:47:46,411 [INFO] Processing: m^2=-0.9200, lambda=1.4000
+2025-11-26 22:47:56,352 [INFO]   => xi = 0.4698
+2025-11-26 22:47:56,468 [INFO] Progress: 47/225
+2025-11-26 22:47:56,468 [INFO] Processing: m^2=-0.9200, lambda=1.6667
+2025-11-26 22:48:06,397 [INFO]   => xi = 0.4714
+2025-11-26 22:48:06,513 [INFO] Progress: 48/225
+2025-11-26 22:48:06,515 [INFO] Processing: m^2=-0.9200, lambda=1.9333
+2025-11-26 22:48:06,915 [ERROR] Lattice update error: No active exception to reraise
+2025-11-26 22:48:06,915 [ERROR]   => Failed: RuntimeError: No active exception to reraise
+2025-11-26 22:48:07,036 [INFO] Progress: 49/225
+2025-11-26 22:48:07,043 [INFO] Processing: m^2=-0.9200, lambda=2.2000
+2025-11-26 22:48:17,190 [INFO]   => xi = 0.4669
+2025-11-26 22:48:17,312 [INFO] Checkpoint saved: 50 points complete
+2025-11-26 22:48:17,312 [INFO] Progress: 50/225
+2025-11-26 22:48:17,315 [INFO] Processing: m^2=-0.9200, lambda=2.4667
+2025-11-26 22:48:27,388 [INFO]   => xi = 0.4659
+2025-11-26 22:48:27,503 [INFO] Progress: 51/225
+2025-11-26 22:48:27,508 [INFO] Processing: m^2=-0.9200, lambda=2.7333
+2025-11-26 22:48:37,498 [INFO]   => xi = 0.4651
+2025-11-26 22:48:37,615 [INFO] Progress: 52/225
+2025-11-26 22:48:37,622 [INFO] Processing: m^2=-0.9200, lambda=3.0000
+2025-11-26 22:48:41,218 [ERROR] Lattice update error: cannot unpack non-iterable int object
+2025-11-26 22:48:41,218 [ERROR]   => Failed: TypeError: cannot unpack non-iterable int object
+2025-11-26 22:48:41,340 [INFO] Progress: 53/225
+2025-11-26 22:48:41,344 [INFO] Processing: m^2=-0.9200, lambda=3.2667
+2025-11-26 22:48:51,371 [INFO]   => xi = 0.4647
+2025-11-26 22:48:51,487 [INFO] Progress: 54/225
+2025-11-26 22:48:51,487 [INFO] Processing: m^2=-0.9200, lambda=3.5333
+2025-11-26 22:49:09,075 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:49:09,078 [INFO] Resumed: 50 points completed
+2025-11-26 22:49:09,078 [INFO] ======================================================================
+2025-11-26 22:49:09,078 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:49:09,078 [INFO] ======================================================================
+2025-11-26 22:49:09,078 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:49:09,078 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:49:09,078 [INFO] ======================================================================
+2025-11-26 22:49:09,078 [INFO] 
+Processing 175 coarse grid points...
+2025-11-26 22:49:09,078 [INFO] Processing: m^2=-0.9200, lambda=2.4667
+2025-11-26 22:49:19,315 [INFO]   => xi = 0.4679
+2025-11-26 22:49:19,431 [INFO] Checkpoint saved: 51 points complete
+2025-11-26 22:49:19,431 [INFO] Progress: 51/225
+2025-11-26 22:49:19,431 [INFO] Processing: m^2=-0.9200, lambda=2.7333
+2025-11-26 22:49:24,599 [ERROR] Lattice update error: operands could not be broadcast together with shapes (32768,) (32817,) (32768,) 
+2025-11-26 22:49:24,599 [ERROR]   => Failed: ValueError: operands could not be broadcast together with shapes (32768,) (32817,) (32768,) 
+2025-11-26 22:49:24,714 [INFO] Progress: 52/225
+2025-11-26 22:49:24,714 [INFO] Processing: m^2=-0.9200, lambda=3.0000
+2025-11-26 22:49:35,043 [INFO]   => xi = 0.4656
+2025-11-26 22:49:35,162 [INFO] Progress: 53/225
+2025-11-26 22:49:35,168 [INFO] Processing: m^2=-0.9200, lambda=3.2667
+2025-11-26 22:49:45,312 [INFO]   => xi = 0.4661
+2025-11-26 22:49:45,432 [INFO] Progress: 54/225
+2025-11-26 22:49:45,435 [INFO] Processing: m^2=-0.9200, lambda=3.5333
+2025-11-26 22:50:02,881 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:50:02,891 [INFO] Resumed: 51 points completed
+2025-11-26 22:50:02,891 [INFO] ======================================================================
+2025-11-26 22:50:02,891 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:50:02,891 [INFO] ======================================================================
+2025-11-26 22:50:02,891 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:50:02,891 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:50:02,891 [INFO] ======================================================================
+2025-11-26 22:50:02,891 [INFO] 
+Processing 174 coarse grid points...
+2025-11-26 22:50:02,891 [INFO] Processing: m^2=-0.9200, lambda=2.7333
+2025-11-26 22:50:36,740 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:50:36,741 [INFO] Resumed: 51 points completed
+2025-11-26 22:50:36,741 [INFO] ======================================================================
+2025-11-26 22:50:36,741 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:50:36,741 [INFO] ======================================================================
+2025-11-26 22:50:36,742 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:50:36,742 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:50:36,742 [INFO] ======================================================================
+2025-11-26 22:50:36,743 [INFO] 
+Processing 174 coarse grid points...
+2025-11-26 22:50:36,745 [INFO] Processing: m^2=-0.9200, lambda=2.7333
+2025-11-26 22:50:46,686 [INFO]   => xi = 0.4638
+2025-11-26 22:50:46,804 [INFO] Checkpoint saved: 52 points complete
+2025-11-26 22:50:46,804 [INFO] Progress: 52/225
+2025-11-26 22:50:46,804 [INFO] Processing: m^2=-0.9200, lambda=3.0000
+2025-11-26 22:50:56,956 [INFO]   => xi = 0.4650
+2025-11-26 22:50:57,077 [INFO] Progress: 53/225
+2025-11-26 22:50:57,081 [INFO] Processing: m^2=-0.9200, lambda=3.2667
+2025-11-26 22:51:06,119 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:51:06,124 [INFO] Resumed: 52 points completed
+2025-11-26 22:51:06,124 [INFO] ======================================================================
+2025-11-26 22:51:06,124 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:51:06,124 [INFO] ======================================================================
+2025-11-26 22:51:06,124 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:51:06,124 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:51:06,124 [INFO] ======================================================================
+2025-11-26 22:51:06,124 [INFO] 
+Processing 173 coarse grid points...
+2025-11-26 22:51:06,131 [INFO] Processing: m^2=-0.9200, lambda=3.0000
+2025-11-26 22:51:16,493 [INFO]   => xi = 0.4655
+2025-11-26 22:51:16,616 [INFO] Checkpoint saved: 53 points complete
+2025-11-26 22:51:16,616 [INFO] Progress: 53/225
+2025-11-26 22:51:16,620 [INFO] Processing: m^2=-0.9200, lambda=3.2667
+2025-11-26 22:51:26,901 [INFO]   => xi = 0.4634
+2025-11-26 22:51:27,019 [INFO] Progress: 54/225
+2025-11-26 22:51:27,023 [INFO] Processing: m^2=-0.9200, lambda=3.5333
+2025-11-26 22:51:37,291 [INFO]   => xi = 0.4638
+2025-11-26 22:51:37,413 [INFO] Progress: 55/225
+2025-11-26 22:51:37,415 [INFO] Processing: m^2=-0.9200, lambda=3.8000
+2025-11-26 22:51:47,601 [INFO]   => xi = 0.4626
+2025-11-26 22:51:47,717 [INFO] Progress: 56/225
+2025-11-26 22:51:47,724 [INFO] Processing: m^2=-0.9200, lambda=4.0667
+2025-11-26 22:51:57,865 [INFO]   => xi = 0.4628
+2025-11-26 22:51:57,984 [INFO] Progress: 57/225
+2025-11-26 22:51:57,986 [INFO] Processing: m^2=-0.9200, lambda=4.3333
+2025-11-26 22:52:08,261 [INFO]   => xi = 0.4649
+2025-11-26 22:52:08,386 [INFO] Checkpoint saved: 58 points complete
+2025-11-26 22:52:08,386 [INFO] Progress: 58/225
+2025-11-26 22:52:08,391 [INFO] Processing: m^2=-0.9200, lambda=4.6000
+2025-11-26 22:52:13,671 [ERROR] Lattice update error: No active exception to reraise
+2025-11-26 22:52:13,671 [ERROR]   => Failed: RuntimeError: No active exception to reraise
+2025-11-26 22:52:13,791 [INFO] Progress: 59/225
+2025-11-26 22:52:13,791 [INFO] Processing: m^2=-0.9200, lambda=4.8667
+2025-11-26 22:52:26,601 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:52:26,609 [INFO] Resumed: 58 points completed
+2025-11-26 22:52:26,609 [INFO] ======================================================================
+2025-11-26 22:52:26,609 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:52:26,609 [INFO] ======================================================================
+2025-11-26 22:52:26,609 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:52:26,609 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:52:26,609 [INFO] ======================================================================
+2025-11-26 22:52:26,610 [INFO] 
+Processing 167 coarse grid points...
+2025-11-26 22:52:26,611 [INFO] Processing: m^2=-0.9200, lambda=4.6000
+2025-11-26 22:52:41,921 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:52:41,921 [INFO] Resumed: 58 points completed
+2025-11-26 22:52:41,921 [INFO] ======================================================================
+2025-11-26 22:52:41,921 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:52:41,921 [INFO] ======================================================================
+2025-11-26 22:52:41,921 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:52:41,921 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:52:41,921 [INFO] ======================================================================
+2025-11-26 22:52:41,931 [INFO] 
+Processing 167 coarse grid points...
+2025-11-26 22:52:41,931 [INFO] Processing: m^2=-0.9200, lambda=4.6000
+2025-11-26 22:52:51,651 [ERROR] Lattice update error: unhashable type: 'dict'
+2025-11-26 22:52:51,651 [ERROR]   => Failed: TypeError: unhashable type: 'dict'
+2025-11-26 22:52:51,778 [INFO] Checkpoint saved: 59 points complete
+2025-11-26 22:52:51,778 [INFO] Progress: 59/225
+2025-11-26 22:52:51,778 [INFO] Processing: m^2=-0.9200, lambda=4.8667
+2025-11-26 22:52:55,656 [ERROR] Lattice update error: unsupported operand type(s) for %=: 'dict_itemiterator' and 'int'
+2025-11-26 22:52:55,656 [ERROR]   => Failed: TypeError: unsupported operand type(s) for %=: 'dict_itemiterator' and 'int'
+2025-11-26 22:52:55,773 [INFO] Progress: 60/225
+2025-11-26 22:52:55,773 [INFO] Processing: m^2=-0.8400, lambda=1.1333
+2025-11-26 22:53:06,010 [INFO]   => xi = 0.4700
+2025-11-26 22:53:06,125 [INFO] Progress: 61/225
+2025-11-26 22:53:06,131 [INFO] Processing: m^2=-0.8400, lambda=1.4000
+2025-11-26 22:53:17,758 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:53:17,765 [INFO] Resumed: 59 points completed
+2025-11-26 22:53:17,765 [INFO] ======================================================================
+2025-11-26 22:53:17,765 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:53:17,765 [INFO] ======================================================================
+2025-11-26 22:53:17,765 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:53:17,765 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:53:17,765 [INFO] ======================================================================
+2025-11-26 22:53:17,765 [INFO] 
+Processing 166 coarse grid points...
+2025-11-26 22:53:17,765 [INFO] Processing: m^2=-0.9200, lambda=4.8667
+2025-11-26 22:53:19,603 [ERROR] Lattice update error: unhashable type: 'dict'
+2025-11-26 22:53:19,603 [ERROR]   => Failed: TypeError: unhashable type: 'dict'
+2025-11-26 22:53:19,721 [INFO] Checkpoint saved: 60 points complete
+2025-11-26 22:53:19,721 [INFO] Progress: 60/225
+2025-11-26 22:53:19,721 [INFO] Processing: m^2=-0.8400, lambda=1.1333
+2025-11-26 22:53:29,715 [INFO]   => xi = 0.4641
+2025-11-26 22:53:29,831 [INFO] Progress: 61/225
+2025-11-26 22:53:29,837 [INFO] Processing: m^2=-0.8400, lambda=1.4000
+2025-11-26 22:53:39,856 [INFO]   => xi = 0.4720
+2025-11-26 22:53:39,972 [INFO] Progress: 62/225
+2025-11-26 22:53:39,978 [INFO] Processing: m^2=-0.8400, lambda=1.6667
+2025-11-26 22:53:50,041 [INFO]   => xi = 0.4690
+2025-11-26 22:53:50,159 [INFO] Progress: 63/225
+2025-11-26 22:53:50,160 [INFO] Processing: m^2=-0.8400, lambda=1.9333
+2025-11-26 22:54:00,156 [INFO]   => xi = 0.4691
+2025-11-26 22:54:00,273 [INFO] Progress: 64/225
+2025-11-26 22:54:00,273 [INFO] Processing: m^2=-0.8400, lambda=2.2000
+2025-11-26 22:54:10,375 [INFO]   => xi = 0.4671
+2025-11-26 22:54:10,499 [INFO] Checkpoint saved: 65 points complete
+2025-11-26 22:54:10,499 [INFO] Progress: 65/225
+2025-11-26 22:54:10,501 [INFO] Processing: m^2=-0.8400, lambda=2.4667
+2025-11-26 22:54:11,111 [ERROR] Lattice update error: No active exception to reraise
+2025-11-26 22:54:11,111 [ERROR]   => Failed: RuntimeError: No active exception to reraise
+2025-11-26 22:54:11,235 [INFO] Progress: 66/225
+2025-11-26 22:54:11,239 [INFO] Processing: m^2=-0.8400, lambda=2.7333
+2025-11-26 22:54:20,570 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:54:20,580 [INFO] Resumed: 65 points completed
+2025-11-26 22:54:20,580 [INFO] ======================================================================
+2025-11-26 22:54:20,580 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:54:20,580 [INFO] ======================================================================
+2025-11-26 22:54:20,580 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:54:20,580 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:54:20,580 [INFO] ======================================================================
+2025-11-26 22:54:20,580 [INFO] 
+Processing 160 coarse grid points...
+2025-11-26 22:54:20,580 [INFO] Processing: m^2=-0.8400, lambda=2.4667
+2025-11-26 22:54:30,603 [INFO]   => xi = 0.4679
+2025-11-26 22:54:30,737 [INFO] Checkpoint saved: 66 points complete
+2025-11-26 22:54:30,737 [INFO] Progress: 66/225
+2025-11-26 22:54:30,743 [INFO] Processing: m^2=-0.8400, lambda=2.7333
+2025-11-26 22:54:49,882 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:54:49,890 [INFO] Resumed: 66 points completed
+2025-11-26 22:54:49,890 [INFO] ======================================================================
+2025-11-26 22:54:49,890 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:54:49,890 [INFO] ======================================================================
+2025-11-26 22:54:49,890 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:54:49,890 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:54:49,890 [INFO] ======================================================================
+2025-11-26 22:54:49,890 [INFO] 
+Processing 159 coarse grid points...
+2025-11-26 22:54:49,890 [INFO] Processing: m^2=-0.8400, lambda=2.7333
+2025-11-26 22:54:59,236 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:54:59,237 [INFO] Resumed: 66 points completed
+2025-11-26 22:54:59,237 [INFO] ======================================================================
+2025-11-26 22:54:59,237 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:54:59,237 [INFO] ======================================================================
+2025-11-26 22:54:59,237 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:54:59,237 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:54:59,237 [INFO] ======================================================================
+2025-11-26 22:54:59,238 [INFO] 
+Processing 159 coarse grid points...
+2025-11-26 22:54:59,241 [INFO] Processing: m^2=-0.8400, lambda=2.7333
+2025-11-26 22:55:09,394 [INFO]   => xi = 0.4637
+2025-11-26 22:55:09,513 [INFO] Checkpoint saved: 67 points complete
+2025-11-26 22:55:09,513 [INFO] Progress: 67/225
+2025-11-26 22:55:09,515 [INFO] Processing: m^2=-0.8400, lambda=3.0000
+2025-11-26 22:55:26,394 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:55:26,400 [INFO] Resumed: 67 points completed
+2025-11-26 22:55:26,401 [INFO] ======================================================================
+2025-11-26 22:55:26,401 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:55:26,401 [INFO] ======================================================================
+2025-11-26 22:55:26,401 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:55:26,401 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:55:26,401 [INFO] ======================================================================
+2025-11-26 22:55:26,401 [INFO] 
+Processing 158 coarse grid points...
+2025-11-26 22:55:26,401 [INFO] Processing: m^2=-0.8400, lambda=3.0000
+2025-11-26 22:55:36,674 [INFO]   => xi = 0.4644
+2025-11-26 22:55:36,795 [INFO] Checkpoint saved: 68 points complete
+2025-11-26 22:55:36,796 [INFO] Progress: 68/225
+2025-11-26 22:55:36,798 [INFO] Processing: m^2=-0.8400, lambda=3.2667
+2025-11-26 22:55:37,385 [ERROR] Lattice update error: unsupported operand type(s) for %=: 'dict_itemiterator' and 'int'
+2025-11-26 22:55:37,385 [ERROR]   => Failed: TypeError: unsupported operand type(s) for %=: 'dict_itemiterator' and 'int'
+2025-11-26 22:55:37,503 [INFO] Progress: 69/225
+2025-11-26 22:55:37,510 [INFO] Processing: m^2=-0.8400, lambda=3.5333
+2025-11-26 22:55:47,485 [INFO]   => xi = 0.4631
+2025-11-26 22:55:47,605 [INFO] Progress: 70/225
+2025-11-26 22:55:47,612 [INFO] Processing: m^2=-0.8400, lambda=3.8000
+2025-11-26 22:55:58,246 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:55:58,253 [INFO] Resumed: 68 points completed
+2025-11-26 22:55:58,253 [INFO] ======================================================================
+2025-11-26 22:55:58,253 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:55:58,253 [INFO] ======================================================================
+2025-11-26 22:55:58,253 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:55:58,253 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:55:58,253 [INFO] ======================================================================
+2025-11-26 22:55:58,254 [INFO] 
+Processing 157 coarse grid points...
+2025-11-26 22:55:58,256 [INFO] Processing: m^2=-0.8400, lambda=3.2667
+2025-11-26 22:56:08,408 [INFO]   => xi = 0.4632
+2025-11-26 22:56:08,531 [INFO] Checkpoint saved: 69 points complete
+2025-11-26 22:56:08,531 [INFO] Progress: 69/225
+2025-11-26 22:56:08,531 [INFO] Processing: m^2=-0.8400, lambda=3.5333
+2025-11-26 22:56:10,795 [ERROR] Lattice update error: unsupported operand type(s) for %=: 'dict_itemiterator' and 'int'
+2025-11-26 22:56:10,796 [ERROR]   => Failed: TypeError: unsupported operand type(s) for %=: 'dict_itemiterator' and 'int'
+2025-11-26 22:56:10,912 [INFO] Progress: 70/225
+2025-11-26 22:56:10,919 [INFO] Processing: m^2=-0.8400, lambda=3.8000
+2025-11-26 22:56:21,102 [INFO]   => xi = 0.4649
+2025-11-26 22:56:21,219 [INFO] Progress: 71/225
+2025-11-26 22:56:21,225 [INFO] Processing: m^2=-0.8400, lambda=4.0667
+2025-11-26 22:56:32,376 [INFO] Loading checkpoint: pirouette_adaptive_checkpoint.pkl
+2025-11-26 22:56:32,382 [INFO] Resumed: 69 points completed
+2025-11-26 22:56:32,382 [INFO] ======================================================================
+2025-11-26 22:56:32,382 [INFO] ADAPTIVE PIROUETTE SCANNING FOR GAUGE COUPLING VALIDATION
+2025-11-26 22:56:32,382 [INFO] ======================================================================
+2025-11-26 22:56:32,382 [INFO] Strategy: Coarse 15x15 grid, then refine interesting regions
+2025-11-26 22:56:32,382 [INFO] Target ratios: 1:1.79:2.31
+2025-11-26 22:56:32,383 [INFO] ======================================================================
+2025-11-26 22:56:32,383 [INFO] 
+Processing 156 coarse grid points...
+2025-11-26 22:56:32,386 [INFO] Processing: m^2=-0.8400, lambda=3.5333
+2025-11-26 22:56:33,141 [ERROR] Lattice update error: unsupported operand type(s) for %=: 'dict_itemiterator' and 'int'
+2025-11-26 22:56:33,141 [ERROR]   => Failed: TypeError: unsupported operand type(s) for %=: 'dict_itemiterator' and 'int'
+2025-11-26 22:56:33,267 [INFO] Checkpoint saved: 70 points complete
+2025-11-26 22:56:33,268 [INFO] Progress: 70/225
+2025-11-26 22:56:33,271 [INFO] Processing: m^2=-0.8400, lambda=3.8000
+2025-11-26 22:56:34,780 [ERROR] Lattice update error: cannot unpack non-iterable int object
+2025-11-26 22:56:34,780 [ERROR]   => Failed: TypeError: cannot unpack non-iterable int object
+2025-11-26 22:56:34,896 [INFO] Progress: 71/225
+2025-11-26 22:56:34,903 [INFO] Processing: m^2=-0.8400, lambda=4.0667

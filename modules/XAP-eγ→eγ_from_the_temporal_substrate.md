@@ -1,6 +1,6 @@
 ---
 id: XAP-eγ→eγ
-title: "Appendix A: Klein--Nishina Cross Section from the $\Sigma$-pushed QED Rules"
+title: Appendix A Klein--Nishina Cross Section from the Sigma-pushed QED Rules
 version: 1.0
 status: Release
 parents: []

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLE TERMINAL // PROTOCOL: SILENCE</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --term-green: #33ff33;
+            --term-dim: #1a801a;
+            --term-alert: #ff3333;
+            --font-stack: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--term-green);
+            font-family: var(--font-stack);
+            margin: 0;
+            padding: 20px;
+            height: 100vh;
+            box-sizing: border-box;
+            overflow: hidden;
+            text-shadow: 0 0 5px var(--term-dim);
+        }
+
+        /* CRT Effects */
+        body::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 2;
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+        }
+
+        #terminal-container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+        }
+
+        #output-area {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding-bottom: 20px;
+            white-space: pre-wrap;
+            scrollbar-width: none; /* Firefox */
+        }
+        #output-area::-webkit-scrollbar { display: none; }
+
+        .line { margin-bottom: 5px; line-height: 1.4; }
+        .system { color: #888; font-style: italic; }
+        .narrative { color: #ccffcc; }
+        .alert { color: var(--term-alert); text-shadow: 0 0 5px #800000; font-weight: bold; }
+        .command-echo { color: #666; margin-top: 10px; }
+        .typing::after { content: "█"; animation: blink 1s step-end infinite; }
+
+        #input-line {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid var(--term-dim);
+            padding-top: 10px;
+        }
+
+        #prompt { margin-right: 10px; font-weight: bold; }
+        
+        input[type="text"] {
+            background: transparent;
+            border: none;
+            color: var(--term-green);
+            font-family: var(--font-stack);
+            font-size: 16px;
+            flex-grow: 1;
+            outline: none;
+            text-shadow: 0 0 5px var(--term-dim);
+        }
+
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+    </style>
+</head>
+<body>
+
+<div id="terminal-container">
+    <div id="output-area"></div>
+    <div id="input-line">
+        <span id="prompt">ANOMALY_01></span>
+        <input type="text" id="cmd-input" autocomplete="off" autofocus>
+    </div>
+</div>
+
+<script>
+    // --- 1. EMBEDDED DATA (From adventure_codex.json) ---
+    const GAME_DATA = {
+        title: "The Silence Between Frames",
+        version: "ADV-004",
+        phases: {
+            "START": {
+                text: "Initializing Narrative Protocol...\nConnection Established.\n\nSYSTEM: Local reality stability is dropping.\nLOCATION: Threshold of The Weeping Repository.\n\nVisuals: The forest around you is glitching. Birds hang frozen in mid-air, rendered as wireframes. A corpse lies at your feet.\n\nType 'LOOK' to inspect surroundings.\nType 'STATUS' to check bio-monitors.",
+                exits: ["PHASE_1"]
+            },
+            "PHASE_1": {
+                id: "PHASE_1",
+                text: "You stand at the Glitch Horizon. To the West: Organic forest. To the East: The Weeping Repository.\n\nThe corpse at your feet is a Drifter. It holds a crumpled note.\n\nAvailable Commands: [READ NOTE], [ENTER REPOSITORY], [SCAN]",
+                items: ["note"],
+                enemies: []
+            },
+            "REPOSITORY_ENTRANCE": {
+                id: "REPOSITORY_ENTRANCE",
+                text: "You cross the threshold. Sound dampens immediately. The walls are perfect white marble.\n\nWARNING: Movement detected. Forms shimmering in the periphery.\n\nEncounter: MARGIN WALKERS detected.",
+                enemies: ["margin_walker", "margin_walker"]
+            }
+        },
+        enemies: {
+            "margin_walker": { name: "Margin Walker", hp: 22, ac: 13, desc: "A humanoid shape made of static." },
+            "proofreader": { name: "The Proofreader", hp: 45, ac: 15, desc: "A marble construct with no face." }
+        }
+    };
+
+    // --- 2. TERMINAL LOGIC ---
+    
+    const output = document.getElementById('output-area');
+    const input = document.getElementById('cmd-input');
+    
+    let state = {
+        currentPhase: "START",
+        playerHP: 25,
+        playerENT: 10,
+        combatActive: false,
+        activeEnemies: []
+    };
+
+    // Boot Sequence
+    window.onload = () => {
+        typeText("/// TLE_KERNEL_V.1.0.4 loaded...", "system");
+        setTimeout(() => {
+            printBlock(GAME_DATA.phases["START"].text);
+            state.currentPhase = "PHASE_1";
+        }, 1000);
+    };
+
+    // Input Handling
+    input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            const cmd = input.value.trim().toLowerCase();
+            if (cmd) {
+                printLine(`ANOMALY_01> ${cmd}`, "command-echo");
+                processCommand(cmd);
+                input.value = '';
+                // Auto scroll
+                output.scrollTop = output.scrollHeight;
+            }
+        }
+    });
+
+    function processCommand(cmd) {
+        // Global Commands
+        if (cmd === 'help') {
+            printLine("COMMAND LIST: LOOK, SCAN, STATUS, READ [ITEM], ENTER [LOCATION], ATTACK [TARGET]");
+            return;
+        }
+        
+        if (cmd === 'status') {
+            printLine(`BIO-MONITOR:\nHP: ${state.playerHP}/25 (Coherence)\nENT: ${state.playerENT} (Entropy Pool)\nSTATUS: UNSTABLE`, "narrative");
+            return;
+        }
+
+        // Combat Logic
+        if (state.combatActive) {
+            handleCombat(cmd);
+            return;
+        }
+
+        // Phase Specific Logic
+        if (state.currentPhase === "PHASE_1") {
+            if (cmd === 'look') {
+                printBlock(GAME_DATA.phases["PHASE_1"].text);
+            } else if (cmd.includes('read') && cmd.includes('note')) {
+                printLine("ITEM: Drifter's Note", "system");
+                typeText('"They are smoothing the edges. Don\'t let them finish the sentence. The Core is inside the Archive."');
+            } else if (cmd.includes('enter') || cmd === 'go east') {
+                enterRepository();
+            } else if (cmd === 'scan') {
+                printLine("SCANNING... High concentrations of geometric order detected East.");
+            } else {
+                printLine("Command not recognized. Reality does not respond.");
+            }
+        } 
+        else if (state.currentPhase === "REPOSITORY_ENTRANCE") {
+            if (cmd === 'look') {
+                printLine("The white hallway stretches infinitely. Two Margin Walkers block the path.");
+            } else if (cmd.includes('attack')) {
+                printLine("Initiating combat protocols...");
+                state.combatActive = true;
+                printLine("COMBAT STARTED. Type 'ATTACK WALKER' to engage.");
+            }
+        }
+    }
+
+    function enterRepository() {
+        state.currentPhase = "REPOSITORY_ENTRANCE";
+        printBlock("TRANSITIONING PHASES...");
+        setTimeout(() => {
+            printBlock(GAME_DATA.phases["REPOSITORY_ENTRANCE"].text);
+            // Spawn enemies
+            state.activeEnemies = JSON.parse(JSON.stringify(GAME_DATA.phases["REPOSITORY_ENTRANCE"].enemies.map(id => GAME_DATA.enemies[id])));
+        }, 1000);
+    }
+
+    function handleCombat(cmd) {
+        if (cmd.startsWith('attack')) {
+            // Player Attack
+            const roll = Math.floor(Math.random() * 20) + 1;
+            const hit = roll + 4; // Arbitrary bonus
+            const target = state.activeEnemies[0];
+            
+            if (!target) {
+                printLine("No targets remaining.");
+                state.combatActive = false;
+                return;
+            }
+
+            printLine(`You attack ${target.name}... (Rolled ${roll} + 4 = ${hit})`);
+            
+            if (hit >= target.ac) {
+                const dmg = Math.floor(Math.random() * 8) + 3;
+                target.hp -= dmg;
+                printLine(`HIT! Dealt ${dmg} damage. Target HP: ${target.hp}`, "term-green");
+                
+                if (target.hp <= 0) {
+                    printLine(`${target.name} dissolves into static.`, "alert");
+                    state.activeEnemies.shift(); // Remove dead enemy
+                    if (state.activeEnemies.length === 0) {
+                        printLine("THREAT ELIMINATED. COMBAT ENDED.", "system");
+                        state.combatActive = false;
+                    }
+                }
+            } else {
+                printLine("MISS. The enemy phased through your attack.");
+            }
+
+            // Enemy Turn (if still alive)
+            if (state.combatActive && state.activeEnemies.length > 0) {
+                setTimeout(() => enemyTurn(), 800);
+            }
+        } else {
+            printLine("COMBAT ACTIVE. ACTION REQUIRED: ATTACK");
+        }
+    }
+
+    function enemyTurn() {
+        const enemy = state.activeEnemies[0];
+        printLine(`${enemy.name} attacks you!`, "alert");
+        const hit = Math.floor(Math.random() * 20) + 5;
+        if (hit > 14) { // Player AC 14
+            const dmg = Math.floor(Math.random() * 6) + 2;
+            state.playerHP -= dmg;
+            printLine(`HIT! You take ${dmg} damage. (HP: ${state.playerHP})`, "alert");
+        } else {
+            printLine(`${enemy.name} misses.`);
+        }
+    }
+
+    // --- UTILITIES ---
+
+    function printLine(text, className = "line") {
+        const div = document.createElement('div');
+        div.className = `line ${className}`;
+        div.textContent = text;
+        output.appendChild(div);
+        output.scrollTop = output.scrollHeight;
+    }
+
+    function printBlock(text) {
+        const lines = text.split('\n');
+        lines.forEach(l => printLine(l));
+    }
+
+    function typeText(text, className = "narrative") {
+        const div = document.createElement('div');
+        div.className = `line ${className} typing`;
+        output.appendChild(div);
+        
+        let i = 0;
+        const speed = 20; 
+        
+        function type() {
+            if (i < text.length) {
+                div.textContent += text.charAt(i);
+                i++;
+                output.scrollTop = output.scrollHeight;
+                setTimeout(type, speed);
+            } else {
+                div.classList.remove('typing');
+            }
+        }
+        type();
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+[Event "Coherence Chess Demo"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Coherence Solver"]
+[Black "Coherence Solver"]
+[Result "*"]
+
+1. h3 h6 2. h4 h5 3. g3 g6 4. Bg2 d5 5. Bf3 Bg7 6. Bxd5 Qxd5 7. b3 Qd8 8. e3 Bf6 9. Ne2 Qd7 10. Rh3 Qd8 11. Nf4 Qd7 12. Ne2 Qd8 13. Nf4 *

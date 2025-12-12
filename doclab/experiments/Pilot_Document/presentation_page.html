@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Resonant Organization - Presentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+/* 1. THE SETUP */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  margin: 0;
+  min-height: 100vh;
+  padding: 20px 0;
+  place-items: center;
+  font-family: 'Urbanist', sans-serif;
+}
+
+/* 2. SLIDE CONTAINER & THEME */
+
+.slide-container {
+  align-items: center;
+  background-color: #0f172a; /* Deep dark blue/black */
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  height: 720px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 60px;
+  position: relative;
+  width: 1280px;
+  color: #f8fafc;
+}
+
+/* Abstract Background Elements */
+.slide-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(56, 189, 248, 0.05) 0%, transparent 50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.slide-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* 3. TYPOGRAPHY */
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #38bdf8; /* Light Blue Accent */
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #e2e8f0;
+  margin-bottom: 15px;
+}
+
+p, li {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 28px;
+  font-weight: 300;
+  color: #94a3b8;
+  margin-top: 20px;
+}
+
+/* 4. LAYOUTS */
+
+/* Title Layout */
+.title-layout {
+  text-align: center;
+  max-width: 900px;
+}
+
+/* Two Column */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-right {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  max-width: 800px;
+}
+.section-title hr {
+  border: 0;
+  height: 4px;
+  background: #38bdf8;
+  width: 100px;
+  margin: 30px auto;
+  border-radius: 2px;
+}
+
+/* Tiled Content */
+.tiled-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tile {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tile i {
+  font-size: 36px;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+/* Timeline */
+.timeline-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  right: 50px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 0;
+}
+
+.timeline-step {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  flex: 1;
+  padding: 0 20px;
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+  background: #0f172a;
+  border: 2px solid #38bdf8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 24px;
+  color: #38bdf8;
+}
+
+/* Highlight Numbers */
+.highlight-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.big-number {
+  font-size: 120px;
+  font-weight: 700;
+  color: #38bdf8;
+  line-height: 1;
+}
+
+.number-label {
+  font-size: 24px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Helper Classes */
+.text-accent { color: #38bdf8; }
+.text-white { color: #fff; }
+
+/* Bleed Image Layout Adjustment */
+.slide-container.bleed-image-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 0;
+  gap: 0;
+  align-items: start;
+}
+
+.slide-container.bleed-image-layout > .content-container {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.slide-container.bleed-image-layout > .image-container {
+  height: 720px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide-container.bleed-image-layout img.bleed-image-side {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slide-title {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.content-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+    </style>
+</head>
+<body>
+
+<!-- Slide 1: Title -->
+<div class="slide-container" id="slide1">
+    <div class="title-layout">
+        <h1>The Resonant Organization</h1>
+        <p class="subtitle">Solving Problems by Using Problems as Tools</p>
+        <p style="font-size: 18px; margin-top: 40px; color: #64748b;">STRUCTURE + AI CONTEXT</p>
+    </div>
+</div>
+
+<!-- Slide 2: The Core Challenge -->
+<div class="slide-container" id="slide2">
+    <h2 class="slide-title">The Three Barriers to Scale</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="content-left">
+                <h3>Why do we hit a ceiling?</h3>
+                <ul>
+                    <li><strong>Operational Overhead:</strong> Turning down deals because the implementation cost is too high.</li>
+                    <li><strong>Dead-End Roles:</strong> Lack of promotion pathways leads to massive attrition waves.</li>
+                    <li><strong>Rigid Agents:</strong> Inability to field work from multiple clients simultaneously.</li>
+                </ul>
+            </div>
+            <div class="image-right">
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/5587249921581816160" alt="Traffic jam or blocked path representing operational overhead">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 3: The Two Pillars -->
+<div class="slide-container" id="slide3">
+    <div class="section-title">
+        <h2 style="font-size: 64px;">The Dual Solution</h2>
+        <hr>
+        <p>We built two things that fold together to create a unique, resilient work balance with very little development time.</p>
+    </div>
+    <div class="tiled-grid" style="margin-top: 40px;">
+        <div class="tile" style="align-items: center; text-align: center;">
+            <i class="fa-solid fa-microchip"></i>
+            <h3>1. The AI Tool</h3>
+            <p>Transcribes audio and generates context instantly.</p>
+        </div>
+        <div class="tile" style="align-items: center; text-align: center;">
+            <i class="fa-solid fa-people-group"></i>
+            <h3>2. The Structure</h3>
+            <p>A team model that operationalizes growth and stability.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 4: Pillar 1 - The Structure -->
+<div class="slide-container bleed-image-layout" id="slide4">
+    <div class="content-container">
+        <h2 class="slide-title">Pillar 1: The Structure</h2>
+        <div class="content-area">
+            <h3>Sorting for Resilience</h3>
+            <p>We don't just hire "reps." We sort existing agents into four specific node types based on their strengths.</p>
+            <p>This structure creates a self-healing team where promotion isn't a rare event—it's a built-in function of the daily workflow.</p>
+            <p class="text-accent" style="margin-top: 20px;">Core &bull; Support &bull; Feedback &bull; Interface</p>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="bleed-image-side" src="http://googleusercontent.com/image_collection/image_retrieval/696815119300997738" alt="Abstract network nodes connecting agents">
+    </div>
+</div>
+
+<!-- Slide 5: The Roles Detail -->
+<div class="slide-container" id="slide5">
+    <h2 class="slide-title">The Four Node Types</h2>
+    <div class="content-area">
+        <div class="tiled-grid">
+            <div class="tile">
+                <i class="fa-solid fa-rocket"></i>
+                <h3>Core Nodes</h3>
+                <p>Our best producers. They field calls efficiently and consistently hit KPIs. We need the most of these.</p>
+            </div>
+            <div class="tile">
+                <i class="fa-solid fa-tools"></i>
+                <h3>Support Nodes</h3>
+                <p>IT or process specialists. They work on secondary projects (HR, Tech) while on the floor. Vetted in the "fires of production."</p>
+            </div>
+            <div class="tile">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Feedback Nodes</h3>
+                <p>Dedicated reporting specialists. They dashboard team performance daily and report to the next level up.</p>
+            </div>
+            <div class="tile">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Interface Nodes</h3>
+                <p>The "Lead Agent." The ear for the team's needs, running meetings and taking roll. Links the unit to the org.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 6: Operationalized Growth -->
+<div class="slide-container" id="slide6">
+    <h2 class="slide-title">The Benefit: Operationalized Growth</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="content-left">
+                <h3>Attrition Becomes a Relic</h3>
+                <p>Once this structure is in place, promotion pathways open suddenly without adding overhead cost.</p>
+                <ul>
+                    <li><strong>Internal Pipeline:</strong> IT, HR, and QA roles are filled by floor-vetted agents (Support Nodes).</li>
+                    <li><strong>Reduction in Force:</strong> Massive layoff waves are replaced by fluid movement into new roles.</li>
+                    <li><strong>Proximity:</strong> Operational departments are brought much closer to the production floor.</li>
+                </ul>
+            </div>
+            <div class="image-right">
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/17476612722838717648" alt="Ladder or stairs representing growth pathways">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 7: Pillar 2 - Universal Agent -->
+<div class="slide-container" id="slide7">
+    <h2 class="slide-title">Pillar 2: The Universal Agent</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="image-right">
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/4312688895319695787" alt="AI brain connecting multiple tasks">
+            </div>
+            <div class="content-left">
+                <h3>The "Basket of Items"</h3>
+                <p>With the structure in place, we unlock the ability to field work from many clients at once.</p>
+                <ul>
+                    <li><strong>Dynamic Selling:</strong> Sell a variety of products across many call types.</li>
+                    <li><strong>Clean Lines:</strong> Keep sales contextually separated across client lines if desired.</li>
+                    <li><strong>Power of Context:</strong> Agents don't need to memorize everything; they need to navigate context.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 8: The Pilot Document -->
+<div class="slide-container" id="slide8">
+    <h2 class="slide-title">The Engine: Pilot Document Generator</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="content-left">
+                <h3>Context on Demand</h3>
+                <p>How do we make a Universal Agent possible? We use an AI-powered tool that:</p>
+                <ol>
+                    <li><strong>Transcribes Audio:</strong> Real-time capture of the interaction.</li>
+                    <li><strong>Generates Context:</strong> Provides immediate sales guidance and navigation.</li>
+                </ol>
+                <p class="text-accent">It guides the agent through the necessities of the call, allowing Knowledge Articles to handle the rest.</p>
+            </div>
+            <div class="image-right">
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/9874283606078115569" alt="Glowing digital document interface">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 9: Integrated QA -->
+<div class="slide-container" id="slide9">
+    <h2 class="slide-title">Built-in Quality Assurance</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="image-right">
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/7091444230580475113" alt="Team reviewing data together">
+            </div>
+            <div class="content-left">
+                <h3>Participatory Quality</h3>
+                <p>The frame integrates QA directly into the daily workflow.</p>
+                <ul>
+                    <li><strong>Team Participation:</strong> All nodes evaluate how they think calls went in weekly or daily meetings.</li>
+                    <li><strong>Contextual Handling:</strong> The Pilot Document Generator enhances this by providing objective, AI-generated summaries of performance.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 10: Transition to Demo -->
+<div class="slide-container" id="slide10">
+    <div class="section-title">
+        <h2 style="font-size: 64px;">Let's See It In Action</h2>
+        <hr>
+        <p>We've discussed the Structure. Now, let's look at the Tool that powers it.</p>
+        <h3 style="margin-top: 40px; color: #38bdf8;">Demo: The Pilot Document Generator</h3>
+    </div>
+</div>
+
+</body>
+</html>
+```
